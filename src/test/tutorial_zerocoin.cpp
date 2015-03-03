@@ -25,6 +25,7 @@
 #include "libzerocoin/Coin.h"
 #include "libzerocoin/CoinSpend.h"
 #include "libzerocoin/Accumulator.h"
+#include "test_pivx.h"
 
 using namespace std;
 
@@ -274,7 +275,7 @@ ZerocoinTutorial()
 	return false;
 }
 
-BOOST_AUTO_TEST_SUITE(tutorial_libzerocoin)
+BOOST_FIXTURE_TEST_SUITE(tutorial_libzerocoin, TestingSetup)
 BOOST_AUTO_TEST_CASE(tutorial_libzerocoin_tests)
 {
 	cout << "libzerocoin v" << ZEROCOIN_VERSION_STRING << " tutorial." << endl << endl;
