@@ -1,7 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
 #include <boost/test/unit_test.hpp>
 #include <stdint.h>
 #include <sstream>
@@ -11,8 +10,9 @@
 #include "uint256.h"
 #include <string>
 #include "version.h"
+#include "test/test_nxboost.h"
 
-BOOST_AUTO_TEST_SUITE(uint256_tests)
+BOOST_FIXTURE_TEST_SUITE(uint256_tests, BasicTestingSetup)
 
 const unsigned char R1Array[] =
     "\x9c\x52\x4a\xdb\xcf\x56\x11\x12\x2b\x29\x12\x5e\x5d\x35\xd2\xd2"
@@ -834,4 +834,3 @@ BOOST_AUTO_TEST_CASE( getmaxcoverage ) // some more tests just to get 100% cover
 }
 
 BOOST_AUTO_TEST_SUITE_END()
-
