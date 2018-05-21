@@ -33,7 +33,7 @@ public:
 
     CoinWitnessData();
     void SetHeightMintAdded(int nHeight);
-  //  CoinWitnessData(CoinWitnessData&);
+    //  CoinWitnessData(CoinWitnessData&);
 };
 
 std::map<libzerocoin::CoinDenomination, int> GetMintMaturityHeight();
