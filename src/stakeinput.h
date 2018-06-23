@@ -6,6 +6,10 @@
 #ifndef nxboost_STAKEINPUT_H
 #define nxboost_STAKEINPUT_H
 
+#include "chain.h"
+#include "streams.h"
+#include "uint256.h"
+
 class CKeyStore;
 class CWallet;
 class CWalletTx;
