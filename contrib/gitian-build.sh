@@ -314,6 +314,7 @@ then
 	    ./bin/gbuild -j ${proc} -m ${mem} --commit nxboost=${COMMIT} --url nxboost=${url} ../nxboost/contrib/gitian-descriptors/gitian-aarch64.yml
 	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../nxboost/contrib/gitian-descriptors/gitian-aarch64.yml
 	    mv build/out/nxboost-*.tar.gz build/out/src/nxboost-*.tar.gz ../nxboost-binaries/${VERSION}
+	fi
 	popd
 
         if [[ $commitFiles = true ]]
