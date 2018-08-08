@@ -265,28 +265,28 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     // NXB Available
     bool showNXBAvailable = settingShowAllBalances || NXBAvailableBalance != nTotalBalance;
-    bool showWatchOnlyNXBAvailable = settingShowAllBalances || nAvailableWatchBalance != nTotalWatchBalance;
+    bool showWatchOnlyNXBAvailable = showNXBAvailable || nAvailableWatchBalance != nTotalWatchBalance;
     ui->labelBalanceText->setVisible(showNXBAvailable || showWatchOnlyNXBAvailable);
     ui->labelBalance->setVisible(showNXBAvailable || showWatchOnlyNXBAvailable);
     ui->labelWatchAvailable->setVisible(showWatchOnlyNXBAvailable && showWatchOnly);
 
     // NXB Pending
     bool showNXBPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyNXBPending = settingShowAllBalances || watchUnconfBalance != 0;
+    bool showWatchOnlyNXBPending = showNXBPending || watchUnconfBalance != 0;
     ui->labelPendingText->setVisible(showNXBPending || showWatchOnlyNXBPending);
     ui->labelUnconfirmed->setVisible(showNXBPending || showWatchOnlyNXBPending);
     ui->labelWatchPending->setVisible(showWatchOnlyNXBPending && showWatchOnly);
 
     // NXB Immature
     bool showNXBImmature = settingShowAllBalances || immatureBalance != 0;
-    bool showWatchOnlyImmature = settingShowAllBalances || watchImmatureBalance != 0;
+    bool showWatchOnlyImmature = showNXBImmature || watchImmatureBalance != 0;
     ui->labelImmatureText->setVisible(showNXBImmature || showWatchOnlyImmature);
     ui->labelImmature->setVisible(showNXBImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
     // NXB Locked
     bool showNXBLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyNXBLocked = settingShowAllBalances || nWatchOnlyLockedBalance != 0;
+    bool showWatchOnlyNXBLocked = showNXBLocked || nWatchOnlyLockedBalance != 0;
     ui->labelLockedBalanceText->setVisible(showNXBLocked || showWatchOnlyNXBLocked);
     ui->labelLockedBalance->setVisible(showNXBLocked || showWatchOnlyNXBLocked);
     ui->labelWatchLocked->setVisible(showWatchOnlyNXBLocked && showWatchOnly);
