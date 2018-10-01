@@ -8,7 +8,7 @@
 #define BITCOIN_BIGNUM_H
 
 #if defined HAVE_CONFIG_H
-#include "pivx-config.h"
+#include "nxboost-config.h"
 #endif
 
 #include <stdexcept>
