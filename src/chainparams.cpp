@@ -120,9 +120,9 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 20; // NXBoost starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 1080;
-        nRejectBlockOutdatedMajority = 1368;
-        nToCheckBlockUpgradeMajority = 1440;
+        nEnforceBlockUpgradeMajority = 8100; // 75%
+        nRejectBlockOutdatedMajority = 10260; // 95%
+        nToCheckBlockUpgradeMajority = 10800; // Approximate expected amount of blocks in 7 days (1440*7.5)
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // NXBoost: 1 day
         nTargetSpacing = 1 * 60;  // NXBoost: 1 minute
@@ -236,9 +236,9 @@ public:
         pchMessageStart[3] = 0x54;
         vAlertPubKey = ParseHex("04e1d34432d3a5803312f33cf20686b1801835ea8efb18ad77d50b5ec1ce5ca73de65c36c082ca5c51880f8ffb5a296d8dc780f1dc02f22eba4dde1816a6a54b75");
         nDefaultPort = 55600;
-        nEnforceBlockUpgradeMajority = 51;
-        nRejectBlockOutdatedMajority = 75;
-        nToCheckBlockUpgradeMajority = 100;
+        nEnforceBlockUpgradeMajority = 4320; // 75%
+        nRejectBlockOutdatedMajority = 5472; // 95%
+        nToCheckBlockUpgradeMajority = 5760; // 4 days
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // nxboost: 1 day
         nTargetSpacing = 1 * 60;  // nxboost: 1 minute
