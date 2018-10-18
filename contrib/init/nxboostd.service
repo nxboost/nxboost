@@ -1,0 +1,26 @@
+[Unit]
+Description=NXBoost's distributed currency daemon
+After=network.target
+
+[Service]
+User=nxboost
+Group=nxboost
+
+Type=forking
+PIDFile=/var/lib/nxboostd/nxboostd.pid
+
+ExecStart=/usr/bin/nxboostd -daemon -pid=/var/lib/nxboostd/nxboostd.pid \
+          -conf=/etc/nxboost/nxboost.conf -datadir=/var/lib/nxboostd
+
+ExecStop=-/usr/bin/nxboost-cli -conf=/etc/nxboost/nxboost.conf \
+         -datadir=/var/lib/nxboostd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+# /etc/conf.d/nxboostd: config file for /etc/init.d/nxboostd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/nxboost/nxboost.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/nxboostd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/nxboostd.pid"
+
+# Where to write nxboostd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/nxboostd"
+
+# User and group to own nxboostd process
+#BITCOIND_USER="nxboost"
+#BITCOIND_GROUP="nxboost"
+
+# Path to nxboostd executable
+#BITCOIND_BIN="/usr/bin/nxboostd"
+
+# Nice value to run nxboostd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

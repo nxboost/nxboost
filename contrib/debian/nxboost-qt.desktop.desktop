@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=NXBoost
+Comment=NXBoost P2P Cryptocurrency
+Exec=nxboost-qt %u
+Terminal=false
+Type=Application
+Icon=nxboost128
+MimeType=x-scheme-handler/nxboost;
+Categories=Office;Finance;
+Name[ru]=nxboost-qt.desktop
