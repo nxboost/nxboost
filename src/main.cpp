@@ -1795,11 +1795,11 @@ double ConvertBitsToDouble(unsigned int nBits)
         (double)0x0000ffff / (double)(nBits & 0x00ffffff);
 
     while (nShift < 29) {
-        dDiff *= 256.0;
+        dDiff *= 0.1;
         nShift++;
     }
     while (nShift > 29) {
-        dDiff /= 256.0;
+        dDiff /= 0.1;
         nShift--;
     }
 
@@ -1819,20 +1819,20 @@ int64_t GetBlockValue(int nHeight)
 	
 if(nHeight <= 1 && nHeight > 0) {
         nSubsidy = 35000000 * COIN;
-	} else if (nHeight > 1 && nHeight <= 86400) {
+	} else if (nHeight > 1 && nHeight <= 47000) {
                 nSubsidy = 70 * COIN;
-        } else if (nHeight > 86400 && nHeight <= 151200) {
-		nSubsidy = 60 * COIN;
-	} else if (nHeight > 151200 && nHeight <= 302400) {
-		nSubsidy = 50 * COIN;
-	} else if (nHeight > 302400 && nHeight <= 345600) {
-		nSubsidy = 40 * COIN;
-	} else if (nHeight > 345600 && nHeight <= 388800) {
+        } else if (nHeight > 47000 && nHeight <= 151200) {
 		nSubsidy = 30 * COIN;
-	} else if (nHeight > 388800 && nHeight <= 475200) { // 475200 => LAST POW BLOCK
+	} else if (nHeight > 151200 && nHeight <= 302400) {
+		nSubsidy = 25 * COIN;
+	} else if (nHeight > 302400 && nHeight <= 345600) {
 		nSubsidy = 20 * COIN;
-	} else if (nHeight > 475200 && nHeight <= 518400) { // 475201 => FIRST POS BLOCK
+	} else if (nHeight > 345600 && nHeight <= 388800) {
+		nSubsidy = 15 * COIN;
+	} else if (nHeight > 388800 && nHeight <= 475200) { // 475200 => LAST POW BLOCK
 		nSubsidy = 10 * COIN;
+	} else if (nHeight > 475200 && nHeight <= 518400) { // 475201 => FIRST POS BLOCK
+		nSubsidy = 8 * COIN;
 	} else if (nHeight > 518400 && nHeight <= 561600) {
 		nSubsidy = 5 * COIN;
 	} else if (nHeight > 561600 && nHeight <= 604800) {
@@ -1855,48 +1855,13 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 	
 	int64_t ret = 0;
 	
-	if(nHeight <= 86400 && nHeight > 0) {
+	if(nHeight <= 47000 && nHeight > 0) {
         ret = blockValue / 100 * 50;
-	} else if (nHeight > 86400 && nHeight <= 151200) {
-        ret = blockValue / 100 * 60;
-	} else if (nHeight > 151200 && nHeight <= 152500) {
-        ret = blockValue / 100 * 70;
-	} else if (nHeight > 152500 && nHeight <= 225000) {
-        ret = blockValue / 100 * 80;
-	} else if (nHeight > 225000 && nHeight <= 475200) {
-        ret = blockValue / 100 * 70;
-	} else if (nHeight > 475200) {
-	
+	} else if (nHeight <= 47066 && nHeight > 47000) {
+          ret = blockValue / 100 * 99;
+        } else if (nHeight > 47070) {
+	ret = blockValue / 100 * 80;
 
-int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-		
-		if(nMasternodeCount < 1) {
-			nMasternodeCount = mnodeman.stable_size();
-		}
-		
-		int64_t mNodeCoins = nMasternodeCount * 1000000 * COIN;
-		
-		if (mNodeCoins == 0) {
-            ret = 0;
-		} else {
-			double lockedCoinValue = mNodeCoins / nMoneySupply;
-			
-			
-			double masternodeMultiplier = 1 - lockedCoinValue;
-			
-			if(masternodeMultiplier < .1) {
-				masternodeMultiplier = .1;
-			} else if(masternodeMultiplier > .9) {
-				masternodeMultiplier = .9;
-			}
-			
-			LogPrintf("[LIBRA] Adjusting Libra at height %d with %d masternodes (%d % locked NXBoost) and %d NXBoost supply at %ld\n", nHeight, nMasternodeCount, lockedCoinValue*100, nMoneySupply, GetTime());
-			LogPrintf("[LIBRA] Masternode: %d\n", masternodeMultiplier*100);
-			LogPrintf("[LIBRA] Staker: %d\n", (1 - masternodeMultiplier)*100);
-			
-			ret = blockValue * masternodeMultiplier;
-		}
-		
 	}
     return ret;
 }

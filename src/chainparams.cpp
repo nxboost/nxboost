@@ -131,7 +131,7 @@ public:
 		strDeveloperFeePayee = "MyEyax68fb2u3CCs14fYTpNc9kYkPUNKyj";
 		
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 45000;
+        nLastPOWBlock = 47070;
         nModifierUpdateBlock = 615800;
         nZerocoinStartHeight = 200000;
         nZerocoinStartTime = 1546300800;
@@ -165,7 +165,7 @@ public:
         assert(hashGenesisBlock == uint256("0x0000003abc56c19df53407e9a6fc187b7c1276132180f0832a234f1243419b31"));
         assert(genesis.hashMerkleRoot == uint256("0x32268b701d69e7aa6be82e213a3d6b309a2090ef4e0b6893d472f58a748de5c8"));
 
-        	
+       vSeeds.push_back(CDNSSeedData("89.40.7.126", "89.40.7.126"));
        vSeeds.push_back(CDNSSeedData("89.40.4.42", "89.40.4.42"));
         vSeeds.push_back(CDNSSeedData("213.80.163.129", "213.80.163.129"));
         vSeeds.push_back(CDNSSeedData("185.159.82.234", "185.159.82.234"));
