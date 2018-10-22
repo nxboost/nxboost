@@ -1795,11 +1795,11 @@ double ConvertBitsToDouble(unsigned int nBits)
         (double)0x0000ffff / (double)(nBits & 0x00ffffff);
 
     while (nShift < 29) {
-        dDiff *= 0.1;
+        dDiff *= 256.0;
         nShift++;
     }
     while (nShift > 29) {
-        dDiff /= 0.1;
+        dDiff /= 256.0;
         nShift--;
     }
 
@@ -1857,9 +1857,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 	
 	if(nHeight <= 47000 && nHeight > 0) {
         ret = blockValue / 100 * 50;
-	} else if (nHeight <= 47066 && nHeight > 47000) {
+	} else if (nHeight <= 47077 && nHeight > 47000) {
           ret = blockValue / 100 * 99;
-        } else if (nHeight > 47070) {
+        } else if (nHeight > 47077) {
 	ret = blockValue / 100 * 80;
 
 	}

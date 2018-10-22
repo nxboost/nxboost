@@ -131,7 +131,7 @@ public:
 		strDeveloperFeePayee = "MyEyax68fb2u3CCs14fYTpNc9kYkPUNKyj";
 		
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 47070;
+        nLastPOWBlock = 47077;
         nModifierUpdateBlock = 615800;
         nZerocoinStartHeight = 200000;
         nZerocoinStartTime = 1546300800;
@@ -193,7 +193,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "049e53e687fdafd78fd42d730fad0e7ea1819396176a2cb85d7a76fa4559cdbd2c2f05330a6f5cbadb44a6c1d324f167e679e9f3e95d9d5649761a3e7f59bf4500";
         strSporkKeyOld = "049e53e687fdafd78fd42d730fad0e7ea1819396176a2cb85d7a76fa4559cdbd2c2f05330a6f5cbadb44a6c1d324f167e679e9f3e95d9d5649761a3e7f59bf4500";
-        strObfuscationPoolDummyAddress = "NHhV6zLC5yDr6t3t8bRW1RKiLSs8KFauuq";
+        strObfuscationPoolDummyAddress = "AcmpqXViWUXNroqVNYRdKjKrFM6PNa1oTM";
         nStartMasternodePayments = 1536906166; //11/10/2017 @ 12:00am (UTC)
 
         /** Zerocoin */
