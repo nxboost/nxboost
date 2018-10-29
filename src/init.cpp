@@ -1686,6 +1686,8 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
         //Inititalize zNXBWallet
         uiInterface.InitMessage(_("Syncing zNXB wallet..."));
 
+        pwalletMain->InitAutoConvertAddresses();
+
         bool fEnablezNXBBackups = GetBoolArg("-backupzNXB", true);
         pwalletMain->setzNXBAutoBackups(fEnablezNXBBackups);
 
