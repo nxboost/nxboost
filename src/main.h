@@ -41,6 +41,7 @@
 #include <vector>
 
 #include "libzerocoin/CoinSpend.h"
+#include "lightzNXBthread.h"
 
 #include <boost/unordered_map.hpp>
 
@@ -108,6 +109,7 @@ static const unsigned int MAX_REJECT_MESSAGE_LENGTH = 111;
 
 /** Enable bloom filter */
  static const bool DEFAULT_PEERBLOOMFILTERS = true;
+static const bool DEFAULT_PEERBLOOMFILTERS_ZC = false;
 
 
 /** Default for -blockspamfilter, use header spam filter */
@@ -168,6 +170,9 @@ extern std::map<uint256, int64_t> mapZerocoinspends; //txid, time received
 
 /** Best header we've seen so far (used for getheaders queries' starting points). */
 extern CBlockIndex* pindexBestHeader;
+
+/**  */
+extern CLightWorker lightWorker;
 
 /** Minimum disk space required - used in CheckDiskSpace() */
 static const uint64_t nMinDiskSpace = 52428800;
