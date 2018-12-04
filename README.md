@@ -3,7 +3,7 @@
 
 <p>Official Website  -  https://nxboost.com/</p>
 <p>💬 Official Forum - https://forum.nxboost.com/</p>
-<p>💬 Github  - https://github.com/niko117/new-pos</p>
+<p>💬 Github  - https://github.com/nxboost/nxboost/</p>
 <p>☎️ Telegramm NXB EN - https://t.me/nxb_traders_en</p>
 <p>🌏 Discord - https://discord.gg/mVBPKK8</p>
 <p>☎️ Telegramm NXB RU - https://t.me/nxboost</p>
@@ -12,8 +12,8 @@
 <p>📑 Blockchain Explorer - https://explorer.nxboost.com/</p>
 <p>💬 Bitcointalk EN - https://bitcointalk.org/index.php?topic=4980450.0</p>
 <p>💬 Bitcointalk RU - https://bitcointalk.org/index.php?topic=5030850.60</p>
-<p>📀 Windows Wallet  GUI- https://forum.nxboost.com/download/nxboost-qt-win.zip</p>
-<p>💿 Linux Wallet - https://forum.nxboost.com/download/nxboost-linux-cli.zip</p>
+<p>📀 Windows Wallet  GUI- https://github.com/nxboost/nxboost/releases</p>
+<p>💿 Linux Wallet - https://github.com/nxboost/nxboost/releases</p>
 <p>CAP</p>
 <p>Web Wallet Trittium.cc -  https://wallet.trittium.cc</p>
 <p>Android wallet trittium.cc - https://play.google.com/store/apps/details?id=com.megano.trittium_mobile_wallet</p>
