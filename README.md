@@ -24,7 +24,7 @@
 <p>™ CointoMine - https://cointomine.today/calculator/coin/NXB/</p>
 <p>Other Resource</p>
 <p>📊 BITStorage Telegram - https://t.me/bitstorage</p>
-
+<h2>************************************************************************</h2>
 NXBoost MN  Setup Script. script support: https://discord.gg/t2wg9AP
 Version: 2.20
 - Linux OS supported: Ubuntu 16.04/17.10/18.04, Debian 8/9, CentOS 7, Fedora 27/28/29
@@ -49,6 +49,6 @@ wget -O nxbmnautosetup.sh http://node4.unclear.space/script/nxb/nxbmnautosetup.s
 
 2. Run script
 ./nxbmnautosetup.sh
-
+<h2>************************************************************************</h2>
 <a href="https://explorer.nxboost.com"><img src="https://forum.nxboost.com/download/technical.png"></a>
 <img src="https://forum.nxboost.com/download/reward.png">
