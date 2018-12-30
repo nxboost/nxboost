@@ -1,5 +1,6 @@
 
-<h2>NXBoost (NXB) an open source cryptocurrency and globally accessible payment network</h2>
+<img src="https://forum.nxboost.com/download/nxb_header.png">
+
 <p>Official Website  -  https://nxboost.com/</p>
 <p>💬 Official Forum - https://forum.nxboost.com/</p>
 <p>💬 Github  - https://github.com/niko117/new-pos</p>
@@ -24,24 +25,7 @@
 <p>Other Resource</p>
 <p>📊 BITStorage Telegram - https://t.me/bitstorage</p>
 
-
-
-# Coin Specs
-
-• Coin Name: NXBoost  
-• Ticker: NXB  
-• PoW Algorithm: Quark  
-• Premine: (#1 Block) 35 000 000 NXB ( swap old to new coin in bitstorage.finance 8 000 000 for cloud masternode) 
-• PoW Blocks: 2 - 47077 
-• PoS Blocks: Starting from 47078  
-• Block Time: 60 Seconds    
-• Masternode Requirements: 10 000 000 NXB  
-• Maturity: 30 Confirmations  
-• Prefix: NXBoost adresses start with the capital letter "N" "M"   
-
-
-# PoW Reward Distribution
-
+<a href="https://explorer.nxboost.com"><img src="https://forum.nxboost.com/download/technical.png"</a>
 <img src="https://forum.nxboost.com/download/reward.png">
 
 
