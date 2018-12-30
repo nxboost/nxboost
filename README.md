@@ -25,5 +25,30 @@
 <p>Other Resource</p>
 <p>📊 BITStorage Telegram - https://t.me/bitstorage</p>
 
+NXBoost MN  Setup Script. script support: https://discord.gg/t2wg9AP
+Version: 2.20
+- Linux OS supported: Ubuntu 16.04/17.10/18.04, Debian 8/9, CentOS 7, Fedora 27/28/29
+- Installation with DEFAULT settings or advanced CUSTOM settings (full questionnaire)
+- Daemon bind to IP address (Listen in case of NAT detected)
+- P2P/RPC IP:port usage detection
+- UFW firewall configuration support (Ubuntu/Debian)
+- FirewallD configuration support (CentOS/Fedora)
+- On-screen instructions for Local wallet
+- Installation as systems service or simple daemon
+- In-line new sudo user creation for host sharing (two MHS MNs on the same host)
+- Root and non-root installation
+- Support of IPv4 and IPv6
+and many other
+
+Script has dedicated Discord server for changes follow-up and user support
+
+Typical installation process shown in the video below
+
+1. Download and prepare the script
+wget -O nxbmnautosetup.sh http://node4.unclear.space/script/nxb/nxbmnautosetup.sh; chmod +x nxbmnautosetup.sh
+
+2. Run script
+./nxbmnautosetup.sh
+
 <a href="https://explorer.nxboost.com"><img src="https://forum.nxboost.com/download/technical.png"></a>
 <img src="https://forum.nxboost.com/download/reward.png">
