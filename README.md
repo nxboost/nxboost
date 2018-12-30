@@ -25,15 +25,5 @@
 <p>Other Resource</p>
 <p>📊 BITStorage Telegram - https://t.me/bitstorage</p>
 
-<a href="https://explorer.nxboost.com"><img src="https://forum.nxboost.com/download/technical.png"</a>
+<a href="https://explorer.nxboost.com"><img src="https://forum.nxboost.com/download/technical.png"></a>
 <img src="https://forum.nxboost.com/download/reward.png">
-
-
-# Further information
-
-_For more information check out our whitepaper at: [nxboost.org/whitepaper.pdf](https://nxboost.org/whitepaper.pdf)_
-
-
-Alternatively, we have added a non .pdf version in our Github repository. You can find it in the NXBoost Github Wiki.
-
-[https://github.com/NXBoostCRYPTO/NXBoost/wiki](https://github.com/NXBoostCRYPTO/NXBoost/wiki)
