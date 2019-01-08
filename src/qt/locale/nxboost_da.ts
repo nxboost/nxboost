@@ -2442,7 +2442,7 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
     </message>
     <message>
         <source>Enter an amount of NXB to convert to zNXB</source>
-        <translation>Indtast en mængde NXB for at konvertere til zXlq</translation>
+        <translation>Indtast en mængde NXB for at konvertere til zNxb</translation>
     </message>
     <message>
         <source>zNXB Control</source>
@@ -4553,11 +4553,11 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Spent zNXB</source>
-        <translation>Brugt zXlq</translation>
+        <translation>Brugt zNxb</translation>
     </message>
     <message>
         <source>Received NXB from zNXB</source>
-        <translation>Modtaget NXB fra zXlq</translation>
+        <translation>Modtaget NXB fra zNxb</translation>
     </message>
     <message>
         <source>Minted Change as zNXB from zNXB Spend</source>
@@ -4784,7 +4784,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Received NXB from zNXB</source>
-        <translation>Modtaget NXB fra zXlq</translation>
+        <translation>Modtaget NXB fra zNxb</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zNXB</source>
@@ -4856,7 +4856,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Vælg zNXB for at bruge</translation>
@@ -4939,7 +4939,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
-        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zXlq-mintning (0-1, standard: %u)</translation>
+        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zNxb-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>

@@ -302,19 +302,19 @@ void PrivacyDialog::on_pushButtonSpendzNXB_clicked()
     sendzNXB();
 }
 
-void PrivacyDialog::on_pushButtonZXlqControl_clicked()
+void PrivacyDialog::on_pushButtonZNxbControl_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    ZXlqControlDialog* zXlqControl = new ZXlqControlDialog(this);
-    zXlqControl->setModel(walletModel);
-    zXlqControl->exec();
+    ZNxbControlDialog* zNxbControl = new ZNxbControlDialog(this);
+    zNxbControl->setModel(walletModel);
+    zNxbControl->exec();
 }
 
-void PrivacyDialog::setZXlqControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZNxbControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzXlqSelected_int->setText(QString::number(nAmount));
+    ui->labelzNxbSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -423,8 +423,8 @@ void PrivacyDialog::sendzNXB()
     // use mints from zNXB selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZXlqControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZXlqControlDialog::GetSelectedMints();
+    if (!ZNxbControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = ZNxbControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             if (meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION) {
@@ -496,8 +496,8 @@ void PrivacyDialog::sendzNXB()
     }
 
     // Clear zNXB selector in case it was used
-    ZXlqControlDialog::setSelectedMints.clear();
-    ui->labelzXlqSelected_int->setText(QString("0"));
+    ZNxbControlDialog::setSelectedMints.clear();
+    ui->labelzNxbSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 
     // Some statistics for entertainment

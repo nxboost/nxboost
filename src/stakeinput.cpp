@@ -1,4 +1,5 @@
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +10,7 @@
 #include "stakeinput.h"
 #include "wallet.h"
 
-CZXlqStake::CZXlqStake(const libzerocoin::CoinSpend& spend)
+CZNxbStake::CZNxbStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -19,7 +20,7 @@ CZXlqStake::CZXlqStake(const libzerocoin::CoinSpend& spend)
     fMint = false;
 }
 
-int CZXlqStake::GetChecksumHeightFromMint()
+int CZNxbStake::GetChecksumHeightFromMint()
 {
     int nHeightChecksum = chainActive.Height() - Params().Zerocoin_RequiredStakeDepth();
 
@@ -30,12 +31,12 @@ int CZXlqStake::GetChecksumHeightFromMint()
     return GetChecksumHeight(nChecksum, denom);
 }
 
-int CZXlqStake::GetChecksumHeightFromSpend()
+int CZNxbStake::GetChecksumHeightFromSpend()
 {
     return GetChecksumHeight(nChecksum, denom);
 }
 
-uint32_t CZXlqStake::GetChecksum()
+uint32_t CZNxbStake::GetChecksum()
 {
     return nChecksum;
 }
@@ -43,7 +44,7 @@ uint32_t CZXlqStake::GetChecksum()
 // The zNXB block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
-CBlockIndex* CZXlqStake::GetIndexFrom()
+CBlockIndex* CZNxbStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -65,13 +66,13 @@ CBlockIndex* CZXlqStake::GetIndexFrom()
     return pindexFrom;
 }
 
-CAmount CZXlqStake::GetValue()
+CAmount CZNxbStake::GetValue()
 {
     return denom * COIN;
 }
 
 //Use the first accumulator checkpoint that occurs 60 minutes after the block being staked from
-bool CZXlqStake::GetModifier(uint64_t& nStakeModifier)
+bool CZNxbStake::GetModifier(uint64_t& nStakeModifier)
 {
     CBlockIndex* pindex = GetIndexFrom();
     if (!pindex)
@@ -91,7 +92,7 @@ bool CZXlqStake::GetModifier(uint64_t& nStakeModifier)
     }
 }
 
-CDataStream CZXlqStake::GetUniqueness()
+CDataStream CZNxbStake::GetUniqueness()
 {
     //The unique identifier for a zNXB is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
@@ -99,7 +100,7 @@ CDataStream CZXlqStake::GetUniqueness()
     return ss;
 }
 
-bool CZXlqStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CZNxbStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     CBlockIndex* pindexCheckpoint = GetIndexFrom();
     if (!pindexCheckpoint)
@@ -120,7 +121,7 @@ bool CZXlqStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
     return true;
 }
 
-bool CZXlqStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CZNxbStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
     //Create an output returning the zNXB that was staked
     CTxOut outReward;
@@ -148,12 +149,12 @@ bool CZXlqStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     return true;
 }
 
-bool CZXlqStake::GetTxFrom(CTransaction& tx)
+bool CZNxbStake::GetTxFrom(CTransaction& tx)
 {
     return false;
 }
 
-bool CZXlqStake::MarkSpent(CWallet *pwallet, const uint256& txid)
+bool CZNxbStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
     CzNXBTracker* zNXBTracker = pwallet->zNXBTracker.get();
     CMintMeta meta;

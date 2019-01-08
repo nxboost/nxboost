@@ -1,4 +1,5 @@
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZXlqControlDialog;
+class ZNxbControlDialog;
 }
 
-class ZXlqControlDialog : public QDialog
+class ZNxbControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZXlqControlDialog(QWidget *parent);
-    ~ZXlqControlDialog();
+    explicit ZNxbControlDialog(QWidget *parent);
+    ~ZNxbControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -32,7 +33,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZXlqControlDialog *ui;
+    Ui::ZNxbControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 

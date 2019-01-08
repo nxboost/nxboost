@@ -3635,7 +3635,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantia</translation>

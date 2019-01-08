@@ -1,4 +1,5 @@
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -30,7 +31,7 @@ public:
 // zNXBStake can take two forms
 // 1) the stake candidate, which is a zcmint that is attempted to be staked
 // 2) a staked zNXB, which is a zcspend that has successfully staked
-class CZXlqStake : public CStakeInput
+class CZNxbStake : public CStakeInput
 {
 private:
     uint32_t nChecksum;
@@ -39,7 +40,7 @@ private:
     uint256 hashSerial;
 
 public:
-    explicit CZXlqStake(libzerocoin::CoinDenomination denom, const uint256& hashSerial)
+    explicit CZNxbStake(libzerocoin::CoinDenomination denom, const uint256& hashSerial)
     {
         this->denom = denom;
         this->hashSerial = hashSerial;
@@ -47,7 +48,7 @@ public:
         fMint = true;
     }
 
-    explicit CZXlqStake(const libzerocoin::CoinSpend& spend);
+    explicit CZNxbStake(const libzerocoin::CoinSpend& spend);
 
     CBlockIndex* GetIndexFrom() override;
     bool GetTxFrom(CTransaction& tx) override;

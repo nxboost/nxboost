@@ -2021,7 +2021,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations </transla
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

@@ -2267,7 +2267,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
     </message>
     <message>
         <source>zNXB Control</source>
-        <translation>zXlq Kontrolė</translation>
+        <translation>zNxb Kontrolė</translation>
     </message>
     <message>
         <source>zNXB Selected:</source>
@@ -3449,7 +3449,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

@@ -4856,7 +4856,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Выберите zNXB чтобы потратить</translation>
@@ -6266,7 +6266,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Value is below the smallest available denomination (= 1) of zNXB</source>
-        <translation>Значение ниже наименьшего доступного номинала (= 1) zXlq</translation>
+        <translation>Значение ниже наименьшего доступного номинала (= 1) zNxb</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>

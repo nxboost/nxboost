@@ -2443,7 +2443,7 @@ Para habilitar AutoMint cambie 'enablezeromint = 0' a 'enablezeromint = 1' en nx
     </message>
     <message>
         <source>Enter an amount of NXB to convert to zNXB</source>
-        <translation>Introduzca la cantidad de NXB que desea convertir a zXlq</translation>
+        <translation>Introduzca la cantidad de NXB que desea convertir a zNxb</translation>
     </message>
     <message>
         <source>zNXB Control</source>
@@ -4857,7 +4857,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Selecciona zNXB para Gastar</translation>
