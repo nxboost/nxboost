@@ -95,6 +95,7 @@ qrc_*.cpp
 
 # Qt creator
 *.pro.user
+nxboost.pro
 
 # Mac specific
 .DS_Store

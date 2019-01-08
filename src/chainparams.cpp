@@ -55,11 +55,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
    (0, uint256("0x0000003abc56c19df53407e9a6fc187b7c1276132180f0832a234f1243419b31"))
-   (42162, uint256("0x000000000040fdca10cb0e34402f190478c078edaac7df521791dc91599d16da"));
+   (42162, uint256("0x000000000040fdca10cb0e34402f190478c078edaac7df521791dc91599d16da"))
+   (159550, uint256("3e9e6055127f696273c45f6d65e931d6fb3d47b9a6a86b466468f7b8f3931b08"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1536906166, // * UNIX timestamp of last checkpoint block
-    44656,    // * total number of transactions between genesis and last checkpoint
+    1546983955, // * UNIX timestamp of last checkpoint block
+    278066,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -114,7 +115,7 @@ public:
         pchMessageStart[1] = 0x04;
         pchMessageStart[2] = 0x15;
         pchMessageStart[3] = 0x14;
-        vAlertPubKey = ParseHex("0497dfcea626dca270cfe2eebf1160733b07352af966926e30058ca53dae05bbc71d64dbaa0c66e373211e324a23b361fc33e1e2dece1fb90afcefc707643a28f5");
+        vAlertPubKey = ParseHex("0x");
         nDefaultPort = 49108;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // NXBoost starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -129,7 +130,7 @@ public:
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 150000000 * COIN;
 		strDeveloperFeePayee = "MyEyax68fb2u3CCs14fYTpNc9kYkPUNKyj";
-		
+
         /** Height or Time Based Activations **/
         nLastPOWBlock = 47077;
         nModifierUpdateBlock = 615800;
@@ -142,7 +143,7 @@ public:
         nBlockEnforceInvalidUTXO = 200000; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 200000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
-		
+
         nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
@@ -170,7 +171,7 @@ public:
         vSeeds.push_back(CDNSSeedData("213.80.163.129", "213.80.163.129"));
         vSeeds.push_back(CDNSSeedData("185.159.82.234", "185.159.82.234"));
 
-		
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 52);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 52);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);
@@ -191,9 +192,9 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "049e53e687fdafd78fd42d730fad0e7ea1819396176a2cb85d7a76fa4559cdbd2c2f05330a6f5cbadb44a6c1d324f167e679e9f3e95d9d5649761a3e7f59bf4500";
+        strSporkKey = "04e5886cdbe0404a57071a3553013b8c84834928622abf1ad1182abd940faf32ee1ffd9ac1bd8d8c937626fdb39a964aeda6d07bf0e227d74289e63164ce0591e4";
         strSporkKeyOld = "049e53e687fdafd78fd42d730fad0e7ea1819396176a2cb85d7a76fa4559cdbd2c2f05330a6f5cbadb44a6c1d324f167e679e9f3e95d9d5649761a3e7f59bf4500";
-        strObfuscationPoolDummyAddress = "AcmpqXViWUXNroqVNYRdKjKrFM6PNa1oTM";
+        strObfuscationPoolDummyAddress = "N87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1536906166; //11/10/2017 @ 12:00am (UTC)
 
         /** Zerocoin */
@@ -269,9 +270,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-		
+
         vSeeds.push_back(CDNSSeedData("127.0.0.1", "127.0.0.1"));
-       
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83); // Testnet nxboost addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  // Testnet nxboost script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
