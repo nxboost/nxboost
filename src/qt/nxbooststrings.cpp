@@ -50,13 +50,13 @@ QT_TRANSLATE_NOOP("nxboost-core", ""
 "Delete all zerocoin spends and mints that have been recorded to the "
 "blockchain database and reindex them (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("nxboost-core", ""
-"Disable all NXBoost specific functionality (Masternodes, Zerocoin, HyperSend, "
+"Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("nxboost-core", ""
 "Distributed under the MIT software license, see the accompanying file "
 "COPYING or <http://www.opensource.org/licenses/mit-license.php>."),
 QT_TRANSLATE_NOOP("nxboost-core", ""
-"Enable HyperSend, show confirmations for locked transactions (bool, default: %s)"),
+"Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
 QT_TRANSLATE_NOOP("nxboost-core", ""
 "Enable automatic wallet backups triggered after each zNXB minting (0-1, "
 "default: %u)"),
@@ -182,7 +182,7 @@ QT_TRANSLATE_NOOP("nxboost-core", ""
 QT_TRANSLATE_NOOP("nxboost-core", ""
 "Support filtering of blocks and transaction with bloom filters (default: %u)"),
 QT_TRANSLATE_NOOP("nxboost-core", ""
-"HyperSend requires inputs with at least 6 confirmations, you might need to wait "
+"SwiftX requires inputs with at least 6 confirmations, you might need to wait "
 "a few minutes and try again."),
 QT_TRANSLATE_NOOP("nxboost-core", ""
 "This is a pre-release test build - use at your own risk - do not use for "
@@ -192,7 +192,8 @@ QT_TRANSLATE_NOOP("nxboost-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("nxboost-core", ""
-"Unable to bind to %s on this computer. NXBoost Core is probably already running."),
+"Unable to bind to %s on this computer. NXBoost Core is probably already "
+"running."),
 QT_TRANSLATE_NOOP("nxboost-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("nxboost-core", ""
@@ -283,10 +284,10 @@ QT_TRANSLATE_NOOP("nxboost-core", "Do you want to rebuild the block database now
 QT_TRANSLATE_NOOP("nxboost-core", "Done loading"),
 QT_TRANSLATE_NOOP("nxboost-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("nxboost-core", "Enable publish hash block in <address>"),
-QT_TRANSLATE_NOOP("nxboost-core", "Enable publish hash transaction (locked via HyperSend) in <address>"),
+QT_TRANSLATE_NOOP("nxboost-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
 QT_TRANSLATE_NOOP("nxboost-core", "Enable publish hash transaction in <address>"),
 QT_TRANSLATE_NOOP("nxboost-core", "Enable publish raw block in <address>"),
-QT_TRANSLATE_NOOP("nxboost-core", "Enable publish raw transaction (locked via HyperSend) in <address>"),
+QT_TRANSLATE_NOOP("nxboost-core", "Enable publish raw transaction (locked via SwiftX) in <address>"),
 QT_TRANSLATE_NOOP("nxboost-core", "Enable publish raw transaction in <address>"),
 QT_TRANSLATE_NOOP("nxboost-core", "Enable staking functionality (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("nxboost-core", "Enable the client to act as a masternode (0-1, default: %u)"),
@@ -454,7 +455,7 @@ QT_TRANSLATE_NOOP("nxboost-core", "Stop running after importing blocks from disk
 QT_TRANSLATE_NOOP("nxboost-core", "Submitted following entries to masternode: %u / %d"),
 QT_TRANSLATE_NOOP("nxboost-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
 QT_TRANSLATE_NOOP("nxboost-core", "Submitted to masternode, waiting in queue %s"),
-QT_TRANSLATE_NOOP("nxboost-core", "HyperSend options:"),
+QT_TRANSLATE_NOOP("nxboost-core", "SwiftX options:"),
 QT_TRANSLATE_NOOP("nxboost-core", "Synchronization failed"),
 QT_TRANSLATE_NOOP("nxboost-core", "Synchronization finished"),
 QT_TRANSLATE_NOOP("nxboost-core", "Synchronization pending..."),

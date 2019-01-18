@@ -630,8 +630,8 @@
         <translation>Show information about NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Modify configuration options for NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modify configuration options for nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -670,8 +670,8 @@
         <translation>Open Masternode configuration file</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Open a NXBoost: URI or payment request</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Open a nxboost: URI or payment request</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1576,16 +1576,16 @@ Please check the address and try again.</translation>
         <translation>Obfuscation Configuration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</translation>
     </message>
 </context>
 <context>
@@ -1714,14 +1714,14 @@ Please check the address and try again.</translation>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting NXBoost.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting nxboost.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2896,8 +2896,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>Add &amp;Recipient</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftTX</source>
+        <translation>SwiftTX</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2960,8 +2960,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>any available funds (not recommended)</translation>
     </message>
     <message>
-        <source>and HyperSend</source>
-        <translation>and HyperSend</translation>
+        <source>and SwiftTX</source>
+        <translation>and SwiftTX</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3099,8 +3099,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>Message:</translation>
     </message>
     <message>
-        <source>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
-        <translation>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</translation>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <translation>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3322,16 +3322,16 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>conflicted</translation>
     </message>
     <message>
-        <source>%1/offline (verified via hypersend)</source>
-        <translation>%1/offline (verified via hypersend)</translation>
+        <source>%1/offline (verified via swifttx)</source>
+        <translation>%1/offline (verified via swifttx)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via hypersend)</source>
-        <translation>%1/confirmed (verified via hypersend)</translation>
+        <source>%1/confirmed (verified via swifttx)</source>
+        <translation>%1/confirmed (verified via swifttx)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via hypersend)</source>
-        <translation>%1 confirmations (verified via hypersend)</translation>
+        <source>%1 confirmations (verified via swifttx)</source>
+        <translation>%1 confirmations (verified via swifttx)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -3346,24 +3346,24 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>%1 confirmations</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</translation>
+        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</translation>
+        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</translation>
     </message>
     <message>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</translation>
+        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification failed)</source>
-        <translation>%1/offline (HyperSend verification failed)</translation>
+        <source>%1/offline (SwiftTX verification failed)</source>
+        <translation>%1/offline (SwiftTX verification failed)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification failed)</source>
-        <translation>%1/confirmed (HyperSend verification failed)</translation>
+        <source>%1/confirmed (SwiftTX verification failed)</source>
+        <translation>%1/confirmed (SwiftTX verification failed)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3840,8 +3840,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
-        <translation>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</translation>
     </message>
 </context>
 <context>
@@ -3930,8 +3930,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
     </message>
     <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Obfuscation, HyperSend, Budgeting) (0-1, default: %u)</source>
-        <translation>Disable all NXBoost specific functionality (Masternodes, Obfuscation, HyperSend, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all NXBoost specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Disable all NXBoost specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3942,8 +3942,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>Enable spork administration functionality with the appropriate private key.</translation>
     </message>
     <message>
-        <source>Enable hypersend, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Enable hypersend, show confirmations for locked transactions (bool, default: %s)</translation>
+        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</translation>
     </message>
     <message>
         <source>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</source>
@@ -4074,8 +4074,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>Support filtering of blocks and transaction with bloom filters (default: %u)</translation>
     </message>
     <message>
-        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
+        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -4554,8 +4554,8 @@ for example: alertnotify=echo %%s | mail -s "NXBoost Alert" admin@foo.com
         <translation>Enable publish hash block in &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Enable publish hash transaction (locked via HyperSend) in &lt;address&gt;</translation>
+        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
+        <translation>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
@@ -4566,8 +4566,8 @@ for example: alertnotify=echo %%s | mail -s "NXBoost Alert" admin@foo.com
         <translation>Enable publish raw block in &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish raw transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Enable publish raw transaction (locked via HyperSend) in &lt;address&gt;</translation>
+        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
+        <translation>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
@@ -4938,8 +4938,8 @@ for example: alertnotify=echo %%s | mail -s "NXBoost Alert" admin@foo.com
         <translation>Submitted to masternode, waiting in queue %s</translation>
     </message>
     <message>
-        <source>HyperSend options:</source>
-        <translation>HyperSend options:</translation>
+        <source>SwiftTX options:</source>
+        <translation>SwiftTX options:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>

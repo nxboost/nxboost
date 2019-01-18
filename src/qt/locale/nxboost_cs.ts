@@ -633,8 +633,8 @@
         <translation>Zobraz informace o NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Upravit možnosti konfigurace pro NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Upravit možnosti konfigurace pro nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -673,8 +673,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Otevřít NXBoost: URI nebo platební žádost</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Otevřít nxboost: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -2395,7 +2395,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ZNxbControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

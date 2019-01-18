@@ -44,8 +44,8 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/NXBoost-Project/NXBoost.git
-        cd NXBoost
+        git clone https://github.com/nxboost/nxboost.git
+        cd nxboost
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
 
@@ -86,7 +86,7 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `nxboostd` for your own use.
 
-nxboostd/nxboost-cli binaries are not included in the nxboost-Qt.app bundle.
+nxboostd/nxboost-cli binaries are not included in the Nxboost-Qt.app bundle.
 
 If you are building `nxboostd` or `nxboost-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -97,7 +97,7 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the NXBoost-Qt.app
+Once dependencies are compiled, see release-process.md for how the Nxboost-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
@@ -109,18 +109,18 @@ directory. We have to first create the RPC configuration file, though.
 Run `./nxboostd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=nxboostrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/NXBoost/nxboost.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/NXBoost/nxboost.conf"
+    echo -e "rpcuser=nxboostrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/nxboost/nxboost.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/nxboost/nxboost.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/NXBoost/debug.log
+    tail -f $HOME/Library/Application\ Support/nxboost/debug.log
 
 Other commands:
 -------
 
-    ./nxboostd -daemon # to start the nxboost daemon.
+    ./nxboostd -daemon # to start the NXBoost daemon.
     ./nxboost-cli --help  # for a list of command-line options.
     ./nxboost-cli help    # When the daemon is running, to get a list of RPC commands

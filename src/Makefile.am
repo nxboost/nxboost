@@ -88,7 +88,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE
-# nxboost core #
+# NXBoost core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -133,7 +133,7 @@ BITCOIN_CORE_H = \
   invalid_outpoints.json.h \
   invalid_serials.json.h \
   kernel.h \
-  hypersend.h \
+  swifttx.h \
   key.h \
   keystore.h \
   leveldbwrapper.h \
@@ -158,9 +158,9 @@ BITCOIN_CORE_H = \
   random.h \
   reverselock.h \
   reverse_iterate.h \
-  rpc/client.h \
-  rpc/protocol.h \
-  rpc/server.h \
+  rpcclient.h \
+  rpcprotocol.h \
+  rpcserver.h \
   scheduler.h \
   script/interpreter.h \
   script/script.h \
@@ -227,14 +227,14 @@ libbitcoin_server_a_SOURCES = \
   noui.cpp \
   pow.cpp \
   rest.cpp \
-  rpc/blockchain.cpp \
-  rpc/masternode.cpp \
-  rpc/budget.cpp \
-  rpc/mining.cpp \
-  rpc/misc.cpp \
-  rpc/net.cpp \
-  rpc/rawtransaction.cpp \
-  rpc/server.cpp \
+  rpcblockchain.cpp \
+  rpcmasternode.cpp \
+  rpcmasternode-budget.cpp \
+  rpcmining.cpp \
+  rpcmisc.cpp \
+  rpcnet.cpp \
+  rpcrawtransaction.cpp \
+  rpcserver.cpp \
   script/sigcache.cpp \
   sporkdb.cpp \
   timedata.cpp \
@@ -266,7 +266,7 @@ libbitcoin_wallet_a_SOURCES = \
   obfuscation-relay.cpp \
   db.cpp \
   crypter.cpp \
-  hypersend.cpp \
+  swifttx.cpp \
   masternode.cpp \
   masternode-budget.cpp \
   masternode-payments.cpp \
@@ -399,7 +399,7 @@ libbitcoin_util_a_SOURCES = \
   chainparamsbase.cpp \
   clientversion.cpp \
   random.cpp \
-  rpc/protocol.cpp \
+  rpcprotocol.cpp \
   sync.cpp \
   uint256.cpp \
   util.cpp \
@@ -416,7 +416,7 @@ endif
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
-  rpc/client.cpp \
+  rpcclient.cpp \
   $(BITCOIN_CORE_H)
 
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h

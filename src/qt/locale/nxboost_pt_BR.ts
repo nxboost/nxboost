@@ -618,7 +618,7 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Enviar moedas para um endereço NXBoost</translation>
+        <translation>Enviar moedas para um endereço nxboost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
@@ -645,8 +645,8 @@
         <translation>Mostra informação sobre o NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Modificar opções de configuração para NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modificar opções de configuração para nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -685,8 +685,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Abrir um NXBoost: URI ou requisição de pagamento</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Abrir um nxboost: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -698,11 +698,11 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Mostra a ajuda da NXBoost Core para receber uma lista com possíveis opções de linha de comando NXBoost</translation>
+        <translation>Mostra a ajuda da NXBoost Core para receber uma lista com possíveis opções de linha de comando nxboost</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
-        <translation>Cliente Core NXBoost</translation>
+        <translation>Cliente Core nxboost</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1119,7 +1119,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid NXBoost address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de NXBoost</translation>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de nxboost</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1224,7 +1224,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>NXBoost Core will download and store a copy of the NXBoost block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>NXBoost Core vai baixar e armazenar uma cópia da blockchain NXBoost. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <translation>NXBoost Core vai baixar e armazenar uma cópia da blockchain nxboost. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1606,16 +1606,16 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Configuração de ofuscação</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela NXBoost's.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela nxboost's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela NXBoost's.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela nxboost's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela NXBoost's.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela nxboost's.</translation>
     </message>
 </context>
 <context>
@@ -1708,14 +1708,14 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do NXBoost.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do nxboost.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Connect to the NXBoost network through a SOCKS5 proxy.</source>
@@ -2723,8 +2723,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>(Smart fee não inicializada ainda. Isso geralmente leva alguns blocos...)</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3021,7 +3021,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço NXBoost</translation>
+        <translation>Assine a mensagem para provar que você possui este endereço nxboost</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>
@@ -3165,36 +3165,36 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>%1 confirmações</translation>
     </message>
     <message>
-        <source>%1/offline (verified via HyperSend)</source>
-        <translation>%1/offline (verificado via HyperSend)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (verificado via SwiftX)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via HyperSend)</source>
-        <translation>%1/confirmado (verificado via HyperSend)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/confirmado (verificado via SwiftX)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via HyperSend)</source>
-        <translation>%1 confirmações (verificado via HyperSend)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 confirmações (verificado via SwiftX)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (verificação HyperSend  em progresso - %2 de %3 assinaturas)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (verificação SwiftX  em progresso - %2 de %3 assinaturas)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmado (verificação HyperSend  em progresso - %2 de %3 assinaturas )</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/confirmado (verificação SwiftX  em progresso - %2 de %3 assinaturas )</translation>
     </message>
     <message>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmações ( verificação HyperSend  em progresso - %2 de %3 assinaturas)</translation>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 confirmações ( verificação SwiftX  em progresso - %2 de %3 assinaturas)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification failed)</source>
-        <translation>%1/offline ( verificação HyperSend falhou)</translation>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/offline ( verificação SwiftX falhou)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification failed)</source>
-        <translation>%1/confirmado (verificação HyperSend falhou)</translation>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/confirmado (verificação SwiftX falhou)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3635,7 +3635,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
     </message>
 </context>
 <context>
-    <name>ZNxbControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantia</translation>
@@ -4004,8 +4004,8 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
         <translation>Script inválido detectado.</translation>
     </message>
     <message>
-        <source>HyperSend options:</source>
-        <translation>opções HyperSend:</translation>
+        <source>SwiftX options:</source>
+        <translation>opções SwiftX:</translation>
     </message>
     <message>
         <source> unconfirmed transactions removed

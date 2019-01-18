@@ -1,8 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,7 +13,7 @@
 #include "masternode-sync.h"
 #include "net.h"
 #include "netbase.h"
-#include "rpc/server.h"
+#include "rpcserver.h"
 #include "spork.h"
 #include "timedata.h"
 #include "util.h"
@@ -57,7 +57,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"version\": xxxxx,           (numeric) the server version\n"
             "  \"protocolversion\": xxxxx,   (numeric) the protocol version\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total nxboost balance of the wallet (excluding zerocoins)\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total NXBoost balance of the wallet (excluding zerocoins)\n"
             "  \"zerocoinbalance\": xxxxxxx, (numeric) the total zerocoin balance of the wallet\n"
             "  \"blocks\": xxxxxx,           (numeric) the current number of blocks processed in the server\n"
             "  \"timeoffset\": xxxxx,        (numeric) the time offset\n"
@@ -337,15 +337,15 @@ UniValue validateaddress(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw runtime_error(
             "validateaddress \"nxboostaddress\"\n"
-            "\nReturn information about the given nxboost address.\n"
+            "\nReturn information about the given NXBoost address.\n"
 
             "\nArguments:\n"
-            "1. \"nxboostaddress\"     (string, required) The nxboost address to validate\n"
+            "1. \"nxboostaddress\"     (string, required) The NXBoost address to validate\n"
 
             "\nResult:\n"
             "{\n"
             "  \"isvalid\" : true|false,         (boolean) If the address is valid or not. If not, this is the only property returned.\n"
-            "  \"address\" : \"nxboostaddress\", (string) The nxboost address validated\n"
+            "  \"address\" : \"nxboostaddress\", (string) The NXBoost address validated\n"
             "  \"ismine\" : true|false,          (boolean) If the address is yours or not\n"
             "  \"isscript\" : true|false,        (boolean) If the key is a script\n"
             "  \"pubkey\" : \"publickeyhex\",    (string) The hex value of the raw public key\n"
@@ -456,9 +456,9 @@ UniValue createmultisig(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. nrequired      (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-            "2. \"keys\"       (string, required) A json array of keys which are nxboost addresses or hex-encoded public keys\n"
+            "2. \"keys\"       (string, required) A json array of keys which are NXBoost addresses or hex-encoded public keys\n"
             "     [\n"
-            "       \"key\"    (string) nxboost address or hex-encoded public key\n"
+            "       \"key\"    (string) NXBoost address or hex-encoded public key\n"
             "       ,...\n"
             "     ]\n"
 
@@ -494,7 +494,7 @@ UniValue verifymessage(const UniValue& params, bool fHelp)
             "\nVerify a signed message\n"
 
             "\nArguments:\n"
-            "1. \"nxboostaddress\"  (string, required) The nxboost address to use for the signature.\n"
+            "1. \"nxboostaddress\"  (string, required) The NXBoost address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
 

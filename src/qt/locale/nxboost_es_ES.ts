@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Cifrar la llave privada para esta dirección NXBoost</translation>
+        <translation>Cifrar la llave privada para esta dirección nxboost</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -555,7 +555,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección NXBoost</translation>
+        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección nxboost</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -645,7 +645,7 @@
     </message>
     </context>
 <context>
-    <name>ZNxbControlDialog</name>
+    <name>zNXBControlDialog</name>
     </context>
 <context>
     <name>nxboost-core</name>

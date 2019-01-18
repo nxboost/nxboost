@@ -1,10 +1,10 @@
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef NXBoost_UINT512_H
-#define NXBoost_UINT512_H
+#ifndef nxboost_UINT512_H
+#define nxboost_UINT512_H
 
 #include "arith_uint256.h"
 #include "uint256.h"
@@ -43,4 +43,4 @@ inline uint512 uint512S(const char* str)
     return rv;
 }
 
-#endif // NXBoost_UINT512_H
+#endif // nxboost_UINT512_H

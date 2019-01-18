@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ZNxbControlDialog</class>
- <widget class="QDialog" name="ZNxbControlDialog">
+ <class>zNXBControlDialog</class>
+ <widget class="QDialog" name="zNXBControlDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -57,14 +57,14 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="labelZNxb">
+        <widget class="QLabel" name="labelzNXB">
          <property name="text">
           <string>zNXB</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLabel" name="labelZNxb_int">
+        <widget class="QLabel" name="labelzNXB_int">
          <property name="text">
           <string>0</string>
          </property>
@@ -202,7 +202,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>ZNxbControlDialog</receiver>
+   <receiver>zNXBControlDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -218,7 +218,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>ZNxbControlDialog</receiver>
+   <receiver>zNXBControlDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

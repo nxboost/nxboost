@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Chiffrer la clef privée pour cette adresse NXBoost</translation>
+        <translation>Chiffrer la clef privée pour cette adresse nxboost</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -650,11 +650,11 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Envoyer des pièces à une adresse NXBoost</translation>
+        <translation>Envoyer des pièces à une adresse nxboost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
-        <translation>Requêtes de paiements (Génère des QR codes et des URIs NXBoost)</translation>
+        <translation>Requêtes de paiements (Génère des QR codes et des URIs nxboost)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -677,8 +677,8 @@
         <translation>Afficher les information concernant NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Modifier les options de configuration pour NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modifier les options de configuration pour nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,8 +717,8 @@
         <translation>Ouvrir le fichier de configuration de Masternode</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Ouvrir un NXBoost: URI ou requête de paiement</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Ouvrir un nxboost: URI ou requête de paiement</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -738,7 +738,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to NXBoost network</source>
-        <translation><numerusform>connexion(s) active(s) au réseau NXBoost</numerusform><numerusform>connexion(s) active(s) au réseau NXBoost</numerusform></translation>
+        <translation><numerusform>connexion(s) active(s) au réseau nxboost</numerusform><numerusform>connexion(s) active(s) au réseau nxboost</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1759,16 +1759,16 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Configuration de l'Obfuscation</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à base (%1 et 2 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration NXBoost.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à base (%1 et 2 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration nxboost.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à élevé (%1 et 8 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration NXBoost.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à élevé (%1 et 8 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration nxboost.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>L'Obfuscation a été réglé avec succès à maximum (%1 et 16 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration NXBoost.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>L'Obfuscation a été réglé avec succès à maximum (%1 et 16 tours). Vous pouvez changer ce paramètre à tout moment depuis l'écran de configuration nxboost.</translation>
     </message>
 </context>
 <context>
@@ -1873,14 +1873,14 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Réseau</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
-        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de NXBoost.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de nxboost.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Langue manquante ou traduction incomplète? Aidez-nous à traduire ce projet ici:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1892,7 +1892,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
     </message>
     <message>
         <source>Enable zNXB Automint</source>
-        <translation>Activé ZNXB Auto-monnayage</translation>
+        <translation>Activé zNXB Auto-monnayage</translation>
     </message>
     <message>
         <source>Percentage of incoming NXB which get automatically converted to zNXB via Zerocoin Protocol (min: 10%)</source>
@@ -2411,7 +2411,7 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <source>Available (mature and spendable) zNXB for spending
 
 zNXB are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>ZNXB disponible (mature et utilisable) pour les dépenses
+        <translation>zNXB disponible (mature et utilisable) pour les dépenses
 
 Les zNXB sont matures lorsqu'elles ont plus de 20 confirmations ET plus de 2 monnayent de même dénomination après ils était monnayer</translation>
     </message>
@@ -3440,7 +3440,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux NXBoost.</translation>
+        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux nxboost.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
@@ -3448,7 +3448,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the NXBoost network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux NXBoost.</translation>
+        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux nxboost.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3716,8 +3716,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>(Smart fee non encore initialisé, cela prend généralement quelques blocs ...)</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
@@ -3856,8 +3856,8 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
         <translation>L'adresse du destinataire n'est pas valide, revérifiez SVP.</translation>
     </message>
     <message>
-        <source>using HyperSend</source>
-        <translation>utilisation de HyperSend</translation>
+        <source>using SwiftX</source>
+        <translation>utilisation de SwiftX</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -4010,7 +4010,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse NXBoost</translation>
+        <translation>Signer le message pour prouver que vous possédez cette adresse nxboost</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>
@@ -4388,7 +4388,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
 </context>
 <context>
-    <name>ZNxbControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantité </translation>

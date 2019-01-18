@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1266,7 +1266,7 @@ bool CWalletDB::ReadCurrentSeedHash(uint256& hashSeed)
     return Read(string("seedhash"), hashSeed);
 }
 
-bool CWalletDB::WriteZNXBSeed(const uint256& hashSeed, const vector<unsigned char>& seed)
+bool CWalletDB::WritezNXBSeed(const uint256& hashSeed, const vector<unsigned char>& seed)
 {
     if (!WriteCurrentSeedHash(hashSeed))
         return error("%s: failed to write current seed hash", __func__);
@@ -1274,13 +1274,13 @@ bool CWalletDB::WriteZNXBSeed(const uint256& hashSeed, const vector<unsigned cha
     return Write(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::EraseZNXBSeed()
+bool CWalletDB::ErasezNXBSeed()
 {
     uint256 hash;
     if(!ReadCurrentSeedHash(hash)){
         return error("Failed to read a current seed hash");
     }
-    if(!WriteZNXBSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
+    if(!WritezNXBSeed(hash, ToByteVector(base_uint<256>(0) << 256))) {
         return error("Failed to write empty seed to wallet");
     }
     if(!WriteCurrentSeedHash(0)) {
@@ -1290,27 +1290,27 @@ bool CWalletDB::EraseZNXBSeed()
     return true;
 }
 
-bool CWalletDB::EraseZNXBSeed_deprecated()
+bool CWalletDB::ErasezNXBSeed_deprecated()
 {
     return Erase(string("dzs"));
 }
 
-bool CWalletDB::ReadZNXBSeed(const uint256& hashSeed, vector<unsigned char>& seed)
+bool CWalletDB::ReadzNXBSeed(const uint256& hashSeed, vector<unsigned char>& seed)
 {
     return Read(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::ReadZNXBSeed_deprecated(uint256& seed)
+bool CWalletDB::ReadzNXBSeed_deprecated(uint256& seed)
 {
     return Read(string("dzs"), seed);
 }
 
-bool CWalletDB::WriteZNXBCount(const uint32_t& nCount)
+bool CWalletDB::WritezNXBCount(const uint32_t& nCount)
 {
     return Write(string("dzc"), nCount);
 }
 
-bool CWalletDB::ReadZNXBCount(uint32_t& nCount)
+bool CWalletDB::ReadzNXBCount(uint32_t& nCount)
 {
     return Read(string("dzc"), nCount);
 }

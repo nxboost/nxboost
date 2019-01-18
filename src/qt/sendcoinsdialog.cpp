@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -64,20 +64,20 @@ SendCoinsDialog::SendCoinsDialog(QWidget* parent) : QDialog(parent, Qt::WindowSy
     QSettings settings;
     if (!settings.contains("bUseObfuScation"))
         settings.setValue("bUseObfuScation", false);
-    if (!settings.contains("bUseHyperSend"))
-        settings.setValue("bUseHyperSend", false);
+    if (!settings.contains("bUseSwiftTX"))
+        settings.setValue("bUseSwiftTX", false);
 
-    bool useHyperSend = settings.value("bUseHyperSend").toBool();
+    bool useSwiftTX = settings.value("bUseSwiftTX").toBool();
     if (fLiteMode) {
-        ui->checkHyperSend->setVisible(false);
+        ui->checkSwiftTX->setVisible(false);
         CoinControlDialog::coinControl->useObfuScation = false;
-        CoinControlDialog::coinControl->useHyperSend = false;
+        CoinControlDialog::coinControl->useSwiftTX = false;
     } else {
-        ui->checkHyperSend->setChecked(useHyperSend);
-        CoinControlDialog::coinControl->useHyperSend = useHyperSend;
+        ui->checkSwiftTX->setChecked(useSwiftTX);
+        CoinControlDialog::coinControl->useSwiftTX = useSwiftTX;
     }
 
-    connect(ui->checkHyperSend, SIGNAL(stateChanged(int)), this, SLOT(updateHyperSend()));
+    connect(ui->checkSwiftTX, SIGNAL(stateChanged(int)), this, SLOT(updateSwiftTX()));
 
     // Coin Control: clipboard actions
     QAction* clipboardQuantityAction = new QAction(tr("Copy quantity"), this);
@@ -136,10 +136,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget* parent) : QDialog(parent, Qt::WindowSy
     ui->checkBoxMinimumFee->setChecked(settings.value("fPayOnlyMinFee").toBool());
     ui->checkBoxFreeTx->setChecked(settings.value("fSendFreeTransactions").toBool());
     ui->checkzNXB->hide();
-
     minimizeFeeSection(settings.value("fFeeSectionMinimized").toBool());
-    // If HyperSend activated hide button 'Choose'. Show otherwise.
-    ui->buttonChooseFee->setVisible(!useHyperSend);
 }
 
 void SendCoinsDialog::setClientModel(ClientModel* clientModel)
@@ -270,12 +267,12 @@ void SendCoinsDialog::on_sendButton_clicked()
     QString strFee = "";
     recipients[0].inputType = ALL_COINS;
 
-    if (ui->checkHyperSend->isChecked()) {
-        recipients[0].useHyperSend = true;
+    if (ui->checkSwiftTX->isChecked()) {
+        recipients[0].useSwiftTX = true;
         strFunds += " ";
-        strFunds += tr("using HyperSend");
+        strFunds += tr("using SwiftX");
     } else {
-        recipients[0].useHyperSend = false;
+        recipients[0].useSwiftTX = false;
     }
 
 
@@ -581,28 +578,11 @@ void SendCoinsDialog::updateDisplayUnit()
     updateSmartFeeLabel();
 }
 
-void SendCoinsDialog::updateHyperSend()
+void SendCoinsDialog::updateSwiftTX()
 {
-    bool useHyperSend = ui->checkHyperSend->isChecked();
-
     QSettings settings;
-    settings.setValue("bUseHyperSend", useHyperSend);
-    CoinControlDialog::coinControl->useHyperSend = useHyperSend;
-
-    // If HyperSend activated
-    if (useHyperSend) {
-        // minimize the Fee Section (if open)
-        minimizeFeeSection(true);
-        // set the slider to the max
-        ui->sliderSmartFee->setValue(24);
-    }
-
-    // If HyperSend activated hide button 'Choose'. Show otherwise.
-    ui->buttonChooseFee->setVisible(!useHyperSend);
-
-    // Update labels and controls
-    updateFeeSectionControls();
-    updateSmartFeeLabel();
+    settings.setValue("bUseSwiftTX", ui->checkSwiftTX->isChecked());
+    CoinControlDialog::coinControl->useSwiftTX = ui->checkSwiftTX->isChecked();
     coinControlUpdateLabels();
 }
 
@@ -702,7 +682,7 @@ void SendCoinsDialog::setMinimumFee()
 
 void SendCoinsDialog::updateFeeSectionControls()
 {
-    ui->sliderSmartFee->setEnabled(ui->radioSmartFee->isChecked() && !ui->checkHyperSend->isChecked());
+    ui->sliderSmartFee->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelSmartFee->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelSmartFee2->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelSmartFee3->setEnabled(ui->radioSmartFee->isChecked());
@@ -735,9 +715,7 @@ void SendCoinsDialog::updateFeeMinimizedLabel()
     if (!model || !model->getOptionsModel())
         return;
 
-    if (ui->checkHyperSend->isChecked()) {
-        ui->labelFeeMinimized->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), 1000000));
-    } else if (ui->radioSmartFee->isChecked())
+    if (ui->radioSmartFee->isChecked())
         ui->labelFeeMinimized->setText(ui->labelSmartFee->text());
     else {
         ui->labelFeeMinimized->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), ui->customFee->value()) +
@@ -758,12 +736,7 @@ void SendCoinsDialog::updateSmartFeeLabel()
 
     int nBlocksToConfirm = (int)25 - (int)std::max(0, std::min(24, ui->sliderSmartFee->value()));
     CFeeRate feeRate = mempool.estimateFee(nBlocksToConfirm);
-    // if HyperSend checked, display it in the label
-    if (ui->checkHyperSend->isChecked())
-    {
-        ui->labelFeeEstimation->setText(tr("Estimated to get 6 confirmations near instantly with <b>HyperSend</b>!"));
-        ui->labelSmartFee2->hide();
-    } else if (feeRate <= CFeeRate(0)) // not enough data => minfee
+    if (feeRate <= CFeeRate(0)) // not enough data => minfee
     {
         ui->labelSmartFee->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), CWallet::minTxFee.GetFeePerK()) + "/kB");
         ui->labelSmartFee2->show(); // (Smart fee not initialized yet. This usually takes a few blocks...)

@@ -1,5 +1,5 @@
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -189,13 +189,13 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
 
     //On a specific block, a recalculation of the accumulators will be forced
     if (nHeight == Params().Zerocoin_Block_RecalculateAccumulators()) {
-        mapAccumulators.Reset();
-        if (!mapAccumulators.Load(chainActive[Params().Zerocoin_Block_LastGoodCheckpoint()]->nAccumulatorCheckpoint))
-            return error("%s: failed to reset to previous checkpoint when recalculating accumulators", __func__);
+      mapAccumulators.Reset(Params().Zerocoin_Params(false));
+//        if (!mapAccumulators.Load(chainActive[Params().Zerocoin_Block_LastGoodCheckpoint()]->nAccumulatorCheckpoint))
+//            return error("%s: failed to reset to previous checkpoint when recalculating accumulators", __func__);
 
         // Erase the checkpoints from the period of time that bad mints were being made
-        if (!EraseCheckpoints(Params().Zerocoin_Block_LastGoodCheckpoint() + 1, nHeight))
-            return error("%s : failed to erase Checkpoints while recalculating checkpoints", __func__);
+//        if (!EraseCheckpoints(Params().Zerocoin_Block_LastGoodCheckpoint() + 1, nHeight))
+//            return error("%s : failed to erase Checkpoints while recalculating checkpoints", __func__);
 
         nHeightCheckpoint = Params().Zerocoin_Block_LastGoodCheckpoint();
         return true;
@@ -204,16 +204,9 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
     if (nHeight >= Params().Zerocoin_Block_V2_Start()) {
         //after v2_start, accumulators need to use v2 params
         mapAccumulators.Reset(Params().Zerocoin_Params(false));
-
-        // 20 after v2 start is when the new checkpoints will be in the block, so don't need to load hard checkpoints
         if (nHeight <= Params().Zerocoin_Block_V2_Start() + 20) {
             //Load hard coded checkpointed value
-            AccumulatorCheckpoints::Checkpoint checkpoint = AccumulatorCheckpoints::GetClosestCheckpoint(nHeight,
-                                                                                                         nHeightCheckpoint);
-            if (nHeightCheckpoint < 0)
-                return error("%s: failed to load hard-checkpoint for block %s", __func__, nHeight);
-
-            mapAccumulators.Load(checkpoint);
+            nHeightCheckpoint = Params().Zerocoin_Block_LastGoodCheckpoint();
             return true;
         }
     }
@@ -250,7 +243,7 @@ bool CalculateAccumulatorCheckpoint(int nHeight, uint256& nCheckpoint, Accumulat
         return error("%s: failed to initialize accumulators", __func__);
 
     //Whether this should filter out invalid/fraudulent outpoints
-    bool fFilterInvalid = nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
+    bool fFilterInvalid = nHeight >= Params().Zerocoin_Block_V2_Start();
 
     //Accumulate all coins over the last ten blocks that havent been accumulated (height - 20 through height - 11)
     int nTotalMintsFound = 0;
@@ -299,7 +292,7 @@ bool CalculateAccumulatorCheckpoint(int nHeight, uint256& nCheckpoint, Accumulat
 
 bool InvalidCheckpointRange(int nHeight)
 {
-    return nHeight > Params().Zerocoin_Block_LastGoodCheckpoint() && nHeight < Params().Zerocoin_Block_RecalculateAccumulators();
+    return nHeight > Params().Zerocoin_Block_LastGoodCheckpoint() && nHeight < Params().Zerocoin_Block_V2_Start();
 }
 
 bool ValidateAccumulatorCheckpoint(const CBlock& block, CBlockIndex* pindex, AccumulatorMap& mapAccumulators)
@@ -398,20 +391,20 @@ bool GetAccumulatorValue(int& nHeight, const libzerocoin::CoinDenomination denom
     if (nHeight > Params().Zerocoin_Block_V2_Start() + 20)
         return GetAccumulatorValueFromDB(nCheckpointBeforeMint, denom, bnAccValue);
 
-    int nHeightCheckpoint = 0;
-    AccumulatorCheckpoints::Checkpoint checkpoint = AccumulatorCheckpoints::GetClosestCheckpoint(nHeight, nHeightCheckpoint);
-    if (nHeightCheckpoint < 0) {
+//    int nHeightCheckpoint = 0;
+//    AccumulatorCheckpoints::Checkpoint checkpoint = AccumulatorCheckpoints::GetClosestCheckpoint(nHeight, nHeightCheckpoint);
+//    if (nHeightCheckpoint < 0) {
         //Start at the first zerocoin
         libzerocoin::Accumulator accumulator(Params().Zerocoin_Params(false), denom);
         bnAccValue = accumulator.getValue();
-        nHeight = Params().Zerocoin_StartHeight() + 10;
+        nHeight = Params().Zerocoin_Block_LastGoodCheckpoint() + 10;
         return true;
-    }
+//    }
 
-    nHeight = nHeightCheckpoint;
-    bnAccValue = checkpoint.at(denom);
+//    nHeight = nHeightCheckpoint;
+//    bnAccValue = checkpoint.at(denom);
 
-    return true;
+//    return true;
 }
 
 bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator, AccumulatorWitness& witness, int nSecurityLevel, int& nMintsAdded, string& strError, CBlockIndex* pindexCheckpoint)
@@ -474,7 +467,7 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
     RandomizeSecurityLevel(nSecurityLevel); //make security level not always the same and predictable
     libzerocoin::Accumulator witnessAccumulator = accumulator;
 
-    bool fDoubleCounted = false;
+//    bool fDoubleCounted = false;
     while (pindex) {
         if (pindex->nHeight != nAccStartHeight && pindex->pprev->nAccumulatorCheckpoint != pindex->nAccumulatorCheckpoint)
             ++nCheckpointsAdded;
@@ -483,8 +476,8 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
         bool fSecurityLevelSatisfied = (nSecurityLevel != 100 && nCheckpointsAdded >= nSecurityLevel);
         if (pindex->nHeight >= nHeightStop || fSecurityLevelSatisfied) {
             //If this height is within the invalid range (when fraudulent coins were being minted), then continue past this range
-            if(InvalidCheckpointRange(pindex->nHeight))
-                continue;
+//            if(InvalidCheckpointRange(pindex->nHeight))
+//                continue;
 
             bnAccValue = 0;
             uint256 nCheckpointSpend = chainActive[pindex->nHeight + 10]->nAccumulatorCheckpoint;
@@ -498,11 +491,11 @@ bool GenerateAccumulatorWitness(const PublicCoin &coin, Accumulator& accumulator
         nMintsAdded += AddBlockMintsToAccumulator(coin, nHeightMintAdded, pindex, &witnessAccumulator, true);
 
         // 10 blocks were accumulated twice when zNXB v2 was activated
-        if (pindex->nHeight == 1050010 && !fDoubleCounted) {
+/*        if (pindex->nHeight == 1050010 && !fDoubleCounted) {
             pindex = chainActive[1050000];
             fDoubleCounted = true;
             continue;
-        }
+        }*/
 
         pindex = chainActive.Next(pindex);
     }

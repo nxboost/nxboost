@@ -1,4 +1,4 @@
-TOR SUPPORT IN NXBoost
+TOR SUPPORT IN nxboost
 =======================
 
 It is possible to run NXBoost as a Tor hidden service, and connect to such services.
@@ -71,7 +71,7 @@ NumEntryGuards 8
 The directory can be different of course, but (both) port numbers should be equal to
 your nxboostd's P2P listen port (49108 by default).
 ```
--externalip=X   You can tell nxboost about its publicly reachable address using
+-externalip=X   You can tell NXBoost about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
                 /var/lib/tor/nxboost-service/hostname. Onion addresses are given

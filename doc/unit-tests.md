@@ -6,7 +6,7 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the nxboostd tests manually, launch src/test/test_nxboost .
+To run the nxboostd tests manually, launch src/test/test_NXBoost .
 
 To add more nxboostd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that

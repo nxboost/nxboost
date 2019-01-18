@@ -1,10 +1,10 @@
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef NXBoost_CSPORKDB_H
-#define NXBoost_CSPORKDB_H
+#ifndef nxboost_CSPORKDB_H
+#define nxboost_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -26,4 +26,4 @@ public:
 };
 
 
-#endif //NXBoost_CSPORKDB_H
+#endif //nxboost_CSPORKDB_H

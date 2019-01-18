@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=nxboost
+Comment=NXBoost P2P Cryptocurrency
+Comment[fr]=nxboost, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=nxboost, eşten eşe kriptografik sanal para birimi
+Exec=nxboost-qt %u
+Terminal=false
+Type=Application
+Icon=nxboost128
+MimeType=x-scheme-handler/nxboost;
+Categories=Office;Finance;

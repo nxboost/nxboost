@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
 This issue tracker is only for technical issues related to NXBoost Core.
-General NXBoost questions and/or support requests and are best directed to the [NXBoost Discord](https://discord.NXBoost.org).
+General NXBoost questions and/or support requests and are best directed to the [NXBoost Discord](https://discord.gg/mVBPKK8).
 
 ### Describe the issue
 

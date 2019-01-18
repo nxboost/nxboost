@@ -1,8 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -127,22 +127,21 @@ public:
         nTargetTimespan = 1 * 60; // NXBoost: 1 day
         nTargetSpacing = 1 * 60;  // NXBoost: 1 minute
         nMaturity = 29;
-        nMasternodeCountDrift = 20;
+        nMasternodeCountDrift = 4;
         nMaxMoneyOut = 150000000 * COIN;
-		strDeveloperFeePayee = "MyEyax68fb2u3CCs14fYTpNc9kYkPUNKyj";
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 47077;
-        nModifierUpdateBlock = 615800;
-        nZerocoinStartHeight = 200000;
+        nModifierUpdateBlock = 170080;
+        nZerocoinStartHeight = 47078;
         nZerocoinStartTime = 1546300800;
-        nBlockEnforceSerialRange = 200000; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 200000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 200000; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 200000; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 200000; //Start enforcing the invalid UTXO's
+        nBlockEnforceSerialRange = 2000000; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 2000000; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 2000000; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 47078; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 2000000; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 200000; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockZerocoinV2 = 170080; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
 
         nEnforceNewSporkKey = 1525158000; //!> Sporks signed after (GMT): Tuesday, May 1, 2018 7:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
@@ -166,10 +165,9 @@ public:
         assert(hashGenesisBlock == uint256("0x0000003abc56c19df53407e9a6fc187b7c1276132180f0832a234f1243419b31"));
         assert(genesis.hashMerkleRoot == uint256("0x32268b701d69e7aa6be82e213a3d6b309a2090ef4e0b6893d472f58a748de5c8"));
 
-       vSeeds.push_back(CDNSSeedData("89.40.7.126", "89.40.7.126"));
-       vSeeds.push_back(CDNSSeedData("89.40.4.42", "89.40.4.42"));
-        vSeeds.push_back(CDNSSeedData("213.80.163.129", "213.80.163.129"));
-        vSeeds.push_back(CDNSSeedData("185.159.82.234", "185.159.82.234"));
+       vSeeds.push_back(CDNSSeedData("n1.nxboost.com", "n1.nxboost.com"));
+       vSeeds.push_back(CDNSSeedData("n2.nxboost.com", "n2.nxboost.com"));
+       vSeeds.push_back(CDNSSeedData("n3.nxboost.com", "n3.nxboost.com"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 52);
@@ -242,8 +240,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // NXBoost: 1 day
-        nTargetSpacing = 1 * 60;  // NXBoost: 1 minute
+        nTargetTimespan = 1 * 60; // nxboost: 1 day
+        nTargetSpacing = 1 * 60;  // nxboost: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -273,8 +271,8 @@ public:
 
         vSeeds.push_back(CDNSSeedData("127.0.0.1", "127.0.0.1"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83); // Testnet nxboost addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  // Testnet nxboost script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83); // Testnet NXBoost addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);  // Testnet NXBoost script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 193);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
 
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
@@ -326,8 +324,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // NXBoost: 1 day
-        nTargetSpacing = 1 * 60;        // NXBoost: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // nxboost: 1 day
+        nTargetSpacing = 1 * 60;        // nxboost: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1509321603;
         genesis.nBits = 0x1e0ffff0;
@@ -335,7 +333,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 55700;
-        assert(hashGenesisBlock == uint256("0x00000bed4959f3ef5d2fff420ae551216c7108e5faddde8aa10fb039be46d0a0"));
+            assert(hashGenesisBlock == uint256("0x00000bed4959f3ef5d2fff420ae551216c7108e5faddde8aa10fb039be46d0a0"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.

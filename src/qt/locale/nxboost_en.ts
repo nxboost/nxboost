@@ -54,7 +54,7 @@
         <translation>C&amp;lose</translation>
     </message>
     <message>
-        <location filename="../addressbookpage.cpp" line="+44"/>
+        <location filename="../addressbookpage.cpp" line="+45"/>
         <source>Choose the address to send coins to</source>
         <translation>Choose the address to send coins to</translation>
     </message>
@@ -127,7 +127,7 @@
 <context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+199"/>
+        <location filename="../addresstablemodel.cpp" line="+200"/>
         <source>Label</source>
         <translation>Label</translation>
     </message>
@@ -175,7 +175,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+48"/>
+        <location filename="../askpassphrasedialog.cpp" line="+49"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
     </message>
@@ -296,7 +296,7 @@
 <context>
     <name>BanTableModel</name>
     <message>
-        <location filename="../bantablemodel.cpp" line="+89"/>
+        <location filename="../bantablemodel.cpp" line="+90"/>
         <source>IP/Netmask</source>
         <translation type="unfinished"></translation>
     </message>
@@ -431,7 +431,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bip38tooldialog.cpp" line="+30"/>
+        <location filename="../bip38tooldialog.cpp" line="+31"/>
         <source>Click &quot;Decrypt Key&quot; to compute key</source>
         <translation type="unfinished"></translation>
     </message>
@@ -516,7 +516,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+128"/>
+        <location filename="../bitcoingui.cpp" line="+129"/>
         <source>Wallet</source>
         <translation>Wallet</translation>
     </message>
@@ -872,7 +872,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for NXBoost</source>
+        <source>Modify configuration options for nxboost</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -922,7 +922,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Open a NXBoost: URI or payment request</source>
+        <source>Open a nxboost: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1152,7 +1152,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../blockexplorer.cpp" line="+480"/>
+        <location filename="../blockexplorer.cpp" line="+481"/>
         <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (nxboost.conf).</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1160,7 +1160,7 @@ Address: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+81"/>
+        <location filename="../clientmodel.cpp" line="+82"/>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1283,7 +1283,7 @@ Address: %4
         <translation>Priority</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+52"/>
+        <location filename="../coincontroldialog.cpp" line="+53"/>
         <source>Copy address</source>
         <translation>Copy address</translation>
     </message>
@@ -1501,7 +1501,7 @@ Address: %4
         <translation>The address associated with this address list entry. This can only be modified for sending addresses.</translation>
     </message>
     <message>
-        <location filename="../editaddressdialog.cpp" line="+28"/>
+        <location filename="../editaddressdialog.cpp" line="+29"/>
         <source>New receiving address</source>
         <translation>New receiving address</translation>
     </message>
@@ -1544,7 +1544,7 @@ Address: %4
 <context>
     <name>FreespaceChecker</name>
     <message>
-        <location filename="../intro.cpp" line="+70"/>
+        <location filename="../intro.cpp" line="+71"/>
         <source>A new data directory will be created.</source>
         <translation>A new data directory will be created.</translation>
     </message>
@@ -1572,7 +1572,7 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <location filename="../utilitydialog.cpp" line="+37"/>
+        <location filename="../utilitydialog.cpp" line="+38"/>
         <source>version</source>
         <translation>version</translation>
     </message>
@@ -1779,7 +1779,7 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../masternodelist.cpp" line="+52"/>
+        <location filename="../masternodelist.cpp" line="+53"/>
         <source>Start alias</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1955,7 +1955,7 @@ MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../multisenddialog.cpp" line="+68"/>
+        <location filename="../multisenddialog.cpp" line="+69"/>
         <source>(no label)</source>
         <translation type="unfinished">(no label)</translation>
     </message>
@@ -2189,7 +2189,7 @@ Please be patient after clicking import.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../multisigdialog.cpp" line="+299"/>
+        <location filename="../multisigdialog.cpp" line="+300"/>
         <source>Invalid Tx Hash.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2282,7 +2282,7 @@ Please be patient after clicking import.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../obfuscationconfig.cpp" line="+47"/>
+        <location filename="../obfuscationconfig.cpp" line="+48"/>
         <location line="+14"/>
         <location line="+14"/>
         <source>Obfuscation Configuration</source>
@@ -2290,17 +2290,17 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2327,7 +2327,7 @@ Please be patient after clicking import.</source>
         <translation>Select payment request file</translation>
     </message>
     <message>
-        <location filename="../openuridialog.cpp" line="+47"/>
+        <location filename="../openuridialog.cpp" line="+48"/>
         <source>Select payment request file to open</source>
         <translation>Select payment request file to open</translation>
     </message>
@@ -2441,13 +2441,13 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2614,12 +2614,12 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
         <translation>&amp;Cancel</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+89"/>
+        <location filename="../optionsdialog.cpp" line="+90"/>
         <source>Any</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+25"/>
         <source>default</source>
         <translation>default</translation>
     </message>
@@ -2834,7 +2834,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Recent transactions</translation>
     </message>
     <message>
-        <location filename="../overviewpage.cpp" line="+149"/>
+        <location filename="../overviewpage.cpp" line="+150"/>
         <location line="+1"/>
         <source>out of sync</source>
         <translation>out of sync</translation>
@@ -2866,7 +2866,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
 <context>
     <name>PaymentServer</name>
     <message>
-        <location filename="../paymentserver.cpp" line="+297"/>
+        <location filename="../paymentserver.cpp" line="+298"/>
         <location line="+209"/>
         <location line="+33"/>
         <location line="+104"/>
@@ -2988,7 +2988,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
 <context>
     <name>PeerTableModel</name>
     <message>
-        <location filename="../peertablemodel.cpp" line="+115"/>
+        <location filename="../peertablemodel.cpp" line="+116"/>
         <source>Address/Hostname</source>
         <translation>Address/Hostname</translation>
     </message>
@@ -3006,7 +3006,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <location filename="../forms/privacydialog.ui" line="+184"/>
+        <location filename="../forms/privacydialog.ui" line="+182"/>
         <source>Zerocoin Actions:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3017,26 +3017,26 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+64"/>
-        <location filename="../privacydialog.cpp" line="+163"/>
+        <location filename="../privacydialog.cpp" line="+168"/>
         <location line="+111"/>
         <source>Mint Zerocoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <location line="+351"/>
+        <location line="+338"/>
         <location line="+30"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-371"/>
-        <location line="+651"/>
+        <location line="-358"/>
+        <location line="+643"/>
         <source>zNXB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-644"/>
+        <location line="-636"/>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3086,23 +3086,23 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+14"/>
         <source>Status and/or Mesages from the last Mint Action.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-474"/>
+        <location line="-459"/>
         <source>PRIVACY</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+182"/>
+        <location line="+180"/>
         <location line="+52"/>
         <source>Enter an amount of NXB to convert to zNXB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+301"/>
+        <location line="+288"/>
         <source>zNXB Control</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3118,13 +3118,13 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+37"/>
-        <location filename="../privacydialog.cpp" line="+537"/>
+        <location filename="../privacydialog.cpp" line="+549"/>
         <source>Spend Zerocoin. Without &apos;Pay To:&apos; address creates payments to yourself.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <location filename="../privacydialog.cpp" line="-488"/>
+        <location filename="../privacydialog.cpp" line="-500"/>
         <location line="+4"/>
         <location line="+12"/>
         <location line="+84"/>
@@ -3153,8 +3153,10 @@ zNXB are mature when they have more than 20 confirmations AND more than 2 mints 
     </message>
     <message>
         <location line="+5"/>
-        <location line="+421"/>
-        <location line="+544"/>
+        <location line="+426"/>
+        <location line="+650"/>
+        <location line="+31"/>
+        <location line="+31"/>
         <location line="+31"/>
         <location line="+31"/>
         <location line="+31"/>
@@ -3167,7 +3169,7 @@ zNXB are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-1190"/>
+        <location line="-1363"/>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3182,7 +3184,7 @@ zNXB are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+37"/>
         <source>Pay &amp;To:</source>
         <translation type="unfinished">Pay &amp;To:</translation>
     </message>
@@ -3212,7 +3214,7 @@ zNXB are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation type="unfinished">Alt+P</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+19"/>
         <source>&amp;Label:</source>
         <translation type="unfinished">&amp;Label:</translation>
     </message>
@@ -3222,17 +3224,17 @@ zNXB are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation type="unfinished">Enter a label for this address to add it to the list of used addresses</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+17"/>
         <source>A&amp;mount:</source>
         <translation type="unfinished">A&amp;mount:</translation>
     </message>
     <message>
-        <location line="+63"/>
+        <location line="+52"/>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+24"/>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3242,7 +3244,7 @@ zNXB are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+41"/>
         <source>Information about the available Zerocoin funds.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3281,12 +3283,24 @@ zNXB are mature when they have more than 20 confirmations AND more than 2 mints 
         <location line="+53"/>
         <location line="+53"/>
         <location line="+53"/>
+        <location line="+53"/>
+        <location line="+53"/>
         <source>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="-82"/>
+        <source>Denom. with value 10000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Denom. with value 50000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+69"/>
         <source>Show the current status of automatic zNXB minting.
 
 To change the status (restart required):
@@ -3350,7 +3364,9 @@ To change the percentage (no restart required):
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-722"/>
+        <location line="-828"/>
+        <location line="+53"/>
+        <location line="+53"/>
         <location line="+53"/>
         <location line="+53"/>
         <location line="+53"/>
@@ -3362,7 +3378,7 @@ To change the percentage (no restart required):
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-354"/>
+        <location line="-460"/>
         <source>Denominations with value 5:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3413,11 +3429,13 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="+50"/>
+        <location line="+106"/>
+        <location line="+53"/>
         <source>Denominations with value 1000:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-156"/>
         <source>Denom. with value 1000:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3432,7 +3450,17 @@ To change the percentage (no restart required):
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+553"/>
+        <location line="+521"/>
+        <source>Denom. 10000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Denom. 50000:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+167"/>
         <source>Priority:</source>
         <translation type="unfinished">Priority:</translation>
     </message>
@@ -3468,9 +3496,9 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="+75"/>
-        <location filename="../privacydialog.cpp" line="-429"/>
+        <location filename="../privacydialog.cpp" line="-433"/>
         <location line="+1"/>
-        <location line="+536"/>
+        <location line="+540"/>
         <location line="+1"/>
         <source>Coins automatically selected</source>
         <translation type="unfinished"></translation>
@@ -3506,18 +3534,18 @@ To change the percentage (no restart required):
         <translation type="unfinished">Change:</translation>
     </message>
     <message>
-        <location filename="../privacydialog.cpp" line="-536"/>
+        <location filename="../privacydialog.cpp" line="-540"/>
         <source>out of sync</source>
         <translation type="unfinished">out of sync</translation>
     </message>
     <message>
         <location line="+6"/>
-        <location line="+121"/>
+        <location line="+125"/>
         <source>Mint Status: Okay</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-115"/>
+        <location line="-119"/>
         <source>Copy quantity</source>
         <translation type="unfinished">Copy quantity</translation>
     </message>
@@ -3527,7 +3555,7 @@ To change the percentage (no restart required):
         <translation type="unfinished">Copy amount</translation>
     </message>
     <message>
-        <location line="+184"/>
+        <location line="+188"/>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
 Please be patient...</source>
         <translation type="unfinished"></translation>
@@ -3556,7 +3584,7 @@ Maximum allowed: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+267"/>
+        <location line="+279"/>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3577,13 +3605,13 @@ Maximum allowed: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-639"/>
+        <location line="-651"/>
         <location line="+111"/>
         <source>zNXB is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-212"/>
+        <location line="-216"/>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3623,13 +3651,23 @@ Maximum allowed: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="+1"/>
+        <source>Denom. with value &lt;b&gt;10000&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Denom. with value &lt;b&gt;50000&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+3"/>
-        <location line="+705"/>
+        <location line="+719"/>
         <source>AutoMint Status:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-702"/>
+        <location line="-716"/>
         <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3666,6 +3704,16 @@ Maximum allowed: </source>
     <message>
         <location line="+1"/>
         <source>Denom. &lt;b&gt;5000&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Denom. &lt;b&gt;10000&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Denom. &lt;b&gt;50000&lt;/b&gt;:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3799,7 +3847,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location line="+336"/>
+        <location line="+348"/>
         <source>PrivacyDialog</source>
         <comment>Enter an amount of NXB to convert to zNXB</comment>
         <translation type="unfinished">
@@ -3808,7 +3856,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         </translation>
     </message>
     <message>
-        <location line="-308"/>
+        <location line="-320"/>
         <source>denomination: </source>
         <translation type="unfinished"></translation>
     </message>
@@ -3851,12 +3899,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bitcoinunits.cpp" line="+252"/>
+        <location filename="../bitcoinunits.cpp" line="+253"/>
         <source>Amount</source>
         <translation>Amount</translation>
     </message>
     <message>
-        <location filename="../guiutil.cpp" line="+113"/>
+        <location filename="../guiutil.cpp" line="+114"/>
         <source>Enter a NXBoost address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3915,7 +3963,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>QRImageWidget</name>
     <message>
-        <location filename="../receiverequestdialog.cpp" line="+36"/>
+        <location filename="../receiverequestdialog.cpp" line="+37"/>
         <source>&amp;Save Image...</source>
         <translation>&amp;Save Image...</translation>
     </message>
@@ -4115,7 +4163,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+59"/>
-        <location filename="../rpcconsole.cpp" line="+331"/>
+        <location filename="../rpcconsole.cpp" line="+332"/>
         <location line="+717"/>
         <source>Select a peer to view detailed information.</source>
         <translation>Select a peer to view detailed information.</translation>
@@ -4571,7 +4619,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Remove</translation>
     </message>
     <message>
-        <location filename="../receivecoinsdialog.cpp" line="+39"/>
+        <location filename="../receivecoinsdialog.cpp" line="+40"/>
         <source>Copy label</source>
         <translation>Copy label</translation>
     </message>
@@ -4657,7 +4705,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="+28"/>
+        <location filename="../recentrequeststablemodel.cpp" line="+29"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -4696,7 +4744,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+17"/>
-        <location filename="../sendcoinsdialog.cpp" line="+231"/>
+        <location filename="../sendcoinsdialog.cpp" line="+232"/>
         <location line="+25"/>
         <location line="+396"/>
         <source>Send Coins</source>
@@ -4844,7 +4892,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+306"/>
-        <source>HyperSend</source>
+        <source>SwiftX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5046,7 +5094,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-329"/>
-        <source>using HyperSend</source>
+        <source>using SwiftX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5183,7 +5231,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5209,7 +5257,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>This is a verified payment request.</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+31"/>
+        <location filename="../sendcoinsentry.cpp" line="+32"/>
         <source>Enter a label for this address to add it to your address book</source>
         <translation>Enter a label for this address to add it to your address book</translation>
     </message>
@@ -5338,7 +5386,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Reset all verify message fields</translation>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="+31"/>
+        <location filename="../signverifymessagedialog.cpp" line="+32"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
         <translation>Click &quot;Sign Message&quot; to generate signature</translation>
     </message>
@@ -5412,7 +5460,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <location filename="../splashscreen.cpp" line="+36"/>
+        <location filename="../splashscreen.cpp" line="+37"/>
         <source>NXBoost Core</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5437,7 +5485,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../networkstyle.cpp" line="+20"/>
+        <location filename="../networkstyle.cpp" line="+21"/>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
@@ -5445,7 +5493,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>TrafficGraphWidget</name>
     <message>
-        <location filename="../trafficgraphwidget.cpp" line="+79"/>
+        <location filename="../trafficgraphwidget.cpp" line="+80"/>
         <source>KB/s</source>
         <translation>KB/s</translation>
     </message>
@@ -5453,7 +5501,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
-        <location filename="../transactiondesc.cpp" line="+33"/>
+        <location filename="../transactiondesc.cpp" line="+34"/>
         <source>Open for %n more block(s)</source>
         <translation>
             <numerusform>Open for %n more block</numerusform>
@@ -5491,42 +5539,42 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-37"/>
-        <source>%1/offline (verified via HyperSend)</source>
+        <source>%1/offline (verified via SwiftX)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (verified via HyperSend)</source>
+        <source>%1/confirmed (verified via SwiftX)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1 confirmations (verified via HyperSend)</source>
+        <source>%1 confirmations (verified via SwiftX)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>%1/offline (HyperSend verification failed)</source>
+        <source>%1/offline (SwiftX verification failed)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (HyperSend verification failed)</source>
+        <source>%1/confirmed (SwiftX verification failed)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5726,7 +5774,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+215"/>
+        <location filename="../transactiontablemodel.cpp" line="+216"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -5942,7 +5990,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>TransactionView</name>
     <message>
-        <location filename="../transactionview.cpp" line="+69"/>
+        <location filename="../transactionview.cpp" line="+70"/>
         <location line="+17"/>
         <source>All</source>
         <translation>All</translation>
@@ -6169,7 +6217,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>WalletFrame</name>
     <message>
-        <location filename="../walletframe.cpp" line="+26"/>
+        <location filename="../walletframe.cpp" line="+27"/>
         <source>No wallet has been loaded.</source>
         <translation>No wallet has been loaded.</translation>
     </message>
@@ -6177,7 +6225,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+331"/>
+        <location filename="../walletmodel.cpp" line="+332"/>
         <location line="+9"/>
         <location line="+9"/>
         <source>Send Coins</source>
@@ -6186,14 +6234,14 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>HyperSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
     <message>
-        <location filename="../walletview.cpp" line="+63"/>
+        <location filename="../walletview.cpp" line="+64"/>
         <source>HISTORY</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6221,40 +6269,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <location line="+1"/>
         <source>Wallet Data (*.dat)</source>
         <translation>Wallet Data (*.dat)</translation>
-    </message>
-</context>
-<context>
-    <name>ZNxbControlDialog</name>
-    <message>
-        <location filename="../forms/zNXBcontroldialog.ui" line="+20"/>
-        <source>Select zNXB to Spend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+28"/>
-        <source>Quantity</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <location line="+14"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-7"/>
-        <source>zNXB</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+39"/>
-        <source>Select/Deselect All</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+74"/>
-        <source>Is Spendable</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6515,7 +6529,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6796,12 +6810,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable publish hash transaction (locked via HyperSend) in &lt;address&gt;</source>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable publish raw transaction (locked via HyperSend) in &lt;address&gt;</source>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7111,11 +7125,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+32"/>
-        <source>HyperSend options:</source>
+        <source>SwiftX options:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-270"/>
+        <location line="-271"/>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7138,12 +7152,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, HyperSend, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7193,11 +7207,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+6"/>
-        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+59"/>
         <source>&lt;category&gt; can be:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8110,6 +8124,40 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <location line="+1"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation type="unfinished">wallet.dat corrupt, salvage failed</translation>
+    </message>
+</context>
+<context>
+    <name>zNXBControlDialog</name>
+    <message>
+        <location filename="../forms/zNXBcontroldialog.ui" line="+20"/>
+        <source>Select zNXB to Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Quantity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+14"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <source>zNXB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Select/Deselect All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+74"/>
+        <source>Is Spendable</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

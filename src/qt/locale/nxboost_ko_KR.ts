@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>NXBoost will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NXBs from being stolen by malware infecting your computer.</source>
-        <translation>NXBoost는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 NXBs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <translation>nxboost는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 NXBs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -677,8 +677,8 @@
         <translation>NXBoost Core에 대한 정보 표시</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>NXBoost에 대한 구성 옵션 수정</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>nxboost에 대한 구성 옵션 수정</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,8 +717,8 @@
         <translation>마스터노드 구성 파일 열기</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>NXBoost: URI 또는 ​​결제 요청 열기</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>nxboost: URI 또는 ​​결제 요청 열기</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1812,16 +1812,16 @@ Please be patient after clicking import.</source>
         <translation>난독화 구성</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) NXBoost의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) nxboost의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) NXBoost의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) nxboost의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) NXBoost의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) nxboost의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -1903,7 +1903,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Automatically start NXBoost after logging in to the system.</source>
-        <translation>시스템 로그인 후 NXBoost을 자동으로 시작합니다.</translation>
+        <translation>시스템 로그인 후 nxboost을 자동으로 시작합니다.</translation>
     </message>
     <message>
         <source>&amp;Start NXBoost on system login</source>
@@ -1934,14 +1934,14 @@ Please be patient after clicking import.</source>
         <translation>&amp;네트워크</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 NXBoost을 다시 시작한 후에 적용됩니다.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 nxboost을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>지원 언어가 없거나 번역이 불완전한가요? 번역을 도와주세요 :
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2261,7 +2261,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <source>AutoMint is currently disabled.
 To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.conf</source>
         <translation>자동 저장 기능이 현재 사용 중지되었습니다 .
-자동 변환을 사용하려면 NXBotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
+자동 변환을 사용하려면 nxboost.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
     </message>
 </context>
 <context>
@@ -2288,7 +2288,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     </message>
     <message>
         <source>Cannot start nxboost: click-to-pay handler</source>
-        <translation>NXBoost을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <translation>nxboost을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid NXBoost address or malformed URI parameters.</source>
@@ -3789,8 +3789,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(스마트 수수료가 아직 초기화 되지 않았습니다. 일반적으로 몇 블록이 지나야됩니다...)</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3945,8 +3945,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>수신자 주소가 유효하지 않습니다. 다시 확인해주세요.</translation>
     </message>
     <message>
-        <source>using HyperSend</source>
-        <translation>HyperSend 사용</translation>
+        <source>using SwiftX</source>
+        <translation>SwiftX 사용</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -4052,7 +4052,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>메세지:</translation>
     </message>
     <message>
-        <source>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
         <translation>참조용으로 트랜잭션과 함께 기록되는 NXBoost : URI에 첨부된 메세지입니다. 참고: 이 메세지는 NXBoost 네트워크를 통해 전송되지 않습니다.</translation>
     </message>
     <message>
@@ -4287,37 +4287,37 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>%1 확인</translation>
     </message>
     <message>
-        <source>%1/offline (verified via HyperSend)</source>
-        <translation>%1/오프라인 (hypersend를 통해 확인 됨)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/오프라인 (swifttx를 통해 확인 됨)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via HyperSend)</source>
-        <translation>%1/확인 됨 (hypersend를 통해 확인 됨)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/확인 됨 (swifttx를 통해 확인 됨)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via HyperSend)</source>
-        <translation>%1 확인 (hypersend를 통해 확인 됨)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 확인 (swifttx를 통해 확인 됨)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/오프라인 (HyperSend 확인 진행 중 - %2 중 %3 서명)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/오프라인 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/확인 됨 (HyperSend 확인 진행 중 - %2 중 %3 서명)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/확인 됨 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 확인 (HyperSend 확인 진행 중 - %2 중 %3 서명)</translation>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 확인 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification failed)</source>
-        <translation>%1/오프라인 (HyperSend 확인 실패)
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/오프라인 (SwiftTX 확인 실패)
 </translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification failed)</source>
-        <translation>%1/확인 됨 (HyperSend 확인 실패)</translation>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/확인 됨 (SwiftTX 확인 실패)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -4826,8 +4826,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
-        <translation>HyperSend는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 NXB로 제한됩니다.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 NXB로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -4858,7 +4858,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZNxbControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>사용할 zNXB 선택</translation>
@@ -5315,12 +5315,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동 제로코인 생성 (0-1, 기본값: %u)</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (HyperSend로 설정된)</translation>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (SwiftTX로 설정된)</translation>
     </message>
     <message>
-        <source>Enable publish raw transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (HyperSend를 통해 잠겨진)</translation>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (SwiftTX를 통해 잠겨진)</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -5559,8 +5559,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>지불대상보다 적은 코인 선택됨</translation>
     </message>
     <message>
-        <source>HyperSend options:</source>
-        <translation>HyperSend 옵션:</translation>
+        <source>SwiftX options:</source>
+        <translation>SwiftX 옵션:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -5583,12 +5583,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </translation>
     </message>
     <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, HyperSend, Budgeting) (0-1, default: %u)</source>
-        <translation>NXBoost의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, HyperSend, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>nxboost의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
-        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>hypersend 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
@@ -5627,8 +5627,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</translation>
     </message>
     <message>
-        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>HyperSend는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

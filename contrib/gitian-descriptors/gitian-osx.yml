@@ -1,5 +1,5 @@
 ---
-name: "nxboost-osx-3.2"
+name: "nxboost-osx-3.1"
 enable_cache: true
 suites:
 - "trusty"
@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/nxboost-project/nxboost.git"
+- "url": "https://github.com/nxboost/nxboost.git"
   "dir": "nxboost"
 files:
 - "MacOSX10.11.sdk.tar.gz"

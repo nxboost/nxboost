@@ -321,7 +321,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>ZNxbControlDialog</name>
+    <name>zNXBControlDialog</name>
     </context>
 <context>
     <name>nxboost-core</name>

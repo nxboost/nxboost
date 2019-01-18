@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "NXBoost"
-            VALUE "FileDescription",    "NXBoost-cli (OSS RPC client for NXBoost)"
+            VALUE "CompanyName",        "nxboost"
+            VALUE "FileDescription",    "nxboost-cli (OSS RPC client for nxboost)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "nxboost-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "nxboost-cli.exe"
-            VALUE "ProductName",        "NXBoost-cli"
+            VALUE "ProductName",        "nxboost-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -3,7 +3,7 @@ NXBoost Core
 
 Setup
 ---------------------
-[NXBoost Core](http://nxboost.org/wallet) is the original NXBoost client and it builds the backbone of the network. However, it downloads and stores the entire history of NXBoost transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[NXBoost Core](http://nxboost.com/wallet) is the original NXBoost client and it builds the backbone of the network. However, it downloads and stores the entire history of NXBoost transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -22,15 +22,15 @@ Unpack the files into a directory, and then run nxboost-qt.exe.
 
 ### OSX
 
-Drag NXBoost-Qt to your applications folder, and then run NXBoost-Qt.
+Drag nxboost-Qt to your applications folder, and then run nxboost-Qt.
 
 ### Need Help?
 
 * See the documentation at the [NXBoost Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [NXBoost Forum](http://forum.nxboost.org/).
-* Join our Discord server [Discord Server](https://discord.nxboost.org)
-* Join one of our Slack groups [NXBoost Slack Groups](https://nxboost.org/slack-logins/) (Main community is replaced by Discord).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [NXBoost Forum](http://forum.nxboost.com/).
+* Join our Discord server [Discord Server](https://discord.gg/mVBPKK8)
+* Join one of our Slack groups [NXBoost Slack Groups](https://nxboost.com/slack-logins/) (Main community is replaced by Discord).
 
 Building
 ---------------------
@@ -42,7 +42,7 @@ The following are developer notes on how to build NXBoost on your native platfor
 
 Development
 ---------------------
-The NXBoost repo's [root README](https://github.com/NXBoost-Project/NXBoost/blob/master/README.md) contains relevant information on the development process and automated testing.
+The NXBoost repo's [root README](https://github.com/nxboost/nxboost/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,8 +56,8 @@ The NXBoost repo's [root README](https://github.com/NXBoost-Project/NXBoost/blob
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [NXBoost](http://forum.nxboost.org/) forum.
-* Join the [NXBoost-Dev](https://nxboost-dev.slack.com/) Slack group ([Sign-Up](https://nxboost-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [nxboost](http://forum.nxboost.com/) forum.
+* Join the [nxboost-Dev](https://nxboost-dev.slack.com/) Slack group ([Sign-Up](https://nxboost-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

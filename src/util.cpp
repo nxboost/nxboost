@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -112,16 +112,16 @@ bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
 bool fLiteMode = false;
-// HyperSend
-bool fEnableHyperSend = true;
-int nHyperSendDepth = 5;
+// SwiftX
+bool fEnableSwiftTX = true;
+int nSwiftTXDepth = 5;
 // Automatic Zerocoin minting
 bool fEnableZeromint = true;
 int nZeromintPercentage = 10;
 int nPreferredDenom = 0;
 const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
 
-int nAnonymizeNXBoostAmount = 1000;
+int nAnonymizenxboostAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -238,10 +238,10 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "nxboost" is a composite category enabling all NXBoost-related debug output
+            // "nxboost" is a composite category enabling all nxboost-related debug output
             if (ptrCategory->count(string("nxboost"))) {
                 ptrCategory->insert(string("obfuscation"));
-                ptrCategory->insert(string("hypersend"));
+                ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
                 ptrCategory->insert(string("mnpayments"));
                 ptrCategory->insert(string("zero"));
@@ -425,9 +425,9 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\NXBoost
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\NXBoost
-// Mac: ~/Library/Application Support/NXBoost
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\nxboost
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\nxboost
+// Mac: ~/Library/Application Support/nxboost
 // Unix: ~/.nxboost
 #ifdef WIN32
     // Windows

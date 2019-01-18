@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-# Copyright (c) 2015-2017 The PIVX developers
-# Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
-
+# Copyright (c) 2017-2018 The PIVX developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

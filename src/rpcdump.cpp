@@ -1,14 +1,14 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "bip38.h"
 #include "init.h"
 #include "main.h"
-#include "rpc/server.h"
+#include "rpcserver.h"
 #include "script/script.h"
 #include "script/standard.h"
 #include "sync.h"
@@ -378,7 +378,7 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"nxboostaddress\"   (string, required) The nxboost address for the private key\n"
+            "1. \"nxboostaddress\"   (string, required) The NXBoost address for the private key\n"
 
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
@@ -476,7 +476,7 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"nxboostaddress\"   (string, required) The nxboost address for the private key (you must hold the key already)\n"
+            "1. \"nxboostaddress\"   (string, required) The NXBoost address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
 
             "\nResult:\n"

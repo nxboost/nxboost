@@ -1,10 +1,10 @@
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZNXBCONTROLDIALOG_H
-#define ZNXBCONTROLDIALOG_H
+#ifndef zNXBCONTROLDIALOG_H
+#define zNXBCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -15,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZNxbControlDialog;
+class zNXBControlDialog;
 }
 
-class ZNxbControlDialog : public QDialog
+class zNXBControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZNxbControlDialog(QWidget *parent);
-    ~ZNxbControlDialog();
+    explicit zNXBControlDialog(QWidget *parent);
+    ~zNXBControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +33,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::ZNxbControlDialog *ui;
+    Ui::zNXBControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -54,4 +54,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZNXBCONTROLDIALOG_H
+#endif // zNXBCONTROLDIALOG_H

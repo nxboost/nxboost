@@ -28,7 +28,7 @@ urgent technical necessity and disclosed.
 3. The results may not be served with a DNS TTL of less than one minute.
 
 4. Any logging of DNS queries should be only that which is necessary
-for the operation of the service or urgent health of the NXBoost
+for the operation of the service or urgent health of the nxboost
 network and must not be retained longer than necessary or disclosed
 to any third party.
 
@@ -44,9 +44,9 @@ details of their operating practices.
 related to the DNS seed operation.
 
 If these expectations cannot be satisfied the operator should
-discontinue providing services and contact the active NXBoost
+discontinue providing services and contact the active nxboost
 Core development team as well as posting on the
-[NXBoost Forum](https://forum.nxboost.org).
+[NXBoost Forum](https://forum.nxboost.com).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

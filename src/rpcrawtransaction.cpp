@@ -1,8 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,12 +13,12 @@
 #include "main.h"
 #include "net.h"
 #include "primitives/transaction.h"
-#include "rpc/server.h"
+#include "rpcserver.h"
 #include "script/script.h"
 #include "script/script_error.h"
 #include "script/sign.h"
 #include "script/standard.h"
-#include "hypersend.h"
+#include "swifttx.h"
 #include "uint256.h"
 #include "utilmoneystr.h"
 #include "zNXBchain.h"
@@ -157,7 +157,7 @@ UniValue getrawtransaction(const UniValue& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"nxboostaddress\"        (string) nxboost address\n"
+            "           \"nxboostaddress\"        (string) NXBoost address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -212,9 +212,9 @@ UniValue listunspent(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. minconf          (numeric, optional, default=1) The minimum confirmations to filter\n"
             "2. maxconf          (numeric, optional, default=9999999) The maximum confirmations to filter\n"
-            "3. \"addresses\"    (string) A json array of nxboost addresses to filter\n"
+            "3. \"addresses\"    (string) A json array of NXBoost addresses to filter\n"
             "    [\n"
-            "      \"address\"   (string) nxboost address\n"
+            "      \"address\"   (string) NXBoost address\n"
             "      ,...\n"
             "    ]\n"
             "4. watchonlyconfig  (numberic, optional, default=1) 1 = list regular unspent transactions, 2 = list only watchonly transactions,  3 = list all unspent transactions (including watchonly)\n"
@@ -224,7 +224,7 @@ UniValue listunspent(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"txid\" : \"txid\",        (string) the transaction id \n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"address\" : \"address\",  (string) the nxboost address\n"
+            "    \"address\" : \"address\",  (string) the NXBoost address\n"
             "    \"account\" : \"account\",  (string) The associated account, or \"\" for the default account\n"
             "    \"scriptPubKey\" : \"key\", (string) the script key\n"
             "    \"amount\" : x.xxx,         (numeric) the transaction amount in btc\n"
@@ -337,7 +337,7 @@ UniValue createrawtransaction(const UniValue& params, bool fHelp)
             "     ]\n"
             "2. \"addresses\"           (string, required) a json object with addresses as keys and amounts as values\n"
             "    {\n"
-            "      \"address\": x.xxx   (numeric, required) The key is the nxboost address, the value is the btc amount\n"
+            "      \"address\": x.xxx   (numeric, required) The key is the NXBoost address, the value is the btc amount\n"
             "      ,...\n"
             "    }\n"
 
@@ -430,7 +430,7 @@ UniValue decoderawtransaction(const UniValue& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc\"   (string) nxboost address\n"
+            "           \"12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc\"   (string) NXBoost address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -473,7 +473,7 @@ UniValue decodescript(const UniValue& params, bool fHelp)
             "  \"type\":\"type\", (string) The output type\n"
             "  \"reqSigs\": n,    (numeric) The required signatures\n"
             "  \"addresses\": [   (json array of string)\n"
-            "     \"address\"     (string) nxboost address\n"
+            "     \"address\"     (string) NXBoost address\n"
             "     ,...\n"
             "  ],\n"
             "  \"p2sh\",\"address\" (string) script address\n"
@@ -754,7 +754,7 @@ UniValue sendrawtransaction(const UniValue& params, bool fHelp)
             "\nArguments:\n"
             "1. \"hexstring\"    (string, required) The hex string of the raw transaction)\n"
             "2. allowhighfees    (boolean, optional, default=false) Allow high fees\n"
-            "3. hypersend           (boolean, optional, default=false) Use HyperSend to send this transaction\n"
+            "3. swiftx           (boolean, optional, default=false) Use SwiftX to send this transaction\n"
 
             "\nResult:\n"
             "\"hex\"             (string) The transaction hash in hex\n"
@@ -779,9 +779,9 @@ UniValue sendrawtransaction(const UniValue& params, bool fHelp)
     if (params.size() > 1)
         fOverrideFees = params[1].get_bool();
 
-    bool fHyperSend = false;
+    bool fSwiftX = false;
     if (params.size() > 2)
-        fHyperSend = params[2].get_bool();
+        fSwiftX = params[2].get_bool();
 
     CCoinsViewCache& view = *pcoinsTip;
     const CCoins* existingCoins = view.AccessCoins(hashTx);
@@ -789,7 +789,7 @@ UniValue sendrawtransaction(const UniValue& params, bool fHelp)
     bool fHaveChain = existingCoins && existingCoins->nHeight < 1000000000;
     if (!fHaveMempool && !fHaveChain) {
         // push to local node and sync with wallets
-        if (fHyperSend) {
+        if (fSwiftX) {
             mapTxLockReq.insert(make_pair(tx.GetHash(), tx));
             CreateNewLock(tx);
             RelayTransactionLockReq(tx, true);

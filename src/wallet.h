@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -85,30 +85,30 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 1000000 NXB at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 NXB at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
 // Possible states for zNXB send
 enum ZerocoinSpendStatus {
-    ZNXB_SPEND_OKAY = 0,                            // No error
-    ZNXB_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZNXB_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZNXB_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZNXB_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZNXB_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZNXB_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZNXB_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZNXB_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZNXB_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZNXB_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZNXB_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZNXB_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZNXB_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZNXB_SPENT_USED_ZNXB = 14,                      // Coin has already been spend
-    ZNXB_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
-    ZNXB_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    zNXB_SPEND_OKAY = 0,                            // No error
+    zNXB_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    zNXB_WALLET_LOCKED = 2,                         // Wallet was locked
+    zNXB_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    zNXB_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    zNXB_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    zNXB_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    zNXB_TRX_CREATE = 7,                            // Everything related to create the transaction
+    zNXB_TRX_CHANGE = 8,                            // Everything related to transaction change
+    zNXB_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    zNXB_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    zNXB_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    zNXB_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    zNXB_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    zNXB_SPENT_USED_zNXB = 14,                      // Coin has already been spend
+    zNXB_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
+    zNXB_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
 
 struct CompactTallyItem {
@@ -214,9 +214,9 @@ public:
     std::string ResetMintZerocoin();
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored, std::list<CDeterministicMint>& listDMintsRestored);
-    void ZNxbBackupWallet();
+    void zNXBBackupWallet();
     bool GetZerocoinKey(const CBigNum& bnSerial, CKey& key);
-    bool CreateZNXBOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
+    bool CreatezNXBOutPut(libzerocoin::CoinDenomination denomination, CTxOut& outMint, CDeterministicMint& dMint);
     bool GetMint(const uint256& hashSerial, CZerocoinMint& mint);
     bool GetMintFromStakeHash(const uint256& hashStake, CZerocoinMint& mint);
     bool DatabaseMint(CDeterministicMint& dMint);
@@ -342,7 +342,7 @@ public:
         return fEnableZeromint;
     }
 
-    void setZNxbAutoBackups(bool fEnabled)
+    void setzNXBAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }

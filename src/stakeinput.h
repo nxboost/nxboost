@@ -1,10 +1,10 @@
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef NXBoost_STAKEINPUT_H
-#define NXBoost_STAKEINPUT_H
+#ifndef nxboost_STAKEINPUT_H
+#define nxboost_STAKEINPUT_H
 
 class CKeyStore;
 class CWallet;
@@ -23,7 +23,7 @@ public:
     virtual CAmount GetValue() = 0;
     virtual bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) = 0;
     virtual bool GetModifier(uint64_t& nStakeModifier) = 0;
-    virtual bool IsZNXB() = 0;
+    virtual bool IszNXB() = 0;
     virtual CDataStream GetUniqueness() = 0;
 };
 
@@ -31,7 +31,7 @@ public:
 // zNXBStake can take two forms
 // 1) the stake candidate, which is a zcmint that is attempted to be staked
 // 2) a staked zNXB, which is a zcspend that has successfully staked
-class CZNxbStake : public CStakeInput
+class CzNXBStake : public CStakeInput
 {
 private:
     uint32_t nChecksum;
@@ -40,7 +40,7 @@ private:
     uint256 hashSerial;
 
 public:
-    explicit CZNxbStake(libzerocoin::CoinDenomination denom, const uint256& hashSerial)
+    explicit CzNXBStake(libzerocoin::CoinDenomination denom, const uint256& hashSerial)
     {
         this->denom = denom;
         this->hashSerial = hashSerial;
@@ -48,7 +48,7 @@ public:
         fMint = true;
     }
 
-    explicit CZNxbStake(const libzerocoin::CoinSpend& spend);
+    explicit CzNXBStake(const libzerocoin::CoinSpend& spend);
 
     CBlockIndex* GetIndexFrom() override;
     bool GetTxFrom(CTransaction& tx) override;
@@ -58,7 +58,7 @@ public:
     bool CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut = 0) override;
     bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) override;
     bool MarkSpent(CWallet* pwallet, const uint256& txid);
-    bool IsZNXB() override { return true; }
+    bool IszNXB() override { return true; }
     int GetChecksumHeightFromMint();
     int GetChecksumHeightFromSpend();
     uint32_t GetChecksum();
@@ -84,8 +84,8 @@ public:
     CDataStream GetUniqueness() override;
     bool CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut = 0) override;
     bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) override;
-    bool IsZNXB() override { return false; }
+    bool IszNXB() override { return false; }
 };
 
 
-#endif //NXBoost_STAKEINPUT_H
+#endif //nxboost_STAKEINPUT_H

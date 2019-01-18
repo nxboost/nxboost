@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -107,7 +107,7 @@ bool IsBudgetCollateralValid(uint256 nTxCollateralHash, uint256 nExpectedHash, s
 
     nConf = conf;
 
-    //if we're syncing we won't have hypersend information, so accept 1 confirmation
+    //if we're syncing we won't have swiftTX information, so accept 1 confirmation
     if (conf >= Params().Budget_Fee_Confirmations()) {
         return true;
     } else {
@@ -220,7 +220,7 @@ void CBudgetManager::SubmitFinalBudget()
 
         // Get our change address
         CReserveKey reservekey(pwalletMain);
-        // Send the tx to the network. Do NOT use hypersend, locking might need too much time to propagate, especially for testnet
+        // Send the tx to the network. Do NOT use SwiftTx, locking might need too much time to propagate, especially for testnet
         pwalletMain->CommitTransaction(wtx, reservekey, "NO-ix");
         tx = (CTransaction)wtx;
         txidCollateral = tx.GetHash();

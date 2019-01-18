@@ -1,5 +1,5 @@
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -10,7 +10,7 @@
 #include "stakeinput.h"
 #include "wallet.h"
 
-CZNxbStake::CZNxbStake(const libzerocoin::CoinSpend& spend)
+CzNXBStake::CzNXBStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -20,7 +20,7 @@ CZNxbStake::CZNxbStake(const libzerocoin::CoinSpend& spend)
     fMint = false;
 }
 
-int CZNxbStake::GetChecksumHeightFromMint()
+int CzNXBStake::GetChecksumHeightFromMint()
 {
     int nHeightChecksum = chainActive.Height() - Params().Zerocoin_RequiredStakeDepth();
 
@@ -31,12 +31,12 @@ int CZNxbStake::GetChecksumHeightFromMint()
     return GetChecksumHeight(nChecksum, denom);
 }
 
-int CZNxbStake::GetChecksumHeightFromSpend()
+int CzNXBStake::GetChecksumHeightFromSpend()
 {
     return GetChecksumHeight(nChecksum, denom);
 }
 
-uint32_t CZNxbStake::GetChecksum()
+uint32_t CzNXBStake::GetChecksum()
 {
     return nChecksum;
 }
@@ -44,7 +44,7 @@ uint32_t CZNxbStake::GetChecksum()
 // The zNXB block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
-CBlockIndex* CZNxbStake::GetIndexFrom()
+CBlockIndex* CzNXBStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -66,13 +66,13 @@ CBlockIndex* CZNxbStake::GetIndexFrom()
     return pindexFrom;
 }
 
-CAmount CZNxbStake::GetValue()
+CAmount CzNXBStake::GetValue()
 {
     return denom * COIN;
 }
 
 //Use the first accumulator checkpoint that occurs 60 minutes after the block being staked from
-bool CZNxbStake::GetModifier(uint64_t& nStakeModifier)
+bool CzNXBStake::GetModifier(uint64_t& nStakeModifier)
 {
     CBlockIndex* pindex = GetIndexFrom();
     if (!pindex)
@@ -92,7 +92,7 @@ bool CZNxbStake::GetModifier(uint64_t& nStakeModifier)
     }
 }
 
-CDataStream CZNxbStake::GetUniqueness()
+CDataStream CzNXBStake::GetUniqueness()
 {
     //The unique identifier for a zNXB is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
@@ -100,7 +100,7 @@ CDataStream CZNxbStake::GetUniqueness()
     return ss;
 }
 
-bool CZNxbStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CzNXBStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     CBlockIndex* pindexCheckpoint = GetIndexFrom();
     if (!pindexCheckpoint)
@@ -121,13 +121,13 @@ bool CZNxbStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
     return true;
 }
 
-bool CZNxbStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CzNXBStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
     //Create an output returning the zNXB that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreateZNXBOutPut(denomStaked, outReward, dMint))
+    if (!pwallet->CreatezNXBOutPut(denomStaked, outReward, dMint))
         return error("%s: failed to create zNXB output", __func__);
     vout.emplace_back(outReward);
 
@@ -135,10 +135,10 @@ bool CZNxbStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     if (!pwallet->DatabaseMint(dMint))
         return error("%s: failed to database the staked zNXB", __func__);
 
-    for (unsigned int i = 0; i < 3; i++) {
+    for (unsigned int i = 0; i < GetPosPayment(chainActive.Height()+1)/COIN; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
-        if (!pwallet->CreateZNXBOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+        if (!pwallet->CreatezNXBOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
             return error("%s: failed to create zNXB output", __func__);
         vout.emplace_back(out);
 
@@ -149,12 +149,12 @@ bool CZNxbStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     return true;
 }
 
-bool CZNxbStake::GetTxFrom(CTransaction& tx)
+bool CzNXBStake::GetTxFrom(CTransaction& tx)
 {
     return false;
 }
 
-bool CZNxbStake::MarkSpent(CWallet *pwallet, const uint256& txid)
+bool CzNXBStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
     CzNXBTracker* zNXBTracker = pwallet->zNXBTracker.get();
     CMintMeta meta;
