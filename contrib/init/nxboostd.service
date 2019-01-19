@@ -1,5 +1,5 @@
 [Unit]
-Description=NXBoost's distributed currency daemon
+Description=nxboost's distributed currency daemon
 After=network.target
 
 [Service]

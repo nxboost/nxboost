@@ -699,7 +699,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço NXBoost.</translation>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço nxboost.</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>
@@ -901,7 +901,7 @@
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     </context>
 <context>
     <name>nxboost-core</name>

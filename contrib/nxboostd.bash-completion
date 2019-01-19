@@ -19,7 +19,7 @@ _nxboost_rpc() {
     $nxboostd "${rpcargs[@]}" "$@"
 }
 
-# Add nxboost accounts to COMPREPLY
+# Add NXBoost accounts to COMPREPLY
 _nxboost_accounts() {
     local accounts
     accounts=$(_nxboost_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')

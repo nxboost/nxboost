@@ -646,7 +646,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
-        <translation>Ödeme talep etme (QR kodları ve nxboost üretir: URI'ler)</translation>
+        <translation>Ödeme talep etme (QR kodları ve NXBoost üretir: URI'ler)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -669,7 +669,7 @@
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
+        <source>Modify configuration options for nxboost</source>
         <translation>NXBoost için yapılandırma seçeneklerini değiştirin</translation>
     </message>
     <message>
@@ -709,8 +709,8 @@
         <translation>Açık Masternode yapılandırma dosyası</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Bir NXBoost: URI veya ödeme isteği açın</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Bir nxboost: URI veya ödeme isteği açın</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1775,15 +1775,15 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Şaşırtma ayarlama</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Şaşırtma başarıyla temele ayarlandı. (%1 ve  2 turlar) Bunu istediğiniz zaman değiştirmek için NXBoost in ayarlar ekranını açmanız yeterli</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Şaşırtma başarıyla Yüksek e ayarlandı. (%1 ve 8 turlar) Bunu istediğiniz zaman değiştirmek için NXBoost in ayarlar ekranını açmanız yeterli</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Şaşırtma başarıyla maksimuma ayarlandı. (%1 ve 16 turlar) Bunu istediğiniz zaman değiştirmek için NXBoost in ayarlar ekranını açmanız yeterli</translation>
     </message>
 </context>
@@ -1866,11 +1866,11 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
     </message>
     <message>
         <source>Automatically start NXBoost after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra otomatik olarak NXBoost'i başlatın.</translation>
+        <translation>Sisteme giriş yaptıktan sonra otomatik olarak nxboost'i başlatın.</translation>
     </message>
     <message>
         <source>&amp;Start NXBoost on system login</source>
-        <translation>&amp; Sistem oturum açma işleminde NXBoost'i başlat</translation>
+        <translation>&amp; Sistem oturum açma işleminde nxboost'i başlat</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1897,14 +1897,14 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>&amp;ağ</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
         <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, NXBoost yeniden başlatıldıktan sonra geçerli olur.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Dil eksik veya çeviri tamamlanmamış mı? Katkıda bulunan çevirilere yardımcı olun:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -3468,8 +3468,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>(Akıllı ücret henüz başlatılmadı.Bu genellikle birkaç blok alıyor ...)</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3723,7 +3723,7 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
         <translation>NXBoost e eklenmiş olan bir mesaj: İşleminizle beraber saklanacak olan URI hatırlamanız için. Not: Bu mesaj NXBoost ağında yayınlanmayacak.</translation>
     </message>
     <message>
@@ -3954,36 +3954,36 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>%1 doğrulama</translation>
     </message>
     <message>
-        <source>%1/offline (verified via HyperSend)</source>
-        <translation>%1 / çevrimdışı (HyperSend ile doğrulanmış)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1 / çevrimdışı (SwiftX ile doğrulanmış)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via HyperSend)</source>
-        <translation>%1 / doğrulandı (HyperSend ile doğrulandı)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1 / doğrulandı (SwiftX ile doğrulandı)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via HyperSend)</source>
-        <translation>%1 doğrulama (HyperSend ile doğrulandı)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 doğrulama (SwiftX ile doğrulandı)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 / çevrimdışı (HyperSend doğrulama işlemi devam ediyor - %3 imzalardan %2 si)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 / çevrimdışı (SwiftX doğrulama işlemi devam ediyor - %3 imzalardan %2 si)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
-        <translation>%1 / onaylandı (HyperSend doğrulama işlemi - %3 imzalardan %2 si)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1 / onaylandı (SwiftX doğrulama işlemi - %3 imzalardan %2 si)</translation>
     </message>
     <message>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 doğrulama (HyperSend doğrulama işlemi - %3 imzalardan %2 si)</translation>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 doğrulama (SwiftX doğrulama işlemi - %3 imzalardan %2 si)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification failed)</source>
-        <translation>%1 / çevrimdışı (HyperSend doğrulama başarısız)</translation>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1 / çevrimdışı (SwiftX doğrulama başarısız)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification failed)</source>
-        <translation>%1 / onaylandı (HyperSend doğrulama başarısız oldu)</translation>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1 / onaylandı (SwiftX doğrulama başarısız oldu)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -4436,8 +4436,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
-        <translation>HyperSend yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 NXB ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 NXB ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4464,7 +4464,7 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Adet</translation>
@@ -4665,8 +4665,8 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Geçersiz private key.</translation>
     </message>
     <message>
-        <source>HyperSend options:</source>
-        <translation>HyperSend seçenekleri:</translation>
+        <source>SwiftX options:</source>
+        <translation>SwiftX seçenekleri:</translation>
     </message>
     <message>
         <source> mints updated, </source>

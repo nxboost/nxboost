@@ -633,8 +633,8 @@
         <translation>Prikaz informacija o NXBoost Coreu</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Izmijenite opcije konfiguracije za NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Izmijenite opcije konfiguracije za nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -1345,7 +1345,7 @@
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

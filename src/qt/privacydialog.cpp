@@ -1,4 +1,5 @@
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -302,19 +303,19 @@ void PrivacyDialog::on_pushButtonSpendzNXB_clicked()
     sendzNXB();
 }
 
-void PrivacyDialog::on_pushButtonZXlqControl_clicked()
+void PrivacyDialog::on_pushButtonzNXBControl_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    ZXlqControlDialog* zXlqControl = new ZXlqControlDialog(this);
-    zXlqControl->setModel(walletModel);
-    zXlqControl->exec();
+    zNXBControlDialog* zNXBControl = new zNXBControlDialog(this);
+    zNXBControl->setModel(walletModel);
+    zNXBControl->exec();
 }
 
-void PrivacyDialog::setZXlqControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setzNXBControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzXlqSelected_int->setText(QString::number(nAmount));
+    ui->labelzNxbSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -423,8 +424,8 @@ void PrivacyDialog::sendzNXB()
     // use mints from zNXB selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZXlqControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = ZXlqControlDialog::GetSelectedMints();
+    if (!zNXBControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = zNXBControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             if (meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION) {
@@ -461,7 +462,7 @@ void PrivacyDialog::sendzNXB()
 
     // Display errors during spend
     if (!fSuccess) {
-        if (receipt.GetStatus() == ZNXB_SPEND_V1_SEC_LEVEL) {
+        if (receipt.GetStatus() == zNXB_SPEND_V1_SEC_LEVEL) {
             QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Version 1 zNXB require a security level of 100 to successfully spend."), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Failed to spend zNXB"));
             ui->TEMintStatus->repaint();
@@ -496,8 +497,8 @@ void PrivacyDialog::sendzNXB()
     }
 
     // Clear zNXB selector in case it was used
-    ZXlqControlDialog::setSelectedMints.clear();
-    ui->labelzXlqSelected_int->setText(QString("0"));
+    zNXBControlDialog::setSelectedMints.clear();
+    ui->labelzNxbSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 
     // Some statistics for entertainment

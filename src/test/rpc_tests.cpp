@@ -1,10 +1,11 @@
 // Copyright (c) 2012-2013 The Bitcoin Core developers
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "rpc/server.h"
-#include "rpc/client.h"
+#include "rpcserver.h"
+#include "rpcclient.h"
 
 #include "base58.h"
 #include "netbase.h"

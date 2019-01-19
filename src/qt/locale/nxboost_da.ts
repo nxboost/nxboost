@@ -255,11 +255,11 @@
     </message>
     <message>
         <source>Enter a NXBoost Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Indtast en NXBoost-adresse, som du gerne vil kryptere ved hjælp af BIP 38. Indtast en adgangskode i mellemkassen. Tryk på krypteringen for at beregne den krypterede private nøgle.</translation>
+        <translation>Indtast en nxboost-adresse, som du gerne vil kryptere ved hjælp af BIP 38. Indtast en adgangskode i mellemkassen. Tryk på krypteringen for at beregne den krypterede private nøgle.</translation>
     </message>
     <message>
         <source>The NXBoost address to encrypt</source>
-        <translation>NXBoost-adressen for at kryptere</translation>
+        <translation>nxboost-adressen for at kryptere</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Krypter den private nøgle for denne NXBoost-adresse</translation>
+        <translation>Krypter den private nøgle for denne nxboost-adresse</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -677,8 +677,8 @@
         <translation>Vis information om NXBoost kerne</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Ret konfigurationsindstillinger for NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Ret konfigurationsindstillinger for nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,7 +717,7 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
+        <source>Open a nxboost: URI or payment request</source>
         <translation>Åbn en NXBoost URl eller betalingsanmodning</translation>
     </message>
     <message>
@@ -738,7 +738,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to NXBoost network</source>
-        <translation><numerusform>%n aktiv forbindelse til NXBoost-netværk</numerusform><numerusform>%n aktiv forbindelse(s) til NXBoost netværk</numerusform></translation>
+        <translation><numerusform>%n aktiv forbindelse til nxboost-netværk</numerusform><numerusform>%n aktiv forbindelse(s) til NXBoost netværk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1812,15 +1812,15 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Tilsløringskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Tilsløring blev sat til grundlæggende (%1 og 2 gennemløb) De kan ændre dette hvornår De vil ved at åbne NXBoost konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Tilsløring blev sat til høj (%1 og 8 gennemløb) De kan ændre dette hvornår De vil ved at åbne NXBoost konfigurationsbillede.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Tilsløring blev sat til maksimum (%1 og 16 gennemløb) De kan ændre dette hvornår De vil ved at åbne NXBoost konfigurationsbillede.</translation>
     </message>
 </context>
@@ -1934,14 +1934,14 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>&amp;netværk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
         <translation>Vælg sprog her. Ændringerne træder i kraft næste gang NXBoost klienten startes</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2156,7 +2156,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
     </message>
     <message>
         <source>Your current NXBoost balance, unconfirmed and immature transactions included</source>
-        <translation>Din nuværende NXBoost-saldo, ubekræftede og umodne transaktioner inkluderet</translation>
+        <translation>Din nuværende nxboost-saldo, ubekræftede og umodne transaktioner inkluderet</translation>
     </message>
     <message>
         <source>zNXB Balance</source>
@@ -2442,7 +2442,7 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
     </message>
     <message>
         <source>Enter an amount of NXB to convert to zNXB</source>
-        <translation>Indtast en mængde NXB for at konvertere til zXlq</translation>
+        <translation>Indtast en mængde NXB for at konvertere til zNXB</translation>
     </message>
     <message>
         <source>zNXB Control</source>
@@ -2502,7 +2502,7 @@ zNXB er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med 
     </message>
     <message>
         <source>The NXBoost address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>NXBoost-adressen for at sende betalingen til. Opretter lokal betaling til dig selv, når du er tom.</translation>
+        <translation>nxboost-adressen for at sende betalingen til. Opretter lokal betaling til dig selv, når du er tom.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3788,8 +3788,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>(Smartgebyr endnu ikke initialiseret. Det tager som regel nogle få blokke...)</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3944,8 +3944,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Modtageradressen er ikke gyldig. Kontroller igen</translation>
     </message>
     <message>
-        <source>using HyperSend</source>
-        <translation>ved hjælp af HyperSend</translation>
+        <source>using SwiftX</source>
+        <translation>ved hjælp af SwiftX</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -4051,8 +4051,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Besked</translation>
     </message>
     <message>
-        <source>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
-        <translation>En besked, der var vedhæftet til NXBoost: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <translation>En besked, der var vedhæftet til nxboost: URl wil blive gemt sammen med transaktionen som reference. Note: Beskeden bliver medsendt transaktionen over netværket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4286,36 +4286,36 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>%1/bekræftelser</translation>
     </message>
     <message>
-        <source>%1/offline (verified via HyperSend)</source>
+        <source>%1/offline (verified via SwiftX)</source>
         <translation>%1/offline (verified via svifttx)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via HyperSend)</source>
+        <source>%1/confirmed (verified via SwiftX)</source>
         <translation>%1/bekræftet (verified via svifttx)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via HyperSend)</source>
+        <source>%1 confirmations (verified via SwiftX)</source>
         <translation>%1/bekræftelser (verified via svifttx)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (HyperSend verificering i gang - %2 af %3 signaturer)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/bekræftet(HyperSend verificering i gang - %2 af %3 signaturer)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/bekræftet(SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/bekræftelser (HyperSend verificering i gang - %2 af %3 signaturer)</translation>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/bekræftelser (SwifTX verificering i gang - %2 af %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification failed)</source>
-        <translation>%1/offline (HyperSend verificering mislykkedes)</translation>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/offline (SwifTX verificering mislykkedes)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification failed)</source>
-        <translation>%1/bekræftet (HyperSend verificering mislykkedes)</translation>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/bekræftet (SwifTX verificering mislykkedes)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -4553,11 +4553,11 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Spent zNXB</source>
-        <translation>Brugt zXlq</translation>
+        <translation>Brugt zNXB</translation>
     </message>
     <message>
         <source>Received NXB from zNXB</source>
-        <translation>Modtaget NXB fra zXlq</translation>
+        <translation>Modtaget NXB fra zNXB</translation>
     </message>
     <message>
         <source>Minted Change as zNXB from zNXB Spend</source>
@@ -4784,7 +4784,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Received NXB from zNXB</source>
-        <translation>Modtaget NXB fra zXlq</translation>
+        <translation>Modtaget NXB fra zNXB</translation>
     </message>
     <message>
         <source>Zerocoin Spend, Change in zNXB</source>
@@ -4824,8 +4824,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Send mønter</translation>
     </message>
     <message>
-        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
-        <translation>hypersend understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1NXB.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <translation>SwiftTx understøtter ikke afsendelse af så store beløb endnu. Transaktioner er for tiden begrænsede til %1NXB.</translation>
     </message>
 </context>
 <context>
@@ -4856,7 +4856,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Vælg zNXB for at bruge</translation>
@@ -4939,7 +4939,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
-        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zXlq-mintning (0-1, standard: %u)</translation>
+        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zNXB-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>
@@ -5039,7 +5039,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message>
         <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere NXBoost</translation>
+        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere nxboost</translation>
     </message>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
@@ -5314,12 +5314,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Aktivér automatisk Zerocoin-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Aktivér publicering af hash-transaktion (låst via HyperSend) i &lt;address&gt;</translation>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Aktivér publicering af hash-transaktion (låst via SwiftX) i &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish raw transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Aktivér publicere rå transaktion (låst via HyperSend) i &lt;address&gt;</translation>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Aktivér publicere rå transaktion (låst via SwiftX) i &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -5558,8 +5558,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Valgt mønter værdi er mindre end betalingsmål</translation>
     </message>
     <message>
-        <source>HyperSend options:</source>
-        <translation>HyperSend optioner:</translation>
+        <source>SwiftX options:</source>
+        <translation>SwiftTX optioner:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -5582,12 +5582,12 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 </translation>
     </message>
     <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, HyperSend, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle NXBoost funktioner fra (Masternoder, Tilsløring, HyperSend, Budgetting)(0-1,default:%u)</translation>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle NXBoost funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
     </message>
     <message>
-        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Aktiver hypersend, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Aktiver swifttx, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
@@ -5626,8 +5626,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Angiv en brugerdefineret backup-sti for at tilføje en kopi af en wallet-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup.</translation>
     </message>
     <message>
-        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>HyperSend kræver mindst 6 bekræftelser. Vent nogle minutter og prøv igen.</translation>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX kræver mindst 6 bekræftelser. Vent nogle minutter og prøv igen.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

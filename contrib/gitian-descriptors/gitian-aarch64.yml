@@ -1,5 +1,5 @@
 ---
-name: "nxboost-aarch64-3.2"
+name: "nxboost-aarch64-3.1"
 enable_cache: true
 suites:
 - "xenial"
@@ -25,7 +25,7 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/nxboost-project/nxboost.git"
+- "url": "https://github.com/nxboost/nxboost.git"
   "dir": "nxboost"
 files: []
 script: |

@@ -677,8 +677,8 @@
         <translation>Montri informon pri NXBoost Kerno</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Modifi agordajn opciojn por NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modifi agordajn opciojn por nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,8 +717,8 @@
         <translation>Malfermi mastro-nodo agord-dosieron</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Malfermi unu NXBoost: URI aŭ pago peto</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Malfermi unu nxboost: URI aŭ pago peto</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1706,14 +1706,14 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>&amp;Reto</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
-        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci NXBoost.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci nxboost.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Ĉu mankas lingvon aŭ nekompleta tradukado? Helpu la  tradukcio ĉi tie:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Connect to the NXBoost network through a SOCKS5 proxy.</source>
@@ -2649,7 +2649,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

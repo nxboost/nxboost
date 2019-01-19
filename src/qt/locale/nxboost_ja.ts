@@ -269,7 +269,7 @@
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     </context>
 <context>
     <name>nxboost-core</name>

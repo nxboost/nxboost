@@ -1,4 +1,5 @@
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -24,12 +25,12 @@ CzNXBWallet::CzNXBWallet(std::string strWalletFile)
     //Check for old db version of storing zNXB seed
     if (fFirstRun) {
         uint256 seed;
-        if (walletdb.ReadZNXBSeed_deprecated(seed)) {
+        if (walletdb.ReadzNXBSeed_deprecated(seed)) {
             //Update to new format, erase old
             seedMaster = seed;
             hashSeed = Hash(seed.begin(), seed.end());
             if (pwalletMain->AddDeterministicSeed(seed)) {
-                if (walletdb.EraseZNXBSeed_deprecated()) {
+                if (walletdb.ErasezNXBSeed_deprecated()) {
                     LogPrintf("%s: Updated zNXB seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
@@ -84,8 +85,8 @@ bool CzNXBWallet::SetMasterSeed(const uint256& seedMaster, bool fResetCount)
     nCountLastUsed = 0;
 
     if (fResetCount)
-        walletdb.WriteZNXBCount(nCountLastUsed);
-    else if (!walletdb.ReadZNXBCount(nCountLastUsed))
+        walletdb.WritezNXBCount(nCountLastUsed);
+    else if (!walletdb.ReadzNXBCount(nCountLastUsed))
         nCountLastUsed = 0;
 
     mintPool.Reset();
@@ -146,7 +147,7 @@ void CzNXBWallet::GenerateMintPool(uint32_t nCountStart, uint32_t nCountEnd)
         CBigNum bnSerial;
         CBigNum bnRandomness;
         CKey key;
-        SeedToZNXB(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+        SeedTozNXB(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
 
         mintPool.Add(bnValue, i);
         CWalletDB(strWalletFile).WriteMintPoolPair(hashSeed, GetPubCoinHash(bnValue), i);
@@ -292,7 +293,7 @@ bool CzNXBWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const 
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZNXB(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
+    SeedTozNXB(seedZerocoin, bnValueGen, bnSerial, bnRandomness, key);
 
     //Sanity check
     if (bnValueGen != bnValue)
@@ -333,7 +334,7 @@ bool CzNXBWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const 
     if (nCountLastUsed < pMint.second) {
         CWalletDB walletdb(strWalletFile);
         nCountLastUsed = pMint.second;
-        walletdb.WriteZNXBCount(nCountLastUsed);
+        walletdb.WritezNXBCount(nCountLastUsed);
     }
 
     //remove from the pool
@@ -350,7 +351,7 @@ bool IsValidCoinValue(const CBigNum& bnValue)
     bnValue.isPrime();
 }
 
-void CzNXBWallet::SeedToZNXB(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
+void CzNXBWallet::SeedTozNXB(const uint512& seedZerocoin, CBigNum& bnValue, CBigNum& bnSerial, CBigNum& bnRandomness, CKey& key)
 {
     ZerocoinParams* params = Params().Zerocoin_Params(false);
 
@@ -411,10 +412,10 @@ void CzNXBWallet::UpdateCount()
 {
     nCountLastUsed++;
     CWalletDB walletdb(strWalletFile);
-    walletdb.WriteZNXBCount(nCountLastUsed);
+    walletdb.WritezNXBCount(nCountLastUsed);
 }
 
-void CzNXBWallet::GenerateDeterministicZNXB(CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
+void CzNXBWallet::GenerateDeterministiczNXB(CoinDenomination denom, PrivateCoin& coin, CDeterministicMint& dMint, bool fGenerateOnly)
 {
     GenerateMint(nCountLastUsed + 1, denom, coin, dMint);
     if (fGenerateOnly)
@@ -431,7 +432,7 @@ void CzNXBWallet::GenerateMint(const uint32_t& nCount, const CoinDenomination de
     CBigNum bnSerial;
     CBigNum bnRandomness;
     CKey key;
-    SeedToZNXB(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
+    SeedTozNXB(seedZerocoin, bnValue, bnSerial, bnRandomness, key);
     coin = PrivateCoin(Params().Zerocoin_Params(false), denom, bnSerial, bnRandomness);
     coin.setPrivKey(key.GetPrivKey());
     coin.setVersion(PrivateCoin::CURRENT_VERSION);

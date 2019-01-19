@@ -1,11 +1,12 @@
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef NXBoost_INVALID_H
-#define NXBoost_INVALID_H
+#ifndef nxboost_INVALID_H
+#define nxboost_INVALID_H
 
-#endif //NXBoost_INVALID_H
+#endif //nxboost_INVALID_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>

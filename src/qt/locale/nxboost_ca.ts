@@ -426,7 +426,7 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Envia monedes a una adreça NXBoost</translation>
+        <translation>Envia monedes a una adreça nxboost</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -1959,7 +1959,7 @@
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>

@@ -1,13 +1,14 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "bip38.h"
 #include "init.h"
 #include "main.h"
-#include "rpc/server.h"
+#include "rpcserver.h"
 #include "script/script.h"
 #include "script/standard.h"
 #include "sync.h"
@@ -150,6 +151,47 @@ UniValue importprivkey(const UniValue& params, bool fHelp)
     }
 
     return NullUniValue;
+}
+
+UniValue makekeypair(const UniValue& params, bool fHelp)
+{
+    if (fHelp || params.size() > 1)
+        throw std::runtime_error(
+            "makekeypair [prefix]\n"
+            "Make a public/private key pair.\n"
+            "[prefix] is optional preferred prefix for the public key.\n");
+
+    std::string strPrefix = "";
+    if (params.size() > 0)
+        strPrefix = params[0].get_str();
+
+    CKey key;
+    int nCount = 0;
+    do
+    {
+        key.MakeNewKey(false);
+        nCount++;
+    } while (nCount < 10000 && strPrefix != HexStr(key.GetPubKey()).substr(0, strPrefix.size()));
+
+    if (strPrefix != HexStr(key.GetPubKey()).substr(0, strPrefix.size()))
+        return NullUniValue;
+
+    CPrivKey vchPrivKey = key.GetPrivKey();
+    CKeyID keyID = key.GetPubKey().GetID();
+    CKey vchSecret = CKey();
+    vchSecret.SetPrivKey(vchPrivKey, false);
+    CKey vchCSecret = CKey();
+    vchCSecret.SetPrivKey(vchPrivKey, true);
+    CKeyID keyCID = vchCSecret.GetPubKey().GetID();
+    UniValue result(UniValue::VOBJ);
+    result.push_back(Pair("private_key", HexStr<CPrivKey::iterator>(vchPrivKey.begin(), vchPrivKey.end())));
+    result.push_back(Pair("U public_key", HexStr(key.GetPubKey())));
+    result.push_back(Pair("U wallet_address", CBitcoinAddress(keyID).ToString()));
+    result.push_back(Pair("U wallet_private_key", CBitcoinSecret(vchSecret).ToString()));
+    result.push_back(Pair("C public_key", HexStr(vchCSecret.GetPubKey())));
+    result.push_back(Pair("C wallet_address", CBitcoinAddress(keyCID).ToString()));
+    result.push_back(Pair("C wallet_private_key", CBitcoinSecret(vchCSecret).ToString()));
+    return result;
 }
 
 UniValue importaddress(const UniValue& params, bool fHelp)
@@ -336,7 +378,7 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"nxboostaddress\"   (string, required) The nxboost address for the private key\n"
+            "1. \"nxboostaddress\"   (string, required) The NXBoost address for the private key\n"
 
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
@@ -434,7 +476,7 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. \"nxboostaddress\"   (string, required) The nxboost address for the private key (you must hold the key already)\n"
+            "1. \"nxboostaddress\"   (string, required) The NXBoost address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
 
             "\nResult:\n"

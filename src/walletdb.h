@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2013 The Bitcoin developers
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2016-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -175,14 +176,14 @@ public:
     bool ReadZerocoinSpendSerialEntry(const CBigNum& bnSerial);
     bool WriteCurrentSeedHash(const uint256& hashSeed);
     bool ReadCurrentSeedHash(uint256& hashSeed);
-    bool WriteZNXBSeed(const uint256& hashSeed, const vector<unsigned char>& seed);
-    bool ReadZNXBSeed(const uint256& hashSeed, vector<unsigned char>& seed);
-    bool ReadZNXBSeed_deprecated(uint256& seed);
-    bool EraseZNXBSeed();
-    bool EraseZNXBSeed_deprecated();
+    bool WritezNXBSeed(const uint256& hashSeed, const vector<unsigned char>& seed);
+    bool ReadzNXBSeed(const uint256& hashSeed, vector<unsigned char>& seed);
+    bool ReadzNXBSeed_deprecated(uint256& seed);
+    bool ErasezNXBSeed();
+    bool ErasezNXBSeed_deprecated();
 
-    bool WriteZNXBCount(const uint32_t& nCount);
-    bool ReadZNXBCount(uint32_t& nCount);
+    bool WritezNXBCount(const uint32_t& nCount);
+    bool ReadzNXBCount(uint32_t& nCount);
     std::map<uint256, std::vector<pair<uint256, uint32_t> > > MapMintPool();
     bool WriteMintPoolPair(const uint256& hashMasterSeed, const uint256& hashPubcoin, const uint32_t& nCount);
 

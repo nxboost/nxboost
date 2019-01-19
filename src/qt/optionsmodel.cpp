@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -78,7 +79,7 @@ void OptionsModel::Init()
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
 
     if (!settings.contains("fZeromintEnable"))
-        settings.setValue("fZeromintEnable", false);
+        settings.setValue("fZeromintEnable", true);
     fEnableZeromint = settings.value("fZeromintEnable").toBool();
 
     if (!settings.contains("nZeromintPercentage"))
@@ -89,10 +90,10 @@ void OptionsModel::Init()
         settings.setValue("nPreferredDenom", 0);
     nPreferredDenom = settings.value("nPreferredDenom", "0").toLongLong();
 
-    if (!settings.contains("nAnonymizeNXBoostAmount"))
-        settings.setValue("nAnonymizeNXBoostAmount", 1000);
+    if (!settings.contains("nAnonymizenxboostAmount"))
+        settings.setValue("nAnonymizenxboostAmount", 1000);
 
-    nAnonymizeNXBoostAmount = settings.value("nAnonymizeNXBoostAmount").toLongLong();
+    nAnonymizenxboostAmount = settings.value("nAnonymizenxboostAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -166,8 +167,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeNXBoostAmount"))
-        SoftSetArg("-anonymizenxboostamount", settings.value("nAnonymizeNXBoostAmount").toString().toStdString());
+    if (settings.contains("nAnonymizenxboostAmount"))
+        SoftSetArg("-anonymizenxboostamount", settings.value("nAnonymizenxboostAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -258,8 +259,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeNXBoostAmount:
-            return QVariant(nAnonymizeNXBoostAmount);
+        case AnonymizenxboostAmount:
+            return QVariant(nAnonymizenxboostAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -388,10 +389,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit hideZeroBalancesChanged(fHideZeroBalances);
             break;
 
-        case AnonymizeNXBoostAmount:
-            nAnonymizeNXBoostAmount = value.toInt();
-            settings.setValue("nAnonymizeNXBoostAmount", nAnonymizeNXBoostAmount);
-            emit anonymizeNXBoostAmountChanged(nAnonymizeNXBoostAmount);
+        case AnonymizenxboostAmount:
+            nAnonymizenxboostAmount = value.toInt();
+            settings.setValue("nAnonymizenxboostAmount", nAnonymizenxboostAmount);
+            emit anonymizenxboostAmountChanged(nAnonymizenxboostAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

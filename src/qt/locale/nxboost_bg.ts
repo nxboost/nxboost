@@ -434,7 +434,7 @@
     </message>
     <message>
         <source>Privacy Actions for zNXB</source>
-        <translation>Поверителни Действия за ZNXB</translation>
+        <translation>Поверителни Действия за zNXB</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -654,7 +654,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  NXBoost:URI)</translation>
+        <translation>Поискай плащане (генерира QR кодове и  nxboost:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -677,7 +677,7 @@
         <translation>Информациза за NXBoost Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
+        <source>Modify configuration options for nxboost</source>
         <translation>Промени NXBoost конфигурацията</translation>
     </message>
     <message>
@@ -717,8 +717,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Отвори NXBoost:URI платежно нареждане</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Отвори nxboost:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1808,15 +1808,15 @@ Please be patient after clicking import.</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1930,14 +1930,14 @@ Please be patient after clicking import.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -3374,7 +3374,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Welcome to the NXBoost RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на NXBoost.</translation>
+        <translation>Добре Дошли в RPC конзолата на nxboost.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3777,8 +3777,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(Умната такса не е инициализирана все още. Това изисква по няколко блока...)</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3933,8 +3933,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Адреса на получателя е недвалиден. Моля преверете.</translation>
     </message>
     <message>
-        <source>using HyperSend</source>
-        <translation>използвайки HyperSend</translation>
+        <source>using SwiftX</source>
+        <translation>използвайки SwiftX</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -4040,8 +4040,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
-        <translation>Съобщение, което е било прикачено към NXBoost:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по NXBoost мрежата.</translation>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <translation>Съобщение, което е било прикачено към nxboost:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по NXBoost мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4275,36 +4275,36 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>%1 потвърждения</translation>
     </message>
     <message>
-        <source>%1/offline (verified via HyperSend)</source>
-        <translation>%1 офлайн (потвърдени чрез hypersend)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1 офлайн (потвърдени чрез swiftTx)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via HyperSend)</source>
-        <translation>%1 потвърдени (потвърдени чрез hypersend)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1 потвърдени (потвърдени чрез swiftTx)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via HyperSend)</source>
-        <translation>%1 потвърждения (потвърдени чрез hypersend)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 потвърждения (потвърдени чрез swiftTx)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/офлайн (HyperSend потвърждение в процес - %2 от %3 подписа)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/офлайн (SwiftTX потвърждение в процес - %2 от %3 подписа)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/потвърдени (HyperSend потвърждение в процес - %2 от %3 подписа)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/потвърдени (SwiftTX потвърждение в процес - %2 от %3 подписа)</translation>
     </message>
     <message>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 потвърждения  (HyperSend потвърждение в процес - %2 от %3 подписа)</translation>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 потвърждения  (SwiftTX потвърждение в процес - %2 от %3 подписа)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification failed)</source>
-        <translation>%1/офлайн (Неуспешно HyperSend потвърждние)</translation>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/офлайн (Неуспешно SwiftTX потвърждние)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification failed)</source>
-        <translation>%1/потвърдени (Неуспешно HyperSend потвърждние)</translation>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/потвърдени (Неуспешно SwiftTX потвърждние)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -4813,8 +4813,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Изпрати Монети</translation>
     </message>
     <message>
-        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
-        <translation>HyperSend не подържа изпращането на толкова големи суми. Превода е ограничен до %1 NXB.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <translation>SwiftTX не подържа изпращането на толкова големи суми. Превода е ограничен до %1 NXB.</translation>
     </message>
 </context>
 <context>
@@ -4845,7 +4845,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Изберете zNXB за Изпращане</translation>
@@ -5298,12 +5298,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Активирай автоматично сечене на Zerocoin (0-1, По подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Вкл. публикуването на хаш транзакцията (закл. чрез HyperSend) в &lt;address&gt;</translation>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Вкл. публикуването на хаш транзакцията (закл. чрез SwiftX) в &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish raw transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Вкл. публикуването на сурова транзакция (закл. чрез HyperSend) в &lt;address&gt;</translation>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Вкл. публикуването на сурова транзакция (закл. чрез SwiftX) в &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -5542,8 +5542,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Избраната стойност на монетите е по-малка от целта за плащане</translation>
     </message>
     <message>
-        <source>HyperSend options:</source>
-        <translation>HyperSend опции:</translation>
+        <source>SwiftX options:</source>
+        <translation>SwiftX опции:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -5566,12 +5566,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </translation>
     </message>
     <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, HyperSend, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи NXBoost специфичната функционалност (Главни възли, Zerocoin, HyperSend, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи NXBoost специфичната функционалност (Главни възли, Zerocoin, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
     </message>
     <message>
-        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Включи HyperSend, показвай потвърждения за заключени преводи (bool, default: %s)</translation>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Включи SwiftTX, показвай потвърждения за заключени преводи (bool, default: %s)</translation>
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
@@ -5610,8 +5610,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко резервно копие на портфейла. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив.</translation>
     </message>
     <message>
-        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>HyperSend изисква входящи преводи с поне 6 потвърждения. Може да се наложи да изчакате още преди да опитате отново.</translation>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX изисква входящи преводи с поне 6 потвърждения. Може да се наложи да изчакате още преди да опитате отново.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

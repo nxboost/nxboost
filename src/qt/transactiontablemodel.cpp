@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2016-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -345,7 +346,7 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
         return tr("Payment to yourself");
     case TransactionRecord::StakeMint:
         return tr("NXB Stake");
-    case TransactionRecord::StakeZNXB:
+    case TransactionRecord::StakezNXB:
         return tr("zNXB Stake");
     case TransactionRecord::Generated:
         return tr("Mined");
@@ -365,7 +366,7 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
         return tr("Spent zNXB");
     case TransactionRecord::RecvFromZerocoinSpend:
         return tr("Received NXB from zNXB");
-    case TransactionRecord::ZerocoinSpend_Change_zXlq:
+    case TransactionRecord::ZerocoinSpend_Change_zNXB:
         return tr("Minted Change as zNXB from zNXB Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
         return tr("Converted zNXB to NXB");
@@ -380,7 +381,7 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::StakeZNXB:
+    case TransactionRecord::StakezNXB:
     case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
     case TransactionRecord::RecvWithObfuscation:
@@ -423,9 +424,9 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
     case TransactionRecord::SendToOther:
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
-    case TransactionRecord::ZerocoinSpend_Change_zXlq:
+    case TransactionRecord::ZerocoinSpend_Change_zNXB:
         return tr("Anonymous (zNXB Transaction)");
-    case TransactionRecord::StakeZNXB:
+    case TransactionRecord::StakezNXB:
         return tr("Anonymous (zNXB Stake)");
     case TransactionRecord::SendToSelf:
     default:

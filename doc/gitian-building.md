@@ -3,7 +3,7 @@ Gitian building
 
 *Setup instructions for a gitian build of NXBoost using a Debian VM or physical system.*
 
-Gitian is the deterministic build process that is used to build the NXBoost
+Gitian is the deterministic build process that is used to build the nxboost
 Core executables. It provides a way to be reasonably sure that the
 executables are really built from source on GitHub. It also makes sure that
 the same, tested dependencies are used and statically built into the executable.
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing gitian](#installing-gitian)
 - [Setting up gitian images](#setting-up-gitian-images)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building NXBoost](#building-nxboost)
+- [Building nxboost](#building-nxboost)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -277,7 +277,7 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user *debian* not for *root*.
 
-Clone the git repositories for nxboost and gitian and then checkout the nxboost version that you want to build.
+Clone the git repositories for NXBoost and gitian and then checkout the NXBoost version that you want to build.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
@@ -321,16 +321,16 @@ There will be a lot of warnings printed during build of the images. These can be
 Getting and building the inputs
 --------------------------------
 
-Follow the instructions in [doc/release-process.md](release-process.md) in the nxboost repository
+Follow the instructions in [doc/release-process.md](release-process.md) in the NXBoost repository
 under 'Fetch and build inputs' to install sources which require manual intervention. Also follow
 the next step: 'Seed the Gitian sources cache', which will fetch all necessary source files allowing
 for gitian to work offline.
 
-Building NXBoost
+Building nxboost
 ----------------
 
 To build NXBoost (for Linux, OSX and Windows) just follow the steps under 'perform
-gitian builds' in [doc/release-process.md](release-process.md) in the nxboost repository.
+gitian builds' in [doc/release-process.md](release-process.md) in the NXBoost repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
 These dependencies will be cached after a successful build to avoid rebuilding them when possible.

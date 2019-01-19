@@ -574,7 +574,7 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Odoslať mince na adresu NXBoost</translation>
+        <translation>Odoslať mince na adresu nxboost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
@@ -597,12 +597,12 @@
         <translation>Zobraziť informácie o NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Zmeňte možnosti konfigurácie pre NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Zmeňte možnosti konfigurácie pre nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy NXBoost, aby ste preukázali, že ich vlastníte</translation>
+        <translation>Podpíšte správy pomocou adresy nxboost, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified NXBoost addresses</source>
@@ -637,8 +637,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Otvorte NXBoost: URI alebo žiadosť o platbu</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Otvorte nxboost: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -650,7 +650,7 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Zobraziť pomocnú správu programu NXBoost Core a získajte zoznam možností príkazového riadka NXBoost</translation>
+        <translation>Zobraziť pomocnú správu programu NXBoost Core a získajte zoznam možností príkazového riadka nxboost</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
@@ -1115,7 +1115,7 @@ MultiSend: %1</translation>
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The NXBoost address to sign the message with</source>
-        <translation>Adresa NXBoost, ktorou chcete správu podpísať</translation>
+        <translation>Adresa nxboost, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1281,7 +1281,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     </context>
 <context>
     <name>nxboost-core</name>

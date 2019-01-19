@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出NXBoost幣的位址</translation>
+        <translation>選擇要匯出nxboost幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收NXBoost幣的位址</translation>
+        <translation>選擇要接收nxboost幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -566,7 +566,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
-        <translation>請求付款 (會產生 QR Code跟 nxboost 位址)</translation>
+        <translation>請求付款 (會產生 QR Code跟 NXBoost 位址)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -585,7 +585,7 @@
         <translation>顯示 NXBoost Core 相關資訊</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
+        <source>Modify configuration options for nxboost</source>
         <translation>修改 NXBoost 設定</translation>
     </message>
     <message>
@@ -625,8 +625,8 @@
         <translation>打開Masternode設定檔</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>打開NXBoost: 位址或付款請求 </translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>打開nxboost: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -957,7 +957,7 @@
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     </context>
 <context>
     <name>nxboost-core</name>

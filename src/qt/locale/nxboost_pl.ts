@@ -510,11 +510,11 @@
     </message>
     <message>
         <source>NXBoost Core</source>
-        <translation>&amp;Rdzeń NXBoost</translation>
+        <translation>&amp;Rdzeń nxboost</translation>
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Wyślij monety do adresu NXBoost</translation>
+        <translation>Wyślij monety do adresu nxboost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
@@ -537,16 +537,16 @@
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Modyfikuj opcje konfiguracji NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modyfikuj opcje konfiguracji nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami NXBoost, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <translation>Zatwierdź wiadomość z twoimi adresami nxboost, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified NXBoost addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu NXBoost</translation>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu nxboost</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -573,8 +573,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Otwórz NXBoost: URI i żądanie zapłaty</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Otwórz nxboost: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -586,7 +586,7 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia NXBoost, aby dostać listę możliwych opcji NXBoost command-line</translation>
+        <translation>Pokaż wiadomość pomocy rdzenia nxboost, aby dostać listę możliwych opcji NXBoost command-line</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
@@ -900,7 +900,7 @@ MultiWysyłlka: %1</translation>
     <name>HelpMessageDialog</name>
     <message>
         <source>NXBoost Core</source>
-        <translation>&amp;Rdzeń NXBoost</translation>
+        <translation>&amp;Rdzeń nxboost</translation>
     </message>
     </context>
 <context>
@@ -915,7 +915,7 @@ MultiWysyłlka: %1</translation>
     </message>
     <message>
         <source>NXBoost Core</source>
-        <translation>&amp;Rdzeń NXBoost</translation>
+        <translation>&amp;Rdzeń nxboost</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1214,14 +1214,14 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie NXBoost</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie nxboost</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/nxboost-project/nxboost-project-translations </translation>
+https://www.transifex.com/nxboost/nxboost-wallet </translation>
     </message>
     <message>
         <source>Connect to the NXBoost network through a SOCKS5 proxy.</source>
@@ -1930,7 +1930,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations </transla
     <name>SplashScreen</name>
     <message>
         <source>NXBoost Core</source>
-        <translation>&amp;Rdzeń NXBoost</translation>
+        <translation>&amp;Rdzeń nxboost</translation>
     </message>
     </context>
 <context>
@@ -2021,7 +2021,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations </transla
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

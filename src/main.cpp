@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The NXBoost & Bitfineon developers
+// Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018-2019 The NXBoost developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -27,7 +27,7 @@
 #include "pow.h"
 #include "spork.h"
 #include "sporkdb.h"
-#include "hypersend.h"
+#include "swifttx.h"
 #include "txdb.h"
 #include "txmempool.h"
 #include "ui_interface.h"
@@ -843,8 +843,8 @@ int GetInputAgeIX(uint256 nTXHash, CTxIn& vin)
         if (i != mapTxLocks.end()) {
             sigs = (*i).second.CountSignatures();
         }
-        if (sigs >= HYPERSEND_SIGNATURES_REQUIRED) {
-            return nHyperSendDepth + nResult;
+        if (sigs >= SWIFTTX_SIGNATURES_REQUIRED) {
+            return nSwiftTXDepth + nResult;
         }
     }
 
@@ -859,8 +859,8 @@ int GetIXConfirmations(uint256 nTXHash)
     if (i != mapTxLocks.end()) {
         sigs = (*i).second.CountSignatures();
     }
-    if (sigs >= HYPERSEND_SIGNATURES_REQUIRED) {
-        return nHyperSendDepth;
+    if (sigs >= SWIFTTX_SIGNATURES_REQUIRED) {
+        return nSwiftTXDepth;
     }
 
     return 0;
@@ -1247,7 +1247,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
         return false;
     }
 
-    // ----------- HYPERSEND transaction scanning -----------
+    // ----------- swiftTX transaction scanning -----------
 
     BOOST_FOREACH (const CTxIn& in, tx.vin) {
         if (mapLockedInputs.count(in.prevout)) {
@@ -1487,7 +1487,7 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
     if (pool.exists(hash))
         return false;
 
-    // ----------- HYPERSEND transaction scanning -----------
+    // ----------- swiftTX transaction scanning -----------
 
     BOOST_FOREACH (const CTxIn& in, tx.vin) {
         if (mapLockedInputs.count(in.prevout)) {
@@ -1812,11 +1812,11 @@ int64_t GetBlockValue(int nHeight)
         if (nHeight < 200 && nHeight > 0)
             return 250000 * COIN;
     }
-	
+
 	if (nHeight == 0) return 10 * COIN;
-		
+
 	int64_t nSubsidy = 1 * COIN;
-	
+
 if(nHeight <= 1 && nHeight > 0) {
         nSubsidy = 35000000 * COIN;
 	} else if (nHeight > 1 && nHeight <= 47000) {
@@ -1834,27 +1834,24 @@ if(nHeight <= 1 && nHeight > 0) {
 	} else if (nHeight > 475200 && nHeight <= 518400) { // 475201 => FIRST POS BLOCK
 		nSubsidy = 8 * COIN;
 	} else if (nHeight > 518400 && nHeight <= 561600) {
-		nSubsidy = 5 * COIN;
+    nSubsidy = 5 * COIN;
 	} else if (nHeight > 561600 && nHeight <= 604800) {
 		nSubsidy = 3 * COIN;
 	} else if (nHeight > 604800) {
 		nSubsidy = 2 * COIN;
-	}
-
-
-	
+  }
 	return nSubsidy;
 }
 
-int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZNXBStake)
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
-	if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         if (nHeight < 200)
             return 0;
     }
-	
+
 	int64_t ret = 0;
-	
+
 	if(nHeight <= 47000 && nHeight > 0) {
         ret = blockValue / 100 * 50;
 	} else if (nHeight <= 47077 && nHeight > 47000) {
@@ -1863,6 +1860,12 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 	ret = blockValue / 100 * 80;
 
 	}
+    return ret;
+}
+int64_t GetPosPayment(int nHeight)
+{
+    int64_t blockValue = GetBlockValue(nHeight);
+    int64_t ret = blockValue - GetMasternodePayment(nHeight, blockValue);
     return ret;
 }
 
@@ -2232,7 +2235,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from NXBoost
+         * note we only undo zerocoin databasing in the following statement, value to and from nxboost
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2379,7 +2382,7 @@ void ThreadScriptCheck()
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZNXBMinted()
+void RecalculatezNXBMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -2406,7 +2409,7 @@ void RecalculateZNXBMinted()
     }
 }
 
-void RecalculateZNXBSpent()
+void RecalculatezNXBSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
     while (true) {
@@ -2449,8 +2452,8 @@ bool RecalculateNXBSupply(int nHeightStart)
 
     CBlockIndex* pindex = chainActive[nHeightStart];
     CAmount nSupplyPrev = pindex->pprev->nMoneySupply;
-    if (nHeightStart == Params().Zerocoin_StartHeight())
-        nSupplyPrev = CAmount(5449796547496199);
+    //if (nHeightStart == Params().Zerocoin_StartHeight())
+    //    nSupplyPrev = CAmount(5449796547496199);
 
     while (true) {
         if (pindex->nHeight % 1000 == 0)
@@ -2514,7 +2517,7 @@ bool RecalculateNXBSupply(int nHeightStart)
 
 bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError)
 {
-    // NXBoost: recalculate Accumulator Checkpoints that failed to database properly
+    // nxboost: recalculate Accumulator Checkpoints that failed to database properly
     if (!listMissingCheckpoints.empty()) {
         uiInterface.ShowProgress(_("Calculating missing accumulators..."), 0);
         LogPrintf("%s : finding missing checkpoints\n", __func__);
@@ -2562,7 +2565,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
     return true;
 }
 
-bool UpdateZNXBSupply(const CBlock& block, CBlockIndex* pindex)
+bool UpdatezNXBSupply(const CBlock& block, CBlockIndex* pindex)
 {
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -2817,14 +2820,14 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
-    if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-        RecalculateZNXBMinted();
-        RecalculateZNXBSpent();
+    if (pindex->nHeight == Params().Zerocoin_Block_V2_Start() + 1) {
+        RecalculatezNXBMinted();
+        RecalculatezNXBSpent();
         RecalculateNXBSupply(Params().Zerocoin_StartHeight());
     }
 
     //Track zNXB money supply in the block index
-    if (!UpdateZNXBSupply(block, pindex))
+    if (!UpdatezNXBSupply(block, pindex))
         return state.DoS(100, error("%s: Failed to calculate new zNXB supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
@@ -2833,7 +2836,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zXlqSpent: %s\n",
+//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zNXBSpent: %s\n",
 //              FormatMoney(nValueOut), FormatMoney(nValueIn),
 //              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nAmountZerocoinSpent));
 
@@ -3207,7 +3210,7 @@ bool DisconnectBlocksAndReprocess(int blocks)
 /*
     DisconnectBlockAndInputs
 
-    Remove conflicting blocks for successful HyperSend transaction locks
+    Remove conflicting blocks for successful SwiftX transaction locks
     This should be very rare (Probably will never happen)
 */
 // ***TODO*** clean up here
@@ -3836,8 +3839,8 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 return state.DoS(100, error("CheckBlock() : more than one coinstake"));
     }
 
-    // ----------- HYPERSEND transaction scanning -----------
-    if (IsSporkActive(SPORK_3_HYPERSEND_BLOCK_FILTERING)) {
+    // ----------- swiftTX transaction scanning -----------
+    if (IsSporkActive(SPORK_3_SWIFTTX_BLOCK_FILTERING)) {
         BOOST_FOREACH (const CTransaction& tx, block.vtx) {
             if (!tx.IsCoinBase()) {
                 //only reject blocks when it's based on complete consensus
@@ -3869,7 +3872,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 nHeight = (*mi).second->nHeight + 1;
         }
 
-        // NXBoost
+        // nxboost
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -4109,7 +4112,7 @@ bool ContextualCheckZerocoinStake(int nHeight, CStakeInput* stake)
     if (nHeight < Params().Zerocoin_Block_V2_Start())
         return error("%s: zNXB stake block is less than allowed start height", __func__);
 
-    if (CZXlqStake* zNXB = dynamic_cast<CZXlqStake*>(stake)) {
+    if (CzNXBStake* zNXB = dynamic_cast<CzNXBStake*>(stake)) {
         CBlockIndex* pindexFrom = zNXB->GetIndexFrom();
         if (!pindexFrom)
             return error("%s: failed to get index associated with zNXB stake checksum", __func__);
@@ -4171,7 +4174,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         if (!stake)
             return error("%s: null stake ptr", __func__);
 
-        if (stake->IsZNXB() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
+        if (stake->IszNXB() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
             return state.DoS(100, error("%s: staked zNXB fails context checks", __func__));
 
         uint256 hash = block.GetHash();
@@ -4284,7 +4287,7 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
     // Preliminary checks
     int64_t nStartTime = GetTimeMillis();
     bool checked = CheckBlock(*pblock, state);
-	
+
     int nMints = 0;
     int nSpends = 0;
     for (const CTransaction tx : pblock->vtx) {
@@ -4375,8 +4378,8 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
         return false;
     if (!CheckBlock(block, state, fCheckPOW, fCheckMerkleRoot))
         return false;
-	if (!ContextualCheckBlock(block, state, pindexPrev))
-		return false;
+    if (!ContextualCheckBlock(block, state, pindexPrev))
+        return false;
     if (!ConnectBlock(block, state, &indexDummy, viewNew, true))
         return false;
     assert(state.IsValid());
@@ -5336,7 +5339,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             return false;
         }
 
-        // NXBoost: We use certain sporks during IBD, so check to see if they are
+        // nxboost: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         bool fMissingSporks = !pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
                 !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&
@@ -6152,7 +6155,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         mnodeman.ProcessMessage(pfrom, strCommand, vRecv);
         budget.ProcessMessage(pfrom, strCommand, vRecv);
         masternodePayments.ProcessMessageMasternodePayments(pfrom, strCommand, vRecv);
-        ProcessMessageHyperSend(pfrom, strCommand, vRecv);
+        ProcessMessageSwiftTX(pfrom, strCommand, vRecv);
         ProcessSpork(pfrom, strCommand, vRecv);
         masternodeSync.ProcessMessage(pfrom, strCommand, vRecv);
     }
@@ -6168,7 +6171,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
     // SPORK_14 is used for 70913 (v3.1.0+)
-    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
+    if (chainActive.Tip()->nHeight > Params().Zerocoin_Block_V2_Start()-10/* IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT)*/)
             return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     // SPORK_15 was used for 70912 (v3.0.5+), commented out now.

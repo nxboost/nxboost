@@ -1,5 +1,5 @@
 ---
-name: "nxboost-win-3.2"
+name: "nxboost-win-3.1"
 enable_cache: true
 suites:
 - "trusty"
@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/nxboost-project/nxboost.git"
+- "url": "https://github.com/nxboost/nxboost.git"
   "dir": "nxboost"
 files: []
 script: |

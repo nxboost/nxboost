@@ -677,8 +677,8 @@
         <translation>Visa information om NXBoost Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Ändra konfigurationsval för NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Ändra konfigurationsval för nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,8 +717,8 @@
         <translation>Öppna Huvudnodens konfigurations fil </translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Öppna en NXBoost: URI eller betalningsförfrågan</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Öppna en nxboost: URI eller betalningsförfrågan</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1811,16 +1811,16 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>Fördunkling Konfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Fördunkling sattes framgångsrikt till grundläggande (%1 och 2 rundor). Du kan ändra det här när du vill genom att öppna NXBoost's konfigurationsskärm.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Fördunkling sattes framgångsrikt till grundläggande (%1 och 2 rundor). Du kan ändra det här när du vill genom att öppna nxboost's konfigurationsskärm.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Fördunkling sattes framgångsrikt till hög (%1 och 8 rundor). Du kan ändra det här när du vill genom att öppna NXBoost's konfigurationsskärm.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Fördunkling sattes framgångsrikt till hög (%1 och 8 rundor). Du kan ändra det här när du vill genom att öppna nxboost's konfigurationsskärm.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Fördunkling sattes framgångsrikt till maximal (%1 och 16 rundor). Du kan ändra det här när du vill genom att öppna NXBoost's konfigurationsskärm.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Fördunkling sattes framgångsrikt till maximal (%1 och 16 rundor). Du kan ändra det här när du vill genom att öppna nxboost's konfigurationsskärm.</translation>
     </message>
 </context>
 <context>
@@ -1921,14 +1921,14 @@ Var god vänta efter att du trycker på importera.</translation>
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
-        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om NXBoost.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Användargränssnittets språk kan väljas här. Denna inställning börjar gälla efter att man startat om nxboost.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Fattas språk eller är översättningen ofullständig? Hjälp till att bidra med översättning här:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -3713,8 +3713,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>(Smart fee inte initierad än. Detta tar vanligtvis några block...)</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3861,8 +3861,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Mottagaradressen är ej giltig, var vänlig kontrollera den.</translation>
     </message>
     <message>
-        <source>using HyperSend</source>
-        <translation>använder HyperSend</translation>
+        <source>using SwiftX</source>
+        <translation>använder SwiftX</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -3968,8 +3968,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Medelande:</translation>
     </message>
     <message>
-        <source>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
-        <translation>Ett medelande som var bifogat till NXBoost: URI som kommer sparas med transaktionen som din referens. Lägg märke till: Detta meddelande kommer inte skickas genom NXBoost nätverket.</translation>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <translation>Ett medelande som var bifogat till nxboost: URI som kommer sparas med transaktionen som din referens. Lägg märke till: Detta meddelande kommer inte skickas genom NXBoost nätverket.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4203,36 +4203,36 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>%1 bekräftelser</translation>
     </message>
     <message>
-        <source>%1/offline (verified via HyperSend)</source>
-        <translation>%1/offline (verifierade via HyperSend)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (verifierade via SwiftX)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via HyperSend)</source>
-        <translation>%1/bekräftade (verifierade via HyperSend)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/bekräftade (verifierade via SwiftX)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via HyperSend)</source>
-        <translation>%1 bekräftelser (verifierade via HyperSend)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 bekräftelser (verifierade via SwiftX)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (HyperSend verifikation arbetar på det - %2 av %3 signaturer)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (SwiftX verifikation arbetar på det - %2 av %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/bekräftade (HyperSend verifikation arbetar på det - %2 av %3 signaturer)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/bekräftade (SwiftX verifikation arbetar på det - %2 av %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 bekräftelser (HyperSend verifikation arbetar på det - %2 av %3 signaturer)</translation>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 bekräftelser (SwiftX verifikation arbetar på det - %2 av %3 signaturer)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification failed)</source>
-        <translation>%1/offline (HyperSend verifikation misslyckades)</translation>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/offline (SwiftX verifikation misslyckades)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification failed)</source>
-        <translation>%1/bekräftade (HyperSend verifikation misslyckades)</translation>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/bekräftade (SwiftX verifikation misslyckades)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -4741,7 +4741,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Skicka Mynt</translation>
     </message>
     <message>
-        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
         <translation>wiftX stödjer inte att skicka så höga värden än. Transaktioner är för nuvarande begränsade till %1 NXB.</translation>
     </message>
 </context>
@@ -4773,7 +4773,7 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Välj zNXB att Spendera</translation>
@@ -5230,12 +5230,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Aktivera automatisk Zerocoin minting (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Aktivera publicera hash transaktion (låst via HyperSend) i &lt;address&gt;</translation>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Aktivera publicera hash transaktion (låst via SwiftX) i &lt;address&gt;</translation>
     </message>
     <message>
-        <source>Enable publish raw transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Aktivera publicera rå transaktion (låst via HyperSend) i &lt;address&gt;</translation>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Aktivera publicera rå transaktion (låst via SwiftX) i &lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -5474,8 +5474,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Valda mynts värde är under betalningsmål</translation>
     </message>
     <message>
-        <source>HyperSend options:</source>
-        <translation>HyperSend alternativ:</translation>
+        <source>SwiftX options:</source>
+        <translation>SwiftX alternativ:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -5498,12 +5498,12 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
 </translation>
     </message>
     <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, HyperSend, Budgeting) (0-1, default: %u)</source>
-        <translation>Avaktivera all NXBoost funktionalitet (Huvudnoder, Zerocoin, HyperSend, Budgeting) (0-1, standard: %u)</translation>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Avaktivera all NXBoost funktionalitet (Huvudnoder, Zerocoin, SwiftX, Budgeting) (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Tillåt HyperSend, visa bekräftelser för låsta transaktioner (bool, default: %s)</translation>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Tillåt SwiftX, visa bekräftelser för låsta transaktioner (bool, default: %s)</translation>
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
@@ -5542,8 +5542,8 @@ Minta antingen högre valörer (så att färre inputs behövs) eller spendera mi
         <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av vilken plånbok backup som helst. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup.</translation>
     </message>
     <message>
-        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>HyperSend kräver inmatningar med minst 6 bekräftelser, du kan behöva vänta några minuter och försöka igen.</translation>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftX kräver inmatningar med minst 6 bekräftelser, du kan behöva vänta några minuter och försöka igen.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

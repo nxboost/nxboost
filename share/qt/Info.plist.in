@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>NXBoost-Qt</string>
+  <string>nxboost-Qt</string>
   
   <key>CFBundleName</key>
-  <string>NXBoost-Qt</string>
+  <string>nxboost-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.nxboost.NXBoost-Qt</string>
+  <string>io.nxboost.nxboost-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.nxboost.NXBoostPayment</string>
+      <string>io.nxboost.nxboostPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>nxboost</string>

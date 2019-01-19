@@ -52,9 +52,9 @@ PID file:            /var/run/nxboostd/nxboostd.pid (OpenRC and Upstart)
                      /var/lib/nxboostd/nxboostd.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the nxboost user and group.  It is advised for security
+should all be owned by the NXBoost user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-nxboost user and group.  Access to nxboost-cli and other nxboostd rpc clients
+NXBoost user and group.  Access to nxboost-cli and other nxboostd rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration
@@ -89,7 +89,7 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 Copy nxboostd.init to /etc/init.d/nxboostd. Test by running "service nxboostd start".
 
 Using this script, you can adjust the path and flags to the nxboostd program by
-setting the NXBoostD and FLAGS environment variables in the file
+setting the nxboostD and FLAGS environment variables in the file
 /etc/sysconfig/nxboostd. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

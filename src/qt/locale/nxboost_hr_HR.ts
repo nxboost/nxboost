@@ -677,8 +677,8 @@
         <translation>Prikaz informacija o NXBoost Core-u</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Izmijenite konfiguracijske opcije za NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Izmijenite konfiguracijske opcije za nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,8 +717,8 @@
         <translation>Otvori Masternode konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Otvori NXBoost: URI zahtjev za plačanje</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Otvori nxboost: URI zahtjev za plačanje</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1811,16 +1811,16 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Obfuscation Konfiguracija</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju NXBoost-a.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na osnovne (%1 i 2 runde). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju nxboost-a.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju NXBoost-a</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na visoku razinu (%1 i 8 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju nxboost-a</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening NXBoost's configuration screen.</source>
-        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju NXBoost-a.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Obfuscation je uspješno postavljen na maksimalnu razinu (%1 i 16 krugova). To možete promijeniti u bilo kojem trenutku otvaranjem zaslona za konfiguraciju nxboost-a.</translation>
     </message>
 </context>
 <context>
@@ -1933,14 +1933,14 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Mreža</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
-        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja NXBoost-a.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja nxboost-a.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</source>
+https://www.transifex.com/nxboost/nxboost-wallet</source>
         <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
-https://www.transifex.com/nxboost-project/nxboost-project-translations</translation>
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2156,7 +2156,7 @@ https://www.transifex.com/nxboost-project/nxboost-project-translations</translat
     </message>
     <message>
         <source>Your current NXBoost balance, unconfirmed and immature transactions included</source>
-        <translation>Uključena je vaša trenutna bilanca NXBoost, nepotvrđene i nezrele transakcije</translation>
+        <translation>Uključena je vaša trenutna bilanca nxboost, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
         <source>zNXB Balance</source>
@@ -3789,8 +3789,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(Smart naknada još nije inicirana. To obično traje nekoliko blokova ...)</translation>
     </message>
     <message>
-        <source>HyperSend</source>
-        <translation>HyperSend</translation>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3945,8 +3945,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Adresa primatelja nije važeća, ponovo provjerite.</translation>
     </message>
     <message>
-        <source>using HyperSend</source>
-        <translation>koristi HyperSend</translation>
+        <source>using SwiftX</source>
+        <translation>koristi SwiftX</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -4052,8 +4052,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Poruka:</translation>
     </message>
     <message>
-        <source>A message that was attached to the NXBoost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
-        <translation>Poruka koja je bila povezana s NXBoost: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko NXBoost mreže.</translation>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <translation>Poruka koja je bila povezana s nxboost: URI koji će biti pohranjen s transakcijom za vašu referencu. Napomena: ova poruka neće biti poslana preko NXBoost mreže.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4287,36 +4287,36 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>%1 potvrđeno</translation>
     </message>
     <message>
-        <source>%1/offline (verified via HyperSend)</source>
-        <translation>%1/offline (provjereno s HyperSend)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (provjereno s SwiftX)</translation>
     </message>
     <message>
-        <source>%1/confirmed (verified via HyperSend)</source>
-        <translation>%1 / potvrđeno (potvrđeno putem usluge HyperSend)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1 / potvrđeno (potvrđeno putem usluge SwiftX)</translation>
     </message>
     <message>
-        <source>%1 confirmations (verified via HyperSend)</source>
-        <translation>Potvrde %1 (potvrđene putem HyperSend-a)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>Potvrde %1 (potvrđene putem SwiftX-a)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 / offline (HyperSend potvrda u tijeku - %2 od %3 potpisa)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 / offline (SwiftX potvrda u tijeku - %2 od %3 potpisa)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification in progress - %2 of %3 signatures )</source>
-        <translation>%1 / potvrđeno (provjera HyperSend u tijeku -%2 od %3 potpisa)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1 / potvrđeno (provjera SwiftX u tijeku -%2 od %3 potpisa)</translation>
     </message>
     <message>
-        <source>%1 confirmations (HyperSend verification in progress - %2 of %3 signatures)</source>
-        <translation>Potvrde %1 (provjera HyperSend u tijeku -%2 od %3 potpisa)</translation>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>Potvrde %1 (provjera SwiftX u tijeku -%2 od %3 potpisa)</translation>
     </message>
     <message>
-        <source>%1/offline (HyperSend verification failed)</source>
-        <translation>%1 / offline (HyperSend verifikacija nije uspjela)</translation>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1 / offline (SwiftX verifikacija nije uspjela)</translation>
     </message>
     <message>
-        <source>%1/confirmed (HyperSend verification failed)</source>
-        <translation>%1 / potvrđeno (nije uspjela HyperSend provjera)</translation>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1 / potvrđeno (nije uspjela SwiftX provjera)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -4826,8 +4826,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Salji novac</translation>
     </message>
     <message>
-        <source>HyperSend doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
-        <translation>HyperSend ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 NXB.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <translation>SwiftX ne podržava slanje visokih vrijednosti. Transakcije su trenutačno ograničene na %1 NXB.</translation>
     </message>
 </context>
 <context>
@@ -4858,7 +4858,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Odabrani zNXB za utrošiti</translation>
@@ -5316,12 +5316,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Omogući automatsko Zerocoin stvaranje (0-1, zadano: %u)</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Omogući objavu hash transakcije (zaključano putem usluge HyperSend) u </translation>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Omogući objavu hash transakcije (zaključano putem usluge SwiftX) u </translation>
     </message>
     <message>
-        <source>Enable publish raw transaction (locked via HyperSend) in &lt;address&gt;</source>
-        <translation>Omogući objavljivanje neobrađene transakcije (zaključano putem usluge HyperSend) u</translation>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Omogući objavljivanje neobrađene transakcije (zaključano putem usluge SwiftX) u</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -5560,8 +5560,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Odabrana vrijednost novčića je manja od količine za plačanje</translation>
     </message>
     <message>
-        <source>HyperSend options:</source>
-        <translation>HyperSend opcije:</translation>
+        <source>SwiftX options:</source>
+        <translation>SwiftX opcije:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -5583,12 +5583,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>uklonjene nepotvrđene transakcije</translation>
     </message>
     <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, HyperSend, Budgeting) (0-1, default: %u)</source>
-        <translation>Onemogući sve specifične funkcije NXBoost (Masternodes, Zerocoin, HyperSend, Budgeting) (0-1, zadano: %u)</translation>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Onemogući sve specifične funkcije NXBoost (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
     </message>
     <message>
-        <source>Enable HyperSend, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Omogućite HyperSend, prikažite potvrde za zaključane transakcije (bool, zadano: %s)</translation>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Omogućite SwiftX, prikažite potvrde za zaključane transakcije (bool, zadano: %s)</translation>
     </message>
     <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
@@ -5627,8 +5627,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju sigurnosne kopije lisnice. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju.</translation>
     </message>
     <message>
-        <source>HyperSend requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>HyperSend zahtijeva ulaze s najmanje 6 potvrda, možda ćete morati pričekati nekoliko minuta i pokušati ponovo.</translation>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftX zahtijeva ulaze s najmanje 6 potvrda, možda ćete morati pričekati nekoliko minuta i pokušati ponovo.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

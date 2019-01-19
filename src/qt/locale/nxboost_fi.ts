@@ -593,8 +593,8 @@
         <translation>Näytä tietoja NXBoost Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja NXBoost:lle</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja nxboost:lle</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -633,8 +633,8 @@
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Avaa NXBoost: URI tai pyydä maksua</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Avaa nxboost: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1129,11 +1129,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Use 2 separate masternodes to mix funds up to 10000 NXB</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 NXBoost</translation>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 nxboost</translation>
     </message>
     <message>
         <source>Use 8 separate masternodes to mix funds up to 10000 NXB</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 NXBoost</translation>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 nxboost</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1141,11 +1141,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 NXB to anonymize 10000 NXB</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 NXB anonymoidaksesi 10000 NXBoost</translation>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 NXB anonymoidaksesi 10000 nxboost</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 NXB to anonymize 10000 NXB</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 NXBoost anonymoidaksesi 10000 NXBoost</translation>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 NXBoost anonymoidaksesi 10000 nxboost</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1153,7 +1153,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>0.1 NXB per 10000 NXB you anonymize.</source>
-        <translation>0.1 per 10000 NXBoost, jotka anonymisoit.</translation>
+        <translation>0.1 per 10000 nxboost, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1226,7 +1226,7 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting NXBoost.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
@@ -2511,7 +2511,7 @@ Please check the address and try again.</source>
     </message>
 </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

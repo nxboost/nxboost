@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo NXBoost</translation>
+        <translation>Crittografa la chiave privata per questo indirizzo nxboost</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -650,7 +650,7 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Invia valuta all'indirizzo NXBoost</translation>
+        <translation>Invia valuta all'indirizzo nxboost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
@@ -677,8 +677,8 @@
         <translation>Visualizza informazioni su NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for NXBoost</source>
-        <translation>Modifica le opzioni di configurazione per NXBoost</translation>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modifica le opzioni di configurazione per nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,8 +717,8 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a NXBoost: URI or payment request</source>
-        <translation>Apri un NXBoost: URI o richiesta di pagamento</translation>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Apri un nxboost: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -730,7 +730,7 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Mostra il messaggio di aiuto NXBoost Core per ottenere un elenco con le possibili opzioni di riga di comando NXBoost</translation>
+        <translation>Mostra il messaggio di aiuto NXBoost Core per ottenere un elenco con le possibili opzioni di riga di comando nxboost</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
@@ -1283,7 +1283,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>NXBoost Core will download and store a copy of the NXBoost block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>NXBoost Core scaricherà e salverà una copia della blockchain NXBoost. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <translation>NXBoost Core scaricherà e salverà una copia della blockchain nxboost. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -2508,7 +2508,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo NXBoost</translation>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo nxboost</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>
@@ -2666,7 +2666,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     </context>
 <context>
-    <name>ZXlqControlDialog</name>
+    <name>zNXBControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
