@@ -4403,7 +4403,7 @@ Soit monnayer des dénominations plus élevées (moins d'intrants sont nécessai
     </message>
     </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>
         <translation>Active ou désactive la fonctionnalité de staking pour les entrées NXB (0-1, par défaut: %u)</translation>

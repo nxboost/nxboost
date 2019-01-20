@@ -726,7 +726,7 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Zeige die nxboost-Core Hilfe, um mögliche NXBoost Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <translation>Zeige die NXBoost-core Hilfe, um mögliche NXBoost Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
@@ -4875,7 +4875,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
 </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>

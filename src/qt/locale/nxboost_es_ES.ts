@@ -648,7 +648,7 @@
     <name>zNXBControlDialog</name>
     </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>Zapping all transactions from wallet...</source>
         <translation>Saltando todas las transacciones del monedero...</translation>

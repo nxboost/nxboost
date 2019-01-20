@@ -2028,7 +2028,7 @@ https://www.transifex.com/nxboost/nxboost-wallet </translation>
     </message>
     </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

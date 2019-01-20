@@ -1974,7 +1974,7 @@
     </message>
     </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

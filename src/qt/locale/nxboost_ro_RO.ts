@@ -192,6 +192,6 @@
     <name>zNXBControlDialog</name>
     </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     </context>
 </TS>

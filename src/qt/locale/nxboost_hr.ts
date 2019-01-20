@@ -1352,7 +1352,7 @@
     </message>
     </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

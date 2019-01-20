@@ -1284,7 +1284,7 @@ MultiSend: %1</translation>
     <name>zNXBControlDialog</name>
     </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

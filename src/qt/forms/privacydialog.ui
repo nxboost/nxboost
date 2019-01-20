@@ -729,7 +729,7 @@
                          <number>0</number>
                         </property>
                         <item>
-                         <widget class="QPushButton" name="pushButtonZNxbControl">
+                         <widget class="QPushButton" name="pushButtonzNXBControl">
                           <property name="text">
                            <string>zNXB Control</string>
                           </property>

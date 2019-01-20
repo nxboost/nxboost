@@ -324,7 +324,7 @@
     <name>zNXBControlDialog</name>
     </context>
 <context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>Information</source>
         <translation>जानकारी</translation>
