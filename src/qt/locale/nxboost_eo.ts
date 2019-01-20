@@ -1610,6 +1610,89 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
     </message>
 </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Konekti per SOCKS5 prokurilo</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Eraro</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informoj</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Privata ŝlosilo nevalida.</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>Ŝarĝante blok-indekson</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>Sincronigo malsukcesis</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation>Jeno helpo mesaĝo</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>Ĉi tio estas eksperimenta programaro.</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>Transakcio verkita sukcese.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>Transakcio krompago estas tro alta.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Transakcio nevalida.</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Tro longa transakcio</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Monujo estas ŝlosita.</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Monujo opcioj:</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Averto</translation>
+    </message>
+    <message>
+        <source>Will retry...</source>
+        <translation>Reprovos</translation>
+    </message>
+    <message>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>Vi ne havas sufiĉan Zeromonojn en vian monujon</translation>
+    </message>
+    <message>
+        <source>Your entries added successfully.</source>
+        <translation>Vian enirojn aldonis sukcese.</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>Zeromono opcioj:</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>je startigo</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Basic Privacy</source>
@@ -2663,87 +2746,4 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Estas elspezebla</translation>
     </message>
 </context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Konekti per SOCKS5 prokurilo</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Eraro</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informoj</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Privata ŝlosilo nevalida.</translation>
-    </message>
-    <message>
-        <source>Loading block index...</source>
-        <translation>Ŝarĝante blok-indekson</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>Sincronigo malsukcesis</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>Jeno helpo mesaĝo</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>Ĉi tio estas eksperimenta programaro.</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transakcio verkita sukcese.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Transakcio krompago estas tro alta.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transakcio nevalida.</translation>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation>Tro longa transakcio</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Monujo estas ŝlosita.</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Monujo opcioj:</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Averto</translation>
-    </message>
-    <message>
-        <source>Will retry...</source>
-        <translation>Reprovos</translation>
-    </message>
-    <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Vi ne havas sufiĉan Zeromonojn en vian monujon</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Vian enirojn aldonis sukcese.</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Zeromono opcioj:</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>je startigo</translation>
-    </message>
-    </context>
 </TS>

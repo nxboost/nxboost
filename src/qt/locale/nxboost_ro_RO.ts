@@ -100,6 +100,9 @@
     <name>MultisigDialog</name>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     </context>
 <context>
@@ -190,8 +193,5 @@
     </context>
 <context>
     <name>zNXBControlDialog</name>
-    </context>
-<context>
-    <name>NXBoost-core</name>
     </context>
 </TS>

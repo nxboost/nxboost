@@ -916,6 +916,21 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Error</source>
+        <translation>Chyba</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informácia</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Varovanie</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     </context>
 <context>
@@ -1282,20 +1297,5 @@ MultiSend: %1</translation>
     </context>
 <context>
     <name>zNXBControlDialog</name>
-    </context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>Error</source>
-        <translation>Chyba</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informácia</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Varovanie</translation>
-    </message>
     </context>
 </TS>

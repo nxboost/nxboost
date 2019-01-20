@@ -808,6 +808,25 @@
     </message>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Error</source>
+        <translation>Greška</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informacija</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>Koristi testnu mrežu</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Upozorenje</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     </context>
 <context>
@@ -1349,25 +1368,6 @@
     <message>
         <source>0</source>
         <translation>0</translation>
-    </message>
-    </context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>Error</source>
-        <translation>Greška</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informacija</translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>Koristi testnu mrežu</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Upozorenje</translation>
     </message>
     </context>
 </TS>

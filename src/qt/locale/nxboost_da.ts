@@ -1452,9 +1452,9 @@ Adresse: %4
 To Add: enter percentage to give and NXBoost address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre NXBoost adressater når den er tilstrækkelig stor. 
-For at tilføje: Indtast procentsatsen De ønsker at overføre samt den NXBoost adresse som skal modtage via Multisendsystemet. 
-For at fjerne: Indtast adressen som skal slettes og klik på slet. 
+        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre NXBoost adressater når den er tilstrækkelig stor.
+For at tilføje: Indtast procentsatsen De ønsker at overføre samt den NXBoost adresse som skal modtage via Multisendsystemet.
+For at fjerne: Indtast adressen som skal slettes og klik på slet.
 Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     </message>
     <message>
@@ -1550,7 +1550,7 @@ Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     <message>
         <source> is invalid.
 Please check the address and try again.</source>
-        <translation>er ikke gyldig. 
+        <translation>er ikke gyldig.
 Kontroller adressen og prøv igen.</translation>
     </message>
     <message>
@@ -1755,6 +1755,1486 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>Maximum (15)</source>
         <translation>Maksimum (15)</translation>
+    </message>
+</context>
+<context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>Tillad JSON-RPC forbindelser fra bestemte kilder. Gyldig &lt;ip&gt; er enkeltadresse (1.2.3.4), a Network/netmask (1.2.3.4/255.255.255.0) eller et netværk/CCIDR (1.2.3.4/24). Der kan indsættes flere linier.</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>Forbind til den opgivne adresse og lyt på den kontinuerligt. Brug [host]:port notation for IPv6</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Forbind til den opgivne adresse og put peers på listen over godkendte adresser.  Brug [host]:port notation for IPv6</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
+    </message>
+    <message>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Beregnet akkumulator kontrolpunkt er ikke det, der er registreret af blok indeks</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
+        <translation>Kan ikke låse datamappen %s. NXBoost core kører sandsynligvis allerede.</translation>
+    </message>
+    <message>
+        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
+        <translation>Skift automatisk afstemningsmetode, mode=auto: Stem kun for fuldstændigt match mod det generered budget (Strng, Default: auto)</translation>
+    </message>
+    <message>
+        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
+        <translation>Bedøm ubegrænsede transaktioner til &lt;n&gt;*1000 bytes pr. minut kontinuerligt (default:%u)</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>Opret nye filer med systemets default tilladelser i stedet for umask 077 (virker kun med tegnebogsfunktionen slået fra)</translation>
+    </message>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
+    </message>
+    <message>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Slet alle zerocoin-udgifter og minter, der er blevet sendt til blockchain-databasen og geninddrive dem (0-1, standard: %u)</translation>
+    </message>
+    <message>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>Distribueret under MIT software licensen. Se den vedlaget fil COPYING eller
+&lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
+    </message>
+    <message>
+        <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
+        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zNXB-mintning (0-1, standard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for NXB-indgange (0-1, standard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for zNXB inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for zNXB-indgange (0-1, standard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Slå spork administrationsfunktionen til med den rette private nøgle</translation>
+    </message>
+    <message>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation>Opgiv regression test mode, der bruger en særlig kæde, hvor blokke kan løses med det samme</translation>
+    </message>
+    <message>
+        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>Fejl! Der opstod en fejl i under lytning efter indkommende forbindelser (Listen returnerede fejl %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Fejl: Transaktionen er større end den maksimalt tilladte transaktionsstørrelse!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Fejl! Argumentet er ikke understøttet -socks found. Det er ikke muligt at bestemme hvilken SOCKS version længere. Kun SOCKS5 proxies understøttes.</translation>
+    </message>
+    <message>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>Udfør en kommando når der modtages en alarm, eller der opdages en meget lang fork (%s in cmd erstattet af en besked)</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>Udfør en kommando når en transaktion i tegnebogen ændres (%s in cmd erstattet af TxID)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebyrer (in NXB/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebyrer (in NXB/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
+    </message>
+    <message>
+        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
+        <translation>Opsaml databaseaktiviteterne fra hukommelsespool og gem dem i loggen på disken for hver &lt;n&gt; megabytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation>Der er fundet ubekræftede designerede outputs. Vent indtil de bekræftes for at fortsætte.</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>Hvis der ikke fastsættes et betalingsTxgebyr, skal der inkluderes tilstrækkelige midler til gebyret så transaktionens bekræftelsesproces vil begynde indenfor n blokke (default: %u)</translation>
+    </message>
+    <message>
+        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
+        <translation>Denne indstilling -genproclimit kontrollerer hvor mange blokke der bliver genereret med det samme.</translation>
+    </message>
+    <message>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>Utilstrækkelige eller utilstrækkelige bekræftede penge, skal du muligvis vente et par minutter og prøve igen.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>Ugyldigt beløb for -maxtxfee=&lt;amount&gt;: '%s' (skal være mindst det samme som minimumsgebyret på %s for at forhindre at transaktionen blokeres).</translation>
+    </message>
+    <message>
+        <source>Keep the specified amount available for spending at all times (default: 0)</source>
+        <translation>Fasthold altid den aktuelle saldo klar til brug (default: 0)</translation>
+    </message>
+    <message>
+        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
+        <translation>Indskriv transaktionsprioritet og gebyr pr kB i loggen når der mineres (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>Vedligehold et fuldgyldigt transaktionsindeks fra getrawtransaktion fra rpc kald (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>Maksimal størrelse på data hos databærerens transaktioner der videresendes og mineres (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
+        <translation>Maksimal gebyrstørrelse der an bruges i en enkelt transaktion. Hvis denne er sat for lavt kan det medføre afvisning af store transaktioner (default: %s)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>Det antal sekunder, som peers, der ikke handler korrekt skal afholdes fra at genforbinde (default: %u)</translation>
+    </message>
+    <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere nxboost</translation>
+    </message>
+    <message>
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>Output debug information (default: %u, supplying &lt;category&gt; er valgfri)</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
+        <translation>Forespørg peer adresser via DNS opslag, hvis antallet af adresser er laft (default: 1 med mindre -connect)</translation>
+    </message>
+    <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>Randomize credentials for hver proxy-forbindelse. Dette gør det muligt for Tor-strøm isolering (standard: %u)</translation>
+    </message>
+    <message>
+        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
+        <translation>anmod om høj prioritet for videresendelse af gratis transaktioner eller transaktioner med lavt gebyr (default: %u)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
+        <translation>Send sporings/debug info til konsollet i stedet for at sende det til debug.log filen. (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation>Angiv maksimumstørrelsen på højprioritets/lavgebyrstransaktioner i bytes (default: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
+        <translation>Angiv antallet af script verifikationstråde (%u til %d, 0 = auto, &lt; = efterlad så mange tråde ledige, default: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
+        <translation>Angiv antallet af tråde til møntgenerering hvis aktiveret (-1 = alle cores, default: %d)</translation>
+    </message>
+    <message>
+        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
+        <translation>Vis N bekræftelser for en gennemført låst transaktion (0-9999, default: %u)</translation>
+    </message>
+    <message>
+        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
+        <translation>Understøt filtrering af blokke og transaktioner med bloom filters (default: %u)</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
+        <translation>Det var ikke muligt at forbinde %s på denne computer. NXBoost kører sandsynligvis allerede.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</source>
+        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 NXB.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</source>
+        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 NXB.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Brug separat SOCKS5 proxy for at nå ud til peers via Tor skjulte tjenester (default: %s)</translation>
+    </message>
+    <message>
+        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>Advarsel! -maxtxfee er sat meget højt. Gebyrer så store bør betales i en selvstændig transaktion.</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
+        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil NXBoost core ikke fungere ordentligt.</translation>
+    </message>
+    <message>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>Advarsel! Netværket ser ikke ud til at samtýgge. Nogle af minerne har tilsyneladende problemer.</translation>
+    </message>
+    <message>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>Advarsel! Der er ikke fuld enighed mellem Deres og de øvrige peers. Det er muligt, at De skal opdatere tegnebogen, eller at andre noder mangler at opdatere.</translation>
+    </message>
+    <message>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation>Advarsel! Fejl ved læsning af wallet.dat. Alle nøgler blev indlæst korrekt, men transaktions- eller adressebogens er fejlbehæftede, eller mangler helt. </translation>
+    </message>
+    <message>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation>Advarsel! wallet.dat filen er beskadiget. Data genskabt. Den originale wallet.dat fll blev gemt som tegnebog. {temestap}.bak i %s; Hvis transaktioner eller saldo er forkert, bør De genskabe tegnebogen fra en sikkerhedskopi.</translation>
+    </message>
+    <message>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>Sæt peers, der forbinder fra denne netmaske eller IP adresse på listen over godkendte peers. Der kan indføjes flere linier.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>Peers, der optræder i listen over godkendte peers kan ikke blokeres på baggrund af DoS, og deres transaktioner vil altid blive videresendt - også selvom de allerede findes i mempoolen - anvendes til f.eks. gateways.</translation>
+    </message>
+    <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
+    </message>
+    <message>
+        <source>(49108 could be used only on mainnet)</source>
+        <translation>(49108 kunne kun bruges på hovednettet)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(default: %s)</translation>
+    </message>
+    <message>
+        <source>(default: 1)</source>
+        <translation>(default: 1)</translation>
+    </message>
+    <message>
+        <source>(must be 49108 for mainnet)</source>
+        <translation>(skal være 49108 for hovednettet)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation>Accepter kommandolinie og JSON-RPC kommandoer</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Accepter forbindelser udefra (default: 1 hvis ingen -proxy eller -connect)</translation>
+    </message>
+    <message>
+        <source>Accept public REST requests (default: %u)</source>
+        <translation>Accepter public REST anmodninger (default: %u)</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>Tilføj en node at forbinde til, og forsøg at holde forbindelsen åben.</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>Tillad DNS opslag for -addnode, -seednode og -connect</translation>
+    </message>
+    <message>
+        <source>Already have that input.</source>
+        <translation>Dette er allerede angivet</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>Forespørg altid peer adresser via DNS opslag (default: %u)</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Forsøger at genskabe de private nøgler fra en beskadiget wallet.dat fil</translation>
+    </message>
+    <message>
+        <source>Automatically create Tor hidden service (default: %d)</source>
+        <translation>Opret automatisk Tor-skjult tjeneste (standard: %d)</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation>Bloker optioner for oprettelse:</translation>
+    </message>
+    <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>Beregning af manglende akkumulatorer ...</translation>
+    </message>
+    <message>
+        <source>Can't denominate: no compatible inputs left.</source>
+        <translation>Kan ikke designere: Ingen kompatible inputs tilbage.</translation>
+    </message>
+    <message>
+        <source>Can't find random Masternode.</source>
+        <translation>Kan ikke finde en tilfældig masternode.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>Kan ikke usynliggøre så længe der synkroniseres.</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>Kan ikke nedgradere tegnebogen</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Kan ikke opløse -bind adresse: %s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Kan ikke opløse -externalip adresse: %s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Kan ikke opløse -whitebind adresse: %s'</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation>Kan ikke skrive standardadressen</translation>
+    </message>
+    <message>
+        <source>Collateral not valid.</source>
+        <translation>Sikkerhed ikke gyldig</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation>Forbind kun til de angivne node(r)</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Forbind gennem SOCKS5 proxy</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>Forbind til en node for at hente peeradresser og afbryd derefter forbindelsen</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>Forbindelsesoptioner</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i The Bitcoin Core Developers </translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
+        <translation>Copyright (C) 2015-%i The NXBoost Core Developers</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected</source>
+        <translation>Blokdatabasen er beskadiget</translation>
+    </message>
+    <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>Kunne ikke fortolke masternode.conf</translation>
+    </message>
+    <message>
+        <source>Debugging/Testing options:</source>
+        <translation>Debug/testoptioner:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>Slet blockchain mapper og resync fra bunden</translation>
+    </message>
+    <message>
+        <source>Disable OS notifications for incoming transactions (default: %u)</source>
+        <translation>Deaktiver OS-underretninger for indgående transaktioner (standard: %u)</translation>
+    </message>
+    <message>
+        <source>Disable safemode, override a real safe mode event (default: %u)</source>
+        <translation>Slå beskyttet tilstand fra og ignorer en ægte "beskyttet tilstands" hændelse (default: %u)</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation>Find egen IP adresse (default: 1 når der lyttes, og inge -externalip)</translation>
+    </message>
+    <message>
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation>Indlæs ikke tegnebogen og slå tegnebogens RPC kald fra</translation>
+    </message>
+    <message>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation>Vil De genopbygge blokdatabasen nu?</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>Indlæst!</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>Aktivér automatisk Zerocoin-mintning (0-1, standard: %u)</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Aktivér publicering af hash-transaktion (låst via SwiftX) i &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Aktivér publicere rå transaktion (låst via SwiftX) i &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
+        <translation>Slå tilstanden "masternode" til (0-1 default: %u)</translation>
+    </message>
+    <message>
+        <source>Entries are full.</source>
+        <translation>Der er ikke plads til flere poster</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Fejl ved oprettelse af forbindelse til masternode.</translation>
+    </message>
+    <message>
+        <source>Error initializing block database</source>
+        <translation>Fejl ved initialisering af blokdatabasen</translation>
+    </message>
+    <message>
+        <source>Error initializing wallet database environment %s!</source>
+        <translation>Fejl ved initialisering af tegnebogens databasemilljø %s!</translation>
+    </message>
+    <message>
+        <source>Error loading block database</source>
+        <translation>Fejl ved indlæsning af blokdatabasen</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation>Fejl ved indlæsning af wallet.dat</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af NXBoost core</translation>
+    </message>
+    <message>
+        <source>Error opening block database</source>
+        <translation>Fejl ved åbning af blokdatabasen</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Fejl ved læsning fra database, programmet lukker ned.</translation>
+    </message>
+    <message>
+        <source>Error recovering public key.</source>
+        <translation>Fejl ved genskabelse af den offentlige nøgle</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Fejl!</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
+    </message>
+    <message>
+        <source>Error: Can't select current denominated inputs</source>
+        <translation>Fejl! Kan ikke vælge de aktuelt designerede inputs</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation>Fejl! Der er ikke nok plads på disken.</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>Fejl! Argumentet er ikke understøttet - tor fundet, brug -onion</translation>
+    </message>
+    <message>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation>Fejl! Tegnebogen er låst. Det er ikke muligt at oprette transaktionen.</translation>
+    </message>
+    <message>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation>Fejl! De har allerede ventende transaktioner i tilsløringsgruppen</translation>
+    </message>
+    <message>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Kunne ikke beregne akkumulatorkontrolpunktet</translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>Lytning på uspecificerede porte mislykkedes. Brug -listen=0 hvis De ønsker denne funktion.</translation>
+    </message>
+    <message>
+        <source>Failed to read block</source>
+        <translation>Læsning af blokken mislykkedes</translation>
+    </message>
+    <message>
+        <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebyr (i NXB/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
+    </message>
+    <message>
+        <source>Finalizing transaction.</source>
+        <translation>Færdiggør transaktionen.</translation>
+    </message>
+    <message>
+        <source>Force safe mode (default: %u)</source>
+        <translation>Gennemtving beskyttet tilstand (default: %u)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ( waiting %s )</source>
+        <translation>Der er fundet tilstrækkeligt med brugere der underskriver (venter %s)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ...</source>
+        <translation>Der er fundet tilstrækkeligt med brugere der underskriver...</translation>
+    </message>
+    <message>
+        <source>Generate coins (default: %u)</source>
+        <translation>Generer mønter (default: %u)</translation>
+    </message>
+    <message>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>Antal blokke der kontrolleres ved opstart (default: %u, 0 = all)</translation>
+    </message>
+    <message>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation>Hvis &lt;category&gt; ikke findes, sendes al debug information som output.</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>Importerer</translation>
+    </message>
+    <message>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation>Importer blokke fra ekstern kilde - blk000??.dat fil</translation>
+    </message>
+    <message>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Inkluder IP adressen i debug output (default: %u)</translation>
+    </message>
+    <message>
+        <source>Incompatible mode.</source>
+        <translation>Ikke kompatibel i denne tilstand</translation>
+    </message>
+    <message>
+        <source>Incompatible version.</source>
+        <translation>Ikke kompatibel version</translation>
+    </message>
+    <message>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>Forkert, eller ikke genesis blok fundet. Er De sikker på, at det er den rigtige datadir der benyttes til netværket?</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Info:</translation>
+    </message>
+    <message>
+        <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
+        <translation>Initiering af sanitetskontrollen fejlede. NXBoost core lukker ned. </translation>
+    </message>
+    <message>
+        <source>Input is not valid.</source>
+        <translation>Ugyldigt input</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation>Utilstrækkelige midler</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>Utilstrækkelige midler</translation>
+    </message>
+    <message>
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>Ugyldig -onionadresse eller værtsnavn: ' %s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ugyldigt beløb til -maxtxfee=&lt;beløb&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ugyldigt beløb til -minrelaytxfee=&lt;beløb&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ugyldigt beløb til -mintxfee=&lt;beløb&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>Ugyldigt beløb til -paytxfee=&lt;beløb&gt;: '%s' (skal mindst være %s)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Ugyldigt beløb til -paytxfee=&lt;beløb&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Ugyldigt beløb til -reservebalance=&lt;beløb&gt;:</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation>Ugyldigt beløb</translation>
+    </message>
+    <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation> Ugyldig masternodeprivkey. Se dokumentationen</translation>
+    </message>
+    <message>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>Ugyldig netmask specificeret i -whitelist: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Ugyldig port fundet i masternode.conf</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Ugyldig privat nøgle</translation>
+    </message>
+    <message>
+        <source>Invalid script detected.</source>
+        <translation>Ugyldigt script fundet.</translation>
+    </message>
+    <message>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the NXB and zNXB money supply statistics</source>
+        <translation>Reindex NXB og zNXB pengemængde statistikker</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Reindexing zerocoin database ...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>Reindexerende zerocoin mislykkedes</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>Valgt mønter værdi er mindre end betalingsmål</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftTX optioner:</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>Denne release er en testrelease. Anvendelse på eget ansvar - bør ikke anvendes til staking eller handelsapplikationer!</translation>
+    </message>
+    <message>
+        <source> mints deleted
+</source>
+        <translation>minter slettet
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation>mints opdateret,</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>ubekræftede transaktioner fjernet
+</translation>
+    </message>
+    <message>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle NXBoost funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Aktiver swifttx, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Transaktionen blev afvist! Dette kan ske, hvis nogle af mønterne i tegnebogen allerede er brugt. For eksempel hvis De har brugt en kopi af Wallet.dat filen, og mønterne har været brugt, men ikke markerede som brugte i den. </translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på mindst %s på grund af dets mængde, kompleksitet eller brug af nyligt modtagne penge!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>Fejl: Ikke understøttet argument -checklevel fundet. Checklevel skal være niveau 4.</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Udfør kommando, når den bedste blok ændres, og dens størrelse er overstået (%s i cmd erstattes af blok hash, %d med blokstørrelsen)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Kunne ikke finde møntsæt blandt holdte mønter med mindre end maksimalt antal udgifter</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>I sjældne tilfælde overstiger en udgift med 7 mønter vores maksimale tilladte transaktionsstørrelse. Prøv igen med 6 eller færre mønter</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zNXB-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Angiv en brugerdefineret backup-sti for at tilføje en kopi af en wallet-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX kræver mindst 6 bekræftelser. Vent nogle minutter og prøv igen.</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; can be:</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Forsøg at gennemtvinge reparation af korrumperet blokkæde</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: Akkumulator vidne bekræfter ikke</translation>
+    </message>
+    <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Vis beregning af stavmodifikator i debug.log-filen.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Vis verbose møntspilsmeddelelser i debug.log-filen.</translation>
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Aktivér publish hash-blok i &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Aktivér publicering af hash-transaction I &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Aktivér offentliggør rå blok I &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Aktivér publicere rå transaktion i &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>Aktivér stakfunktionalitet (0-1, standard: %u)</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Fejl: Ingen gyldig udxo!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>Kunne ikke oprette mynte</translation>
+    </message>
+    <message>
+        <source>Failed to deserialize</source>
+        <translation>Kunne ikke deserialisere</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Kunne ikke finde Zerocoins i wallet.dat</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Kunne ikke vælge en zerocoin</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Kunne ikke tørre zerocoinDB</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Kunne ikke skrive møntserienummer i tegnebog</translation>
+    </message>
+    <message>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Behold højest &lt;n&gt; transaktioner i hukommelsen, der ikke kan forbindes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Last Obfuscation was too recent.</source>
+        <translation>Seneste tilsløring var for ny</translation>
+    </message>
+    <message>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation>Seneste succesfulde tilsløring var for ny</translation>
+    </message>
+    <message>
+        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
+        <translation>Begræns størrelsen på signatur cachen til &lt;n&gt; poster (default: %u)</translation>
+    </message>
+    <message>
+        <source>Line: %d</source>
+        <translation>Linje: %d</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Lyt efter JSON-RPC forbindelser på &lt;port&gt; (default: %u or testnet: %u)</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Lyt efter forbindelser på port &lt;port&gt; (default: %u or tesntet: %u)</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Indlæser adresser</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>Indlæser blokindeks</translation>
+    </message>
+    <message>
+        <source>Loading budget cache...</source>
+        <translation>Indlæser budgetcache...</translation>
+    </message>
+    <message>
+        <source>Loading masternode cache...</source>
+        <translation>Indlæser masternodecache...</translation>
+    </message>
+    <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>Indlæser masternode betalingscache...</translation>
+    </message>
+    <message>
+        <source>Loading sporks...</source>
+        <translation>Indlæser sporks ...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Indlæser tegnebog... (%3.2f%%)</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Indlæser tegnebog</translation>
+    </message>
+    <message>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>Placering af auth cookie (standard: data dir)</translation>
+    </message>
+    <message>
+        <source>Lock is already in place.</source>
+        <translation>Er allerede låst</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Lås masternoder fra masternode konfiguratinsfilen (default: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Opslag (): Ugyldig-proxy adresse eller værtsnavn: '%s'</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Vedligehold maksimalt &lt;n&gt; forbindelser til peers (default: %u)</translation>
+    </message>
+    <message>
+        <source>Masternode options:</source>
+        <translation>Masternodeoptioner</translation>
+    </message>
+    <message>
+        <source>Masternode queue is full.</source>
+        <translation>Masternodens kø er fyldt op.</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>Masternode:</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Maksimal størrelse på per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Maksimal størrelse på per-connection send buffer, &lt;n&gt; *1000 bytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Mint did not make it into blockchain</source>
+        <translation>Mint gjorde det ikke til blockchain</translation>
+    </message>
+    <message>
+        <source>Missing input transaction information.</source>
+        <translation>Manglende transaktionsinformationsinput</translation>
+    </message>
+    <message>
+        <source>Mixing in progress...</source>
+        <translation>Usynliggørelse i gang</translation>
+    </message>
+    <message>
+        <source>Need address because change is not exact</source>
+        <translation>Har brug for adresse, fordi ændring ikke er nøjagtig</translation>
+    </message>
+    <message>
+        <source>Need to specify a port with -whitebind: '%s'</source>
+        <translation>Der skal specificeres en port med -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>No Masternodes detected.</source>
+        <translation>Ingen masternoder fundet.</translation>
+    </message>
+    <message>
+        <source>No compatible Masternode found.</source>
+        <translation>Ingen kompatible masternoder fundet.</translation>
+    </message>
+    <message>
+        <source>No funds detected in need of denominating.</source>
+        <translation>Ingen midler fundet til eventuel designering</translation>
+    </message>
+    <message>
+        <source>No matching denominations found for mixing.</source>
+        <translation>ingen matchende designerede midler til usynliggørelse.</translation>
+    </message>
+    <message>
+        <source>Node relay options:</source>
+        <translation>Node videresendelsesoptioner:</translation>
+    </message>
+    <message>
+        <source>Non-standard public key detected.</source>
+        <translation>Ikke standard offentlig nøgle fundet</translation>
+    </message>
+    <message>
+        <source>Not compatible with existing transactions.</source>
+        <translation>Ikke kompatibel med eksisterende transaktioner</translation>
+    </message>
+    <message>
+        <source>Not enough file descriptors available.</source>
+        <translation>Ikke nok fildescriptors tilgængelige</translation>
+    </message>
+    <message>
+        <source>Not in the Masternode list.</source>
+        <translation>Findes ikke i masternodelisten</translation>
+    </message>
+    <message>
+        <source>Number of automatic wallet backups (default: 10)</source>
+        <translation>Antal automatiske sikkerhedskopier af tegnebogen (default: 10)</translation>
+    </message>
+    <message>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Antal brugerdefinerede positionsbackups til at beholde (standard: %d)</translation>
+    </message>
+    <message>
+        <source>Obfuscation is idle.</source>
+        <translation>Tilsløringssystem ledigt</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Tilsløring færdig.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Tilsløringsanmodning ikke færdiggjort</translation>
+    </message>
+    <message>
+        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
+        <translation>Accepter kun blokkæde matchende indbyggede kontrolpunkter (defaut %u)</translation>
+    </message>
+    <message>
+        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
+        <translation>Forbind udelukkende til noder i netværket &lt;net&gt; (ipv4, ipv6 eller onion)</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Optioner:</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation>Kodeord for JSON-RPC forbindelser</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid (): Ugyldig-proxy adresse eller værtsnavn: '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>Forberedelse til genoptagelse ...</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>Forbered debug output med tidsstempel (default %u)</translation>
+    </message>
+    <message>
+        <source>Print version and exit</source>
+        <translation>Udskriftsversion og exit</translation>
+    </message>
+    <message>
+        <source>RPC server options:</source>
+        <translation>RPC server optioner:</translation>
+    </message>
+    <message>
+        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
+        <translation>Drop 1 af hver &lt;n&gt; netværksmeddelelser efter tilfældighedsprincippet</translation>
+    </message>
+    <message>
+        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
+        <translation>Gør 1 af hver &lt;n&gt; netværksmeddelelser uklar efter tilfældighedsprincippet</translation>
+    </message>
+    <message>
+        <source>Rebuild block chain index from current blk000??.dat files</source>
+        <translation>Genopbyg blokkædens indeks fra de aktuelle blk000??.dat filer</translation>
+    </message>
+    <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Modtag og vis P2P netværksalarmer (default: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Reindex akkumulatiedatabasen</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Videresend og minér databærer transaktioner (default: %u)</translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Videresend ikke-P2SH mulisig (default %u)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>Genskan blokkæden for manglende transaktioner i tegnebogen</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>Genskanner...</translation>
+    </message>
+    <message>
+        <source>ResetMintZerocoin finished: </source>
+        <translation>ResetSpentZerocoin færdig:</translation>
+    </message>
+    <message>
+        <source>ResetSpentZerocoin finished: </source>
+        <translation>ResetSpentZerocoin færdig:</translation>
+    </message>
+    <message>
+        <source>Run a thread to flush wallet periodically (default: %u)</source>
+        <translation>Kør en tråd periodevist for at rense tegnebogen ud (default %u)</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>Kør en tråd i baggrunden som en særlig service og tag imod kommandoer </translation>
+    </message>
+    <message>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>Send transaktioner som nugebyrstransaktioner hvis muligt (default: %u)</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>Sessionen blev ikke færdiggjort!</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>Sessionen brugte for meget tid.</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
+        <translation>Angiv databasecachens størrelse i megabytes (%d til  %d, default: %d)</translation>
+    </message>
+    <message>
+        <source>Set external address:port to get to this masternode (example: %s)</source>
+        <translation>Angiv den eksterne adresse:port for at komme til denne masternode (eksempel: %s)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>Angiv hoved poolstørrelse til &lt;n&gt; (default %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>Angiv maksimal blokstørrelse i bytes (default: %d)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Angiv minimums blokstørrelse i bytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>Indstil højeste dybde dybde (standard: %u)</translation>
+    </message>
+    <message>
+        <source>Set the masternode private key</source>
+        <translation>angiv masternodens private nøgle</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Angiv antallet af tråde der anvendes til at servicere RPC opkald (default: %d)</translation>
+    </message>
+    <message>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>Sætter DB_PRIVATE flag i tegnebogens databasemiljø (default: %u)</translation>
+    </message>
+    <message>
+        <source>Show all debugging options (usage: --help -help-debug)</source>
+        <translation>Vis alle debugoptioner (brug: --help -help-debug)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>Formindsk debug.logfilen ved opstart af klienten (default: 1 når der ikke er angivet -debug)</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>Signering mislykkedes</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>Signering brugte for meget tid.</translation>
+    </message>
+    <message>
+        <source>Signing transaction failed</source>
+        <translation>Signering af transaktionen mislykkedes</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Specificer konfigurationsfil (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>Specificer forbindelsens timeout i millisekunder (minimum: 1, default : %d)</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation>angiv datamappe</translation>
+    </message>
+    <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Specificer masternode konfigurationsfilen (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Angiv pid filen (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>angiv tegnebogens wallet fil (indenfor datamappen)</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>Angiv Deres offentlige adresse</translation>
+    </message>
+    <message>
+        <source>Spend Valid</source>
+        <translation>Tilbring gyldig</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>Brug ubekræftede returpenge når der sendes transaktioner (default: %u)</translation>
+    </message>
+    <message>
+        <source>Staking options:</source>
+        <translation>Staking muligheder:</translation>
+    </message>
+    <message>
+        <source>Stop running after importing blocks from disk (default: %u)</source>
+        <translation>Stop kørsel efter import af blokke fra disken (default: %u)</translation>
+    </message>
+    <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Afsendt følgende posteringer til masternode %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Afsendt til masternode. Afventer flere posteringer (%u /%d) %s</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Afsendt til masternode, venter i kø %s</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>Synkronisering mislykkedes.</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>Synkronisering færdig</translation>
+    </message>
+    <message>
+        <source>Synchronization pending...</source>
+        <translation>Synkronisering venter</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>Synkronisere budgetter</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners...</source>
+        <translation>Synkroniserer masternodevinnere</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synkroniserer masternoder...</translation>
+    </message>
+    <message>
+        <source>Synchronizing sporks...</source>
+        <translation>Synkroniserer sporks...</translation>
+    </message>
+    <message>
+        <source>Syncing zNXB wallet...</source>
+        <translation>Syncing zNXB wallet ..</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>Møntudgifterne er blevet brugt</translation>
+    </message>
+    <message>
+        <source>The new spend coin transaction did not verify</source>
+        <translation>Den nye udgiftsmønttransaktion bekræftede ikke</translation>
+    </message>
+    <message>
+        <source>The selected mint coin is an invalid coin</source>
+        <translation>Den valgte mintmønter er en ugyldig mønt</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>Transaktionen bekræftede ikke</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation>Denne hjælpemeddelelse</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>Denne software er eksperimentiel</translation>
+    </message>
+    <message>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation>Dette er ment som et tilbagekørings test- og appudviklingsværktøj.</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>Dette er ikke en masternode</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Terskel for frakoblíng af peers der udfører upassende handlinger (default: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>Alt for mange tilbringer nødvendig</translation>
+    </message>
+    <message>
+        <source>Tor control port password (default: empty)</source>
+        <translation>Tor-kontrolportadgangskode (standard: tom)</translation>
+    </message>
+    <message>
+        <source>Tor control port to use if onion listening enabled (default: %s)</source>
+        <translation>Tor-kontrolport, der skal bruges, hvis du lytter til løg (standard: %s)</translation>
+    </message>
+    <message>
+        <source>Transaction Created</source>
+        <translation>Transaktion oprettet</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>Transaktionsmynte startet</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation>Transaktionsbeløbet er for lille</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must be positive</source>
+        <translation>Transaktionsbeløbet skal være positivt</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>Transaktionen blev oprettet.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>Transaktionsgebyrerne er for høje</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Transaktionen er ugyldig</translation>
+    </message>
+    <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>Transaktionen er for stor til at opfylde gebyrpolitikken</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Transaktionen er for stor</translation>
+    </message>
+    <message>
+        <source>Transmitting final transaction.</source>
+        <translation>Afsender sluttransaktionen.</translation>
+    </message>
+    <message>
+        <source>Try to spend with a higher security level to include more coins</source>
+        <translation>Prøv at bruge med et højere sikkerhedsniveau til at inkludere flere mønter</translation>
+    </message>
+    <message>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>Forsøger at bruge en allerede brugt serie #, prøv igen.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
+        <translation>Det er ikke muligt at forbide til %s på denne computer (bind returnerede fejl %s)</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint</source>
+        <translation>Kunne ikke finde transaktioner indeholdende mynte</translation>
+    </message>
+    <message>
+        <source>Unable to sign spork message, wrong key?</source>
+        <translation>Det var ikke muligt at signere spork meddelelsen. Er De sikker på De anvender den rigtige nøgle?</translation>
+    </message>
+    <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>Kan ikke starte HTTP-serveren. Se fejlfindingsloggen for detaljer.</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Ukendt netværk specificeret i -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown state: id = %u</source>
+        <translation>Ukendt stade: id = %u</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation>Opdater tegnebogen til det nyeste format</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Anvend UPnP til at kortlægge den lyttende port (default: %u)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation>Anvend UPnP for at kortlægge lytteporten (default: 1 når der lyttes)</translation>
+    </message>
+    <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>Brug en brugerdefineret maks kædeomlægningsdybde (standard: %u)</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>Anvend testnetværket</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation>Brugernavn til JSON-RPC forbindelser</translation>
+    </message>
+    <message>
+        <source>Value is below the smallest available denomination (= 1) of zNXB</source>
+        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zNXB</translation>
+    </message>
+    <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Værdien er højere end tilsløringsgruppen tillader</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>Verificerer blokke</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>Verificerer  tegnebog</translation>
+    </message>
+    <message>
+        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 zNXB kræver et sikkerhedsniveau på 100 til succes.</translation>
+    </message>
+    <message>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>Tegnbogen %s befinder sig udenfor datamappen %s</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Tegnebogen er låst</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
+        <translation>Tegnebogen måtte genskrives. Genstart NXBoost core for at gøre færdig</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Optioner for tegnebogen</translation>
+    </message>
+    <message>
+        <source>Wallet window title</source>
+        <translation>Tegnebogens vinduestitel</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Advarsel!</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>Advarsel! Denne version er forældet. Opgradering krævet.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Advarsel! Argumentet -benchmark understøttes ikke og blev ignoreret. Anvend -debug=bench.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Advarsel! Argumentet -debugnet understøttes ikke og blev ignoret. Brug -debug=net.</translation>
+    </message>
+    <message>
+        <source>Will retry...</source>
+        <translation>Prøver igen</translation>
+    </message>
+    <message>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>Du har ikke nok Zerocoins i din tegnebog</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Databasen skal genopbygges ved hjælp af -reindex for at ændre -txindex</translation>
+    </message>
+    <message>
+        <source>Your entries added successfully.</source>
+        <translation>Posterne blev tilføjet.</translation>
+    </message>
+    <message>
+        <source>Your transaction was accepted into the pool!</source>
+        <translation>Transaktionen blev accepteret af POOL!</translation>
+    </message>
+    <message>
+        <source>Zapping all transactions from wallet...</source>
+        <translation>Skifter alle transaktioner i tegnebogen.</translation>
+    </message>
+    <message>
+        <source>ZeroMQ notification options:</source>
+        <translation>ZeroMQ notifikationsindstillinger:</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>Zerocoin muligheder:</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>Ved opstart</translation>
+    </message>
+    <message>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation>Tegnebogsfilen wallet.dat er beskadiget. Opbygning mislykkedes.</translation>
     </message>
 </context>
 <context>
@@ -3788,10 +5268,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>(Smartgebyr endnu ikke initialiseret. Det tager som regel nogle få blokke...)</translation>
     </message>
     <message>
-        <source>SwiftX</source>
-        <translation>SwiftX</translation>
-    </message>
-    <message>
         <source>Confirmation time:</source>
         <translation>Bekræftelsestid</translation>
     </message>
@@ -4880,1486 +6356,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Is Spendable</source>
         <translation>Kan tilbringes</translation>
-    </message>
-</context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Tillad JSON-RPC forbindelser fra bestemte kilder. Gyldig &lt;ip&gt; er enkeltadresse (1.2.3.4), a Network/netmask (1.2.3.4/255.255.255.0) eller et netværk/CCIDR (1.2.3.4/24). Der kan indsættes flere linier.</translation>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Forbind til den opgivne adresse og lyt på den kontinuerligt. Brug [host]:port notation for IPv6</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Forbind til den opgivne adresse og put peers på listen over godkendte adresser.  Brug [host]:port notation for IPv6</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Forbind til den opgivne adresse og lyt efter JSON-.RPC forbindelser. Brug [host]:port notation for IPv6. Der kan indsættes flere linier (standard: Forbind til alle interfaces)</translation>
-    </message>
-    <message>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>Beregnet akkumulator kontrolpunkt er ikke det, der er registreret af blok indeks</translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
-        <translation>Kan ikke låse datamappen %s. NXBoost core kører sandsynligvis allerede.</translation>
-    </message>
-    <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Skift automatisk afstemningsmetode, mode=auto: Stem kun for fuldstændigt match mod det generered budget (Strng, Default: auto)</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
-        <translation>Bedøm ubegrænsede transaktioner til &lt;n&gt;*1000 bytes pr. minut kontinuerligt (default:%u)</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Opret nye filer med systemets default tilladelser i stedet for umask 077 (virker kun med tegnebogsfunktionen slået fra)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Slet alle tegnebogens transaktioner og genskab kun fra blokkæden ved at tilføje -rescan i forbindes med opstart.</translation>
-    </message>
-    <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Slet alle zerocoin-udgifter og minter, der er blevet sendt til blockchain-databasen og geninddrive dem (0-1, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Distribueret under MIT software licensen. Se den vedlaget fil COPYING eller 
-&lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
-    </message>
-    <message>
-        <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
-        <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zNXB-mintning (0-1, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for NXB-indgange (0-1, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable or disable staking functionality for zNXB inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for zNXB-indgange (0-1, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Slå spork administrationsfunktionen til med den rette private nøgle</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Opgiv regression test mode, der bruger en særlig kæde, hvor blokke kan løses med det samme</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Fejl! Der opstod en fejl i under lytning efter indkommende forbindelser (Listen returnerede fejl %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
-        <translation>Fejl: Transaktionen er større end den maksimalt tilladte transaktionsstørrelse!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>Fejl! Argumentet er ikke understøttet -socks found. Det er ikke muligt at bestemme hvilken SOCKS version længere. Kun SOCKS5 proxies understøttes.</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Udfør en kommando når der modtages en alarm, eller der opdages en meget lang fork (%s in cmd erstattet af en besked)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Udfør en kommando når en transaktion i tegnebogen ændres (%s in cmd erstattet af TxID)</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebyrer (in NXB/kb) lavere end dette betragtes som et nul-gebyr for at videresende (default: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebyrer (in NXB/kb) lavere end dette betragtes som et nul-gebyr for at oprette en transaktion (default: %s)</translation>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Opsaml databaseaktiviteterne fra hukommelsespool og gem dem i loggen på disken for hver &lt;n&gt; megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Der er fundet ubekræftede designerede outputs. Vent indtil de bekræftes for at fortsætte.</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Hvis der ikke fastsættes et betalingsTxgebyr, skal der inkluderes tilstrækkelige midler til gebyret så transaktionens bekræftelsesproces vil begynde indenfor n blokke (default: %u)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>Denne indstilling -genproclimit kontrollerer hvor mange blokke der bliver genereret med det samme.</translation>
-    </message>
-    <message>
-        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
-        <translation>Utilstrækkelige eller utilstrækkelige bekræftede penge, skal du muligvis vente et par minutter og prøve igen.</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Ugyldigt beløb for -maxtxfee=&lt;amount&gt;: '%s' (skal være mindst det samme som minimumsgebyret på %s for at forhindre at transaktionen blokeres).</translation>
-    </message>
-    <message>
-        <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation>Fasthold altid den aktuelle saldo klar til brug (default: 0)</translation>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
-        <translation>Indskriv transaktionsprioritet og gebyr pr kB i loggen når der mineres (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Vedligehold et fuldgyldigt transaktionsindeks fra getrawtransaktion fra rpc kald (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Maksimal størrelse på data hos databærerens transaktioner der videresendes og mineres (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>Maksimal gebyrstørrelse der an bruges i en enkelt transaktion. Hvis denne er sat for lavt kan det medføre afvisning af store transaktioner (default: %s)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Det antal sekunder, som peers, der ikke handler korrekt skal afholdes fra at genforbinde (default: %u)</translation>
-    </message>
-    <message>
-        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Tilsløring bruger hele det tilslørede designerede beløb til at sende betalinger. De kan blot tilsløre yderligere nxboost</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Output debug information (default: %u, supplying &lt;category&gt; er valgfri)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Forespørg peer adresser via DNS opslag, hvis antallet af adresser er laft (default: 1 med mindre -connect)</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Randomize credentials for hver proxy-forbindelse. Dette gør det muligt for Tor-strøm isolering (standard: %u)</translation>
-    </message>
-    <message>
-        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
-        <translation>anmod om høj prioritet for videresendelse af gratis transaktioner eller transaktioner med lavt gebyr (default: %u)</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
-        <translation>Send sporings/debug info til konsollet i stedet for at sende det til debug.log filen. (default: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Angiv maksimumstørrelsen på højprioritets/lavgebyrstransaktioner i bytes (default: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>Angiv antallet af script verifikationstråde (%u til %d, 0 = auto, &lt; = efterlad så mange tråde ledige, default: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Angiv antallet af tråde til møntgenerering hvis aktiveret (-1 = alle cores, default: %d)</translation>
-    </message>
-    <message>
-        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>Vis N bekræftelser for en gennemført låst transaktion (0-9999, default: %u)</translation>
-    </message>
-    <message>
-        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>Understøt filtrering af blokke og transaktioner med bloom filters (default: %u)</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
-        <translation>Det var ikke muligt at forbinde %s på denne computer. NXBoost kører sandsynligvis allerede.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret designeret indestående for at gennemføre denne transaktion.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</source>
-        <translation>Det er ikke muligt at allokere tilstrækkeligt med tilsløret  ikke-designeret indestående for at gennemføre denne transaktion, der ikke ækvivalerer 10000 NXB.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</source>
-        <translation>Det var ikke muligt at allokere tilstrækkelige midler til denne transaktion som er forskellig fra 10000 NXB.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Brug separat SOCKS5 proxy for at nå ud til peers via Tor skjulte tjenester (default: %s)</translation>
-    </message>
-    <message>
-        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Advarsel! -maxtxfee er sat meget højt. Gebyrer så store bør betales i en selvstændig transaktion.</translation>
-    </message>
-    <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Advarsel! -paytxfee er sat meget højt. Det er dette gebyr De kommer til at betale for transaktionen, hvis De gennemfører. </translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
-        <translation>Advarsel! Kontroller at computerens dato og tid er korrekt indstillet. Hvis tiden ikke er rigtig, vil NXBoost core ikke fungere ordentligt.</translation>
-    </message>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Advarsel! Netværket ser ikke ud til at samtýgge. Nogle af minerne har tilsyneladende problemer.</translation>
-    </message>
-    <message>
-        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Advarsel! Der er ikke fuld enighed mellem Deres og de øvrige peers. Det er muligt, at De skal opdatere tegnebogen, eller at andre noder mangler at opdatere.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Advarsel! Fejl ved læsning af wallet.dat. Alle nøgler blev indlæst korrekt, men transaktions- eller adressebogens er fejlbehæftede, eller mangler helt. </translation>
-    </message>
-    <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Advarsel! wallet.dat filen er beskadiget. Data genskabt. Den originale wallet.dat fll blev gemt som tegnebog. {temestap}.bak i %s; Hvis transaktioner eller saldo er forkert, bør De genskabe tegnebogen fra en sikkerhedskopi.</translation>
-    </message>
-    <message>
-        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>Sæt peers, der forbinder fra denne netmaske eller IP adresse på listen over godkendte peers. Der kan indføjes flere linier.</translation>
-    </message>
-    <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Peers, der optræder i listen over godkendte peers kan ikke blokeres på baggrund af DoS, og deres transaktioner vil altid blive videresendt - også selvom de allerede findes i mempoolen - anvendes til f.eks. gateways.</translation>
-    </message>
-    <message>
-        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
-    </message>
-    <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 kunne kun bruges på hovednettet)</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(default: %s)</translation>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation>(default: 1)</translation>
-    </message>
-    <message>
-        <source>(must be 49108 for mainnet)</source>
-        <translation>(skal være 49108 for hovednettet)</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Accepter kommandolinie og JSON-RPC kommandoer</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accepter forbindelser udefra (default: 1 hvis ingen -proxy eller -connect)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Accepter public REST anmodninger (default: %u)</translation>
-    </message>
-    <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Tilføj en node at forbinde til, og forsøg at holde forbindelsen åben.</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Tillad DNS opslag for -addnode, -seednode og -connect</translation>
-    </message>
-    <message>
-        <source>Already have that input.</source>
-        <translation>Dette er allerede angivet</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Forespørg altid peer adresser via DNS opslag (default: %u)</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Forsøger at genskabe de private nøgler fra en beskadiget wallet.dat fil</translation>
-    </message>
-    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Opret automatisk Tor-skjult tjeneste (standard: %d)</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>Bloker optioner for oprettelse:</translation>
-    </message>
-    <message>
-        <source>Calculating missing accumulators...</source>
-        <translation>Beregning af manglende akkumulatorer ...</translation>
-    </message>
-    <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Kan ikke designere: Ingen kompatible inputs tilbage.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Kan ikke finde en tilfældig masternode.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Kan ikke usynliggøre så længe der synkroniseres.</translation>
-    </message>
-    <message>
-        <source>Cannot downgrade wallet</source>
-        <translation>Kan ikke nedgradere tegnebogen</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Kan ikke opløse -bind adresse: %s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Kan ikke opløse -externalip adresse: %s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Kan ikke opløse -whitebind adresse: %s'</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>Kan ikke skrive standardadressen</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Sikkerhed ikke gyldig</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>Forbind kun til de angivne node(r)</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Forbind gennem SOCKS5 proxy</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Forbind til en node for at hente peeradresser og afbryd derefter forbindelsen</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Forbindelsesoptioner</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Copyright (C) 2009-%i The Bitcoin Core Developers </translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Copyright (C) 2015-%i The NXBoost Core Developers</translation>
-    </message>
-    <message>
-        <source>Corrupted block database detected</source>
-        <translation>Blokdatabasen er beskadiget</translation>
-    </message>
-    <message>
-        <source>Could not parse masternode.conf</source>
-        <translation>Kunne ikke fortolke masternode.conf</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Debug/testoptioner:</translation>
-    </message>
-    <message>
-        <source>Delete blockchain folders and resync from scratch</source>
-        <translation>Slet blockchain mapper og resync fra bunden</translation>
-    </message>
-    <message>
-        <source>Disable OS notifications for incoming transactions (default: %u)</source>
-        <translation>Deaktiver OS-underretninger for indgående transaktioner (standard: %u)</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>Slå beskyttet tilstand fra og ignorer en ægte "beskyttet tilstands" hændelse (default: %u)</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Find egen IP adresse (default: 1 når der lyttes, og inge -externalip)</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Indlæs ikke tegnebogen og slå tegnebogens RPC kald fra</translation>
-    </message>
-    <message>
-        <source>Do you want to rebuild the block database now?</source>
-        <translation>Vil De genopbygge blokdatabasen nu?</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation>Indlæst!</translation>
-    </message>
-    <message>
-        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>Aktivér automatisk Zerocoin-mintning (0-1, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Aktivér publicering af hash-transaktion (låst via SwiftX) i &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Aktivér publicere rå transaktion (låst via SwiftX) i &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Slå tilstanden "masternode" til (0-1 default: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>Der er ikke plads til flere poster</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Fejl ved oprettelse af forbindelse til masternode.</translation>
-    </message>
-    <message>
-        <source>Error initializing block database</source>
-        <translation>Fejl ved initialisering af blokdatabasen</translation>
-    </message>
-    <message>
-        <source>Error initializing wallet database environment %s!</source>
-        <translation>Fejl ved initialisering af tegnebogens databasemilljø %s!</translation>
-    </message>
-    <message>
-        <source>Error loading block database</source>
-        <translation>Fejl ved indlæsning af blokdatabasen</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat</source>
-        <translation>Fejl ved indlæsning af wallet.dat</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen er beskadiget</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Tegnebogen kræver en nyere version af NXBoost core</translation>
-    </message>
-    <message>
-        <source>Error opening block database</source>
-        <translation>Fejl ved åbning af blokdatabasen</translation>
-    </message>
-    <message>
-        <source>Error reading from database, shutting down.</source>
-        <translation>Fejl ved læsning fra database, programmet lukker ned.</translation>
-    </message>
-    <message>
-        <source>Error recovering public key.</source>
-        <translation>Fejl ved genskabelse af den offentlige nøgle</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Fejl!</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Fejl! Kan ikke vælge de aktuelt designerede inputs</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation>Fejl! Der er ikke nok plads på disken.</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Fejl! Argumentet er ikke understøttet - tor fundet, brug -onion</translation>
-    </message>
-    <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Fejl! Tegnebogen er låst. Det er ikke muligt at oprette transaktionen.</translation>
-    </message>
-    <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Fejl! De har allerede ventende transaktioner i tilsløringsgruppen</translation>
-    </message>
-    <message>
-        <source>Failed to calculate accumulator checkpoint</source>
-        <translation>Kunne ikke beregne akkumulatorkontrolpunktet</translation>
-    </message>
-    <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Lytning på uspecificerede porte mislykkedes. Brug -listen=0 hvis De ønsker denne funktion.</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Læsning af blokken mislykkedes</translation>
-    </message>
-    <message>
-        <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebyr (i NXB/kB) som skal tilføjes transaktionen der sendes (default: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Færdiggør transaktionen.</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: %u)</source>
-        <translation>Gennemtving beskyttet tilstand (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Der er fundet tilstrækkeligt med brugere der underskriver (venter %s)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Der er fundet tilstrækkeligt med brugere der underskriver...</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: %u)</source>
-        <translation>Generer mønter (default: %u)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>Antal blokke der kontrolleres ved opstart (default: %u, 0 = all)</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>Hvis &lt;category&gt; ikke findes, sendes al debug information som output.</translation>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation>Importerer</translation>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Importer blokke fra ekstern kilde - blk000??.dat fil</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>Inkluder IP adressen i debug output (default: %u)</translation>
-    </message>
-    <message>
-        <source>Incompatible mode.</source>
-        <translation>Ikke kompatibel i denne tilstand</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Ikke kompatibel version</translation>
-    </message>
-    <message>
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Forkert, eller ikke genesis blok fundet. Er De sikker på, at det er den rigtige datadir der benyttes til netværket?</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Info:</translation>
-    </message>
-    <message>
-        <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
-        <translation>Initiering af sanitetskontrollen fejlede. NXBoost core lukker ned. </translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Ugyldigt input</translation>
-    </message>
-    <message>
-        <source>Insufficient funds</source>
-        <translation>Utilstrækkelige midler</translation>
-    </message>
-    <message>
-        <source>Insufficient funds.</source>
-        <translation>Utilstrækkelige midler</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Ugyldig -onionadresse eller værtsnavn: ' %s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ugyldigt beløb til -maxtxfee=&lt;beløb&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ugyldigt beløb til -minrelaytxfee=&lt;beløb&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ugyldigt beløb til -mintxfee=&lt;beløb&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Ugyldigt beløb til -paytxfee=&lt;beløb&gt;: '%s' (skal mindst være %s)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ugyldigt beløb til -paytxfee=&lt;beløb&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>Ugyldigt beløb til -reservebalance=&lt;beløb&gt;:</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Ugyldigt beløb</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeprivkey. Please see documenation.</source>
-        <translation> Ugyldig masternodeprivkey. Se dokumentationen</translation>
-    </message>
-    <message>
-        <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Ugyldig netmask specificeret i -whitelist: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation>Ugyldig port fundet i masternode.conf</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Ugyldig privat nøgle</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>Ugyldigt script fundet.</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the NXB and zNXB money supply statistics</source>
-        <translation>Reindex NXB og zNXB pengemængde statistikker</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Reindexing zerocoin database ...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Reindexerende zerocoin mislykkedes</translation>
-    </message>
-    <message>
-        <source>Selected coins value is less than payment target</source>
-        <translation>Valgt mønter værdi er mindre end betalingsmål</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftTX optioner:</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>Denne release er en testrelease. Anvendelse på eget ansvar - bør ikke anvendes til staking eller handelsapplikationer!</translation>
-    </message>
-    <message>
-        <source> mints deleted
-</source>
-        <translation>minter slettet
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>mints opdateret,</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>ubekræftede transaktioner fjernet
-</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle NXBoost funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Aktiver swifttx, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Transaktionen blev afvist! Dette kan ske, hvis nogle af mønterne i tegnebogen allerede er brugt. For eksempel hvis De har brugt en kopi af Wallet.dat filen, og mønterne har været brugt, men ikke markerede som brugte i den. </translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på mindst %s på grund af dets mængde, kompleksitet eller brug af nyligt modtagne penge!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Fejl: Ikke understøttet argument -checklevel fundet. Checklevel skal være niveau 4.</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Udfør kommando, når den bedste blok ændres, og dens størrelse er overstået (%s i cmd erstattes af blok hash, %d med blokstørrelsen)</translation>
-    </message>
-    <message>
-        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Kunne ikke finde møntsæt blandt holdte mønter med mindre end maksimalt antal udgifter</translation>
-    </message>
-    <message>
-        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>I sjældne tilfælde overstiger en udgift med 7 mønter vores maksimale tilladte transaktionsstørrelse. Prøv igen med 6 eller færre mønter</translation>
-    </message>
-    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zNXB-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Angiv en brugerdefineret backup-sti for at tilføje en kopi af en wallet-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup.</translation>
-    </message>
-    <message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX kræver mindst 6 bekræftelser. Vent nogle minutter og prøv igen.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; can be:</translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Forsøg at gennemtvinge reparation af korrumperet blokkæde</translation>
-    </message>
-    <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: Akkumulator vidne bekræfter ikke</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Vis beregning af stavmodifikator i debug.log-filen.</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Vis verbose møntspilsmeddelelser i debug.log-filen.</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Aktivér publish hash-blok i &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Aktivér publicering af hash-transaction I &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Aktivér offentliggør rå blok I &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Aktivér publicere rå transaktion i &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Aktivér stakfunktionalitet (0-1, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
-    </message>
-    <message>
-        <source>Error: No valid utxo!</source>
-        <translation>Fejl: Ingen gyldig udxo!</translation>
-    </message>
-    <message>
-        <source>Failed to create mint</source>
-        <translation>Kunne ikke oprette mynte</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>Kunne ikke deserialisere</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Kunne ikke finde Zerocoins i wallet.dat</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Kunne ikke vælge en zerocoin</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Kunne ikke tørre zerocoinDB</translation>
-    </message>
-    <message>
-        <source>Failed to write coin serial number into wallet</source>
-        <translation>Kunne ikke skrive møntserienummer i tegnebog</translation>
-    </message>
-    <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Behold højest &lt;n&gt; transaktioner i hukommelsen, der ikke kan forbindes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Seneste tilsløring var for ny</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Seneste succesfulde tilsløring var for ny</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>Begræns størrelsen på signatur cachen til &lt;n&gt; poster (default: %u)</translation>
-    </message>
-    <message>
-        <source>Line: %d</source>
-        <translation>Linje: %d</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lyt efter JSON-RPC forbindelser på &lt;port&gt; (default: %u or testnet: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Lyt efter forbindelser på port &lt;port&gt; (default: %u or tesntet: %u)</translation>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation>Indlæser adresser</translation>
-    </message>
-    <message>
-        <source>Loading block index...</source>
-        <translation>Indlæser blokindeks</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Indlæser budgetcache...</translation>
-    </message>
-    <message>
-        <source>Loading masternode cache...</source>
-        <translation>Indlæser masternodecache...</translation>
-    </message>
-    <message>
-        <source>Loading masternode payment cache...</source>
-        <translation>Indlæser masternode betalingscache...</translation>
-    </message>
-    <message>
-        <source>Loading sporks...</source>
-        <translation>Indlæser sporks ...</translation>
-    </message>
-    <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>Indlæser tegnebog... (%3.2f%%)</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Indlæser tegnebog</translation>
-    </message>
-    <message>
-        <source>Location of the auth cookie (default: data dir)</source>
-        <translation>Placering af auth cookie (standard: data dir)</translation>
-    </message>
-    <message>
-        <source>Lock is already in place.</source>
-        <translation>Er allerede låst</translation>
-    </message>
-    <message>
-        <source>Lock masternodes from masternode configuration file (default: %u)</source>
-        <translation>Lås masternoder fra masternode konfiguratinsfilen (default: %u)</translation>
-    </message>
-    <message>
-        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>Opslag (): Ugyldig-proxy adresse eller værtsnavn: '%s'</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Vedligehold maksimalt &lt;n&gt; forbindelser til peers (default: %u)</translation>
-    </message>
-    <message>
-        <source>Masternode options:</source>
-        <translation>Masternodeoptioner</translation>
-    </message>
-    <message>
-        <source>Masternode queue is full.</source>
-        <translation>Masternodens kø er fyldt op.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maksimal størrelse på per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maksimal størrelse på per-connection send buffer, &lt;n&gt; *1000 bytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Mint did not make it into blockchain</source>
-        <translation>Mint gjorde det ikke til blockchain</translation>
-    </message>
-    <message>
-        <source>Missing input transaction information.</source>
-        <translation>Manglende transaktionsinformationsinput</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Usynliggørelse i gang</translation>
-    </message>
-    <message>
-        <source>Need address because change is not exact</source>
-        <translation>Har brug for adresse, fordi ændring ikke er nøjagtig</translation>
-    </message>
-    <message>
-        <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Der skal specificeres en port med -whitebind: '%s'</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>Ingen masternoder fundet.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Ingen kompatible masternoder fundet.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Ingen midler fundet til eventuel designering</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>ingen matchende designerede midler til usynliggørelse.</translation>
-    </message>
-    <message>
-        <source>Node relay options:</source>
-        <translation>Node videresendelsesoptioner:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Ikke standard offentlig nøgle fundet</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Ikke kompatibel med eksisterende transaktioner</translation>
-    </message>
-    <message>
-        <source>Not enough file descriptors available.</source>
-        <translation>Ikke nok fildescriptors tilgængelige</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Findes ikke i masternodelisten</translation>
-    </message>
-    <message>
-        <source>Number of automatic wallet backups (default: 10)</source>
-        <translation>Antal automatiske sikkerhedskopier af tegnebogen (default: 10)</translation>
-    </message>
-    <message>
-        <source>Number of custom location backups to retain (default: %d)</source>
-        <translation>Antal brugerdefinerede positionsbackups til at beholde (standard: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Tilsløringssystem ledigt</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Tilsløring færdig.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Tilsløringsanmodning ikke færdiggjort</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
-        <translation>Accepter kun blokkæde matchende indbyggede kontrolpunkter (defaut %u)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Forbind udelukkende til noder i netværket &lt;net&gt; (ipv4, ipv6 eller onion)</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Optioner:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Kodeord for JSON-RPC forbindelser</translation>
-    </message>
-    <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid (): Ugyldig-proxy adresse eller værtsnavn: '%s'</translation>
-    </message>
-    <message>
-        <source>Preparing for resync...</source>
-        <translation>Forberedelse til genoptagelse ...</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Forbered debug output med tidsstempel (default %u)</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>Udskriftsversion og exit</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>RPC server optioner:</translation>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Drop 1 af hver &lt;n&gt; netværksmeddelelser efter tilfældighedsprincippet</translation>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Gør 1 af hver &lt;n&gt; netværksmeddelelser uklar efter tilfældighedsprincippet</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Genopbyg blokkædens indeks fra de aktuelle blk000??.dat filer</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Modtag og vis P2P netværksalarmer (default: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the accumulator database</source>
-        <translation>Reindex akkumulatiedatabasen</translation>
-    </message>
-    <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Videresend og minér databærer transaktioner (default: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Videresend ikke-P2SH mulisig (default %u)</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Genskan blokkæden for manglende transaktioner i tegnebogen</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>Genskanner...</translation>
-    </message>
-    <message>
-        <source>ResetMintZerocoin finished: </source>
-        <translation>ResetSpentZerocoin færdig:</translation>
-    </message>
-    <message>
-        <source>ResetSpentZerocoin finished: </source>
-        <translation>ResetSpentZerocoin færdig:</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: %u)</source>
-        <translation>Kør en tråd periodevist for at rense tegnebogen ud (default %u)</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Kør en tråd i baggrunden som en særlig service og tag imod kommandoer </translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Send transaktioner som nugebyrstransaktioner hvis muligt (default: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sessionen blev ikke færdiggjort!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>Sessionen brugte for meget tid.</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Angiv databasecachens størrelse i megabytes (%d til  %d, default: %d)</translation>
-    </message>
-    <message>
-        <source>Set external address:port to get to this masternode (example: %s)</source>
-        <translation>Angiv den eksterne adresse:port for at komme til denne masternode (eksempel: %s)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Angiv hoved poolstørrelse til &lt;n&gt; (default %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Angiv maksimal blokstørrelse i bytes (default: %d)</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>Angiv minimums blokstørrelse i bytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Set the Maximum reorg depth (default: %u)</source>
-        <translation>Indstil højeste dybde dybde (standard: %u)</translation>
-    </message>
-    <message>
-        <source>Set the masternode private key</source>
-        <translation>angiv masternodens private nøgle</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Angiv antallet af tråde der anvendes til at servicere RPC opkald (default: %d)</translation>
-    </message>
-    <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
-        <translation>Sætter DB_PRIVATE flag i tegnebogens databasemiljø (default: %u)</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Vis alle debugoptioner (brug: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Formindsk debug.logfilen ved opstart af klienten (default: 1 når der ikke er angivet -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>Signering mislykkedes</translation>
-    </message>
-    <message>
-        <source>Signing timed out.</source>
-        <translation>Signering brugte for meget tid.</translation>
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation>Signering af transaktionen mislykkedes</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Specificer konfigurationsfil (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Specificer forbindelsens timeout i millisekunder (minimum: 1, default : %d)</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>angiv datamappe</translation>
-    </message>
-    <message>
-        <source>Specify masternode configuration file (default: %s)</source>
-        <translation>Specificer masternode konfigurationsfilen (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Angiv pid filen (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>angiv tegnebogens wallet fil (indenfor datamappen)</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Angiv Deres offentlige adresse</translation>
-    </message>
-    <message>
-        <source>Spend Valid</source>
-        <translation>Tilbring gyldig</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Brug ubekræftede returpenge når der sendes transaktioner (default: %u)</translation>
-    </message>
-    <message>
-        <source>Staking options:</source>
-        <translation>Staking muligheder:</translation>
-    </message>
-    <message>
-        <source>Stop running after importing blocks from disk (default: %u)</source>
-        <translation>Stop kørsel efter import af blokke fra disken (default: %u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Afsendt følgende posteringer til masternode %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Afsendt til masternode. Afventer flere posteringer (%u /%d) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Afsendt til masternode, venter i kø %s</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>Synkronisering mislykkedes.</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>Synkronisering færdig</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Synkronisering venter</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Synkronisere budgetter</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternode winners...</source>
-        <translation>Synkroniserer masternodevinnere</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternodes...</source>
-        <translation>Synkroniserer masternoder...</translation>
-    </message>
-    <message>
-        <source>Synchronizing sporks...</source>
-        <translation>Synkroniserer sporks...</translation>
-    </message>
-    <message>
-        <source>Syncing zNXB wallet...</source>
-        <translation>Syncing zNXB wallet ..</translation>
-    </message>
-    <message>
-        <source>The coin spend has been used</source>
-        <translation>Møntudgifterne er blevet brugt</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Den nye udgiftsmønttransaktion bekræftede ikke</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Den valgte mintmønter er en ugyldig mønt</translation>
-    </message>
-    <message>
-        <source>The transaction did not verify</source>
-        <translation>Transaktionen bekræftede ikke</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>Denne hjælpemeddelelse</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>Denne software er eksperimentiel</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Dette er ment som et tilbagekørings test- og appudviklingsværktøj.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Dette er ikke en masternode</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Terskel for frakoblíng af peers der udfører upassende handlinger (default: %u)</translation>
-    </message>
-    <message>
-        <source>Too many spends needed</source>
-        <translation>Alt for mange tilbringer nødvendig</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Tor-kontrolportadgangskode (standard: tom)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Tor-kontrolport, der skal bruges, hvis du lytter til løg (standard: %s)</translation>
-    </message>
-    <message>
-        <source>Transaction Created</source>
-        <translation>Transaktion oprettet</translation>
-    </message>
-    <message>
-        <source>Transaction Mint Started</source>
-        <translation>Transaktionsmynte startet</translation>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation>Transaktionsbeløbet er for lille</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>Transaktionsbeløbet skal være positivt</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transaktionen blev oprettet.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Transaktionsgebyrerne er for høje</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transaktionen er ugyldig</translation>
-    </message>
-    <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>Transaktionen er for stor til at opfylde gebyrpolitikken</translation>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation>Transaktionen er for stor</translation>
-    </message>
-    <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Afsender sluttransaktionen.</translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Prøv at bruge med et højere sikkerhedsniveau til at inkludere flere mønter</translation>
-    </message>
-    <message>
-        <source>Trying to spend an already spent serial #, try again.</source>
-        <translation>Forsøger at bruge en allerede brugt serie #, prøv igen.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>Det er ikke muligt at forbide til %s på denne computer (bind returnerede fejl %s)</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>Kunne ikke finde transaktioner indeholdende mynte</translation>
-    </message>
-    <message>
-        <source>Unable to sign spork message, wrong key?</source>
-        <translation>Det var ikke muligt at signere spork meddelelsen. Er De sikker på De anvender den rigtige nøgle?</translation>
-    </message>
-    <message>
-        <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation>Kan ikke starte HTTP-serveren. Se fejlfindingsloggen for detaljer.</translation>
-    </message>
-    <message>
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Ukendt netværk specificeret i -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Ukendt stade: id = %u</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Opdater tegnebogen til det nyeste format</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Anvend UPnP til at kortlægge den lyttende port (default: %u)</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Anvend UPnP for at kortlægge lytteporten (default: 1 når der lyttes)</translation>
-    </message>
-    <message>
-        <source>Use a custom max chain reorganization depth (default: %u)</source>
-        <translation>Brug en brugerdefineret maks kædeomlægningsdybde (standard: %u)</translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>Anvend testnetværket</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Brugernavn til JSON-RPC forbindelser</translation>
-    </message>
-    <message>
-        <source>Value is below the smallest available denomination (= 1) of zNXB</source>
-        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zNXB</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Værdien er højere end tilsløringsgruppen tillader</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>Verificerer blokke</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Verificerer  tegnebog</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zNXB kræver et sikkerhedsniveau på 100 til succes.</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Tegnbogen %s befinder sig udenfor datamappen %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Tegnebogen er låst</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
-        <translation>Tegnebogen måtte genskrives. Genstart NXBoost core for at gøre færdig</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Optioner for tegnebogen</translation>
-    </message>
-    <message>
-        <source>Wallet window title</source>
-        <translation>Tegnebogens vinduestitel</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Advarsel!</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Advarsel! Denne version er forældet. Opgradering krævet.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Advarsel! Argumentet -benchmark understøttes ikke og blev ignoreret. Anvend -debug=bench.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Advarsel! Argumentet -debugnet understøttes ikke og blev ignoret. Brug -debug=net.</translation>
-    </message>
-    <message>
-        <source>Will retry...</source>
-        <translation>Prøver igen</translation>
-    </message>
-    <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Du har ikke nok Zerocoins i din tegnebog</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>Databasen skal genopbygges ved hjælp af -reindex for at ændre -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Posterne blev tilføjet.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Transaktionen blev accepteret af POOL!</translation>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>Skifter alle transaktioner i tegnebogen.</translation>
-    </message>
-    <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ notifikationsindstillinger:</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Zerocoin muligheder:</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>Ved opstart</translation>
-    </message>
-    <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>Tegnebogsfilen wallet.dat er beskadiget. Opbygning mislykkedes.</translation>
     </message>
 </context>
 </TS>

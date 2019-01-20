@@ -1126,6 +1126,113 @@
     </message>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>No es pot mesclar mentre s'està sincronitzant.</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>Opcions de connexió:</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Error connectant al Masternode.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informació</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Clau privada no vàlida.</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>S'està carregant l'índex de blocs...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>S'està carregant el moneder... (%3.2f %%)</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>S'està carregant el moneder...</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>Masternode:</translation>
+    </message>
+    <message>
+        <source>Mixing in progress...</source>
+        <translation>Mescla en curs...</translation>
+    </message>
+    <message>
+        <source>No Masternodes detected.</source>
+        <translation>No s'han detectat masternodes.</translation>
+    </message>
+    <message>
+        <source>No compatible Masternode found.</source>
+        <translation>No s'han trobat masternodes compatibles.</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Opcions:</translation>
+    </message>
+    <message>
+        <source>RPC server options:</source>
+        <translation>Opcions del servidor RPC:</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>S'està reescanejant...</translation>
+    </message>
+    <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>S'ha enviat les següents entrades al masternode: %u /%d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Enviat al masternode, esperant més entrades ( %u / %d ) %s</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Enviat al masternode, esperant a la cua %s</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>La sincronització ha fallat</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>Sincronització finalitzada</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Transacció no vàlida.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>Verificant blocs...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>Verificant moneder...</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>El moneder està bloquejat.</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Atenció</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Configure Obfuscation</source>
@@ -1971,113 +2078,6 @@
     <message>
         <source>zNXB</source>
         <translation>zNXB</translation>
-    </message>
-    </context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>No es pot mesclar mentre s'està sincronitzant.</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Opcions de connexió:</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Error connectant al Masternode.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informació</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Clau privada no vàlida.</translation>
-    </message>
-    <message>
-        <source>Loading block index...</source>
-        <translation>S'està carregant l'índex de blocs...</translation>
-    </message>
-    <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>S'està carregant el moneder... (%3.2f %%)</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>S'està carregant el moneder...</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Mescla en curs...</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>No s'han detectat masternodes.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>No s'han trobat masternodes compatibles.</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Opcions:</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>Opcions del servidor RPC:</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>S'està reescanejant...</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>S'ha enviat les següents entrades al masternode: %u /%d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Enviat al masternode, esperant més entrades ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Enviat al masternode, esperant a la cua %s</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>La sincronització ha fallat</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>Sincronització finalitzada</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transacció no vàlida.</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>Verificant blocs...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Verificant moneder...</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>El moneder està bloquejat.</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Atenció</translation>
     </message>
     </context>
 </TS>

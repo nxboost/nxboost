@@ -1130,6 +1130,21 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
     </message>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Error</source>
+        <translation>Błąd</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informacje</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Ostrzeżenie</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Basic Privacy</source>
@@ -2025,21 +2040,6 @@ https://www.transifex.com/nxboost/nxboost-wallet </translation>
     <message>
         <source>0</source>
         <translation>0</translation>
-    </message>
-    </context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>Error</source>
-        <translation>Błąd</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informacje</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Ostrzeżenie</translation>
     </message>
     </context>
 </TS>

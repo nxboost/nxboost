@@ -1446,6 +1446,133 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Error</source>
+        <translation>Chyba</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informace</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>Synchronizace selhala</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>Synchronizace dokončena</translation>
+    </message>
+    <message>
+        <source>Synchronization pending...</source>
+        <translation>Synchronizace probíhá</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>Synchronizace rozpočtu...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners...</source>
+        <translation>Synchronizace vítězných masternodů...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synchronizace masternodů...</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>Toto je experimentální software.</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>Toto není Masternode.</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation>Hodnota transakce je příliš malá</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must be positive</source>
+        <translation>Hodnota transakce musí být kladná</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>Transakce byla uspěšně vytvořena.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>Poplatek za transakci je příliš vysoký.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Transakce není validní.</translation>
+    </message>
+    <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>Transakce je příliš velká s ohledem na pravidla poplatků</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Transakce je příliš velká</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Neznámá síť uvedená v -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown state: id = %u</source>
+        <translation>Neznámý stav: id = %u</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation>Upgradovat peněženku do nejnovějšího formátu</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>Použít testovací síť</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>Ověřování bloků...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>Ověřování peněženky...</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Peněženka je zamčená</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Možnosti peněženky:</translation>
+    </message>
+    <message>
+        <source>Wallet window title</source>
+        <translation>Titulek okna peněženky</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Varování</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>Varování: Tato verze je zastaralá, vyžadován upgrade!</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Varování: Nepodporovaný argument -benchmark je ignorován, použijte -debug=bench</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Varování: Nepodporovaný argument -debugnet je ignorován, použijte -debug=net</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>při spuštění</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Configure Obfuscation</source>
@@ -2399,133 +2526,6 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>0</source>
         <translation>0</translation>
-    </message>
-    </context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>Error</source>
-        <translation>Chyba</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informace</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>Synchronizace selhala</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>Synchronizace dokončena</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Synchronizace probíhá</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Synchronizace rozpočtu...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternode winners...</source>
-        <translation>Synchronizace vítězných masternodů...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternodes...</source>
-        <translation>Synchronizace masternodů...</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>Toto je experimentální software.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Toto není Masternode.</translation>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation>Hodnota transakce je příliš malá</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>Hodnota transakce musí být kladná</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transakce byla uspěšně vytvořena.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Poplatek za transakci je příliš vysoký.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transakce není validní.</translation>
-    </message>
-    <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>Transakce je příliš velká s ohledem na pravidla poplatků</translation>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation>Transakce je příliš velká</translation>
-    </message>
-    <message>
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Neznámá síť uvedená v -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Neznámý stav: id = %u</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Upgradovat peněženku do nejnovějšího formátu</translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>Použít testovací síť</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>Ověřování bloků...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Ověřování peněženky...</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Peněženka je zamčená</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Možnosti peněženky:</translation>
-    </message>
-    <message>
-        <source>Wallet window title</source>
-        <translation>Titulek okna peněženky</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Varování</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Varování: Tato verze je zastaralá, vyžadován upgrade!</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Varování: Nepodporovaný argument -benchmark je ignorován, použijte -debug=bench</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Varování: Nepodporovaný argument -debugnet je ignorován, použijte -debug=net</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>při spuštění</translation>
     </message>
     </context>
 </TS>

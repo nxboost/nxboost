@@ -1665,6 +1665,25 @@ Per favore controlla l'indirizzo e riprova nuovamente.</translation>
     </message>
 </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Error</source>
+        <translation>Errore</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informazioni</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Importo invalido per -maxtxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Avvertimento</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Configure Obfuscation</source>
@@ -2674,25 +2693,6 @@ Per cambiare la percentuale (riavvio non necessario):
     <message>
         <source>zNXB</source>
         <translation>zNXB</translation>
-    </message>
-    </context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>Error</source>
-        <translation>Errore</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informazioni</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Importo invalido per -maxtxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Avvertimento</translation>
     </message>
     </context>
 </TS>

@@ -1758,6 +1758,1485 @@ Please be patient after clicking import.</source>
     </message>
 </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = tx 메타 데이터 유지 예 : 계정 소유자 및 지불 요청 정보, 2 = tx 메타 데이터 삭제)</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>지정된 소스에서 JSON-RPC 연결을 허용하십시오. 단일 IP (예 : 1.2.3.4), 네트워크/넷마스크 (예 : 1.2.3.4/255.255.255.0) 또는 네트워크 / CIDR (예 : 1.2.3.4/24)에 대해 &lt;ip&gt; 가 유효합니다. 이 옵션은 여러번 지정할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>주어진 주소를 지정하고 항상 수신하도록 하십시오. [host]:IPv6 포트 표기법 사용</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>주어진 주소에 바인딩하고 피어 연결을 허용하십시오. IPv6 [host]:port 표기법 사용</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>JSON-RPC연결 수신을 위해 주어진 주소를 지정합니다. [host]: IPv6 포트 표기법 사용. 이 옵션은 여러번 지정할 수 있습니다. (기본값 : 모든 인터페이스에 지정)</translation>
+    </message>
+    <message>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>계산된 누산기 체크포인트는 블록 인덱스에 의해 기록되는 것이 아닙니다.</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
+        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. NXBoost Core는 이미 실행 중입니다.</translation>
+    </message>
+    <message>
+        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
+        <translation>최종 budget 투표 자동 작동 값을 변경합니다. mode=auto: 오직 내가 생성한 budget과 최종 budget이 정확히 일치할때 투표합니다. (string, 기본값: 자동)</translation>
+    </message>
+    <message>
+        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
+        <translation>연속적인 무료 트랜잭션을 분당 &lt;n&gt;*1000 bytes로 제한합니다. (기본값:%u)</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>umask 077대신 시스템 기본 권한으로 새로운 파일들을 만듭니다. (지갑 기능이 비활성화일 때만 효과가 발휘됩니다)</translation>
+    </message>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>지갑의 모든 트랜잭션들을 삭제하고 오직 블록체인을 통한 트랜잭션 부분들만 복구합니다 -시작 시 다시 스캔</translation>
+    </message>
+    <message>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
+    </message>
+    <message>
+        <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for zNXB inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zNXB inputs (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>올바른 개인키로 spork 관리 기능을 사용 가능</translation>
+    </message>
+    <message>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation>리그레션 테스트에 들어갑니다. 특수 체인을 사용하며 블록들을 바로 푸는 것이 가능합니다.</translation>
+    </message>
+    <message>
+        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>오류: 오는 연결들을 수신하는데 실패했습니다.(수신 중 오류 반환됨 %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Error: 트랜젝션의 크기가 혀용된 크기를 넘었습니다.</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>오류 : 지원하지 않는 인수 -socks가 발견되었습니다. SOCKS 버전 설정은 더 이상 가능하지 않으며 SOCKS5 프록시만 지원합니다.</translation>
+    </message>
+    <message>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>관련된 경고 또는 포크가 길어질 경우 명령을 실행하십시오. (명령 내 %s 는 메시지로 대체 되었습니다)</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>지갑 트랜잭션이 변경될 경우 명령을 실행하십시오.(명령 내 %s 는 TxID로 대체 되었습니다)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (NXB/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (NXB/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
+        <translation>메모리 풀에서 디스크로 매 &lt;n&gt; 메가바이트만큼 데이터베이스 활동 플러쉬를 기록합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation>미확인 표시된 출력들을 찾고 계속하기 위한 확인을 받기 전까지 기다립니다.</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>paytxfee가 설정되어 있지 않는 경우 충분한 수수료를 넣어야만 평균이내 n블록들을 확인하고 트랜잭션를 시작합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
+        <translation>이 모드에서 -genproclimit는 즉시 생성되는 블록 수를 제어합니다.</translation>
+    </message>
+    <message>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>확정 된 자금이 불충분하거나 부족한 경우 몇 분 후에 다시 시도하십시오.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>-maxtxfee=&lt;amount&gt;에 대한 잘못된 금액: '%s' (트랜잭션 정지를 막을려면 적어도 %s의 minrelay 수수료가 있어야 합니다)</translation>
+    </message>
+    <message>
+        <source>Keep the specified amount available for spending at all times (default: 0)</source>
+        <translation>항상 송금할수 있도록 지정된 수량 유지 (기본값 : 0)</translation>
+    </message>
+    <message>
+        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
+        <translation>블록을 채굴 할 때 트랜잭션 우선 순위 및 kB 당 수수료를 기록합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>getrawtransaction rpc 호출에서 사용되는 전체 트랜잭션 색인를 유지보수합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>데이터 캐리어 내에서 우리가 중계하고 채굴하는 트랜잭션 데이터의 최대 사이즈 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
+        <translation>단일 지갑 트랜잭션에서 사용하기 위한 최대 전체 수수료, 너무 낮은 값이 설정되어 있으면 큰 트랜잭션이 유실될 수 있습니다 (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>재연결로 인해 피어가 오작동을 유지하는 초 단위 시간 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>난독화는 정확한 금액을 사용하여 자금을 송금하기 때문에 더 많은 코인을 익명화해야 할 수도 있습니다.</translation>
+    </message>
+    <message>
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>디버깅 정보 출력 (기본값: %u, &lt;category&gt; 공급은 선택입니다)</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
+        <translation>DNS 검색을 통한 피어 주소 쿼리, 주소가 부족할 경우 (-connect 아닌 이상 기본값:1)</translation>
+    </message>
+    <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>모든 프록시 연결마다 자격 증명 무작위화. 이렇게하면 Tor 스트림을 격리할수 있습니다. (기본값 : %u)</translation>
+    </message>
+    <message>
+        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
+        <translation>무료 또는 낮은 수수료 트랜잭션를 중계하는데 높은 우선 순위가 필요합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
+        <translation>debug.log 파일 대신 추적/디버그 정보를 콘솔에 보냅니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation>최우선/낮은 수수료 트랜잭션의 최대 크기를 바이트 단위로 설정합니다 (기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
+        <translation>스크립트 허용 스레드의 개수를 설정합니다. (%u 에서 %d, 0 = 자동, &lt;0 = 충분한 코어들을 남겨두세요, 기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
+        <translation>활성화 시에 코인 생성을 위한 스레드 숫자를 설정합니다 (-1= 모든 코어, 기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
+        <translation>성공적으로 잠긴 트랜잭션에 대한 확인을 N으로 나타냅니다 (0-9999, 기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
+        <translation>bloom필터를 사용한 블록 및 트랜잭션 필터링 지원 (기본값 : %u)</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
+        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. NXBoost Core는 이미 실행 중입니다.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 NXB과 일치하지 않음.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 NXB와 같지 않음</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Tor hidden services를 통하여 피어에게 도달하기 위해 독립된 SOCKS5 프록시를 사용합니다(기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>경고: -maxrtxfee가 매우 높게 설정 되었습니다! 이렇게 큰 수수료는 단 한번의 단일 트랜잭션에 지불될 수도 있습니다.</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>경고 : -paytxfee가 매우 높게 설정되었습니다! 이것은 전송할 경우 지불 할 트랜잭션 수수료입니다.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
+        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 NXBoost 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>경고: 네트워크가 완전히 동의하지 않는 것 같습니다! 일부 마이너에 문제가 발생한 것으로 보입니다.</translation>
+    </message>
+    <message>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>경고: 우리의 피어들과 완벽하게 일치하지 않습니다! 업그레이드 또는 다른 노드들의 업그레이드가 필요할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation>경고 : wallet.dat을 읽는 중 오류가 발생했습니다! 모든 키가 올바르게 읽혀 지지만 트랜잭션 데이터 또는 주소록 항목이 누락되었거나 올바르지 않을 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation>경고 : wallet.dat에 손상된 데이터가 복구되었습니다. 본래 wallet.dat은 wallet으로 저장되었습니다. {timestamp}.bak %s; 잔액 또는 트랜잭션가 올바르지 않은 경우 백업에서 복원해야합니다.</translation>
+    </message>
+    <message>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>주어진 넷마스크 또는 IP 주소로부터 화이트리스트 피어가 연결되고 있습니다. 여러 번 지정될 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>화이트리스트 피어들은 DoS 밴 될 수 없으며 그들이 이미 메모리 풀에 있을지라도 그들의 트랜잭션는 항상 중계됩니다. 예를들면 게이트웨이 같은 것에 유용</translation>
+    </message>
+    <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
+    </message>
+    <message>
+        <source>(49108 could be used only on mainnet)</source>
+        <translation>(49108 은 메인넷에서만 사용될 수 있습니다)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(기본값: %s)</translation>
+    </message>
+    <message>
+        <source>(default: 1)</source>
+        <translation>(기본값: 1)</translation>
+    </message>
+    <message>
+        <source>(must be 49108 for mainnet)</source>
+        <translation>(메인넷 일경우 49108)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation> command line 과 JSON-RPC 적용</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>외부에서의 접속을 허용 (1 -프록시 또는 -연결이 없을 경우 기본값)</translation>
+    </message>
+    <message>
+        <source>Accept public REST requests (default: %u)</source>
+        <translation>공개 REST 요청 수락(기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>연결할 노드를 추가하고 계속해서 연결을 유지하십시오.</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>-addnode, -seednode, -connect을 위해 DNS 조회를 허용하십시오.</translation>
+    </message>
+    <message>
+        <source>Already have that input.</source>
+        <translation>이미 연결 중입니다.</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>피어 주소에게 DNS 조회를 통한 지속적인 정보 수신 요청을 합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>손상된 wallet.dat으로 부터 개인 키 복구를 시도합니다.</translation>
+    </message>
+    <message>
+        <source>Automatically create Tor hidden service (default: %d)</source>
+        <translation>자동 Tor 히든 서버스 생성 (기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation>블록 생성 옵션:</translation>
+    </message>
+    <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>누락된 누산기 계산중...</translation>
+    </message>
+    <message>
+        <source>Can't denominate: no compatible inputs left.</source>
+        <translation>표시할 수 없음: 남아있는 호환된 연결이 없습니다.</translation>
+    </message>
+    <message>
+        <source>Can't find random Masternode.</source>
+        <translation>임의의 마스터노드를 찾을 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>동기화가 진행 중일 때에는 믹싱을 할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>지갑을 다운그레이드 할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>주소를 변환할 수 없습니다 주소 -bind: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>주소를 변환할 수 없습니다 -externalip 주소: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>해결할 수 없습니다 -whitebind 주소: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation>기본 주소를 사용할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Collateral not valid.</source>
+        <translation>Collateral이 유효하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation>지정된 노드(s)로만 연결이 가능합니다.</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>SOCKS5 프록시를 통해 연결합니다</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>노드에 연결하여 피어 주소를 검색하고 연결을 끊습니다</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>연결 옵션:</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i 비트코인 Core 개발자들</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
+        <translation>Copyright (C) 2015-%i The NXBoost Core 개발자</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected</source>
+        <translation>손상된 블록 데이터베이스가 발견되었습니다</translation>
+    </message>
+    <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>masternode.conf 를 분석할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Debugging/Testing options:</source>
+        <translation>디버깅/테스팅 옵션:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>블록 체인 폴더 삭제 및 처음부터 다시 동기화</translation>
+    </message>
+    <message>
+        <source>Disable OS notifications for incoming transactions (default: %u)</source>
+        <translation>거래시 수신 알림창 해제  (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Disable safemode, override a real safe mode event (default: %u)</source>
+        <translation>안전모드 비활성화, 실시간 안전모드 이벤트 중단 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation>자신의 IP 주소를 찾습니다 (기본값: 1 수신중이거나 -외부아이피가 없을 경우)</translation>
+    </message>
+    <message>
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation>지갑 RPC 호출을 비활성화하고 지갑을 불러오지 마시오</translation>
+    </message>
+    <message>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation>블록 데이터베이스를 다시 작성하시기를 원하십니까?</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>로딩 완료</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>자동 제로코인 생성 (0-1, 기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (SwiftTX로 설정된)</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (SwiftTX를 통해 잠겨진)</translation>
+    </message>
+    <message>
+        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
+        <translation>클라이언트가 마스터노드로 작동하는 것을 활성화 (0-1, 기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Entries are full.</source>
+        <translation>항목이 가득 찼습니다.</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Masternode에 연결하는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <source>Error initializing block database</source>
+        <translation>블록 데이터베이스를 초기화하는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <source>Error initializing wallet database environment %s!</source>
+        <translation>지갑 데이터베이스 환경  %s 을 초기화하는 중 오류가 발생했습니다!</translation>
+    </message>
+    <message>
+        <source>Error loading block database</source>
+        <translation>블록 데이터베이스를 불러오는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation>wallet.dat을 불러오는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation>wallet.dat을 불러오는 중 오류가 발생했습니다: 지갑 손상됨</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
+        <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 NXBoost 코어가 필요합니다.</translation>
+    </message>
+    <message>
+        <source>Error opening block database</source>
+        <translation>블록 데이터베이스를 여는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>데이터베이스에서서 읽어오는 중 오류가 발생했습니다. 종료합니다.</translation>
+    </message>
+    <message>
+        <source>Error recovering public key.</source>
+        <translation>공개 키를 복구하는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>에러</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>오류 : 내부에서 치명적인 오류가 발생했습니다. 자세한 내용은 debug.log를 참조하십시오</translation>
+    </message>
+    <message>
+        <source>Error: Can't select current denominated inputs</source>
+        <translation>오류 : 현재 표시된 입력을 선택할 수 없습니다</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation>오류 : 디스크 공간이 부족합니다!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>오류 : 지원하지 않는 인수 -tor가 발견되었습니다. -onion을 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation>오류 : 지갑이 잠겼습니다, 트랜잭션을 생성할 수 없습니다!</translation>
+    </message>
+    <message>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation>오류 : 이미 난독화 그룹에 보류중인 항목들이 있습니다.</translation>
+    </message>
+    <message>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>축 압기 체크 포인트를 계산하지 못했습니다.</translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>어떠한 포트에서도 수신하는 것에 실패했습니다. 원하신다면 -listen=0 을 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>Failed to read block</source>
+        <translation>블록을 받아오는데 실패했습니다.</translation>
+    </message>
+    <message>
+        <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (NXB/kB) (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Finalizing transaction.</source>
+        <translation>트랜잭션 완료.</translation>
+    </message>
+    <message>
+        <source>Force safe mode (default: %u)</source>
+        <translation>강제 안전 모드 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ( waiting %s )</source>
+        <translation>충분한 사용자를 찾았습니다, 서명 중 ( %s 기다리는 중 )</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ...</source>
+        <translation>충분한 사용자를 찾았습니다, 서명 중 ...</translation>
+    </message>
+    <message>
+        <source>Generate coins (default: %u)</source>
+        <translation>코인 생성 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>시작할 때 검사할 블록의 수 (기본값: %u, 0=모두)</translation>
+    </message>
+    <message>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation>&lt;category&gt;가 제공되지 않으면, 모든 디버깅 정보를 출력합니다.</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>가져오는 중...</translation>
+    </message>
+    <message>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation>내부에 blk000??.dat 파일로부터 블록들을 가져옴</translation>
+    </message>
+    <message>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>디버그 출력에 IP 주소를 포함합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Incompatible mode.</source>
+        <translation>호환되지 않는 모드.</translation>
+    </message>
+    <message>
+        <source>Incompatible version.</source>
+        <translation>호환되지 않는 버전.</translation>
+    </message>
+    <message>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>잘못되었거나 블록을 찾지 못하였습니다. 네트워크에 대한 잘못된 데이터 디렉토리 문제?</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
+        <translation>초기화 정확성 검사에 실패 했습니다. NXBoost Core가 종료됩니다.</translation>
+    </message>
+    <message>
+        <source>Input is not valid.</source>
+        <translation>입력이 올바르지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation>잔액이 충분하지 않음</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>충분하지 않은 금액.</translation>
+    </message>
+    <message>
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>잘못된 -onion 주소거나 호스트네임 : '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-maxtxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-minrelaytxfee=&lt;amount&gt;; 에 대한 유효하지 않은 값: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-mintxfee=&lt;amount&gt;; 에 대한 유효하지 않은 값: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>-paytxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s' (적어도 %s 가 필요합니다)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>-paytxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>-reservebalance=&lt;amount&gt;에 대한 금액이 유효하지 않은 값</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation>잘못된 수량</translation>
+    </message>
+    <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>마스터노드 개인 키가 잘못되었습니다. 설명서를 참조하십시오.</translation>
+    </message>
+    <message>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>-whitelist: '%s' 에 지정된 넷마스크가 유효하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>masternode.conf 에서 유효하지 않은 포트가 감지되었습니다</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>유효하지 않은 개인 키입니다.</translation>
+    </message>
+    <message>
+        <source>Invalid script detected.</source>
+        <translation>유효하지 않은 스크립트가 발견되었습니다.</translation>
+    </message>
+    <message>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>자동생성 zNXB 비율  (1-100, default: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the NXB and zNXB money supply statistics</source>
+        <translation>NXB 및 zNXB 공급량 다시 색인</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>제로코인 데이타베이스 재색인</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>제로코인 재 인덱싱 실패</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>지불대상보다 적은 코인 선택됨</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX 옵션:</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
+    </message>
+    <message>
+        <source> mints deleted
+</source>
+        <translation>생성 삭제
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation>생성 업데이드</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>미확인된 거래 삭제됨
+</translation>
+    </message>
+    <message>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>nxboost의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>에러 : 거래가 거부되었습니다. 예를 들어 다른 사본 wallet.dat에서 코인을 사용했다면 2중 사용으로 인식될수 있습니다. 혹은, 일부가 이미 소비 된 경우에 이런 일이 발생할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>에러 :이 거래에는 전송량, 복잡성 또는 최근에 받은 자금의 사용등으로 인해 적어도 %s의 거래 수수료가 필요합니다!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>에러 : 지원하지않는 argument -checklevel 발견된.  Checklevel는 레벨 4이어야 합니다.</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Failed to find coin set amongst held coins with less than maxNumber of Spends</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; 가능함 :</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>블록체인 손상 복구 시도</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: 누산기가 제대로 작동하지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>debug.log에 stake 수정 계산 기록</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>debug.log 에 코인 stake 메시지를 자세히 기록</translation>
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 해시 블록 게시 가능</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 해시 불록 게시 가능</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에서 Raw 블록 게시 가능</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 Raw 트랜잭션 게시 지원</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>스테이킹 기능 사용 (0-1, 기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Error: 치명적 에러 발생 log 파일을 확인해주세요.</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Error: 유효하지 않는 utxo!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>생성 실패</translation>
+    </message>
+    <message>
+        <source>Failed to deserialize</source>
+        <translation>디시리얼 실패</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>wallet.dat 에서 제로코인을 인식 실패</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>제로코인 선택 실패</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>제로코인 DB 삭제 실패</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>지갑에 코인 시리얼 번호 작성 실패</translation>
+    </message>
+    <message>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>메모리에서 연결 불가능한 트랜잭션을 &lt;n&gt;개까지 유지하십시오. (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Last Obfuscation was too recent.</source>
+        <translation>최근에 마지막으로 난독화를 진행했습니다.</translation>
+    </message>
+    <message>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation>최근에 마지막으로 성공한 난독화 작업이 있습니다.</translation>
+    </message>
+    <message>
+        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
+        <translation>시그니처 캐시의 크기 제한을 &lt;n&gt; 항목으로 합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Line: %d</source>
+        <translation>Line: %d</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>&lt;port&gt;에서 JSON-RPC 연결 대기 (기본값: %u 또는 테스트넷: %u)</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>&lt;port&gt;에서 연결 대기 (기본값: %u 또는 테스트넷: %u)</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>주소를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>블록 인덱스를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading budget cache...</source>
+        <translation>budget 캐시를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading masternode cache...</source>
+        <translation>마스터노드 캐시를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>마스터노드 결제 캐시를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading sporks...</source>
+        <translation>sporks 로딩중...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>지갑을 불러오는 중… (%3.2f %%)</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>지갑을 불러오는 중…</translation>
+    </message>
+    <message>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>auth 쿠기 위치 (default: data dir)</translation>
+    </message>
+    <message>
+        <source>Lock is already in place.</source>
+        <translation>이미 올바르게 잠겨있습니다.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>마스터노드 구성 파일에서 마스터노드를 잠급니다. (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Lookup(): Invalid -proxy address or hostname: '%s'</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>최대 &lt;n&gt; 연결을 피어들과 유지합니다. (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Masternode options:</source>
+        <translation>마스터노드 옵션:</translation>
+    </message>
+    <message>
+        <source>Masternode queue is full.</source>
+        <translation>마스터노드 대기열이 가득 찼습니다.</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>마스터노드:</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>연결 당 최대 수신 버퍼, &lt;n&gt;*1000 바이트 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>연결 당 최대 전송 버퍼, &lt;n&gt;*1000 바이트 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Mint did not make it into blockchain</source>
+        <translation>코인생성이 블록체인에 기록되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>Missing input transaction information.</source>
+        <translation>트랜잭션 정보 입력에 누락된 부분이 있습니다.</translation>
+    </message>
+    <message>
+        <source>Mixing in progress...</source>
+        <translation>믹싱이 진행 중입니다...</translation>
+    </message>
+    <message>
+        <source>Need address because change is not exact</source>
+        <translation>잔돈을 받을 주소가 필요합니다.</translation>
+    </message>
+    <message>
+        <source>Need to specify a port with -whitebind: '%s'</source>
+        <translation>-whitebind: '%s' 의 포트를 지정해야 합니다</translation>
+    </message>
+    <message>
+        <source>No Masternodes detected.</source>
+        <translation>마스터노드가 발견되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>No compatible Masternode found.</source>
+        <translation>호환되는 마스터노드가 발견되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>No funds detected in need of denominating.</source>
+        <translation>분류가 필요한 자금이 발견되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>No matching denominations found for mixing.</source>
+        <translation>믹싱에 대한 일치하는 표기를 찾을 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Node relay options:</source>
+        <translation>노드 중계 옵션:</translation>
+    </message>
+    <message>
+        <source>Non-standard public key detected.</source>
+        <translation>비 표준 공개 키가 감지되었습니다.</translation>
+    </message>
+    <message>
+        <source>Not compatible with existing transactions.</source>
+        <translation>기존 트랜잭션과 호환되지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Not enough file descriptors available.</source>
+        <translation>사용 가능한 파일 디스크립터가 충분하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Not in the Masternode list.</source>
+        <translation>마스터노드 목록에 없습니다.</translation>
+    </message>
+    <message>
+        <source>Number of automatic wallet backups (default: 10)</source>
+        <translation>자동 지갑 백업 횟수 (기본값: 10)</translation>
+    </message>
+    <message>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Number of custom location backups to retain (default: %d)</translation>
+    </message>
+    <message>
+        <source>Obfuscation is idle.</source>
+        <translation>난독화는 유휴상태입니다.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>난독화 요청 완료:</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>난독화 요청 미완료:</translation>
+    </message>
+    <message>
+        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
+        <translation>내장된 체크 포인트와 일치하는 블록체인만 허용 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
+        <translation>네트워크에 연결된 노드에만 연결 &lt;net&gt; (ipv4, ipv6 또는 onion)</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>옵션:</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation>JSON-RPC 연결 비밀번호</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>재동기화 준비중...</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>디버그 출력 앞에 타임스탬프를 추가합니다. (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Print version and exit</source>
+        <translation>버전 출력후 종료</translation>
+    </message>
+    <message>
+        <source>RPC server options:</source>
+        <translation>RPC 서버 옵션:</translation>
+    </message>
+    <message>
+        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
+        <translation>&lt;n&gt;개의 네트워크 메세지마다 무작위로 1개 삭제</translation>
+    </message>
+    <message>
+        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
+        <translation>&lt;n&gt;개의 네트워크 메세지마다 무작위로 1 퍼즈</translation>
+    </message>
+    <message>
+        <source>Rebuild block chain index from current blk000??.dat files</source>
+        <translation>현재 blk000??.dat 파일의 블록체인 인덱스를 다시 구축합니다</translation>
+    </message>
+    <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>P2P 네크워크로 부터 경고를 받고 보여줍니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>누적 기 데이터베이스 다시 색인화</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>릴레이 및 채굴 데이터 이동매체 트랜잭션 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>non-P2SH multisig 중계 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>누락된 지갑 트랜잭션에 대해 블록체인을 다시 스캔합니다</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>다시 스캔하는 중...</translation>
+    </message>
+    <message>
+        <source>ResetMintZerocoin finished: </source>
+        <translation>생성된 제로코인 초기화 완료:</translation>
+    </message>
+    <message>
+        <source>ResetSpentZerocoin finished: </source>
+        <translation>사용된 제로코인 초기화 완료:</translation>
+    </message>
+    <message>
+        <source>Run a thread to flush wallet periodically (default: %u)</source>
+        <translation>주기적으로 지갑을 플러쉬하는 스레드를 실행합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>백그라운드에서 상주하며 실행하고 명령을 받습니다</translation>
+    </message>
+    <message>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>무료 수수료 트랜잭션이 가능할 경우 무료 수수료로 트랜잭션을 전송합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>세션이 완료되지 않았습니다!</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>세션이 만료되었습니다.</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
+        <translation>데이터베이스 캐시 크기를 메가바이트 단위로 설정합니다 (%d 에서 %d, 기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Set external address:port to get to this masternode (example: %s)</source>
+        <translation>마스터노드에 접속하려면 외부 주소:포트를 설정하십시오 (예시: %s)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>키 풀 크기를 &lt;n&gt; 로 설정합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>최대 블록 크기를 바이트 단위로 설정합니다 (기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>최소 블록 크기를 바이트 단위로 설정합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>최대 재구성 깊이 설정 (기본값 : %u)</translation>
+    </message>
+    <message>
+        <source>Set the masternode private key</source>
+        <translation>마스터노드 개인 키를 설정합니다</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>RPC 호출 서비스 스레드의 갯수를 설정합니다 (기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>지갑 db 환경에서 DB_PRIVATE 플래그를 설정합니다 (기본값 : %u)</translation>
+    </message>
+    <message>
+        <source>Show all debugging options (usage: --help -help-debug)</source>
+        <translation>모든 디버깅 옵션 표시 (사용 방법: --help -help-debug)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>클라이언트 시작시에 debug.log 파일을 축소시킵니다 (기본값:1 아닐경우 -debug)</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>인증에 실패했습니다.</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>인증 시간 초과.</translation>
+    </message>
+    <message>
+        <source>Signing transaction failed</source>
+        <translation>트랜잭션 인증 실패</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>구성 파일 지정 (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>연결 시간 초과 단위를 100분의 1초 단위로 지정 (최소값: 1, 기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation>데이터 디렉토리 지정</translation>
+    </message>
+    <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>마스터노드 구성파일 지정 (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: %s)</source>
+        <translation>pid 파일 지정 (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>지갑 파일 지정 (데이터 디렉토리 내에서만)</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>자신의 공용 주소를 지정</translation>
+    </message>
+    <message>
+        <source>Spend Valid</source>
+        <translation>유효한 지출</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>트랜잭션 전송시 승인되지 않은 변경사항을 전송합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Staking options:</source>
+        <translation>스테이킹 옵션:</translation>
+    </message>
+    <message>
+        <source>Stop running after importing blocks from disk (default: %u)</source>
+        <translation>디스크에서 블록을 가져오면 실행 중지 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>마스터노드에 다음 항목들을 제출했습니다: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>마스터노드에 제출했습니다, 남은 항목들 기다리는중 ( %u / %d ) %s</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>마스터노드에 제출했습니다, 대기열을 기다리는 중 %s</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>동기화 실패</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>동기화 완료</translation>
+    </message>
+    <message>
+        <source>Synchronization pending...</source>
+        <translation>동기화 대기중...</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>budgets 동기화 중입니다...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners...</source>
+        <translation>마스터노드 승자를 동기화 중입니다...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>마스터노드와 동기화중입니다...</translation>
+    </message>
+    <message>
+        <source>Synchronizing sporks...</source>
+        <translation>sporks와 동기화 중입니다...</translation>
+    </message>
+    <message>
+        <source>Syncing zNXB wallet...</source>
+        <translation>zNXB 지갑 동기화중...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>전송이 이미 되었습니다.</translation>
+    </message>
+    <message>
+        <source>The new spend coin transaction did not verify</source>
+        <translation>신규로 전송된 거래가 확인되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>The selected mint coin is an invalid coin</source>
+        <translation>선택한 생성 코인은 유효하지 않은 동전입니다.</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>거래가 확인되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation>도움말 메시지입니다</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>이것은 실험용 소프트웨어입니다.</translation>
+    </message>
+    <message>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation>이것은 리그레션 테스팅 및 앱 개발을 위해 만들어졌습니다.</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>마스터노드가 아닙니다.</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>제대로 동작하지 않는 피어와 연결을 끊을 임계값 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>너무 많은 지출이 필요함</translation>
+    </message>
+    <message>
+        <source>Tor control port password (default: empty)</source>
+        <translation>Tor 컨트롤 포트 암호 (기본값: 공백)</translation>
+    </message>
+    <message>
+        <source>Tor control port to use if onion listening enabled (default: %s)</source>
+        <translation>onion 활성화되었을 경우 사용할 Tor 코트롤 포트 (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Transaction Created</source>
+        <translation>트랜잭션 취소됨</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>트랜잭션 생성 시작됨</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation>트랜잭션 금액이 너무 적습니다</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must be positive</source>
+        <translation>트랜잭션 금액에 반드시 양수값이 들어가야 합니다</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>트랜잭션이 성공적으로 생성되었습니다.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>트랜잭션 수수료가 너무 높습니다.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>올바르지 않은 트랜잭션입니다.</translation>
+    </message>
+    <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>수수료 정책에 비해 트랜잭션이 너무 많습니다</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>트랜잭션이 너무 큽니다</translation>
+    </message>
+    <message>
+        <source>Transmitting final transaction.</source>
+        <translation>최종 트랜잭션를 전송 중입니다.</translation>
+    </message>
+    <message>
+        <source>Try to spend with a higher security level to include more coins</source>
+        <translation>높은 보안 수준으로 더 많은 코인을 전송해주세요.</translation>
+    </message>
+    <message>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>이미 전송된 리얼 번호를 보내려고 했습니다. 다시 시도하십시오.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
+        <translation>이 컴퓨터에서 %s 로 바인드할 수 없습니다 (바인드 리턴 오류 %s)</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint</source>
+        <translation>코인 생성이 포함된 거래를 찾을 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Unable to sign spork message, wrong key?</source>
+        <translation>스포크 메시지를 인증할 수 없습니다, 키를 확인해주세요</translation>
+    </message>
+    <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>HTTP 서버를 시작할수 없습니다. log 파일을 확인해주세요.</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>-onlynet: '%s' 에 알 수 없는 네트워크가 지정되었습니다</translation>
+    </message>
+    <message>
+        <source>Unknown state: id = %u</source>
+        <translation>알 수없는 상태: id = %u</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation>지갑을 최신 포맷으로 업그레이드합니다</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>수신 포트를 매핑하려면 UPnP를 사용하십시오 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation>수신 포트를 매핑하려면 UPnP를 사용하십시오 (기본값: 1 수신 상태일 때)</translation>
+    </message>
+    <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>맞춤 최대 체인 재구성 깊이 사용 (기본값 : %u)</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>테스트 네트워크를 사용합니다</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation>JSON-RPC 연결 사용자 이름</translation>
+    </message>
+    <message>
+        <source>Value is below the smallest available denomination (= 1) of zNXB</source>
+        <translation>Value is below the smallest available denomination (= 1) of zNXB</translation>
+    </message>
+    <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>난독화 풀의 최대 허용 값보다 높습니다.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>블록 인증 중...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>지갑 인증 중...</translation>
+    </message>
+    <message>
+        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
+        <translation>zNXB 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
+    </message>
+    <message>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>지갑 %s 가 데이터 디렉토리 외부에 존재합니다 %s</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>지갑이 잠겼습니다.</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
+        <translation>지갑을 다시 작성해야 합니다: 완료하려면 NXBoost 코어를 재시작해야 합니다</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>지갑 옵션:</translation>
+    </message>
+    <message>
+        <source>Wallet window title</source>
+        <translation>지갑 창 제목</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>경고</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>경고 : 현재 사용중인 버전은 더이상 사용되지 않으므로 업그레이드가 필요합니다!</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>경고 : 지원하지 않는 인수 -benchmark 무시됨 -debug = bench를 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>경고 : 지원하지 않는 인수 -debugnet 무시됨 -debug=net를 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>Will retry...</source>
+        <translation>다시 시도합니다...</translation>
+    </message>
+    <message>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>지갑에 zNXB 가 부족합니다.</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>-treindex를 변경하려면 -reindex를 사용하여 데이터베이스를 다시 빌드해야합니다.</translation>
+    </message>
+    <message>
+        <source>Your entries added successfully.</source>
+        <translation>항목이 성공적으로 추가되었습니다.</translation>
+    </message>
+    <message>
+        <source>Your transaction was accepted into the pool!</source>
+        <translation>트랜잭션이 풀로 접수되었습니다!</translation>
+    </message>
+    <message>
+        <source>Zapping all transactions from wallet...</source>
+        <translation>지갑 내 모든 트랜잭션들을 재핑하는 중...</translation>
+    </message>
+    <message>
+        <source>ZeroMQ notification options:</source>
+        <translation>ZeroMQ 알림 옵션:</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>제로코인 옵션:</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>시작 시</translation>
+    </message>
+    <message>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation>wallet.dat 파일이 손상되어 복구에 실패했습니다</translation>
+    </message>
+</context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Configure Obfuscation</source>
@@ -3789,10 +5268,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(스마트 수수료가 아직 초기화 되지 않았습니다. 일반적으로 몇 블록이 지나야됩니다...)</translation>
     </message>
     <message>
-        <source>SwiftX</source>
-        <translation>SwiftX</translation>
-    </message>
-    <message>
         <source>Confirmation time:</source>
         <translation>승인 시간:</translation>
     </message>
@@ -4882,1485 +6357,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Is Spendable</source>
         <translation>전송가능한 코인수</translation>
-    </message>
-</context>
-<context>
-    <name>NXBoost-core</name>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = tx 메타 데이터 유지 예 : 계정 소유자 및 지불 요청 정보, 2 = tx 메타 데이터 삭제)</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>지정된 소스에서 JSON-RPC 연결을 허용하십시오. 단일 IP (예 : 1.2.3.4), 네트워크/넷마스크 (예 : 1.2.3.4/255.255.255.0) 또는 네트워크 / CIDR (예 : 1.2.3.4/24)에 대해 &lt;ip&gt; 가 유효합니다. 이 옵션은 여러번 지정할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>주어진 주소를 지정하고 항상 수신하도록 하십시오. [host]:IPv6 포트 표기법 사용</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>주어진 주소에 바인딩하고 피어 연결을 허용하십시오. IPv6 [host]:port 표기법 사용</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>JSON-RPC연결 수신을 위해 주어진 주소를 지정합니다. [host]: IPv6 포트 표기법 사용. 이 옵션은 여러번 지정할 수 있습니다. (기본값 : 모든 인터페이스에 지정)</translation>
-    </message>
-    <message>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>계산된 누산기 체크포인트는 블록 인덱스에 의해 기록되는 것이 아닙니다.</translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
-        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. NXBoost Core는 이미 실행 중입니다.</translation>
-    </message>
-    <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>최종 budget 투표 자동 작동 값을 변경합니다. mode=auto: 오직 내가 생성한 budget과 최종 budget이 정확히 일치할때 투표합니다. (string, 기본값: 자동)</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
-        <translation>연속적인 무료 트랜잭션을 분당 &lt;n&gt;*1000 bytes로 제한합니다. (기본값:%u)</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>umask 077대신 시스템 기본 권한으로 새로운 파일들을 만듭니다. (지갑 기능이 비활성화일 때만 효과가 발휘됩니다)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>지갑의 모든 트랜잭션들을 삭제하고 오직 블록체인을 통한 트랜잭션 부분들만 복구합니다 -시작 시 다시 스캔</translation>
-    </message>
-    <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
-    </message>
-    <message>
-        <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Enable or disable staking functionality for zNXB inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zNXB inputs (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>올바른 개인키로 spork 관리 기능을 사용 가능</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>리그레션 테스트에 들어갑니다. 특수 체인을 사용하며 블록들을 바로 푸는 것이 가능합니다.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>오류: 오는 연결들을 수신하는데 실패했습니다.(수신 중 오류 반환됨 %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
-        <translation>Error: 트랜젝션의 크기가 혀용된 크기를 넘었습니다.</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>오류 : 지원하지 않는 인수 -socks가 발견되었습니다. SOCKS 버전 설정은 더 이상 가능하지 않으며 SOCKS5 프록시만 지원합니다.</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>관련된 경고 또는 포크가 길어질 경우 명령을 실행하십시오. (명령 내 %s 는 메시지로 대체 되었습니다)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>지갑 트랜잭션이 변경될 경우 명령을 실행하십시오.(명령 내 %s 는 TxID로 대체 되었습니다)</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (NXB/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (NXB/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>메모리 풀에서 디스크로 매 &lt;n&gt; 메가바이트만큼 데이터베이스 활동 플러쉬를 기록합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>미확인 표시된 출력들을 찾고 계속하기 위한 확인을 받기 전까지 기다립니다.</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>paytxfee가 설정되어 있지 않는 경우 충분한 수수료를 넣어야만 평균이내 n블록들을 확인하고 트랜잭션를 시작합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>이 모드에서 -genproclimit는 즉시 생성되는 블록 수를 제어합니다.</translation>
-    </message>
-    <message>
-        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
-        <translation>확정 된 자금이 불충분하거나 부족한 경우 몇 분 후에 다시 시도하십시오.</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>-maxtxfee=&lt;amount&gt;에 대한 잘못된 금액: '%s' (트랜잭션 정지를 막을려면 적어도 %s의 minrelay 수수료가 있어야 합니다)</translation>
-    </message>
-    <message>
-        <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation>항상 송금할수 있도록 지정된 수량 유지 (기본값 : 0)</translation>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
-        <translation>블록을 채굴 할 때 트랜잭션 우선 순위 및 kB 당 수수료를 기록합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>getrawtransaction rpc 호출에서 사용되는 전체 트랜잭션 색인를 유지보수합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>데이터 캐리어 내에서 우리가 중계하고 채굴하는 트랜잭션 데이터의 최대 사이즈 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>단일 지갑 트랜잭션에서 사용하기 위한 최대 전체 수수료, 너무 낮은 값이 설정되어 있으면 큰 트랜잭션이 유실될 수 있습니다 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>재연결로 인해 피어가 오작동을 유지하는 초 단위 시간 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>난독화는 정확한 금액을 사용하여 자금을 송금하기 때문에 더 많은 코인을 익명화해야 할 수도 있습니다.</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>디버깅 정보 출력 (기본값: %u, &lt;category&gt; 공급은 선택입니다)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>DNS 검색을 통한 피어 주소 쿼리, 주소가 부족할 경우 (-connect 아닌 이상 기본값:1)</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>모든 프록시 연결마다 자격 증명 무작위화. 이렇게하면 Tor 스트림을 격리할수 있습니다. (기본값 : %u)</translation>
-    </message>
-    <message>
-        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
-        <translation>무료 또는 낮은 수수료 트랜잭션를 중계하는데 높은 우선 순위가 필요합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
-        <translation>debug.log 파일 대신 추적/디버그 정보를 콘솔에 보냅니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>최우선/낮은 수수료 트랜잭션의 최대 크기를 바이트 단위로 설정합니다 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>스크립트 허용 스레드의 개수를 설정합니다. (%u 에서 %d, 0 = 자동, &lt;0 = 충분한 코어들을 남겨두세요, 기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>활성화 시에 코인 생성을 위한 스레드 숫자를 설정합니다 (-1= 모든 코어, 기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>성공적으로 잠긴 트랜잭션에 대한 확인을 N으로 나타냅니다 (0-9999, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>bloom필터를 사용한 블록 및 트랜잭션 필터링 지원 (기본값 : %u)</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
-        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. NXBoost Core는 이미 실행 중입니다.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 NXB과 일치하지 않음.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 NXB와 같지 않음</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Tor hidden services를 통하여 피어에게 도달하기 위해 독립된 SOCKS5 프록시를 사용합니다(기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>경고: -maxrtxfee가 매우 높게 설정 되었습니다! 이렇게 큰 수수료는 단 한번의 단일 트랜잭션에 지불될 수도 있습니다.</translation>
-    </message>
-    <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>경고 : -paytxfee가 매우 높게 설정되었습니다! 이것은 전송할 경우 지불 할 트랜잭션 수수료입니다.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
-        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 NXBoost 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>경고: 네트워크가 완전히 동의하지 않는 것 같습니다! 일부 마이너에 문제가 발생한 것으로 보입니다.</translation>
-    </message>
-    <message>
-        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>경고: 우리의 피어들과 완벽하게 일치하지 않습니다! 업그레이드 또는 다른 노드들의 업그레이드가 필요할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>경고 : wallet.dat을 읽는 중 오류가 발생했습니다! 모든 키가 올바르게 읽혀 지지만 트랜잭션 데이터 또는 주소록 항목이 누락되었거나 올바르지 않을 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>경고 : wallet.dat에 손상된 데이터가 복구되었습니다. 본래 wallet.dat은 wallet으로 저장되었습니다. {timestamp}.bak %s; 잔액 또는 트랜잭션가 올바르지 않은 경우 백업에서 복원해야합니다.</translation>
-    </message>
-    <message>
-        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>주어진 넷마스크 또는 IP 주소로부터 화이트리스트 피어가 연결되고 있습니다. 여러 번 지정될 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>화이트리스트 피어들은 DoS 밴 될 수 없으며 그들이 이미 메모리 풀에 있을지라도 그들의 트랜잭션는 항상 중계됩니다. 예를들면 게이트웨이 같은 것에 유용</translation>
-    </message>
-    <message>
-        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
-    </message>
-    <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 은 메인넷에서만 사용될 수 있습니다)</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(기본값: %s)</translation>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation>(기본값: 1)</translation>
-    </message>
-    <message>
-        <source>(must be 49108 for mainnet)</source>
-        <translation>(메인넷 일경우 49108)</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation> command line 과 JSON-RPC 적용</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>외부에서의 접속을 허용 (1 -프록시 또는 -연결이 없을 경우 기본값)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>공개 REST 요청 수락(기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>연결할 노드를 추가하고 계속해서 연결을 유지하십시오.</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>-addnode, -seednode, -connect을 위해 DNS 조회를 허용하십시오.</translation>
-    </message>
-    <message>
-        <source>Already have that input.</source>
-        <translation>이미 연결 중입니다.</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>피어 주소에게 DNS 조회를 통한 지속적인 정보 수신 요청을 합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>손상된 wallet.dat으로 부터 개인 키 복구를 시도합니다.</translation>
-    </message>
-    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>자동 Tor 히든 서버스 생성 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>블록 생성 옵션:</translation>
-    </message>
-    <message>
-        <source>Calculating missing accumulators...</source>
-        <translation>누락된 누산기 계산중...</translation>
-    </message>
-    <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>표시할 수 없음: 남아있는 호환된 연결이 없습니다.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>임의의 마스터노드를 찾을 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>동기화가 진행 중일 때에는 믹싱을 할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Cannot downgrade wallet</source>
-        <translation>지갑을 다운그레이드 할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>주소를 변환할 수 없습니다 주소 -bind: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>주소를 변환할 수 없습니다 -externalip 주소: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>해결할 수 없습니다 -whitebind 주소: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>기본 주소를 사용할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Collateral이 유효하지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>지정된 노드(s)로만 연결이 가능합니다.</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>SOCKS5 프록시를 통해 연결합니다</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>노드에 연결하여 피어 주소를 검색하고 연결을 끊습니다</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>연결 옵션:</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Copyright (C) 2009-%i 비트코인 Core 개발자들</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Copyright (C) 2015-%i The NXBoost Core 개발자</translation>
-    </message>
-    <message>
-        <source>Corrupted block database detected</source>
-        <translation>손상된 블록 데이터베이스가 발견되었습니다</translation>
-    </message>
-    <message>
-        <source>Could not parse masternode.conf</source>
-        <translation>masternode.conf 를 분석할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>디버깅/테스팅 옵션:</translation>
-    </message>
-    <message>
-        <source>Delete blockchain folders and resync from scratch</source>
-        <translation>블록 체인 폴더 삭제 및 처음부터 다시 동기화</translation>
-    </message>
-    <message>
-        <source>Disable OS notifications for incoming transactions (default: %u)</source>
-        <translation>거래시 수신 알림창 해제  (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>안전모드 비활성화, 실시간 안전모드 이벤트 중단 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>자신의 IP 주소를 찾습니다 (기본값: 1 수신중이거나 -외부아이피가 없을 경우)</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>지갑 RPC 호출을 비활성화하고 지갑을 불러오지 마시오</translation>
-    </message>
-    <message>
-        <source>Do you want to rebuild the block database now?</source>
-        <translation>블록 데이터베이스를 다시 작성하시기를 원하십니까?</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation>로딩 완료</translation>
-    </message>
-    <message>
-        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>자동 제로코인 생성 (0-1, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (SwiftTX로 설정된)</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (SwiftTX를 통해 잠겨진)</translation>
-    </message>
-    <message>
-        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>클라이언트가 마스터노드로 작동하는 것을 활성화 (0-1, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>항목이 가득 찼습니다.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Masternode에 연결하는 중 오류가 발생했습니다.</translation>
-    </message>
-    <message>
-        <source>Error initializing block database</source>
-        <translation>블록 데이터베이스를 초기화하는 중 오류가 발생했습니다.</translation>
-    </message>
-    <message>
-        <source>Error initializing wallet database environment %s!</source>
-        <translation>지갑 데이터베이스 환경  %s 을 초기화하는 중 오류가 발생했습니다!</translation>
-    </message>
-    <message>
-        <source>Error loading block database</source>
-        <translation>블록 데이터베이스를 불러오는 중 오류가 발생했습니다.</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat</source>
-        <translation>wallet.dat을 불러오는 중 오류가 발생했습니다.</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>wallet.dat을 불러오는 중 오류가 발생했습니다: 지갑 손상됨</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
-        <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 NXBoost 코어가 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Error opening block database</source>
-        <translation>블록 데이터베이스를 여는 중 오류가 발생했습니다.</translation>
-    </message>
-    <message>
-        <source>Error reading from database, shutting down.</source>
-        <translation>데이터베이스에서서 읽어오는 중 오류가 발생했습니다. 종료합니다.</translation>
-    </message>
-    <message>
-        <source>Error recovering public key.</source>
-        <translation>공개 키를 복구하는 중 오류가 발생했습니다.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>에러</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>오류 : 내부에서 치명적인 오류가 발생했습니다. 자세한 내용은 debug.log를 참조하십시오</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>오류 : 현재 표시된 입력을 선택할 수 없습니다</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation>오류 : 디스크 공간이 부족합니다!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>오류 : 지원하지 않는 인수 -tor가 발견되었습니다. -onion을 사용하십시오.</translation>
-    </message>
-    <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>오류 : 지갑이 잠겼습니다, 트랜잭션을 생성할 수 없습니다!</translation>
-    </message>
-    <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>오류 : 이미 난독화 그룹에 보류중인 항목들이 있습니다.</translation>
-    </message>
-    <message>
-        <source>Failed to calculate accumulator checkpoint</source>
-        <translation>축 압기 체크 포인트를 계산하지 못했습니다.</translation>
-    </message>
-    <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>어떠한 포트에서도 수신하는 것에 실패했습니다. 원하신다면 -listen=0 을 사용하십시오.</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>블록을 받아오는데 실패했습니다.</translation>
-    </message>
-    <message>
-        <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (NXB/kB) (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>트랜잭션 완료.</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: %u)</source>
-        <translation>강제 안전 모드 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>충분한 사용자를 찾았습니다, 서명 중 ( %s 기다리는 중 )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>충분한 사용자를 찾았습니다, 서명 중 ...</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: %u)</source>
-        <translation>코인 생성 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>시작할 때 검사할 블록의 수 (기본값: %u, 0=모두)</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>&lt;category&gt;가 제공되지 않으면, 모든 디버깅 정보를 출력합니다.</translation>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation>가져오는 중...</translation>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>내부에 blk000??.dat 파일로부터 블록들을 가져옴</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>디버그 출력에 IP 주소를 포함합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Incompatible mode.</source>
-        <translation>호환되지 않는 모드.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>호환되지 않는 버전.</translation>
-    </message>
-    <message>
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>잘못되었거나 블록을 찾지 못하였습니다. 네트워크에 대한 잘못된 데이터 디렉토리 문제?</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>정보</translation>
-    </message>
-    <message>
-        <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
-        <translation>초기화 정확성 검사에 실패 했습니다. NXBoost Core가 종료됩니다.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>입력이 올바르지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Insufficient funds</source>
-        <translation>잔액이 충분하지 않음</translation>
-    </message>
-    <message>
-        <source>Insufficient funds.</source>
-        <translation>충분하지 않은 금액.</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>잘못된 -onion 주소거나 호스트네임 : '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-maxtxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-minrelaytxfee=&lt;amount&gt;; 에 대한 유효하지 않은 값: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-mintxfee=&lt;amount&gt;; 에 대한 유효하지 않은 값: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>-paytxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s' (적어도 %s 가 필요합니다)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-paytxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>-reservebalance=&lt;amount&gt;에 대한 금액이 유효하지 않은 값</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>잘못된 수량</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeprivkey. Please see documenation.</source>
-        <translation>마스터노드 개인 키가 잘못되었습니다. 설명서를 참조하십시오.</translation>
-    </message>
-    <message>
-        <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>-whitelist: '%s' 에 지정된 넷마스크가 유효하지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation>masternode.conf 에서 유효하지 않은 포트가 감지되었습니다</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>유효하지 않은 개인 키입니다.</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>유효하지 않은 스크립트가 발견되었습니다.</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>자동생성 zNXB 비율  (1-100, default: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the NXB and zNXB money supply statistics</source>
-        <translation>NXB 및 zNXB 공급량 다시 색인</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>제로코인 데이타베이스 재색인</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>제로코인 재 인덱싱 실패</translation>
-    </message>
-    <message>
-        <source>Selected coins value is less than payment target</source>
-        <translation>지불대상보다 적은 코인 선택됨</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftX 옵션:</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
-    </message>
-    <message>
-        <source> mints deleted
-</source>
-        <translation>생성 삭제
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>생성 업데이드</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>미확인된 거래 삭제됨
-</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>nxboost의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>에러 : 거래가 거부되었습니다. 예를 들어 다른 사본 wallet.dat에서 코인을 사용했다면 2중 사용으로 인식될수 있습니다. 혹은, 일부가 이미 소비 된 경우에 이런 일이 발생할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>에러 :이 거래에는 전송량, 복잡성 또는 최근에 받은 자금의 사용등으로 인해 적어도 %s의 거래 수수료가 필요합니다!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>에러 : 지원하지않는 argument -checklevel 발견된.  Checklevel는 레벨 4이어야 합니다.</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</translation>
-    </message>
-    <message>
-        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Failed to find coin set amongst held coins with less than maxNumber of Spends</translation>
-    </message>
-    <message>
-        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</translation>
-    </message>
-    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</translation>
-    </message>
-    <message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; 가능함 :</translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>블록체인 손상 복구 시도</translation>
-    </message>
-    <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: 누산기가 제대로 작동하지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>debug.log에 stake 수정 계산 기록</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>debug.log 에 코인 stake 메시지를 자세히 기록</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 해시 블록 게시 가능</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 해시 불록 게시 가능</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에서 Raw 블록 게시 가능</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 Raw 트랜잭션 게시 지원</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>스테이킹 기능 사용 (0-1, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Error: 치명적 에러 발생 log 파일을 확인해주세요.</translation>
-    </message>
-    <message>
-        <source>Error: No valid utxo!</source>
-        <translation>Error: 유효하지 않는 utxo!</translation>
-    </message>
-    <message>
-        <source>Failed to create mint</source>
-        <translation>생성 실패</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>디시리얼 실패</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>wallet.dat 에서 제로코인을 인식 실패</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>제로코인 선택 실패</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>제로코인 DB 삭제 실패</translation>
-    </message>
-    <message>
-        <source>Failed to write coin serial number into wallet</source>
-        <translation>지갑에 코인 시리얼 번호 작성 실패</translation>
-    </message>
-    <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>메모리에서 연결 불가능한 트랜잭션을 &lt;n&gt;개까지 유지하십시오. (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>최근에 마지막으로 난독화를 진행했습니다.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>최근에 마지막으로 성공한 난독화 작업이 있습니다.</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>시그니처 캐시의 크기 제한을 &lt;n&gt; 항목으로 합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Line: %d</source>
-        <translation>Line: %d</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>&lt;port&gt;에서 JSON-RPC 연결 대기 (기본값: %u 또는 테스트넷: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>&lt;port&gt;에서 연결 대기 (기본값: %u 또는 테스트넷: %u)</translation>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation>주소를 불러오는 중...</translation>
-    </message>
-    <message>
-        <source>Loading block index...</source>
-        <translation>블록 인덱스를 불러오는 중...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>budget 캐시를 불러오는 중...</translation>
-    </message>
-    <message>
-        <source>Loading masternode cache...</source>
-        <translation>마스터노드 캐시를 불러오는 중...</translation>
-    </message>
-    <message>
-        <source>Loading masternode payment cache...</source>
-        <translation>마스터노드 결제 캐시를 불러오는 중...</translation>
-    </message>
-    <message>
-        <source>Loading sporks...</source>
-        <translation>sporks 로딩중...</translation>
-    </message>
-    <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>지갑을 불러오는 중… (%3.2f %%)</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>지갑을 불러오는 중…</translation>
-    </message>
-    <message>
-        <source>Location of the auth cookie (default: data dir)</source>
-        <translation>auth 쿠기 위치 (default: data dir)</translation>
-    </message>
-    <message>
-        <source>Lock is already in place.</source>
-        <translation>이미 올바르게 잠겨있습니다.</translation>
-    </message>
-    <message>
-        <source>Lock masternodes from masternode configuration file (default: %u)</source>
-        <translation>마스터노드 구성 파일에서 마스터노드를 잠급니다. (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>Lookup(): Invalid -proxy address or hostname: '%s'</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>최대 &lt;n&gt; 연결을 피어들과 유지합니다. (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Masternode options:</source>
-        <translation>마스터노드 옵션:</translation>
-    </message>
-    <message>
-        <source>Masternode queue is full.</source>
-        <translation>마스터노드 대기열이 가득 찼습니다.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>마스터노드:</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>연결 당 최대 수신 버퍼, &lt;n&gt;*1000 바이트 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>연결 당 최대 전송 버퍼, &lt;n&gt;*1000 바이트 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Mint did not make it into blockchain</source>
-        <translation>코인생성이 블록체인에 기록되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>Missing input transaction information.</source>
-        <translation>트랜잭션 정보 입력에 누락된 부분이 있습니다.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>믹싱이 진행 중입니다...</translation>
-    </message>
-    <message>
-        <source>Need address because change is not exact</source>
-        <translation>잔돈을 받을 주소가 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>-whitebind: '%s' 의 포트를 지정해야 합니다</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>마스터노드가 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>호환되는 마스터노드가 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>분류가 필요한 자금이 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>믹싱에 대한 일치하는 표기를 찾을 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Node relay options:</source>
-        <translation>노드 중계 옵션:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>비 표준 공개 키가 감지되었습니다.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>기존 트랜잭션과 호환되지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Not enough file descriptors available.</source>
-        <translation>사용 가능한 파일 디스크립터가 충분하지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>마스터노드 목록에 없습니다.</translation>
-    </message>
-    <message>
-        <source>Number of automatic wallet backups (default: 10)</source>
-        <translation>자동 지갑 백업 횟수 (기본값: 10)</translation>
-    </message>
-    <message>
-        <source>Number of custom location backups to retain (default: %d)</source>
-        <translation>Number of custom location backups to retain (default: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>난독화는 유휴상태입니다.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>난독화 요청 완료:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>난독화 요청 미완료:</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
-        <translation>내장된 체크 포인트와 일치하는 블록체인만 허용 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>네트워크에 연결된 노드에만 연결 &lt;net&gt; (ipv4, ipv6 또는 onion)</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>옵션:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>JSON-RPC 연결 비밀번호</translation>
-    </message>
-    <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
-    </message>
-    <message>
-        <source>Preparing for resync...</source>
-        <translation>재동기화 준비중...</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>디버그 출력 앞에 타임스탬프를 추가합니다. (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>버전 출력후 종료</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>RPC 서버 옵션:</translation>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>&lt;n&gt;개의 네트워크 메세지마다 무작위로 1개 삭제</translation>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>&lt;n&gt;개의 네트워크 메세지마다 무작위로 1 퍼즈</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>현재 blk000??.dat 파일의 블록체인 인덱스를 다시 구축합니다</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>P2P 네크워크로 부터 경고를 받고 보여줍니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the accumulator database</source>
-        <translation>누적 기 데이터베이스 다시 색인화</translation>
-    </message>
-    <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>릴레이 및 채굴 데이터 이동매체 트랜잭션 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>non-P2SH multisig 중계 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>누락된 지갑 트랜잭션에 대해 블록체인을 다시 스캔합니다</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>다시 스캔하는 중...</translation>
-    </message>
-    <message>
-        <source>ResetMintZerocoin finished: </source>
-        <translation>생성된 제로코인 초기화 완료:</translation>
-    </message>
-    <message>
-        <source>ResetSpentZerocoin finished: </source>
-        <translation>사용된 제로코인 초기화 완료:</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: %u)</source>
-        <translation>주기적으로 지갑을 플러쉬하는 스레드를 실행합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>백그라운드에서 상주하며 실행하고 명령을 받습니다</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>무료 수수료 트랜잭션이 가능할 경우 무료 수수료로 트랜잭션을 전송합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>세션이 완료되지 않았습니다!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>세션이 만료되었습니다.</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>데이터베이스 캐시 크기를 메가바이트 단위로 설정합니다 (%d 에서 %d, 기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Set external address:port to get to this masternode (example: %s)</source>
-        <translation>마스터노드에 접속하려면 외부 주소:포트를 설정하십시오 (예시: %s)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>키 풀 크기를 &lt;n&gt; 로 설정합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>최대 블록 크기를 바이트 단위로 설정합니다 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>최소 블록 크기를 바이트 단위로 설정합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Set the Maximum reorg depth (default: %u)</source>
-        <translation>최대 재구성 깊이 설정 (기본값 : %u)</translation>
-    </message>
-    <message>
-        <source>Set the masternode private key</source>
-        <translation>마스터노드 개인 키를 설정합니다</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>RPC 호출 서비스 스레드의 갯수를 설정합니다 (기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
-        <translation>지갑 db 환경에서 DB_PRIVATE 플래그를 설정합니다 (기본값 : %u)</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>모든 디버깅 옵션 표시 (사용 방법: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>클라이언트 시작시에 debug.log 파일을 축소시킵니다 (기본값:1 아닐경우 -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>인증에 실패했습니다.</translation>
-    </message>
-    <message>
-        <source>Signing timed out.</source>
-        <translation>인증 시간 초과.</translation>
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation>트랜잭션 인증 실패</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>구성 파일 지정 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>연결 시간 초과 단위를 100분의 1초 단위로 지정 (최소값: 1, 기본값: %d)</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>데이터 디렉토리 지정</translation>
-    </message>
-    <message>
-        <source>Specify masternode configuration file (default: %s)</source>
-        <translation>마스터노드 구성파일 지정 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>pid 파일 지정 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>지갑 파일 지정 (데이터 디렉토리 내에서만)</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>자신의 공용 주소를 지정</translation>
-    </message>
-    <message>
-        <source>Spend Valid</source>
-        <translation>유효한 지출</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>트랜잭션 전송시 승인되지 않은 변경사항을 전송합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Staking options:</source>
-        <translation>스테이킹 옵션:</translation>
-    </message>
-    <message>
-        <source>Stop running after importing blocks from disk (default: %u)</source>
-        <translation>디스크에서 블록을 가져오면 실행 중지 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>마스터노드에 다음 항목들을 제출했습니다: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>마스터노드에 제출했습니다, 남은 항목들 기다리는중 ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>마스터노드에 제출했습니다, 대기열을 기다리는 중 %s</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>동기화 실패</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>동기화 완료</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>동기화 대기중...</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>budgets 동기화 중입니다...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternode winners...</source>
-        <translation>마스터노드 승자를 동기화 중입니다...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternodes...</source>
-        <translation>마스터노드와 동기화중입니다...</translation>
-    </message>
-    <message>
-        <source>Synchronizing sporks...</source>
-        <translation>sporks와 동기화 중입니다...</translation>
-    </message>
-    <message>
-        <source>Syncing zNXB wallet...</source>
-        <translation>zNXB 지갑 동기화중...</translation>
-    </message>
-    <message>
-        <source>The coin spend has been used</source>
-        <translation>전송이 이미 되었습니다.</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>신규로 전송된 거래가 확인되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>선택한 생성 코인은 유효하지 않은 동전입니다.</translation>
-    </message>
-    <message>
-        <source>The transaction did not verify</source>
-        <translation>거래가 확인되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>도움말 메시지입니다</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>이것은 실험용 소프트웨어입니다.</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>이것은 리그레션 테스팅 및 앱 개발을 위해 만들어졌습니다.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>마스터노드가 아닙니다.</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>제대로 동작하지 않는 피어와 연결을 끊을 임계값 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Too many spends needed</source>
-        <translation>너무 많은 지출이 필요함</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Tor 컨트롤 포트 암호 (기본값: 공백)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>onion 활성화되었을 경우 사용할 Tor 코트롤 포트 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Transaction Created</source>
-        <translation>트랜잭션 취소됨</translation>
-    </message>
-    <message>
-        <source>Transaction Mint Started</source>
-        <translation>트랜잭션 생성 시작됨</translation>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation>트랜잭션 금액이 너무 적습니다</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>트랜잭션 금액에 반드시 양수값이 들어가야 합니다</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>트랜잭션이 성공적으로 생성되었습니다.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>트랜잭션 수수료가 너무 높습니다.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>올바르지 않은 트랜잭션입니다.</translation>
-    </message>
-    <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>수수료 정책에 비해 트랜잭션이 너무 많습니다</translation>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation>트랜잭션이 너무 큽니다</translation>
-    </message>
-    <message>
-        <source>Transmitting final transaction.</source>
-        <translation>최종 트랜잭션를 전송 중입니다.</translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>높은 보안 수준으로 더 많은 코인을 전송해주세요.</translation>
-    </message>
-    <message>
-        <source>Trying to spend an already spent serial #, try again.</source>
-        <translation>이미 전송된 리얼 번호를 보내려고 했습니다. 다시 시도하십시오.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>이 컴퓨터에서 %s 로 바인드할 수 없습니다 (바인드 리턴 오류 %s)</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>코인 생성이 포함된 거래를 찾을 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Unable to sign spork message, wrong key?</source>
-        <translation>스포크 메시지를 인증할 수 없습니다, 키를 확인해주세요</translation>
-    </message>
-    <message>
-        <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation>HTTP 서버를 시작할수 없습니다. log 파일을 확인해주세요.</translation>
-    </message>
-    <message>
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>-onlynet: '%s' 에 알 수 없는 네트워크가 지정되었습니다</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>알 수없는 상태: id = %u</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>지갑을 최신 포맷으로 업그레이드합니다</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>수신 포트를 매핑하려면 UPnP를 사용하십시오 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>수신 포트를 매핑하려면 UPnP를 사용하십시오 (기본값: 1 수신 상태일 때)</translation>
-    </message>
-    <message>
-        <source>Use a custom max chain reorganization depth (default: %u)</source>
-        <translation>맞춤 최대 체인 재구성 깊이 사용 (기본값 : %u)</translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>테스트 네트워크를 사용합니다</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>JSON-RPC 연결 사용자 이름</translation>
-    </message>
-    <message>
-        <source>Value is below the smallest available denomination (= 1) of zNXB</source>
-        <translation>Value is below the smallest available denomination (= 1) of zNXB</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>난독화 풀의 최대 허용 값보다 높습니다.</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>블록 인증 중...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>지갑 인증 중...</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>zNXB 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>지갑 %s 가 데이터 디렉토리 외부에 존재합니다 %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>지갑이 잠겼습니다.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
-        <translation>지갑을 다시 작성해야 합니다: 완료하려면 NXBoost 코어를 재시작해야 합니다</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>지갑 옵션:</translation>
-    </message>
-    <message>
-        <source>Wallet window title</source>
-        <translation>지갑 창 제목</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>경고</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>경고 : 현재 사용중인 버전은 더이상 사용되지 않으므로 업그레이드가 필요합니다!</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>경고 : 지원하지 않는 인수 -benchmark 무시됨 -debug = bench를 사용하십시오.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>경고 : 지원하지 않는 인수 -debugnet 무시됨 -debug=net를 사용하십시오.</translation>
-    </message>
-    <message>
-        <source>Will retry...</source>
-        <translation>다시 시도합니다...</translation>
-    </message>
-    <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>지갑에 zNXB 가 부족합니다.</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>-treindex를 변경하려면 -reindex를 사용하여 데이터베이스를 다시 빌드해야합니다.</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>항목이 성공적으로 추가되었습니다.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>트랜잭션이 풀로 접수되었습니다!</translation>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>지갑 내 모든 트랜잭션들을 재핑하는 중...</translation>
-    </message>
-    <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ 알림 옵션:</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>제로코인 옵션:</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>시작 시</translation>
-    </message>
-    <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat 파일이 손상되어 복구에 실패했습니다</translation>
     </message>
 </context>
 </TS>
