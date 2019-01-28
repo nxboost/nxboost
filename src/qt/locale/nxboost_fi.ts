@@ -1106,6 +1106,253 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
+    </message>
+    <message>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation>Varoitus: virhe yrittäessä lukea wallet.dat tiedostoa! Kaikki avaimet luettu onnistuneesti, mutta rahansiirto- tai yhteystietokirjat saattavat puuttua tai olla virheellisiä.</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Yhdistä SOCKS5 proxyn kautta</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>Yhteys vaihtoehdot:</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected</source>
+        <translation>Korruptoitunut lohko tietokannassa havaittu</translation>
+    </message>
+    <message>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation>Haluatko rakentaa uudelleen lohkotietokannan?</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>Lataus valmis</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Virhe Masternodeen yhdistyksessä</translation>
+    </message>
+    <message>
+        <source>Error initializing block database</source>
+        <translation>Virhe aloittaessa lohko tietokantaa</translation>
+    </message>
+    <message>
+        <source>Error loading block database</source>
+        <translation>Virhe ladattaessa lohko tietokantaa</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version NXBoost Coresta</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Virhe lukiessa tietokantaa, sammutetaan.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Virhe</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation>Virhe: Tallennustila vähissä!</translation>
+    </message>
+    <message>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation>Virhe: Lompakko lukittu, ei voida luoda rahansiirtoa!</translation>
+    </message>
+    <message>
+        <source>Finalizing transaction.</source>
+        <translation>Viimeistellään rahansiirto.</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>Tuodaan...</translation>
+    </message>
+    <message>
+        <source>Incompatible mode.</source>
+        <translation>Yhteensopimaton tila.</translation>
+    </message>
+    <message>
+        <source>Incompatible version.</source>
+        <translation>Yhteensopimaton versio.</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informaatio</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>Riittämättömät varat.</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Virheellinen yksityisavain.</translation>
+    </message>
+    <message>
+        <source>Invalid script detected.</source>
+        <translation>Virheellinen skripti havaittu.</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; voi olla:</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Lataa osoitteita...</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>Lataa lohkoindeksiä...</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Lataa lompakkoa...</translation>
+    </message>
+    <message>
+        <source>Lock is already in place.</source>
+        <translation>Lukitus on jo käytössä.</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Vaihtoehdot:</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>Skannaa uudelleen...</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>Sessio ei valmis!</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>Istunto päättyi.</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>Allekirjoitus epäonnistui.</translation>
+    </message>
+    <message>
+        <source>Signing transaction failed</source>
+        <translation>Rahansiirron allekirjoitus epäonnistui</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation>Määritä tiedostosijainti</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>Määritä oma julkinen osoitteesi</translation>
+    </message>
+    <message>
+        <source>Staking options:</source>
+        <translation>Panostus vaihtoehdot:</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>Synkronisointi epäonnistui</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>Synkronisointi valmis</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>Tämä on kokeellista ohjelmistoa.</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation>Rahansiirron määrä on liian pieni</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must be positive</source>
+        <translation>Rahansiirtojen tulee olla positiivisia</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>Rahansiirto luotu onnistuneesti.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>Rahansiirron taksat ovat liian korkeat.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Rahansiirto ei onnistu</translation>
+    </message>
+    <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>Rahansiirto liian iso taksaan nähden</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Rahansiirto liian suuri</translation>
+    </message>
+    <message>
+        <source>Transmitting final transaction.</source>
+        <translation>Lähetetään viimeinen rahansiirto.</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation>Päivitä lompakko viimeisimpään formaattiin.</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>Käytä testiverkkoa</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>Tarkistaa lohkoja...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>Tarkistaa lompakkoa...</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Lompakko on lukittu.</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Lompakon vaihtoehdot:</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Varoitus</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>Varoitus: Tämä versio on vanha, päivitys vaadittu!</translation>
+    </message>
+    <message>
+        <source>Will retry...</source>
+        <translation>Yrittää uudelleen...</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>käynnistyksessä</translation>
+    </message>
+    <message>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation>wallet.dat vioittunut, pelastus epäonnistui</translation>
+    </message>
+</context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Configure Obfuscation</source>
@@ -2517,251 +2764,4 @@ Please check the address and try again.</source>
         <translation>0</translation>
     </message>
     </context>
-<context>
-    <name>nxboost-core</name>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Varoitus: virhe yrittäessä lukea wallet.dat tiedostoa! Kaikki avaimet luettu onnistuneesti, mutta rahansiirto- tai yhteystietokirjat saattavat puuttua tai olla virheellisiä.</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Yhdistä SOCKS5 proxyn kautta</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Yhteys vaihtoehdot:</translation>
-    </message>
-    <message>
-        <source>Corrupted block database detected</source>
-        <translation>Korruptoitunut lohko tietokannassa havaittu</translation>
-    </message>
-    <message>
-        <source>Do you want to rebuild the block database now?</source>
-        <translation>Haluatko rakentaa uudelleen lohkotietokannan?</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation>Lataus valmis</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Virhe Masternodeen yhdistyksessä</translation>
-    </message>
-    <message>
-        <source>Error initializing block database</source>
-        <translation>Virhe aloittaessa lohko tietokantaa</translation>
-    </message>
-    <message>
-        <source>Error loading block database</source>
-        <translation>Virhe ladattaessa lohko tietokantaa</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version NXBoost Coresta</translation>
-    </message>
-    <message>
-        <source>Error reading from database, shutting down.</source>
-        <translation>Virhe lukiessa tietokantaa, sammutetaan.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Virhe</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation>Virhe: Tallennustila vähissä!</translation>
-    </message>
-    <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Virhe: Lompakko lukittu, ei voida luoda rahansiirtoa!</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Viimeistellään rahansiirto.</translation>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation>Tuodaan...</translation>
-    </message>
-    <message>
-        <source>Incompatible mode.</source>
-        <translation>Yhteensopimaton tila.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Yhteensopimaton versio.</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informaatio</translation>
-    </message>
-    <message>
-        <source>Insufficient funds.</source>
-        <translation>Riittämättömät varat.</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Virheellinen yksityisavain.</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>Virheellinen skripti havaittu.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; voi olla:</translation>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation>Lataa osoitteita...</translation>
-    </message>
-    <message>
-        <source>Loading block index...</source>
-        <translation>Lataa lohkoindeksiä...</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Lataa lompakkoa...</translation>
-    </message>
-    <message>
-        <source>Lock is already in place.</source>
-        <translation>Lukitus on jo käytössä.</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Vaihtoehdot:</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>Skannaa uudelleen...</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sessio ei valmis!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>Istunto päättyi.</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>Allekirjoitus epäonnistui.</translation>
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation>Rahansiirron allekirjoitus epäonnistui</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Määritä tiedostosijainti</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Määritä oma julkinen osoitteesi</translation>
-    </message>
-    <message>
-        <source>Staking options:</source>
-        <translation>Panostus vaihtoehdot:</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>Synkronisointi epäonnistui</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>Synkronisointi valmis</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>Tämä on kokeellista ohjelmistoa.</translation>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation>Rahansiirron määrä on liian pieni</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>Rahansiirtojen tulee olla positiivisia</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Rahansiirto luotu onnistuneesti.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Rahansiirron taksat ovat liian korkeat.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Rahansiirto ei onnistu</translation>
-    </message>
-    <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>Rahansiirto liian iso taksaan nähden</translation>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation>Rahansiirto liian suuri</translation>
-    </message>
-    <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Lähetetään viimeinen rahansiirto.</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Päivitä lompakko viimeisimpään formaattiin.</translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>Käytä testiverkkoa</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>Tarkistaa lohkoja...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Tarkistaa lompakkoa...</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Lompakko on lukittu.</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Lompakon vaihtoehdot:</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Varoitus</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Varoitus: Tämä versio on vanha, päivitys vaadittu!</translation>
-    </message>
-    <message>
-        <source>Will retry...</source>
-        <translation>Yrittää uudelleen...</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>käynnistyksessä</translation>
-    </message>
-    <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat vioittunut, pelastus epäonnistui</translation>
-    </message>
-</context>
 </TS>

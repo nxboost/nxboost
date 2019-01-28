@@ -892,6 +892,49 @@ Address: %4
     <name>MultisigDialog</name>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>在收到相关警报时执行命令，或者看到一个很长的分叉（cmd中的%s被消息替换）</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，NXBoost Core将无法正常工作。</translation>
+    </message>
+    <message>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation>注意：wallet.dat损坏，请恢复数据！原始wallet.dat保存为钱包。{timestamp} .bak in %s; 如果您的余额或交易不正确，您应该从备份还原。</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>出错</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>信息</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>这是一个预发行测试版本 - 您自己承担风险 - 不要用于商业应用！</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>指定您自己的公共地址</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>注意</translation>
+    </message>
+    <message>
+        <source>Your entries added successfully.</source>
+        <translation>您的输入成功添加。</translation>
+    </message>
+    <message>
+        <source>Your transaction was accepted into the pool!</source>
+        <translation>您的交易被矿池接受！</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     </context>
 <context>
@@ -1534,48 +1577,5 @@ Address: %4
     </context>
 <context>
     <name>zNXBControlDialog</name>
-    </context>
-<context>
-    <name>nxboost-core</name>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>在收到相关警报时执行命令，或者看到一个很长的分叉（cmd中的%s被消息替换）</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，NXBoost Core将无法正常工作。</translation>
-    </message>
-    <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>注意：wallet.dat损坏，请恢复数据！原始wallet.dat保存为钱包。{timestamp} .bak in %s; 如果您的余额或交易不正确，您应该从备份还原。</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>出错</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>信息</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>这是一个预发行测试版本 - 您自己承担风险 - 不要用于商业应用！</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>指定您自己的公共地址</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>注意</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>您的输入成功添加。</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>您的交易被矿池接受！</translation>
-    </message>
     </context>
 </TS>

@@ -1525,7 +1525,7 @@ Lütfen adresi kontrol edin ve tekrar deneyin.</translation>
     <message>
         <source>The total amount of your MultiSend vector is over 100% of your stake reward
 </source>
-        <translation> MultiSend vectorünüzün toplam miktarı stake ödülünün  100% ünden fazla 
+        <translation> MultiSend vectorünüzün toplam miktarı stake ödülünün  100% ünden fazla
 </translation>
     </message>
     <message>
@@ -1720,6 +1720,283 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Maksimum (15)</translation>
     </message>
 </context>
+<context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = tx meta verileri, örneğin hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verileri bırak)</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>JSON-RPC bağlantılarını seçilmiş kaynaktan izin ver. Geçerli  &lt;ip&gt; sadece tek IP için  (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). TBu seçenek defalarca kez belirlenebilir.</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>Verilen adrese bağlanın ve onu dinleyin. IPv6 için [host]: port gösterimini kullanın</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Verilen adrese ve ona bağlanan beyaz listelere bağlayın. IPv6 için [host]: port gösterimini kullanın</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>JSON-RPC bağlantılarını dinlemek için verilen adrese bağlanın. IPv6 için [host]: port gösterimini kullanın. Bu seçenek birden çok kez belirtilebilir (varsayılan: tüm arabirimlere bağlanır)</translation>
+    </message>
+    <message>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Hesaplanan akümülatör kontrol noktası, blok indeksiyle kaydedilen kontrol noktası değildir.</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
+        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. NXBoost Core muhtemelen zaten çalışıyor.</translation>
+    </message>
+    <message>
+        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
+        <translation>Otomatik sonuçlandırılmış bütçe oylama davranışını değiştirin. mode = auto: Yalnızca kesin bütçelendirilmiş bütçeyi, oluşturulan bütçemle eşleştirmek için oy verin. (dize, varsayılan: otomatik)</translation>
+    </message>
+    <message>
+        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
+        <translation>Ücretsiz işlemleri belirli aralıklarla sınırla &lt;n&gt;*1000 bytes dakikada (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>Sistem varsayılan izinleri ile yeni dosyalar oluştur, 077 i açığa çıkartmak yerine (sadece cüzdan fonksiyonu etkisiz hale getirildiğinde effektidtir.)</translation>
+    </message>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Tüm cüzdan işlemlerini sil ve sadece -rescan on startup komutuyla ilgili kısmımları sadece kurtar</translation>
+    </message>
+    <message>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>MIT yazılım lisansı altında dağıtılmıştır, eşlik eden KOPYALAMA dosyasına bakın veya &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Spork yönetim özelliğine izin verin uygun private key ile</translation>
+    </message>
+    <message>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation>Regresyon test modunu girin, bu bloklar anında çözülebilen özel bir zincir kullanır.</translation>
+    </message>
+    <message>
+        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>Hata: Gelen bağlantıları dinleme başarısız oldu (dinleme dönmüş hata %s)</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Hata: Desteklenmeyen argüman-çorap bulundu. SOCKS versiyonunu ayarlamak artık mümkün değil, sadece SOCKS5 vekilleri destekleniyor.</translation>
+    </message>
+    <message>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>Alakalı bir uyarı alındığında komutu çalıştırın veya gerçekten uzun bir çatalı görürüz (cmd'deki %s yerine mesaj gönderilir)</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>Cüzdan işlemi değiştiğinde komutu yürütün (cmd'deki %s yerine TxID yazılır)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (NXB / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (NXB / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+    </message>
+    <message>
+        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
+        <translation>Bellek havuzundan disk günlüğüne her veritabanı aktivitesini temizle&lt;n&gt; megabytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation>Teyit edilmemiş isimler buldular, devam ettiklerini onaylayana kadar bekleyecekler.</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>Paytxfee belirlenmemişse, işlemlerin ortalama n blokta onaylanmaya başlaması için yeterli ücret ekleyin (varsayılan: %u)</translation>
+    </message>
+    <message>
+        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
+        <translation>Bu modda, -genproclimit, kaç blok üretileceğini hemen kontrol eder.</translation>
+    </message>
+    <message>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>Yetersiz veya yetersiz teyit edilen para birimleri, birkaç dakika bekleyip tekrar deneyebilirsiniz.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>Yetersiz miktar için -maxtxfee=&lt;amount&gt;: '%s' (sıkışmış işlemleri önlemek için en az %s'lik minrelay ücreti olmalıdır)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(default: %s)</translation>
+    </message>
+    <message>
+        <source>(default: 1)</source>
+        <translation>(default: 1)</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation>Blok oluşturma seçenekleri:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>Blok zinciri dosyalarını sil ve sıfırdan senkronize et</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>Yükleme tamamlandı</translation>
+    </message>
+    <message>
+        <source>Entries are full.</source>
+        <translation>Girişler full</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Masternod'a bağlanırken hata oluştu.</translation>
+    </message>
+    <message>
+        <source>Error initializing block database</source>
+        <translation>Blok veritabanı başlatılırken hata oluştu</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>hata</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation>Hata: Disk alanı az</translation>
+    </message>
+    <message>
+        <source>Failed to read block</source>
+        <translation>Blok okuma hatası</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>İçe aktarılıyor....</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>bilgi</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation>Yetersiz bakiyeler</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>Yetersiz bakiyeler.</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation>Geçersiz miktar</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Geçersiz private key.</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX seçenekleri:</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation> mints güncellendi</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>Doğrulanmamış işlemler kaldırıldı
+</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; olabilir:</translation>
+    </message>
+    <message>
+        <source>Line: %d</source>
+        <translation>Sıra: %d</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Adresler Yükleniyor...</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Cüzdan Yükleniyor...</translation>
+    </message>
+    <message>
+        <source>Masternode options:</source>
+        <translation>Masternode seçenekleri:</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>Masternode:</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>Yeniden taranıyor...</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>İmzalama başarısız oldu.</translation>
+    </message>
+    <message>
+        <source>Staking options:</source>
+        <translation>Staking seçenekleri:</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation>Bu yardım mesajı</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>Bu masternod değil</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation>İşlem miktarı çok düşük</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>İşlem geçersiz</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>Bloklar doğrulanıyor...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>Cüzdan doğrulanıyor..</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Cüzdan kilitli.</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Cüzdan seçenekleri:</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>uyarı</translation>
+    </message>
+    <message>
+        <source>Zapping all transactions from wallet...</source>
+        <translation>Cüzdandaki tüm işlemler aranıyor</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>Zerocoin seçenekleri:</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>Başlangıçta</translation>
+    </message>
+    </context>
 <context>
     <name>ObfuscationConfig</name>
     <message>
@@ -3468,10 +3745,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>(Akıllı ücret henüz başlatılmadı.Bu genellikle birkaç blok alıyor ...)</translation>
     </message>
     <message>
-        <source>SwiftX</source>
-        <translation>SwiftX</translation>
-    </message>
-    <message>
         <source>Confirmation time:</source>
         <translation>Onaylama zamanı:</translation>
     </message>
@@ -4486,281 +4759,4 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Harcanabilir</translation>
     </message>
 </context>
-<context>
-    <name>nxboost-core</name>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = tx meta verileri, örneğin hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verileri bırak)</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>JSON-RPC bağlantılarını seçilmiş kaynaktan izin ver. Geçerli  &lt;ip&gt; sadece tek IP için  (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). TBu seçenek defalarca kez belirlenebilir.</translation>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Verilen adrese bağlanın ve onu dinleyin. IPv6 için [host]: port gösterimini kullanın</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Verilen adrese ve ona bağlanan beyaz listelere bağlayın. IPv6 için [host]: port gösterimini kullanın</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>JSON-RPC bağlantılarını dinlemek için verilen adrese bağlanın. IPv6 için [host]: port gösterimini kullanın. Bu seçenek birden çok kez belirtilebilir (varsayılan: tüm arabirimlere bağlanır)</translation>
-    </message>
-    <message>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>Hesaplanan akümülatör kontrol noktası, blok indeksiyle kaydedilen kontrol noktası değildir.</translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
-        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. NXBoost Core muhtemelen zaten çalışıyor.</translation>
-    </message>
-    <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Otomatik sonuçlandırılmış bütçe oylama davranışını değiştirin. mode = auto: Yalnızca kesin bütçelendirilmiş bütçeyi, oluşturulan bütçemle eşleştirmek için oy verin. (dize, varsayılan: otomatik)</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
-        <translation>Ücretsiz işlemleri belirli aralıklarla sınırla &lt;n&gt;*1000 bytes dakikada (varsayılan: %u)</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Sistem varsayılan izinleri ile yeni dosyalar oluştur, 077 i açığa çıkartmak yerine (sadece cüzdan fonksiyonu etkisiz hale getirildiğinde effektidtir.)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Tüm cüzdan işlemlerini sil ve sadece -rescan on startup komutuyla ilgili kısmımları sadece kurtar</translation>
-    </message>
-    <message>
-        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>MIT yazılım lisansı altında dağıtılmıştır, eşlik eden KOPYALAMA dosyasına bakın veya &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
-    </message>
-    <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Spork yönetim özelliğine izin verin uygun private key ile</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Regresyon test modunu girin, bu bloklar anında çözülebilen özel bir zincir kullanır.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Hata: Gelen bağlantıları dinleme başarısız oldu (dinleme dönmüş hata %s)</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>Hata: Desteklenmeyen argüman-çorap bulundu. SOCKS versiyonunu ayarlamak artık mümkün değil, sadece SOCKS5 vekilleri destekleniyor.</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Alakalı bir uyarı alındığında komutu çalıştırın veya gerçekten uzun bir çatalı görürüz (cmd'deki %s yerine mesaj gönderilir)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Cüzdan işlemi değiştiğinde komutu yürütün (cmd'deki %s yerine TxID yazılır)</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (NXB / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (NXB / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Bellek havuzundan disk günlüğüne her veritabanı aktivitesini temizle&lt;n&gt; megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Teyit edilmemiş isimler buldular, devam ettiklerini onaylayana kadar bekleyecekler.</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Paytxfee belirlenmemişse, işlemlerin ortalama n blokta onaylanmaya başlaması için yeterli ücret ekleyin (varsayılan: %u)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>Bu modda, -genproclimit, kaç blok üretileceğini hemen kontrol eder.</translation>
-    </message>
-    <message>
-        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
-        <translation>Yetersiz veya yetersiz teyit edilen para birimleri, birkaç dakika bekleyip tekrar deneyebilirsiniz.</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Yetersiz miktar için -maxtxfee=&lt;amount&gt;: '%s' (sıkışmış işlemleri önlemek için en az %s'lik minrelay ücreti olmalıdır)</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(default: %s)</translation>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation>(default: 1)</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>Blok oluşturma seçenekleri:</translation>
-    </message>
-    <message>
-        <source>Delete blockchain folders and resync from scratch</source>
-        <translation>Blok zinciri dosyalarını sil ve sıfırdan senkronize et</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation>Yükleme tamamlandı</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>Girişler full</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Masternod'a bağlanırken hata oluştu.</translation>
-    </message>
-    <message>
-        <source>Error initializing block database</source>
-        <translation>Blok veritabanı başlatılırken hata oluştu</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>hata</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation>Hata: Disk alanı az</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Blok okuma hatası</translation>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation>İçe aktarılıyor....</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>bilgi</translation>
-    </message>
-    <message>
-        <source>Insufficient funds</source>
-        <translation>Yetersiz bakiyeler</translation>
-    </message>
-    <message>
-        <source>Insufficient funds.</source>
-        <translation>Yetersiz bakiyeler.</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Geçersiz miktar</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Geçersiz private key.</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftX seçenekleri:</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation> mints güncellendi</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>Doğrulanmamış işlemler kaldırıldı
-</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; olabilir:</translation>
-    </message>
-    <message>
-        <source>Line: %d</source>
-        <translation>Sıra: %d</translation>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation>Adresler Yükleniyor...</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Cüzdan Yükleniyor...</translation>
-    </message>
-    <message>
-        <source>Masternode options:</source>
-        <translation>Masternode seçenekleri:</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>Yeniden taranıyor...</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>İmzalama başarısız oldu.</translation>
-    </message>
-    <message>
-        <source>Staking options:</source>
-        <translation>Staking seçenekleri:</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>Bu yardım mesajı</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Bu masternod değil</translation>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation>İşlem miktarı çok düşük</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>İşlem geçersiz</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>Bloklar doğrulanıyor...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Cüzdan doğrulanıyor..</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Cüzdan kilitli.</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Cüzdan seçenekleri:</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>uyarı</translation>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>Cüzdandaki tüm işlemler aranıyor</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Zerocoin seçenekleri:</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>Başlangıçta</translation>
-    </message>
-    </context>
 </TS>

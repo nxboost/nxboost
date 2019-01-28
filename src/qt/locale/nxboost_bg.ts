@@ -1754,6 +1754,1481 @@ Please be patient after clicking import.</source>
     </message>
 </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = пази мета данните от преводи, например собственик на акаунта и ифнормация за изисквани плащания, 2 = изхръвли мета данните от преводи)</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>Позволи JSON-RPC свръзки от зададения източник. Валидно е за &lt;ip&gt; с единичен IP (напр. 1.2.3.4), мрежа/netmask (напр. 1.2.3.4/255.255.255.0) или мрежа/CIDR (напр. 1.2.3.4/24). Тази опция може да се зададе множество пъти.</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>Закачи се към дадения адрес и винаги слушай по него. Използвайте [host]:port нотация за IPv6.</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Прикачи се към зададения адрес на пиъри вв белия списък, като се свържеш с него. Използвайте [host]:port notation for IPv6</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Прикачи се към зададения адрес за слушане на JSON-RPC връзки. Използвайте [host]:port notation for IPv6. Тази опция може да се зададе множество пъти (по подразбиране: прикачва се към всички итнерфейси)</translation>
+    </message>
+    <message>
+        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
+        <translation>Изчисления чекпойнт на акумулатора не е същия като записания в блок индекса.</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
+        <translation>Не може да заключи папката с данни %s. NXBoost Портфейла вероятно вече е стартиран.</translation>
+    </message>
+    <message>
+        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
+        <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>
+    </message>
+    <message>
+        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
+        <translation>Автоматично приравнявай неограничените преводи до &lt;n&gt;*1000 байте в минута (default:%u)</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>Създавай новите файлове с разрешителни нива по подразбиране, вместо 077 (само ефективно при изключена функционалност на портфейла)</translation>
+    </message>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Изтрий всички преводи от портфейла и възстанови само тези части от блокчейна - сканира при стартиране.</translation>
+    </message>
+    <message>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Изтрийте всички разходи за нулево злато и монетните дворове, които са записани в блока за блокиране и ги възстановете (0-1, по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за NXB входове (0-1, по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for zNXB inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за zNXB входове (0-1, по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Включете функцията за spork администрация с подходящия личен ключ.</translation>
+    </message>
+    <message>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation>Влезете в тестови режим на регресия, използвайки специален блокчейн в който блоковете се калкулират мигновено.</translation>
+    </message>
+    <message>
+        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>Грешка: Провал в търсенето на входящи свръзки (listen returned error %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Грешка: Превода е по-голяма от позволения размер за транзакции!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Грешка: Неподържан аргумент -socks. Вече не е възможно да се настройва версията на SOCKS. Подържаме само SOCKS5 проксита.</translation>
+    </message>
+    <message>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>Командата влиза в сила само ако се получи специално предупреждение или се засече много голям форк (%s в cmd се замества със съобщение)</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>Командата влиза в сила когато превод по портфейла се промени (%s в cmd се замества от идентификатора на транзакцията TxID)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Такси (в NXB/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Такси (в NXB/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
+    </message>
+    <message>
+        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
+        <translation>Изпразни паметта за дейности по базата данни в лог файл на диска на всеки &lt;n&gt; мегабайта (default: %u)</translation>
+    </message>
+    <message>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation>Намерени са непотвърдени деноминации, ще изчакаме докато се потвърдят преди да продължим.</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>Ако paytxfee не е зададен, включи достатъчно такси, така че превода да започне с потвърждение на всеки N блока (default: %u)</translation>
+    </message>
+    <message>
+        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
+        <translation>В този режим -genproclimit контролира колко блока се генерират на момента.</translation>
+    </message>
+    <message>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>Недостатъчни или недостатъчно-потвърдени средства. Може да се наложи да изчакате няколко минути преди да опитате отново.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>Невалидна сума за -maxtxfee=&lt;amount&gt;:'%s' (трябва да е поне таксата от %s за да предотвратим заклещени преводи).</translation>
+    </message>
+    <message>
+        <source>Keep the specified amount available for spending at all times (default: 0)</source>
+        <translation>Пази зададената сума като налична за харчене по всяко време (defajlt: 0)</translation>
+    </message>
+    <message>
+        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
+        <translation>Прихващай приоритета на преводите и таксата за килобайт когато копаете блокове (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>Пази пълен индекс на всички преводи използвани от getrawtransaction rpc call (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>Максимум големина на данните в транзакциите, които препращаме и минираме (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
+        <translation>Максимални общи такси да се използват при единичен портфейл превод. Твърде малко може да прекрати големите преводи (default: %s)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>Времетраене в секунди, за което да предотвратява пиъри със съмнително поведение от повторно свръзване (default: %u)</translation>
+    </message>
+    <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>Обфускацията използва точни деноминации за да изпраща средства. Може да трябва просто да анонимизирате още монети.</translation>
+    </message>
+    <message>
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>Изходирай дебъг информация (default: %u, задавайки &lt;category&gt; е по желание)</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
+        <translation>Ако адресите са малко - запитване за адрес на пиър, чрез DNS търсене (default: 1 освен -connect)</translation>
+    </message>
+    <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>Използвай случайни имена и пароли за всяка прокси свръзка. Това позволява намирането на Tor потоци (default: %u)</translation>
+    </message>
+    <message>
+        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
+        <translation>Позволява висок приоритет за препращане на безплатни или ниско-тарифни преводи (default: %u)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
+        <translation>Покажи дебъг информацията в конзолата вместо debug.log файл (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation>Задай максимален размер на високо-приоритетни/ниско-б'джетни преводи в байтове (default: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
+        <translation>Задай броя на нишки за проверка на скриптове (%u до %d, 0 = автоматичен &lt;0 = освати толкова ядра свободни, default: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
+        <translation>Задай броя нишки за генериране на монети ако е включено (-1 = всички ядра, default: %d)</translation>
+    </message>
+    <message>
+        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
+        <translation>Покажи N потвърждения за успешно заключени преводи (0-9999, default: %u)</translation>
+    </message>
+    <message>
+        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
+        <translation>Поддържай филтрирането на блокове и преводи с bloom филтри (default: %u)</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>Този продукт включва софтуер разработен от OpenSSL Project &lt;https://www.openssl.org/&gt; и крипто софтуер написан от Ерик Юнг и UPnP софтуер от Томас Бернард.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
+        <translation>Не може да се прикачи към %s на този компютър. NXBoost Портфейла вероятно вече е стартиран.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 NXB.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 NXB.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Използвайте отделен SOCKS5 прокси за да достигнете пиърите през Tor скрити услуги (по подразбиране: %s)</translation>
+    </message>
+    <message>
+        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>Внимание: -maxtxfee е зададена твърде висока! Толкова големи такси може да се платят на единичен превод.</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>Внимание: -paytxfee е зададена твърде голяма! Това е преводната такса, която ще платите ако изпратите този превод.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
+        <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, NXBoost Портфейла няма да работи правилно.</translation>
+    </message>
+    <message>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>Внимание: Изглежда че мрежата не е единна! Някои миньори изпитват затруднения.</translation>
+    </message>
+    <message>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>Внимание: Изглежда че имаме неразбирателство с някои пиъри! Може да се налага да обновите софтуера си или другите възли трябва да се ъпгрейднат.</translation>
+    </message>
+    <message>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation>Внимание: грешка при четене на wallet.dat! Всички ключове изглеждат добре, но преводните данни или адресната книга липсват или са некоректни.</translation>
+    </message>
+    <message>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation>Внимание: увреден wallet.dat файл, данните са спасени! Оригиналния wallet.dat е запазен като wallet.[timestamp].bak в %s; ако наличността или преводите Ви изглеждат погрешни, трябва да възтановите портфейла от бекъп.</translation>
+    </message>
+    <message>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>Пиърите от белия списък свързващи се от зададената netmask-а или IP адрес. Може да се зададе множество пъти.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>Пиърите от Белия списък не може да са DoS забранени и техните преводи винаги ще бъдат предавани, дори и да са вече в мемпул басейна. Полезно за портал.</translation>
+    </message>
+    <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>Трябва да зададете masternodeprivkey в конфигурационния файл. Консултирайте се с документацията за повече помощ.</translation>
+    </message>
+    <message>
+        <source>(49108 could be used only on mainnet)</source>
+        <translation>(49108 може да се ползва само в mainnet)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(по подразбиране: %s)</translation>
+    </message>
+    <message>
+        <source>(default: 1)</source>
+        <translation>(по подразбиране: 1)</translation>
+    </message>
+    <message>
+        <source>(must be 49108 for mainnet)</source>
+        <translation>(трябва да е 49108 за mainnet)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation>Приемане на JSON-RPC команди и командно поле</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Приемай външни връзки (по подразбиране: 1 ако няма -proxy или -connect)</translation>
+    </message>
+    <message>
+        <source>Accept public REST requests (default: %u)</source>
+        <translation>Приемай външни REST запитвания (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>Добави възел за свръзка и опитай да държиш връзката отворена</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>Позволявай DNS запитвания за -addnote, -seednode и -connect</translation>
+    </message>
+    <message>
+        <source>Already have that input.</source>
+        <translation>Този въвод вече съществува.</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>Винаги извършвай запитване за пиъри посредствим DNS търсене (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Опит за възтановяване на лични ключове от повреден wallet.dat файл.</translation>
+    </message>
+    <message>
+        <source>Automatically create Tor hidden service (default: %d)</source>
+        <translation>Автоматично създавай скрит Tor доставчик (по подразбиране: %d)</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation>Блокирай съзидателни опции:</translation>
+    </message>
+    <message>
+        <source>Calculating missing accumulators...</source>
+        <translation>Изчислява липсващите акумулатори...</translation>
+    </message>
+    <message>
+        <source>Can't denominate: no compatible inputs left.</source>
+        <translation>Не може да деноминира: не са останали съвместими входящи.</translation>
+    </message>
+    <message>
+        <source>Can't find random Masternode.</source>
+        <translation>Не откривам случан Главен възел.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>Не може да се миксира по време на синхронизация.</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>Променяне софтуерната версия на портфейла към по-ниска е невъзможно.</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Не можем да разрешим -blind адрес: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Не можем да разрешим -externalip адрес: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Не можем да разрешим -whitebind адрес: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation>Не можем да запишем адреса по подразбиране</translation>
+    </message>
+    <message>
+        <source>Collateral not valid.</source>
+        <translation>Гаранцията е невалидна.</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation>Свързвай се само към зададените възли(възел).</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Свързвай се чрез SOCKS5 прокси</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>Свържи се към възел за получаване на пиър адреси и се изключи</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>Опции за свръзка:</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
+        <translation>Всички права запазени (c) 2009-%i Bitcoin Core разработчици</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Всички права запазени (c) 2014-%i Dash Core разработчици</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
+        <translation>Всички права запазени (c) 2015-%i NXBoost Core разработчици</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected</source>
+        <translation>Засечена е повредена блок база данни</translation>
+    </message>
+    <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>Не можахме да прочетем masternode.conf файла</translation>
+    </message>
+    <message>
+        <source>Debugging/Testing options:</source>
+        <translation>Дебъг/Тест опции:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>Изтрий блокчейн папките и ресинхронизирай от начало.</translation>
+    </message>
+    <message>
+        <source>Disable OS notifications for incoming transactions (default: %u)</source>
+        <translation>Спри съобщенията от ОС за входящи преводи (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Disable safemode, override a real safe mode event (default: %u)</source>
+        <translation>Изключи безопасен режим, отмени истинските събития от безопасния режим (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation>Открий собствения IP адрес (по подразбиране: 1 когато слуша и няма -externalip)</translation>
+    </message>
+    <message>
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation>Не зареждай портфейла и изключи RPC обажданията му</translation>
+    </message>
+    <message>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation>Желаете ли да пресъздадете базата данни на блоковете сега?</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>Край на зареждането</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <translation>Активирай автоматично сечене на Zerocoin (0-1, По подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Вкл. публикуването на хаш транзакцията (закл. чрез SwiftX) в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Вкл. публикуването на сурова транзакция (закл. чрез SwiftX) в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
+        <translation>Вкл. клиента да действа като влаген възел (0-1, по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Entries are full.</source>
+        <translation>Запълнени полета.</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Грешка при свързването с Главен възел.</translation>
+    </message>
+    <message>
+        <source>Error initializing block database</source>
+        <translation>Грешка при стартирането на блок базата данни</translation>
+    </message>
+    <message>
+        <source>Error initializing wallet database environment %s!</source>
+        <translation>Грешка при стартиране на средата за бази данни %s!</translation>
+    </message>
+    <message>
+        <source>Error loading block database</source>
+        <translation>Грешка при зареждането на блок базата данни</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation>Грешка в зареждането на wallet.dat</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation>Грешка в зареждането на wallet.dat: Портфейла е повреден</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
+        <translation>Грешка в зареждането на wallet.dat: Портфейла изисква по-нова версия</translation>
+    </message>
+    <message>
+        <source>Error opening block database</source>
+        <translation>Грешка в отварянето на блок базата данни</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Грешка в четенето от базата данни. Изключвам се!</translation>
+    </message>
+    <message>
+        <source>Error recovering public key.</source>
+        <translation>Грешка във възтановяването на публичния ключ.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Грешка</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>Грешка: Фатална вътрешна грешка, вижте debug.log за повече подробности.</translation>
+    </message>
+    <message>
+        <source>Error: Can't select current denominated inputs</source>
+        <translation>Грешка: Така зададените деноминации не могат да бъдат избрани</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation>Грешка: Намаляващо Дисково пространство!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>Грешка: Намерихме неподдържан аргумент -tor, използвайте -onion.</translation>
+    </message>
+    <message>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation>Грешка: Портфейла е заключен, неуспешен превод!</translation>
+    </message>
+    <message>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation>Грешка: Вече имате изчакващи входящи в басейна за Обфускация</translation>
+    </message>
+    <message>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>Неуспешно изчисление на акумулаторния чекпоинт</translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>Неуспешно очакване на който и да е порт. За тази цел, зползвайте -listen=0.</translation>
+    </message>
+    <message>
+        <source>Failed to read block</source>
+        <translation>Неуспешно четене на блок</translation>
+    </message>
+    <message>
+        <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
+        <translation>Такса (в NXB/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
+    </message>
+    <message>
+        <source>Finalizing transaction.</source>
+        <translation>Приключване на превода.</translation>
+    </message>
+    <message>
+        <source>Force safe mode (default: %u)</source>
+        <translation>Предизвикай безопасен режим (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ( waiting %s )</source>
+        <translation>Имаме достатъчно потребители, подписване ( изчаква %s )</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ...</source>
+        <translation>Имаме достатучно потребители, подписване ...</translation>
+    </message>
+    <message>
+        <source>Generate coins (default: %u)</source>
+        <translation>Генерирай монети (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>Колко блока да провери при стартиране (по подразбиране: %u, 0 = all)</translation>
+    </message>
+    <message>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation>Ако &lt;category&gt; не е зададен, изкарай цялата дебъг информация.</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>Импортиране...</translation>
+    </message>
+    <message>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation>Импортира блокове от външен blk000??.dat файл.</translation>
+    </message>
+    <message>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Включи и IP адресите при дебъг (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Incompatible mode.</source>
+        <translation>Несъвместим режим.</translation>
+    </message>
+    <message>
+        <source>Incompatible version.</source>
+        <translation>Несъвместима версия.</translation>
+    </message>
+    <message>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>Няма намерен генезис блок или намерения е несъвместим. Грешен datadlr за мрежата?</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Информация</translation>
+    </message>
+    <message>
+        <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
+        <translation>Стартирането на проверка на здравословното състояние на портфейла се провали. Изключваме Портфейла.</translation>
+    </message>
+    <message>
+        <source>Input is not valid.</source>
+        <translation>Зададените стойности са невалидни.</translation>
+    </message>
+    <message>
+        <source>Insufficient funds</source>
+        <translation>Недостатъчни средства</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>Недостатъчни средства.</translation>
+    </message>
+    <message>
+        <source>Invalid -onion address or hostname: '%s'</source>
+        <translation>Невалиден -onion адрес или име: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Невалидна стойност за -maxtxfee=&lt;amount&gt;:'%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Невалидна стойност за -minrelaytxfee=&lt;amount&gt;:'%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Невалидна стойност за -mintxfee=&lt;amount&gt;:'%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>Невалидна стойност за -paytxfe=&lt;amount&gt;:'%s' (трябва да бъде поне %s)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Невалидна стойност за -paytxfee=&lt;amount&gt;:'%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Невалидна стойност за -reservebalance=&lt;amount&gt;</translation>
+    </message>
+    <message>
+        <source>Invalid amount</source>
+        <translation>Невалидна стойност</translation>
+    </message>
+    <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Невалиден masternodeprivkey. Моля консултирайте се с документацията.</translation>
+    </message>
+    <message>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>Невалидна netmask зададена в -whitelist: :'%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Невалиден порт, засечен в masternode.conf</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Грешен личен ключ.</translation>
+    </message>
+    <message>
+        <source>Invalid script detected.</source>
+        <translation>Невалиден скрипт, засечен.</translation>
+    </message>
+    <message>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the NXB and zNXB money supply statistics</source>
+        <translation>Индексирай наново NXB и zNXB данните по наличности</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Редексиране на база данни за нуроиди ...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>Повторното индексиране на зероцена се провали</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>Избраната стойност на монетите е по-малка от целта за плащане</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX опции:</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>Това е тестов софтуер - използвай на своя глава - да не се използва за стейкване или търговско приложение.</translation>
+    </message>
+    <message>
+        <source> mints deleted
+</source>
+        <translation>изтрити емисии
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation>обновени емисии,</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>премахнати непотвърдени транзакции
+</translation>
+    </message>
+    <message>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи NXBoost специфичната функционалност (Главни възли, Zerocoin, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Включи SwiftTX, показвай потвърждения за заключени преводи (bool, default: %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Превода бе отказан! Това може да се случи ако част от монетите в портфейла вече са биле изпратени, като например ако сте използвали копие на wallet.dat файла и монетите са биле похарчени там, но не са  биле маркирани като изпратени тук.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Грешка: Този превод изисква преводна такса от поне %s поради неговите размер, сложност или употребата на наскоро получени средства.</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>Грешка: Неподдържан аргумент -checklevel. Checklevel трябва да е поне 4.</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Командата влиза в сила, когато най-добрия блок се промени и неговия размер е над (%s в cmd се промени с хаш на блока, %d с размер на блока)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Не успяхме да намерим монетата сред държаните монети с по-малък номер от maxNumber на Плащанията.</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>В редки случаи, плащане от 7 монети надхвърля максимално разрешения размер на транзакция. Моля опитайте да похарчете 6 или по-малко монети за това плащане.</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Предпочитани деноминации за автоматично изсечените Zerocoin (1/5/10/50/100/500/1000/5000), 0 за каквито и да е. (По подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zNXB. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко резервно копие на портфейла. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX изисква входящи преводи с поне 6 потвърждения. Може да се наложи да изчакате още преди да опитате отново.</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; може да е:</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Опитай да наложиш възтановяване на увереден блокчейн</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>МонетноПлащане: Акумулаторния свидетел не потвърждава</translation>
+    </message>
+    <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Покажи изчисленията на променливия съхранител в debug.log файла.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Покажи многословните съобщения от съхранение на монети в debug.log файла.</translation>
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Вкл. публикуването на хаш блока в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Вкл. публикуването на хаш транзакцията в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Вкл. публикуването на сурови блокове в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Вкл. публикуването на сурови транзакции в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>Включи функционалността по сърханение (0-1, по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Грешка: Фатална вътрешна грешка, вижте debug.log за повече подробности.</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Грешка: Няма валиден utxo!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>Неуспешно емитиране</translation>
+    </message>
+    <message>
+        <source>Failed to deserialize</source>
+        <translation>Неуспешно изтриване на серийния номер</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Няма намерени Zerocoin монети в wallet.dat файла</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Неуспешен избор на Zerocoin</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Изтриването на zerocoinDB не бе успешно</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Неуспешно записване на серийния номер на монетата в портфейла</translation>
+    </message>
+    <message>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Пази най-много &lt;n&gt; несвързани превода в паметта (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Last Obfuscation was too recent.</source>
+        <translation>Последната обфускация бе твърде скоро.</translation>
+    </message>
+    <message>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation>Последното действие по Обфускация е било твърде скоро.</translation>
+    </message>
+    <message>
+        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
+        <translation>Ограничи размера на подписния кеш до &lt;n&gt; задания (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Line: %d</source>
+        <translation>Ред: %d</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Следи за JSON-RPC връзки на &lt;port&gt; (по подразбиране: %u или testnet: %u)</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Следи за свръзки на &lt;port&gt; (по подразбиране: %u или testnet: %u)</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Зареждане на адреси...</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>Зареждане блок индекса...</translation>
+    </message>
+    <message>
+        <source>Loading budget cache...</source>
+        <translation>Зареждане на бюджетния кеш...</translation>
+    </message>
+    <message>
+        <source>Loading masternode cache...</source>
+        <translation>Зареждане на кеша от главни възли...</translation>
+    </message>
+    <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>Зареждане кеша на плащания от главни възли...</translation>
+    </message>
+    <message>
+        <source>Loading sporks...</source>
+        <translation>Зареждане на вилицо-лъжици...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Зареждане на портфейла... (%3.2f %%)</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Зареждане на портфейла...</translation>
+    </message>
+    <message>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>Местоположение на оторизационната бисквитка (по подразбиране: data dir)</translation>
+    </message>
+    <message>
+        <source>Lock is already in place.</source>
+        <translation>Вече е заключен.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Заключи главен възел от конфигурационния файл (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Lookup(): Невалиден -proxy адрес или име: '%s'</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Пази най-много &lt;n&gt; връзки към пиъри (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Masternode options:</source>
+        <translation>Опции за Главни възли</translation>
+    </message>
+    <message>
+        <source>Masternode queue is full.</source>
+        <translation>Опашката за Главни възли е пълна.</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>Главен Възел:</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Максимум буфер за Получаване, за връзка, &lt;n&gt;*1000 байта (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Максимум буфер за Изпращане, за връзка, &lt;n&gt;*1000 байта (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Mint did not make it into blockchain</source>
+        <translation>Емисията не успя да се включи в блокчейна</translation>
+    </message>
+    <message>
+        <source>Missing input transaction information.</source>
+        <translation>Липсваща вх. информация за превода.</translation>
+    </message>
+    <message>
+        <source>Mixing in progress...</source>
+        <translation>В момента тече смесване...</translation>
+    </message>
+    <message>
+        <source>Need address because change is not exact</source>
+        <translation>Необходим е адрес, понеже рестото не е кръгла сума</translation>
+    </message>
+    <message>
+        <source>Need to specify a port with -whitebind: '%s'</source>
+        <translation>Нужно е да се зададе порт с -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>No Masternodes detected.</source>
+        <translation>Не се засичат Мастърноудове.</translation>
+    </message>
+    <message>
+        <source>No compatible Masternode found.</source>
+        <translation>Не е намерен съвместим Мастърноуд.</translation>
+    </message>
+    <message>
+        <source>No funds detected in need of denominating.</source>
+        <translation>Не засякохме средства, които да имат нужда от деноминация.</translation>
+    </message>
+    <message>
+        <source>No matching denominations found for mixing.</source>
+        <translation>Не намерихме съвпадащи деноминации за смесване.</translation>
+    </message>
+    <message>
+        <source>Node relay options:</source>
+        <translation>Опции на възел релето:</translation>
+    </message>
+    <message>
+        <source>Non-standard public key detected.</source>
+        <translation>Засякохме нестандартен публичен ключ.</translation>
+    </message>
+    <message>
+        <source>Not compatible with existing transactions.</source>
+        <translation>Несъвместимост със съществуващите преводи.</translation>
+    </message>
+    <message>
+        <source>Not enough file descriptors available.</source>
+        <translation>Недостатъчно налични файл описания.</translation>
+    </message>
+    <message>
+        <source>Not in the Masternode list.</source>
+        <translation>Не е в списъка с Главни възли.</translation>
+    </message>
+    <message>
+        <source>Number of automatic wallet backups (default: 10)</source>
+        <translation>Брой автоматични портфейлни копия (по подразбиране: 10)</translation>
+    </message>
+    <message>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Брой запазени резервни копия за местоположението (по подразбиране: %d)</translation>
+    </message>
+    <message>
+        <source>Obfuscation is idle.</source>
+        <translation>Обфускацията е в режим на изчакване.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Обфускацията приключи.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Обфускацията не успя да приключи.</translation>
+    </message>
+    <message>
+        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
+        <translation>Приемай само блокчейн със съвпадащи чекпоинтове (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
+        <translation>Свързвай се само с възли от мрежа &lt;net&gt;(ipv4, ipv6 или onion)</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Опции:</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation>Парола за JSON-RPC връзките</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Невалиден -proxy адрес или име: '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>Подготвя се за ре-синх...</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>Добави дата и час в дебъг логовете (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Print version and exit</source>
+        <translation>Принтирай и излез</translation>
+    </message>
+    <message>
+        <source>RPC server options:</source>
+        <translation>Опции за RPC сървъра:</translation>
+    </message>
+    <message>
+        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
+        <translation>На случаен принцип изпускай 1 от всяко &lt;n&gt; мрежови съобщения</translation>
+    </message>
+    <message>
+        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
+        <translation>На случаен принцип отбележи 1 от всяко &lt;n&gt; мрежови съобщения</translation>
+    </message>
+    <message>
+        <source>Rebuild block chain index from current blk000??.dat files</source>
+        <translation>Изгради на ново блокчейн индекса от сегашните blk000??.dat файлове</translation>
+    </message>
+    <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Получавай и показвай P2P мрежови съобщения (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>Индексирай на ново акмулаторната база данни</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Препращай и копай преводите по пренос на данни  (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Препращай не-P2SH мултиподпис (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>Сканирай блокчейна за липсващи портфейлни транзакции</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>Сканиране наново...</translation>
+    </message>
+    <message>
+        <source>ResetMintZerocoin finished: </source>
+        <translation>ResetMintZeroinc завърши:</translation>
+    </message>
+    <message>
+        <source>ResetSpentZerocoin finished: </source>
+        <translation>ResetSpentZerocoin завърши:</translation>
+    </message>
+    <message>
+        <source>Run a thread to flush wallet periodically (default: %u)</source>
+        <translation>Периодично изчиствай портфейла (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>Върши го на заден план като невидим процес и приемай командите</translation>
+    </message>
+    <message>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>Ако е възможно, изпращай транзакциите като нулево-таксуван превод (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>Недовърешна сесия!</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>Времето на сесията изтече.</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
+        <translation>Задай размера на кеша за базите данни в мегабайти (%d до %d, по подразбиране: %d)</translation>
+    </message>
+    <message>
+        <source>Set external address:port to get to this masternode (example: %s)</source>
+        <translation>Задай външен адрес:порт за да достигнете този главен възел (например: %s)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>Задай размер на басейна за ключове да бъде &lt;n&gt;(по подразбиране: %u) </translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>Максимален разбимер на блока в байтове (default: %d)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Минимален размер на блока в байтове (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>Максимална дълбочина на reorg (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set the masternode private key</source>
+        <translation>Задай тайния ключ на Главния възел</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Задай броя нишки да обслужват RPC запитвания (по подразбиране: %d)</translation>
+    </message>
+    <message>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>Задай DB_PRIVATE флаг в средата на портфейловата база данни (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Show all debugging options (usage: --help -help-debug)</source>
+        <translation>Покажи всички дебъг възможности (иползвай: -help -help-debug)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>Намали debug.log файла при стартиране на портфейла (по подразбиране: 1 когато няма -debug)</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>Неуспешено подписване.</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>Времето за посписване изтече.</translation>
+    </message>
+    <message>
+        <source>Signing transaction failed</source>
+        <translation>Неуспешено подписване на превода.</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Задай конфигурационен файл (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>Задай максимално време на чакане в милисекунди (минимум: 1, по подразбиране: %d)</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation>Задай възтановяване на данни</translation>
+    </message>
+    <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Задай конфигурационен файл за Главен възел (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Задай pid файл (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>Задай файл на портфейла (в папката с данни)</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>Задай свой собствен публичен адрес</translation>
+    </message>
+    <message>
+        <source>Spend Valid</source>
+        <translation>Валидно Плащане</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>Похарчи непотвърдено ресто когато пращаш преводи (default: %u)</translation>
+    </message>
+    <message>
+        <source>Staking options:</source>
+        <translation>Опции за съхранение:</translation>
+    </message>
+    <message>
+        <source>Stop running after importing blocks from disk (default: %u)</source>
+        <translation>Изключи се след импортирането на блоквоете от диска (default: %u)</translation>
+    </message>
+    <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Следните са изпратени до главния възел: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Изпратени до главния възел, чакаме още ( %u %d ) %s</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Изпратено до главния възел, чака си реда %s</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>Неуспешна синхронизация</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>Успешно синхронизиране</translation>
+    </message>
+    <message>
+        <source>Synchronization pending...</source>
+        <translation>Синхронизацията изчаква...</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>Синхронизиране на бюджетите...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners...</source>
+        <translation>Синхронизиране печелившите Главни възли...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Синхронизиране с Главните възли...</translation>
+    </message>
+    <message>
+        <source>Synchronizing sporks...</source>
+        <translation>Синхронизиране на вилицо-лъжиците...</translation>
+    </message>
+    <message>
+        <source>Syncing zNXB wallet...</source>
+        <translation>Синхронизиране на zNXB портфейла ...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>Монетното плащане е използвано</translation>
+    </message>
+    <message>
+        <source>The new spend coin transaction did not verify</source>
+        <translation>Новото преводно плащане не бе потвърдено</translation>
+    </message>
+    <message>
+        <source>The selected mint coin is an invalid coin</source>
+        <translation>Избраната емисия е невалидна монета</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>Превода не бе потвърден</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation>Това съобщение</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>Това е експериментален софтуер</translation>
+    </message>
+    <message>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation>Това е за регресионен тест и софтуерна разработка.</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>Това не е Главен Възел.</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Праг за разкачване на пиъри с лошо поведение (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>Нужни са твърде много плащания</translation>
+    </message>
+    <message>
+        <source>Tor control port password (default: empty)</source>
+        <translation>Парола за контрол на Tor порт: (по подразбиране: празно)</translation>
+    </message>
+    <message>
+        <source>Tor control port to use if onion listening enabled (default: %s)</source>
+        <translation>Порт за контрол на Tor ако onion е включен (по подразбиране: %s)</translation>
+    </message>
+    <message>
+        <source>Transaction Created</source>
+        <translation>Превода е създаден</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>Емитиране по Превода Стартира</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation>Преводната сума е твърде малка</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must be positive</source>
+        <translation>Преводните суми трябва да са положително число</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>Превода е създаден успешно</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>Преводните таски са твърде високи.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Превода е невалиден.</translation>
+    </message>
+    <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>Твърде голям превод за таксионната политика</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Твърде голям превод</translation>
+    </message>
+    <message>
+        <source>Transmitting final transaction.</source>
+        <translation>Изпращане на последния превод.</translation>
+    </message>
+    <message>
+        <source>Try to spend with a higher security level to include more coins</source>
+        <translation>Опитайте да платите с по-високо ниво на сигурност, за да включите повече монети.</translation>
+    </message>
+    <message>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>Опитвате се да похарчите, вече похарчен сериен номер. Опитайте отново.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
+        <translation>Не можем да прикачим %s към този компютър (прикачването даде грешка %s)</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint</source>
+        <translation>Не можем да намерим превод, който съдържа емисията</translation>
+    </message>
+    <message>
+        <source>Unable to sign spork message, wrong key?</source>
+        <translation>Не можем да подпишем съобщението по тази вилицо-лъжица, грешен ключ?</translation>
+    </message>
+    <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>Не можем да стартираме HTTP сървъра. Вижте дебъг логовете за повече подробности.</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Непозната мрежа е зададена в -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown state: id = %u</source>
+        <translation>Непознато състояние: id = %u</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation>Обновете портфейла до най-новия формат</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Използвай UPnP за да картографираш портовете за слушане (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation>Използвай UPnP за да картографираш портовете за слушане (по подразбиране: 1 когато слуша)</translation>
+    </message>
+    <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>Използвай свободно зададена максимална дълбочина за реорганизация на веригата (по подразбиране: %u)</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>Използвайте тестова мрежа</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation>Потребителско име за JSON-RPC свръзките</translation>
+    </message>
+    <message>
+        <source>Value is below the smallest available denomination (= 1) of zNXB</source>
+        <translation>Стойността е под най-малката налична деноминация (= 1) в zNXB</translation>
+    </message>
+    <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Стойността е по-голяма от позволената от басейна Обфускация.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>Проверява блоковете...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>Проверява портфейла...</translation>
+    </message>
+    <message>
+        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
+        <translation>Версия 1 zNXB изисква ниво на сигурност от 100 за успешно изразходване.</translation>
+    </message>
+    <message>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>Портфейла %s е извън папката с данни %s</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Портфейла е заключен.</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
+        <translation>Портфейла трябва да се пренапише: рестартирайте програмата за завършване на процеса</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Опции на Портфейла:</translation>
+    </message>
+    <message>
+        <source>Wallet window title</source>
+        <translation>Име на прозореца на портфейла</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Внимание</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>Внимание: Тази версия е стара, нужен е ъпгрейд!</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Внимание: Неподдържанния аргумент -benchmark бе игнориран, използвайте -debug=bench.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Внимание: Неподдържанния аргумент -debugnet бе игнориран, използвайте -debug=net.</translation>
+    </message>
+    <message>
+        <source>Will retry...</source>
+        <translation>Ще опита...</translation>
+    </message>
+    <message>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>Нямате достатъчно Zerocoin в портфейла си</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Трябва да построите базата данни наново, използвайки -reindex вместо -txindex</translation>
+    </message>
+    <message>
+        <source>Your entries added successfully.</source>
+        <translation>Въведени успешно.</translation>
+    </message>
+    <message>
+        <source>Your transaction was accepted into the pool!</source>
+        <translation>Превода е приет в басейна!</translation>
+    </message>
+    <message>
+        <source>Zapping all transactions from wallet...</source>
+        <translation>Затриване на всички преводи от портфейла...</translation>
+    </message>
+    <message>
+        <source>ZeroMQ notification options:</source>
+        <translation>Опции за ZeroMQ известяване:</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>Zerocoin опции</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>при стартиране</translation>
+    </message>
+    <message>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation>wallet.dat е повреден, неуспешно спасяване</translation>
+    </message>
+</context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Configure Obfuscation</source>
@@ -3777,10 +5252,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>(Умната такса не е инициализирана все още. Това изисква по няколко блока...)</translation>
     </message>
     <message>
-        <source>SwiftX</source>
-        <translation>SwiftX</translation>
-    </message>
-    <message>
         <source>Confirmation time:</source>
         <translation>Време на потвърждение:</translation>
     </message>
@@ -4869,1481 +6340,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Is Spendable</source>
         <translation>В Налични за харечене</translation>
-    </message>
-</context>
-<context>
-    <name>nxboost-core</name>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = пази мета данните от преводи, например собственик на акаунта и ифнормация за изисквани плащания, 2 = изхръвли мета данните от преводи)</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Позволи JSON-RPC свръзки от зададения източник. Валидно е за &lt;ip&gt; с единичен IP (напр. 1.2.3.4), мрежа/netmask (напр. 1.2.3.4/255.255.255.0) или мрежа/CIDR (напр. 1.2.3.4/24). Тази опция може да се зададе множество пъти.</translation>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Закачи се към дадения адрес и винаги слушай по него. Използвайте [host]:port нотация за IPv6.</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Прикачи се към зададения адрес на пиъри вв белия списък, като се свържеш с него. Използвайте [host]:port notation for IPv6</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Прикачи се към зададения адрес за слушане на JSON-RPC връзки. Използвайте [host]:port notation for IPv6. Тази опция може да се зададе множество пъти (по подразбиране: прикачва се към всички итнерфейси)</translation>
-    </message>
-    <message>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>Изчисления чекпойнт на акумулатора не е същия като записания в блок индекса.</translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
-        <translation>Не може да заключи папката с данни %s. NXBoost Портфейла вероятно вече е стартиран.</translation>
-    </message>
-    <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
-        <translation>Автоматично приравнявай неограничените преводи до &lt;n&gt;*1000 байте в минута (default:%u)</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Създавай новите файлове с разрешителни нива по подразбиране, вместо 077 (само ефективно при изключена функционалност на портфейла)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Изтрий всички преводи от портфейла и възстанови само тези части от блокчейна - сканира при стартиране.</translation>
-    </message>
-    <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Изтрийте всички разходи за нулево злато и монетните дворове, които са записани в блока за блокиране и ги възстановете (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
-    </message>
-    <message>
-        <source>Enable or disable staking functionality for NXB inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за NXB входове (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Enable or disable staking functionality for zNXB inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за zNXB входове (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Включете функцията за spork администрация с подходящия личен ключ.</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Влезете в тестови режим на регресия, използвайки специален блокчейн в който блоковете се калкулират мигновено.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Грешка: Провал в търсенето на входящи свръзки (listen returned error %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
-        <translation>Грешка: Превода е по-голяма от позволения размер за транзакции!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>Грешка: Неподържан аргумент -socks. Вече не е възможно да се настройва версията на SOCKS. Подържаме само SOCKS5 проксита.</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Командата влиза в сила само ако се получи специално предупреждение или се засече много голям форк (%s в cmd се замества със съобщение)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Командата влиза в сила когато превод по портфейла се промени (%s в cmd се замества от идентификатора на транзакцията TxID)</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Командата влиза в сила, когато най-добрия блок се промени (%s в cmd се замества от хаш на блока)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Такси (в NXB/Кб) по-малки от това се считат за нулеви при препращане (default: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Такси (в NXB/Кб) по-малки от това се считат за нулеви при създаване на предовда (default: %s)</translation>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Изпразни паметта за дейности по базата данни в лог файл на диска на всеки &lt;n&gt; мегабайта (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Намерени са непотвърдени деноминации, ще изчакаме докато се потвърдят преди да продължим.</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>Ако paytxfee не е зададен, включи достатъчно такси, така че превода да започне с потвърждение на всеки N блока (default: %u)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>В този режим -genproclimit контролира колко блока се генерират на момента.</translation>
-    </message>
-    <message>
-        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
-        <translation>Недостатъчни или недостатъчно-потвърдени средства. Може да се наложи да изчакате няколко минути преди да опитате отново.</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Невалидна сума за -maxtxfee=&lt;amount&gt;:'%s' (трябва да е поне таксата от %s за да предотвратим заклещени преводи).</translation>
-    </message>
-    <message>
-        <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation>Пази зададената сума като налична за харчене по всяко време (defajlt: 0)</translation>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
-        <translation>Прихващай приоритета на преводите и таксата за килобайт когато копаете блокове (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Пази пълен индекс на всички преводи използвани от getrawtransaction rpc call (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Максимум големина на данните в транзакциите, които препращаме и минираме (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>Максимални общи такси да се използват при единичен портфейл превод. Твърде малко може да прекрати големите преводи (default: %s)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Времетраене в секунди, за което да предотвратява пиъри със съмнително поведение от повторно свръзване (default: %u)</translation>
-    </message>
-    <message>
-        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Обфускацията използва точни деноминации за да изпраща средства. Може да трябва просто да анонимизирате още монети.</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Изходирай дебъг информация (default: %u, задавайки &lt;category&gt; е по желание)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Ако адресите са малко - запитване за адрес на пиър, чрез DNS търсене (default: 1 освен -connect)</translation>
-    </message>
-    <message>
-        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Използвай случайни имена и пароли за всяка прокси свръзка. Това позволява намирането на Tor потоци (default: %u)</translation>
-    </message>
-    <message>
-        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
-        <translation>Позволява висок приоритет за препращане на безплатни или ниско-тарифни преводи (default: %u)</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
-        <translation>Покажи дебъг информацията в конзолата вместо debug.log файл (default: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Задай максимален размер на високо-приоритетни/ниско-б'джетни преводи в байтове (default: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>Задай броя на нишки за проверка на скриптове (%u до %d, 0 = автоматичен &lt;0 = освати толкова ядра свободни, default: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Задай броя нишки за генериране на монети ако е включено (-1 = всички ядра, default: %d)</translation>
-    </message>
-    <message>
-        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>Покажи N потвърждения за успешно заключени преводи (0-9999, default: %u)</translation>
-    </message>
-    <message>
-        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>Поддържай филтрирането на блокове и преводи с bloom филтри (default: %u)</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>Този продукт включва софтуер разработен от OpenSSL Project &lt;https://www.openssl.org/&gt; и крипто софтуер написан от Ерик Юнг и UPnP софтуер от Томас Бернард.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
-        <translation>Не може да се прикачи към %s на този компютър. NXBoost Портфейла вероятно вече е стартиран.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 NXB.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 NXB.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Използвайте отделен SOCKS5 прокси за да достигнете пиърите през Tor скрити услуги (по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Внимание: -maxtxfee е зададена твърде висока! Толкова големи такси може да се платят на единичен превод.</translation>
-    </message>
-    <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Внимание: -paytxfee е зададена твърде голяма! Това е преводната такса, която ще платите ако изпратите този превод.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
-        <translation>Внимание: Проверете дали датата и часа на компютъра са верни! Ако Вашият часовник греши, NXBoost Портфейла няма да работи правилно.</translation>
-    </message>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Внимание: Изглежда че мрежата не е единна! Някои миньори изпитват затруднения.</translation>
-    </message>
-    <message>
-        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Внимание: Изглежда че имаме неразбирателство с някои пиъри! Може да се налага да обновите софтуера си или другите възли трябва да се ъпгрейднат.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Внимание: грешка при четене на wallet.dat! Всички ключове изглеждат добре, но преводните данни или адресната книга липсват или са некоректни.</translation>
-    </message>
-    <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Внимание: увреден wallet.dat файл, данните са спасени! Оригиналния wallet.dat е запазен като wallet.[timestamp].bak в %s; ако наличността или преводите Ви изглеждат погрешни, трябва да възтановите портфейла от бекъп.</translation>
-    </message>
-    <message>
-        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>Пиърите от белия списък свързващи се от зададената netmask-а или IP адрес. Може да се зададе множество пъти.</translation>
-    </message>
-    <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Пиърите от Белия списък не може да са DoS забранени и техните преводи винаги ще бъдат предавани, дори и да са вече в мемпул басейна. Полезно за портал.</translation>
-    </message>
-    <message>
-        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Трябва да зададете masternodeprivkey в конфигурационния файл. Консултирайте се с документацията за повече помощ.</translation>
-    </message>
-    <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 може да се ползва само в mainnet)</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation>(по подразбиране: 1)</translation>
-    </message>
-    <message>
-        <source>(must be 49108 for mainnet)</source>
-        <translation>(трябва да е 49108 за mainnet)</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Приемане на JSON-RPC команди и командно поле</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Приемай външни връзки (по подразбиране: 1 ако няма -proxy или -connect)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Приемай външни REST запитвания (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Добави възел за свръзка и опитай да държиш връзката отворена</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Позволявай DNS запитвания за -addnote, -seednode и -connect</translation>
-    </message>
-    <message>
-        <source>Already have that input.</source>
-        <translation>Този въвод вече съществува.</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Винаги извършвай запитване за пиъри посредствим DNS търсене (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Опит за възтановяване на лични ключове от повреден wallet.dat файл.</translation>
-    </message>
-    <message>
-        <source>Automatically create Tor hidden service (default: %d)</source>
-        <translation>Автоматично създавай скрит Tor доставчик (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>Блокирай съзидателни опции:</translation>
-    </message>
-    <message>
-        <source>Calculating missing accumulators...</source>
-        <translation>Изчислява липсващите акумулатори...</translation>
-    </message>
-    <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Не може да деноминира: не са останали съвместими входящи.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Не откривам случан Главен възел.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Не може да се миксира по време на синхронизация.</translation>
-    </message>
-    <message>
-        <source>Cannot downgrade wallet</source>
-        <translation>Променяне софтуерната версия на портфейла към по-ниска е невъзможно.</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Не можем да разрешим -blind адрес: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Не можем да разрешим -externalip адрес: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Не можем да разрешим -whitebind адрес: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>Не можем да запишем адреса по подразбиране</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Гаранцията е невалидна.</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>Свързвай се само към зададените възли(възел).</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Свързвай се чрез SOCKS5 прокси</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Свържи се към възел за получаване на пиър адреси и се изключи</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Опции за свръзка:</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Всички права запазени (c) 2009-%i Bitcoin Core разработчици</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Всички права запазени (c) 2014-%i Dash Core разработчици</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Всички права запазени (c) 2015-%i NXBoost Core разработчици</translation>
-    </message>
-    <message>
-        <source>Corrupted block database detected</source>
-        <translation>Засечена е повредена блок база данни</translation>
-    </message>
-    <message>
-        <source>Could not parse masternode.conf</source>
-        <translation>Не можахме да прочетем masternode.conf файла</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Дебъг/Тест опции:</translation>
-    </message>
-    <message>
-        <source>Delete blockchain folders and resync from scratch</source>
-        <translation>Изтрий блокчейн папките и ресинхронизирай от начало.</translation>
-    </message>
-    <message>
-        <source>Disable OS notifications for incoming transactions (default: %u)</source>
-        <translation>Спри съобщенията от ОС за входящи преводи (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>Изключи безопасен режим, отмени истинските събития от безопасния режим (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Открий собствения IP адрес (по подразбиране: 1 когато слуша и няма -externalip)</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Не зареждай портфейла и изключи RPC обажданията му</translation>
-    </message>
-    <message>
-        <source>Do you want to rebuild the block database now?</source>
-        <translation>Желаете ли да пресъздадете базата данни на блоковете сега?</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation>Край на зареждането</translation>
-    </message>
-    <message>
-        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>Активирай автоматично сечене на Zerocoin (0-1, По подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Вкл. публикуването на хаш транзакцията (закл. чрез SwiftX) в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
-        <translation>Вкл. публикуването на сурова транзакция (закл. чрез SwiftX) в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Вкл. клиента да действа като влаген възел (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>Запълнени полета.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Грешка при свързването с Главен възел.</translation>
-    </message>
-    <message>
-        <source>Error initializing block database</source>
-        <translation>Грешка при стартирането на блок базата данни</translation>
-    </message>
-    <message>
-        <source>Error initializing wallet database environment %s!</source>
-        <translation>Грешка при стартиране на средата за бази данни %s!</translation>
-    </message>
-    <message>
-        <source>Error loading block database</source>
-        <translation>Грешка при зареждането на блок базата данни</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat</source>
-        <translation>Грешка в зареждането на wallet.dat</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Грешка в зареждането на wallet.dat: Портфейла е повреден</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
-        <translation>Грешка в зареждането на wallet.dat: Портфейла изисква по-нова версия</translation>
-    </message>
-    <message>
-        <source>Error opening block database</source>
-        <translation>Грешка в отварянето на блок базата данни</translation>
-    </message>
-    <message>
-        <source>Error reading from database, shutting down.</source>
-        <translation>Грешка в четенето от базата данни. Изключвам се!</translation>
-    </message>
-    <message>
-        <source>Error recovering public key.</source>
-        <translation>Грешка във възтановяването на публичния ключ.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Грешка</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Грешка: Фатална вътрешна грешка, вижте debug.log за повече подробности.</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Грешка: Така зададените деноминации не могат да бъдат избрани</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation>Грешка: Намаляващо Дисково пространство!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Грешка: Намерихме неподдържан аргумент -tor, използвайте -onion.</translation>
-    </message>
-    <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Грешка: Портфейла е заключен, неуспешен превод!</translation>
-    </message>
-    <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Грешка: Вече имате изчакващи входящи в басейна за Обфускация</translation>
-    </message>
-    <message>
-        <source>Failed to calculate accumulator checkpoint</source>
-        <translation>Неуспешно изчисление на акумулаторния чекпоинт</translation>
-    </message>
-    <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Неуспешно очакване на който и да е порт. За тази цел, зползвайте -listen=0.</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Неуспешно четене на блок</translation>
-    </message>
-    <message>
-        <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
-        <translation>Такса (в NXB/kB), която да се добави към изходящи преводи (по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Приключване на превода.</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: %u)</source>
-        <translation>Предизвикай безопасен режим (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Имаме достатъчно потребители, подписване ( изчаква %s )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Имаме достатучно потребители, подписване ...</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: %u)</source>
-        <translation>Генерирай монети (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>Колко блока да провери при стартиране (по подразбиране: %u, 0 = all)</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>Ако &lt;category&gt; не е зададен, изкарай цялата дебъг информация.</translation>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation>Импортиране...</translation>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Импортира блокове от външен blk000??.dat файл.</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>Включи и IP адресите при дебъг (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Incompatible mode.</source>
-        <translation>Несъвместим режим.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Несъвместима версия.</translation>
-    </message>
-    <message>
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Няма намерен генезис блок или намерения е несъвместим. Грешен datadlr за мрежата?</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Информация</translation>
-    </message>
-    <message>
-        <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
-        <translation>Стартирането на проверка на здравословното състояние на портфейла се провали. Изключваме Портфейла.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Зададените стойности са невалидни.</translation>
-    </message>
-    <message>
-        <source>Insufficient funds</source>
-        <translation>Недостатъчни средства</translation>
-    </message>
-    <message>
-        <source>Insufficient funds.</source>
-        <translation>Недостатъчни средства.</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Невалиден -onion адрес или име: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Невалидна стойност за -maxtxfee=&lt;amount&gt;:'%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Невалидна стойност за -minrelaytxfee=&lt;amount&gt;:'%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Невалидна стойност за -mintxfee=&lt;amount&gt;:'%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Невалидна стойност за -paytxfe=&lt;amount&gt;:'%s' (трябва да бъде поне %s)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Невалидна стойност за -paytxfee=&lt;amount&gt;:'%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>Невалидна стойност за -reservebalance=&lt;amount&gt;</translation>
-    </message>
-    <message>
-        <source>Invalid amount</source>
-        <translation>Невалидна стойност</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeprivkey. Please see documenation.</source>
-        <translation>Невалиден masternodeprivkey. Моля консултирайте се с документацията.</translation>
-    </message>
-    <message>
-        <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Невалидна netmask зададена в -whitelist: :'%s'</translation>
-    </message>
-    <message>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation>Невалиден порт, засечен в masternode.conf</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Грешен личен ключ.</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>Невалиден скрипт, засечен.</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the NXB and zNXB money supply statistics</source>
-        <translation>Индексирай наново NXB и zNXB данните по наличности</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Редексиране на база данни за нуроиди ...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Повторното индексиране на зероцена се провали</translation>
-    </message>
-    <message>
-        <source>Selected coins value is less than payment target</source>
-        <translation>Избраната стойност на монетите е по-малка от целта за плащане</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftX опции:</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>Това е тестов софтуер - използвай на своя глава - да не се използва за стейкване или търговско приложение.</translation>
-    </message>
-    <message>
-        <source> mints deleted
-</source>
-        <translation>изтрити емисии
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>обновени емисии,</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>премахнати непотвърдени транзакции
-</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи NXBoost специфичната функционалност (Главни възли, Zerocoin, SwiftX, Бюджетиране) (0-1, po podrazbirane: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Включи SwiftTX, показвай потвърждения за заключени преводи (bool, default: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Превода бе отказан! Това може да се случи ако част от монетите в портфейла вече са биле изпратени, като например ако сте използвали копие на wallet.dat файла и монетите са биле похарчени там, но не са  биле маркирани като изпратени тук.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Грешка: Този превод изисква преводна такса от поне %s поради неговите размер, сложност или употребата на наскоро получени средства.</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Грешка: Неподдържан аргумент -checklevel. Checklevel трябва да е поне 4.</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Командата влиза в сила, когато най-добрия блок се промени и неговия размер е над (%s в cmd се промени с хаш на блока, %d с размер на блока)</translation>
-    </message>
-    <message>
-        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Не успяхме да намерим монетата сред държаните монети с по-малък номер от maxNumber на Плащанията.</translation>
-    </message>
-    <message>
-        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>В редки случаи, плащане от 7 монети надхвърля максимално разрешения размер на транзакция. Моля опитайте да похарчете 6 или по-малко монети за това плащане.</translation>
-    </message>
-    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Предпочитани деноминации за автоматично изсечените Zerocoin (1/5/10/50/100/500/1000/5000), 0 за каквито и да е. (По подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zNXB. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко резервно копие на портфейла. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив.</translation>
-    </message>
-    <message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX изисква входящи преводи с поне 6 потвърждения. Може да се наложи да изчакате още преди да опитате отново.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; може да е:</translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Опитай да наложиш възтановяване на увереден блокчейн</translation>
-    </message>
-    <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>МонетноПлащане: Акумулаторния свидетел не потвърждава</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Покажи изчисленията на променливия съхранител в debug.log файла.</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Покажи многословните съобщения от съхранение на монети в debug.log файла.</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Вкл. публикуването на хаш блока в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Вкл. публикуването на хаш транзакцията в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Вкл. публикуването на сурови блокове в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Вкл. публикуването на сурови транзакции в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Включи функционалността по сърханение (0-1, по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Грешка: Фатална вътрешна грешка, вижте debug.log за повече подробности.</translation>
-    </message>
-    <message>
-        <source>Error: No valid utxo!</source>
-        <translation>Грешка: Няма валиден utxo!</translation>
-    </message>
-    <message>
-        <source>Failed to create mint</source>
-        <translation>Неуспешно емитиране</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>Неуспешно изтриване на серийния номер</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Няма намерени Zerocoin монети в wallet.dat файла</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Неуспешен избор на Zerocoin</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Изтриването на zerocoinDB не бе успешно</translation>
-    </message>
-    <message>
-        <source>Failed to write coin serial number into wallet</source>
-        <translation>Неуспешно записване на серийния номер на монетата в портфейла</translation>
-    </message>
-    <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Пази най-много &lt;n&gt; несвързани превода в паметта (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Последната обфускация бе твърде скоро.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Последното действие по Обфускация е било твърде скоро.</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>Ограничи размера на подписния кеш до &lt;n&gt; задания (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Line: %d</source>
-        <translation>Ред: %d</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Следи за JSON-RPC връзки на &lt;port&gt; (по подразбиране: %u или testnet: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Следи за свръзки на &lt;port&gt; (по подразбиране: %u или testnet: %u)</translation>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation>Зареждане на адреси...</translation>
-    </message>
-    <message>
-        <source>Loading block index...</source>
-        <translation>Зареждане блок индекса...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Зареждане на бюджетния кеш...</translation>
-    </message>
-    <message>
-        <source>Loading masternode cache...</source>
-        <translation>Зареждане на кеша от главни възли...</translation>
-    </message>
-    <message>
-        <source>Loading masternode payment cache...</source>
-        <translation>Зареждане кеша на плащания от главни възли...</translation>
-    </message>
-    <message>
-        <source>Loading sporks...</source>
-        <translation>Зареждане на вилицо-лъжици...</translation>
-    </message>
-    <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>Зареждане на портфейла... (%3.2f %%)</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Зареждане на портфейла...</translation>
-    </message>
-    <message>
-        <source>Location of the auth cookie (default: data dir)</source>
-        <translation>Местоположение на оторизационната бисквитка (по подразбиране: data dir)</translation>
-    </message>
-    <message>
-        <source>Lock is already in place.</source>
-        <translation>Вече е заключен.</translation>
-    </message>
-    <message>
-        <source>Lock masternodes from masternode configuration file (default: %u)</source>
-        <translation>Заключи главен възел от конфигурационния файл (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>Lookup(): Невалиден -proxy адрес или име: '%s'</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Пази най-много &lt;n&gt; връзки към пиъри (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Masternode options:</source>
-        <translation>Опции за Главни възли</translation>
-    </message>
-    <message>
-        <source>Masternode queue is full.</source>
-        <translation>Опашката за Главни възли е пълна.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Главен Възел:</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Максимум буфер за Получаване, за връзка, &lt;n&gt;*1000 байта (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Максимум буфер за Изпращане, за връзка, &lt;n&gt;*1000 байта (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Mint did not make it into blockchain</source>
-        <translation>Емисията не успя да се включи в блокчейна</translation>
-    </message>
-    <message>
-        <source>Missing input transaction information.</source>
-        <translation>Липсваща вх. информация за превода.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>В момента тече смесване...</translation>
-    </message>
-    <message>
-        <source>Need address because change is not exact</source>
-        <translation>Необходим е адрес, понеже рестото не е кръгла сума</translation>
-    </message>
-    <message>
-        <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Нужно е да се зададе порт с -whitebind: '%s'</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>Не се засичат Мастърноудове.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Не е намерен съвместим Мастърноуд.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Не засякохме средства, които да имат нужда от деноминация.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Не намерихме съвпадащи деноминации за смесване.</translation>
-    </message>
-    <message>
-        <source>Node relay options:</source>
-        <translation>Опции на възел релето:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Засякохме нестандартен публичен ключ.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Несъвместимост със съществуващите преводи.</translation>
-    </message>
-    <message>
-        <source>Not enough file descriptors available.</source>
-        <translation>Недостатъчно налични файл описания.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Не е в списъка с Главни възли.</translation>
-    </message>
-    <message>
-        <source>Number of automatic wallet backups (default: 10)</source>
-        <translation>Брой автоматични портфейлни копия (по подразбиране: 10)</translation>
-    </message>
-    <message>
-        <source>Number of custom location backups to retain (default: %d)</source>
-        <translation>Брой запазени резервни копия за местоположението (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Обфускацията е в режим на изчакване.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Обфускацията приключи.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Обфускацията не успя да приключи.</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
-        <translation>Приемай само блокчейн със съвпадащи чекпоинтове (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Свързвай се само с възли от мрежа &lt;net&gt;(ipv4, ipv6 или onion)</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Опции:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Парола за JSON-RPC връзките</translation>
-    </message>
-    <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid(): Невалиден -proxy адрес или име: '%s'</translation>
-    </message>
-    <message>
-        <source>Preparing for resync...</source>
-        <translation>Подготвя се за ре-синх...</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Добави дата и час в дебъг логовете (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>Принтирай и излез</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>Опции за RPC сървъра:</translation>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>На случаен принцип изпускай 1 от всяко &lt;n&gt; мрежови съобщения</translation>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>На случаен принцип отбележи 1 от всяко &lt;n&gt; мрежови съобщения</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Изгради на ново блокчейн индекса от сегашните blk000??.dat файлове</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Получавай и показвай P2P мрежови съобщения (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the accumulator database</source>
-        <translation>Индексирай на ново акмулаторната база данни</translation>
-    </message>
-    <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Препращай и копай преводите по пренос на данни  (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Препращай не-P2SH мултиподпис (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Сканирай блокчейна за липсващи портфейлни транзакции</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>Сканиране наново...</translation>
-    </message>
-    <message>
-        <source>ResetMintZerocoin finished: </source>
-        <translation>ResetMintZeroinc завърши:</translation>
-    </message>
-    <message>
-        <source>ResetSpentZerocoin finished: </source>
-        <translation>ResetSpentZerocoin завърши:</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: %u)</source>
-        <translation>Периодично изчиствай портфейла (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Върши го на заден план като невидим процес и приемай командите</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Ако е възможно, изпращай транзакциите като нулево-таксуван превод (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Недовърешна сесия!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>Времето на сесията изтече.</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Задай размера на кеша за базите данни в мегабайти (%d до %d, по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Set external address:port to get to this masternode (example: %s)</source>
-        <translation>Задай външен адрес:порт за да достигнете този главен възел (например: %s)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Задай размер на басейна за ключове да бъде &lt;n&gt;(по подразбиране: %u) </translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Максимален разбимер на блока в байтове (default: %d)</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>Минимален размер на блока в байтове (default: %u)</translation>
-    </message>
-    <message>
-        <source>Set the Maximum reorg depth (default: %u)</source>
-        <translation>Максимална дълбочина на reorg (default: %u)</translation>
-    </message>
-    <message>
-        <source>Set the masternode private key</source>
-        <translation>Задай тайния ключ на Главния възел</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Задай броя нишки да обслужват RPC запитвания (по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
-        <translation>Задай DB_PRIVATE флаг в средата на портфейловата база данни (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Покажи всички дебъг възможности (иползвай: -help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Намали debug.log файла при стартиране на портфейла (по подразбиране: 1 когато няма -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>Неуспешено подписване.</translation>
-    </message>
-    <message>
-        <source>Signing timed out.</source>
-        <translation>Времето за посписване изтече.</translation>
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation>Неуспешено подписване на превода.</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Задай конфигурационен файл (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Задай максимално време на чакане в милисекунди (минимум: 1, по подразбиране: %d)</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Задай възтановяване на данни</translation>
-    </message>
-    <message>
-        <source>Specify masternode configuration file (default: %s)</source>
-        <translation>Задай конфигурационен файл за Главен възел (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Задай pid файл (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Задай файл на портфейла (в папката с данни)</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Задай свой собствен публичен адрес</translation>
-    </message>
-    <message>
-        <source>Spend Valid</source>
-        <translation>Валидно Плащане</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Похарчи непотвърдено ресто когато пращаш преводи (default: %u)</translation>
-    </message>
-    <message>
-        <source>Staking options:</source>
-        <translation>Опции за съхранение:</translation>
-    </message>
-    <message>
-        <source>Stop running after importing blocks from disk (default: %u)</source>
-        <translation>Изключи се след импортирането на блоквоете от диска (default: %u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Следните са изпратени до главния възел: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Изпратени до главния възел, чакаме още ( %u %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Изпратено до главния възел, чака си реда %s</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>Неуспешна синхронизация</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>Успешно синхронизиране</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Синхронизацията изчаква...</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Синхронизиране на бюджетите...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternode winners...</source>
-        <translation>Синхронизиране печелившите Главни възли...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternodes...</source>
-        <translation>Синхронизиране с Главните възли...</translation>
-    </message>
-    <message>
-        <source>Synchronizing sporks...</source>
-        <translation>Синхронизиране на вилицо-лъжиците...</translation>
-    </message>
-    <message>
-        <source>Syncing zNXB wallet...</source>
-        <translation>Синхронизиране на zNXB портфейла ...</translation>
-    </message>
-    <message>
-        <source>The coin spend has been used</source>
-        <translation>Монетното плащане е използвано</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Новото преводно плащане не бе потвърдено</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Избраната емисия е невалидна монета</translation>
-    </message>
-    <message>
-        <source>The transaction did not verify</source>
-        <translation>Превода не бе потвърден</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>Това съобщение</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>Това е експериментален софтуер</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Това е за регресионен тест и софтуерна разработка.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Това не е Главен Възел.</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Праг за разкачване на пиъри с лошо поведение (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Too many spends needed</source>
-        <translation>Нужни са твърде много плащания</translation>
-    </message>
-    <message>
-        <source>Tor control port password (default: empty)</source>
-        <translation>Парола за контрол на Tor порт: (по подразбиране: празно)</translation>
-    </message>
-    <message>
-        <source>Tor control port to use if onion listening enabled (default: %s)</source>
-        <translation>Порт за контрол на Tor ако onion е включен (по подразбиране: %s)</translation>
-    </message>
-    <message>
-        <source>Transaction Created</source>
-        <translation>Превода е създаден</translation>
-    </message>
-    <message>
-        <source>Transaction Mint Started</source>
-        <translation>Емитиране по Превода Стартира</translation>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation>Преводната сума е твърде малка</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>Преводните суми трябва да са положително число</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Превода е създаден успешно</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Преводните таски са твърде високи.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Превода е невалиден.</translation>
-    </message>
-    <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>Твърде голям превод за таксионната политика</translation>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation>Твърде голям превод</translation>
-    </message>
-    <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Изпращане на последния превод.</translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Опитайте да платите с по-високо ниво на сигурност, за да включите повече монети.</translation>
-    </message>
-    <message>
-        <source>Trying to spend an already spent serial #, try again.</source>
-        <translation>Опитвате се да похарчите, вече похарчен сериен номер. Опитайте отново.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>Не можем да прикачим %s към този компютър (прикачването даде грешка %s)</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>Не можем да намерим превод, който съдържа емисията</translation>
-    </message>
-    <message>
-        <source>Unable to sign spork message, wrong key?</source>
-        <translation>Не можем да подпишем съобщението по тази вилицо-лъжица, грешен ключ?</translation>
-    </message>
-    <message>
-        <source>Unable to start HTTP server. See debug log for details.</source>
-        <translation>Не можем да стартираме HTTP сървъра. Вижте дебъг логовете за повече подробности.</translation>
-    </message>
-    <message>
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Непозната мрежа е зададена в -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Непознато състояние: id = %u</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Обновете портфейла до най-новия формат</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Използвай UPnP за да картографираш портовете за слушане (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Използвай UPnP за да картографираш портовете за слушане (по подразбиране: 1 когато слуша)</translation>
-    </message>
-    <message>
-        <source>Use a custom max chain reorganization depth (default: %u)</source>
-        <translation>Използвай свободно зададена максимална дълбочина за реорганизация на веригата (по подразбиране: %u)</translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>Използвайте тестова мрежа</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Потребителско име за JSON-RPC свръзките</translation>
-    </message>
-    <message>
-        <source>Value is below the smallest available denomination (= 1) of zNXB</source>
-        <translation>Стойността е под най-малката налична деноминация (= 1) в zNXB</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Стойността е по-голяма от позволената от басейна Обфускация.</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>Проверява блоковете...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Проверява портфейла...</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Версия 1 zNXB изисква ниво на сигурност от 100 за успешно изразходване.</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Портфейла %s е извън папката с данни %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Портфейла е заключен.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
-        <translation>Портфейла трябва да се пренапише: рестартирайте програмата за завършване на процеса</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Опции на Портфейла:</translation>
-    </message>
-    <message>
-        <source>Wallet window title</source>
-        <translation>Име на прозореца на портфейла</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Внимание</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Внимание: Тази версия е стара, нужен е ъпгрейд!</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Внимание: Неподдържанния аргумент -benchmark бе игнориран, използвайте -debug=bench.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Внимание: Неподдържанния аргумент -debugnet бе игнориран, използвайте -debug=net.</translation>
-    </message>
-    <message>
-        <source>Will retry...</source>
-        <translation>Ще опита...</translation>
-    </message>
-    <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Нямате достатъчно Zerocoin в портфейла си</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>Трябва да построите базата данни наново, използвайки -reindex вместо -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Въведени успешно.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Превода е приет в басейна!</translation>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>Затриване на всички преводи от портфейла...</translation>
-    </message>
-    <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>Опции за ZeroMQ известяване:</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Zerocoin опции</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>при стартиране</translation>
-    </message>
-    <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat е повреден, неуспешно спасяване</translation>
     </message>
 </context>
 </TS>

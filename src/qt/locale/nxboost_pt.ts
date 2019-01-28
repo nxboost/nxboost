@@ -432,6 +432,389 @@
     </message>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Conectar usando proxy SOCKS5</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>Opções de conexão:</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>Erro: Um erro interno fatal ocorreu, veja debug.log para detalhes</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation>Erro: Espaço em disco baixo!</translation>
+    </message>
+    <message>
+        <source>Finalizing transaction.</source>
+        <translation>Finalizando transação.</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>Importando...</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informação</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>Fundos insuficientes.</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Chave privada inválida.</translation>
+    </message>
+    <message>
+        <source>Invalid script detected.</source>
+        <translation>Script inválido detectado.</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Carregando carteira...</translation>
+    </message>
+    <message>
+        <source>No Masternodes detected.</source>
+        <translation>Nenhum Masternode detectado.</translation>
+    </message>
+    <message>
+        <source>No compatible Masternode found.</source>
+        <translation>Nenhum Masternode compatível encontrado.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Requisição de ofuscação completa:</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Requisição de ofuscação incompleta:</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Opções:</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation>Senha para conexões JSON-RPC</translation>
+    </message>
+    <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Receber e mostrar alertas da rede P2P (padrão %u)</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Transações de retransmissão e transações de dados de mina (padrão:%u)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>Analise novamente a cadeia de blocos para ver se há transações de carteira em falta</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>Rescanning ...</translation>
+    </message>
+    <message>
+        <source>Run a thread to flush wallet periodically (default: %u)</source>
+        <translation>Execute uma thread para liberar a carteira periodicamente (padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>Executar em segundo plano como um daemon e aceitar comandos</translation>
+    </message>
+    <message>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>Enviar transações como transações de taxa zero, se possível (padrão:%u)</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>Sessão não concluída!</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>A sessão expirou.</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
+        <translation>Definir o tamanho do cache do banco de dados em megabytes (%d para%d, padrão:%d)</translation>
+    </message>
+    <message>
+        <source>Set external address:port to get to this masternode (example: %s)</source>
+        <translation>Definir endereço externo: porta para acessar este masternode (exemplo:%s)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>Definir o tamanho do pool de chaves para &lt;n&gt; (padrão:%u)</translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>Definir o tamanho máximo do bloco em bytes (padrão:%d)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Definir tamanho mínimo de bloco em bytes (padrão:%u)</translation>
+    </message>
+    <message>
+        <source>Set the masternode private key</source>
+        <translation>Definir a chave privada masternode</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Defina o número de segmentos para atender chamadas RPC (padrão:%d)</translation>
+    </message>
+    <message>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>Define o sinalizador DB_PRIVATE no ambiente db da carteira (padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Show all debugging options (usage: --help -help-debug)</source>
+        <translation>Mostrar todas as opções de depuração (uso: --help -help-debug)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>Shrink arquivo debug.log na inicialização do cliente (padrão: 1 quando não -debug)</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>A assinatura falhou.</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>A assinatura expirou.</translation>
+    </message>
+    <message>
+        <source>Signing transaction failed</source>
+        <translation>A transação de assinatura falhou</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Especifique o arquivo de configuração (padrão:%s)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>Especifique o tempo limite da conexão em milissegundos (mínimo: 1, padrão:%d)</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation>Especificar o diretório de dados</translation>
+    </message>
+    <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Especifique o arquivo de configuração masternode (padrão:%s)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Especificar arquivo pid (padrão: %s)</translation>
+    </message>
+    <message>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>Especifique o arquivo de carteira (dentro do diretório de dados)</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>Especifique seu próprio endereço público</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>Gaste alterações não confirmadas ao enviar transações (padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Stop running after importing blocks from disk (default: %u)</source>
+        <translation>Parar de executar após importar blocos do disco (padrão:%u)</translation>
+    </message>
+    <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Enviado as seguintes entradas para masternode:%u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Enviado para masternode, aguardando mais entradas (%u / %d) %s</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Enviado para masternode, esperando na fila %s</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>Sincronização falhou</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>Sincronização finalizada</translation>
+    </message>
+    <message>
+        <source>Synchronization pending...</source>
+        <translation>Sincronizando pendencias...</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>Sincronizando orçamentos...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners...</source>
+        <translation>Sincronizando os masternode vencedores...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Sincronizando masternodes ...</translation>
+    </message>
+    <message>
+        <source>Synchronizing sporks...</source>
+        <translation>Sincronizando sporks ...</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation>Esta mensagem de ajuda</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>Este é um software experimental.</translation>
+    </message>
+    <message>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation>Isso é destinado a ferramentas de teste de regressão e desenvolvimento de aplicativos.</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>Isto não e um Masternode</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Limiar para desconectar pares com comportamentos incorretos (padrão:%u)</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation>Valor da transação muito pequeno</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must be positive</source>
+        <translation>Os valores das transações devem ser positivos</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>Transação criada com sucesso.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>As taxas de transação são muito altas.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>A transação não é válida.</translation>
+    </message>
+    <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>Transação muito grande para a política de tarifas</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Transmissão muito grande</translation>
+    </message>
+    <message>
+        <source>Transmitting final transaction.</source>
+        <translation>Transmissão da transação final.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
+        <translation>Não é possível ligar a %s neste computador (erro retornado%s)</translation>
+    </message>
+    <message>
+        <source>Unable to sign spork message, wrong key?</source>
+        <translation>Não é possível assinar mensagem spork, chave errada?</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Rede desconhecida especificada em -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown state: id = %u</source>
+        <translation>Estado desconhecido: id =%u</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation>Atualizar a carteira para a ultimo formato</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Use UPnP para mapear as portas de escuta(padrão: %u)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation>Use o UPnP para mapear a porta de escutar (padrão: 1 ao escutar)</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>Use o Testador de rede</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation>Nome de usuário para conexões JSON-RPC</translation>
+    </message>
+    <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Valor maior do que o máximo permitido pela pool.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>verificando blocos...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>verificando carteira...</translation>
+    </message>
+    <message>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>carteira %s reside fora do diretório %s</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Carteira esta bloqueada.</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
+        <translation>Carteira precisa ser reescrita: reinicie o NXBoost Core para completar.</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Opções de Carteiras:</translation>
+    </message>
+    <message>
+        <source>Wallet window title</source>
+        <translation>Título da carteira</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Atenção</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>Aviso: Esta versão é obsoleta, atualização obrigatória!</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Aviso: Argumento não suportado -benchmark ignorado, use -debug=bench.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Aviso: Argumento não suportado -debugnet ignorado, use -debug=net.</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Você precisa reconstruir a database usando -reindex para mudar -txindex</translation>
+    </message>
+    <message>
+        <source>Your transaction was accepted into the pool!</source>
+        <translation>Sua transação foi aceita na pool!</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     </context>
 <context>
@@ -902,388 +1285,5 @@
     </context>
 <context>
     <name>zNXBControlDialog</name>
-    </context>
-<context>
-    <name>nxboost-core</name>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes do blockchain através de -rescan na inicialização</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Conectar usando proxy SOCKS5</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Opções de conexão:</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Erro: Um erro interno fatal ocorreu, veja debug.log para detalhes</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation>Erro: Espaço em disco baixo!</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Finalizando transação.</translation>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation>Importando...</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informação</translation>
-    </message>
-    <message>
-        <source>Insufficient funds.</source>
-        <translation>Fundos insuficientes.</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Chave privada inválida.</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>Script inválido detectado.</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Carregando carteira...</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>Nenhum Masternode detectado.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Nenhum Masternode compatível encontrado.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Requisição de ofuscação completa:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Requisição de ofuscação incompleta:</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Opções:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Senha para conexões JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Receber e mostrar alertas da rede P2P (padrão %u)</translation>
-    </message>
-    <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Transações de retransmissão e transações de dados de mina (padrão:%u)</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Analise novamente a cadeia de blocos para ver se há transações de carteira em falta</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>Rescanning ...</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: %u)</source>
-        <translation>Execute uma thread para liberar a carteira periodicamente (padrão: %u)</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Executar em segundo plano como um daemon e aceitar comandos</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Enviar transações como transações de taxa zero, se possível (padrão:%u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sessão não concluída!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>A sessão expirou.</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Definir o tamanho do cache do banco de dados em megabytes (%d para%d, padrão:%d)</translation>
-    </message>
-    <message>
-        <source>Set external address:port to get to this masternode (example: %s)</source>
-        <translation>Definir endereço externo: porta para acessar este masternode (exemplo:%s)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Definir o tamanho do pool de chaves para &lt;n&gt; (padrão:%u)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Definir o tamanho máximo do bloco em bytes (padrão:%d)</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>Definir tamanho mínimo de bloco em bytes (padrão:%u)</translation>
-    </message>
-    <message>
-        <source>Set the masternode private key</source>
-        <translation>Definir a chave privada masternode</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Defina o número de segmentos para atender chamadas RPC (padrão:%d)</translation>
-    </message>
-    <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
-        <translation>Define o sinalizador DB_PRIVATE no ambiente db da carteira (padrão: %u)</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Mostrar todas as opções de depuração (uso: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Shrink arquivo debug.log na inicialização do cliente (padrão: 1 quando não -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>A assinatura falhou.</translation>
-    </message>
-    <message>
-        <source>Signing timed out.</source>
-        <translation>A assinatura expirou.</translation>
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation>A transação de assinatura falhou</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Especifique o arquivo de configuração (padrão:%s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Especifique o tempo limite da conexão em milissegundos (mínimo: 1, padrão:%d)</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Especificar o diretório de dados</translation>
-    </message>
-    <message>
-        <source>Specify masternode configuration file (default: %s)</source>
-        <translation>Especifique o arquivo de configuração masternode (padrão:%s)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Especificar arquivo pid (padrão: %s)</translation>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Especifique o arquivo de carteira (dentro do diretório de dados)</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Especifique seu próprio endereço público</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Gaste alterações não confirmadas ao enviar transações (padrão: %u)</translation>
-    </message>
-    <message>
-        <source>Stop running after importing blocks from disk (default: %u)</source>
-        <translation>Parar de executar após importar blocos do disco (padrão:%u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Enviado as seguintes entradas para masternode:%u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Enviado para masternode, aguardando mais entradas (%u / %d) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Enviado para masternode, esperando na fila %s</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>Sincronização falhou</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>Sincronização finalizada</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Sincronizando pendencias...</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Sincronizando orçamentos...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternode winners...</source>
-        <translation>Sincronizando os masternode vencedores...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternodes...</source>
-        <translation>Sincronizando masternodes ...</translation>
-    </message>
-    <message>
-        <source>Synchronizing sporks...</source>
-        <translation>Sincronizando sporks ...</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>Esta mensagem de ajuda</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>Este é um software experimental.</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>Isso é destinado a ferramentas de teste de regressão e desenvolvimento de aplicativos.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>Isto não e um Masternode</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Limiar para desconectar pares com comportamentos incorretos (padrão:%u)</translation>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation>Valor da transação muito pequeno</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>Os valores das transações devem ser positivos</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transação criada com sucesso.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>As taxas de transação são muito altas.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>A transação não é válida.</translation>
-    </message>
-    <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>Transação muito grande para a política de tarifas</translation>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation>Transmissão muito grande</translation>
-    </message>
-    <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Transmissão da transação final.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>Não é possível ligar a %s neste computador (erro retornado%s)</translation>
-    </message>
-    <message>
-        <source>Unable to sign spork message, wrong key?</source>
-        <translation>Não é possível assinar mensagem spork, chave errada?</translation>
-    </message>
-    <message>
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Rede desconhecida especificada em -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Estado desconhecido: id =%u</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Atualizar a carteira para a ultimo formato</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Use UPnP para mapear as portas de escuta(padrão: %u)</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Use o UPnP para mapear a porta de escutar (padrão: 1 ao escutar)</translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>Use o Testador de rede</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Nome de usuário para conexões JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Valor maior do que o máximo permitido pela pool.</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>verificando blocos...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>verificando carteira...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>carteira %s reside fora do diretório %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Carteira esta bloqueada.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
-        <translation>Carteira precisa ser reescrita: reinicie o NXBoost Core para completar.</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Opções de Carteiras:</translation>
-    </message>
-    <message>
-        <source>Wallet window title</source>
-        <translation>Título da carteira</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Atenção</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Aviso: Esta versão é obsoleta, atualização obrigatória!</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Aviso: Argumento não suportado -benchmark ignorado, use -debug=bench.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Aviso: Argumento não suportado -debugnet ignorado, use -debug=net.</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>Você precisa reconstruir a database usando -reindex para mudar -txindex</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Sua transação foi aceita na pool!</translation>
-    </message>
     </context>
 </TS>

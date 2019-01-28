@@ -1452,7 +1452,7 @@ MultiSend: %1</translation>
 To Add: enter percentage to give and NXBoost address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere NXBoost adressen nadat het volwassen is. 
+        <translation>MultiSend stelt je in staat om automatisch tot 100% van uw stake of masternode beloning automatisch te verzenden naar een lijst van andere NXBoost adressen nadat het volwassen is.
 Toevoegen: voer het te geven percentage in en NXBoost adres om toe te voegen aan de MultiSend vector.
 Verwijderen: Voer adres in om te verwijderen en druk op delete.
 MultiSend zal niet worden geactiveerd tenzij je op Activeer hebt geklikt</translation>
@@ -1758,3133 +1758,7 @@ Waas alsjeblieft geduldig nadat u op importeren hebt geklikt.</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
-    <message>
-        <source>Configure Obfuscation</source>
-        <translation>Configureer verduistering</translation>
-    </message>
-    <message>
-        <source>Basic Privacy</source>
-        <translation>Basis Privacy</translation>
-    </message>
-    <message>
-        <source>High Privacy</source>
-        <translation>Hoge Privacy</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Maximum Privacy</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Selecteer de privacy level.</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 NXB</source>
-        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 NXB</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 NXB</source>
-        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 NXB</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Gebruik 16 aparte masternodes</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 NXB to anonymize 10000 NXB</source>
-        <translation>Deze optie is het snelst en kost ongeveer ~0,025 NXB om 10000 NXB te anonimiseren</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 NXB to anonymize 10000 NXB</source>
-        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 NXB om 10000 NXB te anonimiseren</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
-    </message>
-    <message>
-        <source>0.1 NXB per 10000 NXB you anonymize.</source>
-        <translation>je anonimiseert 0,1 NXB per 10000 NXB.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Verduistering configuratie</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van NXBoost te openen.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van NXBoost te openen.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van NXBoost te openen.</translation>
-    </message>
-</context>
-<context>
-    <name>OpenURIDialog</name>
-    <message>
-        <source>Open URI</source>
-        <translation>URI openen</translation>
-    </message>
-    <message>
-        <source>Open payment request from URI or file</source>
-        <translation>Open betalingsverzoek van URL of bestand</translation>
-    </message>
-    <message>
-        <source>URI:</source>
-        <translation>URI:</translation>
-    </message>
-    <message>
-        <source>Select payment request file</source>
-        <translation>Selecteer betalingsverzoek bestand</translation>
-    </message>
-    <message>
-        <source>Select payment request file to open</source>
-        <translation>Selecteer betalingsverzoek bestand dat geopend moet worden</translation>
-    </message>
-</context>
-<context>
-    <name>OptionsDialog</name>
-    <message>
-        <source>Options</source>
-        <translation>Opties</translation>
-    </message>
-    <message>
-        <source>&amp;Main</source>
-        <translation>&amp;Algemeen</translation>
-    </message>
-    <message>
-        <source>Size of &amp;database cache</source>
-        <translation>Grootte van cache &amp;gegevens</translation>
-    </message>
-    <message>
-        <source>MB</source>
-        <translation>MB</translation>
-    </message>
-    <message>
-        <source>Number of script &amp;verification threads</source>
-        <translation>Aantal script en verificatie threads</translation>
-    </message>
-    <message>
-        <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = auto, &lt;0 = laat dat aantal cores vrij)</translation>
-    </message>
-    <message>
-        <source>W&amp;allet</source>
-        <translation>P&amp;ortemonnee</translation>
-    </message>
-    <message>
-        <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
-        <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
-    </message>
-    <message>
-        <source>Automatically open the NXBoost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de NXBoost client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside</source>
-        <translation>Accepteer externe connecties</translation>
-    </message>
-    <message>
-        <source>Allow incoming connections</source>
-        <translation>Sta inkomende connecties toe</translation>
-    </message>
-    <message>
-        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp; Verbind via SOCKS5 proxy (standaard proxy):</translation>
-    </message>
-    <message>
-        <source>Expert</source>
-        <translation>Expert</translation>
-    </message>
-    <message>
-        <source>Automatically start NXBoost after logging in to the system.</source>
-        <translation>NXBoost automatisch opstarten na inloggen op het systeem.</translation>
-    </message>
-    <message>
-        <source>&amp;Start NXBoost on system login</source>
-        <translation>&amp;NXBoost starten bij systeemlogin</translation>
-    </message>
-    <message>
-        <source>Whether to show coin control features or not.</source>
-        <translation>Of je de muntcontrolefuncties wilt tonen of niet.</translation>
-    </message>
-    <message>
-        <source>Enable coin &amp;control features</source>
-        <translation>Munt- en controlefuncties inschakelen</translation>
-    </message>
-    <message>
-        <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
-        <translation>Toon extra tabblad waarin al je masternodes worden vermeld in het eerste sub-tabblad&lt;br/&gt;en alle masternodes op het netwerk in het tweede sub-tabblad.</translation>
-    </message>
-    <message>
-        <source>Show Masternodes Tab</source>
-        <translation>Toon Masternodes Tab</translation>
-    </message>
-    <message>
-        <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp; Besteed onbevestigd wisselgeld</translation>
-    </message>
-    <message>
-        <source>&amp;Network</source>
-        <translation>&amp;Netwerk</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van nxboost.</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>Taal ontbreekt of vertaling onvolledig? Help om bij te dragen aan vertalingen:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
-        <source>Map port using &amp;UPnP</source>
-        <translation>Map poort gebruikt &amp;UPnP</translation>
-    </message>
-    <message>
-        <source>Enable automatic minting of NXB units to zNXB</source>
-        <translation>Schakel automatisch slaan van NXB-eenheden in op zNXB</translation>
-    </message>
-    <message>
-        <source>Enable zNXB Automint</source>
-        <translation>Schakel zNXB Automint in</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming NXB which get automatically converted to zNXB via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage inkomende NXB die automatisch wordt omgezet naar zNXB via Zerocoin Protocol (min: 10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zNXB</source>
-        <translation>Percentage autominted zNXB</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough NXB for this denomination is available</source>
-        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg NXB voor deze denominatie beschikbaar is</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zNXB Denomination</source>
-        <translation>Gewenste Automint zNXB denominatie</translation>
-    </message>
-    <message>
-        <source>Stake split threshold:</source>
-        <translation>Inzet splitdrempel:</translation>
-    </message>
-    <message>
-        <source>Connect to the NXBoost network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het NXBoost netwerk via een SOCKS5 proxy.</translation>
-    </message>
-    <message>
-        <source>Proxy &amp;IP:</source>
-        <translation>Proxy &amp;IP:</translation>
-    </message>
-    <message>
-        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
-        <translation>IP adres van de proxy (bijvoorbeeld IPv4: 127.0.0.1 / IPv6: ::1)</translation>
-    </message>
-    <message>
-        <source>&amp;Port:</source>
-        <translation>&amp;Poort:</translation>
-    </message>
-    <message>
-        <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Proxy-poort (v.b. 9050)</translation>
-    </message>
-    <message>
-        <source>&amp;Window</source>
-        <translation>&amp;Venster</translation>
-    </message>
-    <message>
-        <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Toon alleen een tray icoon na minimalisering van het venster.</translation>
-    </message>
-    <message>
-        <source>&amp;Minimize to the tray instead of the taskbar</source>
-        <translation>&amp; Minimaliseer naar de tray in plaats van de taakbalk</translation>
-    </message>
-    <message>
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Minimaliseer in plaats van de applicatie te verlaten wanneer het venster wordt gesloten. Wanneer deze optie is ingeschakeld, wordt de applicatie alleen gesloten nadat in het menu Quit wordt gekozen.</translation>
-    </message>
-    <message>
-        <source>M&amp;inimize on close</source>
-        <translation>Minimaliseer bij sluiten</translation>
-    </message>
-    <message>
-        <source>&amp;Display</source>
-        <translation>&amp;Weergave</translation>
-    </message>
-    <message>
-        <source>User Interface &amp;language:</source>
-        <translation>Gebruiksinterface &amp;language:</translation>
-    </message>
-    <message>
-        <source>User Interface Theme:</source>
-        <translation>Gebruiksinterface thema:</translation>
-    </message>
-    <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>Toon &amp;Unit in volgende hoeveelheden:</translation>
-    </message>
-    <message>
-        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Kies de standaard onderverdelingseenheid die in de interface wordt weergegeven en bij het verzenden van munten.</translation>
-    </message>
-    <message>
-        <source>Decimal digits</source>
-        <translation>Decimale cijfers</translation>
-    </message>
-    <message>
-        <source>Hide empty balances</source>
-        <translation>Verberg lege saldi</translation>
-    </message>
-    <message>
-        <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>URL's van derden (bijvoorbeeld een blok verkenner) die in het tabblad transacties verschijnen als contextmenu items. %s in de URL wordt vervangen door transactie hash. Meerdere URL's worden gescheiden door verticale balk |.</translation>
-    </message>
-    <message>
-        <source>Third party transaction URLs</source>
-        <translation>Transactie URL's van derden</translation>
-    </message>
-    <message>
-        <source>Active command-line options that override above options:</source>
-        <translation>Actieve command line opties die bovenstaande opties overschrijven:</translation>
-    </message>
-    <message>
-        <source>Reset all client options to default.</source>
-        <translation>Reset alle client instellingen naar standaardinstellingen.</translation>
-    </message>
-    <message>
-        <source>&amp;Reset Options</source>
-        <translation>&amp;Herstellings Opties</translation>
-    </message>
-    <message>
-        <source>&amp;OK</source>
-        <translation>&amp;OK</translation>
-    </message>
-    <message>
-        <source>&amp;Cancel</source>
-        <translation>&amp;Annuleren</translation>
-    </message>
-    <message>
-        <source>Any</source>
-        <translation>een</translation>
-    </message>
-    <message>
-        <source>default</source>
-        <translation>standaard</translation>
-    </message>
-    <message>
-        <source>none</source>
-        <translation>geen</translation>
-    </message>
-    <message>
-        <source>Confirm options reset</source>
-        <translation>Bevestig reset instellingen</translation>
-    </message>
-    <message>
-        <source>Client restart required to activate changes.</source>
-        <translation>Client herstart vereist om wijzigingen te activeren.</translation>
-    </message>
-    <message>
-        <source>Client will be shutdown, do you want to proceed?</source>
-        <translation>Client wordt uitgeschakeld, wil je doorgaan?</translation>
-    </message>
-    <message>
-        <source>This change would require a client restart.</source>
-        <translation>Deze wijziging vereist een herstart van de client.</translation>
-    </message>
-    <message>
-        <source>The supplied proxy address is invalid.</source>
-        <translation>Het opgegeven proxyadres is ongeldig.</translation>
-    </message>
-    <message>
-        <source>The supplied proxy port is invalid.</source>
-        <translation>De meegeleverde proxy-poort is ongeldig.</translation>
-    </message>
-    <message>
-        <source>The supplied proxy settings are invalid.</source>
-        <translation>De geleverde proxy-instellingen zijn ongeldig.</translation>
-    </message>
-</context>
-<context>
-    <name>OverviewPage</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulier</translation>
-    </message>
-    <message>
-        <source>Available:</source>
-        <translation>Beschikbaar:</translation>
-    </message>
-    <message>
-        <source>Your current spendable balance</source>
-        <translation>Uw huidige bestedingsruimte</translation>
-    </message>
-    <message>
-        <source>Total Balance, including all unavailable coins.</source>
-        <translation>Totaal saldo, inclusief alle niet-beschikbare munten.</translation>
-    </message>
-    <message>
-        <source>NXB Balance</source>
-        <translation>NXB Saldi</translation>
-    </message>
-    <message>
-        <source>Pending:</source>
-        <translation>In afwachting:</translation>
-    </message>
-    <message>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Totaal aantal transacties die nog niet zijn bevestigd en nog niet meetellen in het uitgeefbare saldo</translation>
-    </message>
-    <message>
-        <source>Immature:</source>
-        <translation>Immatuur:</translation>
-    </message>
-    <message>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Staked of masternode beloningen die nog niet volwassen zijn</translation>
-    </message>
-    <message>
-        <source>Current locked balance in watch-only addresses</source>
-        <translation>Huidige vergrendelde balans in alleen-lezen-adressen</translation>
-    </message>
-    <message>
-        <source>Your current NXBoost balance, unconfirmed and immature transactions included</source>
-        <translation>Uw huidige nxboost-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
-    </message>
-    <message>
-        <source>zNXB Balance</source>
-        <translation>zNXB-saldo</translation>
-    </message>
-    <message>
-        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zNXB are spendable.</source>
-        <translation>Volwassen: meer dan 20 bevestigingen en meer dan 1 mint van dezelfde denominatie nadat het gemint was.
-Deze zPIB zijn besteedbaar.</translation>
-    </message>
-    <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Onbevestigd: minder dan 20 bevestigingen
-Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
-    </message>
-    <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het NXBoost netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
-    </message>
-    <message>
-        <source>OVERVIEW</source>
-        <translation>OVERZICHT</translation>
-    </message>
-    <message>
-        <source>Combined Balance (including unconfirmed and immature coins)</source>
-        <translation>Gecombineerde Saldi (inclusief onbevestigde en onvolwassen munten)</translation>
-    </message>
-    <message>
-        <source>Combined Balance</source>
-        <translation>Gecombineerde balans</translation>
-    </message>
-    <message>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Onbevestigde transacties naar watch-only adressen</translation>
-    </message>
-    <message>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Staked of masternode beloningen in watch-only adressen die nog niet volwassen zijn</translation>
-    </message>
-    <message>
-        <source>Total:</source>
-        <translation>Totaal:</translation>
-    </message>
-    <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Huidig ​​totaal saldo in watch-only adressen</translation>
-    </message>
-    <message>
-        <source>Watch-only:</source>
-        <translation>Watch-only:</translation>
-    </message>
-    <message>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Je huidige saldo in watch-only adressen</translation>
-    </message>
-    <message>
-        <source>Spendable:</source>
-        <translation>Uitgeefbaar:</translation>
-    </message>
-    <message>
-        <source>Locked NXB or Masternode collaterals. These are excluded from zNXB minting.</source>
-        <translation>Vergrendelde NXB of Masternode onderpanden. Deze zijn uitgesloten van de zNXB muntage.</translation>
-    </message>
-    <message>
-        <source>Locked:</source>
-        <translation>Vergrendeld:</translation>
-    </message>
-    <message>
-        <source>Unconfirmed:</source>
-        <translation>Onbevestigd:</translation>
-    </message>
-    <message>
-        <source>Your current zNXB balance, unconfirmed and immature zNXB included.</source>
-        <translation>Uw huidige zNXB-saldo, onbevestigde en onvolgroeide zNXB inbegrepen.</translation>
-    </message>
-    <message>
-        <source>Recent transactions</source>
-        <translation>Recente transacties</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>niet gesynchroniseerd</translation>
-    </message>
-    <message>
-        <source>Current percentage of zNXB.
-If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
-</source>
-        <translation>Huidige percentage van zNXB
-Als AutoMint ingeschakeld is zal deze percentage afhangen van de geconfigureerde AutoMint percentage (standaard = 10%).
-</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation>AutoMint is momenteel ingeschakeld en ingesteld op</translation>
-    </message>
-    <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in nxboost.conf.</source>
-        <translation>Om AutoMint uit te schakelen, voeg je 'enablezeromint=0' toe aan nxboost.conf.</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.conf</source>
-        <translation>AutoMint is momenteel uitgeschakeld.
-Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint=1' in nxboost.conf</translation>
-    </message>
-</context>
-<context>
-    <name>PaymentServer</name>
-    <message>
-        <source>Payment request error</source>
-        <translation>Fout bij betalingsverzoek</translation>
-    </message>
-    <message>
-        <source>URI handling</source>
-        <translation>URL behandeling</translation>
-    </message>
-    <message>
-        <source>Payment request fetch URL is invalid: %1</source>
-        <translation>Betalingsverzoek ophalen URL is ongeldig: %1</translation>
-    </message>
-    <message>
-        <source>Payment request file handling</source>
-        <translation>Betalingsaanvraag bestandsverwerking</translation>
-    </message>
-    <message>
-        <source>Invalid payment address %1</source>
-        <translation>Ongeldig betalingsadres %1</translation>
-    </message>
-    <message>
-        <source>Cannot start nxboost: click-to-pay handler</source>
-        <translation>Kan NXBoost niet starten: click-to-pay handler</translation>
-    </message>
-    <message>
-        <source>URI cannot be parsed! This can be caused by an invalid NXBoost address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig NXBoost adres of misvormde URL parameters.</translation>
-    </message>
-    <message>
-        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
-        <translation>Uw betalingsverzoek kan niet worden gelezen! Dit kan worden veroorzaakt door een ongeldig betalingsverzoek bestand.</translation>
-    </message>
-    <message>
-        <source>Payment request rejected</source>
-        <translation>Betalingsverzoek afgewezen</translation>
-    </message>
-    <message>
-        <source>Payment request network doesn't match client network.</source>
-        <translation>Het betalingsverzoek netwerk komt niet overeen met het client netwerk.</translation>
-    </message>
-    <message>
-        <source>Payment request has expired.</source>
-        <translation>Betalingsverzoek is verlopen.</translation>
-    </message>
-    <message>
-        <source>Payment request is not initialized.</source>
-        <translation>Betalingsverzoek is niet geïnitialiseerd. </translation>
-    </message>
-    <message>
-        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
-        <translation>Niet geverifieerde betalingsverzoeken naar aangepaste betaal scripts worden niet ondersteund.</translation>
-    </message>
-    <message>
-        <source>Requested payment amount of %1 is too small (considered dust).</source>
-        <translation>Gevraagd betalingsbedrag van %1 is te klein (beschouwd als dust).</translation>
-    </message>
-    <message>
-        <source>Refund from %1</source>
-        <translation>Terugbetaling van %1</translation>
-    </message>
-    <message>
-        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
-        <translation>Betalingsverzoek %1 is te groot (%2 bytes, toegestaan %3 bytes).</translation>
-    </message>
-    <message>
-        <source>Payment request DoS protection</source>
-        <translation>Betalingsverzoek DoS bescherming</translation>
-    </message>
-    <message>
-        <source>Error communicating with %1: %2</source>
-        <translation>Fout communiceren met %1: %2</translation>
-    </message>
-    <message>
-        <source>Payment request cannot be parsed!</source>
-        <translation>Betalingsaanvraag kan niet worden geanalyseerd!</translation>
-    </message>
-    <message>
-        <source>Bad response from server %1</source>
-        <translation>Bad response van server %1</translation>
-    </message>
-    <message>
-        <source>Network request error</source>
-        <translation>Netwerkverzoek fout</translation>
-    </message>
-    <message>
-        <source>Payment acknowledged</source>
-        <translation>Betaling erkend</translation>
-    </message>
-</context>
-<context>
-    <name>PeerTableModel</name>
-    <message>
-        <source>Address/Hostname</source>
-        <translation>Adres/Hostnaam</translation>
-    </message>
-    <message>
-        <source>Version</source>
-        <translation>Versie</translation>
-    </message>
-    <message>
-        <source>Ping Time</source>
-        <translation>Pingtijd</translation>
-    </message>
-</context>
-<context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>Zerocoin Actions:</source>
-        <translation>Zerocoin Acties:</translation>
-    </message>
-    <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het NXBoost netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
-    </message>
-    <message>
-        <source>Mint Zerocoin</source>
-        <translation>Mint Zerocoin</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Beschikbaar voor muntage zijn munten die bevestigd en niet vergrendeld of Masternode onderpanden zijn.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Beschikbaar voor minting:</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 NXB</source>
-        <translation>0.000 000 00 NXB</translation>
-    </message>
-    <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Zerocoin Wallet DB opnieuw instellen. Verwijdert transacties die het niet in de blockchain hebben gered.</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Resetten</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Munt controle...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Kwantiteit:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Rescan de complete blockchain voor Zerocoin mints en hun meta-data.</translation>
-    </message>
-    <message>
-        <source>ReScan</source>
-        <translation>ReScan</translation>
-    </message>
-    <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>Status en/of Berichten van de laatste mint actie.</translation>
-    </message>
-    <message>
-        <source>PRIVACY</source>
-        <translation>PRIVACY</translation>
-    </message>
-    <message>
-        <source>Enter an amount of NXB to convert to zNXB</source>
-        <translation>Vul het aantal NXB in om te converteren naar zNXB</translation>
-    </message>
-    <message>
-        <source>zNXB Control</source>
-        <translation>zNXB Control</translation>
-    </message>
-    <message>
-        <source>zNXB Selected:</source>
-        <translation>zNXB geselecteerd:</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Hoeveelheid geselecteerd:</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Zerocoin besteden. Zonder 'Betaal aan:' adres ontstaan betalingen aan jezelf.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin</source>
-        <translation>Besteed Zerocoin</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zNXB for spending</source>
-        <translation>Beschikbare (volwassen en uitgeefbaar) zNXB voor besteding</translation>
-    </message>
-    <message>
-        <source>Available Balance:</source>
-        <translation>Beschikbaar saldo:</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zNXB for spending
-
-zNXB are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Beschikbare (volwwassen en uitgeefbaar) zNXB voor besteding
-
-zNXB zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 muntages van dezelfde denominaties nadat zij gemunt zijn.</translation>
-    </message>
-    <message>
-        <source>0 zNXB</source>
-        <translation>0 zNXB</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Beveiligingsniveau voor Zerocoin transacties. Meer is beter, maar heeft meer tijd en middelen nodig.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Beveiligings niveau:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Beveiligingsniveau 1 - 100 (standaard: 42)</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betaal &amp;Naar:</translation>
-    </message>
-    <message>
-        <source>The NXBoost address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Het NXBoost adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Zet wisselgeld om naar Zerocoin (mogelijk extra kosten)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Indien aangevinkt, probeert de portemonnee het terugkerende wisselgeld te minimaliseren in plaats van het aantal uitgegeven denominaties te minimaliseren.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>Minimaliseer wisselgeld</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>Informatie over de beschikbare Zerocoin fondsen.</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>Zerocoin Statistieken:</translation>
-    </message>
-    <message>
-        <source>Total Balance including unconfirmed and immature zNXB</source>
-        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zNXB</translation>
-    </message>
-    <message>
-        <source>Total Zerocoin  Balance:</source>
-        <translation>Totale Zerocoin Saldi:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>Denominaties met waarde 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Denom. met waarde 1:</translation>
-    </message>
-    <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Onbevestigd: minder dan 20 bevestigingen
-Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
-    </message>
-    <message>
-        <source>Show the current status of automatic zNXB minting.
-
-To change the status (restart required):
-- enable: add 'enablezeromint=1' to nxboost.conf
-- disable: add 'enablezeromint=0' to nxboost.conf
-
-To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zNXB
-
-</source>
-        <translation>Toon de huidige status van automatische zNXB-markering.
-
-Om de status te wijzigen (opnieuw opstarten vereist): 
-- enable: voeg 'enablezeromint = 1' toe aan nxboost.conf
-- uitschakelen: voeg 'enablezeromint = 0' toe aan nxboost.conf
-
-Om het percentage te wijzigen (geen herstart vereist): 
-- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zNXB
-</translation>
-    </message>
-    <message>
-        <source>AutoMint Status</source>
-        <translation>AutoMint-status</translation>
-    </message>
-    <message>
-        <source>Global Supply:</source>
-        <translation>Wereldwijde levering:</translation>
-    </message>
-    <message>
-        <source>Denom. 1:</source>
-        <translation>Denom. 1:</translation>
-    </message>
-    <message>
-        <source>Denom. 5:</source>
-        <translation>Denom. 5:</translation>
-    </message>
-    <message>
-        <source>Denom. 10:</source>
-        <translation>Denom. 10:</translation>
-    </message>
-    <message>
-        <source>Denom. 50:</source>
-        <translation>Denom. 50:</translation>
-    </message>
-    <message>
-        <source>Denom. 100:</source>
-        <translation>Denom. 100:</translation>
-    </message>
-    <message>
-        <source>Denom. 500:</source>
-        <translation>Denom. 500:</translation>
-    </message>
-    <message>
-        <source>Denom. 1000:</source>
-        <translation>Denom. 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. 5000:</source>
-        <translation>Denom. 5000:</translation>
-    </message>
-    <message>
-        <source>0 x</source>
-        <translation> 0 x</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5:</source>
-        <translation>Denominaties met waarde 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Denom. met waarde 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>Denominaties met waarde 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Denom. met waarde 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>Denominaties met waarde 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Denom. met waarde 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>Denominaties met waarde 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Denom. met waarde 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>Denominaties met waarde 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Denom. met waarde 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>Denominaties met waarde 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Denom. met waarde 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>Denominaties met waarde 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Denom. met waarde 5000:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioriteit:</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>TextLabel</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Kost:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Stof:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>nee</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Onvoldoende saldo!</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Munten automatisch geselecteerd</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>medium</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Munt controle kenmerken</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Aangepast wisselgeld adres</translation>
-    </message>
-    <message>
-        <source>Amount After Fee:</source>
-        <translation>Bedrag na kosten:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Wijzig:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>niet gesynchroniseerd</translation>
-    </message>
-    <message>
-        <source>Mint Status: Okay</source>
-        <translation>Mint status: Oké</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
-Please be patient...</source>
-        <translation>Start ResetMintZerocoin: rescanning complete blockchain, dit zal tot 30 minuten nodig hebben, afhankelijk van uw hardware.
-Wees alsjeblieft geduldig...</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Zerocoin besteden.
-Computationeel duur, zou mogelijk enkele minuten nodig hebben, afhankelijk van het geselecteerde beveiligingsniveau en je hardware.
-Wees alsjeblieft geduldig...</translation>
-    </message>
-    <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) vereist.
-Maximaal toegestaan:</translation>
-    </message>
-    <message>
-        <source>zNXB Spend #: </source>
-        <translation>zNXB besteed #:</translation>
-    </message>
-    <message>
-        <source>zNXB Mint</source>
-        <translation>zNXB mint</translation>
-    </message>
-    <message>
-        <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
-        <translation>&lt;b&gt;ingeschakeld&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <source> &lt;b&gt;disabled&lt;/b&gt;.</source>
-        <translation>&lt;b&gt;invalide&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <source> Configured target percentage: &lt;b&gt;</source>
-        <translation>Geconfigureerd doelpercentage:&lt;b&gt;</translation>
-    </message>
-    <message>
-        <source>zNXB is currently disabled due to maintenance.</source>
-        <translation>zNXB is momenteel uitgeschakeld vanwege onderhoud.</translation>
-    </message>
-    <message>
-        <source>zNXB is currently undergoing maintenance.</source>
-        <translation>zNXB wordt momenteel onderhouden.</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt; 1&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;5&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;10&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;50&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt; 100&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt; 500&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;1000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Denom. met waarde &lt;b&gt;5000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>AutoMint Status:</source>
-        <translation>AutoMint-status</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Denom. &lt;b&gt;1&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Denom. &lt;b&gt;5&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Denom. &lt;b&gt;10&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Denom. &lt;b&gt;50&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Denom. &lt;b&gt;100&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Denom. &lt;b&gt;500&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Denom. &lt;b&gt;1000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Denom. &lt;b&gt;5000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Fout: Je portemonnee is vergrendeld. Voer alsjeblieft de wachtwoord zin voor de portemonnee in.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Bericht: voer een bedrag in &gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Minting </translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Succesvol gemint</translation>
-    </message>
-    <message>
-        <source> zNXB in </source>
-        <translation> zNXB in </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation>sec. gebruikte denominaties:
-</translation>
-    </message>
-    <message>
-        <source>Duration: </source>
-        <translation>Duur:</translation>
-    </message>
-    <message>
-        <source> sec.
-</source>
-        <translation> sec.
-</translation>
-    </message>
-    <message>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation>Starten van ResetSpentZerocoin: </translation>
-    </message>
-    <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
-    </message>
-    <message>
-        <source>Invalid NXBoost Address</source>
-        <translation>Ongeldig NXBoost addres</translation>
-    </message>
-    <message>
-        <source>Invalid Send Amount</source>
-        <translation>Ongeldig verzend bedrag</translation>
-    </message>
-    <message>
-        <source>Confirm additional Fees</source>
-        <translation>Bevestig extra kosten</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Weet je zeker dat je wilt verzenden?&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source> to address </source>
-        <translation>naar adres</translation>
-    </message>
-    <message>
-        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
-        <translation>naar een nieuw gegenereerd (ongebruikt en dus anoniem) lokaal adres&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>met beveiligingsniveau</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Bevestig verzending coins</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Versie 1 zNXB vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zNXB</source>
-        <translation>Mislukt om zNXB te besteden.</translation>
-    </message>
-    <message>
-        <source>Failed to fetch mint associated with serial hash</source>
-        <translation>Mislukt om de mint op te halen geassocieerd met de seriële hash</translation>
-    </message>
-    <message>
-        <source>Too much inputs (</source>
-        <translation>Teveel invoer (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te besteden bedrag verminderen.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>Bestede Zerocoin mislukt met status =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of NXB to convert to zNXB</comment>
-        <translation><numerusform>PrivacyDialoog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
-    </message>
-    <message>
-        <source>denomination: </source>
-        <translation>denominatie:</translation>
-    </message>
-    <message>
-        <source>serial: </source>
-        <translation>serial: </translation>
-    </message>
-    <message>
-        <source>Spend is 1 of : </source>
-        <translation>Besteed is 1 of : </translation>
-    </message>
-    <message>
-        <source>value out: </source>
-        <translation>Waarde uit:</translation>
-    </message>
-    <message>
-        <source>address: </source>
-        <translation>adres:</translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>Verzenden succesvol, retourcode:</translation>
-    </message>
-    <message>
-        <source>txid: </source>
-        <translation>txid: </translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>kosten:</translation>
-    </message>
-</context>
-<context>
-    <name>QObject</name>
-    <message>
-        <source>Amount</source>
-        <translation>Hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Enter a NXBoost address (e.g. %1)</source>
-        <translation>Voer een NXBoost adres in (b.v. %1)</translation>
-    </message>
-    <message>
-        <source>%1 d</source>
-        <translation>%1 d</translation>
-    </message>
-    <message>
-        <source>%1 h</source>
-        <translation>%1 h</translation>
-    </message>
-    <message>
-        <source>%1 m</source>
-        <translation>%1 m</translation>
-    </message>
-    <message>
-        <source>%1 s</source>
-        <translation>%1 s</translation>
-    </message>
-    <message>
-        <source>NETWORK</source>
-        <translation>NETWERK</translation>
-    </message>
-    <message>
-        <source>BLOOM</source>
-        <translation>BLOOM</translation>
-    </message>
-    <message>
-        <source>UNKNOWN</source>
-        <translation>ONBEKEND</translation>
-    </message>
-    <message>
-        <source>None</source>
-        <translation>Geen</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>NB</translation>
-    </message>
-    <message>
-        <source>%1 ms</source>
-        <translation>%1 ms</translation>
-    </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Afbeelding opslaan...</translation>
-    </message>
-    <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Kopieer afbeelding</translation>
-    </message>
-    <message>
-        <source>Save QR Code</source>
-        <translation>QR code opslaan</translation>
-    </message>
-    <message>
-        <source>PNG Image (*.png)</source>
-        <translation>PNG Afbeelding(*.png)</translation>
-    </message>
-</context>
-<context>
-    <name>RPCConsole</name>
-    <message>
-        <source>Tools window</source>
-        <translation>Tools venster</translation>
-    </message>
-    <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Informatie</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation>Algemeen</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>Naam</translation>
-    </message>
-    <message>
-        <source>Client name</source>
-        <translation>Client naam</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>NB</translation>
-    </message>
-    <message>
-        <source>Number of connections</source>
-        <translation>Aantal connecties</translation>
-    </message>
-    <message>
-        <source>&amp;Open</source>
-        <translation>&amp;Open</translation>
-    </message>
-    <message>
-        <source>Startup time</source>
-        <translation>Opstarttijd</translation>
-    </message>
-    <message>
-        <source>Network</source>
-        <translation>Netwerk</translation>
-    </message>
-    <message>
-        <source>Last block time</source>
-        <translation>Laatste blocktijd</translation>
-    </message>
-    <message>
-        <source>Debug log file</source>
-        <translation>Debug logbestand</translation>
-    </message>
-    <message>
-        <source>Using OpenSSL version</source>
-        <translation>Gebruikt OpenSSL versie</translation>
-    </message>
-    <message>
-        <source>Build date</source>
-        <translation>Bouwdatum</translation>
-    </message>
-    <message>
-        <source>Current number of blocks</source>
-        <translation>Huidige blockaantal</translation>
-    </message>
-    <message>
-        <source>Client version</source>
-        <translation>Client versie</translation>
-    </message>
-    <message>
-        <source>Using BerkeleyDB version</source>
-        <translation>Gebruikt BerkeleyDB versie</translation>
-    </message>
-    <message>
-        <source>Block chain</source>
-        <translation>Blockchain</translation>
-    </message>
-    <message>
-        <source>Open the NXBoost debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het NXBoost debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
-    </message>
-    <message>
-        <source>Number of Masternodes</source>
-        <translation>Aantal Masternodes</translation>
-    </message>
-    <message>
-        <source>&amp;Console</source>
-        <translation>&amp;Console</translation>
-    </message>
-    <message>
-        <source>Clear console</source>
-        <translation>Console leegmaken</translation>
-    </message>
-    <message>
-        <source>&amp;Network Traffic</source>
-        <translation>&amp;Netwerk verkeer</translation>
-    </message>
-    <message>
-        <source>&amp;Clear</source>
-        <translation>&amp;Leegmaken</translation>
-    </message>
-    <message>
-        <source>Totals</source>
-        <translation>Totalen</translation>
-    </message>
-    <message>
-        <source>Received</source>
-        <translation>Ontvangen</translation>
-    </message>
-    <message>
-        <source>Sent</source>
-        <translation>Verstuurd</translation>
-    </message>
-    <message>
-        <source>&amp;Peers</source>
-        <translation>&amp;Peers</translation>
-    </message>
-    <message>
-        <source>Banned peers</source>
-        <translation>Verboden leeftijdsgenoten</translation>
-    </message>
-    <message>
-        <source>Select a peer to view detailed information.</source>
-        <translation>Selecteer een peer om gedetailleerde informatie te bekijken.</translation>
-    </message>
-    <message>
-        <source>Whitelisted</source>
-        <translation>Whitelisted</translation>
-    </message>
-    <message>
-        <source>Direction</source>
-        <translation>Richting</translation>
-    </message>
-    <message>
-        <source>Protocol</source>
-        <translation>Protocol</translation>
-    </message>
-    <message>
-        <source>Version</source>
-        <translation>Versie</translation>
-    </message>
-    <message>
-        <source>Services</source>
-        <translation>Diensten</translation>
-    </message>
-    <message>
-        <source>Ban Score</source>
-        <translation>Ban score</translation>
-    </message>
-    <message>
-        <source>Connection Time</source>
-        <translation>Connectietijd</translation>
-    </message>
-    <message>
-        <source>Last Send</source>
-        <translation>Laatst Verzonden</translation>
-    </message>
-    <message>
-        <source>Last Receive</source>
-        <translation>Laatst Ontvangen</translation>
-    </message>
-    <message>
-        <source>Bytes Sent</source>
-        <translation>Verzonden Bytes</translation>
-    </message>
-    <message>
-        <source>Bytes Received</source>
-        <translation>Ontvangen Bytes</translation>
-    </message>
-    <message>
-        <source>Ping Time</source>
-        <translation>Pingtijd</translation>
-    </message>
-    <message>
-        <source>&amp;Wallet Repair</source>
-        <translation>&amp;Portemonnee herstel</translation>
-    </message>
-    <message>
-        <source>Delete local Blockchain Folders</source>
-        <translation>Verwijder lokale Blockchain Mappen</translation>
-    </message>
-    <message>
-        <source>Wallet In Use:</source>
-        <translation>Portemonnee in gebruik:</translation>
-    </message>
-    <message>
-        <source>Starting Block</source>
-        <translation>Startblok</translation>
-    </message>
-    <message>
-        <source>Synced Headers</source>
-        <translation>Gesynchroniseerde headers</translation>
-    </message>
-    <message>
-        <source>Synced Blocks</source>
-        <translation>Gesynchroniseerde blokken</translation>
-    </message>
-    <message>
-        <source>The duration of a currently outstanding ping.</source>
-        <translation>De duur van een momenteel openstaande ping.</translation>
-    </message>
-    <message>
-        <source>Ping Wait</source>
-        <translation>Ping wacht</translation>
-    </message>
-    <message>
-        <source>Time Offset</source>
-        <translation>Tijdverschuiving</translation>
-    </message>
-    <message>
-        <source>Custom Backup Path:</source>
-        <translation>Aangepast back-up pad:</translation>
-    </message>
-    <message>
-        <source>Custom zNXB Backup Path:</source>
-        <translation>Aangepast zNXB back-up pad:</translation>
-    </message>
-    <message>
-        <source>Custom Backups Threshold:</source>
-        <translation>Aangepaste back-up drempel:</translation>
-    </message>
-    <message>
-        <source>Salvage wallet</source>
-        <translation>Red portemonnee</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
-        <translation>Poog om privé sleutels terug te halen uit een corrupte wallet.dat.</translation>
-    </message>
-    <message>
-        <source>Rescan blockchain files</source>
-        <translation>Herscan blockchain bestanden</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions.</source>
-        <translation>Herscan de blockchain voor ontbrekende portemonnee transacties.</translation>
-    </message>
-    <message>
-        <source>Recover transactions 1</source>
-        <translation>Herstel transacties 1</translation>
-    </message>
-    <message>
-        <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
-        <translation>Herstel transacties van blockchain (houd meta-data, bijvoorbeeld account eigenaar).</translation>
-    </message>
-    <message>
-        <source>Recover transactions 2</source>
-        <translation>Herstel transacties 2</translation>
-    </message>
-    <message>
-        <source>Recover transactions from blockchain (drop meta-data).</source>
-        <translation>Herstel transacties van blockchain (laat meta-data vallen).</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet format</source>
-        <translation>Upgrade portemonnee format</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files.</source>
-        <translation>Herstel blockchain index van huidige blk000??.dat bestanden.</translation>
-    </message>
-    <message>
-        <source>-resync:</source>
-        <translation>-resync:</translation>
-    </message>
-    <message>
-        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
-        <translation>Verwijder alle lokale blockchain mappen zodat de portemonnee alles opnieuw kan hersynchroniseren.</translation>
-    </message>
-    <message>
-        <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
-        <translation>De onderstaande knoppen zullen de portemonnee opnieuw opstarten met command line opties om de portemonnee te repareren, problemen op te lossen met corrupte blockchain bestanden of ontbrekende/verouderde transacties.</translation>
-    </message>
-    <message>
-        <source>Wallet repair options.</source>
-        <translation>Portemonnee herstelopties.</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
-        <translation>Upgrade portemonnee naar nieuwste format bij opstarten. (Opmerking: dit is NIET een update van de portemonnee zelf!)</translation>
-    </message>
-    <message>
-        <source>Rebuild index</source>
-        <translation>Herbouw index</translation>
-    </message>
-    <message>
-        <source>In:</source>
-        <translation>In:</translation>
-    </message>
-    <message>
-        <source>Out:</source>
-        <translation>Uit:</translation>
-    </message>
-    <message>
-        <source>Welcome to the NXBoost RPC console.</source>
-        <translation>Welkom bij de NXBoost RPC console.</translation>
-    </message>
-    <message>
-        <source>&amp;Disconnect Node</source>
-        <translation>&amp; Koppel Node los</translation>
-    </message>
-    <message>
-        <source>Ban Node for</source>
-        <translation>Ban Node voor</translation>
-    </message>
-    <message>
-        <source>1 &amp;hour</source>
-        <translation>1 &amp;hour</translation>
-    </message>
-    <message>
-        <source>1 &amp;day</source>
-        <translation>1 &amp;day</translation>
-    </message>
-    <message>
-        <source>1 &amp;week</source>
-        <translation>1 &amp;week</translation>
-    </message>
-    <message>
-        <source>1 &amp;year</source>
-        <translation>1 &amp;year</translation>
-    </message>
-    <message>
-        <source>&amp;Unban Node</source>
-        <translation>&amp; Veel succes</translation>
-    </message>
-    <message>
-        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Dit zal al jouw lokale blockchain mappen verwijderen en de portemonnee zal de blockchain helemaal opnieuw synchroniseren.&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Dit vergt nogal wat tijd en downloadt veel data.&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Uw transacties en tegoeden zijn opnieuw zichtbaar nadat het downloaden is voltooid.&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>Do you want to continue?.&lt;br /&gt;</source>
-        <translation>Wil je verdergaan?</translation>
-    </message>
-    <message>
-        <source>Confirm resync Blockchain</source>
-        <translation>Bevestig hersynchronisering van Blockchain</translation>
-    </message>
-    <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Gebruik omhoog en omlaag pijlen om de geschiedenis te navigeren, en&lt;b&gt;Ctrl-L&lt;/b&gt;om scherm te wissen.</translation>
-    </message>
-    <message>
-        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
-        <translation>Type &lt;b&gt;help &lt;/b&gt;voor een overzicht van beschikbare commando's.</translation>
-    </message>
-    <message>
-        <source>%1 B</source>
-        <translation>%1 B</translation>
-    </message>
-    <message>
-        <source>%1 KB</source>
-        <translation>%1 KB</translation>
-    </message>
-    <message>
-        <source>%1 MB</source>
-        <translation>%1 MB</translation>
-    </message>
-    <message>
-        <source>%1 GB</source>
-        <translation>%1 GB</translation>
-    </message>
-    <message>
-        <source>(node id: %1)</source>
-        <translation>(node id: %1)</translation>
-    </message>
-    <message>
-        <source>via %1</source>
-        <translation>via %1</translation>
-    </message>
-    <message>
-        <source>never</source>
-        <translation>nooit</translation>
-    </message>
-    <message>
-        <source>Inbound</source>
-        <translation>Inkomende</translation>
-    </message>
-    <message>
-        <source>Outbound</source>
-        <translation>Uitgaande</translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation>ja</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation>Nee</translation>
-    </message>
-    <message>
-        <source>Unknown</source>
-        <translation>Ongekend</translation>
-    </message>
-</context>
-<context>
-    <name>ReceiveCoinsDialog</name>
-    <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Hergebruik een van de eerder gebruikte ontvangstadressen.&lt;br&gt;Hergebruik van adressen heeft beveiligings- en privacyproblemen. &lt;br&gt;Gebruik dit niet tenzij u eerder een betalingsverzoek heeft aangemaakt.</translation>
-    </message>
-    <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>Hergebruik een bestaand ontvangstadres (niet aanbevolen)</translation>
-    </message>
-    <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Bericht:</translation>
-    </message>
-    <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>Een optioneel label om te associëren met het nieuwe ontvangstadres.</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het NXBoost netwerk.</translation>
-    </message>
-    <message>
-        <source>RECEIVE</source>
-        <translation>ontvangen</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the NXBoost network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het NXBoost netwerk.</translation>
-    </message>
-    <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Gebruik dit formulier om betalingen aan te vragen. Alle velden zijn&lt;b&gt;optioneel&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Een optioneel bedrag om te vragen. Laat dit leeg of vul een nul in om geen specifiek bedrag te vragen.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>&amp;Request payment</source>
-        <translation>&amp;Verzoek betaling</translation>
-    </message>
-    <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Leeg alle velden van het formulier.</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>Leegmaken</translation>
-    </message>
-    <message>
-        <source>Requested payments history</source>
-        <translation>Betalingsverzoeken geschiedenis</translation>
-    </message>
-    <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Toon het geselecteerde verzoek (doet hetzelfde als dubbelklik op een item)</translation>
-    </message>
-    <message>
-        <source>Show</source>
-        <translation>Toon</translation>
-    </message>
-    <message>
-        <source>Remove the selected entries from the list</source>
-        <translation>Verwijder de geselecteerde vermeldingen uit de lijst</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>Verwijder</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Kopiëer label</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation>Bericht kopiëren</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
-    </message>
-</context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    <message>
-        <source>QR Code</source>
-        <translation>QR Code</translation>
-    </message>
-    <message>
-        <source>Copy &amp;URI</source>
-        <translation>Kopieer &amp;URI</translation>
-    </message>
-    <message>
-        <source>Copy &amp;Address</source>
-        <translation>Kopieer &amp;Adres</translation>
-    </message>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Afbeelding opslaan...</translation>
-    </message>
-    <message>
-        <source>Request payment to %1</source>
-        <translation>Verzoek betaling aan %1</translation>
-    </message>
-    <message>
-        <source>Payment information</source>
-        <translation>Betalingsinformatie</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Bericht</translation>
-    </message>
-    <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Resulterende URI te lang geleden, probeer de tekst voor label/bericht te verminderen.</translation>
-    </message>
-    <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Fout bij het coderen van URI in QR-code.</translation>
-    </message>
-</context>
-<context>
-    <name>RecentRequestsTableModel</name>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Bericht</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Hoeveelheid</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(geen label)</translation>
-    </message>
-    <message>
-        <source>(no message)</source>
-        <translation>(geen bericht)</translation>
-    </message>
-    <message>
-        <source>(no amount)</source>
-        <translation>(geen hoeveelheid)</translation>
-    </message>
-</context>
-<context>
-    <name>SendCoinsDialog</name>
-    <message>
-        <source>Send Coins</source>
-        <translation>Verzend Munten</translation>
-    </message>
-    <message>
-        <source>SEND</source>
-        <translation>STUREN</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Munt controle kenmerken</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Onvoldoende saldo!</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Kwantiteit:</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Prioriteit:</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>medium</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Kost:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Stof:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>nee</translation>
-    </message>
-    <message>
-        <source>After Fee:</source>
-        <translation>Na de kost:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Wijzig:</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Aangepast wisselgeld adres</translation>
-    </message>
-    <message>
-        <source>Split UTXO</source>
-        <translation>Split UTXO</translation>
-    </message>
-    <message>
-        <source># of outputs</source>
-        <translation># outputs</translation>
-    </message>
-    <message>
-        <source>UTXO Size:</source>
-        <translation>UTXO grootte:</translation>
-    </message>
-    <message>
-        <source>0 NXB</source>
-        <translation>0 NXB</translation>
-    </message>
-    <message>
-        <source>Transaction Fee:</source>
-        <translation>Transactiekosten: </translation>
-    </message>
-    <message>
-        <source>Choose...</source>
-        <translation>Kies...</translation>
-    </message>
-    <message>
-        <source>collapse fee-settings</source>
-        <translation>Klap kosten instellingen in</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation>Minimaliseer</translation>
-    </message>
-    <message>
-        <source>per kilobyte</source>
-        <translation>per kilobyte</translation>
-    </message>
-    <message>
-        <source>total at least</source>
-        <translation>totaal tenminste</translation>
-    </message>
-    <message>
-        <source>(read the tooltip)</source>
-        <translation>(lees de tooltip)</translation>
-    </message>
-    <message>
-        <source>Custom:</source>
-        <translation>Aangepast:</translation>
-    </message>
-    <message>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Smart fee nog niet geïnitialiseerd. Dit duurt meestal een paar blokken ...)</translation>
-    </message>
-    <message>
-        <source>SwiftX</source>
-        <translation>SwiftX</translation>
-    </message>
-    <message>
-        <source>Confirmation time:</source>
-        <translation>Bevestigingstijd:</translation>
-    </message>
-    <message>
-        <source>Open Coin Control...</source>
-        <translation>Open munt controle...</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Munten automatisch geselecteerd</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uNXBs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNXBs in fee,&lt;br /&gt;while "at least" pays 1000 uNXBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uNXBs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uNXB's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uNXB's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uNXBs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNXBs in fee,&lt;br /&gt;while "total at least" pays 1000 uNXBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uNXBs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uNXB's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uNXB's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for NXBoost transactions than the network can process.</source>
-        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar NXBoost transacties dan het netwerk kan verwerken.</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>normaal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>snel</translation>
-    </message>
-    <message>
-        <source>Recommended</source>
-        <translation>Aanbevolen</translation>
-    </message>
-    <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Zend als zero-fee transactie indien mogelijk</translation>
-    </message>
-    <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(bevestiging kan langer duren)</translation>
-    </message>
-    <message>
-        <source>Confirm the send action</source>
-        <translation>Bevestig de verzendactie</translation>
-    </message>
-    <message>
-        <source>S&amp;end</source>
-        <translation>V&amp;erzenden</translation>
-    </message>
-    <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Leeg alle velden van het formulier.</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
-    </message>
-    <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>Verzend naar meerdere ontvangers tegelijk</translation>
-    </message>
-    <message>
-        <source>Add &amp;Recipient</source>
-        <translation>Voeg &amp;ontvanger toe</translation>
-    </message>
-    <message>
-        <source>Anonymized NXB</source>
-        <translation>Geanonimiseerde NXB</translation>
-    </message>
-    <message>
-        <source>Balance:</source>
-        <translation>Balans:</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopieer kwanititeit</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Kopiëer kost</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Kopiëer na kost</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Kopieer bytes</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Kopieer prioriteit</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Kopieer dust</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Kopieer wisselgeld</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>Het split block tool werkt niet bij het verzenden naar externe adressen. Probeer het nog eens.</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>Het split block tool werkt niet met meerdere adressen. Probeer het nog eens.</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid NXBoost address</source>
-        <translation>Waarschuwing: Ongeldig NXBoost adres</translation>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation>%1 naar %2</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation>Ben je zeker dat je wilt verzenden?</translation>
-    </message>
-    <message>
-        <source>are added as transaction fee</source>
-        <translation>worden toegevoegd als transactiekosten</translation>
-    </message>
-    <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Totale hoeveelheid = &lt;b&gt;%1 &lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Bevestig verzending coins</translation>
-    </message>
-    <message>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>Een vergoeding %1 keer hoger dan %2 per kB wordt beschouwd als een zwaar hoge vergoeding.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform></translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Het ontvangstadres is niet geldig, controleer deze.</translation>
-    </message>
-    <message>
-        <source>using SwiftX</source>
-        <translation>met SwiftX</translation>
-    </message>
-    <message>
-        <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>gesplitst in %1 outputs met behulp van de UTXO splitter.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 van %2 vermeldingen weergegeven)</translation>
-    </message>
-    <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>Het te betalen bedrag moet groter zijn dan 0.</translation>
-    </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>Het bedrag overschrijdt uw saldo.</translation>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Het totaal overschrijdt uw saldo wanneer de transactievergoeding %1 is inbegrepen.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Dubbel adres gevonden, kan alleen per keer per verzendoperatie naar elk adres versturen.</translation>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation>Transactie creatie mislukt!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, zoals als je een kopie van de wallet.dat en munten in de kopie waren besteed maar niet gemarkeerd zoals hier besteed.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren. Ontgrendelen geannuleerd.</translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Betaal alleen de minimumkost van %1</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation>Waarschuwing: Ongekend wisselgeld adres</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(geen label)</translation>
-    </message>
-</context>
-<context>
-    <name>SendCoinsEntry</name>
-    <message>
-        <source>This is a normal payment.</source>
-        <translation>Dit is een normale betaling.</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>Betaal &amp;Naar:</translation>
-    </message>
-    <message>
-        <source>The NXBoost address to send the payment to</source>
-        <translation>Het NXBoost adres om de betaling naar te verzenden</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Remove this entry</source>
-        <translation>Verwijder dit item</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>&amp;Hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Message:</source>
-        <translation>Bericht:</translation>
-    </message>
-    <message>
-        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
-        <translation>Een bericht dat is gehecht aan de nxboost: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het NXBoost netwerk.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Dit is een ongeverifieerde betalingsverzoek.</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation>Betaal aan:</translation>
-    </message>
-    <message>
-        <source>Memo:</source>
-        <translation>Memo:</translation>
-    </message>
-    <message>
-        <source>This is a verified payment request.</source>
-        <translation>Dit is een geverifieerd betalingsverzoek.</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Voer een label in voor dit adres om het toe te voegen aan jouw adresboek</translation>
-    </message>
-</context>
-<context>
-    <name>ShutdownWindow</name>
-    <message>
-        <source>NXBoost Core is shutting down...</source>
-        <translation>NXBoost Core is aan het afsluiten...</translation>
-    </message>
-    <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Sluit de computer niet af voordat dit venster verdwenen is.</translation>
-    </message>
-</context>
-<context>
-    <name>SignVerifyMessageDialog</name>
-    <message>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Handtekeningen - Onderteken / Verifieer een Bericht</translation>
-    </message>
-    <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Onderteken Bericht</translation>
-    </message>
-    <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Je kunt berichten met je adressen ondertekenen om te bewijzen dat je ze bezit. Wees voorzichtig om niets vaags te ondertekenen, omdat phishing aanvallen je misschien kunnen proberen om je identiteit over te geven. Teken alleen volledig gedetailleerde verklaringen aan waar je mee akkoord gaat.</translation>
-    </message>
-    <message>
-        <source>The NXBoost address to sign the message with</source>
-        <translation>Het NXBoost adres om het bericht met te ondertekenen</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Kies een eerder gebruikt adres</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Plak adres vanaf klembord</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Enter the message you want to sign here</source>
-        <translation>Voer hier het bericht in dat u wilt ondertekenen</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>Handtekening</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het NXBoost adres bezit</translation>
-    </message>
-    <message>
-        <source>The NXBoost address the message was signed with</source>
-        <translation>Het NXBoost adres waarmee het bericht was ondertekend</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified NXBoost address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde NXBoost adres</translation>
-    </message>
-    <message>
-        <source>Sign &amp;Message</source>
-        <translation>Onderteken &amp;Bericht</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Maak alle ondertekenvelden leeg</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Verwijder &amp;Alles</translation>
-    </message>
-    <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Verifieer Bericht</translation>
-    </message>
-    <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Voer het ondertekening adres in, verifieer het bericht (zorg ervoor dat je line breaks, spaties, tabs, enz.) en onderteken hieronder om het bericht te verifiëren. Wees voorzichtig om niet meer in de handtekening te lezen dan in het ondertekende bericht zelf, om te voorkomen dat je door een man-in-de-middle aanval wordt getroffen.</translation>
-    </message>
-    <message>
-        <source>Verify &amp;Message</source>
-        <translation>Verifeer &amp;Message</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Maak alle verifiëren van het bericht velden leeg</translation>
-    </message>
-    <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>Klik op "Onderteken Bericht" om een handtekening te genereren</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>Het ingevoerde adres is ongeldig.</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Controleer het adres en probeer het opnieuw.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>Het opgegeven adres verwijst niet naar een sleutel.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Portemonnee-ontsleuteling is geannuleerd.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>Geheime sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
-    </message>
-    <message>
-        <source>Message signing failed.</source>
-        <translation>Bericht ondertekenen mislukt.</translation>
-    </message>
-    <message>
-        <source>Message signed.</source>
-        <translation>Bericht ondertekend.</translation>
-    </message>
-    <message>
-        <source>The signature could not be decoded.</source>
-        <translation>De handtekening kon niet gedecodeerd worden.</translation>
-    </message>
-    <message>
-        <source>Please check the signature and try again.</source>
-        <translation>Controleer de handtekening en probeer het opnieuw.</translation>
-    </message>
-    <message>
-        <source>The signature did not match the message digest.</source>
-        <translation>De handtekening kwam niet overeen met de berichtverdeling.</translation>
-    </message>
-    <message>
-        <source>Message verification failed.</source>
-        <translation>Bericht verificatie mislukt.</translation>
-    </message>
-    <message>
-        <source>Message verified.</source>
-        <translation>Bericht geverifieerd.</translation>
-    </message>
-</context>
-<context>
-    <name>SplashScreen</name>
-    <message>
-        <source>NXBoost Core</source>
-        <translation>NXBoost Kern</translation>
-    </message>
-    <message>
-        <source>Version %1</source>
-        <translation>Versie %1</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>De Bitcoin Kernontwikkelaars</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>De Dash Kernontwikkelaars</translation>
-    </message>
-    <message>
-        <source>The NXBoost Core developers</source>
-        <translation>De NXBoost Kernontwikkelaars</translation>
-    </message>
-    <message>
-        <source>[testnet]</source>
-        <translation>[testnet]</translation>
-    </message>
-</context>
-<context>
-    <name>TrafficGraphWidget</name>
-    <message>
-        <source>KB/s</source>
-        <translation>KB/s</translation>
-    </message>
-</context>
-<context>
-    <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Klaar voor %n meer blokken</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
-    </message>
-    <message>
-        <source>Open until %1</source>
-        <translation>Open tot %1</translation>
-    </message>
-    <message>
-        <source>conflicted</source>
-        <translation>conflicteert</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1/offline</translation>
-    </message>
-    <message>
-        <source>%1/unconfirmed</source>
-        <translation>%1/onbevestigd</translation>
-    </message>
-    <message>
-        <source>%1 confirmations</source>
-        <translation>%1 bevestigingen</translation>
-    </message>
-    <message>
-        <source>%1/offline (verified via SwiftX)</source>
-        <translation>%1/offline (gecontroleerd via SwiftX)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via SwiftX)</source>
-        <translation>%1/bevestigd (gecontroleerd via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via SwiftX)</source>
-        <translation>%1 bevestigingen (gecontroleerd via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/bevestigd (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 bevestigingen (SwiftTX controle in uitvoering -%2 van %3 handtekeningen)</translation>
-    </message>
-    <message>
-        <source>%1/offline (SwiftX verification failed)</source>
-        <translation>%1/offline (SwiftTX verificatie mislukt)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftX verification failed)</source>
-        <translation>%1/bevestigd (SwiftTX verificatie mislukt)</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Status</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, is nog niet succesvol uitgezonden</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, uitgezonden via %n nodes</numerusform><numerusform>, uitgezonden via %n nodes</numerusform></translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation>Bron</translation>
-    </message>
-    <message>
-        <source>Generated</source>
-        <translation>Gegeneerd</translation>
-    </message>
-    <message>
-        <source>From</source>
-        <translation>Van</translation>
-    </message>
-    <message>
-        <source>unknown</source>
-        <translation>ongekend</translation>
-    </message>
-    <message>
-        <source>To</source>
-        <translation>Naar</translation>
-    </message>
-    <message>
-        <source>own address</source>
-        <translation>eigen adres</translation>
-    </message>
-    <message>
-        <source>watch-only</source>
-        <translation>watch-only</translation>
-    </message>
-    <message>
-        <source>label</source>
-        <translation>label</translation>
-    </message>
-    <message>
-        <source>Credit</source>
-        <translation>Credit</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>maturiteit in %n meer blokken</numerusform><numerusform>maturiteit in %n meer blokken</numerusform></translation>
-    </message>
-    <message>
-        <source>not accepted</source>
-        <translation>niet geaccepteerd</translation>
-    </message>
-    <message>
-        <source>Debit</source>
-        <translation>Debet</translation>
-    </message>
-    <message>
-        <source>Total debit</source>
-        <translation>Totaal debet</translation>
-    </message>
-    <message>
-        <source>Total credit</source>
-        <translation>Totaal credit</translation>
-    </message>
-    <message>
-        <source>Transaction fee</source>
-        <translation>Transactiekosten</translation>
-    </message>
-    <message>
-        <source>Net amount</source>
-        <translation>Netto bedrag</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Bericht</translation>
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Reactie</translation>
-    </message>
-    <message>
-        <source>Transaction ID</source>
-        <translation>Transactie ID</translation>
-    </message>
-    <message>
-        <source>Output index</source>
-        <translation>Output index</translation>
-    </message>
-    <message>
-        <source>Merchant</source>
-        <translation>Winkelier</translation>
-    </message>
-    <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Gegenereerde munten moeten %1 blokken rijpen voordat ze kunnen worden uitgegeven. Wanneer je dit blok hebt gegenereerd, wordt het naar het netwerk uitgezonden om aan de blockchain toegevoegd te worden. Als het niet in de keten komt, verandert de staat in "niet geaccepteerd" en zal het niet uitgeefbaar worden. Dit kan af en toe gebeuren als een andere node binnen een paar seconden van u een blok genereert.</translation>
-    </message>
-    <message>
-        <source>Debug information</source>
-        <translation>Debug informatie</translation>
-    </message>
-    <message>
-        <source>Transaction</source>
-        <translation>Transactie</translation>
-    </message>
-    <message>
-        <source>Inputs</source>
-        <translation>Inputs</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Hoeveelheid</translation>
-    </message>
-    <message>
-        <source>true</source>
-        <translation>waar</translation>
-    </message>
-    <message>
-        <source>false</source>
-        <translation>onwaar</translation>
-    </message>
-</context>
-<context>
-    <name>TransactionDescDialog</name>
-    <message>
-        <source>Transaction details</source>
-        <translation>Transactiedetails</translation>
-    </message>
-    <message>
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>Dit venster laat een gedetailleerde beschrijving van de transactie zien</translation>
-    </message>
-</context>
-<context>
-    <name>TransactionTableModel</name>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Type</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Klaar voor %n meer blokken</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
-    </message>
-    <message>
-        <source>Open until %1</source>
-        <translation>Open tot %1</translation>
-    </message>
-    <message>
-        <source>Offline</source>
-        <translation>Offline</translation>
-    </message>
-    <message>
-        <source>Unconfirmed</source>
-        <translation>Onbevestigd</translation>
-    </message>
-    <message>
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>Bevestigen (%1 van %2 aanbevolen bevestigingen)</translation>
-    </message>
-    <message>
-        <source>Confirmed (%1 confirmations)</source>
-        <translation>Bevestigd (%1 bevestigingen)</translation>
-    </message>
-    <message>
-        <source>Conflicted</source>
-        <translation>Geconflicteerd</translation>
-    </message>
-    <message>
-        <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Onvolwassen (%1 bevestigingen, zullen beschikbaar zijn na %2)</translation>
-    </message>
-    <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Dit blok is niet ontvangen door andere noden en wordt waarschijnlijk niet geaccepteerd!</translation>
-    </message>
-    <message>
-        <source>Received with</source>
-        <translation>Ontvangen met</translation>
-    </message>
-    <message>
-        <source>Masternode Reward</source>
-        <translation>Masternode beloning</translation>
-    </message>
-    <message>
-        <source>Received from</source>
-        <translation>Ontvangen van</translation>
-    </message>
-    <message>
-        <source>Received via Obfuscation</source>
-        <translation>Verkregen via verduistering</translation>
-    </message>
-    <message>
-        <source>NXB Stake</source>
-        <translation>NXB Stake</translation>
-    </message>
-    <message>
-        <source>zNXB Stake</source>
-        <translation>zNXB Stake</translation>
-    </message>
-    <message>
-        <source>Obfuscation Denominate</source>
-        <translation>Verduistering denominatie</translation>
-    </message>
-    <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>Verduistering zijdelingse betaling</translation>
-    </message>
-    <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Verduistering maakt zijdelingse inputs</translation>
-    </message>
-    <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>Verduistering creëert denominaties</translation>
-    </message>
-    <message>
-        <source>Converted NXB to zNXB</source>
-        <translation>Geconverteerde NXB naar zNXB</translation>
-    </message>
-    <message>
-        <source>Spent zNXB</source>
-        <translation>Bestede zNXB</translation>
-    </message>
-    <message>
-        <source>Received NXB from zNXB</source>
-        <translation>Ontvangen NXB van zNXB</translation>
-    </message>
-    <message>
-        <source>Minted Change as zNXB from zNXB Spend</source>
-        <translation>Gemint wisselgeld als zNXB van bestede zNXB</translation>
-    </message>
-    <message>
-        <source>Converted zNXB to NXB</source>
-        <translation>Geconverteerde zNXB naar NXB</translation>
-    </message>
-    <message>
-        <source>Anonymous (zNXB Transaction)</source>
-        <translation>Anonieme (zNXB transactie)</translation>
-    </message>
-    <message>
-        <source>Anonymous (zNXB Stake)</source>
-        <translation>Anonieme (zNXB stake)</translation>
-    </message>
-    <message>
-        <source>Sent to</source>
-        <translation>Verzenden naar</translation>
-    </message>
-    <message>
-        <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
-        <translation>Orphan Block - Gegenereerd maar niet geaccepteerd. Dit heeft geen invloed op uw bezit.</translation>
-    </message>
-    <message>
-        <source>Payment to yourself</source>
-        <translation>Betaling naar jezelf</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Mined</translation>
-    </message>
-    <message>
-        <source>Obfuscated</source>
-        <translation>Verduisterd</translation>
-    </message>
-    <message>
-        <source>watch-only</source>
-        <translation>watch-only</translation>
-    </message>
-    <message>
-        <source>(n/a)</source>
-        <translation>(n/b)</translation>
-    </message>
-    <message>
-        <source>Transaction status. Hover over this field to show number of confirmations.</source>
-        <translation>Transactie status. Beweeg over dit veld om het aantal bevestigingen te tonen.</translation>
-    </message>
-    <message>
-        <source>Date and time that the transaction was received.</source>
-        <translation>Datum en tijd waarop de transactie is ontvangen.</translation>
-    </message>
-    <message>
-        <source>Type of transaction.</source>
-        <translation>Type transactie.</translation>
-    </message>
-    <message>
-        <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Of een watch-only adres wel of niet betrokken is bij deze transactie.</translation>
-    </message>
-    <message>
-        <source>Destination address of transaction.</source>
-        <translation>Bestemming adres van de transactie.</translation>
-    </message>
-    <message>
-        <source>Amount removed from or added to balance.</source>
-        <translation>Bedrag verwijderd uit of toegevoegd aan saldo.</translation>
-    </message>
-</context>
-<context>
-    <name>TransactionView</name>
-    <message>
-        <source>All</source>
-        <translation>Alle</translation>
-    </message>
-    <message>
-        <source>Today</source>
-        <translation>Vandaag</translation>
-    </message>
-    <message>
-        <source>This week</source>
-        <translation>Deze week</translation>
-    </message>
-    <message>
-        <source>This month</source>
-        <translation>Deze maand</translation>
-    </message>
-    <message>
-        <source>Last month</source>
-        <translation>Afgelopen maand</translation>
-    </message>
-    <message>
-        <source>This year</source>
-        <translation>Dit jaar</translation>
-    </message>
-    <message>
-        <source>Range...</source>
-        <translation>Omvang...</translation>
-    </message>
-    <message>
-        <source>Most Common</source>
-        <translation>Meest voorkomend</translation>
-    </message>
-    <message>
-        <source>Received with</source>
-        <translation>Ontvangen met</translation>
-    </message>
-    <message>
-        <source>Sent to</source>
-        <translation>Verzenden naar</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>Naar jezelf</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Mined</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Minted</translation>
-    </message>
-    <message>
-        <source>Masternode Reward</source>
-        <translation>Masternode beloning</translation>
-    </message>
-    <message>
-        <source>Zerocoin Mint</source>
-        <translation>Zerocoin Mint</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend</source>
-        <translation>Zerocoin uitgegeven</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend to Self</source>
-        <translation>Zerocoin uitgegeven aan jezelf</translation>
-    </message>
-    <message>
-        <source>Other</source>
-        <translation>Andere</translation>
-    </message>
-    <message>
-        <source>Enter address or label to search</source>
-        <translation>Adres of label invullen om te zoeken</translation>
-    </message>
-    <message>
-        <source>Min amount</source>
-        <translation>Minimale hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation>Kopieer adres</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Kopiëer label</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Kopieer hoeveelheid</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>Kopier transactie ID</translation>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation>Label wijzigen</translation>
-    </message>
-    <message>
-        <source>Show transaction details</source>
-        <translation>Bekijk transactiedetails</translation>
-    </message>
-    <message>
-        <source>Export Transaction History</source>
-        <translation>Exporteer Transactiegeschiedenis</translation>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Kommagescheiden bestand (*.csv)</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Bevestigd</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>Watch-only</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Type</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adres</translation>
-    </message>
-    <message>
-        <source>ID</source>
-        <translation>ID</translation>
-    </message>
-    <message>
-        <source>Exporting Failed</source>
-        <translation>Export Mislukt</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Er is een fout opgetreden om de transactiegeschiedenis te bewaren naar %1.</translation>
-    </message>
-    <message>
-        <source>Exporting Successful</source>
-        <translation>Exporteren succesvol</translation>
-    </message>
-    <message>
-        <source>Received NXB from zNXB</source>
-        <translation>Ontvangen NXB van zNXB</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend, Change in zNXB</source>
-        <translation>Zerocoin besteed, wisselgeld in zNXB</translation>
-    </message>
-    <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>De transactiegeschiedenis is succesvol bewaard in %1.</translation>
-    </message>
-    <message>
-        <source>Range:</source>
-        <translation>Bereik:</translation>
-    </message>
-    <message>
-        <source>to</source>
-        <translation>naar</translation>
-    </message>
-</context>
-<context>
-    <name>UnitDisplayStatusBarControl</name>
-    <message>
-        <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Eenheid om bedragen te laten zien. Klik om een andere eenheid te selecteren.</translation>
-    </message>
-</context>
-<context>
-    <name>WalletFrame</name>
-    <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Er is geen portemonnee ingeladen.</translation>
-    </message>
-</context>
-<context>
-    <name>WalletModel</name>
-    <message>
-        <source>Send Coins</source>
-        <translation>Verzend Munten</translation>
-    </message>
-    <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
-        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 NXB.</translation>
-    </message>
-</context>
-<context>
-    <name>WalletView</name>
-    <message>
-        <source>HISTORY</source>
-        <translation>GESCHIEDENIS</translation>
-    </message>
-    <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exporteren</translation>
-    </message>
-    <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Exporteer de data in de huidige tab naar een bestand</translation>
-    </message>
-    <message>
-        <source>Selected amount:</source>
-        <translation>Geselecteerde hoeveelheid:</translation>
-    </message>
-    <message>
-        <source>Backup Wallet</source>
-        <translation>Backup portemonnee</translation>
-    </message>
-    <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Portemonneegegevens (*.dat)</translation>
-    </message>
-</context>
-<context>
-    <name>zNXBControlDialog</name>
-    <message>
-        <source>Select zNXB to Spend</source>
-        <translation>Selecteer zNXB om te besteden</translation>
-    </message>
-    <message>
-        <source>Quantity</source>
-        <translation>Hoeveelheid</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Select/Deselect All</source>
-        <translation>Selecteer/Deselecteer Alles</translation>
-    </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Is Uitgeefbaar</translation>
-    </message>
-</context>
-<context>
-    <name>nxboost-core</name>
+    <name>NXBoost-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>
@@ -6360,6 +3234,3128 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrupt, redding mislukt</translation>
+    </message>
+</context>
+<context>
+    <name>ObfuscationConfig</name>
+    <message>
+        <source>Configure Obfuscation</source>
+        <translation>Configureer verduistering</translation>
+    </message>
+    <message>
+        <source>Basic Privacy</source>
+        <translation>Basis Privacy</translation>
+    </message>
+    <message>
+        <source>High Privacy</source>
+        <translation>Hoge Privacy</translation>
+    </message>
+    <message>
+        <source>Maximum Privacy</source>
+        <translation>Maximum Privacy</translation>
+    </message>
+    <message>
+        <source>Please select a privacy level.</source>
+        <translation>Selecteer de privacy level.</translation>
+    </message>
+    <message>
+        <source>Use 2 separate masternodes to mix funds up to 10000 NXB</source>
+        <translation>Gebruik 2 aparte masternodes om fondsen te mixen tot 10000 NXB</translation>
+    </message>
+    <message>
+        <source>Use 8 separate masternodes to mix funds up to 10000 NXB</source>
+        <translation>Gebruik 8 aparte masternodes om fondsen te mixen tot 10000 NXB</translation>
+    </message>
+    <message>
+        <source>Use 16 separate masternodes</source>
+        <translation>Gebruik 16 aparte masternodes</translation>
+    </message>
+    <message>
+        <source>This option is the quickest and will cost about ~0.025 NXB to anonymize 10000 NXB</source>
+        <translation>Deze optie is het snelst en kost ongeveer ~0,025 NXB om 10000 NXB te anonimiseren</translation>
+    </message>
+    <message>
+        <source>This option is moderately fast and will cost about 0.05 NXB to anonymize 10000 NXB</source>
+        <translation>Deze optie is gematigd snel en kost ongeveer 0,05 NXB om 10000 NXB te anonimiseren</translation>
+    </message>
+    <message>
+        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
+        <translation>Dit is de langzaamste en veiligste optie. Het gebruik van maximale anonimiteit kost</translation>
+    </message>
+    <message>
+        <source>0.1 NXB per 10000 NXB you anonymize.</source>
+        <translation>je anonimiseert 0,1 NXB per 10000 NXB.</translation>
+    </message>
+    <message>
+        <source>Obfuscation Configuration</source>
+        <translation>Verduistering configuratie</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van NXBoost te openen.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van NXBoost te openen.</translation>
+    </message>
+    <message>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van NXBoost te openen.</translation>
+    </message>
+</context>
+<context>
+    <name>OpenURIDialog</name>
+    <message>
+        <source>Open URI</source>
+        <translation>URI openen</translation>
+    </message>
+    <message>
+        <source>Open payment request from URI or file</source>
+        <translation>Open betalingsverzoek van URL of bestand</translation>
+    </message>
+    <message>
+        <source>URI:</source>
+        <translation>URI:</translation>
+    </message>
+    <message>
+        <source>Select payment request file</source>
+        <translation>Selecteer betalingsverzoek bestand</translation>
+    </message>
+    <message>
+        <source>Select payment request file to open</source>
+        <translation>Selecteer betalingsverzoek bestand dat geopend moet worden</translation>
+    </message>
+</context>
+<context>
+    <name>OptionsDialog</name>
+    <message>
+        <source>Options</source>
+        <translation>Opties</translation>
+    </message>
+    <message>
+        <source>&amp;Main</source>
+        <translation>&amp;Algemeen</translation>
+    </message>
+    <message>
+        <source>Size of &amp;database cache</source>
+        <translation>Grootte van cache &amp;gegevens</translation>
+    </message>
+    <message>
+        <source>MB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
+        <source>Number of script &amp;verification threads</source>
+        <translation>Aantal script en verificatie threads</translation>
+    </message>
+    <message>
+        <source>(0 = auto, &lt;0 = leave that many cores free)</source>
+        <translation>(0 = auto, &lt;0 = laat dat aantal cores vrij)</translation>
+    </message>
+    <message>
+        <source>W&amp;allet</source>
+        <translation>P&amp;ortemonnee</translation>
+    </message>
+    <message>
+        <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
+        <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
+    </message>
+    <message>
+        <source>Automatically open the NXBoost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de NXBoost client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside</source>
+        <translation>Accepteer externe connecties</translation>
+    </message>
+    <message>
+        <source>Allow incoming connections</source>
+        <translation>Sta inkomende connecties toe</translation>
+    </message>
+    <message>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp; Verbind via SOCKS5 proxy (standaard proxy):</translation>
+    </message>
+    <message>
+        <source>Expert</source>
+        <translation>Expert</translation>
+    </message>
+    <message>
+        <source>Automatically start NXBoost after logging in to the system.</source>
+        <translation>NXBoost automatisch opstarten na inloggen op het systeem.</translation>
+    </message>
+    <message>
+        <source>&amp;Start NXBoost on system login</source>
+        <translation>&amp;NXBoost starten bij systeemlogin</translation>
+    </message>
+    <message>
+        <source>Whether to show coin control features or not.</source>
+        <translation>Of je de muntcontrolefuncties wilt tonen of niet.</translation>
+    </message>
+    <message>
+        <source>Enable coin &amp;control features</source>
+        <translation>Munt- en controlefuncties inschakelen</translation>
+    </message>
+    <message>
+        <source>Show additional tab listing all your masternodes in first sub-tab&lt;br/&gt;and all masternodes on the network in second sub-tab.</source>
+        <translation>Toon extra tabblad waarin al je masternodes worden vermeld in het eerste sub-tabblad&lt;br/&gt;en alle masternodes op het netwerk in het tweede sub-tabblad.</translation>
+    </message>
+    <message>
+        <source>Show Masternodes Tab</source>
+        <translation>Toon Masternodes Tab</translation>
+    </message>
+    <message>
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp; Besteed onbevestigd wisselgeld</translation>
+    </message>
+    <message>
+        <source>&amp;Network</source>
+        <translation>&amp;Netwerk</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van nxboost.</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>Taal ontbreekt of vertaling onvolledig? Help om bij te dragen aan vertalingen:
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
+    </message>
+    <message>
+        <source>Map port using &amp;UPnP</source>
+        <translation>Map poort gebruikt &amp;UPnP</translation>
+    </message>
+    <message>
+        <source>Enable automatic minting of NXB units to zNXB</source>
+        <translation>Schakel automatisch slaan van NXB-eenheden in op zNXB</translation>
+    </message>
+    <message>
+        <source>Enable zNXB Automint</source>
+        <translation>Schakel zNXB Automint in</translation>
+    </message>
+    <message>
+        <source>Percentage of incoming NXB which get automatically converted to zNXB via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage inkomende NXB die automatisch wordt omgezet naar zNXB via Zerocoin Protocol (min: 10%)</translation>
+    </message>
+    <message>
+        <source>Percentage of autominted zNXB</source>
+        <translation>Percentage autominted zNXB</translation>
+    </message>
+    <message>
+        <source>Wait with automatic conversion to Zerocoin until enough NXB for this denomination is available</source>
+        <translation>Wacht met automatische omzetting naar Zerocoin totdat er genoeg NXB voor deze denominatie beschikbaar is</translation>
+    </message>
+    <message>
+        <source>Preferred Automint zNXB Denomination</source>
+        <translation>Gewenste Automint zNXB denominatie</translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Inzet splitdrempel:</translation>
+    </message>
+    <message>
+        <source>Connect to the NXBoost network through a SOCKS5 proxy.</source>
+        <translation>Maak verbinding met het NXBoost netwerk via een SOCKS5 proxy.</translation>
+    </message>
+    <message>
+        <source>Proxy &amp;IP:</source>
+        <translation>Proxy &amp;IP:</translation>
+    </message>
+    <message>
+        <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
+        <translation>IP adres van de proxy (bijvoorbeeld IPv4: 127.0.0.1 / IPv6: ::1)</translation>
+    </message>
+    <message>
+        <source>&amp;Port:</source>
+        <translation>&amp;Poort:</translation>
+    </message>
+    <message>
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>Proxy-poort (v.b. 9050)</translation>
+    </message>
+    <message>
+        <source>&amp;Window</source>
+        <translation>&amp;Venster</translation>
+    </message>
+    <message>
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>Toon alleen een tray icoon na minimalisering van het venster.</translation>
+    </message>
+    <message>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp; Minimaliseer naar de tray in plaats van de taakbalk</translation>
+    </message>
+    <message>
+        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
+        <translation>Minimaliseer in plaats van de applicatie te verlaten wanneer het venster wordt gesloten. Wanneer deze optie is ingeschakeld, wordt de applicatie alleen gesloten nadat in het menu Quit wordt gekozen.</translation>
+    </message>
+    <message>
+        <source>M&amp;inimize on close</source>
+        <translation>Minimaliseer bij sluiten</translation>
+    </message>
+    <message>
+        <source>&amp;Display</source>
+        <translation>&amp;Weergave</translation>
+    </message>
+    <message>
+        <source>User Interface &amp;language:</source>
+        <translation>Gebruiksinterface &amp;language:</translation>
+    </message>
+    <message>
+        <source>User Interface Theme:</source>
+        <translation>Gebruiksinterface thema:</translation>
+    </message>
+    <message>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>Toon &amp;Unit in volgende hoeveelheden:</translation>
+    </message>
+    <message>
+        <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
+        <translation>Kies de standaard onderverdelingseenheid die in de interface wordt weergegeven en bij het verzenden van munten.</translation>
+    </message>
+    <message>
+        <source>Decimal digits</source>
+        <translation>Decimale cijfers</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Verberg lege saldi</translation>
+    </message>
+    <message>
+        <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
+        <translation>URL's van derden (bijvoorbeeld een blok verkenner) die in het tabblad transacties verschijnen als contextmenu items. %s in de URL wordt vervangen door transactie hash. Meerdere URL's worden gescheiden door verticale balk |.</translation>
+    </message>
+    <message>
+        <source>Third party transaction URLs</source>
+        <translation>Transactie URL's van derden</translation>
+    </message>
+    <message>
+        <source>Active command-line options that override above options:</source>
+        <translation>Actieve command line opties die bovenstaande opties overschrijven:</translation>
+    </message>
+    <message>
+        <source>Reset all client options to default.</source>
+        <translation>Reset alle client instellingen naar standaardinstellingen.</translation>
+    </message>
+    <message>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Herstellings Opties</translation>
+    </message>
+    <message>
+        <source>&amp;OK</source>
+        <translation>&amp;OK</translation>
+    </message>
+    <message>
+        <source>&amp;Cancel</source>
+        <translation>&amp;Annuleren</translation>
+    </message>
+    <message>
+        <source>Any</source>
+        <translation>een</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>standaard</translation>
+    </message>
+    <message>
+        <source>none</source>
+        <translation>geen</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>Bevestig reset instellingen</translation>
+    </message>
+    <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>Client herstart vereist om wijzigingen te activeren.</translation>
+    </message>
+    <message>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>Client wordt uitgeschakeld, wil je doorgaan?</translation>
+    </message>
+    <message>
+        <source>This change would require a client restart.</source>
+        <translation>Deze wijziging vereist een herstart van de client.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy address is invalid.</source>
+        <translation>Het opgegeven proxyadres is ongeldig.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>De meegeleverde proxy-poort is ongeldig.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>De geleverde proxy-instellingen zijn ongeldig.</translation>
+    </message>
+</context>
+<context>
+    <name>OverviewPage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulier</translation>
+    </message>
+    <message>
+        <source>Available:</source>
+        <translation>Beschikbaar:</translation>
+    </message>
+    <message>
+        <source>Your current spendable balance</source>
+        <translation>Uw huidige bestedingsruimte</translation>
+    </message>
+    <message>
+        <source>Total Balance, including all unavailable coins.</source>
+        <translation>Totaal saldo, inclusief alle niet-beschikbare munten.</translation>
+    </message>
+    <message>
+        <source>NXB Balance</source>
+        <translation>NXB Saldi</translation>
+    </message>
+    <message>
+        <source>Pending:</source>
+        <translation>In afwachting:</translation>
+    </message>
+    <message>
+        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
+        <translation>Totaal aantal transacties die nog niet zijn bevestigd en nog niet meetellen in het uitgeefbare saldo</translation>
+    </message>
+    <message>
+        <source>Immature:</source>
+        <translation>Immatuur:</translation>
+    </message>
+    <message>
+        <source>Staked or masternode rewards that has not yet matured</source>
+        <translation>Staked of masternode beloningen die nog niet volwassen zijn</translation>
+    </message>
+    <message>
+        <source>Current locked balance in watch-only addresses</source>
+        <translation>Huidige vergrendelde balans in alleen-lezen-adressen</translation>
+    </message>
+    <message>
+        <source>Your current NXBoost balance, unconfirmed and immature transactions included</source>
+        <translation>Uw huidige nxboost-saldo, onbevestigde en onvolgroeide transacties inbegrepen</translation>
+    </message>
+    <message>
+        <source>zNXB Balance</source>
+        <translation>zNXB-saldo</translation>
+    </message>
+    <message>
+        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
+These zNXB are spendable.</source>
+        <translation>Volwassen: meer dan 20 bevestigingen en meer dan 1 mint van dezelfde denominatie nadat het gemint was.
+Deze zPIB zijn besteedbaar.</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>Onbevestigd: minder dan 20 bevestigingen
+Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
+    </message>
+    <message>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het NXBoost netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+    </message>
+    <message>
+        <source>OVERVIEW</source>
+        <translation>OVERZICHT</translation>
+    </message>
+    <message>
+        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <translation>Gecombineerde Saldi (inclusief onbevestigde en onvolwassen munten)</translation>
+    </message>
+    <message>
+        <source>Combined Balance</source>
+        <translation>Gecombineerde balans</translation>
+    </message>
+    <message>
+        <source>Unconfirmed transactions to watch-only addresses</source>
+        <translation>Onbevestigde transacties naar watch-only adressen</translation>
+    </message>
+    <message>
+        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
+        <translation>Staked of masternode beloningen in watch-only adressen die nog niet volwassen zijn</translation>
+    </message>
+    <message>
+        <source>Total:</source>
+        <translation>Totaal:</translation>
+    </message>
+    <message>
+        <source>Current total balance in watch-only addresses</source>
+        <translation>Huidig ​​totaal saldo in watch-only adressen</translation>
+    </message>
+    <message>
+        <source>Watch-only:</source>
+        <translation>Watch-only:</translation>
+    </message>
+    <message>
+        <source>Your current balance in watch-only addresses</source>
+        <translation>Je huidige saldo in watch-only adressen</translation>
+    </message>
+    <message>
+        <source>Spendable:</source>
+        <translation>Uitgeefbaar:</translation>
+    </message>
+    <message>
+        <source>Locked NXB or Masternode collaterals. These are excluded from zNXB minting.</source>
+        <translation>Vergrendelde NXB of Masternode onderpanden. Deze zijn uitgesloten van de zNXB muntage.</translation>
+    </message>
+    <message>
+        <source>Locked:</source>
+        <translation>Vergrendeld:</translation>
+    </message>
+    <message>
+        <source>Unconfirmed:</source>
+        <translation>Onbevestigd:</translation>
+    </message>
+    <message>
+        <source>Your current zNXB balance, unconfirmed and immature zNXB included.</source>
+        <translation>Uw huidige zNXB-saldo, onbevestigde en onvolgroeide zNXB inbegrepen.</translation>
+    </message>
+    <message>
+        <source>Recent transactions</source>
+        <translation>Recente transacties</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>niet gesynchroniseerd</translation>
+    </message>
+    <message>
+        <source>Current percentage of zNXB.
+If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
+</source>
+        <translation>Huidige percentage van zNXB
+Als AutoMint ingeschakeld is zal deze percentage afhangen van de geconfigureerde AutoMint percentage (standaard = 10%).
+</translation>
+    </message>
+    <message>
+        <source>AutoMint is currently enabled and set to </source>
+        <translation>AutoMint is momenteel ingeschakeld en ingesteld op</translation>
+    </message>
+    <message>
+        <source>To disable AutoMint add 'enablezeromint=0' in nxboost.conf.</source>
+        <translation>Om AutoMint uit te schakelen, voeg je 'enablezeromint=0' toe aan nxboost.conf.</translation>
+    </message>
+    <message>
+        <source>AutoMint is currently disabled.
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.conf</source>
+        <translation>AutoMint is momenteel uitgeschakeld.
+Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint=1' in nxboost.conf</translation>
+    </message>
+</context>
+<context>
+    <name>PaymentServer</name>
+    <message>
+        <source>Payment request error</source>
+        <translation>Fout bij betalingsverzoek</translation>
+    </message>
+    <message>
+        <source>URI handling</source>
+        <translation>URL behandeling</translation>
+    </message>
+    <message>
+        <source>Payment request fetch URL is invalid: %1</source>
+        <translation>Betalingsverzoek ophalen URL is ongeldig: %1</translation>
+    </message>
+    <message>
+        <source>Payment request file handling</source>
+        <translation>Betalingsaanvraag bestandsverwerking</translation>
+    </message>
+    <message>
+        <source>Invalid payment address %1</source>
+        <translation>Ongeldig betalingsadres %1</translation>
+    </message>
+    <message>
+        <source>Cannot start nxboost: click-to-pay handler</source>
+        <translation>Kan NXBoost niet starten: click-to-pay handler</translation>
+    </message>
+    <message>
+        <source>URI cannot be parsed! This can be caused by an invalid NXBoost address or malformed URI parameters.</source>
+        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig NXBoost adres of misvormde URL parameters.</translation>
+    </message>
+    <message>
+        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
+        <translation>Uw betalingsverzoek kan niet worden gelezen! Dit kan worden veroorzaakt door een ongeldig betalingsverzoek bestand.</translation>
+    </message>
+    <message>
+        <source>Payment request rejected</source>
+        <translation>Betalingsverzoek afgewezen</translation>
+    </message>
+    <message>
+        <source>Payment request network doesn't match client network.</source>
+        <translation>Het betalingsverzoek netwerk komt niet overeen met het client netwerk.</translation>
+    </message>
+    <message>
+        <source>Payment request has expired.</source>
+        <translation>Betalingsverzoek is verlopen.</translation>
+    </message>
+    <message>
+        <source>Payment request is not initialized.</source>
+        <translation>Betalingsverzoek is niet geïnitialiseerd. </translation>
+    </message>
+    <message>
+        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
+        <translation>Niet geverifieerde betalingsverzoeken naar aangepaste betaal scripts worden niet ondersteund.</translation>
+    </message>
+    <message>
+        <source>Requested payment amount of %1 is too small (considered dust).</source>
+        <translation>Gevraagd betalingsbedrag van %1 is te klein (beschouwd als dust).</translation>
+    </message>
+    <message>
+        <source>Refund from %1</source>
+        <translation>Terugbetaling van %1</translation>
+    </message>
+    <message>
+        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
+        <translation>Betalingsverzoek %1 is te groot (%2 bytes, toegestaan %3 bytes).</translation>
+    </message>
+    <message>
+        <source>Payment request DoS protection</source>
+        <translation>Betalingsverzoek DoS bescherming</translation>
+    </message>
+    <message>
+        <source>Error communicating with %1: %2</source>
+        <translation>Fout communiceren met %1: %2</translation>
+    </message>
+    <message>
+        <source>Payment request cannot be parsed!</source>
+        <translation>Betalingsaanvraag kan niet worden geanalyseerd!</translation>
+    </message>
+    <message>
+        <source>Bad response from server %1</source>
+        <translation>Bad response van server %1</translation>
+    </message>
+    <message>
+        <source>Network request error</source>
+        <translation>Netwerkverzoek fout</translation>
+    </message>
+    <message>
+        <source>Payment acknowledged</source>
+        <translation>Betaling erkend</translation>
+    </message>
+</context>
+<context>
+    <name>PeerTableModel</name>
+    <message>
+        <source>Address/Hostname</source>
+        <translation>Adres/Hostnaam</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versie</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Pingtijd</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyDialog</name>
+    <message>
+        <source>Zerocoin Actions:</source>
+        <translation>Zerocoin Acties:</translation>
+    </message>
+    <message>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het NXBoost netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+    </message>
+    <message>
+        <source>Mint Zerocoin</source>
+        <translation>Mint Zerocoin</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>zNXB</source>
+        <translation>zNXB</translation>
+    </message>
+    <message>
+        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
+        <translation>Beschikbaar voor muntage zijn munten die bevestigd en niet vergrendeld of Masternode onderpanden zijn.</translation>
+    </message>
+    <message>
+        <source>Available for Minting:</source>
+        <translation>Beschikbaar voor minting:</translation>
+    </message>
+    <message>
+        <source>0.000 000 00 NXB</source>
+        <translation>0.000 000 00 NXB</translation>
+    </message>
+    <message>
+        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
+        <translation>Zerocoin Wallet DB opnieuw instellen. Verwijdert transacties die het niet in de blockchain hebben gered.</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>Resetten</translation>
+    </message>
+    <message>
+        <source>Coin Control...</source>
+        <translation>Munt controle...</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kwantiteit:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
+        <translation>Rescan de complete blockchain voor Zerocoin mints en hun meta-data.</translation>
+    </message>
+    <message>
+        <source>ReScan</source>
+        <translation>ReScan</translation>
+    </message>
+    <message>
+        <source>Status and/or Mesages from the last Mint Action.</source>
+        <translation>Status en/of Berichten van de laatste mint actie.</translation>
+    </message>
+    <message>
+        <source>PRIVACY</source>
+        <translation>PRIVACY</translation>
+    </message>
+    <message>
+        <source>Enter an amount of NXB to convert to zNXB</source>
+        <translation>Vul het aantal NXB in om te converteren naar zNXB</translation>
+    </message>
+    <message>
+        <source>zNXB Control</source>
+        <translation>zNXB Control</translation>
+    </message>
+    <message>
+        <source>zNXB Selected:</source>
+        <translation>zNXB geselecteerd:</translation>
+    </message>
+    <message>
+        <source>Quantity Selected:</source>
+        <translation>Hoeveelheid geselecteerd:</translation>
+    </message>
+    <message>
+        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
+        <translation>Zerocoin besteden. Zonder 'Betaal aan:' adres ontstaan betalingen aan jezelf.</translation>
+    </message>
+    <message>
+        <source>Spend Zerocoin</source>
+        <translation>Besteed Zerocoin</translation>
+    </message>
+    <message>
+        <source>Available (mature and spendable) zNXB for spending</source>
+        <translation>Beschikbare (volwassen en uitgeefbaar) zNXB voor besteding</translation>
+    </message>
+    <message>
+        <source>Available Balance:</source>
+        <translation>Beschikbaar saldo:</translation>
+    </message>
+    <message>
+        <source>Available (mature and spendable) zNXB for spending
+
+zNXB are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Beschikbare (volwwassen en uitgeefbaar) zNXB voor besteding
+
+zNXB zijn volwassen wanneer zij meer dan 20 bevestigingen hebben EN meer dan 2 muntages van dezelfde denominaties nadat zij gemunt zijn.</translation>
+    </message>
+    <message>
+        <source>0 zNXB</source>
+        <translation>0 zNXB</translation>
+    </message>
+    <message>
+        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
+        <translation>Beveiligingsniveau voor Zerocoin transacties. Meer is beter, maar heeft meer tijd en middelen nodig.</translation>
+    </message>
+    <message>
+        <source>Security Level:</source>
+        <translation>Beveiligings niveau:</translation>
+    </message>
+    <message>
+        <source>Security Level 1 - 100 (default: 42)</source>
+        <translation>Beveiligingsniveau 1 - 100 (standaard: 42)</translation>
+    </message>
+    <message>
+        <source>Pay &amp;To:</source>
+        <translation>Betaal &amp;Naar:</translation>
+    </message>
+    <message>
+        <source>The NXBoost address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Het NXBoost adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Kies een eerder gebruikt adres</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Plak adres vanaf klembord</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Label:</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>&amp;Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Convert Change to Zerocoin (might cost additional fees)</source>
+        <translation>Zet wisselgeld om naar Zerocoin (mogelijk extra kosten)</translation>
+    </message>
+    <message>
+        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
+        <translation>Indien aangevinkt, probeert de portemonnee het terugkerende wisselgeld te minimaliseren in plaats van het aantal uitgegeven denominaties te minimaliseren.</translation>
+    </message>
+    <message>
+        <source>Minimize Change</source>
+        <translation>Minimaliseer wisselgeld</translation>
+    </message>
+    <message>
+        <source>Information about the available Zerocoin funds.</source>
+        <translation>Informatie over de beschikbare Zerocoin fondsen.</translation>
+    </message>
+    <message>
+        <source>Zerocoin Stats:</source>
+        <translation>Zerocoin Statistieken:</translation>
+    </message>
+    <message>
+        <source>Total Balance including unconfirmed and immature zNXB</source>
+        <translation>Totale Saldi, inclusief onbevestigde en onvolwassen zNXB</translation>
+    </message>
+    <message>
+        <source>Total Zerocoin  Balance:</source>
+        <translation>Totale Zerocoin Saldi:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 1:</source>
+        <translation>Denominaties met waarde 1:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 1:</source>
+        <translation>Denom. met waarde 1:</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>Onbevestigd: minder dan 20 bevestigingen
+Onvolwassen: bevestigd, maar minder dan 1 mint van dezelfde denominatie nadat het gemint was.</translation>
+    </message>
+    <message>
+        <source>Show the current status of automatic zNXB minting.
+
+To change the status (restart required):
+- enable: add 'enablezeromint=1' to nxboost.conf
+- disable: add 'enablezeromint=0' to nxboost.conf
+
+To change the percentage (no restart required):
+- menu Settings-&gt;Options-&gt;Percentage of autominted zNXB
+
+</source>
+        <translation>Toon de huidige status van automatische zNXB-markering.
+
+Om de status te wijzigen (opnieuw opstarten vereist):
+- enable: voeg 'enablezeromint = 1' toe aan nxboost.conf
+- uitschakelen: voeg 'enablezeromint = 0' toe aan nxboost.conf
+
+Om het percentage te wijzigen (geen herstart vereist):
+- menu Instellingen-&gt; Opties-&gt; Percentage van geautomatiseerde zNXB
+</translation>
+    </message>
+    <message>
+        <source>AutoMint Status</source>
+        <translation>AutoMint-status</translation>
+    </message>
+    <message>
+        <source>Global Supply:</source>
+        <translation>Wereldwijde levering:</translation>
+    </message>
+    <message>
+        <source>Denom. 1:</source>
+        <translation>Denom. 1:</translation>
+    </message>
+    <message>
+        <source>Denom. 5:</source>
+        <translation>Denom. 5:</translation>
+    </message>
+    <message>
+        <source>Denom. 10:</source>
+        <translation>Denom. 10:</translation>
+    </message>
+    <message>
+        <source>Denom. 50:</source>
+        <translation>Denom. 50:</translation>
+    </message>
+    <message>
+        <source>Denom. 100:</source>
+        <translation>Denom. 100:</translation>
+    </message>
+    <message>
+        <source>Denom. 500:</source>
+        <translation>Denom. 500:</translation>
+    </message>
+    <message>
+        <source>Denom. 1000:</source>
+        <translation>Denom. 1000:</translation>
+    </message>
+    <message>
+        <source>Denom. 5000:</source>
+        <translation>Denom. 5000:</translation>
+    </message>
+    <message>
+        <source>0 x</source>
+        <translation> 0 x</translation>
+    </message>
+    <message>
+        <source>Denominations with value 5:</source>
+        <translation>Denominaties met waarde 5:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 5:</source>
+        <translation>Denom. met waarde 5:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 10:</source>
+        <translation>Denominaties met waarde 10:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 10:</source>
+        <translation>Denom. met waarde 10:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 50:</source>
+        <translation>Denominaties met waarde 50:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 50:</source>
+        <translation>Denom. met waarde 50:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 100:</source>
+        <translation>Denominaties met waarde 100:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 100:</source>
+        <translation>Denom. met waarde 100:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 500:</source>
+        <translation>Denominaties met waarde 500:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 500:</source>
+        <translation>Denom. met waarde 500:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 1000:</source>
+        <translation>Denominaties met waarde 1000:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 1000:</source>
+        <translation>Denom. met waarde 1000:</translation>
+    </message>
+    <message>
+        <source>Denominations with value 5000:</source>
+        <translation>Denominaties met waarde 5000:</translation>
+    </message>
+    <message>
+        <source>Denom. with value 5000:</source>
+        <translation>Denom. met waarde 5000:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioriteit:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Kost:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Stof:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nee</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Onvoldoende saldo!</translation>
+    </message>
+    <message>
+        <source>Coins automatically selected</source>
+        <translation>Munten automatisch geselecteerd</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>medium</translation>
+    </message>
+    <message>
+        <source>Coin Control Features</source>
+        <translation>Munt controle kenmerken</translation>
+    </message>
+    <message>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
+    </message>
+    <message>
+        <source>Custom change address</source>
+        <translation>Aangepast wisselgeld adres</translation>
+    </message>
+    <message>
+        <source>Amount After Fee:</source>
+        <translation>Bedrag na kosten:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Wijzig:</translation>
+    </message>
+    <message>
+        <source>out of sync</source>
+        <translation>niet gesynchroniseerd</translation>
+    </message>
+    <message>
+        <source>Mint Status: Okay</source>
+        <translation>Mint status: Oké</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopieer kwanititeit</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopieer hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
+Please be patient...</source>
+        <translation>Start ResetMintZerocoin: rescanning complete blockchain, dit zal tot 30 minuten nodig hebben, afhankelijk van uw hardware.
+Wees alsjeblieft geduldig...</translation>
+    </message>
+    <message>
+        <source>Spending Zerocoin.
+Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
+Please be patient...</source>
+        <translation>Zerocoin besteden.
+Computationeel duur, zou mogelijk enkele minuten nodig hebben, afhankelijk van het geselecteerde beveiligingsniveau en je hardware.
+Wees alsjeblieft geduldig...</translation>
+    </message>
+    <message>
+        <source>) needed.
+Maximum allowed: </source>
+        <translation>) vereist.
+Maximaal toegestaan:</translation>
+    </message>
+    <message>
+        <source>zNXB Spend #: </source>
+        <translation>zNXB besteed #:</translation>
+    </message>
+    <message>
+        <source>zNXB Mint</source>
+        <translation>zNXB mint</translation>
+    </message>
+    <message>
+        <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
+        <translation>&lt;b&gt;ingeschakeld&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source> &lt;b&gt;disabled&lt;/b&gt;.</source>
+        <translation>&lt;b&gt;invalide&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source> Configured target percentage: &lt;b&gt;</source>
+        <translation>Geconfigureerd doelpercentage:&lt;b&gt;</translation>
+    </message>
+    <message>
+        <source>zNXB is currently disabled due to maintenance.</source>
+        <translation>zNXB is momenteel uitgeschakeld vanwege onderhoud.</translation>
+    </message>
+    <message>
+        <source>zNXB is currently undergoing maintenance.</source>
+        <translation>zNXB wordt momenteel onderhouden.</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt; 1&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;5&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;5&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;10&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;10&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;50&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;50&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;100&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt; 100&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;500&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt; 500&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;1000&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;1000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;5000&lt;/b&gt;:</source>
+        <translation>Denom. met waarde &lt;b&gt;5000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>AutoMint Status:</source>
+        <translation>AutoMint-status</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;1&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;5&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;5&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;10&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;10&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;50&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;50&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;100&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;100&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;500&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;500&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;1000&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;1000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;5000&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;5000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
+        <translation>Fout: Je portemonnee is vergrendeld. Voer alsjeblieft de wachtwoord zin voor de portemonnee in.</translation>
+    </message>
+    <message>
+        <source>Message: Enter an amount &gt; 0.</source>
+        <translation>Bericht: voer een bedrag in &gt; 0.</translation>
+    </message>
+    <message>
+        <source>Minting </source>
+        <translation>Minting </translation>
+    </message>
+    <message>
+        <source>Successfully minted </source>
+        <translation>Succesvol gemint</translation>
+    </message>
+    <message>
+        <source> zNXB in </source>
+        <translation> zNXB in </translation>
+    </message>
+    <message>
+        <source> sec. Used denominations:
+</source>
+        <translation>sec. gebruikte denominaties:
+</translation>
+    </message>
+    <message>
+        <source>Duration: </source>
+        <translation>Duur:</translation>
+    </message>
+    <message>
+        <source> sec.
+</source>
+        <translation> sec.
+</translation>
+    </message>
+    <message>
+        <source>Starting ResetSpentZerocoin: </source>
+        <translation>Starten van ResetSpentZerocoin: </translation>
+    </message>
+    <message>
+        <source>No 'Pay To' address provided, creating local payment</source>
+        <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
+    </message>
+    <message>
+        <source>Invalid NXBoost Address</source>
+        <translation>Ongeldig NXBoost addres</translation>
+    </message>
+    <message>
+        <source>Invalid Send Amount</source>
+        <translation>Ongeldig verzend bedrag</translation>
+    </message>
+    <message>
+        <source>Confirm additional Fees</source>
+        <translation>Bevestig extra kosten</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Weet je zeker dat je wilt verzenden?&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source> to address </source>
+        <translation>naar adres</translation>
+    </message>
+    <message>
+        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
+        <translation>naar een nieuw gegenereerd (ongebruikt en dus anoniem) lokaal adres&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>with Security Level </source>
+        <translation>met beveiligingsniveau</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Bevestig verzending coins</translation>
+    </message>
+    <message>
+        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
+        <translation>Versie 1 zNXB vereist een beveiligingsniveau van 100 om succesvol te besteden.</translation>
+    </message>
+    <message>
+        <source>Failed to spend zNXB</source>
+        <translation>Mislukt om zNXB te besteden.</translation>
+    </message>
+    <message>
+        <source>Failed to fetch mint associated with serial hash</source>
+        <translation>Mislukt om de mint op te halen geassocieerd met de seriële hash</translation>
+    </message>
+    <message>
+        <source>Too much inputs (</source>
+        <translation>Teveel invoer (</translation>
+    </message>
+    <message>
+        <source>
+Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
+        <translation>
+Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te besteden bedrag verminderen.</translation>
+    </message>
+    <message>
+        <source>Spend Zerocoin failed with status = </source>
+        <translation>Bestede Zerocoin mislukt met status =</translation>
+    </message>
+    <message numerus="yes">
+        <source>PrivacyDialog</source>
+        <comment>Enter an amount of NXB to convert to zNXB</comment>
+        <translation><numerusform>PrivacyDialoog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
+    </message>
+    <message>
+        <source>denomination: </source>
+        <translation>denominatie:</translation>
+    </message>
+    <message>
+        <source>serial: </source>
+        <translation>serial: </translation>
+    </message>
+    <message>
+        <source>Spend is 1 of : </source>
+        <translation>Besteed is 1 of : </translation>
+    </message>
+    <message>
+        <source>value out: </source>
+        <translation>Waarde uit:</translation>
+    </message>
+    <message>
+        <source>address: </source>
+        <translation>adres:</translation>
+    </message>
+    <message>
+        <source>Sending successful, return code: </source>
+        <translation>Verzenden succesvol, retourcode:</translation>
+    </message>
+    <message>
+        <source>txid: </source>
+        <translation>txid: </translation>
+    </message>
+    <message>
+        <source>fee: </source>
+        <translation>kosten:</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Amount</source>
+        <translation>Hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Enter a NXBoost address (e.g. %1)</source>
+        <translation>Voer een NXBoost adres in (b.v. %1)</translation>
+    </message>
+    <message>
+        <source>%1 d</source>
+        <translation>%1 d</translation>
+    </message>
+    <message>
+        <source>%1 h</source>
+        <translation>%1 h</translation>
+    </message>
+    <message>
+        <source>%1 m</source>
+        <translation>%1 m</translation>
+    </message>
+    <message>
+        <source>%1 s</source>
+        <translation>%1 s</translation>
+    </message>
+    <message>
+        <source>NETWORK</source>
+        <translation>NETWERK</translation>
+    </message>
+    <message>
+        <source>BLOOM</source>
+        <translation>BLOOM</translation>
+    </message>
+    <message>
+        <source>UNKNOWN</source>
+        <translation>ONBEKEND</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>Geen</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>NB</translation>
+    </message>
+    <message>
+        <source>%1 ms</source>
+        <translation>%1 ms</translation>
+    </message>
+</context>
+<context>
+    <name>QRImageWidget</name>
+    <message>
+        <source>&amp;Save Image...</source>
+        <translation>&amp;Afbeelding opslaan...</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Image</source>
+        <translation>&amp;Kopieer afbeelding</translation>
+    </message>
+    <message>
+        <source>Save QR Code</source>
+        <translation>QR code opslaan</translation>
+    </message>
+    <message>
+        <source>PNG Image (*.png)</source>
+        <translation>PNG Afbeelding(*.png)</translation>
+    </message>
+</context>
+<context>
+    <name>RPCConsole</name>
+    <message>
+        <source>Tools window</source>
+        <translation>Tools venster</translation>
+    </message>
+    <message>
+        <source>&amp;Information</source>
+        <translation>&amp;Informatie</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Algemeen</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Naam</translation>
+    </message>
+    <message>
+        <source>Client name</source>
+        <translation>Client naam</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>NB</translation>
+    </message>
+    <message>
+        <source>Number of connections</source>
+        <translation>Aantal connecties</translation>
+    </message>
+    <message>
+        <source>&amp;Open</source>
+        <translation>&amp;Open</translation>
+    </message>
+    <message>
+        <source>Startup time</source>
+        <translation>Opstarttijd</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netwerk</translation>
+    </message>
+    <message>
+        <source>Last block time</source>
+        <translation>Laatste blocktijd</translation>
+    </message>
+    <message>
+        <source>Debug log file</source>
+        <translation>Debug logbestand</translation>
+    </message>
+    <message>
+        <source>Using OpenSSL version</source>
+        <translation>Gebruikt OpenSSL versie</translation>
+    </message>
+    <message>
+        <source>Build date</source>
+        <translation>Bouwdatum</translation>
+    </message>
+    <message>
+        <source>Current number of blocks</source>
+        <translation>Huidige blockaantal</translation>
+    </message>
+    <message>
+        <source>Client version</source>
+        <translation>Client versie</translation>
+    </message>
+    <message>
+        <source>Using BerkeleyDB version</source>
+        <translation>Gebruikt BerkeleyDB versie</translation>
+    </message>
+    <message>
+        <source>Block chain</source>
+        <translation>Blockchain</translation>
+    </message>
+    <message>
+        <source>Open the NXBoost debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het NXBoost debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+    </message>
+    <message>
+        <source>Number of Masternodes</source>
+        <translation>Aantal Masternodes</translation>
+    </message>
+    <message>
+        <source>&amp;Console</source>
+        <translation>&amp;Console</translation>
+    </message>
+    <message>
+        <source>Clear console</source>
+        <translation>Console leegmaken</translation>
+    </message>
+    <message>
+        <source>&amp;Network Traffic</source>
+        <translation>&amp;Netwerk verkeer</translation>
+    </message>
+    <message>
+        <source>&amp;Clear</source>
+        <translation>&amp;Leegmaken</translation>
+    </message>
+    <message>
+        <source>Totals</source>
+        <translation>Totalen</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Ontvangen</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Verstuurd</translation>
+    </message>
+    <message>
+        <source>&amp;Peers</source>
+        <translation>&amp;Peers</translation>
+    </message>
+    <message>
+        <source>Banned peers</source>
+        <translation>Verboden leeftijdsgenoten</translation>
+    </message>
+    <message>
+        <source>Select a peer to view detailed information.</source>
+        <translation>Selecteer een peer om gedetailleerde informatie te bekijken.</translation>
+    </message>
+    <message>
+        <source>Whitelisted</source>
+        <translation>Whitelisted</translation>
+    </message>
+    <message>
+        <source>Direction</source>
+        <translation>Richting</translation>
+    </message>
+    <message>
+        <source>Protocol</source>
+        <translation>Protocol</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versie</translation>
+    </message>
+    <message>
+        <source>Services</source>
+        <translation>Diensten</translation>
+    </message>
+    <message>
+        <source>Ban Score</source>
+        <translation>Ban score</translation>
+    </message>
+    <message>
+        <source>Connection Time</source>
+        <translation>Connectietijd</translation>
+    </message>
+    <message>
+        <source>Last Send</source>
+        <translation>Laatst Verzonden</translation>
+    </message>
+    <message>
+        <source>Last Receive</source>
+        <translation>Laatst Ontvangen</translation>
+    </message>
+    <message>
+        <source>Bytes Sent</source>
+        <translation>Verzonden Bytes</translation>
+    </message>
+    <message>
+        <source>Bytes Received</source>
+        <translation>Ontvangen Bytes</translation>
+    </message>
+    <message>
+        <source>Ping Time</source>
+        <translation>Pingtijd</translation>
+    </message>
+    <message>
+        <source>&amp;Wallet Repair</source>
+        <translation>&amp;Portemonnee herstel</translation>
+    </message>
+    <message>
+        <source>Delete local Blockchain Folders</source>
+        <translation>Verwijder lokale Blockchain Mappen</translation>
+    </message>
+    <message>
+        <source>Wallet In Use:</source>
+        <translation>Portemonnee in gebruik:</translation>
+    </message>
+    <message>
+        <source>Starting Block</source>
+        <translation>Startblok</translation>
+    </message>
+    <message>
+        <source>Synced Headers</source>
+        <translation>Gesynchroniseerde headers</translation>
+    </message>
+    <message>
+        <source>Synced Blocks</source>
+        <translation>Gesynchroniseerde blokken</translation>
+    </message>
+    <message>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>De duur van een momenteel openstaande ping.</translation>
+    </message>
+    <message>
+        <source>Ping Wait</source>
+        <translation>Ping wacht</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>Tijdverschuiving</translation>
+    </message>
+    <message>
+        <source>Custom Backup Path:</source>
+        <translation>Aangepast back-up pad:</translation>
+    </message>
+    <message>
+        <source>Custom zNXB Backup Path:</source>
+        <translation>Aangepast zNXB back-up pad:</translation>
+    </message>
+    <message>
+        <source>Custom Backups Threshold:</source>
+        <translation>Aangepaste back-up drempel:</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>Red portemonnee</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
+        <translation>Poog om privé sleutels terug te halen uit een corrupte wallet.dat.</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain files</source>
+        <translation>Herscan blockchain bestanden</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions.</source>
+        <translation>Herscan de blockchain voor ontbrekende portemonnee transacties.</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>Herstel transacties 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (keep meta-data, e.g. account owner).</source>
+        <translation>Herstel transacties van blockchain (houd meta-data, bijvoorbeeld account eigenaar).</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>Herstel transacties 2</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (drop meta-data).</source>
+        <translation>Herstel transacties van blockchain (laat meta-data vallen).</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>Upgrade portemonnee format</translation>
+    </message>
+    <message>
+        <source>Rebuild block chain index from current blk000??.dat files.</source>
+        <translation>Herstel blockchain index van huidige blk000??.dat bestanden.</translation>
+    </message>
+    <message>
+        <source>-resync:</source>
+        <translation>-resync:</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Verwijder alle lokale blockchain mappen zodat de portemonnee alles opnieuw kan hersynchroniseren.</translation>
+    </message>
+    <message>
+        <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
+        <translation>De onderstaande knoppen zullen de portemonnee opnieuw opstarten met command line opties om de portemonnee te repareren, problemen op te lossen met corrupte blockchain bestanden of ontbrekende/verouderde transacties.</translation>
+    </message>
+    <message>
+        <source>Wallet repair options.</source>
+        <translation>Portemonnee herstelopties.</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
+        <translation>Upgrade portemonnee naar nieuwste format bij opstarten. (Opmerking: dit is NIET een update van de portemonnee zelf!)</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>Herbouw index</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>In:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Uit:</translation>
+    </message>
+    <message>
+        <source>Welcome to the NXBoost RPC console.</source>
+        <translation>Welkom bij de NXBoost RPC console.</translation>
+    </message>
+    <message>
+        <source>&amp;Disconnect Node</source>
+        <translation>&amp; Koppel Node los</translation>
+    </message>
+    <message>
+        <source>Ban Node for</source>
+        <translation>Ban Node voor</translation>
+    </message>
+    <message>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;hour</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;day</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;week</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;year</translation>
+    </message>
+    <message>
+        <source>&amp;Unban Node</source>
+        <translation>&amp; Veel succes</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dit zal al jouw lokale blockchain mappen verwijderen en de portemonnee zal de blockchain helemaal opnieuw synchroniseren.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dit vergt nogal wat tijd en downloadt veel data.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Uw transacties en tegoeden zijn opnieuw zichtbaar nadat het downloaden is voltooid.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Wil je verdergaan?</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Bevestig hersynchronisering van Blockchain</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>Gebruik omhoog en omlaag pijlen om de geschiedenis te navigeren, en&lt;b&gt;Ctrl-L&lt;/b&gt;om scherm te wissen.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Type &lt;b&gt;help &lt;/b&gt;voor een overzicht van beschikbare commando's.</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 B</translation>
+    </message>
+    <message>
+        <source>%1 KB</source>
+        <translation>%1 KB</translation>
+    </message>
+    <message>
+        <source>%1 MB</source>
+        <translation>%1 MB</translation>
+    </message>
+    <message>
+        <source>%1 GB</source>
+        <translation>%1 GB</translation>
+    </message>
+    <message>
+        <source>(node id: %1)</source>
+        <translation>(node id: %1)</translation>
+    </message>
+    <message>
+        <source>via %1</source>
+        <translation>via %1</translation>
+    </message>
+    <message>
+        <source>never</source>
+        <translation>nooit</translation>
+    </message>
+    <message>
+        <source>Inbound</source>
+        <translation>Inkomende</translation>
+    </message>
+    <message>
+        <source>Outbound</source>
+        <translation>Uitgaande</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>ja</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Nee</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Ongekend</translation>
+    </message>
+</context>
+<context>
+    <name>ReceiveCoinsDialog</name>
+    <message>
+        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
+        <translation>Hergebruik een van de eerder gebruikte ontvangstadressen.&lt;br&gt;Hergebruik van adressen heeft beveiligings- en privacyproblemen. &lt;br&gt;Gebruik dit niet tenzij u eerder een betalingsverzoek heeft aangemaakt.</translation>
+    </message>
+    <message>
+        <source>R&amp;euse an existing receiving address (not recommended)</source>
+        <translation>Hergebruik een bestaand ontvangstadres (niet aanbevolen)</translation>
+    </message>
+    <message>
+        <source>&amp;Message:</source>
+        <translation>&amp;Bericht:</translation>
+    </message>
+    <message>
+        <source>An optional label to associate with the new receiving address.</source>
+        <translation>Een optioneel label om te associëren met het nieuwe ontvangstadres.</translation>
+    </message>
+    <message>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het NXBoost netwerk.</translation>
+    </message>
+    <message>
+        <source>RECEIVE</source>
+        <translation>ontvangen</translation>
+    </message>
+    <message>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the NXBoost network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het NXBoost netwerk.</translation>
+    </message>
+    <message>
+        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
+        <translation>Gebruik dit formulier om betalingen aan te vragen. Alle velden zijn&lt;b&gt;optioneel&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Label:</translation>
+    </message>
+    <message>
+        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
+        <translation>Een optioneel bedrag om te vragen. Laat dit leeg of vul een nul in om geen specifiek bedrag te vragen.</translation>
+    </message>
+    <message>
+        <source>&amp;Amount:</source>
+        <translation>&amp;Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>&amp;Request payment</source>
+        <translation>&amp;Verzoek betaling</translation>
+    </message>
+    <message>
+        <source>Clear all fields of the form.</source>
+        <translation>Leeg alle velden van het formulier.</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>Leegmaken</translation>
+    </message>
+    <message>
+        <source>Requested payments history</source>
+        <translation>Betalingsverzoeken geschiedenis</translation>
+    </message>
+    <message>
+        <source>Show the selected request (does the same as double clicking an entry)</source>
+        <translation>Toon het geselecteerde verzoek (doet hetzelfde als dubbelklik op een item)</translation>
+    </message>
+    <message>
+        <source>Show</source>
+        <translation>Toon</translation>
+    </message>
+    <message>
+        <source>Remove the selected entries from the list</source>
+        <translation>Verwijder de geselecteerde vermeldingen uit de lijst</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Verwijder</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Kopiëer label</translation>
+    </message>
+    <message>
+        <source>Copy message</source>
+        <translation>Bericht kopiëren</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopieer hoeveelheid</translation>
+    </message>
+</context>
+<context>
+    <name>ReceiveRequestDialog</name>
+    <message>
+        <source>QR Code</source>
+        <translation>QR Code</translation>
+    </message>
+    <message>
+        <source>Copy &amp;URI</source>
+        <translation>Kopieer &amp;URI</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Address</source>
+        <translation>Kopieer &amp;Adres</translation>
+    </message>
+    <message>
+        <source>&amp;Save Image...</source>
+        <translation>&amp;Afbeelding opslaan...</translation>
+    </message>
+    <message>
+        <source>Request payment to %1</source>
+        <translation>Verzoek betaling aan %1</translation>
+    </message>
+    <message>
+        <source>Payment information</source>
+        <translation>Betalingsinformatie</translation>
+    </message>
+    <message>
+        <source>URI</source>
+        <translation>URI</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Label</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Bericht</translation>
+    </message>
+    <message>
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>Resulterende URI te lang geleden, probeer de tekst voor label/bericht te verminderen.</translation>
+    </message>
+    <message>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Fout bij het coderen van URI in QR-code.</translation>
+    </message>
+</context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Label</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Bericht</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Hoeveelheid</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(geen label)</translation>
+    </message>
+    <message>
+        <source>(no message)</source>
+        <translation>(geen bericht)</translation>
+    </message>
+    <message>
+        <source>(no amount)</source>
+        <translation>(geen hoeveelheid)</translation>
+    </message>
+</context>
+<context>
+    <name>SendCoinsDialog</name>
+    <message>
+        <source>Send Coins</source>
+        <translation>Verzend Munten</translation>
+    </message>
+    <message>
+        <source>SEND</source>
+        <translation>STUREN</translation>
+    </message>
+    <message>
+        <source>Coin Control Features</source>
+        <translation>Munt controle kenmerken</translation>
+    </message>
+    <message>
+        <source>Insufficient funds!</source>
+        <translation>Onvoldoende saldo!</translation>
+    </message>
+    <message>
+        <source>Quantity:</source>
+        <translation>Kwantiteit:</translation>
+    </message>
+    <message>
+        <source>Bytes:</source>
+        <translation>Bytes:</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Priority:</source>
+        <translation>Prioriteit:</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>medium</translation>
+    </message>
+    <message>
+        <source>Fee:</source>
+        <translation>Kost:</translation>
+    </message>
+    <message>
+        <source>Dust:</source>
+        <translation>Stof:</translation>
+    </message>
+    <message>
+        <source>no</source>
+        <translation>nee</translation>
+    </message>
+    <message>
+        <source>After Fee:</source>
+        <translation>Na de kost:</translation>
+    </message>
+    <message>
+        <source>Change:</source>
+        <translation>Wijzig:</translation>
+    </message>
+    <message>
+        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
+        <translation>Als dit geactiveerd is, maar het wisselgeld adres is leeg of ongeldig, wordt het wisselgeld verzonden naar een nieuw gegenereerd adres.</translation>
+    </message>
+    <message>
+        <source>Custom change address</source>
+        <translation>Aangepast wisselgeld adres</translation>
+    </message>
+    <message>
+        <source>Split UTXO</source>
+        <translation>Split UTXO</translation>
+    </message>
+    <message>
+        <source># of outputs</source>
+        <translation># outputs</translation>
+    </message>
+    <message>
+        <source>UTXO Size:</source>
+        <translation>UTXO grootte:</translation>
+    </message>
+    <message>
+        <source>0 NXB</source>
+        <translation>0 NXB</translation>
+    </message>
+    <message>
+        <source>Transaction Fee:</source>
+        <translation>Transactiekosten: </translation>
+    </message>
+    <message>
+        <source>Choose...</source>
+        <translation>Kies...</translation>
+    </message>
+    <message>
+        <source>collapse fee-settings</source>
+        <translation>Klap kosten instellingen in</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation>Minimaliseer</translation>
+    </message>
+    <message>
+        <source>per kilobyte</source>
+        <translation>per kilobyte</translation>
+    </message>
+    <message>
+        <source>total at least</source>
+        <translation>totaal tenminste</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(lees de tooltip)</translation>
+    </message>
+    <message>
+        <source>Custom:</source>
+        <translation>Aangepast:</translation>
+    </message>
+    <message>
+        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
+        <translation>(Smart fee nog niet geïnitialiseerd. Dit duurt meestal een paar blokken ...)</translation>
+    </message>
+    <message>
+        <source>Confirmation time:</source>
+        <translation>Bevestigingstijd:</translation>
+    </message>
+    <message>
+        <source>Open Coin Control...</source>
+        <translation>Open munt controle...</translation>
+    </message>
+    <message>
+        <source>Coins automatically selected</source>
+        <translation>Munten automatisch geselecteerd</translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 uNXBs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNXBs in fee,&lt;br /&gt;while "at least" pays 1000 uNXBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uNXBs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uNXB's in vergoeding,&lt;br /&gt;terwijl "minstens" 1000 uNXB's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+    </message>
+    <message>
+        <source>If the custom fee is set to 1000 uNXBs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNXBs in fee,&lt;br /&gt;while "total at least" pays 1000 uNXBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Als de aangepaste vergoeding is ingesteld op 1000 uNXBs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uNXB's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uNXB's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
+    </message>
+    <message>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for NXBoost transactions than the network can process.</source>
+        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar NXBoost transacties dan het netwerk kan verwerken.</translation>
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>normaal</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>snel</translation>
+    </message>
+    <message>
+        <source>Recommended</source>
+        <translation>Aanbevolen</translation>
+    </message>
+    <message>
+        <source>Send as zero-fee transaction if possible</source>
+        <translation>Zend als zero-fee transactie indien mogelijk</translation>
+    </message>
+    <message>
+        <source>(confirmation may take longer)</source>
+        <translation>(bevestiging kan langer duren)</translation>
+    </message>
+    <message>
+        <source>Confirm the send action</source>
+        <translation>Bevestig de verzendactie</translation>
+    </message>
+    <message>
+        <source>S&amp;end</source>
+        <translation>V&amp;erzenden</translation>
+    </message>
+    <message>
+        <source>Clear all fields of the form.</source>
+        <translation>Leeg alle velden van het formulier.</translation>
+    </message>
+    <message>
+        <source>Clear &amp;All</source>
+        <translation>Verwijder &amp;Alles</translation>
+    </message>
+    <message>
+        <source>Send to multiple recipients at once</source>
+        <translation>Verzend naar meerdere ontvangers tegelijk</translation>
+    </message>
+    <message>
+        <source>Add &amp;Recipient</source>
+        <translation>Voeg &amp;ontvanger toe</translation>
+    </message>
+    <message>
+        <source>Anonymized NXB</source>
+        <translation>Geanonimiseerde NXB</translation>
+    </message>
+    <message>
+        <source>Balance:</source>
+        <translation>Balans:</translation>
+    </message>
+    <message>
+        <source>Copy quantity</source>
+        <translation>Kopieer kwanititeit</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopieer hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>Kopiëer kost</translation>
+    </message>
+    <message>
+        <source>Copy after fee</source>
+        <translation>Kopiëer na kost</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>Kopieer bytes</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>Kopieer prioriteit</translation>
+    </message>
+    <message>
+        <source>Copy dust</source>
+        <translation>Kopieer dust</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>Kopieer wisselgeld</translation>
+    </message>
+    <message>
+        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
+        <translation>Het split block tool werkt niet bij het verzenden naar externe adressen. Probeer het nog eens.</translation>
+    </message>
+    <message>
+        <source>The split block tool does not work with multiple addresses. Try again.</source>
+        <translation>Het split block tool werkt niet met meerdere adressen. Probeer het nog eens.</translation>
+    </message>
+    <message>
+        <source>Warning: Invalid NXBoost address</source>
+        <translation>Waarschuwing: Ongeldig NXBoost adres</translation>
+    </message>
+    <message>
+        <source>%1 to %2</source>
+        <translation>%1 naar %2</translation>
+    </message>
+    <message>
+        <source>Are you sure you want to send?</source>
+        <translation>Ben je zeker dat je wilt verzenden?</translation>
+    </message>
+    <message>
+        <source>are added as transaction fee</source>
+        <translation>worden toegevoegd als transactiekosten</translation>
+    </message>
+    <message>
+        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
+        <translation>Totale hoeveelheid = &lt;b&gt;%1 &lt;/b&gt;&lt;br /&gt;= %2</translation>
+    </message>
+    <message>
+        <source>Confirm send coins</source>
+        <translation>Bevestig verzending coins</translation>
+    </message>
+    <message>
+        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
+        <translation>Een vergoeding %1 keer hoger dan %2 per kB wordt beschouwd als een zwaar hoge vergoeding.</translation>
+    </message>
+    <message numerus="yes">
+        <source>Estimated to begin confirmation within %n block(s).</source>
+        <translation><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform><numerusform>Schatting om te beginnen met bevestiging in %n blokken.</numerusform></translation>
+    </message>
+    <message>
+        <source>The recipient address is not valid, please recheck.</source>
+        <translation>Het ontvangstadres is niet geldig, controleer deze.</translation>
+    </message>
+    <message>
+        <source>using SwiftX</source>
+        <translation>met SwiftX</translation>
+    </message>
+    <message>
+        <source> split into %1 outputs using the UTXO splitter.</source>
+        <translation>gesplitst in %1 outputs met behulp van de UTXO splitter.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
+        <translation>&lt;b&gt;(%1 van %2 vermeldingen weergegeven)</translation>
+    </message>
+    <message>
+        <source>The amount to pay must be larger than 0.</source>
+        <translation>Het te betalen bedrag moet groter zijn dan 0.</translation>
+    </message>
+    <message>
+        <source>The amount exceeds your balance.</source>
+        <translation>Het bedrag overschrijdt uw saldo.</translation>
+    </message>
+    <message>
+        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
+        <translation>Het totaal overschrijdt uw saldo wanneer de transactievergoeding %1 is inbegrepen.</translation>
+    </message>
+    <message>
+        <source>Duplicate address found, can only send to each address once per send operation.</source>
+        <translation>Dubbel adres gevonden, kan alleen per keer per verzendoperatie naar elk adres versturen.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>Transactie creatie mislukt!</translation>
+    </message>
+    <message>
+        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>De transactie is afgewezen! Dit kan gebeuren als sommige munten in je portemonnee al waren uitgegeven, zoals als je een kopie van de wallet.dat en munten in de kopie waren besteed maar niet gemarkeerd zoals hier besteed.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins.</source>
+        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren.</translation>
+    </message>
+    <message>
+        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <translation>Fout: De portemonnee was alleen geopend om munten te anonimiseren. Ontgrendelen geannuleerd.</translation>
+    </message>
+    <message>
+        <source>Pay only the minimum fee of %1</source>
+        <translation>Betaal alleen de minimumkost van %1</translation>
+    </message>
+    <message>
+        <source>Warning: Unknown change address</source>
+        <translation>Waarschuwing: Ongekend wisselgeld adres</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(geen label)</translation>
+    </message>
+</context>
+<context>
+    <name>SendCoinsEntry</name>
+    <message>
+        <source>This is a normal payment.</source>
+        <translation>Dit is een normale betaling.</translation>
+    </message>
+    <message>
+        <source>Pay &amp;To:</source>
+        <translation>Betaal &amp;Naar:</translation>
+    </message>
+    <message>
+        <source>The NXBoost address to send the payment to</source>
+        <translation>Het NXBoost adres om de betaling naar te verzenden</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Kies een eerder gebruikt adres</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Plak adres vanaf klembord</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Remove this entry</source>
+        <translation>Verwijder dit item</translation>
+    </message>
+    <message>
+        <source>&amp;Label:</source>
+        <translation>&amp;Label:</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to the list of used addresses</source>
+        <translation>Vul een label in voor dit adres om deze toe te voegen aan de lijst met gebruikte adressen</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>&amp;Hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Message:</source>
+        <translation>Bericht:</translation>
+    </message>
+    <message>
+        <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
+        <translation>Een bericht dat is gehecht aan de nxboost: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het NXBoost netwerk.</translation>
+    </message>
+    <message>
+        <source>This is an unverified payment request.</source>
+        <translation>Dit is een ongeverifieerde betalingsverzoek.</translation>
+    </message>
+    <message>
+        <source>Pay To:</source>
+        <translation>Betaal aan:</translation>
+    </message>
+    <message>
+        <source>Memo:</source>
+        <translation>Memo:</translation>
+    </message>
+    <message>
+        <source>This is a verified payment request.</source>
+        <translation>Dit is een geverifieerd betalingsverzoek.</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>Voer een label in voor dit adres om het toe te voegen aan jouw adresboek</translation>
+    </message>
+</context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>NXBoost Core is shutting down...</source>
+        <translation>NXBoost Core is aan het afsluiten...</translation>
+    </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Sluit de computer niet af voordat dit venster verdwenen is.</translation>
+    </message>
+</context>
+<context>
+    <name>SignVerifyMessageDialog</name>
+    <message>
+        <source>Signatures - Sign / Verify a Message</source>
+        <translation>Handtekeningen - Onderteken / Verifieer een Bericht</translation>
+    </message>
+    <message>
+        <source>&amp;Sign Message</source>
+        <translation>&amp;Onderteken Bericht</translation>
+    </message>
+    <message>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Je kunt berichten met je adressen ondertekenen om te bewijzen dat je ze bezit. Wees voorzichtig om niets vaags te ondertekenen, omdat phishing aanvallen je misschien kunnen proberen om je identiteit over te geven. Teken alleen volledig gedetailleerde verklaringen aan waar je mee akkoord gaat.</translation>
+    </message>
+    <message>
+        <source>The NXBoost address to sign the message with</source>
+        <translation>Het NXBoost adres om het bericht met te ondertekenen</translation>
+    </message>
+    <message>
+        <source>Choose previously used address</source>
+        <translation>Kies een eerder gebruikt adres</translation>
+    </message>
+    <message>
+        <source>Alt+A</source>
+        <translation>Alt+A</translation>
+    </message>
+    <message>
+        <source>Paste address from clipboard</source>
+        <translation>Plak adres vanaf klembord</translation>
+    </message>
+    <message>
+        <source>Alt+P</source>
+        <translation>Alt+P</translation>
+    </message>
+    <message>
+        <source>Enter the message you want to sign here</source>
+        <translation>Voer hier het bericht in dat u wilt ondertekenen</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Handtekening</translation>
+    </message>
+    <message>
+        <source>Copy the current signature to the system clipboard</source>
+        <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
+    </message>
+    <message>
+        <source>Sign the message to prove you own this NXBoost address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het NXBoost adres bezit</translation>
+    </message>
+    <message>
+        <source>The NXBoost address the message was signed with</source>
+        <translation>Het NXBoost adres waarmee het bericht was ondertekend</translation>
+    </message>
+    <message>
+        <source>Verify the message to ensure it was signed with the specified NXBoost address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde NXBoost adres</translation>
+    </message>
+    <message>
+        <source>Sign &amp;Message</source>
+        <translation>Onderteken &amp;Bericht</translation>
+    </message>
+    <message>
+        <source>Reset all sign message fields</source>
+        <translation>Maak alle ondertekenvelden leeg</translation>
+    </message>
+    <message>
+        <source>Clear &amp;All</source>
+        <translation>Verwijder &amp;Alles</translation>
+    </message>
+    <message>
+        <source>&amp;Verify Message</source>
+        <translation>&amp;Verifieer Bericht</translation>
+    </message>
+    <message>
+        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+        <translation>Voer het ondertekening adres in, verifieer het bericht (zorg ervoor dat je line breaks, spaties, tabs, enz.) en onderteken hieronder om het bericht te verifiëren. Wees voorzichtig om niet meer in de handtekening te lezen dan in het ondertekende bericht zelf, om te voorkomen dat je door een man-in-de-middle aanval wordt getroffen.</translation>
+    </message>
+    <message>
+        <source>Verify &amp;Message</source>
+        <translation>Verifeer &amp;Message</translation>
+    </message>
+    <message>
+        <source>Reset all verify message fields</source>
+        <translation>Maak alle verifiëren van het bericht velden leeg</translation>
+    </message>
+    <message>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Klik op "Onderteken Bericht" om een handtekening te genereren</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>Het ingevoerde adres is ongeldig.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Controleer het adres en probeer het opnieuw.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>Het opgegeven adres verwijst niet naar een sleutel.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Portemonnee-ontsleuteling is geannuleerd.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>Geheime sleutel voor het ingevoerde adres is niet beschikbaar.</translation>
+    </message>
+    <message>
+        <source>Message signing failed.</source>
+        <translation>Bericht ondertekenen mislukt.</translation>
+    </message>
+    <message>
+        <source>Message signed.</source>
+        <translation>Bericht ondertekend.</translation>
+    </message>
+    <message>
+        <source>The signature could not be decoded.</source>
+        <translation>De handtekening kon niet gedecodeerd worden.</translation>
+    </message>
+    <message>
+        <source>Please check the signature and try again.</source>
+        <translation>Controleer de handtekening en probeer het opnieuw.</translation>
+    </message>
+    <message>
+        <source>The signature did not match the message digest.</source>
+        <translation>De handtekening kwam niet overeen met de berichtverdeling.</translation>
+    </message>
+    <message>
+        <source>Message verification failed.</source>
+        <translation>Bericht verificatie mislukt.</translation>
+    </message>
+    <message>
+        <source>Message verified.</source>
+        <translation>Bericht geverifieerd.</translation>
+    </message>
+</context>
+<context>
+    <name>SplashScreen</name>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Kern</translation>
+    </message>
+    <message>
+        <source>Version %1</source>
+        <translation>Versie %1</translation>
+    </message>
+    <message>
+        <source>The Bitcoin Core developers</source>
+        <translation>De Bitcoin Kernontwikkelaars</translation>
+    </message>
+    <message>
+        <source>The Dash Core developers</source>
+        <translation>De Dash Kernontwikkelaars</translation>
+    </message>
+    <message>
+        <source>The NXBoost Core developers</source>
+        <translation>De NXBoost Kernontwikkelaars</translation>
+    </message>
+    <message>
+        <source>[testnet]</source>
+        <translation>[testnet]</translation>
+    </message>
+</context>
+<context>
+    <name>TrafficGraphWidget</name>
+    <message>
+        <source>KB/s</source>
+        <translation>KB/s</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionDesc</name>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Klaar voor %n meer blokken</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
+    </message>
+    <message>
+        <source>Open until %1</source>
+        <translation>Open tot %1</translation>
+    </message>
+    <message>
+        <source>conflicted</source>
+        <translation>conflicteert</translation>
+    </message>
+    <message>
+        <source>%1/offline</source>
+        <translation>%1/offline</translation>
+    </message>
+    <message>
+        <source>%1/unconfirmed</source>
+        <translation>%1/onbevestigd</translation>
+    </message>
+    <message>
+        <source>%1 confirmations</source>
+        <translation>%1 bevestigingen</translation>
+    </message>
+    <message>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (gecontroleerd via SwiftX)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/bevestigd (gecontroleerd via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 bevestigingen (gecontroleerd via swifttx)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/bevestigd (SwiftTX controle in uitvoering - %2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 bevestigingen (SwiftTX controle in uitvoering -%2 van %3 handtekeningen)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/offline (SwiftTX verificatie mislukt)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/bevestigd (SwiftTX verificatie mislukt)</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, is nog niet succesvol uitgezonden</translation>
+    </message>
+    <message numerus="yes">
+        <source>, broadcast through %n node(s)</source>
+        <translation><numerusform>, uitgezonden via %n nodes</numerusform><numerusform>, uitgezonden via %n nodes</numerusform></translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>Bron</translation>
+    </message>
+    <message>
+        <source>Generated</source>
+        <translation>Gegeneerd</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>Van</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>ongekend</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>Naar</translation>
+    </message>
+    <message>
+        <source>own address</source>
+        <translation>eigen adres</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>watch-only</translation>
+    </message>
+    <message>
+        <source>label</source>
+        <translation>label</translation>
+    </message>
+    <message>
+        <source>Credit</source>
+        <translation>Credit</translation>
+    </message>
+    <message numerus="yes">
+        <source>matures in %n more block(s)</source>
+        <translation><numerusform>maturiteit in %n meer blokken</numerusform><numerusform>maturiteit in %n meer blokken</numerusform></translation>
+    </message>
+    <message>
+        <source>not accepted</source>
+        <translation>niet geaccepteerd</translation>
+    </message>
+    <message>
+        <source>Debit</source>
+        <translation>Debet</translation>
+    </message>
+    <message>
+        <source>Total debit</source>
+        <translation>Totaal debet</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Totaal credit</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Transactiekosten</translation>
+    </message>
+    <message>
+        <source>Net amount</source>
+        <translation>Netto bedrag</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Bericht</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>Reactie</translation>
+    </message>
+    <message>
+        <source>Transaction ID</source>
+        <translation>Transactie ID</translation>
+    </message>
+    <message>
+        <source>Output index</source>
+        <translation>Output index</translation>
+    </message>
+    <message>
+        <source>Merchant</source>
+        <translation>Winkelier</translation>
+    </message>
+    <message>
+        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Gegenereerde munten moeten %1 blokken rijpen voordat ze kunnen worden uitgegeven. Wanneer je dit blok hebt gegenereerd, wordt het naar het netwerk uitgezonden om aan de blockchain toegevoegd te worden. Als het niet in de keten komt, verandert de staat in "niet geaccepteerd" en zal het niet uitgeefbaar worden. Dit kan af en toe gebeuren als een andere node binnen een paar seconden van u een blok genereert.</translation>
+    </message>
+    <message>
+        <source>Debug information</source>
+        <translation>Debug informatie</translation>
+    </message>
+    <message>
+        <source>Transaction</source>
+        <translation>Transactie</translation>
+    </message>
+    <message>
+        <source>Inputs</source>
+        <translation>Inputs</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Hoeveelheid</translation>
+    </message>
+    <message>
+        <source>true</source>
+        <translation>waar</translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation>onwaar</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionDescDialog</name>
+    <message>
+        <source>Transaction details</source>
+        <translation>Transactiedetails</translation>
+    </message>
+    <message>
+        <source>This pane shows a detailed description of the transaction</source>
+        <translation>Dit venster laat een gedetailleerde beschrijving van de transactie zien</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionTableModel</name>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Type</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message numerus="yes">
+        <source>Open for %n more block(s)</source>
+        <translation><numerusform>Klaar voor %n meer blokken</numerusform><numerusform>Klaar voor %n meer blokken</numerusform></translation>
+    </message>
+    <message>
+        <source>Open until %1</source>
+        <translation>Open tot %1</translation>
+    </message>
+    <message>
+        <source>Offline</source>
+        <translation>Offline</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>Onbevestigd</translation>
+    </message>
+    <message>
+        <source>Confirming (%1 of %2 recommended confirmations)</source>
+        <translation>Bevestigen (%1 van %2 aanbevolen bevestigingen)</translation>
+    </message>
+    <message>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Bevestigd (%1 bevestigingen)</translation>
+    </message>
+    <message>
+        <source>Conflicted</source>
+        <translation>Geconflicteerd</translation>
+    </message>
+    <message>
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation>Onvolwassen (%1 bevestigingen, zullen beschikbaar zijn na %2)</translation>
+    </message>
+    <message>
+        <source>This block was not received by any other nodes and will probably not be accepted!</source>
+        <translation>Dit blok is niet ontvangen door andere noden en wordt waarschijnlijk niet geaccepteerd!</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Ontvangen met</translation>
+    </message>
+    <message>
+        <source>Masternode Reward</source>
+        <translation>Masternode beloning</translation>
+    </message>
+    <message>
+        <source>Received from</source>
+        <translation>Ontvangen van</translation>
+    </message>
+    <message>
+        <source>Received via Obfuscation</source>
+        <translation>Verkregen via verduistering</translation>
+    </message>
+    <message>
+        <source>NXB Stake</source>
+        <translation>NXB Stake</translation>
+    </message>
+    <message>
+        <source>zNXB Stake</source>
+        <translation>zNXB Stake</translation>
+    </message>
+    <message>
+        <source>Obfuscation Denominate</source>
+        <translation>Verduistering denominatie</translation>
+    </message>
+    <message>
+        <source>Obfuscation Collateral Payment</source>
+        <translation>Verduistering zijdelingse betaling</translation>
+    </message>
+    <message>
+        <source>Obfuscation Make Collateral Inputs</source>
+        <translation>Verduistering maakt zijdelingse inputs</translation>
+    </message>
+    <message>
+        <source>Obfuscation Create Denominations</source>
+        <translation>Verduistering creëert denominaties</translation>
+    </message>
+    <message>
+        <source>Converted NXB to zNXB</source>
+        <translation>Geconverteerde NXB naar zNXB</translation>
+    </message>
+    <message>
+        <source>Spent zNXB</source>
+        <translation>Bestede zNXB</translation>
+    </message>
+    <message>
+        <source>Received NXB from zNXB</source>
+        <translation>Ontvangen NXB van zNXB</translation>
+    </message>
+    <message>
+        <source>Minted Change as zNXB from zNXB Spend</source>
+        <translation>Gemint wisselgeld als zNXB van bestede zNXB</translation>
+    </message>
+    <message>
+        <source>Converted zNXB to NXB</source>
+        <translation>Geconverteerde zNXB naar NXB</translation>
+    </message>
+    <message>
+        <source>Anonymous (zNXB Transaction)</source>
+        <translation>Anonieme (zNXB transactie)</translation>
+    </message>
+    <message>
+        <source>Anonymous (zNXB Stake)</source>
+        <translation>Anonieme (zNXB stake)</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Verzenden naar</translation>
+    </message>
+    <message>
+        <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
+        <translation>Orphan Block - Gegenereerd maar niet geaccepteerd. Dit heeft geen invloed op uw bezit.</translation>
+    </message>
+    <message>
+        <source>Payment to yourself</source>
+        <translation>Betaling naar jezelf</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Mined</translation>
+    </message>
+    <message>
+        <source>Obfuscated</source>
+        <translation>Verduisterd</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>watch-only</translation>
+    </message>
+    <message>
+        <source>(n/a)</source>
+        <translation>(n/b)</translation>
+    </message>
+    <message>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>Transactie status. Beweeg over dit veld om het aantal bevestigingen te tonen.</translation>
+    </message>
+    <message>
+        <source>Date and time that the transaction was received.</source>
+        <translation>Datum en tijd waarop de transactie is ontvangen.</translation>
+    </message>
+    <message>
+        <source>Type of transaction.</source>
+        <translation>Type transactie.</translation>
+    </message>
+    <message>
+        <source>Whether or not a watch-only address is involved in this transaction.</source>
+        <translation>Of een watch-only adres wel of niet betrokken is bij deze transactie.</translation>
+    </message>
+    <message>
+        <source>Destination address of transaction.</source>
+        <translation>Bestemming adres van de transactie.</translation>
+    </message>
+    <message>
+        <source>Amount removed from or added to balance.</source>
+        <translation>Bedrag verwijderd uit of toegevoegd aan saldo.</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>All</source>
+        <translation>Alle</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Vandaag</translation>
+    </message>
+    <message>
+        <source>This week</source>
+        <translation>Deze week</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Deze maand</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Afgelopen maand</translation>
+    </message>
+    <message>
+        <source>This year</source>
+        <translation>Dit jaar</translation>
+    </message>
+    <message>
+        <source>Range...</source>
+        <translation>Omvang...</translation>
+    </message>
+    <message>
+        <source>Most Common</source>
+        <translation>Meest voorkomend</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Ontvangen met</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Verzenden naar</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Naar jezelf</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Mined</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Minted</translation>
+    </message>
+    <message>
+        <source>Masternode Reward</source>
+        <translation>Masternode beloning</translation>
+    </message>
+    <message>
+        <source>Zerocoin Mint</source>
+        <translation>Zerocoin Mint</translation>
+    </message>
+    <message>
+        <source>Zerocoin Spend</source>
+        <translation>Zerocoin uitgegeven</translation>
+    </message>
+    <message>
+        <source>Zerocoin Spend to Self</source>
+        <translation>Zerocoin uitgegeven aan jezelf</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Andere</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>Adres of label invullen om te zoeken</translation>
+    </message>
+    <message>
+        <source>Min amount</source>
+        <translation>Minimale hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopieer adres</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Kopiëer label</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Kopieer hoeveelheid</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Kopier transactie ID</translation>
+    </message>
+    <message>
+        <source>Edit label</source>
+        <translation>Label wijzigen</translation>
+    </message>
+    <message>
+        <source>Show transaction details</source>
+        <translation>Bekijk transactiedetails</translation>
+    </message>
+    <message>
+        <source>Export Transaction History</source>
+        <translation>Exporteer Transactiegeschiedenis</translation>
+    </message>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Kommagescheiden bestand (*.csv)</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>Bevestigd</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation>Watch-only</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Type</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Label</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adres</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation>ID</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Export Mislukt</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the transaction history to %1.</source>
+        <translation>Er is een fout opgetreden om de transactiegeschiedenis te bewaren naar %1.</translation>
+    </message>
+    <message>
+        <source>Exporting Successful</source>
+        <translation>Exporteren succesvol</translation>
+    </message>
+    <message>
+        <source>Received NXB from zNXB</source>
+        <translation>Ontvangen NXB van zNXB</translation>
+    </message>
+    <message>
+        <source>Zerocoin Spend, Change in zNXB</source>
+        <translation>Zerocoin besteed, wisselgeld in zNXB</translation>
+    </message>
+    <message>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation>De transactiegeschiedenis is succesvol bewaard in %1.</translation>
+    </message>
+    <message>
+        <source>Range:</source>
+        <translation>Bereik:</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>naar</translation>
+    </message>
+</context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    <message>
+        <source>Unit to show amounts in. Click to select another unit.</source>
+        <translation>Eenheid om bedragen te laten zien. Klik om een andere eenheid te selecteren.</translation>
+    </message>
+</context>
+<context>
+    <name>WalletFrame</name>
+    <message>
+        <source>No wallet has been loaded.</source>
+        <translation>Er is geen portemonnee ingeladen.</translation>
+    </message>
+</context>
+<context>
+    <name>WalletModel</name>
+    <message>
+        <source>Send Coins</source>
+        <translation>Verzend Munten</translation>
+    </message>
+    <message>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
+        <translation>SwiftTX ondersteunt geen verzendwaarden die zo hoog zijn. Transacties zijn momenteel beperkt tot %1 NXB.</translation>
+    </message>
+</context>
+<context>
+    <name>WalletView</name>
+    <message>
+        <source>HISTORY</source>
+        <translation>GESCHIEDENIS</translation>
+    </message>
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Exporteren</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Exporteer de data in de huidige tab naar een bestand</translation>
+    </message>
+    <message>
+        <source>Selected amount:</source>
+        <translation>Geselecteerde hoeveelheid:</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Backup portemonnee</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Portemonneegegevens (*.dat)</translation>
+    </message>
+</context>
+<context>
+    <name>zNXBControlDialog</name>
+    <message>
+        <source>Select zNXB to Spend</source>
+        <translation>Selecteer zNXB om te besteden</translation>
+    </message>
+    <message>
+        <source>Quantity</source>
+        <translation>Hoeveelheid</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>zNXB</source>
+        <translation>zNXB</translation>
+    </message>
+    <message>
+        <source>Select/Deselect All</source>
+        <translation>Selecteer/Deselecteer Alles</translation>
+    </message>
+    <message>
+        <source>Is Spendable</source>
+        <translation>Is Uitgeefbaar</translation>
     </message>
 </context>
 </TS>

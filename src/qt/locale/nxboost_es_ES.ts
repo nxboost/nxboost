@@ -424,6 +424,29 @@
     <name>MultisigDialog</name>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Zapping all transactions from wallet...</source>
+        <translation>Saltando todas las transacciones del monedero...</translation>
+    </message>
+    <message>
+        <source>ZeroMQ notification options:</source>
+        <translation>Opciones de notificación ZeroMQ:</translation>
+    </message>
+    <message>
+        <source>Zerocoin options:</source>
+        <translation>Opciones Zerocoin:</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>al inicio</translation>
+    </message>
+    <message>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation>wallet.dat corrupto, recuperación fallida</translation>
+    </message>
+</context>
+<context>
     <name>ObfuscationConfig</name>
     </context>
 <context>
@@ -647,27 +670,4 @@
 <context>
     <name>zNXBControlDialog</name>
     </context>
-<context>
-    <name>nxboost-core</name>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>Saltando todas las transacciones del monedero...</translation>
-    </message>
-    <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>Opciones de notificación ZeroMQ:</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Opciones Zerocoin:</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>al inicio</translation>
-    </message>
-    <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat corrupto, recuperación fallida</translation>
-    </message>
-</context>
 </TS>

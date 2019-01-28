@@ -36,9 +36,9 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     // define text to place
     QString titleText = tr("NXBoost Core");
     QString versionText = QString(tr("Version %1")).arg(QString::fromStdString(FormatFullVersion()));
-    QString copyrightTextBtc = QChar(0xA9) + QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
-    QString copyrightTextDash = QChar(0xA9) + QString(" 2014-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Dash Core developers"));
-    QString copyrightTextNXBoost = QChar(0xA9) + QString(" 2015-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The NXBoost Core developers"));
+    QString copyrightTextBtc = QChar(0xA9) + QString(" 2014-2015 ") + QString(tr("The Dash Core developers"));
+    QString copyrightTextDash = QChar(0xA9) + QString(" 2015-2018 ") + QString(tr("The Pivx Core developers"));
+    QString copyrightTextNXBoost = QChar(0xA9) + QString(" 2018-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The NXBoost Core developers"));
     QString titleAddText = networkStyle->getTitleAddText();
 
     QString font = QApplication::font().toString();
@@ -47,7 +47,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     pixmap = networkStyle->getSplashImage();
 
     QPainter pixPaint(&pixmap);
-    pixPaint.setPen(QColor(100, 100, 100));
+    pixPaint.setPen(QColor(Qt::white));
 
     // check font size and drawing with
     pixPaint.setFont(QFont(font, 28 * fontFactor));
@@ -60,17 +60,17 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
 
     pixPaint.setFont(QFont(font, 28 * fontFactor));
     fm = pixPaint.fontMetrics();
-    //titleTextWidth = fm.width(titleText);
-    //pixPaint.drawText(paddingLeft, paddingTop, titleText);
+    titleTextWidth = fm.width(titleText);
+    pixPaint.drawText(paddingLeft, paddingTop, titleText);
 
     pixPaint.setFont(QFont(font, 15 * fontFactor));
-    //pixPaint.drawText(paddingLeft, paddingTop + titleVersionVSpace, versionText);
+    pixPaint.drawText(paddingLeft, paddingTop + titleVersionVSpace, versionText);
 
     // draw copyright stuff
     pixPaint.setFont(QFont(font, 10 * fontFactor));
-    //pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace, copyrightTextBtc);
-    //pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace + 12, copyrightTextDash);
-    //pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace + 24, copyrightTextNXBoost);
+    pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace, copyrightTextBtc);
+    pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace + 12, copyrightTextDash);
+    pixPaint.drawText(paddingLeft, paddingTop + titleCopyrightVSpace + 24, copyrightTextNXBoost);
 
     // draw additional text if special network
     if (!titleAddText.isEmpty()) {
@@ -79,7 +79,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
         pixPaint.setFont(boldFont);
         fm = pixPaint.fontMetrics();
         int titleAddTextWidth = fm.width(titleAddText);
-        //pixPaint.drawText(pixmap.width() - titleAddTextWidth - 10, pixmap.height() - 25, titleAddText);
+        pixPaint.drawText(pixmap.width() - titleAddTextWidth - 10, pixmap.height() - 25, titleAddText);
     }
 
     pixPaint.end();
@@ -113,7 +113,7 @@ static void InitMessage(SplashScreen* splash, const std::string& message)
         Qt::QueuedConnection,
         Q_ARG(QString, QString::fromStdString(message)),
         Q_ARG(int, Qt::AlignBottom | Qt::AlignHCenter),
-        Q_ARG(QColor, QColor(100, 100, 100)));
+        Q_ARG(QColor, QColor(Qt::white)));
 }
 
 static void ShowProgress(SplashScreen* splash, const std::string& title, int nProgress)
@@ -163,7 +163,7 @@ void SplashScreen::paintEvent(QPaintEvent* event)
     painter.drawPixmap(0, 0, pixmap);
     QRect r = rect().adjusted(5, 5, -5, -5);
     painter.setPen(curColor);
-    //painter.drawText(r, curAlignment, curMessage);
+    painter.drawText(r, curAlignment, curMessage);
 }
 
 void SplashScreen::closeEvent(QCloseEvent* event)

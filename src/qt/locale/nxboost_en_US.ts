@@ -136,10 +136,6 @@
         <translation>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>For anonymization and staking only</translation>
-    </message>
-    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
     </message>
@@ -229,6 +225,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -239,16 +238,12 @@
         <translation>&amp;BIP 38 Encrypt</translation>
     </message>
     <message>
-        <source>Enter a NXBoost Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a NXBoost Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Address:</translation>
     </message>
     <message>
-        <source>The NXBoost address to sign the message with</source>
-        <translation>The NXBoost address to sign the message with</translation>
+        <source>Enter a NXBoost Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter a NXBoost Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,16 +274,8 @@
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Sign the message to prove you own this NXBoost address</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Encrypt &amp;Key</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Reset all sign message fields</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -303,20 +290,8 @@
         <translation>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</translation>
     </message>
     <message>
-        <source>The NXBoost address the message was signed with</source>
-        <translation>The NXBoost address the message was signed with</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified NXBoost address</source>
-        <translation>Verify the message to ensure it was signed with the specified NXBoost address</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>Decrypt &amp;Key</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Reset all verify message fields</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -734,10 +709,6 @@
         <translation><numerusform>%n year</numerusform><numerusform>%n years</numerusform></translation>
     </message>
     <message>
-        <source>%1 behind</source>
-        <translation>%1 behind</translation>
-    </message>
-    <message>
         <source>Catching up...</source>
         <translation>Catching up...</translation>
     </message>
@@ -810,10 +781,6 @@ Address: %4
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
@@ -843,10 +810,6 @@ Address: %4
 </context>
 <context>
     <name>ClientModel</name>
-    <message>
-        <source>Total: %1 (OBF compatible: %2 / Enabled: %3)</source>
-        <translation>Total: %1 (OBF compatible: %2 / Enabled: %3)</translation>
-    </message>
     <message>
         <source>Network Alert</source>
         <translation>Network Alert</translation>
@@ -923,10 +886,6 @@ Address: %4
         <translation>Received with address</translation>
     </message>
     <message>
-        <source>DS Rounds</source>
-        <translation>DS Rounds</translation>
-    </message>
-    <message>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -999,10 +958,6 @@ Address: %4
         <translation>Please switch to "List mode" to use this function.</translation>
     </message>
     <message>
-        <source>Non-anonymized input selected. &lt;b&gt;Obfuscation will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscation, please deselect all non-nonymized inputs first and then check Obfuscation checkbox again.</source>
-        <translation>Non-anonymized input selected. &lt;b&gt;Obfuscation will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Obfuscation, please deselect all non-nonymized inputs first and then check Obfuscation checkbox again.</translation>
-    </message>
-    <message>
         <source>highest</source>
         <translation>highest</translation>
     </message>
@@ -1017,14 +972,6 @@ Address: %4
     <message>
         <source>medium-high</source>
         <translation>medium-high</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Can vary +/- %1 duff(s) per input.</translation>
-    </message>
-    <message>
-        <source>n/a</source>
-        <translation>n/a</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1286,10 +1233,6 @@ Address: %4
         <translation>Form</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>My Masternodes</translation>
-    </message>
-    <message>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
         <translation>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</translation>
     </message>
@@ -1522,6 +1465,1160 @@ Please check the address and try again.</translation>
     </message>
 </context>
 <context>
+    <name>MultisigDialog</name>
+    </context>
+<context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
+    </message>
+    <message>
+        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
+        <translation>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
+    </message>
+    <message>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</translation>
+    </message>
+    <message>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</translation>
+    </message>
+    <message>
+        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
+        <translation>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</translation>
+    </message>
+    <message>
+        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
+        <translation>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</translation>
+    </message>
+    <message>
+        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
+        <translation>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</translation>
+    </message>
+    <message>
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
+    </message>
+    <message>
+        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
+        <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Enable spork administration functionality with the appropriate private key.</translation>
+    </message>
+    <message>
+        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
+        <translation>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</translation>
+    </message>
+    <message>
+        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>Error: Listening for incoming connections failed (listen returned error %s)</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
+        <translation>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</translation>
+    </message>
+    <message>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</translation>
+    </message>
+    <message>
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+    </message>
+    <message>
+        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+    </message>
+    <message>
+        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
+        <translation>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
+        <translation>Found unconfirmed denominated outputs, will wait till they confirm to continue.</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</translation>
+    </message>
+    <message>
+        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
+        <translation>In this mode -genproclimit controls how many blocks are generated immediately.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</translation>
+    </message>
+    <message>
+        <source>Keep the specified amount available for spending at all times (default: 0)</source>
+        <translation>Keep the specified amount available for spending at all times (default: 0)</translation>
+    </message>
+    <message>
+        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
+        <translation>Log transaction priority and fee per kB when mining blocks (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>Maximum size of data in data carrier transactions we relay and mine (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
+        <translation>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</translation>
+    </message>
+    <message>
+        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
+        <translation>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</translation>
+    </message>
+    <message>
+        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
+        <translation>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</translation>
+    </message>
+    <message>
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
+        <translation>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</translation>
+    </message>
+    <message>
+        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
+        <translation>Require high priority for relaying free or low-fee transactions (default:%u)</translation>
+    </message>
+    <message>
+        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
+        <translation>Send trace/debug info to console instead of debug.log file (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
+        <translation>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
+        <translation>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</translation>
+    </message>
+    <message>
+        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
+        <translation>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</translation>
+    </message>
+    <message>
+        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
+        <translation>Support filtering of blocks and transaction with bloom filters (default: %u)</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. NXBoost Core is probably already running.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
+        <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</translation>
+    </message>
+    <message>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</translation>
+    </message>
+    <message>
+        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
+        <translation>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</translation>
+    </message>
+    <message>
+        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</translation>
+    </message>
+    <message>
+        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
+    </message>
+    <message>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</translation>
+    </message>
+    <message>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</translation>
+    </message>
+    <message>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</translation>
+    </message>
+    <message>
+        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
+        <translation>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</translation>
+    </message>
+    <message>
+        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
+        <translation>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</translation>
+    </message>
+    <message>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</translation>
+    </message>
+    <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
+    </message>
+    <message>
+        <source>(49108 could be used only on mainnet)</source>
+        <translation>(49108 could be used only on mainnet)</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(default: %s)</translation>
+    </message>
+    <message>
+        <source>(default: 1)</source>
+        <translation>(default: 1)</translation>
+    </message>
+    <message>
+        <source>(must be 49108 for mainnet)</source>
+        <translation>(must be 49108 for mainnet)</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation>Accept command line and JSON-RPC commands</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
+        <translation>Accept connections from outside (default: 1 if no -proxy or -connect)</translation>
+    </message>
+    <message>
+        <source>Accept public REST requests (default: %u)</source>
+        <translation>Accept public REST requests (default: %u)</translation>
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>Add a node to connect to and attempt to keep the connection open</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>Allow DNS lookups for -addnode, -seednode and -connect</translation>
+    </message>
+    <message>
+        <source>Already have that input.</source>
+        <translation>Already have that input.</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>Always query for peer addresses via DNS lookup (default: %u)</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Attempt to recover private keys from a corrupt wallet.dat</translation>
+    </message>
+    <message>
+        <source>Block creation options:</source>
+        <translation>Block creation options:</translation>
+    </message>
+    <message>
+        <source>Can't denominate: no compatible inputs left.</source>
+        <translation>Can't denominate: no compatible inputs left.</translation>
+    </message>
+    <message>
+        <source>Can't find random Masternode.</source>
+        <translation>Can't find random Masternode.</translation>
+    </message>
+    <message>
+        <source>Can't mix while sync in progress.</source>
+        <translation>Can't mix while sync in progress.</translation>
+    </message>
+    <message>
+        <source>Cannot downgrade wallet</source>
+        <translation>Cannot downgrade wallet</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -bind address: '%s'</source>
+        <translation>Cannot resolve -bind address: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -externalip address: '%s'</source>
+        <translation>Cannot resolve -externalip address: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -whitebind address: '%s'</source>
+        <translation>Cannot resolve -whitebind address: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot write default address</source>
+        <translation>Cannot write default address</translation>
+    </message>
+    <message>
+        <source>Collateral not valid.</source>
+        <translation>Collateral not valid.</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s)</source>
+        <translation>Connect only to the specified node(s)</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy</source>
+        <translation>Connect through SOCKS5 proxy</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>Connect to a node to retrieve peer addresses, and disconnect</translation>
+    </message>
+    <message>
+        <source>Connection options:</source>
+        <translation>Connection options:</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
+        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
+        <translation>Copyright (C) 2015-%i The NXBoost Core Developers</translation>
+    </message>
+    <message>
+        <source>Corrupted block database detected</source>
+        <translation>Corrupted block database detected</translation>
+    </message>
+    <message>
+        <source>Could not parse masternode.conf</source>
+        <translation>Could not parse masternode.conf</translation>
+    </message>
+    <message>
+        <source>Debugging/Testing options:</source>
+        <translation>Debugging/Testing options:</translation>
+    </message>
+    <message>
+        <source>Disable safemode, override a real safe mode event (default: %u)</source>
+        <translation>Disable safemode, override a real safe mode event (default: %u)</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation>Discover own IP address (default: 1 when listening and no -externalip)</translation>
+    </message>
+    <message>
+        <source>Do not load the wallet and disable wallet RPC calls</source>
+        <translation>Do not load the wallet and disable wallet RPC calls</translation>
+    </message>
+    <message>
+        <source>Do you want to rebuild the block database now?</source>
+        <translation>Do you want to rebuild the block database now?</translation>
+    </message>
+    <message>
+        <source>Done loading</source>
+        <translation>Done loading</translation>
+    </message>
+    <message>
+        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
+        <translation>Enable the client to act as a masternode (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <source>Entries are full.</source>
+        <translation>Entries are full.</translation>
+    </message>
+    <message>
+        <source>Error connecting to Masternode.</source>
+        <translation>Error connecting to Masternode.</translation>
+    </message>
+    <message>
+        <source>Error initializing block database</source>
+        <translation>Error initializing block database</translation>
+    </message>
+    <message>
+        <source>Error initializing wallet database environment %s!</source>
+        <translation>Error initializing wallet database environment %s!</translation>
+    </message>
+    <message>
+        <source>Error loading block database</source>
+        <translation>Error loading block database</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat</source>
+        <translation>Error loading wallet.dat</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet corrupted</source>
+        <translation>Error loading wallet.dat: Wallet corrupted</translation>
+    </message>
+    <message>
+        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</translation>
+    </message>
+    <message>
+        <source>Error opening block database</source>
+        <translation>Error opening block database</translation>
+    </message>
+    <message>
+        <source>Error reading from database, shutting down.</source>
+        <translation>Error reading from database, shutting down.</translation>
+    </message>
+    <message>
+        <source>Error recovering public key.</source>
+        <translation>Error recovering public key.</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>Error: A fatal internal error occured, see debug.log for details</translation>
+    </message>
+    <message>
+        <source>Error: Can't select current denominated inputs</source>
+        <translation>Error: Can't select current denominated inputs</translation>
+    </message>
+    <message>
+        <source>Error: Disk space is low!</source>
+        <translation>Error: Disk space is low!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -tor found, use -onion.</source>
+        <translation>Error: Unsupported argument -tor found, use -onion.</translation>
+    </message>
+    <message>
+        <source>Error: Wallet locked, unable to create transaction!</source>
+        <translation>Error: Wallet locked, unable to create transaction!</translation>
+    </message>
+    <message>
+        <source>Error: You already have pending entries in the Obfuscation pool</source>
+        <translation>Error: You already have pending entries in the Obfuscation pool</translation>
+    </message>
+    <message>
+        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
+        <translation>Failed to listen on any port. Use -listen=0 if you want this.</translation>
+    </message>
+    <message>
+        <source>Failed to read block</source>
+        <translation>Failed to read block</translation>
+    </message>
+    <message>
+        <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in NXB/kB) to add to transactions you send (default: %s)</translation>
+    </message>
+    <message>
+        <source>Finalizing transaction.</source>
+        <translation>Finalizing transaction.</translation>
+    </message>
+    <message>
+        <source>Force safe mode (default: %u)</source>
+        <translation>Force safe mode (default: %u)</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ( waiting %s )</source>
+        <translation>Found enough users, signing ( waiting %s )</translation>
+    </message>
+    <message>
+        <source>Found enough users, signing ...</source>
+        <translation>Found enough users, signing ...</translation>
+    </message>
+    <message>
+        <source>Generate coins (default: %u)</source>
+        <translation>Generate coins (default: %u)</translation>
+    </message>
+    <message>
+        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
+        <translation>How many blocks to check at startup (default: %u, 0 = all)</translation>
+    </message>
+    <message>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation>If &lt;category&gt; is not supplied, output all debugging information.</translation>
+    </message>
+    <message>
+        <source>Importing...</source>
+        <translation>Importing...</translation>
+    </message>
+    <message>
+        <source>Imports blocks from external blk000??.dat file</source>
+        <translation>Imports blocks from external blk000??.dat file</translation>
+    </message>
+    <message>
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>Include IP addresses in debug output (default: %u)</translation>
+    </message>
+    <message>
+        <source>Incompatible mode.</source>
+        <translation>Incompatible mode.</translation>
+    </message>
+    <message>
+        <source>Incompatible version.</source>
+        <translation>Incompatible version.</translation>
+    </message>
+    <message>
+        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
+        <translation>Incorrect or no genesis block found. Wrong datadir for network?</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Information</translation>
+    </message>
+    <message>
+        <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
+        <translation>Initialization sanity check failed. NXBoost Core is shutting down.</translation>
+    </message>
+    <message>
+        <source>Input is not valid.</source>
+        <translation>Input is not valid.</translation>
+    </message>
+    <message>
+        <source>Insufficient funds.</source>
+        <translation>Insufficient funds.</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
+        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
+        <translation>Invalid amount for -reservebalance=&lt;amount&gt;</translation>
+    </message>
+    <message>
+        <source>Invalid masternodeprivkey. Please see documenation.</source>
+        <translation>Invalid masternodeprivkey. Please see documenation.</translation>
+    </message>
+    <message>
+        <source>Invalid netmask specified in -whitelist: '%s'</source>
+        <translation>Invalid netmask specified in -whitelist: '%s'</translation>
+    </message>
+    <message>
+        <source>Invalid port detected in masternode.conf</source>
+        <translation>Invalid port detected in masternode.conf</translation>
+    </message>
+    <message>
+        <source>Invalid private key.</source>
+        <translation>Invalid private key.</translation>
+    </message>
+    <message>
+        <source>Invalid script detected.</source>
+        <translation>Invalid script detected.</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; can be:</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Attempt to force blockchain corruption recovery</translation>
+    </message>
+    <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Display the stake modifier calculations in the debug.log file.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Display verbose coin stake messages in the debug.log file.</translation>
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Enable publish hash block in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Enable publish hash transaction in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Enable publish raw block in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Enable publish raw transaction in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>Enable staking functionality (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
+    </message>
+    <message>
+        <source>Last Obfuscation was too recent.</source>
+        <translation>Last Obfuscation was too recent.</translation>
+    </message>
+    <message>
+        <source>Last successful Obfuscation action was too recent.</source>
+        <translation>Last successful Obfuscation action was too recent.</translation>
+    </message>
+    <message>
+        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
+        <translation>Limit size of signature cache to &lt;n&gt; entries (default: %u)</translation>
+    </message>
+    <message>
+        <source>Line: %d</source>
+        <translation>Line: %d</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>Loading addresses...</translation>
+    </message>
+    <message>
+        <source>Loading block index...</source>
+        <translation>Loading block index...</translation>
+    </message>
+    <message>
+        <source>Loading budget cache...</source>
+        <translation>Loading budget cache...</translation>
+    </message>
+    <message>
+        <source>Loading masternode cache...</source>
+        <translation>Loading masternode cache...</translation>
+    </message>
+    <message>
+        <source>Loading masternode payment cache...</source>
+        <translation>Loading masternode payment cache...</translation>
+    </message>
+    <message>
+        <source>Loading wallet... (%3.2f %%)</source>
+        <translation>Loading wallet... (%3.2f %%)</translation>
+    </message>
+    <message>
+        <source>Loading wallet...</source>
+        <translation>Loading wallet...</translation>
+    </message>
+    <message>
+        <source>Lock is already in place.</source>
+        <translation>Lock is already in place.</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Lock masternodes from masternode configuration file (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Maintain at most &lt;n&gt; connections to peers (default: %u)</translation>
+    </message>
+    <message>
+        <source>Masternode options:</source>
+        <translation>Masternode options:</translation>
+    </message>
+    <message>
+        <source>Masternode queue is full.</source>
+        <translation>Masternode queue is full.</translation>
+    </message>
+    <message>
+        <source>Masternode:</source>
+        <translation>Masternode:</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Missing input transaction information.</source>
+        <translation>Missing input transaction information.</translation>
+    </message>
+    <message>
+        <source>Mixing in progress...</source>
+        <translation>Mixing in progress...</translation>
+    </message>
+    <message>
+        <source>Need to specify a port with -whitebind: '%s'</source>
+        <translation>Need to specify a port with -whitebind: '%s'</translation>
+    </message>
+    <message>
+        <source>No Masternodes detected.</source>
+        <translation>No Masternodes detected.</translation>
+    </message>
+    <message>
+        <source>No compatible Masternode found.</source>
+        <translation>No compatible Masternode found.</translation>
+    </message>
+    <message>
+        <source>No funds detected in need of denominating.</source>
+        <translation>No funds detected in need of denominating.</translation>
+    </message>
+    <message>
+        <source>No matching denominations found for mixing.</source>
+        <translation>No matching denominations found for mixing.</translation>
+    </message>
+    <message>
+        <source>Node relay options:</source>
+        <translation>Node relay options:</translation>
+    </message>
+    <message>
+        <source>Non-standard public key detected.</source>
+        <translation>Non-standard public key detected.</translation>
+    </message>
+    <message>
+        <source>Not compatible with existing transactions.</source>
+        <translation>Not compatible with existing transactions.</translation>
+    </message>
+    <message>
+        <source>Not enough file descriptors available.</source>
+        <translation>Not enough file descriptors available.</translation>
+    </message>
+    <message>
+        <source>Not in the Masternode list.</source>
+        <translation>Not in the Masternode list.</translation>
+    </message>
+    <message>
+        <source>Number of automatic wallet backups (default: 10)</source>
+        <translation>Number of automatic wallet backups (default: 10)</translation>
+    </message>
+    <message>
+        <source>Obfuscation is idle.</source>
+        <translation>Obfuscation is idle.</translation>
+    </message>
+    <message>
+        <source>Obfuscation request complete:</source>
+        <translation>Obfuscation request complete:</translation>
+    </message>
+    <message>
+        <source>Obfuscation request incomplete:</source>
+        <translation>Obfuscation request incomplete:</translation>
+    </message>
+    <message>
+        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
+        <translation>Only accept block chain matching built-in checkpoints (default: %u)</translation>
+    </message>
+    <message>
+        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
+        <translation>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</translation>
+    </message>
+    <message>
+        <source>Options:</source>
+        <translation>Options:</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation>Password for JSON-RPC connections</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>Prepend debug output with timestamp (default: %u)</translation>
+    </message>
+    <message>
+        <source>Print version and exit</source>
+        <translation>Print version and exit</translation>
+    </message>
+    <message>
+        <source>RPC server options:</source>
+        <translation>RPC server options:</translation>
+    </message>
+    <message>
+        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
+        <translation>Randomly drop 1 of every &lt;n&gt; network messages</translation>
+    </message>
+    <message>
+        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
+        <translation>Randomly fuzz 1 of every &lt;n&gt; network messages</translation>
+    </message>
+    <message>
+        <source>Rebuild block chain index from current blk000??.dat files</source>
+        <translation>Rebuild block chain index from current blk000??.dat files</translation>
+    </message>
+    <message>
+        <source>Receive and display P2P network alerts (default: %u)</source>
+        <translation>Receive and display P2P network alerts (default: %u)</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Relay and mine data carrier transactions (default: %u)</translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Relay non-P2SH multisig (default: %u)</translation>
+    </message>
+    <message>
+        <source>Rescan the block chain for missing wallet transactions</source>
+        <translation>Rescan the block chain for missing wallet transactions</translation>
+    </message>
+    <message>
+        <source>Rescanning...</source>
+        <translation>Rescanning...</translation>
+    </message>
+    <message>
+        <source>Run a thread to flush wallet periodically (default: %u)</source>
+        <translation>Run a thread to flush wallet periodically (default: %u)</translation>
+    </message>
+    <message>
+        <source>Run in the background as a daemon and accept commands</source>
+        <translation>Run in the background as a daemon and accept commands</translation>
+    </message>
+    <message>
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>Send transactions as zero-fee transactions if possible (default: %u)</translation>
+    </message>
+    <message>
+        <source>Session not complete!</source>
+        <translation>Session not complete!</translation>
+    </message>
+    <message>
+        <source>Session timed out.</source>
+        <translation>Session timed out.</translation>
+    </message>
+    <message>
+        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
+        <translation>Set database cache size in megabytes (%d to %d, default: %d)</translation>
+    </message>
+    <message>
+        <source>Set external address:port to get to this masternode (example: %s)</source>
+        <translation>Set external address:port to get to this masternode (example: %s)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>Set key pool size to &lt;n&gt; (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum block size in bytes (default: %d)</source>
+        <translation>Set maximum block size in bytes (default: %d)</translation>
+    </message>
+    <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Set minimum block size in bytes (default: %u)</translation>
+    </message>
+    <message>
+        <source>Set the masternode private key</source>
+        <translation>Set the masternode private key</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>Set the number of threads to service RPC calls (default: %d)</translation>
+    </message>
+    <message>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</translation>
+    </message>
+    <message>
+        <source>Show all debugging options (usage: --help -help-debug)</source>
+        <translation>Show all debugging options (usage: --help -help-debug)</translation>
+    </message>
+    <message>
+        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
+        <translation>Shrink debug.log file on client startup (default: 1 when no -debug)</translation>
+    </message>
+    <message>
+        <source>Signing failed.</source>
+        <translation>Signing failed.</translation>
+    </message>
+    <message>
+        <source>Signing timed out.</source>
+        <translation>Signing timed out.</translation>
+    </message>
+    <message>
+        <source>Signing transaction failed</source>
+        <translation>Signing transaction failed</translation>
+    </message>
+    <message>
+        <source>Specify configuration file (default: %s)</source>
+        <translation>Specify configuration file (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
+        <translation>Specify connection timeout in milliseconds (minimum: 1, default: %d)</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation>Specify data directory</translation>
+    </message>
+    <message>
+        <source>Specify masternode configuration file (default: %s)</source>
+        <translation>Specify masternode configuration file (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify pid file (default: %s)</source>
+        <translation>Specify pid file (default: %s)</translation>
+    </message>
+    <message>
+        <source>Specify wallet file (within data directory)</source>
+        <translation>Specify wallet file (within data directory)</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>Specify your own public address</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>Spend unconfirmed change when sending transactions (default: %u)</translation>
+    </message>
+    <message>
+        <source>Staking options:</source>
+        <translation>Staking options:</translation>
+    </message>
+    <message>
+        <source>Stop running after importing blocks from disk (default: %u)</source>
+        <translation>Stop running after importing blocks from disk (default: %u)</translation>
+    </message>
+    <message>
+        <source>Submitted following entries to masternode: %u / %d</source>
+        <translation>Submitted following entries to masternode: %u / %d</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
+        <translation>Submitted to masternode, waiting for more entries ( %u / %d ) %s</translation>
+    </message>
+    <message>
+        <source>Submitted to masternode, waiting in queue %s</source>
+        <translation>Submitted to masternode, waiting in queue %s</translation>
+    </message>
+    <message>
+        <source>Synchronization failed</source>
+        <translation>Synchronization failed</translation>
+    </message>
+    <message>
+        <source>Synchronization finished</source>
+        <translation>Synchronization finished</translation>
+    </message>
+    <message>
+        <source>Synchronization pending...</source>
+        <translation>Synchronization pending...</translation>
+    </message>
+    <message>
+        <source>Synchronizing budgets...</source>
+        <translation>Synchronizing budgets...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternode winners...</source>
+        <translation>Synchronizing masternode winners...</translation>
+    </message>
+    <message>
+        <source>Synchronizing masternodes...</source>
+        <translation>Synchronizing masternodes...</translation>
+    </message>
+    <message>
+        <source>Synchronizing sporks...</source>
+        <translation>Synchronizing sporks...</translation>
+    </message>
+    <message>
+        <source>This help message</source>
+        <translation>This help message</translation>
+    </message>
+    <message>
+        <source>This is experimental software.</source>
+        <translation>This is experimental software.</translation>
+    </message>
+    <message>
+        <source>This is intended for regression testing tools and app development.</source>
+        <translation>This is intended for regression testing tools and app development.</translation>
+    </message>
+    <message>
+        <source>This is not a Masternode.</source>
+        <translation>This is not a Masternode.</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>Threshold for disconnecting misbehaving peers (default: %u)</translation>
+    </message>
+    <message>
+        <source>Transaction amount too small</source>
+        <translation>Transaction amount too small</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must be positive</source>
+        <translation>Transaction amounts must be positive</translation>
+    </message>
+    <message>
+        <source>Transaction created successfully.</source>
+        <translation>Transaction created successfully.</translation>
+    </message>
+    <message>
+        <source>Transaction fees are too high.</source>
+        <translation>Transaction fees are too high.</translation>
+    </message>
+    <message>
+        <source>Transaction not valid.</source>
+        <translation>Transaction not valid.</translation>
+    </message>
+    <message>
+        <source>Transaction too large for fee policy</source>
+        <translation>Transaction too large for fee policy</translation>
+    </message>
+    <message>
+        <source>Transaction too large</source>
+        <translation>Transaction too large</translation>
+    </message>
+    <message>
+        <source>Transmitting final transaction.</source>
+        <translation>Transmitting final transaction.</translation>
+    </message>
+    <message>
+        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
+        <translation>Unable to bind to %s on this computer (bind returned error %s)</translation>
+    </message>
+    <message>
+        <source>Unable to sign spork message, wrong key?</source>
+        <translation>Unable to sign spork message, wrong key?</translation>
+    </message>
+    <message>
+        <source>Unknown network specified in -onlynet: '%s'</source>
+        <translation>Unknown network specified in -onlynet: '%s'</translation>
+    </message>
+    <message>
+        <source>Unknown state: id = %u</source>
+        <translation>Unknown state: id = %u</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format</source>
+        <translation>Upgrade wallet to latest format</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: %u)</source>
+        <translation>Use UPnP to map the listening port (default: %u)</translation>
+    </message>
+    <message>
+        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
+        <translation>Use UPnP to map the listening port (default: 1 when listening)</translation>
+    </message>
+    <message>
+        <source>Use the test network</source>
+        <translation>Use the test network</translation>
+    </message>
+    <message>
+        <source>Username for JSON-RPC connections</source>
+        <translation>Username for JSON-RPC connections</translation>
+    </message>
+    <message>
+        <source>Value more than Obfuscation pool maximum allows.</source>
+        <translation>Value more than Obfuscation pool maximum allows.</translation>
+    </message>
+    <message>
+        <source>Verifying blocks...</source>
+        <translation>Verifying blocks...</translation>
+    </message>
+    <message>
+        <source>Verifying wallet...</source>
+        <translation>Verifying wallet...</translation>
+    </message>
+    <message>
+        <source>Wallet %s resides outside data directory %s</source>
+        <translation>Wallet %s resides outside data directory %s</translation>
+    </message>
+    <message>
+        <source>Wallet is locked.</source>
+        <translation>Wallet is locked.</translation>
+    </message>
+    <message>
+        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart NXBoost Core to complete</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>Wallet options:</translation>
+    </message>
+    <message>
+        <source>Wallet window title</source>
+        <translation>Wallet window title</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>Warning</translation>
+    </message>
+    <message>
+        <source>Warning: This version is obsolete, upgrade required!</source>
+        <translation>Warning: This version is obsolete, upgrade required!</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
+        <translation>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</translation>
+    </message>
+    <message>
+        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
+        <translation>Warning: Unsupported argument -debugnet ignored, use -debug=net.</translation>
+    </message>
+    <message>
+        <source>Will retry...</source>
+        <translation>Will retry...</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>You need to rebuild the database using -reindex to change -txindex</translation>
+    </message>
+    <message>
+        <source>Your entries added successfully.</source>
+        <translation>Your entries added successfully.</translation>
+    </message>
+    <message>
+        <source>Your transaction was accepted into the pool!</source>
+        <translation>Your transaction was accepted into the pool!</translation>
+    </message>
+    <message>
+        <source>Zapping all transactions from wallet...</source>
+        <translation>Zapping all transactions from wallet...</translation>
+    </message>
+    <message>
+        <source>ZeroMQ notification options:</source>
+        <translation>ZeroMQ notification options:</translation>
+    </message>
+    <message>
+        <source>on startup</source>
+        <translation>on startup</translation>
+    </message>
+    <message>
+        <source>wallet.dat corrupt, salvage failed</source>
+        <translation>wallet.dat corrupt, salvage failed</translation>
+    </message>
+</context>
+<context>
     <name>ObfuscationConfig</name>
     <message>
         <source>Configure Obfuscation</source>
@@ -1672,22 +2769,6 @@ Please check the address and try again.</translation>
     <message>
         <source>&amp;Start NXBoost on system login</source>
         <translation>&amp;Start NXBoost on system login</translation>
-    </message>
-    <message>
-        <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
-        <translation>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</translation>
-    </message>
-    <message>
-        <source>Obfuscation rounds to use</source>
-        <translation>Obfuscation rounds to use</translation>
-    </message>
-    <message>
-        <source>This amount acts as a threshold to turn off Obfuscation once it's reached.</source>
-        <translation>This amount acts as a threshold to turn off Obfuscation once it's reached.</translation>
-    </message>
-    <message>
-        <source>Amount of NXBoost to keep anonymized</source>
-        <translation>Amount of NXBoost to keep anonymized</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1847,7 +2928,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <source>The supplied proxy address is invalid.</source>
         <translation>The supplied proxy address is invalid.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>OverviewPage</name>
     <message>
@@ -1879,10 +2960,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Staked or masternode rewards that has not yet matured</translation>
     </message>
     <message>
-        <source>Balances</source>
-        <translation>Balances</translation>
-    </message>
-    <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</source>
         <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</translation>
     </message>
@@ -1897,10 +2974,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>Total:</source>
         <translation>Total:</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>Your current total balance</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
@@ -1919,156 +2992,14 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Spendable:</translation>
     </message>
     <message>
-        <source>Status:</source>
-        <translation>Status:</translation>
-    </message>
-    <message>
-        <source>Obfuscation Balance:</source>
-        <translation>Obfuscation Balance:</translation>
-    </message>
-    <message>
-        <source>0 NXB / 0 Rounds</source>
-        <translation>0 NXB / 0 Rounds</translation>
-    </message>
-    <message>
-        <source>Enabled/Disabled</source>
-        <translation>Enabled/Disabled</translation>
-    </message>
-    <message>
-        <source>Try to manually submit a Obfuscation request.</source>
-        <translation>Try to manually submit a Obfuscation request.</translation>
-    </message>
-    <message>
-        <source>Reset the current status of Obfuscation (can interrupt Obfuscation if it's in the process of Mixing, which can cost you money!)</source>
-        <translation>Reset the current status of Obfuscation (can interrupt Obfuscation if it's in the process of Mixing, which can cost you money!)</translation>
-    </message>
-    <message>
-        <source>Obfuscation</source>
-        <translation>Obfuscation</translation>
-    </message>
-    <message>
-        <source>Completion:</source>
-        <translation>Completion:</translation>
-    </message>
-    <message>
-        <source>Amount and Rounds:</source>
-        <translation>Amount and Rounds:</translation>
-    </message>
-    <message>
-        <source>Submitted Denom:</source>
-        <translation>Submitted Denom:</translation>
-    </message>
-    <message>
-        <source>n/a</source>
-        <translation>n/a</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>Recent transactions</translation>
-    </message>
-    <message>
-        <source>Start/Stop Mixing</source>
-        <translation>Start/Stop Mixing</translation>
-    </message>
-    <message>
-        <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
-        <translation>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</translation>
-    </message>
-    <message>
-        <source>(Last Message)</source>
-        <translation>(Last Message)</translation>
-    </message>
-    <message>
-        <source>Try Mix</source>
-        <translation>Try Mix</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Reset</translation>
     </message>
     <message>
         <source>out of sync</source>
         <translation>out of sync</translation>
     </message>
-    <message>
-        <source>Disabled</source>
-        <translation>Disabled</translation>
-    </message>
-    <message>
-        <source>No inputs detected</source>
-        <translation>No inputs detected</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n Rounds</source>
-        <translation><numerusform>%n Round</numerusform><numerusform>%n Rounds</numerusform></translation>
-    </message>
-    <message>
-        <source>Not enough compatible inputs to anonymize &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style='color:red;'&gt;%2&lt;/span&gt; instead</source>
-        <translation>Not enough compatible inputs to anonymize &lt;span style='color:red;'&gt;%1&lt;/span&gt;,&lt;br&gt;will anonymize &lt;span style='color:red;'&gt;%2&lt;/span&gt; instead</translation>
-    </message>
-    <message>
-        <source>Overall progress</source>
-        <translation>Overall progress</translation>
-    </message>
-    <message>
-        <source>Denominated</source>
-        <translation>Denominated</translation>
-    </message>
-    <message>
-        <source>Anonymized</source>
-        <translation>Anonymized</translation>
-    </message>
-    <message numerus="yes">
-        <source>Denominated inputs have %5 of %n rounds on average</source>
-        <translation><numerusform>Denominated inputs have %5 of %n rounds on average</numerusform><numerusform>Denominated inputs have %5 of %n rounds on average</numerusform></translation>
-    </message>
-    <message>
-        <source>Last Obfuscation message:
-</source>
-        <translation>Last Obfuscation message:
-</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully reset.</source>
-        <translation>Obfuscation was successfully reset.</translation>
-    </message>
-    <message>
-        <source>If you don't want to see internal Obfuscation fees/transactions select "Most Common" as Type on the "Transactions" tab.</source>
-        <translation>If you don't want to see internal Obfuscation fees/transactions select "Most Common" as Type on the "Transactions" tab.</translation>
-    </message>
-    <message>
-        <source>Obfuscation requires at least %1 to use.</source>
-        <translation>Obfuscation requires at least %1 to use.</translation>
-    </message>
-    <message>
-        <source>Wallet is locked and user declined to unlock. Disabling Obfuscation.</source>
-        <translation>Wallet is locked and user declined to unlock. Disabling Obfuscation.</translation>
-    </message>
-    <message>
-        <source>Found enough compatible inputs to anonymize %1</source>
-        <translation>Found enough compatible inputs to anonymize %1</translation>
-    </message>
-    <message>
-        <source>Start Obfuscation</source>
-        <translation>Start Obfuscation</translation>
-    </message>
-    <message>
-        <source>Stop Obfuscation</source>
-        <translation>Stop Obfuscation</translation>
-    </message>
-    <message>
-        <source>Mixed</source>
-        <translation>Mixed</translation>
-    </message>
-    <message>
-        <source>Enabled</source>
-        <translation>Enabled</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -2175,6 +3106,9 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Ping Time</translation>
     </message>
 </context>
+<context>
+    <name>PrivacyDialog</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -2376,14 +3310,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Services</translation>
     </message>
     <message>
-        <source>Starting Height</source>
-        <translation>Starting Height</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Sync Height</translation>
-    </message>
-    <message>
         <source>Ban Score</source>
         <translation>Ban Score</translation>
     </message>
@@ -2530,10 +3456,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>Unknown</source>
         <translation>Unknown</translation>
-    </message>
-    <message>
-        <source>Fetching...</source>
-        <translation>Fetching...</translation>
     </message>
 </context>
 <context>
@@ -2720,14 +3642,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Coin Control Features</translation>
     </message>
     <message>
-        <source>Inputs...</source>
-        <translation>Inputs...</translation>
-    </message>
-    <message>
-        <source>automatically selected</source>
-        <translation>automatically selected</translation>
-    </message>
-    <message>
         <source>Insufficient funds!</source>
         <translation>Insufficient funds!</translation>
     </message>
@@ -2812,10 +3726,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Minimize</translation>
     </message>
     <message>
-        <source>Obfuscation</source>
-        <translation>Obfuscation</translation>
-    </message>
-    <message>
         <source>per kilobyte</source>
         <translation>per kilobyte</translation>
     </message>
@@ -2896,10 +3806,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Add &amp;Recipient</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
-    </message>
-    <message>
         <source>Balance:</source>
         <translation>Balance:</translation>
     </message>
@@ -2944,24 +3850,8 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>The split block tool does not work with multiple addresses. Try again.</translation>
     </message>
     <message>
-        <source>using</source>
-        <translation>using</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>anonymous funds</translation>
-    </message>
-    <message>
         <source>Warning: Invalid NXBoost address</source>
         <translation>Warning: Invalid NXBoost address</translation>
-    </message>
-    <message>
-        <source>any available funds (not recommended)</source>
-        <translation>any available funds (not recommended)</translation>
-    </message>
-    <message>
-        <source>and SwiftTX</source>
-        <translation>and SwiftTX</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2994,10 +3884,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>The recipient address is not valid, please recheck.</translation>
-    </message>
-    <message>
-        <source>(obfuscation requires this amount to be rounded up to the nearest %1).</source>
-        <translation>(obfuscation requires this amount to be rounded up to the nearest %1).</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -3322,18 +4208,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>conflicted</translation>
     </message>
     <message>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (verified via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/confirmed (verified via swifttx)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 confirmations (verified via swifttx)</translation>
-    </message>
-    <message>
         <source>%1/offline</source>
         <translation>%1/offline</translation>
     </message>
@@ -3344,26 +4218,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>%1 confirmations</source>
         <translation>%1 confirmations</translation>
-    </message>
-    <message>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</translation>
-    </message>
-    <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
-        <translation>%1/offline (SwiftTX verification failed)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation>%1/confirmed (SwiftTX verification failed)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3600,10 +4454,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Payment to yourself</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Minted</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>Mined</translation>
     </message>
@@ -3685,26 +4535,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>Sent to</source>
         <translation>Sent to</translation>
-    </message>
-    <message>
-        <source>Obfuscated</source>
-        <translation>Obfuscated</translation>
-    </message>
-    <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Obfuscation Make Collateral Inputs</translation>
-    </message>
-    <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>Obfuscation Create Denominations</translation>
-    </message>
-    <message>
-        <source>Obfuscation Denominate</source>
-        <translation>Obfuscation Denominate</translation>
-    </message>
-    <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>Obfuscation Collateral Payment</translation>
     </message>
     <message>
         <source>To yourself</source>
@@ -3839,11 +4669,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <source>Send Coins</source>
         <translation>Send Coins</translation>
     </message>
-    <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</source>
-        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 NXB.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>WalletView</name>
     <message>
@@ -3866,1284 +4692,8 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <source>Wallet Data (*.dat)</source>
         <translation>Wallet Data (*.dat)</translation>
     </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation>Backup Failed</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>There was an error trying to save the wallet data to %1.</translation>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation>Backup Successful</translation>
-    </message>
-    <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>The wallet data was successfully saved to %1.</translation>
-    </message>
 </context>
 <context>
-    <name>nxboost-core</name>
-    <message>
-        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
-        <translation>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
-    </message>
-    <message>
-        <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
-        <translation>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>An error occurred while setting up the RPC address %s port %u for listening: %s</translation>
-    </message>
-    <message>
-        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
-        <translation>Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
-    </message>
-    <message>
-        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
-        <translation>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</translation>
-    </message>
-    <message>
-        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
-        <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</translation>
-    </message>
-    <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</translation>
-    </message>
-    <message>
-        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
-        <translation>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</translation>
-    </message>
-    <message>
-        <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
-        <translation>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</translation>
-    </message>
-    <message>
-        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
-        <translation>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disable all NXBoost specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
-        <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
-    </message>
-    <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Enable spork administration functionality with the appropriate private key.</translation>
-    </message>
-    <message>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</translation>
-    </message>
-    <message>
-        <source>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</source>
-        <translation>Enable use of automated obfuscation for funds stored in this wallet (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
-        <translation>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</translation>
-    </message>
-    <message>
-        <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Error: Listening for incoming connections failed (listen returned error %s)</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</translation>
-    </message>
-    <message>
-        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
-        <translation>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</translation>
-    </message>
-    <message>
-        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
-        <translation>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
-        <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in NXB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
-    </message>
-    <message>
-        <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
-        <translation>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Found unconfirmed denominated outputs, will wait till they confirm to continue.</translation>
-    </message>
-    <message>
-        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
-        <translation>How thorough the block verification of -checkblocks is (0-4, default: %u)</translation>
-    </message>
-    <message>
-        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
-        <translation>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</translation>
-    </message>
-    <message>
-        <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
-        <translation>In this mode -genproclimit controls how many blocks are generated immediately.</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</translation>
-    </message>
-    <message>
-        <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation>Keep the specified amount available for spending at all times (default: 0)</translation>
-    </message>
-    <message>
-        <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
-        <translation>Log transaction priority and fee per kB when mining blocks (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
-        <translation>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
-        <translation>Maximum size of data in data carrier transactions we relay and mine (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
-        <translation>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</translation>
-    </message>
-    <message>
-        <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
-        <translation>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</translation>
-    </message>
-    <message>
-        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</translation>
-    </message>
-    <message>
-        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
-        <translation>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</translation>
-    </message>
-    <message>
-        <source>Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation>Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</translation>
-    </message>
-    <message>
-        <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
-        <translation>Require high priority for relaying free or low-fee transactions (default:%u)</translation>
-    </message>
-    <message>
-        <source>Send trace/debug info to console instead of debug.log file (default: %u)</source>
-        <translation>Send trace/debug info to console instead of debug.log file (default: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
-        <translation>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
-        <translation>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</translation>
-    </message>
-    <message>
-        <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</translation>
-    </message>
-    <message>
-        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</translation>
-    </message>
-    <message>
-        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
-        <translation>Support filtering of blocks and transaction with bloom filters (default: %u)</translation>
-    </message>
-    <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
-    </message>
-    <message>
-        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
-        <translation>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
-    </message>
-    <message>
-        <source>To use nxboostd, or the -server option to nxboost-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=nxboostrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "NXBoost Alert" admin@foo.com
-</source>
-        <translation>To use nxboostd, or the -server option to nxboost-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=nxboostrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "NXBoost Alert" admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. NXBoost Core is probably already running.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 NXB.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 NXB.</translation>
-    </message>
-    <message>
-        <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
-        <translation>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</translation>
-    </message>
-    <message>
-        <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
-        <translation>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</translation>
-    </message>
-    <message>
-        <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
-    </message>
-    <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</translation>
-    </message>
-    <message>
-        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</translation>
-    </message>
-    <message>
-        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</translation>
-    </message>
-    <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</translation>
-    </message>
-    <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</translation>
-    </message>
-    <message>
-        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
-        <translation>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</translation>
-    </message>
-    <message>
-        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</translation>
-    </message>
-    <message>
-        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
-    </message>
-    <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 could be used only on mainnet)</translation>
-    </message>
-    <message>
-        <source>(default: %s)</source>
-        <translation>(default: %s)</translation>
-    </message>
-    <message>
-        <source>(default: 1)</source>
-        <translation>(default: 1)</translation>
-    </message>
-    <message>
-        <source>(must be 49108 for mainnet)</source>
-        <translation>(must be 49108 for mainnet)</translation>
-    </message>
-    <message>
-        <source>Accept command line and JSON-RPC commands</source>
-        <translation>Accept command line and JSON-RPC commands</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Accept connections from outside (default: 1 if no -proxy or -connect)</translation>
-    </message>
-    <message>
-        <source>Accept public REST requests (default: %u)</source>
-        <translation>Accept public REST requests (default: %u)</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>Acceptable ciphers (default: %s)</translation>
-    </message>
-    <message>
-        <source>Add a node to connect to and attempt to keep the connection open</source>
-        <translation>Add a node to connect to and attempt to keep the connection open</translation>
-    </message>
-    <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Allow DNS lookups for -addnode, -seednode and -connect</translation>
-    </message>
-    <message>
-        <source>Already have that input.</source>
-        <translation>Already have that input.</translation>
-    </message>
-    <message>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation>Always query for peer addresses via DNS lookup (default: %u)</translation>
-    </message>
-    <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Attempt to recover private keys from a corrupt wallet.dat</translation>
-    </message>
-    <message>
-        <source>Block creation options:</source>
-        <translation>Block creation options:</translation>
-    </message>
-    <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Can't denominate: no compatible inputs left.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Can't find random Masternode.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Can't mix while sync in progress.</translation>
-    </message>
-    <message>
-        <source>Cannot downgrade wallet</source>
-        <translation>Cannot downgrade wallet</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Cannot resolve -bind address: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Cannot resolve -externalip address: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Cannot resolve -whitebind address: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>Cannot write default address</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Collateral not valid.</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>Connect only to the specified node(s)</translation>
-    </message>
-    <message>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation>Connect through SOCKS5 proxy</translation>
-    </message>
-    <message>
-        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
-        <translation>Connect to a node to retrieve peer addresses, and disconnect</translation>
-    </message>
-    <message>
-        <source>Connection options:</source>
-        <translation>Connection options:</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Copyright (C) 2015-%i The NXBoost Core Developers</translation>
-    </message>
-    <message>
-        <source>Corrupted block database detected</source>
-        <translation>Corrupted block database detected</translation>
-    </message>
-    <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>Could not parse -rpcbind value %s as network address</translation>
-    </message>
-    <message>
-        <source>Could not parse masternode.conf</source>
-        <translation>Could not parse masternode.conf</translation>
-    </message>
-    <message>
-        <source>Debugging/Testing options:</source>
-        <translation>Debugging/Testing options:</translation>
-    </message>
-    <message>
-        <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>Disable safemode, override a real safe mode event (default: %u)</translation>
-    </message>
-    <message>
-        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
-        <translation>Discover own IP address (default: 1 when listening and no -externalip)</translation>
-    </message>
-    <message>
-        <source>Do not load the wallet and disable wallet RPC calls</source>
-        <translation>Do not load the wallet and disable wallet RPC calls</translation>
-    </message>
-    <message>
-        <source>Do you want to rebuild the block database now?</source>
-        <translation>Do you want to rebuild the block database now?</translation>
-    </message>
-    <message>
-        <source>Done loading</source>
-        <translation>Done loading</translation>
-    </message>
-    <message>
-        <source>Enable the client to act as a masternode (0-1, default: %u)</source>
-        <translation>Enable the client to act as a masternode (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>Entries are full.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Error connecting to Masternode.</translation>
-    </message>
-    <message>
-        <source>Error initializing block database</source>
-        <translation>Error initializing block database</translation>
-    </message>
-    <message>
-        <source>Error initializing wallet database environment %s!</source>
-        <translation>Error initializing wallet database environment %s!</translation>
-    </message>
-    <message>
-        <source>Error loading block database</source>
-        <translation>Error loading block database</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat</source>
-        <translation>Error loading wallet.dat</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Error loading wallet.dat: Wallet corrupted</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of NXBoost Core</translation>
-    </message>
-    <message>
-        <source>Error opening block database</source>
-        <translation>Error opening block database</translation>
-    </message>
-    <message>
-        <source>Error reading from database, shutting down.</source>
-        <translation>Error reading from database, shutting down.</translation>
-    </message>
-    <message>
-        <source>Error recovering public key.</source>
-        <translation>Error recovering public key.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Error: A fatal internal error occured, see debug.log for details</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Error: Can't select current denominated inputs</translation>
-    </message>
-    <message>
-        <source>Error: Disk space is low!</source>
-        <translation>Error: Disk space is low!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -tor found, use -onion.</source>
-        <translation>Error: Unsupported argument -tor found, use -onion.</translation>
-    </message>
-    <message>
-        <source>Error: Wallet locked, unable to create transaction!</source>
-        <translation>Error: Wallet locked, unable to create transaction!</translation>
-    </message>
-    <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Error: You already have pending entries in the Obfuscation pool</translation>
-    </message>
-    <message>
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Failed to listen on any port. Use -listen=0 if you want this.</translation>
-    </message>
-    <message>
-        <source>Failed to read block</source>
-        <translation>Failed to read block</translation>
-    </message>
-    <message>
-        <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in NXB/kB) to add to transactions you send (default: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Finalizing transaction.</translation>
-    </message>
-    <message>
-        <source>Force safe mode (default: %u)</source>
-        <translation>Force safe mode (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Found enough users, signing ( waiting %s )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Found enough users, signing ...</translation>
-    </message>
-    <message>
-        <source>Generate coins (default: %u)</source>
-        <translation>Generate coins (default: %u)</translation>
-    </message>
-    <message>
-        <source>How many blocks to check at startup (default: %u, 0 = all)</source>
-        <translation>How many blocks to check at startup (default: %u, 0 = all)</translation>
-    </message>
-    <message>
-        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
-        <translation>If &lt;category&gt; is not supplied, output all debugging information.</translation>
-    </message>
-    <message>
-        <source>Importing...</source>
-        <translation>Importing...</translation>
-    </message>
-    <message>
-        <source>Imports blocks from external blk000??.dat file</source>
-        <translation>Imports blocks from external blk000??.dat file</translation>
-    </message>
-    <message>
-        <source>Include IP addresses in debug output (default: %u)</source>
-        <translation>Include IP addresses in debug output (default: %u)</translation>
-    </message>
-    <message>
-        <source>Incompatible mode.</source>
-        <translation>Incompatible mode.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Incompatible version.</translation>
-    </message>
-    <message>
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Incorrect or no genesis block found. Wrong datadir for network?</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Information</translation>
-    </message>
-    <message>
-        <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
-        <translation>Initialization sanity check failed. NXBoost Core is shutting down.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Input is not valid.</translation>
-    </message>
-    <message>
-        <source>Insufficient funds.</source>
-        <translation>Insufficient funds.</translation>
-    </message>
-    <message>
-        <source>Invalid -onion address: '%s'</source>
-        <translation>Invalid -onion address: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address: '%s'</source>
-        <translation>Invalid -proxy address: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>Invalid amount for -reservebalance=&lt;amount&gt;</translation>
-    </message>
-    <message>
-        <source>Invalid masternodeprivkey. Please see documenation.</source>
-        <translation>Invalid masternodeprivkey. Please see documenation.</translation>
-    </message>
-    <message>
-        <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Invalid netmask specified in -whitelist: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation>Invalid port detected in masternode.conf</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Invalid private key.</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>Invalid script detected.</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; can be:</translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Attempt to force blockchain corruption recovery</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Display the stake modifier calculations in the debug.log file.</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Display verbose coin stake messages in the debug.log file.</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Enable publish hash block in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Enable publish hash transaction in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Enable publish raw block in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Enable publish raw transaction in &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Enable staking functionality (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <source>Keep N NXB anonymized (default: %u)</source>
-        <translation>Keep N NXB anonymized (default: %u)</translation>
-    </message>
-    <message>
-        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
-        <translation>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Last Obfuscation was too recent.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Last successful Obfuscation action was too recent.</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>Limit size of signature cache to &lt;n&gt; entries (default: %u)</translation>
-    </message>
-    <message>
-        <source>Line: %d</source>
-        <translation>Line: %d</translation>
-    </message>
-    <message>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
-    </message>
-    <message>
-        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
-        <translation>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</translation>
-    </message>
-    <message>
-        <source>Loading addresses...</source>
-        <translation>Loading addresses...</translation>
-    </message>
-    <message>
-        <source>Loading block index...</source>
-        <translation>Loading block index...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Loading budget cache...</translation>
-    </message>
-    <message>
-        <source>Loading masternode cache...</source>
-        <translation>Loading masternode cache...</translation>
-    </message>
-    <message>
-        <source>Loading masternode payment cache...</source>
-        <translation>Loading masternode payment cache...</translation>
-    </message>
-    <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>Loading wallet... (%3.2f %%)</translation>
-    </message>
-    <message>
-        <source>Loading wallet...</source>
-        <translation>Loading wallet...</translation>
-    </message>
-    <message>
-        <source>Lock is already in place.</source>
-        <translation>Lock is already in place.</translation>
-    </message>
-    <message>
-        <source>Lock masternodes from masternode configuration file (default: %u)</source>
-        <translation>Lock masternodes from masternode configuration file (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
-        <translation>Maintain at most &lt;n&gt; connections to peers (default: %u)</translation>
-    </message>
-    <message>
-        <source>Masternode options:</source>
-        <translation>Masternode options:</translation>
-    </message>
-    <message>
-        <source>Masternode queue is full.</source>
-        <translation>Masternode queue is full.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
-        <translation>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Missing input transaction information.</source>
-        <translation>Missing input transaction information.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Mixing in progress...</translation>
-    </message>
-    <message>
-        <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>Need to specify a port with -whitebind: '%s'</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>No Masternodes detected.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>No compatible Masternode found.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>No funds detected in need of denominating.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>No matching denominations found for mixing.</translation>
-    </message>
-    <message>
-        <source>Node relay options:</source>
-        <translation>Node relay options:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Non-standard public key detected.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Not compatible with existing transactions.</translation>
-    </message>
-    <message>
-        <source>Not enough file descriptors available.</source>
-        <translation>Not enough file descriptors available.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Not in the Masternode list.</translation>
-    </message>
-    <message>
-        <source>Number of automatic wallet backups (default: 10)</source>
-        <translation>Number of automatic wallet backups (default: 10)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Obfuscation is idle.</translation>
-    </message>
-    <message>
-        <source>Obfuscation options:</source>
-        <translation>Obfuscation options:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Obfuscation request complete:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Obfuscation request incomplete:</translation>
-    </message>
-    <message>
-        <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
-        <translation>Only accept block chain matching built-in checkpoints (default: %u)</translation>
-    </message>
-    <message>
-        <source>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</source>
-        <translation>Only connect to nodes in network &lt;net&gt; (ipv4, ipv6 or onion)</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation>Options:</translation>
-    </message>
-    <message>
-        <source>Password for JSON-RPC connections</source>
-        <translation>Password for JSON-RPC connections</translation>
-    </message>
-    <message>
-        <source>Prepend debug output with timestamp (default: %u)</source>
-        <translation>Prepend debug output with timestamp (default: %u)</translation>
-    </message>
-    <message>
-        <source>Print version and exit</source>
-        <translation>Print version and exit</translation>
-    </message>
-    <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</translation>
-    </message>
-    <message>
-        <source>RPC server options:</source>
-        <translation>RPC server options:</translation>
-    </message>
-    <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>RPC support for HTTP persistent connections (default: %d)</translation>
-    </message>
-    <message>
-        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
-        <translation>Randomly drop 1 of every &lt;n&gt; network messages</translation>
-    </message>
-    <message>
-        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
-        <translation>Randomly fuzz 1 of every &lt;n&gt; network messages</translation>
-    </message>
-    <message>
-        <source>Rebuild block chain index from current blk000??.dat files</source>
-        <translation>Rebuild block chain index from current blk000??.dat files</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Receive and display P2P network alerts (default: %u)</translation>
-    </message>
-    <message>
-        <source>Relay and mine data carrier transactions (default: %u)</source>
-        <translation>Relay and mine data carrier transactions (default: %u)</translation>
-    </message>
-    <message>
-        <source>Relay non-P2SH multisig (default: %u)</source>
-        <translation>Relay non-P2SH multisig (default: %u)</translation>
-    </message>
-    <message>
-        <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Rescan the block chain for missing wallet transactions</translation>
-    </message>
-    <message>
-        <source>Rescanning...</source>
-        <translation>Rescanning...</translation>
-    </message>
-    <message>
-        <source>Run a thread to flush wallet periodically (default: %u)</source>
-        <translation>Run a thread to flush wallet periodically (default: %u)</translation>
-    </message>
-    <message>
-        <source>Run in the background as a daemon and accept commands</source>
-        <translation>Run in the background as a daemon and accept commands</translation>
-    </message>
-    <message>
-        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
-        <translation>Send transactions as zero-fee transactions if possible (default: %u)</translation>
-    </message>
-    <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Server certificate file (default: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Server private key (default: %s)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Session not complete!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>Session timed out.</translation>
-    </message>
-    <message>
-        <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
-        <translation>Set database cache size in megabytes (%d to %d, default: %d)</translation>
-    </message>
-    <message>
-        <source>Set external address:port to get to this masternode (example: %s)</source>
-        <translation>Set external address:port to get to this masternode (example: %s)</translation>
-    </message>
-    <message>
-        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
-        <translation>Set key pool size to &lt;n&gt; (default: %u)</translation>
-    </message>
-    <message>
-        <source>Set maximum block size in bytes (default: %d)</source>
-        <translation>Set maximum block size in bytes (default: %d)</translation>
-    </message>
-    <message>
-        <source>Set minimum block size in bytes (default: %u)</source>
-        <translation>Set minimum block size in bytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Set the masternode private key</source>
-        <translation>Set the masternode private key</translation>
-    </message>
-    <message>
-        <source>Set the number of threads to service RPC calls (default: %d)</source>
-        <translation>Set the number of threads to service RPC calls (default: %d)</translation>
-    </message>
-    <message>
-        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
-        <translation>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</translation>
-    </message>
-    <message>
-        <source>Show all debugging options (usage: --help -help-debug)</source>
-        <translation>Show all debugging options (usage: --help -help-debug)</translation>
-    </message>
-    <message>
-        <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
-        <translation>Shrink debug.log file on client startup (default: 1 when no -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>Signing failed.</translation>
-    </message>
-    <message>
-        <source>Signing timed out.</source>
-        <translation>Signing timed out.</translation>
-    </message>
-    <message>
-        <source>Signing transaction failed</source>
-        <translation>Signing transaction failed</translation>
-    </message>
-    <message>
-        <source>Specify configuration file (default: %s)</source>
-        <translation>Specify configuration file (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify connection timeout in milliseconds (minimum: 1, default: %d)</source>
-        <translation>Specify connection timeout in milliseconds (minimum: 1, default: %d)</translation>
-    </message>
-    <message>
-        <source>Specify data directory</source>
-        <translation>Specify data directory</translation>
-    </message>
-    <message>
-        <source>Specify masternode configuration file (default: %s)</source>
-        <translation>Specify masternode configuration file (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify pid file (default: %s)</source>
-        <translation>Specify pid file (default: %s)</translation>
-    </message>
-    <message>
-        <source>Specify wallet file (within data directory)</source>
-        <translation>Specify wallet file (within data directory)</translation>
-    </message>
-    <message>
-        <source>Specify your own public address</source>
-        <translation>Specify your own public address</translation>
-    </message>
-    <message>
-        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>Spend unconfirmed change when sending transactions (default: %u)</translation>
-    </message>
-    <message>
-        <source>Staking options:</source>
-        <translation>Staking options:</translation>
-    </message>
-    <message>
-        <source>Stop running after importing blocks from disk (default: %u)</source>
-        <translation>Stop running after importing blocks from disk (default: %u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Submitted following entries to masternode: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Submitted to masternode, waiting for more entries ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Submitted to masternode, waiting in queue %s</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTX options:</translation>
-    </message>
-    <message>
-        <source>Synchronization failed</source>
-        <translation>Synchronization failed</translation>
-    </message>
-    <message>
-        <source>Synchronization finished</source>
-        <translation>Synchronization finished</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Synchronization pending...</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Synchronizing budgets...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternode winners...</source>
-        <translation>Synchronizing masternode winners...</translation>
-    </message>
-    <message>
-        <source>Synchronizing masternodes...</source>
-        <translation>Synchronizing masternodes...</translation>
-    </message>
-    <message>
-        <source>Synchronizing sporks...</source>
-        <translation>Synchronizing sporks...</translation>
-    </message>
-    <message>
-        <source>This help message</source>
-        <translation>This help message</translation>
-    </message>
-    <message>
-        <source>This is experimental software.</source>
-        <translation>This is experimental software.</translation>
-    </message>
-    <message>
-        <source>This is intended for regression testing tools and app development.</source>
-        <translation>This is intended for regression testing tools and app development.</translation>
-    </message>
-    <message>
-        <source>This is not a Masternode.</source>
-        <translation>This is not a Masternode.</translation>
-    </message>
-    <message>
-        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
-        <translation>Threshold for disconnecting misbehaving peers (default: %u)</translation>
-    </message>
-    <message>
-        <source>Transaction amount too small</source>
-        <translation>Transaction amount too small</translation>
-    </message>
-    <message>
-        <source>Transaction amounts must be positive</source>
-        <translation>Transaction amounts must be positive</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transaction created successfully.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Transaction fees are too high.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transaction not valid.</translation>
-    </message>
-    <message>
-        <source>Transaction too large for fee policy</source>
-        <translation>Transaction too large for fee policy</translation>
-    </message>
-    <message>
-        <source>Transaction too large</source>
-        <translation>Transaction too large</translation>
-    </message>
-    <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Transmitting final transaction.</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer (bind returned error %s)</source>
-        <translation>Unable to bind to %s on this computer (bind returned error %s)</translation>
-    </message>
-    <message>
-        <source>Unable to sign spork message, wrong key?</source>
-        <translation>Unable to sign spork message, wrong key?</translation>
-    </message>
-    <message>
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Unknown network specified in -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Unknown state: id = %u</translation>
-    </message>
-    <message>
-        <source>Upgrade wallet to latest format</source>
-        <translation>Upgrade wallet to latest format</translation>
-    </message>
-    <message>
-        <source>Use N separate masternodes to anonymize funds  (2-8, default: %u)</source>
-        <translation>Use N separate masternodes to anonymize funds  (2-8, default: %u)</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>Use OpenSSL (https) for JSON-RPC connections</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: %u)</source>
-        <translation>Use UPnP to map the listening port (default: %u)</translation>
-    </message>
-    <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Use UPnP to map the listening port (default: 1 when listening)</translation>
-    </message>
-    <message>
-        <source>Use the test network</source>
-        <translation>Use the test network</translation>
-    </message>
-    <message>
-        <source>Username for JSON-RPC connections</source>
-        <translation>Username for JSON-RPC connections</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Value more than Obfuscation pool maximum allows.</translation>
-    </message>
-    <message>
-        <source>Verifying blocks...</source>
-        <translation>Verifying blocks...</translation>
-    </message>
-    <message>
-        <source>Verifying wallet...</source>
-        <translation>Verifying wallet...</translation>
-    </message>
-    <message>
-        <source>Wallet %s resides outside data directory %s</source>
-        <translation>Wallet %s resides outside data directory %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Wallet is locked.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart NXBoost Core to complete</translation>
-    </message>
-    <message>
-        <source>Wallet options:</source>
-        <translation>Wallet options:</translation>
-    </message>
-    <message>
-        <source>Wallet window title</source>
-        <translation>Wallet window title</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Warning</translation>
-    </message>
-    <message>
-        <source>Warning: This version is obsolete, upgrade required!</source>
-        <translation>Warning: This version is obsolete, upgrade required!</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</source>
-        <translation>Warning: Unsupported argument -benchmark ignored, use -debug=bench.</translation>
-    </message>
-    <message>
-        <source>Warning: Unsupported argument -debugnet ignored, use -debug=net.</source>
-        <translation>Warning: Unsupported argument -debugnet ignored, use -debug=net.</translation>
-    </message>
-    <message>
-        <source>Will retry...</source>
-        <translation>Will retry...</translation>
-    </message>
-    <message>
-        <source>You need to rebuild the database using -reindex to change -txindex</source>
-        <translation>You need to rebuild the database using -reindex to change -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Your entries added successfully.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Your transaction was accepted into the pool!</translation>
-    </message>
-    <message>
-        <source>Zapping all transactions from wallet...</source>
-        <translation>Zapping all transactions from wallet...</translation>
-    </message>
-    <message>
-        <source>ZeroMQ notification options:</source>
-        <translation>ZeroMQ notification options:</translation>
-    </message>
-    <message>
-        <source>on startup</source>
-        <translation>on startup</translation>
-    </message>
-    <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat corrupt, salvage failed</translation>
-    </message>
-</context>
+    <name>zNXBControlDialog</name>
+    </context>
 </TS>

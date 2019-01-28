@@ -1,5 +1,5 @@
 ---
-name: "nxboost-aarch64-3.1"
+name: "nxboost-aarch64-4.2"
 enable_cache: true
 suites:
 - "xenial"

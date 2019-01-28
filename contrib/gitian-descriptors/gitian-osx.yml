@@ -1,5 +1,5 @@
 ---
-name: "nxboost-osx-3.1"
+name: "nxboost-osx-4.2"
 enable_cache: true
 suites:
 - "trusty"

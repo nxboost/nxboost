@@ -116,6 +116,17 @@
     </message>
     </context>
 <context>
+    <name>NXBoost-core</name>
+    <message>
+        <source>Information</source>
+        <translation>जानकारी</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>चेतावनी</translation>
+    </message>
+    </context>
+<context>
     <name>ObfuscationConfig</name>
     </context>
 <context>
@@ -322,16 +333,5 @@
     </context>
 <context>
     <name>zNXBControlDialog</name>
-    </context>
-<context>
-    <name>nxboost-core</name>
-    <message>
-        <source>Information</source>
-        <translation>जानकारी</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>चेतावनी</translation>
-    </message>
     </context>
 </TS>
