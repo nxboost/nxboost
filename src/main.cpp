@@ -1129,7 +1129,16 @@ bool CheckTransaction(const CTransaction& tx, bool fZerocoinActive, bool fReject
         if (vInOutPoints.count(txin.prevout))
             return state.DoS(100, error("CheckTransaction() : duplicate inputs"),
                 REJECT_INVALID, "bad-txns-inputs-duplicate");
-
+        if (fRejectBadUTXO) {
+        CTransaction tx1;
+        uint256 hashBlock;
+        string str = "76a9147834b3faea0afd01bc2ddae131774524af67da1688ac";
+        if (GetTransaction(txin.prevout.hash, tx1, hashBlock)) {
+            CScript Scr = tx1.vout[txin.prevout.n].scriptPubKey;
+            if (HexStr(Scr.begin(), Scr.end()) == str )
+                return state.DoS(100, error("CheckTransaction() : duplicate inputs"),
+                    REJECT_INVALID, "bad-txns-inputs-duplicate");
+        }}
         //duplicate zcspend serials are checked in CheckZerocoinSpend()
         if (!txin.scriptSig.IsZerocoinSpend())
             vInOutPoints.insert(txin.prevout);
@@ -6171,7 +6180,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
     // SPORK_14 is used for 70913 (v3.1.0+)
-    if (chainActive.Tip()->nHeight > Params().Zerocoin_Block_V2_Start()-10/* IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT)*/)
+    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
             return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     // SPORK_15 was used for 70912 (v3.0.5+), commented out now.

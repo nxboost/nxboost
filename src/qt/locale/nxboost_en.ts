@@ -6675,12 +6675,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+167"/>
-        <source>HyperSend technology allows for near instant transactions - A flat fee of 0.01 NXB applies</source>
+        <source>SwiftTX technology allows for near instant transactions - A flat fee of 0.01 NXB applies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>HyperSend</source>
+        <source>SwiftTX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7304,12 +7304,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>The Bitcoin Core developers</source>
-        <translation>The Bitcoin Core developers</translation>
+        <source>The Dash Core developers</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>The Dash Core developers</source>
+        <source>The Pivx Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

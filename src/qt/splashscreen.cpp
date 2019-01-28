@@ -28,7 +28,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     // set reference point, paddings
     int paddingLeft = 14;
     int paddingTop = 470;
-    //int titleVersionVSpace = 17;
+    int titleVersionVSpace = 17;
     int titleCopyrightVSpace = 32;
 
     float fontFactor = 1.0;
@@ -36,9 +36,9 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     // define text to place
     QString titleText = tr("NXBoost Core");
     QString versionText = QString(tr("Version %1")).arg(QString::fromStdString(FormatFullVersion()));
-    QString copyrightTextBtc = QChar(0xA9) + QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
-    QString copyrightTextDash = QChar(0xA9) + QString(" 2014-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Dash Core developers"));
-    QString copyrightTextNXBoost = QChar(0xA9) + QString(" 2015-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The NXBoost Core developers"));
+    QString copyrightTextBtc = QChar(0xA9) + QString(" 2014-2015 ") + QString(tr("The Dash Core developers"));
+    QString copyrightTextDash = QChar(0xA9) + QString(" 2015-2018 ") + QString(tr("The Pivx Core developers"));
+    QString copyrightTextNXBoost = QChar(0xA9) + QString(" 2018-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The NXBoost Core developers"));
     QString titleAddText = networkStyle->getTitleAddText();
 
     QString font = QApplication::font().toString();
@@ -60,11 +60,11 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
 
     pixPaint.setFont(QFont(font, 28 * fontFactor));
     fm = pixPaint.fontMetrics();
-    //titleTextWidth = fm.width(titleText);
+    titleTextWidth = fm.width(titleText);
     pixPaint.drawText(paddingLeft, paddingTop, titleText);
 
     pixPaint.setFont(QFont(font, 15 * fontFactor));
-    //pixPaint.drawText(paddingLeft, paddingTop + titleVersionVSpace, versionText);
+    pixPaint.drawText(paddingLeft, paddingTop + titleVersionVSpace, versionText);
 
     // draw copyright stuff
     pixPaint.setFont(QFont(font, 10 * fontFactor));
