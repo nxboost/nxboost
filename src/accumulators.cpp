@@ -188,8 +188,8 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
         return error("%s: height is below zerocoin activated", __func__);
 
     //On a specific block, a recalculation of the accumulators will be forced
-    if (nHeight == Params().Zerocoin_Block_RecalculateAccumulators()) {
-      mapAccumulators.Reset(Params().Zerocoin_Params(false));
+    if (nHeight == Params().Zerocoin_Block_RecalculateAccumulators() && Params().NetworkID() != CBaseChainParams::REGTEST) {
+        mapAccumulators.Reset();
 //        if (!mapAccumulators.Load(chainActive[Params().Zerocoin_Block_LastGoodCheckpoint()]->nAccumulatorCheckpoint))
 //            return error("%s: failed to reset to previous checkpoint when recalculating accumulators", __func__);
 
@@ -204,7 +204,9 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
     if (nHeight >= Params().Zerocoin_Block_V2_Start()) {
         //after v2_start, accumulators need to use v2 params
         mapAccumulators.Reset(Params().Zerocoin_Params(false));
-        if (nHeight <= Params().Zerocoin_Block_V2_Start() + 20) {
+
+        // 20 after v2 start is when the new checkpoints will be in the block, so don't need to load hard checkpoints
+        if (nHeight <= Params().Zerocoin_Block_V2_Start() + 20 && Params().NetworkID() != CBaseChainParams::REGTEST) {
             //Load hard coded checkpointed value
             nHeightCheckpoint = Params().Zerocoin_Block_LastGoodCheckpoint();
             return true;
@@ -652,8 +654,13 @@ bool GenerateAccumulatorWitness(
         //Get the accumulator that is right before the cluster of blocks containing our mint was added to the accumulator
         CBigNum bnAccValue = 0;
         if (GetAccumulatorValue(nHeightCheckpoint, coin.getDenomination(), bnAccValue)) {
-            accumulator.setValue(bnAccValue);
-            witness.resetValue(accumulator, coin);
+            if(!bnAccValue && Params().NetworkID() == CBaseChainParams::REGTEST){
+                accumulator.setInitialValue();
+                witness.resetValue(accumulator, coin);
+            }else {
+                accumulator.setValue(bnAccValue);
+                witness.resetValue(accumulator, coin);
+            }
         }
 
         //add the pubcoins from the blockchain up to the next checksum starting from the block
