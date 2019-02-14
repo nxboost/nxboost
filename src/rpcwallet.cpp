@@ -2593,6 +2593,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             "    \"version\": n,   (numeric) Zerocoin version number.\n"
             "    \"zNXB ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
             "    \"denomination\": n,   (numeric) Coin denomination.\n"
+            "    \"mint height\": n     (numeric) Height of the block containing this mint.\n"
             "    \"confirmations\": n   (numeric) Number of confirmations.\n"
             "  }\n"
             "  ,..."
@@ -2625,6 +2626,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             objMint.push_back(Pair("zNXB ID", m.hashPubcoin.GetHex()));     // PubCoin
             int denom = libzerocoin::ZerocoinDenominationToInt(m.denom);
             objMint.push_back(Pair("denomination", denom));                 // Denomination
+            objMint.push_back(Pair("mint height", m.nHeight));              // Mint Height
             int nConfirmations = (m.nHeight && nBestHeight > m.nHeight) ? nBestHeight - m.nHeight : 0;
             objMint.push_back(Pair("confirmations", nConfirmations));       // Confirmations
             // Push back mint object
