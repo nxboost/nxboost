@@ -8,7 +8,7 @@
 #include "znxb/deterministicmint.h"
 #include "main.h"
 #include "stakeinput.h"
-#include "wallet.h"
+#include "wallet/wallet.h"
 
 CzNXBStake::CzNXBStake(const libzerocoin::CoinSpend& spend)
 {

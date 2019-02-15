@@ -17,8 +17,9 @@
 #include "utilmoneystr.h"
 #include "znxb/accumulatormap.h"
 #include "znxb/accumulators.h"
-#include "wallet.h"
+#include "wallet/wallet.h"
 #include "znxbchain.h"
+
 #include <stdint.h>
 #include <fstream>
 #include <iostream>

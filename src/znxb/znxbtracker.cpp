@@ -9,7 +9,7 @@
 #include "sync.h"
 #include "main.h"
 #include "txdb.h"
-#include "walletdb.h"
+#include "wallet/walletdb.h"
 #include "znxb/accumulators.h"
 #include "znxb/znxbwallet.h"
 #include "witness.h"

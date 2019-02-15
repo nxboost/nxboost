@@ -22,8 +22,8 @@
 #include "ui_interface.h"
 #include "util.h"
 #include "validationinterface.h"
-#include "wallet_ismine.h"
-#include "walletdb.h"
+#include "wallet/wallet_ismine.h"
+#include "wallet/walletdb.h"
 #include "znxb/znxbwallet.h"
 #include "znxb/znxbtracker.h"
 

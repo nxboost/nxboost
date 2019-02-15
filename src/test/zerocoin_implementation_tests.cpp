@@ -15,7 +15,7 @@
 #include <boost/test/unit_test.hpp>
 #include <iostream>
 #include <znxb/accumulators.h>
-#include "wallet.h"
+#include "wallet/wallet.h"
 #include "znxb/znxbwallet.h"
 #include "znxbchain.h"
 
