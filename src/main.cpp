@@ -3118,9 +3118,11 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert NXB to zNXB
-    if (pwalletMain->isZeromintEnabled ())
-        pwalletMain->AutoZeromint ();
+#ifdef ENABLE_WALLET
+    // If turned on AutoZeromint will automatically convert PIV to zPIV
+    if (pwalletMain && pwalletMain->isZeromintEnabled())
+        pwalletMain->AutoZeromint();
+#endif // ENABLE_WALLET
 
     // New best block
     nTimeBestReceived = GetTime();
