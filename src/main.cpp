@@ -1003,7 +1003,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const Coi
                 return error("%s: V2 zNXB spend does not have a valid signature", __func__);
         }catch (libzerocoin::InvalidSerialException &e){
             // Check if we are in the range of the attack
-                std::cout << "fake serial detected" << std::endl;
+            //    std::cout << "fake serial detected" << std::endl;
                 return error("%s: Invalid serial detected, txid %s", __func__, tx.GetHash().GetHex());
         }
 
@@ -1025,12 +1025,13 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const Coi
                          spend.getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
     }catch (libzerocoin::InvalidSerialException &e){
 
-            std::cout << "fake serial detected" << std::endl;
+            //std::cout << "fake serial detected" << std::endl;
             return error("%s: Invalid serial detected, txid %s", __func__, tx.GetHash().GetHex());
     }
 
     return true;
 }
+
 
 bool CheckZerocoinSpend(const CTransaction& tx, bool fVerifySignature, CValidationState& state, bool fFakeSerialAttack)
 {
