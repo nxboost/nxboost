@@ -1004,7 +1004,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const Coi
         }catch (libzerocoin::InvalidSerialException &e){
             // Check if we are in the range of the attack
             //    std::cout << "fake serial detected" << std::endl;
-                return error("%s: Invalid serial detected, txid %s\n", __func__, tx.GetHash().GetHex());
+                return error("%s: Invalid serial detected, txid %s, in block %d\n", __func__, tx.GetHash().GetHex(), pindex->nHeight);
         }
 
         libzerocoin::SpendType expectedType = libzerocoin::SpendType::SPEND;
