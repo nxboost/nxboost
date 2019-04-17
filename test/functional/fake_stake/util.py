@@ -12,7 +12,7 @@ from test_framework.util import wait_until
 ''' -------------------------------------------------------------------------
 TestNode CLASS --------------------------------------------------------------
 
-A peer we use to send messsages to pivxd and store responses
+A peer we use to send messsages to nxboostd and store responses
 Extends P2PInterface.
 '''
 
@@ -136,5 +136,3 @@ def utxo_to_stakingPrevOuts(utxo, stakingPrevOuts, txBlocktime, stakeModifier, z
             stakingPrevOuts[outPoint] = (int(utxo['amount'])*COIN, txBlocktime, stakeModifier, "")
 
     return
-
-

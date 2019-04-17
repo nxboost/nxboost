@@ -13,7 +13,7 @@
 #include "util.h"
 #include "stakeinput.h"
 #include "utilmoneystr.h"
-#include "zNXBchain.h"
+#include "znxbchain.h"
 
 using namespace std;
 

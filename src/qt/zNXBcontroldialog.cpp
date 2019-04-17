@@ -6,7 +6,7 @@
 #include "zNXBcontroldialog.h"
 #include "ui_zNXBcontroldialog.h"
 
-#include "accumulators.h"
+#include "znxb/accumulators.h"
 #include "main.h"
 #include "walletmodel.h"
 

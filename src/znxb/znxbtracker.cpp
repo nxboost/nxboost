@@ -3,15 +3,16 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <primitives/deterministicmint.h>
-#include "zNXBtracker.h"
+#include <znxb/deterministicmint.h>
+#include "znxbtracker.h"
 #include "util.h"
 #include "sync.h"
 #include "main.h"
 #include "txdb.h"
 #include "walletdb.h"
-#include "zNXBwallet.h"
-#include "accumulators.h"
+#include "znxb/accumulators.h"
+#include "znxb/znxbwallet.h"
+#include "witness.h"
 
 using namespace std;
 
@@ -109,6 +110,17 @@ bool CzNXBTracker::GetMetaFromStakeHash(const uint256& hashStake, CMintMeta& met
     }
 
     return false;
+}
+
+CoinWitnessData* CzNXBTracker::GetSpendCache(const uint256& hashStake)
+{
+    if (!mapStakeCache.count(hashStake)) {
+        std::unique_ptr<CoinWitnessData> uptr(new CoinWitnessData());
+        mapStakeCache.insert(std::make_pair(hashStake, std::move(uptr)));
+        return mapStakeCache.at(hashStake).get();
+    }
+
+    return mapStakeCache.at(hashStake).get();
 }
 
 std::vector<uint256> CzNXBTracker::GetSerialHashes()
@@ -453,7 +465,7 @@ std::set<CMintMeta> CzNXBTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, 
             Add(dMint, false, false, zNXBWallet);
         }
         delete zNXBWallet;
-        LogPrint("zero", "%s: added %d dzNXB from DB\n", __func__, listDeterministicDB.size());
+        LogPrint("zero", "%s: added %d dznxb from DB\n", __func__, listDeterministicDB.size());
     }
 
     std::vector<CMintMeta> vOverWrite;

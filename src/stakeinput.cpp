@@ -3,9 +3,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "accumulators.h"
+#include "znxb/accumulators.h"
 #include "chain.h"
-#include "primitives/deterministicmint.h"
+#include "znxb/deterministicmint.h"
 #include "main.h"
 #include "stakeinput.h"
 #include "wallet.h"
@@ -134,7 +134,7 @@ bool CzNXBStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
-    if (!pwallet->CreatezNXBOutPut(denomStaked, outReward, dMint))
+    if (!pwallet->CreateZNXBOutPut(denomStaked, outReward, dMint))
         return error("%s: failed to create zNXB output", __func__);
     vout.emplace_back(outReward);
 
@@ -145,7 +145,7 @@ bool CzNXBStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     for (unsigned int i = 0; i < GetPosPayment(chainActive.Height()+1)/COIN; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
-        if (!pwallet->CreatezNXBOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
+        if (!pwallet->CreateZNXBOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
             return error("%s: failed to create zNXB output", __func__);
         vout.emplace_back(out);
 

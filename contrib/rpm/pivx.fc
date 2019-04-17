@@ -1,8 +1,8 @@
-/usr/bin/pivx-cli		--	gen_context(system_u:object_r:pivx_exec_t,s0)
-/usr/sbin/pivxd		--	gen_context(system_u:object_r:pivx_exec_t,s0)
-/usr/lib(64)?/pivx/pivxd		--	gen_context(system_u:object_r:pivx_exec_t,s0)
+/usr/bin/nxboost-cli		--	gen_context(system_u:object_r:nxboost_exec_t,s0)
+/usr/sbin/nxboostd		--	gen_context(system_u:object_r:nxboost_exec_t,s0)
+/usr/lib(64)?/nxboost/nxboostd		--	gen_context(system_u:object_r:nxboost_exec_t,s0)
 
-/etc/pivx(/.*)?		gen_context(system_u:object_r:pivx_conf_t,s0)
-/var/lib/pivx(/.*)?		gen_context(system_u:object_r:pivx_var_lib_t,s0)
+/etc/nxboost(/.*)?		gen_context(system_u:object_r:nxboost_conf_t,s0)
+/var/lib/nxboost(/.*)?		gen_context(system_u:object_r:nxboost_var_lib_t,s0)
 
-(/var)?/run/pivxd(/.*)?   gen_context(system_u:object_r:pivx_var_run_t,s0)
+(/var)?/run/nxboostd(/.*)?   gen_context(system_u:object_r:nxboost_var_run_t,s0)

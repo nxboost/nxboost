@@ -3,10 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef nxboost_zNXBTRACKER_H
-#define nxboost_zNXBTRACKER_H
+#ifndef NXB_ZNXBTRACKER_H
+#define NXB_ZNXBTRACKER_H
 
-#include "primitives/zerocoin.h"
+#include "zerocoin.h"
+#include "witness.h"
 #include <list>
 
 class CDeterministicMint;
@@ -19,6 +20,7 @@ private:
     std::string strWalletFile;
     std::map<uint256, CMintMeta> mapSerialHashes;
     std::map<uint256, uint256> mapPendingSpends; //serialhash, txid of spend
+    std::map<uint256, std::unique_ptr<CoinWitnessData> > mapStakeCache; //serialhash, witness value, height
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
     CzNXBTracker(std::string strWalletFile);
@@ -38,6 +40,7 @@ public:
     bool GetMetaFromStakeHash(const uint256& hashStake, CMintMeta& meta) const;
     CAmount GetBalance(bool fConfirmedOnly, bool fUnconfirmedOnly) const;
     std::vector<uint256> GetSerialHashes();
+    CoinWitnessData* GetSpendCache(const uint256& hashStake);
     std::vector<CMintMeta> GetMints(bool fConfirmedOnly) const;
     CAmount GetUnconfirmedBalance() const;
     std::set<CMintMeta> ListMints(bool fUnusedOnly, bool fMatureOnly, bool fUpdateStatus, bool fWrongSeed = false);
@@ -50,4 +53,4 @@ public:
     void Clear();
 };
 
-#endif //nxboost_zNXBTRACKER_H
+#endif //NXB_ZNXBTRACKER_H

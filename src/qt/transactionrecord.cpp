@@ -12,7 +12,7 @@
 #include "swifttx.h"
 #include "timedata.h"
 #include "wallet.h"
-#include "zNXBchain.h"
+#include "znxbchain.h"
 
 #include <stdint.h>
 

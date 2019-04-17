@@ -24,11 +24,11 @@
 #endif
 #include "validationinterface.h"
 #include "masternode-payments.h"
-#include "accumulators.h"
+#include "znxb/accumulators.h"
 #include "blocksignature.h"
 #include "spork.h"
 #include "invalid.h"
-#include "zNXBchain.h"
+#include "znxbchain.h"
 
 
 #include <boost/thread.hpp>

@@ -8,16 +8,15 @@
 #include "chainparams.h"
 #include "main.h"
 #include "txdb.h"
-#include "primitives/deterministicmint.h"
+#include "znxb/deterministicmint.h"
 #include "key.h"
-#include "accumulatorcheckpoints.h"
+#include "znxb/accumulatorcheckpoints.h"
 #include "libzerocoin/bignum.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
-#include <accumulators.h>
+#include <znxb/accumulators.h>
 #include "wallet.h"
-#include "zNXBwallet.h"
-#include "zNXBchain.h"
+#include "znxb/znxbwallet.h"
 
 using namespace libzerocoin;
 
@@ -526,7 +525,7 @@ BOOST_AUTO_TEST_CASE(deterministic_tests)
     for (int i = 0; i < nTests; i++) {
         PrivateCoin coin(Params().Zerocoin_Params(false), denom, false);
         CDeterministicMint dMint;
-        zWallet.GenerateDeterministiczNXB(denom, coin, dMint);
+        zWallet.GenerateDeterministicZNXB(denom, coin, dMint);
         vCoins.emplace_back(coin);
     }
 

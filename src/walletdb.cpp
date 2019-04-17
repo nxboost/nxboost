@@ -16,7 +16,7 @@
 #include "util.h"
 #include "utiltime.h"
 #include "wallet.h"
-#include <primitives/deterministicmint.h>
+#include <znxb/deterministicmint.h>
 
 #include <boost/filesystem.hpp>
 #include <boost/foreach.hpp>
@@ -1348,7 +1348,7 @@ bool CWalletDB::ErasezNXBSeed()
     return true;
 }
 
-bool CWalletDB::ErasezNXBSeed_deprecated()
+bool CWalletDB::EraseZNXBSeed_deprecated()
 {
     return Erase(string("dzs"));
 }
@@ -1358,17 +1358,17 @@ bool CWalletDB::ReadzNXBSeed(const uint256& hashSeed, vector<unsigned char>& see
     return Read(make_pair(string("dzs"), hashSeed), seed);
 }
 
-bool CWalletDB::ReadzNXBSeed_deprecated(uint256& seed)
+bool CWalletDB::ReadZNXBSeed_deprecated(uint256& seed)
 {
     return Read(string("dzs"), seed);
 }
 
-bool CWalletDB::WritezNXBCount(const uint32_t& nCount)
+bool CWalletDB::WriteZNXBCount(const uint32_t& nCount)
 {
     return Write(string("dzc"), nCount);
 }
 
-bool CWalletDB::ReadzNXBCount(uint32_t& nCount)
+bool CWalletDB::ReadZNXBCount(uint32_t& nCount)
 {
     return Read(string("dzc"), nCount);
 }

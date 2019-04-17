@@ -77,10 +77,6 @@ endif
 # NXBoost core #
 BITCOIN_CORE_H = \
   activemasternode.h \
-  accumulators.h \
-  accumulatorcheckpoints.h \
-  accumulatorcheckpoints.json.h \
-  accumulatormap.h \
   addrman.h \
   alert.h \
   allocators.h \
@@ -104,9 +100,7 @@ BITCOIN_CORE_H = \
   compat/sanity.h \
   compressor.h \
   primitives/block.h \
-  primitives/deterministicmint.h \
   primitives/transaction.h \
-  primitives/zerocoin.h \
   core_io.h \
   crypter.h \
   denomination_functions.h \
@@ -135,7 +129,6 @@ BITCOIN_CORE_H = \
   masternodeconfig.h \
   merkleblock.h \
   miner.h \
-  mintpool.h \
   mruset.h \
   netbase.h \
   net.h \
@@ -181,12 +174,16 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
-  zNXBchain.h \
-  zNXBtracker.h \
-  zNXBwallet.h \
-  genwit.h \
-  concurrentqueue.h \
-  lightznxbthread.h \
+  znxb/accumulators.h \
+  znxb/accumulatorcheckpoints.h \
+  znxb/accumulatorcheckpoints.json.h \
+  znxb/accumulatormap.h \
+  znxb/deterministicmint.h \
+  znxb/mintpool.h \
+  znxb/witness.h \
+  znxb/zerocoin.h \
+  znxb/znxbtracker.h \
+  znxb/znxbwallet.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -234,7 +231,7 @@ libbitcoin_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   validationinterface.cpp \
-  zNXBchain.cpp \
+  znxbchain.cpp \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
@@ -265,17 +262,19 @@ libbitcoin_wallet_a_SOURCES = \
   masternode-sync.cpp \
   masternodeconfig.cpp \
   masternodeman.cpp \
-  mintpool.cpp \
   rpcdump.cpp \
-  primitives/deterministicmint.cpp \
-  primitives/zerocoin.cpp \
+  znxb/deterministicmint.cpp \
+  znxb/zerocoin.cpp \
   rpcwallet.cpp \
   kernel.cpp \
   wallet.cpp \
   wallet_ismine.cpp \
   walletdb.cpp \
-  zNXBwallet.cpp \
-  zNXBtracker.cpp \
+  znxb/accumulators.cpp \
+  znxb/mintpool.cpp \
+  znxb/witness.cpp \
+  znxb/znxbwallet.cpp \
+  znxb/znxbtracker.cpp \
   stakeinput.cpp \
   genwit.cpp \
   lightznxbthread.cpp \
@@ -347,9 +346,9 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
-  accumulators.cpp \
-  accumulatorcheckpoints.cpp \
-  accumulatormap.cpp \
+  znxb/accumulators.cpp \
+  znxb/accumulatorcheckpoints.cpp \
+  znxb/accumulatormap.cpp \
   allocators.cpp \
   amount.cpp \
   base58.cpp \
@@ -358,9 +357,9 @@ libbitcoin_common_a_SOURCES = \
   coins.cpp \
   compressor.cpp \
   primitives/block.cpp \
-  primitives/deterministicmint.cpp \
+  znxb/deterministicmint.cpp \
   primitives/transaction.cpp \
-  primitives/zerocoin.cpp \
+  znxb/zerocoin.cpp \
   core_read.cpp \
   core_write.cpp \
   hash.cpp \
@@ -526,7 +525,7 @@ CLEANFILES += univalue/*.gcda univalue/*.gcno
 CLEANFILES += zmq/*.gcda zmq/*.gcno
 CLEANFILES += obj/build.h
 
-EXTRA_DIST =
+EXTRA_DIST = leveldb
 
 
 config/nxboost-config.h: config/stamp-h1
@@ -537,6 +536,7 @@ $(top_srcdir)/$(subdir)/config/nxboost-config.h.in:  $(am__configure_deps)
 	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/nxboost-config.h.in
 
 clean-local:
+	-$(MAKE) -C leveldb clean
 	-$(MAKE) -C secp256k1 clean
 	-$(MAKE) -C univalue clean
 	-rm -f leveldb/*/*.gcda leveldb/*/*.gcno leveldb/helpers/memenv/*.gcda leveldb/helpers/memenv/*.gcno
