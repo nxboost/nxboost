@@ -1,18 +1,18 @@
-NXBoost Core version *3.1.1* is now available from:  <https://github.com/nxboost/nxboost/releases>
-
-This is a new minor version release, including various bug fixes and performance improvements, as well as updated translations.
+NXBoost Core version *4.3.0* is now available from:  <https://github.com/nxboost/nxboost/releases>
 
 Please report bugs using the issue tracker at github: <https://github.com/nxboost/nxboost/issues>
 
 Non-Mandatory Update
 ==============
 
-NXBoost Core v3.1.1 is a non-mandatory update to address bugs and introduce minor enhancements that do not require a network change.
+NXBoost Core v4.3.0 is a **mandatory update** for all block creators, masternodes, and integrated services (exchanges). Old version 6 blocks will be rejected once 95% of a rolling 7 days worth of blocks have signaled the new version 7.
+
+Masternodes will need to be restarted once both the masternode daemon and the controller wallet have been upgraded.
 
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/nxboost-Qt (on Mac) or nxboostd/nxboost-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/NXBoost-Qt (on Mac) or nxboostd/nxboost-qt (on Linux).
 
 
 Compatibility
@@ -37,6 +37,35 @@ Minimum Supported MacOS Version
 ------
 
 The minimum supported version of MacOS (OSX) has been moved from 10.8 Mountain Lion to 10.10 Yosemite. Users still running a MacOS version prior to Yosemite will need to upgrade their OS if they wish to continue using the latest version(s) of the NXBoost Core wallet.
+
+Bug Fixes
+------
+
+### Improper rejection of valid blocks
+
+A bug was discovered in the block acceptance portion of the code that resulted in rejection of otherwise valid blocks. This caused a race condition where some clients ended up on a low-difficulty chain.
+
+This issue has been fixed, and no user funds were at risk.
+
+### GUI crash when recalculating zNXB data
+
+A GUI only crash when recalculating zNXB data (mints/spends/supply) has been fixed. Clients syncing via the network from a point prior to any recalculations can now do so without error again.
+
+### macOS installer mounting
+
+The macOS installer image (`.dmg` file) had an issue with it's stylesheet that caused an error after mounting the image. Affected macOS users will now see the expected behavior of a finder window appearing after mounting, allowing drag-n-drop installation of the NXBoost-Qt.app
+
+### macOS "Pink Pinstripes"
+
+A GUI wallet stylesheet issue was causing "pink pinstripes" to display in many of the wallet's views, this has now been resolved.
+
+### Incorrect seed warning in zNXB control dialog
+
+Because of the way the zNXB master seed is handled, locked wallets were showing a status message in the zNXB control dialog window which mentioned that the master seed was not the same used to mint the denom. This message was not entirely correct, and a more appropriate message is now displayed for locked wallets.
+
+### Invalid chain state on shutdown
+
+An issue in how the wallet shutdown procedure is carried out was sometimes leading to marking an incoming block as invalid when it in fact was valid. This would cause the client to seem "stuck" when starting it again. This issue is now resolved.
 
 Attacks, Exploits, and Mitigations
 ------
@@ -188,117 +217,12 @@ Support for the new RISC-V 64bit processors has been added, though still experim
 
 The previous `gitian-build.sh` shell script has been replaced with a more feature rich python version; `gitian-build.py`. This script now supports the use of a docker container in addition to LXC or KVM virtualization, as well as the ability to build against a pull request by number.
 
-*version* Change log
-==============
+Performance Improvements
+------
 
-The transition to v2 zNXB and reset of the accumulators caused blocks 1050000 - 1050010 to be accumulated twice. This was causing a number v1 zNXB to not create valid witnesses, and thus were not spendable. This problem is fixed by double accumulating blocks 1050000-1050010 when creating the witness. Any user that had issues spending zNXB v1 will now be able to convert that into NXB and then zNXB v2 (if desired).
+### New checkpoints
 
-### Adjustment to staking properties to reduce orphaned blocks
-
-zNXB stake set to update more frequently and lowering the stake hashdrift to 30 seconds to reduce the number of orphans being experienced by NXBoost stakers.
-
-Further work is being done to improve the efficiently of zPoS beyond this, and will be available in a subsequent release at a later date.
+More recent checkpoints have been added for both mainnet. These help alleviate some of the load when (re-)syncing from the network.
 
 
-User Experience
---------------
-
-### Fix wrongly displayed balance on Overview tab
-
-Fixes a display issue introduced with a previous change. This was a "display only" issue, all your coins were there all the time.
-
-### Show progress percent for zNXB reindex operations
-
-When starting the wallet with `-reindexaccumulators` and/or `-reindexzerocoin`, these operations can take a considerable time to complete depending on system hardware. A progress percent on the splash screen is now shown for these processes to avoid confusion in thinking that the wallet has frozen.
-
-
-### Add TOR service icon to status bar
-
-An icon is now shown for clients that are connected and operating over the TOR network. Included is a mouse-over tooltip showing the onion address associated with the client. This icon is only shown when a connection to the TOR network can be established, and will be hidden otherwise.
-
-
-NXBoost Daemon & Client (RPC Changes)
---------------
-
-### Fix listtransactions RPC function
-
-This addresses an issue where new incoming transactions are not recorded properly, and subsequently, not returned with `listtransactions` in the same session.
-
-This fix was previously included in the `v3.1.0.3` tag, and relayed to affected exchanges/services, which typically use this command for accounting purposes. It is included here for completeness.
-
-Technical Changes
---------------
-
-### Switch to libsecp256k1 signature verification
-
-Here is the long overdue update for NXBoost to let go of OpenSSL in its consensus code. The rationale behind it is to avoid depending on an external and changing library where our consensus code is affected. This is security and consensus critical. NXBoost users will experience quicker block validations and sync times as block transactions are verified under libsecp256k1.
-
-The recent [CVE-2018-0495](https://www.nccgroup.trust/us/our-research/technical-advisory-return-of-the-hidden-number-problem/) brings into question a potential vulnerability with OpenSSL (and other crypto libraries) that libsecp256k1 is not susceptible to.
-
-### Write to the zerocoinDB in batches
-
-Instead of using a separate write operation for each and every bit of data that needs to be flushed to disk, utilize leveldb's batch writing capability. The primary area of improvement this offers is when reindexing the zerocoinDB (`-reindexzerocoin`), which went from needing multiple hours on some systems to mere minutes.
-
-Secondary improvement area is in ConnectBlock() when multiple zerocoin transactions are involved.
-
-### Resolution of excessive peer banning
-
-It was found that following a forced closure of the NXBoost core wallet (ungraceful), a situation could arise that left partial/incomplete data in the disk cache. This caused the client to fail a basic sanity test and ban any peer which was sending the (complete) data. This, in turn, was causing the wallet to become stuck. This issue has been resolved client side by guarding against this partial/incomplete data in the disk cache.
-
-*3.1.1* Change log
---------------
-
-Detailed release notes follow. This overview includes changes that affect behavior, code moves, refactoring and string updates. For convenience in locating the code changes and accompanying discussion, both the pull request and git merge commit are mentioned.
-
-### Core Features
- - #549 `8bf13a5ad` [Crypto] Switch to libsecp256k1 signature verification and update the lib (warrows)
- - #609 `6b73598b9` [MoveOnly] Remove zNXB code from main.cpp (presstab)
- - #610 `6c3bc8c76` [Main] Check whether tx is in chain in ContextualCheckZerocoinMint(). (presstab)
- - #624 `1a82aec96` [Core] Missing seesaw value for block 325000 (warrows)
- - #636 `d359c6136` [Main] Write to the zerocoinDB in batches (Fuzzbawls)
-
-### Build System
- - #605 `b4d82c944` [Build] Remove unnecessary BOOST dependency (Mrs-X)
- - #622 `b8c672c98` [Build] Make sure Boost headers are included for libzerocoin (Fuzzbawls)
- - #639 `98c7a4f65` [Travis] Add separate job to check doc/logprint/subtree (Fuzzbawls)
- - #648 `9950fce59` [Depends] Update Qt download url (fanquake)
-
-### P2P Protocol and Network Code
- - #608 `a602d00eb` [Budget] Make sorting of finalized budgets deterministic (Mrs-X)
- - #647 `3aa3e5c97` [Net] Update hard-coded fallback seeds (Fuzzbawls)
-
-### GUI
- - #580 `c296b7572` Fixed Multisend dialog to show settings properly (SHTDJ)
- - #598 `f0d894253` [GUI] Fix wrongly displayed balance on Overview tab (Mrs-X)
- - #600 `217433561` [GUI] Only enable/disable PrivacyDialog zNXB elements if needed. (presstab)
- - #612 `6dd752cb5` [Qt] Show progress percent for zNXB reindex operations (Fuzzbawls)
- - #626 `9b6a42ba0` [Qt] Add Tor service icon to status bar (Fuzzbawls)
- - #629 `14e125795` [Qt] Remove useless help button from QT dialogs (windows) (warrows)
- - #646 `c66b7b632` [Qt] Periodic translation update (Fuzzbawls)
-
-### Wallet
- - #597 `766d5196c` [Wallet] Write new transactions to wtxOrdered properly (Fuzzbawls)
- - #603 `779d8d597` Fix spending for v1 zNXB created before block 1050020. (presstab)
- - #617 `6b525f0df` [Wallet] Adjust staking properties to lower orphan rates. (presstab)
- - #625 `5f2e61d60` [Wallet] Add some LOCK to avoid crash (warrows)
-
-### Miscellaneous
- - #585 `76c01a560` [Doc] Change aarch assert sign output folder (Warrows)
- - #595 `d2ce04cc0` [Tests] Fix chain ordering in budget tests (Fuzzbawls)
- - #611 `c6a57f664` [Output] Properly log reason(s) for increasing a peer's DoS score. (Fuzzbawls)
- - #649 `f6bfb4ade` [Utils] Add copyright header to logprint-scanner.py (Fuzzbawls)
-
-## Credits
-Thanks to everyone who directly contributed to this release:
-
- - Fuzzbawls
- - Mrs-X
- - SHTDJ
- - Sieres
- - Warrows
- - fanquake
- - gpdionisio
- - presstab
-
-
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/nxboost-wallet/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/nxboost/nxboost-wallet/).
