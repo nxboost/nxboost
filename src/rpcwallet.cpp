@@ -3768,7 +3768,7 @@ UniValue clearspendcache(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 0)
         throw runtime_error(
             "clearspendcache\n"
-            "\nClear the pre-computed zNXB spend cache.\n" +
+            "\nClear the pre-computed zNXB spend cache, and database.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nExamples\n" +
@@ -3779,13 +3779,20 @@ UniValue clearspendcache(const UniValue& params, bool fHelp)
     CzNXBTracker* znxbTracker = pwalletMain->znxbTracker.get();
 
     {
-        TRY_LOCK(znxbTracker->cs_spendcache, fLocked);
-        if (fLocked) {
-            if (znxbTracker->ClearSpendCache()) {
-                fClearSpendCache = true;
-                CWalletDB walletdb("precomputes.dat", "cr+");
-                walletdb.EraseAllPrecomputes();
-                return NullUniValue;
+        int nTries = 0;
+        while (nTries < 100) {
+            TRY_LOCK(znxbTracker->cs_spendcache, fLocked);
+            if (fLocked) {
+                if (znxbTracker->ClearSpendCache()) {
+                    fClearSpendCache = true;
+                    CWalletDB walletdb("precomputes.dat", "cr+");
+                    walletdb.EraseAllPrecomputes();
+                    return "Successfully Cleared the Precompute Spend Cache and Database";
+                }
+            } else {
+                fGlobalUnlockSpendCache = true;
+                nTries++;
+                MilliSleep(100);
             }
         }
     }
