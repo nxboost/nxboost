@@ -19,6 +19,7 @@ using namespace libzerocoin;
 std::map<uint32_t, CBigNum> mapAccumulatorValues;
 std::list<uint256> listAccCheckpointsNoDB;
 
+
 uint32_t ParseChecksum(uint256 nChecksum, CoinDenomination denomination)
 {
     //shift to the beginning bit of this denomination and trim any remaining bits by returning 32 bits only
@@ -26,6 +27,7 @@ uint32_t ParseChecksum(uint256 nChecksum, CoinDenomination denomination)
     nChecksum = nChecksum >> (32*((zerocoinDenomList.size() - 1) - pos));
     return nChecksum.Get32();
 }
+
 
 uint32_t GetChecksum(const CBigNum &bnValue)
 {
@@ -35,6 +37,7 @@ uint32_t GetChecksum(const CBigNum &bnValue)
 
     return hash.Get32();
 }
+
 
 // Find the first occurance of a certain accumulator checksum. Return 0 if not found.
 int GetChecksumHeight(uint32_t nChecksum, CoinDenomination denomination)
@@ -62,6 +65,7 @@ int GetChecksumHeight(uint32_t nChecksum, CoinDenomination denomination)
     return 0;
 }
 
+
 bool GetAccumulatorValueFromChecksum(uint32_t nChecksum, bool fMemoryOnly, CBigNum& bnAccValue)
 {
     if (mapAccumulatorValues.count(nChecksum)) {
@@ -79,11 +83,13 @@ bool GetAccumulatorValueFromChecksum(uint32_t nChecksum, bool fMemoryOnly, CBigN
     return true;
 }
 
+
 bool GetAccumulatorValueFromDB(uint256 nCheckpoint, CoinDenomination denom, CBigNum& bnAccValue)
 {
     uint32_t nChecksum = ParseChecksum(nCheckpoint, denom);
     return GetAccumulatorValueFromChecksum(nChecksum, false, bnAccValue);
 }
+
 
 void AddAccumulatorChecksum(const uint32_t nChecksum, const CBigNum &bnValue)
 {
@@ -93,6 +99,7 @@ void AddAccumulatorChecksum(const uint32_t nChecksum, const CBigNum &bnValue)
         mapAccumulatorValues.insert(make_pair(nChecksum, bnValue));
     }
 }
+
 
 void DatabaseChecksums(AccumulatorMap& mapAccumulators)
 {
@@ -104,6 +111,7 @@ void DatabaseChecksums(AccumulatorMap& mapAccumulators)
         nCheckpoint = nCheckpoint << 32 | nCheckSum;
     }
 }
+
 
 bool EraseChecksum(uint32_t nChecksum)
 {
@@ -129,6 +137,7 @@ bool EraseAccumulatorValues(const uint256& nCheckpointErase, const uint256& nChe
     return true;
 }
 
+
 bool LoadAccumulatorValuesFromDB(const uint256 nCheckpoint)
 {
     for (auto& denomination : zerocoinDenomList) {
@@ -146,6 +155,7 @@ bool LoadAccumulatorValuesFromDB(const uint256 nCheckpoint)
     }
     return true;
 }
+
 
 //Erase accumulator checkpoints for a certain block range
 bool EraseCheckpoints(int nStartHeight, int nEndHeight)
@@ -182,6 +192,7 @@ bool EraseCheckpoints(int nStartHeight, int nEndHeight)
 
     return true;
 }
+
 
 bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, AccumulatorMap& mapAccumulators)
 {
@@ -224,6 +235,7 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
     nHeightCheckpoint = nHeight;
     return true;
 }
+
 
 //Get checkpoint value for a specific block height
 bool CalculateAccumulatorCheckpoint(int nHeight, uint256& nCheckpoint, AccumulatorMap& mapAccumulators)
@@ -342,6 +354,7 @@ int ComputeAccumulatedCoins(int nHeightEnd, libzerocoin::CoinDenomination denom)
     return n;
 }
 
+
 list<PublicCoin> GetPubcoinFromBlock(const CBlockIndex* pindex){
     //grab mints from this block
     CBlock block;
@@ -352,6 +365,8 @@ list<PublicCoin> GetPubcoinFromBlock(const CBlockIndex* pindex){
         throw GetPubcoinException("GetPubcoinFromBlock: failed to get zerocoin mintlist from block "+std::to_string(pindex->nHeight)+"\n");
     return listPubcoins;
 }
+
+
 
 int AddBlockMintsToAccumulator(const CoinDenomination den, const CBloomFilter filter, const CBlockIndex* pindex,
                                libzerocoin::Accumulator* accumulator, bool isWitness, list<CBigNum>& notAddedCoins)
@@ -400,6 +415,7 @@ int AddBlockMintsToAccumulator(const libzerocoin::PublicCoin& coin, const int nH
     return nMintsAdded;
 }
 
+
 int AddBlockMintsToAccumulator(CoinWitnessData* coinWitness, const CBlockIndex* pindex, bool isWitness)
 {
     // TODO: This should be the witness..
@@ -411,6 +427,7 @@ int AddBlockMintsToAccumulator(CoinWitnessData* coinWitness, const CBlockIndex* 
             isWitness
     );
 }
+
 
 bool GetAccumulatorValue(int& nHeight, const libzerocoin::CoinDenomination denom, CBigNum& bnAccValue)
 {
@@ -636,6 +653,7 @@ bool calculateAccumulatedBlocksFor(
     return true;
 }
 
+
 bool CalculateAccumulatorWitnessFor(
         const ZerocoinParams* params,
         int startHeight,
@@ -740,7 +758,6 @@ bool GenerateAccumulatorWitness(
         const PublicCoin &coin,
         Accumulator& accumulator,
         AccumulatorWitness& witness,
-        int nSecurityLevel,
         int& nMintsAdded,
         string& strError,
         CBlockIndex* pindexCheckpoint)
