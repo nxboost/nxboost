@@ -536,8 +536,8 @@ std::string HelpMessage(HelpMessageMode mode)
 #ifdef ENABLE_WALLET
     strUsage += HelpMessageGroup(_("Staking options:"));
     strUsage += HelpMessageOpt("-staking=<n>", strprintf(_("Enable staking functionality (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-NXBstake=<n>", strprintf(_("Enable or disable staking functionality for NXB inputs (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-zNXBstake=<n>", strprintf(_("Enable or disable staking functionality for zNXB inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-nxbstake=<n>", strprintf(_("Enable or disable staking functionality for NXB inputs (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-znxbstake=<n>", strprintf(_("Enable or disable staking functionality for zNXB inputs (0-1, default: %u)"), 1));
     strUsage += HelpMessageOpt("-reservebalance=<amt>", _("Keep the specified amount available for spending at all times (default: 0)"));
     if (GetBoolArg("-help-debug", false)) {
         strUsage += HelpMessageOpt("-printstakemodifier", _("Display the stake modifier calculations in the debug.log file."));
@@ -559,8 +559,8 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-enableautoconvertaddress=<n>", strprintf(_("Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"), DEFAULT_AUTOCONVERTADDRESS));
     strUsage += HelpMessageOpt("-zeromintpercentage=<n>", strprintf(_("Percentage of automatically minted Zerocoin  (1-100, default: %u)"), 10));
     strUsage += HelpMessageOpt("-preferredDenom=<n>", strprintf(_("Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"), 0));
-    strUsage += HelpMessageOpt("-backupzNXB=<n>", strprintf(_("Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)"), 1));
-    strUsage += HelpMessageOpt("-zNXBbackuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
+    strUsage += HelpMessageOpt("-backupznxb=<n>", strprintf(_("Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)"), 1));
+    strUsage += HelpMessageOpt("-znxbbackuppath=<dir|file>", _("Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen"));
 #endif // ENABLE_WALLET
     strUsage += HelpMessageOpt("-reindexzerocoin=<n>", strprintf(_("Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)"), 0));
 
@@ -1733,7 +1733,7 @@ bool AppInit2()
 
         pwalletMain->InitAutoConvertAddresses();
 
-        bool fEnablezNXBBackups = GetBoolArg("-backupzNXB", true);
+        bool fEnablezNXBBackups = GetBoolArg("-backupznxb", true);
         pwalletMain->setzNXBAutoBackups(fEnablezNXBBackups);
 
         //Load zerocoin mint hashes to memory
@@ -1986,6 +1986,9 @@ bool AppInit2()
 
         // Run a thread to flush wallet periodically
         threadGroup.create_thread(boost::bind(&ThreadFlushWalletDB, boost::ref(pwalletMain->strWalletFile)));
+
+        // Run a thread to precompute any zNXB spends
+        threadGroup.create_thread(boost::bind(&ThreadPrecomputeSpends));
     }
 #endif
 
