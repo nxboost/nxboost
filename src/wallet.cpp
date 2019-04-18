@@ -3066,7 +3066,7 @@ bool CWallet::CreateCoinStake(
             txNew.vout.insert(txNew.vout.end(), vout.begin(), vout.end());
 
             CAmount nMinFee = 0;
-            if (!stakeInput->IszNXB()) {
+            if (!stakeInput->IsZNXB()) {
                 // Set output amount
                 if (txNew.vout.size() == 3) {
                     txNew.vout[1].nValue = ((nCredit - nMinFee) / 2 / CENT) * CENT;
@@ -3081,7 +3081,7 @@ bool CWallet::CreateCoinStake(
                 return error("CreateCoinStake : exceeded coinstake size limit");
 
             //Masternode payment
-            FillBlockPayee(txNew, nMinFee, true, stakeInput->IszNXB());
+            FillBlockPayee(txNew, nMinFee, true, stakeInput->IsZNXB());
 
             uint256 hashTxOut = txNew.GetHash();
             CTxIn in;
@@ -3094,7 +3094,7 @@ bool CWallet::CreateCoinStake(
             txNew.vin.emplace_back(in);
 
             //Mark mints as spent
-            if (stakeInput->IszNXB()) {
+            if (stakeInput->IsZNXB()) {
                 CzNXBStake* z = (CzNXBStake*)stakeInput.get();
                 if (!z->MarkSpent(this, txNew.GetHash()))
                     return error("%s: failed to mark mint as used\n", __func__);
@@ -3122,7 +3122,7 @@ bool CWallet::CreateCoinStake(
         for (std::unique_ptr<CStakeInput>& stakeInput : listInputs) {
             if (ShutdownRequested())
                 return false;
-            if (!stakeInput->IszNXB())
+            if (!stakeInput->IsZNXB())
                 continue;
 
             CoinWitnessData* witnessData = zNXBTracker->GetSpendCache(stakeInput->GetSerialHash());

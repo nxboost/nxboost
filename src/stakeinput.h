@@ -23,9 +23,9 @@ public:
     virtual CAmount GetValue() = 0;
     virtual bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) = 0;
     virtual bool GetModifier(uint64_t& nStakeModifier) = 0;
-    virtual bool IszNXB() = 0;
+    virtual bool IsZNXB() = 0;
     virtual CDataStream GetUniqueness() = 0;
-    virtual uint256 GetSerialHash() const = 0;
+    virtual uint256 GetSerialHash() = 0;
 };
 
 
@@ -59,8 +59,8 @@ public:
     bool CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut = 0) override;
     bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) override;
     bool MarkSpent(CWallet* pwallet, const uint256& txid);
-    bool IszNXB() override { return true; }
-    uint256 GetSerialHash() const { return hashSerial; }
+    bool IsZNXB() override { return true; }
+    uint256 GetSerialHash() override { return hashSerial; }
     int GetChecksumHeightFromMint();
     int GetChecksumHeightFromSpend();
     uint32_t GetChecksum();
@@ -86,8 +86,8 @@ public:
     CDataStream GetUniqueness() override;
     bool CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut = 0) override;
     bool CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal) override;
-    bool IszNXB() override { return false; }
-    uint256 GetSerialHash() const { return uint256(0); }
+    bool IsZNXB() override { return false; }
+    uint256 GetSerialHash() override { return uint256(0); }
 };
 
 

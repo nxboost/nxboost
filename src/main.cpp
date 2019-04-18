@@ -4290,7 +4290,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         if (!stake)
             return error("%s: null stake ptr", __func__);
 
-        if (stake->IszNXB() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
+        if (stake->IsZNXB() && !ContextualCheckZerocoinStake(pindexPrev->nHeight, stake.get()))
             return state.DoS(100, error("%s: staked zNXB fails context checks", __func__));
 
         uint256 hash = block.GetHash();
