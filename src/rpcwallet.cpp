@@ -3446,11 +3446,11 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     return arrRet;
 }
 
-UniValue setzNXBseed(const UniValue& params, bool fHelp)
+UniValue setznxbseed(const UniValue& params, bool fHelp)
 {
     if(fHelp || params.size() != 1)
         throw runtime_error(
-            "setzNXBseed \"seed\"\n"
+            "setznxbseed \"seed\"\n"
             "\nSet the wallet's deterministic zNXB seed to a specific value.\n" +
             HelpRequiringPassphrase() + "\n"
 
@@ -3461,8 +3461,8 @@ UniValue setzNXBseed(const UniValue& params, bool fHelp)
             "\"success\" : b,  (boolean) Whether the seed was successfully set.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("setzNXBseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
-            HelpExampleRpc("setzNXBseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
+            HelpExampleCli("setznxbseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5") +
+            HelpExampleRpc("setznxbseed", "63f793e7895dd30d99187b35fbfb314a5f91af0add9e0a4e5877036d1e392dd5"));
 
     EnsureWalletIsUnlocked();
 
@@ -3480,11 +3480,11 @@ UniValue setzNXBseed(const UniValue& params, bool fHelp)
     return ret;
 }
 
-UniValue getzNXBseed(const UniValue& params, bool fHelp)
+UniValue getznxbseed(const UniValue& params, bool fHelp)
 {
     if(fHelp || !params.empty())
         throw runtime_error(
-            "getzNXBseed\n"
+            "getznxbseed\n"
             "\nCheck archived zNXB list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
@@ -3492,7 +3492,7 @@ UniValue getzNXBseed(const UniValue& params, bool fHelp)
             "\"seed\" : s,  (string) The deterministic zNXB seed.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("getzNXBseed", "") + HelpExampleRpc("getzNXBseed", ""));
+            HelpExampleCli("getznxbseed", "") + HelpExampleRpc("getznxbseed", ""));
 
     EnsureWalletIsUnlocked();
 
@@ -3554,10 +3554,10 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     return arrRet;
 }
 
-UniValue dzNXBstate(const UniValue& params, bool fHelp) {
+UniValue dznxbstate(const UniValue& params, bool fHelp) {
     if (fHelp || params.size() != 0)
         throw runtime_error(
-                "dzNXBstate\n"
+                "dznxbstate\n"
                         "\nThe current state of the mintpool of the deterministic zNXB wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
@@ -3605,11 +3605,11 @@ void static SearchThread(CzNXBWallet* zwallet, int nCountStart, int nCountEnd)
     }
 }
 
-UniValue searchdzNXB(const UniValue& params, bool fHelp)
+UniValue searchdznxb(const UniValue& params, bool fHelp)
 {
     if(fHelp || params.size() != 3)
         throw runtime_error(
-            "searchdzNXB\n"
+            "searchdznxb\n"
             "\nMake an extended search for deterministically generated zNXB that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
@@ -3619,7 +3619,7 @@ UniValue searchdzNXB(const UniValue& params, bool fHelp)
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
-            HelpExampleCli("searchdzNXB", "1, 100, 2") + HelpExampleRpc("searchdzNXB", "1, 100, 2"));
+            HelpExampleCli("searchdznxb", "1, 100, 2") + HelpExampleRpc("searchdznxb", "1, 100, 2"));
 
     EnsureWalletIsUnlocked();
 
@@ -3751,4 +3751,30 @@ UniValue spendrawzerocoin(const UniValue& params, bool fHelp)
     CAmount nAmount = mint.GetDenominationAsAmount();
 
     return DoZNXBSpend(nAmount, false, true, 42, vMintsSelected, address_str);
+}
+
+
+UniValue clearspendcache(const UniValue& params, bool fHelp)
+{
+    if(fHelp || params.size() != 0)
+        throw runtime_error(
+            "clearspendcache\n"
+            "\nClear the pre-computed zNXB spend cache.\n" +
+            HelpRequiringPassphrase() + "\n"
+
+            "\nExamples\n" +
+            HelpExampleCli("clearspendcache", "") + HelpExampleRpc("clearspendcache", ""));
+
+    EnsureWalletIsUnlocked();
+
+    CzNXBTracker* znxbTracker = pwalletMain->znxbTracker.get();
+
+    {
+        TRY_LOCK(znxbTracker->cs_spendcache, fLocked);
+        if (fLocked) {
+            if (znxbTracker->ClearSpendCache())
+                return NullUniValue;
+        }
+    }
+    throw JSONRPCError(RPC_WALLET_ERROR, "Error: Spend cache not cleared!");
 }

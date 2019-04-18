@@ -267,11 +267,12 @@ extern UniValue importzerocoins(const UniValue& params, bool fHelp);
 extern UniValue exportzerocoins(const UniValue& params, bool fHelp);
 extern UniValue reconsiderzerocoins(const UniValue& params, bool fHelp);
 extern UniValue getspentzerocoinamount(const UniValue& params, bool fHelp);
-extern UniValue setzNXBseed(const UniValue& params, bool fHelp);
-extern UniValue getzNXBseed(const UniValue& params, bool fHelp);
+extern UniValue setznxbseed(const UniValue& params, bool fHelp);
+extern UniValue getznxbseed(const UniValue& params, bool fHelp);
 extern UniValue generatemintlist(const UniValue& params, bool fHelp);
-extern UniValue searchdzNXB(const UniValue& params, bool fHelp);
-extern UniValue dzNXBstate(const UniValue& params, bool fHelp);
+extern UniValue searchdznxb(const UniValue& params, bool fHelp);
+extern UniValue dznxbstate(const UniValue& params, bool fHelp);
+extern UniValue clearspendcache(const UniValue& params, bool fHelp);
 extern UniValue enableautomintaddress(const UniValue& params, bool fHelp);
 extern UniValue createautomintaddress(const UniValue& params, bool fHelp);
 

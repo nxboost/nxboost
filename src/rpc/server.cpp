@@ -466,11 +466,12 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
         {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true},
         {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false, false, false},
-        {"zerocoin", "getzNXBseed", &getzNXBseed, false, false, true},
-        {"zerocoin", "setzNXBseed", &setzNXBseed, false, false, true},
+        {"zerocoin", "getznxbseed", &getznxbseed, false, false, true},
+        {"zerocoin", "setznxbseed", &setznxbseed, false, false, true},
         {"zerocoin", "generatemintlist", &generatemintlist, false, false, true},
-        {"zerocoin", "searchdzNXB", &searchdzNXB, false, false, true},
-        {"zerocoin", "dzNXBstate", &dzNXBstate, false, false, true}
+        {"zerocoin", "searchdznxb", &searchdznxb, false, false, true},
+        {"zerocoin", "dznxbstate", &dznxbstate, false, false, true},
+        {"zerocoin", "clearspendcache", &clearspendcache, false, false, true}
 
 #endif // ENABLE_WALLET
 };
