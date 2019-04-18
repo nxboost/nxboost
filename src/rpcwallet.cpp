@@ -3784,7 +3784,7 @@ UniValue clearspendcache(const UniValue& params, bool fHelp)
             if (znxbTracker->ClearSpendCache()) {
                 fClearSpendCache = true;
                 CWalletDB walletdb("precomputes.dat", "cr+");
-                walletdb.ErasePrecomputes();
+                walletdb.EraseAllPrecomputes();
                 return NullUniValue;
             }
         }
