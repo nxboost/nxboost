@@ -3781,8 +3781,12 @@ UniValue clearspendcache(const UniValue& params, bool fHelp)
     {
         TRY_LOCK(znxbTracker->cs_spendcache, fLocked);
         if (fLocked) {
-            if (znxbTracker->ClearSpendCache())
+            if (znxbTracker->ClearSpendCache()) {
+                fClearSpendCache = true;
+                CWalletDB walletdb("precomputes.dat", "cr+");
+                walletdb.ErasePrecomputes();
                 return NullUniValue;
+            }
         }
     }
     throw JSONRPCError(RPC_WALLET_ERROR, "Error: Spend cache not cleared!");
