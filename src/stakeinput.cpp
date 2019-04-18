@@ -162,12 +162,12 @@ bool CzNXBStake::GetTxFrom(CTransaction& tx)
 
 bool CzNXBStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzNXBTracker* zNXBTracker = pwallet->zNXBTracker.get();
+    CzNXBTracker* znxbTracker = pwallet->znxbTracker.get();
     CMintMeta meta;
-    if (!zNXBTracker->GetMetaFromStakeHash(hashSerial, meta))
+    if (!znxbTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);
 
-    zNXBTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
+    znxbTracker->SetPubcoinUsed(meta.hashPubcoin, txid);
     return true;
 }
 

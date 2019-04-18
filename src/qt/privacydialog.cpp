@@ -622,7 +622,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         mapImmature.insert(make_pair(denom, 0));
     }
 
-    std::vector<CMintMeta> vMints = pwalletMain->zNXBTracker->GetMints(false);
+    std::vector<CMintMeta> vMints = pwalletMain->znxbTracker->GetMints(false);
     map<libzerocoin::CoinDenomination, int> mapMaturityHeights = GetMintMaturityHeight();
     for (auto& meta : vMints){
         // All denominations

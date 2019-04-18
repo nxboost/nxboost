@@ -252,7 +252,7 @@ public:
     bool fWalletUnlockAnonymizeOnly;
     std::string strWalletFile;
     bool fBackupMints;
-    std::unique_ptr<CzNXBTracker> zNXBTracker;
+    std::unique_ptr<CzNXBTracker> znxbTracker;
 
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
@@ -340,7 +340,7 @@ public:
     void setZWallet(CzNXBWallet* zwallet)
     {
         zwalletMain = zwallet;
-        zNXBTracker = std::unique_ptr<CzNXBTracker>(new CzNXBTracker(strWalletFile));
+        znxbTracker = std::unique_ptr<CzNXBTracker>(new CzNXBTracker(strWalletFile));
     }
 
     CzNXBWallet* getZWallet() { return zwalletMain; }

@@ -597,8 +597,8 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock)) {
         if (pblock->IsZerocoinStake()) {
-            pwalletMain->zNXBTracker->RemovePending(pblock->vtx[1].GetHash());
-            pwalletMain->zNXBTracker->ListMints(true, true, true); //update the state
+            pwalletMain->znxbTracker->RemovePending(pblock->vtx[1].GetHash());
+            pwalletMain->znxbTracker->ListMints(true, true, true); //update the state
         }
         return error("NXBXMiner : ProcessNewBlock, block not accepted");
     }

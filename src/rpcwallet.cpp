@@ -2613,7 +2613,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked(true);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    set<CMintMeta> setMints = pwalletMain->zNXBTracker->ListMints(true, fMatureOnly, true);
+    set<CMintMeta> setMints = pwalletMain->znxbTracker->ListMints(true, fMatureOnly, true);
 
     int nBestHeight = chainActive.Height();
 
@@ -2637,7 +2637,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
                     uint256 hashStake = mint.GetSerialNumber().getuint256();
                     hashStake = Hash(hashStake.begin(), hashStake.end());
                     m.hashStake = hashStake;
-                    pwalletMain->zNXBTracker->UpdateState(m);
+                    pwalletMain->znxbTracker->UpdateState(m);
                 }
             }
             objMint.push_back(Pair("hash stake", m.hashStake.GetHex()));       // Confirmations
@@ -2678,7 +2678,7 @@ UniValue listzerocoinamounts(const UniValue& params, bool fHelp)
     EnsureWalletIsUnlocked(true);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    set<CMintMeta> setMints = pwalletMain->zNXBTracker->ListMints(true, true, true);
+    set<CMintMeta> setMints = pwalletMain->znxbTracker->ListMints(true, true, true);
 
     std::map<libzerocoin::CoinDenomination, CAmount> spread;
     for (const auto& denom : libzerocoin::zerocoinDenomList)
@@ -3077,8 +3077,8 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzNXBTracker* zNXBTracker = pwalletMain->zNXBTracker.get();
-    set<CMintMeta> setMints = zNXBTracker->ListMints(false, false, true);
+    CzNXBTracker* znxbTracker = pwalletMain->znxbTracker.get();
+    set<CMintMeta> setMints = znxbTracker->ListMints(false, false, true);
     vector<CMintMeta> vMintsToFind(setMints.begin(), setMints.end());
     vector<CMintMeta> vMintsMissing;
     vector<CMintMeta> vMintsToUpdate;
@@ -3089,14 +3089,14 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     // update the meta data of mints that were marked for updating
     UniValue arrUpdated(UniValue::VARR);
     for (CMintMeta meta : vMintsToUpdate) {
-        zNXBTracker->UpdateState(meta);
+        znxbTracker->UpdateState(meta);
         arrUpdated.push_back(meta.hashPubcoin.GetHex());
     }
 
     // delete any mints that were unable to be located on the blockchain
     UniValue arrDeleted(UniValue::VARR);
     for (CMintMeta mint : vMintsMissing) {
-        zNXBTracker->Archive(mint);
+        znxbTracker->Archive(mint);
         arrDeleted.push_back(mint.hashPubcoin.GetHex());
     }
 
@@ -3130,8 +3130,8 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzNXBTracker* zNXBTracker = pwalletMain->zNXBTracker.get();
-    set<CMintMeta> setMints = zNXBTracker->ListMints(false, false, false);
+    CzNXBTracker* znxbTracker = pwalletMain->znxbTracker.get();
+    set<CMintMeta> setMints = znxbTracker->ListMints(false, false, false);
     list<CZerocoinSpend> listSpends = walletdb.ListSpentCoins();
     list<CZerocoinSpend> listUnconfirmedSpends;
 
@@ -3153,7 +3153,7 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     for (CZerocoinSpend spend : listUnconfirmedSpends) {
         for (auto& meta : setMints) {
             if (meta.hashSerial == GetSerialHash(spend.GetSerial())) {
-                zNXBTracker->SetPubcoinNotUsed(meta.hashPubcoin);
+                znxbTracker->SetPubcoinNotUsed(meta.hashPubcoin);
                 walletdb.EraseZerocoinSpendSerialEntry(spend.GetSerial());
                 RemoveSerialFromDB(spend.GetSerial());
                 UniValue obj(UniValue::VOBJ);
@@ -3268,8 +3268,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
     if (params.size() == 2)
         denomination = libzerocoin::IntToZerocoinDenomination(params[1].get_int());
 
-    CzNXBTracker* zNXBTracker = pwalletMain->zNXBTracker.get();
-    set<CMintMeta> setMints = zNXBTracker->ListMints(!fIncludeSpent, false, false);
+    CzNXBTracker* znxbTracker = pwalletMain->znxbTracker.get();
+    set<CMintMeta> setMints = znxbTracker->ListMints(!fIncludeSpent, false, false);
 
     UniValue jsonList(UniValue::VARR);
     for (const CMintMeta& meta : setMints) {
@@ -3384,7 +3384,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
         CZerocoinMint mint(denom, bnValue, bnRandom, bnSerial, fUsed, nVersion, &privkey);
         mint.SetTxHash(txid);
         mint.SetHeight(nHeight);
-        pwalletMain->zNXBTracker->Add(mint, true);
+        pwalletMain->znxbTracker->Add(mint, true);
         count++;
         nValue += libzerocoin::ZerocoinDenominationToAmount(denom);
     }
@@ -3648,7 +3648,7 @@ UniValue searchdzNXB(const UniValue& params, bool fHelp)
 
     dzNXBThreads->join_all();
 
-    zwallet->RemoveMintsFromPool(pwalletMain->zNXBTracker->GetSerialHashes());
+    zwallet->RemoveMintsFromPool(pwalletMain->znxbTracker->GetSerialHashes());
     zwallet->SyncWithChain(false);
 
     //todo: better response

@@ -203,7 +203,7 @@ void CzNXBWallet::SyncWithChain(bool fGenerateMintPool)
             if (ShutdownRequested())
                 return;
 
-            if (pwalletMain->zNXBTracker->HasPubcoinHash(pMint.first)) {
+            if (pwalletMain->znxbTracker->HasPubcoinHash(pMint.first)) {
                 mintPool.Remove(pMint.first);
                 continue;
             }
@@ -326,8 +326,8 @@ bool CzNXBWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const 
         pwalletMain->AddToWallet(wtx);
     }
 
-    // Add to zNXBTracker which also adds to database
-    pwalletMain->zNXBTracker->Add(dMint, true);
+    // Add to znxbTracker which also adds to database
+    pwalletMain->znxbTracker->Add(dMint, true);
 
     //Update the count if it is less than the mint's count
     if (nCountLastUsed < pMint.second) {

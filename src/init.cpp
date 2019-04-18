@@ -1736,7 +1736,7 @@ bool AppInit2()
         pwalletMain->setzNXBAutoBackups(fEnablezNXBBackups);
 
         //Load zerocoin mint hashes to memory
-        pwalletMain->zNXBTracker->Init();
+        pwalletMain->znxbTracker->Init();
         zwalletMain->LoadMintPoolFromDB();
         zwalletMain->SyncWithChain();
     }  // (!fDisableWallet)
