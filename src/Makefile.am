@@ -174,6 +174,7 @@ BITCOIN_CORE_H = \
   wallet.h \
   wallet_ismine.h \
   walletdb.h \
+  znxbchain.h \
   znxb/accumulators.h \
   znxb/accumulatorcheckpoints.h \
   znxb/accumulatorcheckpoints.json.h \

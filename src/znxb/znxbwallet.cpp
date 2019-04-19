@@ -10,6 +10,7 @@
 #include "init.h"
 #include "wallet.h"
 #include "deterministicmint.h"
+#include "znxbchain.h"
 
 using namespace libzerocoin;
 

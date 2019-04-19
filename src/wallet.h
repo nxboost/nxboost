@@ -108,7 +108,7 @@ enum ZerocoinSpendStatus {
     ZNXB_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
     ZNXB_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
     ZNXB_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZNXB_SPENT_USED_zNXB = 14,                      // Coin has already been spend
+    ZNXB_SPENT_USED_ZNXB = 14,                      // Coin has already been spend
     ZNXB_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
     ZNXB_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };

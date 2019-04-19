@@ -17,6 +17,7 @@
 #include <znxb/accumulators.h>
 #include "wallet.h"
 #include "znxb/znxbwallet.h"
+#include "znxbchain.h"
 
 using namespace libzerocoin;
 

@@ -41,6 +41,7 @@
 #include "utilmoneystr.h"
 #include "validationinterface.h"
 #include "znxb/accumulatorcheckpoints.h"
+#include "znxbchain.h"
 
 #ifdef ENABLE_WALLET
 #include "db.h"
