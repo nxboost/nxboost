@@ -10,7 +10,7 @@
 #include "stakeinput.h"
 #include "wallet/wallet.h"
 
-CzNXBStake::CzNXBStake(const libzerocoin::CoinSpend& spend)
+CZNXBStake::CZNXBStake(const libzerocoin::CoinSpend& spend)
 {
     this->nChecksum = spend.getAccumulatorChecksum();
     this->denom = spend.getDenomination();
@@ -20,7 +20,7 @@ CzNXBStake::CzNXBStake(const libzerocoin::CoinSpend& spend)
     fMint = false;
 }
 
-int CzNXBStake::GetChecksumHeightFromMint()
+int CZNXBStake::GetChecksumHeightFromMint()
 {
     int nHeightChecksum = chainActive.Height() - Params().Zerocoin_RequiredStakeDepth();
 
@@ -31,12 +31,12 @@ int CzNXBStake::GetChecksumHeightFromMint()
     return GetChecksumHeight(nChecksum, denom);
 }
 
-int CzNXBStake::GetChecksumHeightFromSpend()
+int CZNXBStake::GetChecksumHeightFromSpend()
 {
     return GetChecksumHeight(nChecksum, denom);
 }
 
-uint32_t CzNXBStake::GetChecksum()
+uint32_t CZNXBStake::GetChecksum()
 {
     return nChecksum;
 }
@@ -44,7 +44,7 @@ uint32_t CzNXBStake::GetChecksum()
 // The zNXB block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
-CBlockIndex* CzNXBStake::GetIndexFrom()
+CBlockIndex* CZNXBStake::GetIndexFrom()
 {
     if (pindexFrom)
         return pindexFrom;
@@ -66,14 +66,14 @@ CBlockIndex* CzNXBStake::GetIndexFrom()
     return pindexFrom;
 }
 
-CAmount CzNXBStake::GetValue()
+CAmount CZNXBStake::GetValue()
 {
     return denom * COIN;
 }
 
 //Use the first accumulator checkpoint that occurs 60 minutes after the block being staked from
 // In case of regtest, next accumulator of 60 blocks after the block being staked from
-bool CzNXBStake::GetModifier(uint64_t& nStakeModifier)
+bool CZNXBStake::GetModifier(uint64_t& nStakeModifier)
 {
     CBlockIndex* pindex = GetIndexFrom();
     if (!pindex)
@@ -99,7 +99,7 @@ bool CzNXBStake::GetModifier(uint64_t& nStakeModifier)
     }
 }
 
-CDataStream CzNXBStake::GetUniqueness()
+CDataStream CZNXBStake::GetUniqueness()
 {
     //The unique identifier for a zNXB is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
@@ -107,7 +107,7 @@ CDataStream CzNXBStake::GetUniqueness()
     return ss;
 }
 
-bool CzNXBStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
+bool CZNXBStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 {
     CBlockIndex* pindexCheckpoint = GetIndexFrom();
     if (!pindexCheckpoint)
@@ -127,7 +127,7 @@ bool CzNXBStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
     return true;
 }
 
-bool CzNXBStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
+bool CZNXBStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nTotal)
 {
     //Create an output returning the zNXB that was staked
     CTxOut outReward;
@@ -155,12 +155,12 @@ bool CzNXBStake::CreateTxOuts(CWallet* pwallet, vector<CTxOut>& vout, CAmount nT
     return true;
 }
 
-bool CzNXBStake::GetTxFrom(CTransaction& tx)
+bool CZNXBStake::GetTxFrom(CTransaction& tx)
 {
     return false;
 }
 
-bool CzNXBStake::MarkSpent(CWallet *pwallet, const uint256& txid)
+bool CZNXBStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
     CzNXBTracker* znxbTracker = pwallet->znxbTracker.get();
     CMintMeta meta;

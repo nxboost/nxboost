@@ -619,7 +619,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
             pwalletMain->znxbTracker->RemovePending(pblock->vtx[1].GetHash());
             pwalletMain->znxbTracker->ListMints(true, true, true); //update the state
         }
-        return error("NXBXMiner : ProcessNewBlock, block not accepted");
+        return error("NXBoostMiner : ProcessNewBlock, block not accepted");
     }
 
     for (CNode* node : vNodes) {

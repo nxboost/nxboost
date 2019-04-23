@@ -1852,7 +1852,7 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
             if (meta.nVersion < CZerocoinMint::STAKABLE_VERSION)
                 continue;
             if (meta.nHeight < chainActive.Height() - Params().Zerocoin_RequiredStakeDepth()) {
-                std::unique_ptr<CzNXBStake> input(new CzNXBStake(meta.denom, meta.hashStake));
+                std::unique_ptr<CZNXBStake> input(new CZNXBStake(meta.denom, meta.hashStake));
                 listInputs.emplace_back(std::move(input));
             }
         }
@@ -2460,7 +2460,7 @@ bool CWallet::CreateCoinStake(
 
             //Mark mints as spent
             if (stakeInput->IsZNXB()) {
-                CzNXBStake* z = (CzNXBStake*)stakeInput.get();
+                CZNXBStake* z = (CZNXBStake*)stakeInput.get();
                 if (!z->MarkSpent(this, txNew.GetHash()))
                     return error("%s: failed to mark mint as used\n", __func__);
             }

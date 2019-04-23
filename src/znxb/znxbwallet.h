@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef NXBX_ZNXBWALLET_H
-#define NXBX_ZNXBWALLET_H
+#ifndef NXBOOST_ZNXBWALLET_H
+#define NXBOOST_ZNXBWALLET_H
 
 #include <map>
 #include "libzerocoin/Coin.h"
@@ -47,4 +47,4 @@ private:
     uint512 GetZerocoinSeed(uint32_t n);
 };
 
-#endif //NXBX_ZNXBWALLET_H
+#endif //NXBOOST_ZNXBWALLET_H

@@ -36,7 +36,7 @@ public:
 // zNXBStake can take two forms
 // 1) the stake candidate, which is a zcmint that is attempted to be staked
 // 2) a staked zNXB, which is a zcspend that has successfully staked
-class CzNXBStake : public CStakeInput
+class CZNXBStake : public CStakeInput
 {
 private:
     uint32_t nChecksum;
@@ -45,7 +45,7 @@ private:
     uint256 hashSerial;
 
 public:
-    explicit CzNXBStake(libzerocoin::CoinDenomination denom, const uint256& hashSerial)
+    explicit CZNXBStake(libzerocoin::CoinDenomination denom, const uint256& hashSerial)
     {
         this->denom = denom;
         this->hashSerial = hashSerial;
@@ -53,7 +53,7 @@ public:
         fMint = true;
     }
 
-    explicit CzNXBStake(const libzerocoin::CoinSpend& spend);
+    explicit CZNXBStake(const libzerocoin::CoinSpend& spend);
 
     CBlockIndex* GetIndexFrom() override;
     bool GetTxFrom(CTransaction& tx) override;
