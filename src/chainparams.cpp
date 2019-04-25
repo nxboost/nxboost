@@ -314,11 +314,11 @@ public:
     {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        strNetworkID = "regtest";
         pchMessageStart[0] = 0x14;
         pchMessageStart[1] = 0x54;
         pchMessageStart[2] = 0x95;
         pchMessageStart[3] = 0x64;
+        nDefaultPort = 55700;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
@@ -327,13 +327,24 @@ public:
         nTargetTimespan = 24 * 60 * 60; // nxboost: 1 day
         nTargetSpacing = 1 * 60;        // nxboost: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
+        nLastPOWBlock = 200000;
+        nMaturity = 100;
+        nMasternodeCountDrift = 4;
+        nModifierUpdateBlock = 0; //approx Mon, 17 Apr 2017 04:00:00 GMT
+        nMaxMoneyOut = 43199500 * COIN;
+        nZerocoinStartHeight = 100000;
+        nZerocoinStartTime = 1546300800;
+        nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = 999999999; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = 999999999; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = 999999999; //Last valid accumulator checkpoint
+
+        //! Modify the regtest genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1509321603;
-        genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 277787;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 55700;
-            assert(hashGenesisBlock == uint256("0x00000bed4959f3ef5d2fff420ae551216c7108e5faddde8aa10fb039be46d0a0"));
+        assert(hashGenesisBlock == uint256("0x00000bed4959f3ef5d2fff420ae551216c7108e5faddde8aa10fb039be46d0a0"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
@@ -343,6 +354,7 @@ public:
         fDefaultConsistencyChecks = true;
         fRequireStandard = false;
         fMineBlocksOnDemand = true;
+        fSkipProofOfWorkCheck = true;
         fTestnetToBeDeprecatedFieldRPC = false;
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
