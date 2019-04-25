@@ -4737,7 +4737,7 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     </message>
 </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Adet</translation>

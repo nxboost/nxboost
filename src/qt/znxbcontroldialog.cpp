@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zNXBcontroldialog.h"
-#include "ui_zNXBcontroldialog.h"
+#include "znxbcontroldialog.h"
+#include "ui_znxbcontroldialog.h"
 
 #include "znxb/accumulators.h"
 #include "main.h"
@@ -13,20 +13,20 @@
 using namespace std;
 using namespace libzerocoin;
 
-std::set<std::string> zNXBControlDialog::setSelectedMints;
-std::set<CMintMeta> zNXBControlDialog::setMints;
+std::set<std::string> ZNxbControlDialog::setSelectedMints;
+std::set<CMintMeta> ZNxbControlDialog::setMints;
 
 bool CZNXBControlWidgetItem::operator<(const QTreeWidgetItem &other) const {
     int column = treeWidget()->sortColumn();
-    if (column == ZNXBControlDialog::COLUMN_DENOMINATION || column == ZNXBControlDialog::COLUMN_VERSION || column == ZNXBControlDialog::COLUMN_CONFIRMATIONS)
+    if (column == ZNxbControlDialog::COLUMN_DENOMINATION || column == ZNxbControlDialog::COLUMN_VERSION || column == ZNxbControlDialog::COLUMN_CONFIRMATIONS)
         return data(column, Qt::UserRole).toLongLong() < other.data(column, Qt::UserRole).toLongLong();
     return QTreeWidgetItem::operator<(other);
 }
 
 
-ZNXBControlDialog::ZNXBControlDialog(QWidget *parent) :
+ZNxbControlDialog::ZNxbControlDialog(QWidget *parent) :
     QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
-    ui(new Ui::zNXBControlDialog),
+    ui(new Ui::ZNxbControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -40,12 +40,12 @@ ZNXBControlDialog::ZNXBControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-zNXBControlDialog::~zNXBControlDialog()
+ZNxbControlDialog::~ZNxbControlDialog()
 {
     delete ui;
 }
 
-void zNXBControlDialog::setModel(WalletModel *model)
+void ZNxbControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
@@ -53,7 +53,7 @@ void zNXBControlDialog::setModel(WalletModel *model)
 
 
 //Update the tree widget
-void zNXBControlDialog::updateList()
+void ZNxbControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -110,6 +110,19 @@ void zNXBControlDialog::updateList()
         itemMint->setText(COLUMN_CONFIRMATIONS, QString::number(nConfirmations));
         itemMint->setData(COLUMN_CONFIRMATIONS, Qt::UserRole, QVariant((qlonglong) nConfirmations));
 
+        {
+            LOCK(pwalletMain->znxbTracker->cs_spendcache);
+
+            CoinWitnessData *witnessData = pwalletMain->znxbTracker->GetSpendCache(mint.hashStake);
+            if (witnessData->nHeightAccStart > 0  && witnessData->nHeightAccEnd > 0) {
+                int nPercent = std::max(0, std::min(100, (int)((double)(witnessData->nHeightAccEnd - witnessData->nHeightAccStart) / (double)(nBestHeight - witnessData->nHeightAccStart - 220) * 100)));
+                QString percent = QString::number(nPercent) + QString("%");
+                itemMint->setText(COLUMN_PRECOMPUTE, percent);
+            } else {
+                itemMint->setText(COLUMN_PRECOMPUTE, QString("0%"));
+            }
+        }
+
         // check for maturity
         bool isMature = false;
         if (mapMaturityHeight.count(mint.denom))
@@ -144,7 +157,7 @@ void zNXBControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void zNXBControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZNxbControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -166,7 +179,7 @@ void zNXBControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void zNXBControlDialog::updateLabels()
+void ZNxbControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CMintMeta& mint : setMints) {
@@ -182,7 +195,7 @@ void zNXBControlDialog::updateLabels()
     privacyDialog->setzNXBControlLabels(nAmount, setSelectedMints.size());
 }
 
-std::vector<CMintMeta> zNXBControlDialog::GetSelectedMints()
+std::vector<CMintMeta> ZNxbControlDialog::GetSelectedMints()
 {
     std::vector<CMintMeta> listReturn;
     for (const CMintMeta& mint : setMints) {
@@ -194,7 +207,7 @@ std::vector<CMintMeta> zNXBControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void zNXBControlDialog::ButtonAllClicked()
+void ZNxbControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

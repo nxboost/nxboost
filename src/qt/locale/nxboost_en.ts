@@ -8105,9 +8105,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
-        <location filename="../forms/zNXBcontroldialog.ui" line="+20"/>
+        <location filename="../forms/znxbcontroldialog.ui" line="+20"/>
         <source>Select zNXB to Spend</source>
         <translation type="unfinished"></translation>
     </message>

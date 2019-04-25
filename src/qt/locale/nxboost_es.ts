@@ -6332,7 +6332,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
 </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Selecciona zNXB para Gastar</translation>

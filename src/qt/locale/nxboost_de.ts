@@ -6323,7 +6323,7 @@ Präge entweder höhere Stückelungen (damit weniger Eingaben benötigt werdenn)
     </message>
 </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Wählen Sie die zNXB aus, die Sie ausgeben möchten</translation>

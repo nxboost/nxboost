@@ -4380,7 +4380,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
 </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantia</translation>

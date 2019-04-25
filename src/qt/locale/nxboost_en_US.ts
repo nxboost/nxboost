@@ -4694,6 +4694,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
 </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     </context>
 </TS>

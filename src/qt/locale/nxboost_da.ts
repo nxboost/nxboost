@@ -6332,7 +6332,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
 </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Vælg zNXB for at bruge</translation>

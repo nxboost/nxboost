@@ -6332,7 +6332,7 @@ Ofwel het munten van hogere denominaties (dus minder invoer nodig) of het te bes
     </message>
 </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
         <translation>Selecteer zNXB om te besteden</translation>

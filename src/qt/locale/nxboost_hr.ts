@@ -1364,7 +1364,7 @@
     </message>
     </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>

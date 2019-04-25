@@ -1296,6 +1296,6 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>zNXBControlDialog</name>
+    <name>ZNxbControlDialog</name>
     </context>
 </TS>

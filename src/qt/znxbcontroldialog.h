@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef zNXBCONTROLDIALOG_H
-#define zNXBCONTROLDIALOG_H
+#ifndef ZNXBCONTROLDIALOG_H
+#define ZNXBCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -15,7 +15,7 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class zNXBControlDialog;
+class ZNxbControlDialog;
 }
 
 class CZNXBControlWidgetItem : public QTreeWidgetItem
@@ -28,13 +28,13 @@ public:
     bool operator<(const QTreeWidgetItem &other) const;
 };
 
-class ZNXBControlDialog : public QDialog
+class ZNxbControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit zNXBControlDialog(QWidget *parent);
-    ~zNXBControlDialog();
+    explicit ZNxbControlDialog(QWidget *parent);
+    ~ZNxbControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -43,7 +43,7 @@ public:
     static std::vector<CMintMeta> GetSelectedMints();
 
 private:
-    Ui::zNXBControlDialog *ui;
+    Ui::ZNxbControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -55,6 +55,7 @@ private:
         COLUMN_DENOMINATION,
         COLUMN_PUBCOIN,
         COLUMN_VERSION,
+        COLUMN_PRECOMPUTE,
         COLUMN_CONFIRMATIONS,
         COLUMN_ISSPENDABLE
     };
@@ -65,4 +66,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // zNXBCONTROLDIALOG_H
+#endif // ZNXBCONTROLDIALOG_H

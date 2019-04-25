@@ -15,7 +15,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zNXBcontroldialog.h"
+#include "znxbcontroldialog.h"
 #include "spork.h"
 #include "askpassphrasedialog.h"
 
@@ -299,7 +299,7 @@ void PrivacyDialog::on_pushButtonzNXBControl_clicked()
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    zNXBControlDialog* zNXBControl = new zNXBControlDialog(this);
+    ZNxbControlDialog* zNXBControl = new ZNxbControlDialog(this);
     zNXBControl->setModel(walletModel);
     zNXBControl->exec();
 }
@@ -410,8 +410,8 @@ void PrivacyDialog::sendzNXB()
     // use mints from zNXB selector if applicable
     vector<CMintMeta> vMintsToFetch;
     vector<CZerocoinMint> vMintsSelected;
-    if (!zNXBControlDialog::setSelectedMints.empty()) {
-        vMintsToFetch = zNXBControlDialog::GetSelectedMints();
+    if (!ZNxbControlDialog::setSelectedMints.empty()) {
+        vMintsToFetch = ZNxbControlDialog::GetSelectedMints();
 
         for (auto& meta : vMintsToFetch) {
             CZerocoinMint mint;
@@ -467,7 +467,7 @@ void PrivacyDialog::sendzNXB()
     }
 
     // Clear zNXB selector in case it was used
-    zNXBControlDialog::setSelectedMints.clear();
+    ZNxbControlDialog::setSelectedMints.clear();
     ui->labelzNxbSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 
