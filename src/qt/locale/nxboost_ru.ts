@@ -63,11 +63,11 @@
     </message>
     <message>
         <source>These are your NXBoost addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши nxboost-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <translation>Это ваши NXBoost-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
         <source>These are your NXBoost addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши nxboost-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <translation>Это ваши NXBoost-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -133,7 +133,7 @@
     </message>
     <message>
         <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Служит для отключения тривиальных сендмонэй, когда учетная запись ОС скомпрометирована. Не обеспечивает реальной безопасности. </translation>
+        <translation>Служит для отключения тривиальных сендмонэй, когда учетная запись ОС скомпрометирована. Не обеспечивает реальной безопасности.</translation>
     </message>
     <message>
         <source>For anonymization, automint, and staking only</source>
@@ -279,7 +279,7 @@
     </message>
     <message>
         <source>Passphrase: </source>
-        <translation>Кодовая фраза:</translation>
+        <translation>Кодовая фраза: </translation>
     </message>
     <message>
         <source>Encrypted Key:</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Зашифровать личные ключи для этого NXBoost адреса </translation>
+        <translation>Зашифровать личные ключи для этого NXBoost адреса</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -327,7 +327,7 @@
     </message>
     <message>
         <source>Decrypted Key:</source>
-        <translation>Дешифрованный Ключ</translation>
+        <translation>Дешифрованный Ключ:</translation>
     </message>
     <message>
         <source>Import Address</source>
@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>The entered passphrase is invalid. </source>
-        <translation>Неправильно введена кодовая фраза.</translation>
+        <translation>Неправильно введена кодовая фраза. </translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -434,7 +434,7 @@
     </message>
     <message>
         <source>Privacy Actions for zNXB</source>
-        <translation>Действия конфиденциальности для зпив</translation>
+        <translation>Приватные действия для zNXB</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -455,6 +455,10 @@
     <message>
         <source>&amp;Options...</source>
         <translation>&amp;Опции...</translation>
+    </message>
+    <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Изменение параметров конфигурации NXBoost</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -482,7 +486,7 @@
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Изменить кодовую фразу</translation>
+        <translation>&amp;Изменить кодовую фразу...</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -566,7 +570,7 @@
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>Показать список использованых адресов отправки </translation>
+        <translation>Показать список использованых адресов отправки</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
@@ -578,7 +582,7 @@
     </message>
     <message>
         <source>&amp;Multisignature creation...</source>
-        <translation>СОздание многоподписей...</translation>
+        <translation>&amp;Создание многоподписей...</translation>
     </message>
     <message>
         <source>Create a new multisignature address and add it to this wallet</source>
@@ -602,7 +606,11 @@
     </message>
     <message>
         <source>Open &amp;URI...</source>
-        <translation>Открыть &amp;URI</translation>
+        <translation>Открыть &amp;URI...</translation>
+    </message>
+    <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Открыть nxboost: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -610,7 +618,11 @@
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Обработано %n блоков истории транзакций</numerusform><numerusform>Обработано %n блоков истории транзакций</numerusform><numerusform>Обработано %n блоков истории транзакций</numerusform><numerusform>Обработано %n блоков истории транзакций</numerusform></translation>
+        <translation>
+            <numerusform>Обработан %n блок истории транзакций.</numerusform>
+            <numerusform>Обработано %n блока истории транзакций.</numerusform>
+            <numerusform>Обработано %n блоков истории транзакций.</numerusform>
+        </translation>
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
@@ -622,7 +634,11 @@
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
-        <translation>Кошелек &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;разблокирован&lt;/b&gt; для анонимности и хранения.</translation>
+        <translation>Кошелек &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;разблокирован&lt;/b&gt; для анонимности и хранения</translation>
+    </message>
+    <message>
+        <source>Tor is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Tor &lt;b&gt;включен&lt;/b&gt;: %1</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -654,11 +670,11 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и nxboost: URI)</translation>
+        <translation>Запросить платежи (генерирует QR-код и NXBoost: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
-        <translation>&amp;Конфиденциальность</translation>
+        <translation>&amp;Приватность</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -677,16 +693,12 @@
         <translation>Показать информацию о NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Изменение параметров конфигурации nxboost</translation>
-    </message>
-    <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
         <translation>Подписывайте сообщения вашими NXBoost адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified NXBoost addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным NXBoost адресом </translation>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным NXBoost адресом</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,10 +729,6 @@
         <translation>Открыть файл настроек мастернод</translation>
     </message>
     <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Открыть nxboost: URI или запрос платежа</translation>
-    </message>
-    <message>
         <source>&amp;Blockchain explorer</source>
         <translation>&amp;Обзор блокчейна</translation>
     </message>
@@ -730,7 +738,7 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды nxboost</translation>
+        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды NXBoost</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
@@ -738,7 +746,11 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to NXBoost network</source>
-        <translation><numerusform>%n активных подключений к сети nxboost</numerusform><numerusform>%n активных подключений к сети nxboost</numerusform><numerusform>%n активных подключений к сети nxboost</numerusform><numerusform>%n активных подключений к сети nxboost</numerusform></translation>
+        <translation>
+            <numerusform>%n активное подключение к сети NXBoost</numerusform>
+            <numerusform>%n активных подключения к сети NXBoost</numerusform>
+            <numerusform>%n активных подключений к сети NXBoost</numerusform>
+        </translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -754,7 +766,7 @@
     </message>
     <message>
         <source>No block source available...</source>
-        <translation>Источник блоков недоступен</translation>
+        <translation>Источник блоков недоступен...</translation>
     </message>
     <message>
         <source>Up to date</source>
@@ -762,15 +774,27 @@
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n часов</numerusform><numerusform>%n часов</numerusform><numerusform>%n часов</numerusform><numerusform>%n часов</numerusform></translation>
+        <translation>
+            <numerusform>%n час</numerusform>
+            <numerusform>%n часа</numerusform>
+            <numerusform>%n часов</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation><numerusform>%n дней</numerusform><numerusform>%n дней</numerusform><numerusform>%n дней</numerusform><numerusform>%n дней</numerusform></translation>
+        <translation>
+            <numerusform>%n день</numerusform>
+            <numerusform>%n дня</numerusform>
+            <numerusform>%n дней</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n недель</numerusform><numerusform>%n недель</numerusform><numerusform>%n недель</numerusform><numerusform>%n недель</numerusform></translation>
+        <translation>
+            <numerusform>%n неделя</numerusform>
+            <numerusform>%n недели</numerusform>
+            <numerusform>%n недель</numerusform>
+        </translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -778,7 +802,11 @@
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n лет</numerusform><numerusform>%n лет</numerusform><numerusform>%n лет</numerusform><numerusform>%n лет</numerusform></translation>
+        <translation>
+            <numerusform>%n год</numerusform>
+            <numerusform>%n года</numerusform>
+            <numerusform>%n лет</numerusform>
+        </translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -786,11 +814,11 @@
     </message>
     <message>
         <source>Last received block was generated %1 ago.</source>
-        <translation>Последний полученный блок был сгенерирован %1 назад</translation>
+        <translation>Последний полученный блок был сгенерирован %1 назад.</translation>
     </message>
     <message>
         <source>Transactions after this will not yet be visible.</source>
-        <translation>Трансакции после этой не будут видимы</translation>
+        <translation>Трансакции после этой не будут видимы.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -831,7 +859,7 @@ Address: %4
     <message>
         <source>Staking is active
  MultiSend: %1</source>
-        <translation>Хранение активно
+        <translation>Стакинг активен
 MultiSend: %1</translation>
     </message>
     <message>
@@ -845,12 +873,12 @@ MultiSend: %1</translation>
     <message>
         <source>Staking is not active
  MultiSend: %1</source>
-        <translation>Хранение не активно
+        <translation>Стакинг не активен
 MultiSend: %1</translation>
     </message>
     <message>
         <source>AutoMint is currently enabled and set to </source>
-        <translation>Авточеканка в данный момен включена и установлена в</translation>
+        <translation>Авточеканка в данный момен включена и установлена в </translation>
     </message>
     <message>
         <source>AutoMint is disabled</source>
@@ -863,6 +891,10 @@ MultiSend: %1</translation>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Кошелек &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;заблокирован&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>A fatal error occurred. NXBoost can no longer continue safely and will quit.</source>
+        <translation>Произошла фатальная ошибка. NXBoost больше не может безопасно продолжать работу и завершит работу.</translation>
     </message>
 </context>
 <context>
@@ -1031,7 +1063,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Копировать после вознаграждения </translation>
+        <translation>Копировать после вознаграждения</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -1051,7 +1083,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
-        <translation>Для использования этой функции перейдите в "Режим списка"</translation>
+        <translation>Для использования этой функции перейдите в "Режим списка".</translation>
     </message>
     <message>
         <source>highest</source>
@@ -1111,11 +1143,11 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>This means a fee of at least %1 per kB is required.</source>
-        <translation>Это означает, что необходима комиссия в размере как минимум %1 за kB</translation>
+        <translation>Это означает, что необходима комиссия в размере как минимум %1 за kB.</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
-        <translation>Может вариировать +/- 1 байт на каждый ввод</translation>
+        <translation>Может вариировать +/- 1 байт на каждый ввод.</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
@@ -1127,11 +1159,11 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
-        <translation>Этот маркер становится красным если получаемая адресатом сумма меньше, чем %1</translation>
+        <translation>Этот маркер становится красным если получаемая адресатом сумма меньше, чем %1.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 uNXB per input.</source>
-        <translation>Может вариироваться +/- %1 uNXB при вводе</translation>
+        <translation>Может вариироваться +/- %1 uNXB за вход.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1256,7 +1288,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>UI Options:</source>
-        <translation>Опции интерфейса</translation>
+        <translation>Опции интерфейса:</translation>
     </message>
     <message>
         <source>Choose data directory on startup (default: %u)</source>
@@ -1295,7 +1327,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>NXBoost Core will download and store a copy of the NXBoost block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>NXBoost Core загрузит и сохранит копию цепочки блоков nxboost. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <translation>NXBoost Core загрузит и сохранит копию цепочки блоков NXBoost. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1311,7 +1343,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>Ошибка: Невозможно создать указанный каталог данных "%1" </translation>
+        <translation>Ошибка: Невозможно создать указанный каталог данных "%1".</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1338,7 +1370,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>Примечание: Состояние ваших мастернод в локальном кошельке может слегка отличаться от действительности. &lt;br /&gt;Всегда дожидайтесь окончания синхронизации дополнительных данных и затем дважды проверьте с другого узла&lt;br /&gt;если ваша нода должна работать, но в окне "Состояние" пишет "НЕАКТИВНО"</translation>
+        <translation>Примечание: Состояние ваших мастернод в локальном кошельке может слегка отличаться от действительности. &lt;br /&gt;Всегда дожидайтесь окончания синхронизации дополнительных данных и затем дважды проверьте с другого узла&lt;br /&gt;если ваша нода должна работать, но в окне "Состояние" пишет "НЕАКТИВНО".</translation>
     </message>
     <message>
         <source>Alias</source>
@@ -1452,7 +1484,7 @@ MultiSend: %1</translation>
 To Add: enter percentage to give and NXBoost address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие NXBoost адреса.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и стакинг, после их созревания, на другие NXBoost адреса.
 Для добавления: введите передаваемый процент и NXBoost адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
@@ -1542,55 +1574,85 @@ MultiSend будет неактивен до тех пор, пока вы не �
         <translation>(нет метки)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Введенный адрес:
-</translation>
+        <source>MultiSend Active for Stakes and Masternode Rewards</source>
+        <translation>MultiSend активный для ставок и вознаграждений мастернод</translation>
     </message>
     <message>
-        <source> is invalid.
+        <source>MultiSend Active for Stakes</source>
+        <translation>MultiSend активный для ставок</translation>
+    </message>
+    <message>
+        <source>MultiSend Active for Masternode Rewards</source>
+        <translation>MultiSend активный для вознаграждений мастернод</translation>
+    </message>
+    <message>
+        <source>MultiSend Not Active</source>
+        <translation>MultiSend не активный</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
 Please check the address and try again.</source>
-        <translation>недопустим.
-Пожалуйста, проверьте адрес и попробуйте снова.</translation>
+        <translation>Введенный адрес: %1 недействителен.
+ Пожалуйста, проверьте адрес и попробуйте снова.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>Итоговое значение вектора MultiSend превышает 100% ваших вознаграждений
-</translation>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>Общая сумма вашего вектора MultiSend превышает 100% ваших вознаграждений</translation>
+    </message>
+    <message>
+        <source>Saved the MultiSend to memory, but failed saving properties to the database.</source>
+        <translation>Сохранено MultiSend в памяти, но не удалось сохранить в базе данных.</translation>
+    </message>
+    <message>
+        <source>MultiSend Vector</source>
+        <translation>Вектор MultiSend</translation>
+    </message>
+    <message>
+        <source>Removed %1</source>
+        <translation>Удалено %1</translation>
+    </message>
+    <message>
+        <source>Could not locate address</source>
+        <translation>Не удалось найти адрес</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, check MultiSend vector</source>
+        <translation>Невозможно активировать MultiSend, проверьте вектор MultiSend</translation>
+    </message>
+    <message>
+        <source>Need to select to send on stake and/or masternode rewards</source>
+        <translation>Нужно выбрать, чтобы отправить на ставку и / или награды мастернод</translation>
+    </message>
+    <message>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation>MultiSend активирован, но запись настроек в БД не удалась</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>MultiSend активирован</translation>
+    </message>
+    <message>
+        <source>First Address Not Valid</source>
+        <translation>Первый адрес не действителен</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation>MultiSend деактивирован, но запись настроек в БД не удалась</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>MultiSend деактивирован</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Введите 1 - 100 для указания процентов.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>Сохранили МультиОтправку в памяти, но не удалось сохранить свойства в базе данных.
-</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Вектор MultiSend
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Удалено</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Не удалось найти адрес
-</translation>
     </message>
 </context>
 <context>
     <name>MultisigDialog</name>
     <message>
         <source>Multisignature Address Interactions</source>
-        <translation> Многоподписные адресные взаимодействия</translation>
+        <translation>Многоподписные адресные взаимодействия</translation>
     </message>
     <message>
         <source>Create MultiSignature &amp;Address</source>
@@ -1686,7 +1748,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Add &amp;Destination</source>
-        <translation>Добавить &amp; Назначение</translation>
+        <translation>Добавить &amp;Назначение</translation>
     </message>
     <message>
         <source>Create a transaction object using the given inputs to the given outputs</source>
@@ -1698,7 +1760,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>&amp;Sign MultiSignature Tx</source>
-        <translation>&amp; Sign MultiSignature Tx</translation>
+        <translation>&amp;Подпись Мультиподписной транзакции</translation>
     </message>
     <message>
         <source>Transaction Hex:</source>
@@ -1726,7 +1788,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Add Private &amp;Key</source>
-        <translation>Добавьте личный &amp; ключ</translation>
+        <translation>Добавьте личный &amp;ключ</translation>
     </message>
     <message>
         <source>Sign with only private keys (Not Recommened)</source>
@@ -1746,11 +1808,11 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Vout Position: </source>
-        <translation>Vout Position:</translation>
+        <translation>Позиция Vout: </translation>
     </message>
     <message>
         <source>Amount: </source>
-        <translation>Сумма:</translation>
+        <translation>Сумма: </translation>
     </message>
     <message>
         <source>Maximum (15)</source>
@@ -1759,6 +1821,22 @@ Please be patient after clicking import.</source>
 </context>
 <context>
     <name>NXBoost-core</name>
+    <message>
+        <source> mints deleted
+</source>
+        <translation> монеты удалены
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation> монеты обновлены, </translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation> удалены неподтвержденные транзакции
+</translation>
+    </message>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = сохранить tx метаданные, например, владельца учетной записи и информацию о запросе платежа, 2 = удалить tx метаданные)</translation>
@@ -1781,7 +1859,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>Расчетная контрольная точка  не является тем, что регистрируется блочным индексом</translation>
+        <translation>Расчитанная контрольная точка  не регистрируется индексом блоков</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. NXBoost Core is probably already running.</source>
@@ -1808,8 +1886,20 @@ Please be patient after clicking import.</source>
         <translation>Удалите все траты и монетки zerocoin, которые были записаны в базу данных blockchain, и переиндексируйте их (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции NXBoost (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
+    </message>
+    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Распространяется по лицензии программного обеспечения MIT, см. Сопроводительный файл COPYING или &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Включить SwiftX, показать подтверждения для заблокированных транзакций (по умолчанию: %s)</translation>
+    </message>
+    <message>
+        <source>Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)</source>
+        <translation>Включить автоматическую чеканку Zerocoin с определенных адресов (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
@@ -1840,6 +1930,18 @@ Please be patient after clicking import.</source>
         <translation>Ошибка: транзакция больше максимально допустимого размера транзакции!</translation>
     </message>
     <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Ошибка: транзакция была отклонена! Это может произойти, если некоторые из монет в вашем кошельке уже были потрачены, например, если вы использовали копию кошелька. Dat и монеты были потрачены в копии, но не отмечены как потраченные здесь.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Ошибка. Для этой транзакции требуется комиссия за транзакцию не менее %s из-за ее количества, сложности или использования недавно полученных средств!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>Ошибка: обнаружен неподдерживаемый аргумент -checklevel. Контрольный уровень должен быть 4-го уровня.</translation>
+    </message>
+    <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Ошибка: обнаружен неподдерживаемый аргумент -socks. Настройка версии SOCKS больше невозможна, поддерживаются только прокси SOCKS5.</translation>
     </message>
@@ -1854,6 +1956,14 @@ Please be patient after clicking import.</source>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Выполнить команду, когда лучший блок изменяется (%s в cmd заменяется блочным хэшем)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Выполнять команду, когда лучший блок изменяется и его размер превышает (%s в cmd заменяется блочным хешем, %d с размером блока)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Не удалось найти монету, установленную среди удерживаемых монет с минимальным количеством расходов</translation>
     </message>
     <message>
         <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
@@ -1874,6 +1984,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Если paytxfee не установлен, включите достаточно плату, так что транзакции начнут подтверждать в среднем в пределах n блоков (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>В редких случаях трата с 7 монетами превышает наш максимально допустимый размер транзакции, пожалуйста, попробуйте потратить, используя 6 или менее монет</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -1900,8 +2014,16 @@ Please be patient after clicking import.</source>
         <translation>Поддерживание полного индекса транзакции, используемого вызовом rvc getrawtransaction (по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
+        <translation>Максимальный средний размер вхождения индекса в спам-фильтр блоков (по умолчанию: %u)</translation>
+    </message>
+    <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
         <translation>Максимальный размер данных в транзакциях передачи данных, которые мы передаем,  (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
+        <translation>Максимальный размер списка в спам фильтре блоков (по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
@@ -1918,6 +2040,11 @@ Please be patient after clicking import.</source>
     <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Выходная информация отладки (по умолчанию: %u, поставка &lt;category&gt; необязательна)</translation>
+    </message>
+    <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Предпочтительный номинал для автоматически чеканившегося Zerocoin
+(1/5/10/50/100/500/1000/5000), 0 без предпочтений. по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
@@ -1940,6 +2067,10 @@ Please be patient after clicking import.</source>
         <translation>Установите максимальный размер транзакций с высоким приоритетом / низкой оплатой в байтах (по умолчанию: %d)</translation>
     </message>
     <message>
+        <source>Set the number of included blocks to precompute per cycle. (minimum: %d) (maximum: %d) (default: %d)</source>
+        <translation>Установите количество блоков для предварительного вычисления за один цикл. (минимум: %d) (максимум: %d) (по умолчанию: %d)</translation>
+    </message>
+    <message>
         <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
         <translation>Задайте количество потоков проверки скриптов (%u до %d, 0 = auto, &lt;0 = оставить много ядер бесплатно, по умолчанию: %d)</translation>
     </message>
@@ -1949,15 +2080,39 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
-        <translation>Показывать подтверждения N для успешно заблокированной транзакции (0-9999, по умолчанию: %u)</translation>
+        <translation>Показывать N подтверждений для успешно заблокированной транзакции (0-9999, по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zNXB. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой резервной копии кошелька. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию.</translation>
     </message>
     <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Поддержка фильтрации блоков и транзакций с фильтрами цветения (по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftX требует ввода с не менее чем 6 подтверждениями, вам может потребоваться несколько минут и повторите попытку.</translation>
+    </message>
+    <message>
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
+        <translation>База данных блоков содержит блок, который, кажется, из будущего. Это может быть связано с неправильной настройкой даты и времени на вашем компьютере. Перестройте базу данных блоков только в том случае, если вы уверены, что дата и время вашего компьютера указаны правильно</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>Это предварительная версия сборки - используйте на свой страх и риск - не используйте для ставок или коммерческих приложений!</translation>
+    </message>
+    <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>Этот продукт включает программное обеспечение, разработанное OpenSSL Project для использования в OpenSSL Toolkit &lt;https://www.openssl.org/&gt; и криптографическом программном обеспечении, написанном Эриком Яном и программным обеспечением UPnP, написанным Томасом Бернардом.</translation>
+    </message>
+    <message>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
+        <translation>Общая длина строки версии сети (%i) превышает максимальную длину (%i). Уменьшите количество или размер uacomments.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. NXBoost Core is probably already running.</source>
@@ -1989,7 +2144,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong NXBoost Core will not work properly.</source>
-        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, NXBoost Core не будет работать должным образом.</translation>
+        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы неверны, NXBoost Core не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -2017,11 +2172,11 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки</translation>
+        <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки.</translation>
     </message>
     <message>
         <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 можно использовать только в сети)</translation>
+        <translation>(49108 можно использовать только в mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -2034,6 +2189,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>(must be 49108 for mainnet)</source>
         <translation>(должен быть 49108 для mainet)</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; возможно:</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -2062,6 +2221,14 @@ Please be patient after clicking import.</source>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Всегда запрашивать одноранговые адреса через DNS-поиск (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Append comment to the user agent string</source>
+        <translation>Добавить комментарий к строке агента пользователя</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Попытка принудительного восстановления блокады</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -2112,6 +2279,14 @@ Please be patient after clicking import.</source>
         <translation>Невозможно записать адрес по умолчанию</translation>
     </message>
     <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: Свидетель Аккумулятора не проверяет</translation>
+    </message>
+    <message>
+        <source>CoinSpend: failed check</source>
+        <translation>CoinSpend: неудачная проверка</translation>
+    </message>
+    <message>
         <source>Collateral not valid.</source>
         <translation>Залог недействителен.</translation>
     </message>
@@ -2136,12 +2311,12 @@ Please be patient after clicking import.</source>
         <translation>Copyright (C) 2009-%i Разработчики Bitcoin Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i Разработчики Dash Core</translation>
+        <source>Copyright (C) 2015-%i The Pivx Core Developers</source>
+        <translation>Copyright (C) 2015-%i Разработчики Pivx Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Copyright (C) 2015-%i Разработчики NXBoost Core</translation>
+        <source>Copyright (C) 2018-%i The NXBoost Core Developers</source>
+        <translation>Copyright (C) 2018-%i Разработчики NXBoost Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -2150,6 +2325,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>Could not parse masternode.conf</source>
         <translation>Не удалось разобрать masternode.conf</translation>
+    </message>
+    <message>
+        <source>Couldn't generate the accumulator witness</source>
+        <translation>Не удалось сгенерировать свидетель-аккумулятор</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>
@@ -2172,6 +2351,14 @@ Please be patient after clicking import.</source>
         <translation>Откройте собственный IP-адрес (по умолчанию: 1 при прослушивании и без -externalip)</translation>
     </message>
     <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Отображение расчетов модификатора кола в файле debug.log.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Отображать подробные сообщения с монетами в файле debug.log.</translation>
+    </message>
+    <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
         <translation>Не загружайте кошелек и отключите вызовы RPC кошелька</translation>
     </message>
@@ -2188,12 +2375,36 @@ Please be patient after clicking import.</source>
         <translation>Включить автоматическую чистку Zerocoin (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>Enable precomputation of zNXB spends and stakes (0-1, default %u)</source>
+        <translation>Включить предварительное вычисление расходов и ставок zNXB (0-1, по умолчанию %u)</translation>
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Включить публикацию хеш-блока в &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Включить публикацию хеш-транзакции (заблокированной через SwiftX) в &lt;address&gt;</translation>
     </message>
     <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Включить публикацию хеш-транзакции в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Включить публикацию необработанного блока в&lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Включить публикацию необработанных транзакций (заблокированных через SwiftX) в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Включить публикацию необработанных транзакций в &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>Включить функцию разбивки (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -2244,12 +2455,20 @@ Please be patient after clicking import.</source>
         <translation>Ошибка при восстановлении открытого ключа.</translation>
     </message>
     <message>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Ошибка записи zerocoinDB на диск</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>Ошибка: произошла фатальная внутренняя ошибка, подробности см. В файле debug.log.</translation>
+        <translation>Ошибка: произошла фатальная внутренняя ошибка, подробности см. В файле debug.log</translation>
+    </message>
+    <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Ошибка: произошла фатальная внутренняя ошибка, подробнее см. Debug.log</translation>
     </message>
     <message>
         <source>Error: Can't select current denominated inputs</source>
@@ -2258,6 +2477,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>Error: Disk space is low!</source>
         <translation>Ошибка. Недостаточно места на диске!</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Ошибка: нет действительного utxo!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
@@ -2269,19 +2492,43 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Ошибка. У вас уже есть ожидающие записи в пуле Obfuscation.</translation>
+        <translation>Ошибка. У вас уже есть ожидающие записи в пуле Obfuscation</translation>
     </message>
     <message>
         <source>Failed to calculate accumulator checkpoint</source>
         <translation>Не удалось вычислить контрольную точку аккумулятора</translation>
     </message>
     <message>
+        <source>Failed to create mint</source>
+        <translation>Не удалось создать монетный двор</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Не удалось найти Zerocoins в файле wallet.dat</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Не удалось прослушивать любой порт. Используйте -listen = 0, если вы этого хотите.</translation>
     </message>
     <message>
+        <source>Failed to parse host:port string</source>
+        <translation>Не удалось проанализировать строку хост:порт</translation>
+    </message>
+    <message>
         <source>Failed to read block</source>
         <translation>Не удалось прочитать блок</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Не удалось выбрать зерокоин</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Не удалось вытереть zerocoinDB</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Не удалось записать серийный номер монеты в кошелек</translation>
     </message>
     <message>
         <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
@@ -2353,7 +2600,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Недостаточно средств.</translation>
+        <translation>Недостаточно средств</translation>
     </message>
     <message>
         <source>Insufficient funds.</source>
@@ -2412,170 +2659,6 @@ Please be patient after clicking import.</source>
         <translation>Обнаружен неверный сценарий.</translation>
     </message>
     <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>Процент автоматически отчеканенного Zerocoin (1-100, по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the NXB and zNXB money supply statistics</source>
-        <translation>Reindex статистика денежной массы NXB и zNXB</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Реиндексирующая база данных нулевого цикла ...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Повторный обмен зерокоинта не удался</translation>
-    </message>
-    <message>
-        <source>Selected coins value is less than payment target</source>
-        <translation>Выбранная стоимость монет меньше цели платежа</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>Параметры SwiftX:</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>Это предварительная версия сборки - используйте на свой страх и риск - не используйте для ставок или коммерческих приложений!</translation>
-    </message>
-    <message>
-        <source> mints deleted
-</source>
-        <translation>удалены монеты
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>монеты обновлены,</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>удалены неподтвержденные транзакции
-</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции NXBoost (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Включить SwiftX, показать подтверждения для заблокированных транзакций (bool, default: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Ошибка: транзакция была отклонена! Это может произойти, если некоторые из монет в вашем кошельке уже были потрачены, например, если вы использовали копию кошелька. Dat и монеты были потрачены в копии, но не отмечены как потраченные здесь.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Ошибка. Для этой транзакции требуется комиссия за транзакцию не менее %s из-за ее количества, сложности или использования недавно полученных средств!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Ошибка: обнаружен неподдерживаемый аргумент -checklevel. Контрольный уровень должен быть 4-го уровня.</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Выполнять команду, когда лучший блок изменяется и его размер превышает (%s в cmd заменяется блочным хешем, %d с размером блока)</translation>
-    </message>
-    <message>
-        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Не удалось найти монету, установленную среди удерживаемых монет с минимальным количеством расходов</translation>
-    </message>
-    <message>
-        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>В редких случаях трата с 7 монетами превышает наш максимально допустимый размер транзакции, пожалуйста, попробуйте потратить, используя 6 или менее монет</translation>
-    </message>
-    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Предпочтительный номинал для автоматически чеканившегося Zerocoin (1/5/10/50/100/500/1000/5000), 0 без предпочтений. default: %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zNXB. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой резервной копии кошелька. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию.</translation>
-    </message>
-    <message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftX требует ввода с не менее чем 6 подтверждениями, вам может потребоваться несколько минут и повторите попытку.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; возможно:</translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Попытка принудительного восстановления блокады</translation>
-    </message>
-    <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: Свидетель Аккумулятора не проверяет</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Отображение расчетов модификатора кола в файле debug.log.</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Отображать подробные сообщения с монетами в файле debug.log.</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Включить публикацию хеш-блока в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Включить публикацию хеш-транзакции в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Включить публикацию необработанного блока в&lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Включить публикацию необработанных транзакций в &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Включить функцию разбивки (0-1, по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Ошибка: произошла фатальная внутренняя ошибка, подробнее см. Debug.log.</translation>
-    </message>
-    <message>
-        <source>Error: No valid utxo!</source>
-        <translation>Ошибка: нет действительного utxo!</translation>
-    </message>
-    <message>
-        <source>Failed to create mint</source>
-        <translation>Не удалось создать монетный двор</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>Не удалось десериализовать</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Не удалось найти Zerocoins в файле wallet.dat</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Не удалось выбрать зерокоин</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Не удалось вытереть zerocoinDB</translation>
-    </message>
-    <message>
-        <source>Failed to write coin serial number into wallet</source>
-        <translation>Не удалось записать серийный номер монеты в кошелек</translation>
-    </message>
-    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Непрерывные  &lt;n&gt; транзакции в памяти (по умолчанию: %u)</translation>
     </message>
@@ -2617,7 +2700,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Loading masternode cache...</source>
-        <translation>загрузка оперативной памяти мастернодов</translation>
+        <translation>Загрузка кэша мастернод...</translation>
     </message>
     <message>
         <source>Loading masternode payment cache...</source>
@@ -2661,7 +2744,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Masternode queue is full.</source>
-        <translation>Очередь Masternode заполнена.</translation>
+        <translation>Очередь мастернод заполнена.</translation>
     </message>
     <message>
         <source>Masternode:</source>
@@ -2729,7 +2812,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Not in the Masternode list.</source>
-        <translation>Не в списке Masternode.</translation>
+        <translation>Не в списке Мастернод.</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
@@ -2768,8 +2851,8 @@ Please be patient after clicking import.</source>
         <translation>Пароль для подключений JSON-RPC</translation>
     </message>
     <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid (): Invalid -proxy адрес или имя хоста: '%s'</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Процент автоматически отчеканенного Zerocoin (1-100, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
@@ -2800,12 +2883,36 @@ Please be patient after clicking import.</source>
         <translation>Перестроить индекс цепочки блоков из текущих файлов blk000 ?? .dat</translation>
     </message>
     <message>
+        <source>Recalculating NXB supply...</source>
+        <translation>Перерасчет общего количества NXB монет...</translation>
+    </message>
+    <message>
+        <source>Recalculating minted ZNXB...</source>
+        <translation>Перерасчет количества отчеканенных zNXB монет...</translation>
+    </message>
+    <message>
+        <source>Recalculating spent ZNXB...</source>
+        <translation>Перерасчет количества потраченных zNXB монет...</translation>
+    </message>
+    <message>
         <source>Receive and display P2P network alerts (default: %u)</source>
         <translation>Получение и отображение оповещений сети P2P (по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>Reindex the NXB and zNXB money supply statistics</source>
+        <translation>Reindex статистика денежной массы NXB и zNXB</translation>
+    </message>
+    <message>
         <source>Reindex the accumulator database</source>
         <translation>Reindex база данных аккумулятора</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Реиндексирующая база данных нулевого цикла ...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>Повторный обмен зерокоинта не удался</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -2817,19 +2924,19 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
-        <translation>Повторите сканирование цепочки блоков для пропущенных транзакций в кошельке.</translation>
+        <translation>Повторите сканирование цепочки блоков для пропущенных транзакций в кошельке</translation>
     </message>
     <message>
         <source>Rescanning...</source>
-        <translation>Повторное сканирование ...</translation>
+        <translation>Повторное сканирование...</translation>
     </message>
     <message>
         <source>ResetMintZerocoin finished: </source>
-        <translation>ResetMintZerocoin завершен:</translation>
+        <translation>ResetMintZerocoin завершен: </translation>
     </message>
     <message>
         <source>ResetSpentZerocoin finished: </source>
-        <translation>ResetSpentZerocoin завершен:</translation>
+        <translation>ResetSpentZerocoin завершен: </translation>
     </message>
     <message>
         <source>Run a thread to flush wallet periodically (default: %u)</source>
@@ -2838,6 +2945,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Запускать в фоновом режиме в качестве демона и принимать команды</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>Выбранная стоимость монет меньше цели платежа</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
@@ -2964,6 +3075,14 @@ Please be patient after clicking import.</source>
         <translation>Отправлено в masternode, ожидая в очереди %s</translation>
     </message>
     <message>
+        <source>Support the zerocoin light node protocol (default: %u)</source>
+        <translation>Поддержка протокола zerocoin light node (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>Параметры SwiftX:</translation>
+    </message>
+    <message>
         <source>Synchronization failed</source>
         <translation>Ошибка синхронизации</translation>
     </message>
@@ -2998,14 +3117,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>The coin spend has been used</source>
         <translation>Расходы на монеты использовались</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Новая транзакция с мошенничеством не подтвердила</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Выбранная монетка - недействительна</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
@@ -3084,10 +3195,6 @@ Please be patient after clicking import.</source>
         <translation>Передача окончательной транзакции.</translation>
     </message>
     <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Попытайтесь провести с более высоким уровнем безопасности, чтобы включить больше монет</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Пытаясь потратить уже потраченный серийный номер #, попробуйте еще раз.</translation>
     </message>
@@ -3132,8 +3239,16 @@ Please be patient after clicking import.</source>
         <translation>Используйте настраиваемую максимальную глубину реорганизации цепочки (по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>Use block spam filter (default: %u)</source>
+        <translation>Использовать спам-фильтр блоков (по умолчанию: %u)</translation>
+    </message>
+    <message>
         <source>Use the test network</source>
         <translation>Использовать тестовую сеть</translation>
+    </message>
+    <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>Комментарий агента пользователя (%s) содержит недопустимые символы.</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
@@ -3154,10 +3269,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Verifying wallet...</source>
         <translation>Проверка кошелька ...</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Для версии 1 zNXB требуется уровень безопасности 100, который можно успешно тратить.</translation>
     </message>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
@@ -3209,7 +3320,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Your entries added successfully.</source>
-        <translation>Ваши записи добавлены успешно</translation>
+        <translation>Ваши записи добавлены успешно.</translation>
     </message>
     <message>
         <source>Your transaction was accepted into the pool!</source>
@@ -3228,6 +3339,14 @@ Please be patient after clicking import.</source>
         <translation>Варианты Zerocoin:</translation>
     </message>
     <message>
+        <source>could not get lock on cs_spendcache</source>
+        <translation>не удалось получить блокировку на cs_spendcache</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid (): Invalid -proxy адрес или имя хоста: '%s'</translation>
+    </message>
+    <message>
         <source>on startup</source>
         <translation>на старте</translation>
     </message>
@@ -3244,19 +3363,19 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Basic Privacy</source>
-        <translation>Базовая конфиденциальность</translation>
+        <translation>Базовая приватность</translation>
     </message>
     <message>
         <source>High Privacy</source>
-        <translation>Повышенная конфиденциальность</translation>
+        <translation>Повышенная приватность</translation>
     </message>
     <message>
         <source>Maximum Privacy</source>
-        <translation>Максимальная конфиденциальность</translation>
+        <translation>Максимальная приватность</translation>
     </message>
     <message>
         <source>Please select a privacy level.</source>
-        <translation>Выберите уровень конфиденциальности.</translation>
+        <translation>Выберите уровень приватности.</translation>
     </message>
     <message>
         <source>Use 2 separate masternodes to mix funds up to 10000 NXB</source>
@@ -3413,18 +3532,8 @@ Please be patient after clicking import.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска nxboost.</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
         <source>Map port using &amp;UPnP</source>
-        <translation>Карта порта, использующего &amp;UPnP</translation>
+        <translation>Перенаправление порта, используя &amp;UPnP</translation>
     </message>
     <message>
         <source>Enable automatic minting of NXB units to zNXB</source>
@@ -3432,7 +3541,15 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Enable zNXB Automint</source>
-        <translation>Невозможно авточеканка  zNXB</translation>
+        <translation>Включение авточеканки  zNXB</translation>
+    </message>
+    <message>
+        <source>Enable automatic zNXB minting from specific addresses</source>
+        <translation>Включить автоматическую чеканку Zerocoin с определенных адресов</translation>
+    </message>
+    <message>
+        <source>Enable Automint Addresses</source>
+        <translation>Включить Адреса Авточеканки</translation>
     </message>
     <message>
         <source>Percentage of incoming NXB which get automatically converted to zNXB via Zerocoin Protocol (min: 10%)</source>
@@ -3444,7 +3561,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough NXB for this denomination is available</source>
-        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно NXB для этой номинации.</translation>
+        <translation>Подождите с автоматическим преобразованием в Zerocoin, пока не будет достаточно NXB для этой номинации</translation>
     </message>
     <message>
         <source>Preferred Automint zNXB Denomination</source>
@@ -3468,7 +3585,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>&amp;Port:</source>
-        <translation>&amp;Порт</translation>
+        <translation>&amp;Порт:</translation>
     </message>
     <message>
         <source>Port of the proxy (e.g. 9050)</source>
@@ -3500,15 +3617,25 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface &amp;language:</source>
-        <translation>&amp;Язык Интерфейса</translation>
+        <translation>&amp;Язык Интерфейса:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска NXBoost.</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
-        <translation>Тема Интерфейса</translation>
+        <translation>Тема Интерфейса:</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>В каких единицах показывать сумму:</translation>
+        <translation>&amp;Единица для отображения сумм в:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -3521,6 +3648,14 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>Hide empty balances</source>
         <translation>Скрыть пустые балансы</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>Скрыть сиротские ставки в списке транзакций</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Скрыть сиротские ставки</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -3536,7 +3671,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
-        <translation>Вернуть стандартные настройки клиента</translation>
+        <translation>Вернуть стандартные настройки клиента.</translation>
     </message>
     <message>
         <source>&amp;Reset Options</source>
@@ -3607,7 +3742,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Total Balance, including all unavailable coins.</source>
-        <translation>Общий баланс включая все не доступные монеты</translation>
+        <translation>Общий баланс включая все не доступные монеты.</translation>
     </message>
     <message>
         <source>NXB Balance</source>
@@ -3627,7 +3762,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Награды за хранение и мастерноды, которые еще не *созрели*</translation>
+        <translation>Награды за стакинг и мастерноды, которые еще не *созрели*</translation>
     </message>
     <message>
         <source>Current locked balance in watch-only addresses</source>
@@ -3635,7 +3770,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Your current NXBoost balance, unconfirmed and immature transactions included</source>
-        <translation>Ваш текущий nxboost  баланс, включая неподтвержденные и незрелые транзакции</translation>
+        <translation>Ваш текущий NXBoost  баланс, включая неподтвержденные и незрелые транзакции</translation>
     </message>
     <message>
         <source>zNXB Balance</source>
@@ -3649,12 +3784,12 @@ These zNXB are spendable.</source>
     <message>
         <source>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Неподтверждено: менее 20 подтверждений
+        <translation>Неподтвержденный: менее 20 подтверждений
 Незрелый: подтвержден, но менее 1 чеканок того же наименования после того, как он был отчеканен</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью NXBoost после установки соединения, но этот процесс еще не завершен. </translation>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью NXBoost после установки соединения, но этот процесс еще не завершен.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -3674,7 +3809,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Награды за хранение и мастерноды в наблюдаемых адресах, которые еще не *созрели*</translation>
+        <translation>Награды за стакинг и мастерноды в  адресах "только для просмотра", которые еще не *созрели*</translation>
     </message>
     <message>
         <source>Total:</source>
@@ -3702,7 +3837,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <source>Locked:</source>
-        <translation>Заперто</translation>
+        <translation>Заблокированный:</translation>
     </message>
     <message>
         <source>Unconfirmed:</source>
@@ -3710,7 +3845,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <source>Your current zNXB balance, unconfirmed and immature zNXB included.</source>
-        <translation>Ваш текущий zNXB баланс, включая неподтвержденные и незрелые транзакции</translation>
+        <translation>Ваш текущий zNXB баланс, включая неподтвержденные и незрелые транзакции.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -3724,13 +3859,13 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <source>Current percentage of zNXB.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Текущий процент от zNXB.
-Если АвтоЧеканка включена, этот процент будет располагаться на настроенном проценте АвтоЧеканка  (по умолчанию = 10%).
+        <translation>Текущий процент zNXB.
+Если АвтоЧеканка включена, этот процент будет применятся к АвтоЧеканке  (по умолчанию = 10%).
 </translation>
     </message>
     <message>
         <source>AutoMint is currently enabled and set to </source>
-        <translation>Авточеканка в данный момен включена и установлена в</translation>
+        <translation>Авточеканка в данный момен включена и установлена в </translation>
     </message>
     <message>
         <source>To disable AutoMint add 'enablezeromint=0' in nxboost.conf.</source>
@@ -3755,7 +3890,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
-        <translation> Недопустимый URL-адрес запроса платежа: %1</translation>
+        <translation>Недопустимый URL-адрес запроса платежа: %1</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -3767,7 +3902,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     </message>
     <message>
         <source>Cannot start nxboost: click-to-pay handler</source>
-        <translation>Не удалось запустить nxboost: обработчик click-to-pay </translation>
+        <translation>Не удалось запустить nxboost: обработчик click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid NXBoost address or malformed URI parameters.</source>
@@ -3853,11 +3988,11 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     <name>PrivacyDialog</name>
     <message>
         <source>Zerocoin Actions:</source>
-        <translation>Действия Zerocoin </translation>
+        <translation>Действия Zerocoin:</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью NXBoost после установки соединения, но этот процесс еще не завершен. </translation>
+        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью NXBoost после установки соединения, но этот процесс еще не завершен.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -3877,7 +4012,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     </message>
     <message>
         <source>Available for Minting:</source>
-        <translation>Доступный для чеканки</translation>
+        <translation>Доступный для чеканки:</translation>
     </message>
     <message>
         <source>0.000 000 00 NXB</source>
@@ -3905,7 +4040,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Пересканировать  завершенную блокчейн для Zerocoin  чеканки и мета данных</translation>
+        <translation>Пересканировать весь блокчейн для Zerocoin чеканки и мета данных.</translation>
     </message>
     <message>
         <source>ReScan</source>
@@ -3917,7 +4052,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     </message>
     <message>
         <source>PRIVACY</source>
-        <translation>КОНФИДЕНЦИАЛЬНОСТЬ</translation>
+        <translation>ПРИВАТНОСТЬ</translation>
     </message>
     <message>
         <source>Enter an amount of NXB to convert to zNXB</source>
@@ -3955,25 +4090,13 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
         <source>Available (mature and spendable) zNXB for spending
 
 zNXB are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Доступный (зрелый и затратный) zNXB для расходов
+        <translation>Доступный (зрелый и расходуемый) zNXB для расходов
 
-zNXB are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
+ZNXB являются зрелыми, когда у них более 20 подтверждений И более 2 чеканок одного и того же наименования после того, как они были отчеканены</translation>
     </message>
     <message>
         <source>0 zNXB</source>
         <translation>0 zNXB</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Уровень безопасности для транзакций Zerocoin. Больше лучше, но требуется больше времени и ресурсов.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Уровень безопасности:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Уровень безопасности 1-100 ( по умолчанию: 42)</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -4050,7 +4173,7 @@ zNXB are mature when they have more than 20 confirmations AND more than 2 mints 
     <message>
         <source>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Неподтверждено: менее 20 подтверждений
+        <translation>Неподтвержденный: менее 20 подтверждений
 Незрелый: подтвержден, но менее 1 чеканок того же наименования после того, как он был отчеканен</translation>
     </message>
     <message>
@@ -4071,7 +4194,9 @@ To change the percentage (no restart required):
 - отключить: добавить 'enablezeromint = 0' в nxboost.conf
 
 Чтобы изменить процент (не требуется перезагрузка):
-- меню Настройки-&gt; Параметры-&gt; Процент авторизованного zNXB</translation>
+- меню Настройки-&gt; Параметры-&gt; Процент авточеканки zNXB
+
+</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -4079,7 +4204,7 @@ To change the percentage (no restart required):
     </message>
     <message>
         <source>Global Supply:</source>
-        <translation>Общая поставка</translation>
+        <translation>Общее предложение:</translation>
     </message>
     <message>
         <source>Denom. 1:</source>
@@ -4116,6 +4241,14 @@ To change the percentage (no restart required):
     <message>
         <source>0 x</source>
         <translation>0 x</translation>
+    </message>
+    <message>
+        <source>Show zNXB denominations list</source>
+        <translation>Показать список номиналов zNXB</translation>
+    </message>
+    <message>
+        <source>Show Denominations</source>
+        <translation>Показать номиналы</translation>
     </message>
     <message>
         <source>Denominations with value 5:</source>
@@ -4174,6 +4307,10 @@ To change the percentage (no restart required):
         <translation>Номинал со значением 5000:</translation>
     </message>
     <message>
+        <source>Hide Denominations</source>
+        <translation>Скрыть номиналы</translation>
+    </message>
+    <message>
         <source>Priority:</source>
         <translation>Приоритет:</translation>
     </message>
@@ -4199,7 +4336,7 @@ To change the percentage (no restart required):
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Недостаточно средств</translation>
+        <translation>Недостаточно средств!</translation>
     </message>
     <message>
         <source>Coins automatically selected</source>
@@ -4252,18 +4389,10 @@ Please be patient...</source>
 Будьте терпеливы ...</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Расходы Zerocoin.
-Вычислительно дорого, может потребоваться несколько минут в зависимости от выбранного уровня безопасности и вашего оборудования.
-Пожалуйста, будьте терпеливы...</translation>
-    </message>
-    <message>
         <source>) needed.
 Maximum allowed: </source>
         <translation>) необходимо.
-Максимально допустимое:</translation>
+Максимально допустимое: </translation>
     </message>
     <message>
         <source>zNXB Spend #: </source>
@@ -4271,7 +4400,7 @@ Maximum allowed: </source>
     </message>
     <message>
         <source>zNXB Mint</source>
-        <translation>чеканка zNXB</translation>
+        <translation>Чеканка zNXB</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -4287,7 +4416,7 @@ Maximum allowed: </source>
     </message>
     <message>
         <source>zNXB is currently disabled due to maintenance.</source>
-        <translation>zNXB в настоящее время отключен от обслуживания.</translation>
+        <translation>zNXB в настоящее время отключен для технического обслуживания.</translation>
     </message>
     <message>
         <source>zNXB is currently undergoing maintenance.</source>
@@ -4371,35 +4500,35 @@ Maximum allowed: </source>
     </message>
     <message>
         <source>Minting </source>
-        <translation>Создание</translation>
+        <translation>Создание </translation>
     </message>
     <message>
         <source>Successfully minted </source>
-        <translation>Создан успешно</translation>
+        <translation>Создан успешно </translation>
     </message>
     <message>
         <source> zNXB in </source>
-        <translation> zNXB в</translation>
+        <translation> zNXB в </translation>
     </message>
     <message>
         <source> sec. Used denominations:
 </source>
-        <translation>сек. Испльзованы номинации:
+        <translation> сек. Испльзованы номинации:
 </translation>
     </message>
     <message>
         <source>Duration: </source>
-        <translation>Продолжительность:</translation>
+        <translation>Продолжительность: </translation>
     </message>
     <message>
         <source> sec.
 </source>
-        <translation>сек.
+        <translation> сек.
 </translation>
     </message>
     <message>
         <source>Starting ResetSpentZerocoin: </source>
-        <translation>Запуск ResetSpentZerocoin:</translation>
+        <translation>Запуск ResetSpentZerocoin: </translation>
     </message>
     <message>
         <source>No 'Pay To' address provided, creating local payment</source>
@@ -4423,27 +4552,15 @@ Maximum allowed: </source>
     </message>
     <message>
         <source> to address </source>
-        <translation>адресовать</translation>
+        <translation> на адрес </translation>
     </message>
     <message>
         <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
-        <translation>к вновь созданному (неиспользуемому и поэтому анонимному) локальному адресу &lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>с безопасным уровнем</translation>
+        <translation> к вновь созданному (неиспользуемому и поэтому анонимному) локальному адресу &lt;br /&gt;</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
         <translation>Подтвердить отправку монет</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Для версии 1 zNXB требуется уровень безопасности 100, который можно успешно тратить.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zNXB</source>
-        <translation>Не удалось провести zNXB</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -4461,36 +4578,39 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Spend Zerocoin failed with status = </source>
-        <translation>Провести Zerocoin не удалось со статусом =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of NXB to convert to zNXB</comment>
-        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
+        <translation>Провести Zerocoin не удалось со статусом = </translation>
     </message>
     <message>
         <source>denomination: </source>
-        <translation>наименование:</translation>
+        <translation>номиналы: </translation>
+    </message>
+    <message>
+        <source>Spending Zerocoin.
+Computationally expensive, might need several minutes depending on your hardware.
+Please be patient...</source>
+        <translation>Расходы Zerocoin.
+Ресурсоемкие вычисления, может потребоваться несколько минут в зависимости от вашего оборудования.
+Пожалуйста, будьте терпеливы ...</translation>
     </message>
     <message>
         <source>serial: </source>
-        <translation>последовательный:</translation>
+        <translation>serial: </translation>
     </message>
     <message>
         <source>Spend is 1 of : </source>
-        <translation>Расход 1 из :</translation>
+        <translation>Расход 1 из : </translation>
     </message>
     <message>
         <source>value out: </source>
-        <translation>ценность:</translation>
+        <translation>значение из: </translation>
     </message>
     <message>
         <source>address: </source>
-        <translation>Адрес:</translation>
+        <translation>адрес: </translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
-        <translation>Отправка успешного кода возврата:</translation>
+        <translation>Отправка успешно завершена, код: </translation>
     </message>
     <message>
         <source>txid: </source>
@@ -4498,7 +4618,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>fee: </source>
-        <translation>Комиссия:</translation>
+        <translation>комиссия: </translation>
     </message>
 </context>
 <context>
@@ -4551,12 +4671,36 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>%1 ms</source>
         <translation>%1 мс</translation>
     </message>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
+    </message>
+    <message>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Ошибка: указанный каталог данных "%1" не существует.</translation>
+    </message>
+    <message>
+        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
+        <translation>Ошибка: невозможно проанализировать файл конфигурации: %1. Используйте синтаксис ключ=значение.</translation>
+    </message>
+    <message>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>Ошибка: недопустимое сочетание -regtest и -testnet.</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Ошибка чтения файла конфигурации мастернод: %1</translation>
+    </message>
+    <message>
+        <source>NXBoost Core didn't yet exit safely...</source>
+        <translation>NXBoost Core еще не вышел благополучно...</translation>
+    </message>
 </context>
 <context>
     <name>QRImageWidget</name>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Сохранить изображение</translation>
+        <translation>&amp;Сохранить изображение...</translation>
     </message>
     <message>
         <source>&amp;Copy Image</source>
@@ -4647,7 +4791,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Open the NXBoost debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки nxboost. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <translation>Открыть протокол отладки NXBoost. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -4791,7 +4935,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Salvage wallet</source>
-        <translation>Кошелёк для сбора</translation>
+        <translation>Восстановление кошелька</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat.</source>
@@ -4839,7 +4983,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
-        <translation>Кнопка ниже перезапустит кошелёк с некоторыми опциями кммандной строки чтобы отремотировать кошелёк, файлы блокчейна и пропавшие / устаревшие транзакции. </translation>
+        <translation>Кнопка ниже перезапустит кошелёк с некоторыми опциями кммандной строки чтобы отремотировать кошелёк, файлы блокчейна и пропавшие / устаревшие транзакции.</translation>
     </message>
     <message>
         <source>Wallet repair options.</source>
@@ -4915,12 +5059,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Подтвердить повторную синхронизацию Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Используйте стрелки вверх и вниз для навигации по истории, и &lt;b&gt;Ctrl-L&lt;/b&gt; для очистки экрана.</translation>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Используйте стрелки вверх и вниз для навигации по истории и %1 для очистки экрана.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Введите &lt;b&gt;help&lt;/b&gt; для просмотра доступных команд.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>ВНИМАНИЕ: мошенники очень активны, предлагая пользователям вводить здесь команды, крадя содержимое их кошелька. Не используйте эту консоль без полного понимания последствий команды.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -4952,7 +5100,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Inbound</source>
-        <translation>входящий</translation>
+        <translation>Входящий</translation>
     </message>
     <message>
         <source>Outbound</source>
@@ -4979,7 +5127,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R &amp; euse существующего адреса получателя (не рекомендуется)</translation>
+        <translation>П&amp;овторное использование существующего адреса получателя (не рекомендуется)</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -4990,8 +5138,22 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Дополнительный ярлык для связи с новым адресом приема.</translation>
     </message>
     <message>
+        <source>Your receiving address. You can copy and use it to receive coins on this wallet. A new one will be generated once it is used.</source>
+        <translation>Ваш Адрес. Вы можете скопировать и использовать
+его для получения монет на этот кошелек.
+Новый будет создан, как только он будет использован.</translation>
+    </message>
+    <message>
+        <source>&amp;Address:</source>
+        <translation>&amp;Адрес:</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>С&amp;умма:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
-        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. Примечание. Сообщение не будет отправлено с оплатой через сеть nxboost.</translation>
+        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. Примечание. Сообщение не будет отправлено с оплатой через сеть NXBoost.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
@@ -4999,7 +5161,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the NXBoost network.</source>
-        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. &lt;br&gt;Примечание. Сообщение не будет отправлено с оплатой через сеть nxboost.</translation>
+        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. &lt;br&gt;Примечание. Сообщение не будет отправлено с оплатой через сеть NXBoost.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -5014,10 +5176,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Необязательная сумма для запроса. Оставьте это пустое или ноль, чтобы не запрашивать определенную сумму.</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Количество:</translation>
-    </message>
-    <message>
         <source>&amp;Request payment</source>
         <translation>&amp;Запрос платежа</translation>
     </message>
@@ -5030,8 +5188,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Очистить</translation>
     </message>
     <message>
+        <source>Receiving Addresses</source>
+        <translation>Адреса получения</translation>
+    </message>
+    <message>
         <source>Requested payments history</source>
-        <translation>Запрос истории платежей</translation>
+        <translation>История запросов платежей</translation>
     </message>
     <message>
         <source>Show the selected request (does the same as double clicking an entry)</source>
@@ -5061,6 +5223,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>Copy amount</source>
         <translation>Копировать сумму</translation>
     </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Копировать адрес</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
@@ -5078,7 +5244,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>&amp;Save Image...</source>
-        <translation>&amp;Сохранить изображение</translation>
+        <translation>&amp;Сохранить изображение...</translation>
     </message>
     <message>
         <source>Request payment to %1</source>
@@ -5132,6 +5298,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сообщение</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Сумма</translation>
     </message>
@@ -5164,7 +5334,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Insufficient funds!</source>
-        <translation>Недостаточно средств</translation>
+        <translation>Недостаточно средств!</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -5231,12 +5401,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0 NXB</translation>
     </message>
     <message>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 NXB applies</source>
+        <translation>Технология SwiftX обеспечивает почти мгновенные транзакции - Применяется фиксированная плата в размере 0,01 NXB</translation>
+    </message>
+    <message>
         <source>Transaction Fee:</source>
         <translation>Комиссия за транзакцию:</translation>
     </message>
     <message>
         <source>Choose...</source>
-        <translation>Выберите:</translation>
+        <translation>Выберите...</translation>
     </message>
     <message>
         <source>collapse fee-settings</source>
@@ -5260,11 +5434,15 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Custom:</source>
-        <translation>Таможня:</translation>
+        <translation>Ручной:</translation>
     </message>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Умный платеж еще не инициализирован. Обычно это занимает несколько блоков....)</translation>
+    </message>
+    <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -5272,7 +5450,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Open Coin Control...</source>
-        <translation>Открытый контроль монеты</translation>
+        <translation>Открыть контроль монет...</translation>
     </message>
     <message>
         <source>Coins automatically selected</source>
@@ -5280,15 +5458,15 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>If the custom fee is set to 1000 uNXBs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNXBs in fee,&lt;br /&gt;while "at least" pays 1000 uNXBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uNXBs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uNXBs,&lt;br /&gt;а «по крайней мере» платит 1000 uNXB. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
+        <translation>Если пользовательская плата установлена в 1000 uNXBs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uNXBs,&lt;br /&gt;а «по крайней мере» платит 1000 uNXB. Для транзакций, превышающих килобайт, оплата за килобайт.</translation>
     </message>
     <message>
         <source>If the custom fee is set to 1000 uNXBs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uNXBs in fee,&lt;br /&gt;while "total at least" pays 1000 uNXBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uNXBs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uNXBs,&lt;br /&gt;а «по крайней мере» платит 1000 uNXB. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
+        <translation>Если пользовательская плата установлена в 1000 uNXBs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uNXBs,&lt;br /&gt;а «итого как минимум» платит 1000 uNXB. Для транзакций, превышающих килобайт, оплата за килобайт.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for NXBoost transactions than the network can process.</source>
-        <translation>Платить только минимальную плату просто отлично, если в блоке меньше объема транзакции, чем места в блоке.&lt;br /&gt; Но имейте в виду, что это может закончиться никогда не подтверждающей транзакцией, если будет больше спроса на транзакции nxboost, чем сеть может обрабатывать.</translation>
+        <translation>Платить только минимальную плату просто отлично, если в блоке меньше объема транзакции, чем места в блоке.&lt;br /&gt; Но имейте в виду, что это может закончиться никогда не подтверждающей транзакцией, если будет больше спроса на транзакции NXBoost, чем сеть может обрабатывать.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -5316,7 +5494,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>S&amp;end</source>
-        <translation>S&amp;end</translation>
+        <translation>О&amp;тправить</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
@@ -5356,7 +5534,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Копировать после вознаграждения </translation>
+        <translation>Копировать после комиссии</translation>
     </message>
     <message>
         <source>Copy bytes</source>
@@ -5412,7 +5590,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform><numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform><numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform><numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform></translation>
+        <translation>
+            <numerusform>Предполагается начать подтверждение в пределах %n блока.</numerusform>
+            <numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform>
+            <numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform>
+        </translation>
     </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
@@ -5424,7 +5606,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>разделить на %1 выходы с использованием разделителя UTXO.</translation>
+        <translation> разделить на %1 выходы с использованием разделителя UTXO.</translation>
     </message>
     <message>
         <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
@@ -5467,8 +5649,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Платите только минимальный взнос %1</translation>
     </message>
     <message>
+        <source>Estimated to get 6 confirmations near instantly with &lt;b&gt;SwiftX&lt;/b&gt;!</source>
+        <translation>Расчетное количество подтверждений 6 блоков, мгновенно с &lt;b&gt;SwiftX&lt;/b&gt;!</translation>
+    </message>
+    <message>
         <source>Warning: Unknown change address</source>
-        <translation>Предупреждение: Неизвестный адрес </translation>
+        <translation>Предупреждение: Неизвестный адрес сдачи</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -5527,7 +5713,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>A message that was attached to the nxboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the NXBoost network.</source>
-        <translation>Сообщение, которое было прикреплено к URI nxboost: URI, который будет сохранен с транзакцией для вашей справки. Примечание. Это сообщение не будет отправлено через сеть nxboost.</translation>
+        <translation>Сообщение, которое было прикреплено к nxboost: URI, будет сохранено с транзакцией для вашей справки. Примечание. Это сообщение не будет отправлено через сеть NXBoost.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -5597,7 +5783,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
-        <translation>Введите сообщение, которое вы хотите подписать здесь.</translation>
+        <translation>Введите сообщение, которое вы хотите подписать здесь</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -5609,15 +5795,15 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес nxboost</translation>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес NXBoost</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>
-        <translation>Адрес nxboost, которым подписано сообщение</translation>
+        <translation>Адрес NXBoost, которым подписано сообщение</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified NXBoost address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным NXBoost адресом </translation>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным NXBoost адресом</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -5637,7 +5823,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Введите адрес подписи, сообщение (убедитесь, что вы скопировали разрывы строк, пробелы, табуляции и т. Д.) И подпись ниже, чтобы проверить сообщение. Будьте внимательны, чтобы не читать больше в подписи, чем в самом подписанном сообщении, чтобы избежать обмана с помощью атаки</translation>
+        <translation>Введите адрес подписи, сообщение (убедитесь, что вы скопировали разрывы строк, пробелы, табуляции и т. Д.) И подпись ниже, чтобы проверить сообщение. Будьте внимательны, чтобы не читать больше в подписи, чем в самом подписанном сообщении, чтобы избежать обмана с помощью атаки.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -5715,8 +5901,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разработчики Bitcoin Core</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation>Разработчики Dash Core</translation>
+        <source>The Pivx Core developers</source>
+        <translation>Разработчики Pivx Core</translation>
     </message>
     <message>
         <source>The NXBoost Core developers</source>
@@ -5738,7 +5924,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Открыть для  %n блоков</numerusform><numerusform>Открыть для  %n блоков</numerusform><numerusform>Открыть для  %n блоков</numerusform><numerusform>Открыть для  %n блоков</numerusform></translation>
+        <translation>
+            <numerusform>Доступно через %n блок</numerusform>
+            <numerusform>Доступно через %n блока</numerusform>
+            <numerusform>Доступно через %n блоков</numerusform>
+        </translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -5802,7 +5992,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, передается через %n узлов</numerusform><numerusform>, передается через %n узлов</numerusform><numerusform>, передается через %n узлов</numerusform><numerusform>, передается через %n узлов</numerusform></translation>
+        <translation>
+            <numerusform>, передается через %n узел</numerusform>
+            <numerusform>, передается через %n узла</numerusform>
+            <numerusform>, передается через %n узлов</numerusform>
+        </translation>
     </message>
     <message>
         <source>Date</source>
@@ -5846,7 +6040,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>созревает в %n блоков</numerusform><numerusform>созревает в %n блоков</numerusform><numerusform>созревает в %n блоков</numerusform><numerusform>созревает в %n блоков</numerusform></translation>
+        <translation>
+            <numerusform>созревает через %n блок</numerusform>
+            <numerusform>созревает через %n блока</numerusform>
+            <numerusform>созревает через %n блоков</numerusform>
+        </translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -5948,7 +6146,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Открыть для %n блоков</numerusform><numerusform>Открыть для %n блоков</numerusform><numerusform>Открыть для %n блоков</numerusform><numerusform>Открыть для  %n блоков</numerusform></translation>
+        <translation>
+            <numerusform>Доступно через %n блок</numerusform>
+            <numerusform>Доступно через %n блока</numerusform>
+            <numerusform>Доступно через %n блоков</numerusform>
+        </translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -5963,10 +6165,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>неподтвержденный</translation>
     </message>
     <message>
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>Подтверждение (%1 %2 рекомендованных подтверждений)</translation>
-    </message>
-    <message>
         <source>Confirmed (%1 confirmations)</source>
         <translation>Подтверждено (подтверждение %1)</translation>
     </message>
@@ -5974,9 +6172,13 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>Conflicted</source>
         <translation>Конфликтующий</translation>
     </message>
-    <message>
-        <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Незрелые (%1 подтверждения будут доступны после %2)</translation>
+    <message numerus="yes">
+        <source>Immature (%n confirmations, will be available after %1)</source>
+        <translation>
+            <numerusform>Незрелые (%n подтверждение, будут доступны после %1)</numerusform>
+            <numerusform>Незрелые (%n подтверждения, будут доступны после %1)</numerusform>
+            <numerusform>Незрелые (%n подтверждений, будут доступны после %1)</numerusform>
+        </translation>
     </message>
     <message>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
@@ -6000,11 +6202,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>NXB Stake</source>
-        <translation>Доля NXB</translation>
+        <translation>Чеканка NXB</translation>
     </message>
     <message>
         <source>zNXB Stake</source>
-        <translation>Доля zNXB</translation>
+        <translation>Чеканка zNXB</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -6036,7 +6238,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Minted Change as zNXB from zNXB Spend</source>
-        <translation>созданная  замена  zNXB из потраенного zNXB </translation>
+        <translation>Созданная Здача zNXB из потраченного zNXB</translation>
     </message>
     <message>
         <source>Converted zNXB to NXB</source>
@@ -6053,6 +6255,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Sent to</source>
         <translation>Отправить</translation>
+    </message>
+    <message>
+        <source>Confirming (%1 of %2 recommended confirmations)</source>
+        <translation>Подтверждение (%1 из %2 рекомендованных подтверждений)</translation>
     </message>
     <message>
         <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
@@ -6167,7 +6373,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Zerocoin Spend</source>
-        <translation>Потратить Zerocoin </translation>
+        <translation>Потратить Zerocoin</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -6208,6 +6414,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Show transaction details</source>
         <translation>Детали транзакции</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Скрыть сиротские ставки</translation>
     </message>
     <message>
         <source>Export Transaction History</source>
@@ -6271,7 +6481,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Range:</source>
-        <translation>диапазон</translation>
+        <translation>Диапазон:</translation>
     </message>
     <message>
         <source>to</source>
@@ -6282,7 +6492,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>UnitDisplayStatusBarControl</name>
     <message>
         <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Блок , чтобы отобразить суммы. Нажмите, чтобы выбрать другое устройство.</translation>
+        <translation>Единица, в которой отображаются суммы. Нажмите, чтобы выбрать другую единицу.</translation>
     </message>
 </context>
 <context>
@@ -6334,15 +6544,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ZNxbControlDialog</name>
     <message>
         <source>Select zNXB to Spend</source>
-        <translation>Выберите zNXB чтобы потратить</translation>
+        <translation>Выбор zNXB для трат</translation>
     </message>
     <message>
         <source>Quantity</source>
         <translation>Количество</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
     </message>
     <message>
         <source>zNXB</source>
@@ -6350,11 +6556,51 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Select/Deselect All</source>
-        <translation>Выбрать / Отменить выбор</translation>
+        <translation>Выбрать / Отменить все</translation>
     </message>
     <message>
-        <source>Is Spendable</source>
-        <translation>Расходы</translation>
+        <source>Select</source>
+        <translation>Выбор</translation>
+    </message>
+    <message>
+        <source>Denomination</source>
+        <translation>Номиналы</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Версия</translation>
+    </message>
+    <message>
+        <source>Precomputed</source>
+        <translation>Расчитан</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Подтверждения</translation>
+    </message>
+    <message>
+        <source>Spendable?</source>
+        <translation>Расходуемый?</translation>
+    </message>
+    <message>
+        <source>Needs %1 more confirmations</source>
+        <translation>Требуется больше %1 подтверждений</translation>
+    </message>
+    <message>
+        <source>Your wallet is locked. Impossible to precompute or spend zNXB.</source>
+        <translation>Ваш кошелек заблокирован. Невозможно предварительно вычислить или потратить zNXB.</translation>
+    </message>
+    <message>
+        <source>The zNXB seed used to mint this zNXB is not the same as currently hold in the wallet</source>
+        <translation>Семя zNXB, используемое для чеканки этого zNXB, не совпадает с хранящемся в кошельке</translation>
+    </message>
+    <message>
+        <source>Needs %1 more mints added to network</source>
+        <translation>Нужно добавить еще %1 чеканку в сеть</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>да</translation>
     </message>
 </context>
 </TS>

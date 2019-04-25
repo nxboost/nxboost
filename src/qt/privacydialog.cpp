@@ -811,7 +811,7 @@ void PrivacyDialog::updateSPORK16Status()
     } else if (!fMaintenanceMode && !fButtonsEnabled) {
         // Mint zNXB
         ui->pushButtonMintzNXB->setEnabled(true);
-        ui->pushButtonMintzNXB->setToolTip(tr("PrivacyDialog", "Enter an amount of NXB to convert to zNXB", 0));
+        ui->pushButtonMintzNXB->setToolTip(tr("Enter an amount of NXB to convert to zNXB"));
 
         // Spend zNXB
         ui->pushButtonSpendzNXB->setEnabled(true);

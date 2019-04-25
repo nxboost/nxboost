@@ -929,6 +929,10 @@
         <translation>Descrição</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Endereço</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Quantidade</translation>
     </message>
@@ -1082,7 +1086,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Assinar a Mensagem para provar que você e dono desse endereço nxboost.</translation>
+        <translation>Assinar a Mensagem para provar que você e dono desse endereço NXBoost.</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>

@@ -417,6 +417,10 @@
         <translation>&amp;Vaihtoehdot...</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja nxboost:lle</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Näytä / Piilota</translation>
     </message>
@@ -541,6 +545,10 @@
         <translation>Avaa &amp;URI...</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Avaa nxboost: URI tai pyydä maksua</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komentolinja vaihtoehdot</translation>
     </message>
@@ -593,10 +601,6 @@
         <translation>Näytä tietoja NXBoost Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja nxboost:lle</translation>
-    </message>
-    <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
@@ -631,10 +635,6 @@
     <message>
         <source>Open Masternode configuration file</source>
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
-    </message>
-    <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Avaa nxboost: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -1057,37 +1057,8 @@
         <translation>(ei nimikettä)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Syötetty osoite:</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>on invalidi. Ole hyvä ja tarkista osoite.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>MultiSend vektorisi kokonaismäärä on yli 100% panoksesi lohkopalkkiosta.</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Syötä 1 - 100 prosenttia</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend vektori</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Poistettu</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Osoitetta ei löytynyt</translation>
     </message>
 </context>
 <context>
@@ -1114,6 +1085,10 @@ Please check the address and try again.</source>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Varoitus: virhe yrittäessä lukea wallet.dat tiedostoa! Kaikki avaimet luettu onnistuneesti, mutta rahansiirto- tai yhteystietokirjat saattavat puuttua tai olla virheellisiä.</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; voi olla:</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -1206,10 +1181,6 @@ Please check the address and try again.</source>
     <message>
         <source>Invalid script detected.</source>
         <translation>Virheellinen skripti havaittu.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; voi olla:</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
@@ -1376,11 +1347,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Use 2 separate masternodes to mix funds up to 10000 NXB</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 nxboost</translation>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 NXBoost</translation>
     </message>
     <message>
         <source>Use 8 separate masternodes to mix funds up to 10000 NXB</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 nxboost</translation>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 NXBoost</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1388,11 +1359,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 NXB to anonymize 10000 NXB</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 NXB anonymoidaksesi 10000 nxboost</translation>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 NXB anonymoidaksesi 10000 NXBoost</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 NXB to anonymize 10000 NXB</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 NXBoost anonymoidaksesi 10000 nxboost</translation>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 NXBoost anonymoidaksesi 10000 NXBoost</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1400,7 +1371,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>0.1 NXB per 10000 NXB you anonymize.</source>
-        <translation>0.1 per 10000 nxboost, jotka anonymisoit.</translation>
+        <translation>0.1 per 10000 NXBoost, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1473,10 +1444,6 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
-    </message>
-    <message>
         <source>Connect to the NXBoost network through a SOCKS5 proxy.</source>
         <translation>Yhdistä NXBoost verkkoon SOCKS5 proxyn kautta</translation>
     </message>
@@ -1523,6 +1490,10 @@ Please check the address and try again.</source>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Käyttöliittymän &amp;kieli:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1726,6 +1697,10 @@ Please check the address and try again.</source>
     <message>
         <source>Amount</source>
         <translation>Määrä</translation>
+    </message>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Ydin</translation>
     </message>
     </context>
 <context>
@@ -1933,6 +1908,10 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>M&amp;äärä:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
         <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana NXBoost verkolle.</translation>
     </message>
@@ -1951,10 +1930,6 @@ Please check the address and try again.</source>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Pyydä vaihtoehtoinen määrä. Jätä tämä tyhjäksi tai 0, jos haluat pyytää ennaltamääräämättömän summan</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Määrä:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -1999,6 +1974,10 @@ Please check the address and try again.</source>
     <message>
         <source>Copy amount</source>
         <translation>Kopioi määrä</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopioi osoite</translation>
     </message>
 </context>
 <context>
@@ -2069,6 +2048,10 @@ Please check the address and try again.</source>
     <message>
         <source>Message</source>
         <translation>Viesti</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Osoite</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2458,10 +2441,6 @@ Please check the address and try again.</source>
         <translation>Bitcoin Core kehittäjät</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation>Dash Core kehittäjät</translation>
-    </message>
-    <message>
         <source>The NXBoost Core developers</source>
         <translation>NXBoost core kehittäjät</translation>
     </message>
@@ -2759,9 +2738,5 @@ Please check the address and try again.</source>
 </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
     </context>
 </TS>

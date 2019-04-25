@@ -13,6 +13,7 @@ QT_TS = \
   qt/locale/nxboost_da.ts \
   qt/locale/nxboost_de.ts \
   qt/locale/nxboost_en.ts \
+  qt/locale/nxboost_en_GB.ts \
   qt/locale/nxboost_en_US.ts \
   qt/locale/nxboost_eo.ts \
   qt/locale/nxboost_es.ts \

@@ -255,11 +255,11 @@
     </message>
     <message>
         <source>Enter a NXBoost Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Indtast en nxboost-adresse, som du gerne vil kryptere ved hjælp af BIP 38. Indtast en adgangskode i mellemkassen. Tryk på krypteringen for at beregne den krypterede private nøgle.</translation>
+        <translation>Indtast en NXBoost-adresse, som du gerne vil kryptere ved hjælp af BIP 38. Indtast en adgangskode i mellemkassen. Tryk på krypteringen for at beregne den krypterede private nøgle.</translation>
     </message>
     <message>
         <source>The NXBoost address to encrypt</source>
-        <translation>nxboost-adressen for at kryptere</translation>
+        <translation>NXBoost-adressen for at kryptere</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Krypter den private nøgle for denne nxboost-adresse</translation>
+        <translation>Krypter den private nøgle for denne NXBoost-adresse</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -457,6 +457,10 @@
         <translation>&amp;Indstillinger</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Ret konfigurationsindstillinger for nxboost</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Vis / skjul</translation>
     </message>
@@ -605,12 +609,16 @@
         <translation>Åbn &amp;URL</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Åbn en NXBoost URl eller betalingsanmodning</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandolinieparametre</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Behandlet %n blok af transaktionshistorik.</numerusform><numerusform>Behandlet %n blokke af transaktionshistorik.</numerusform></translation>
+        <translation><numerusform>Der er gennemløbet %n blokke af transaktionshistorikken.</numerusform><numerusform>Der er gennemløbet %n blokke af transaktionshistorikken.</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
@@ -677,10 +685,6 @@
         <translation>Vis information om NXBoost kerne</translation>
     </message>
     <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Ret konfigurationsindstillinger for nxboost</translation>
-    </message>
-    <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
         <translation>Underskriv beskeder med Deres NXBoost adresser for at bekræfte at De ejer dem.</translation>
     </message>
@@ -717,10 +721,6 @@
         <translation>ÅbnMasternode konfigurationsfil</translation>
     </message>
     <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Åbn en NXBoost URl eller betalingsanmodning</translation>
-    </message>
-    <message>
         <source>&amp;Blockchain explorer</source>
         <translation>&amp;blockchain explorer</translation>
     </message>
@@ -738,7 +738,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to NXBoost network</source>
-        <translation><numerusform>%n aktiv forbindelse til nxboost-netværk</numerusform><numerusform>%n aktiv forbindelse(s) til NXBoost netværk</numerusform></translation>
+        <translation><numerusform>%n aktiv forbindelse(s) til NXBoost netværk</numerusform><numerusform>%n aktiv forbindelse(s) til NXBoost netværk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -864,7 +864,7 @@ Adresse: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Tegnebogen er &lt;b&gt;krypteret og låst&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1452,9 +1452,9 @@ Adresse: %4
 To Add: enter percentage to give and NXBoost address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre NXBoost adressater når den er tilstrækkelig stor.
-For at tilføje: Indtast procentsatsen De ønsker at overføre samt den NXBoost adresse som skal modtage via Multisendsystemet.
-For at fjerne: Indtast adressen som skal slettes og klik på slet.
+        <translation>Multisend tillader at De automatisk kan sende op til 100% af Deres belønninger fra såvel indskud som masternodebelønninger til en liste over andre NXBoost adressater når den er tilstrækkelig stor. 
+For at tilføje: Indtast procentsatsen De ønsker at overføre samt den NXBoost adresse som skal modtage via Multisendsystemet. 
+For at fjerne: Indtast adressen som skal slettes og klik på slet. 
 Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
     </message>
     <message>
@@ -1542,48 +1542,26 @@ Multisend vil ikke fungere med mindre systemet er aktiveret.</translation>
         <translation>(ingen opmærknig)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Den indtastede adresse:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>er ikke gyldig.
-Kontroller adressen og prøv igen.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
         <translation>Den totale sum af Deres Multisendgruppe er over 100% af Deres indskudsbelønning
 </translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Indtast en procentsats 1-100 </translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
+        <source>Saved the MultiSend to memory, but failed saving properties to the database.</source>
         <translation>Gemt MultiSend til hukommelse, men fejlede gemme egenskaber til databasen.
 </translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Multisendgruppe
-</translation>
+        <source>Removed %1</source>
+        <translation>Fjernet %1</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Fjernet</translation>
+        <source>Could not locate address</source>
+        <translation>Kunne ikke finde adresse</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>Kunne ikke finde adresse
-</translation>
+        <source>Please Enter 1 - 100 for percent.</source>
+        <translation>Indtast en procentsats 1-100 </translation>
     </message>
 </context>
 <context>
@@ -1760,6 +1738,22 @@ Vær tålmodig efter at du har klikket på import.</translation>
 <context>
     <name>NXBoost-core</name>
     <message>
+        <source> mints deleted
+</source>
+        <translation>minter slettet
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation>mints opdateret,</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>ubekræftede transaktioner fjernet
+</translation>
+    </message>
+    <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>
     </message>
@@ -1808,9 +1802,17 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Slet alle zerocoin-udgifter og minter, der er blevet sendt til blockchain-databasen og geninddrive dem (0-1, standard: %u)</translation>
     </message>
     <message>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Slå alle NXBoost funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
+    </message>
+    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Distribueret under MIT software licensen. Se den vedlaget fil COPYING eller
 &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Aktiver swifttx, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
@@ -1841,6 +1843,18 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Fejl: Transaktionen er større end den maksimalt tilladte transaktionsstørrelse!</translation>
     </message>
     <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Transaktionen blev afvist! Dette kan ske, hvis nogle af mønterne i tegnebogen allerede er brugt. For eksempel hvis De har brugt en kopi af Wallet.dat filen, og mønterne har været brugt, men ikke markerede som brugte i den. </translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på mindst %s på grund af dets mængde, kompleksitet eller brug af nyligt modtagne penge!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>Fejl: Ikke understøttet argument -checklevel fundet. Checklevel skal være niveau 4.</translation>
+    </message>
+    <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Fejl! Argumentet er ikke understøttet -socks found. Det er ikke muligt at bestemme hvilken SOCKS version længere. Kun SOCKS5 proxies understøttes.</translation>
     </message>
@@ -1855,6 +1869,14 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Udfør en kommando når den bedste blok ændres (%s in cmd erstattes med blok hashen)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Udfør kommando, når den bedste blok ændres, og dens størrelse er overstået (%s i cmd erstattes af blok hash, %d med blokstørrelsen)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Kunne ikke finde møntsæt blandt holdte mønter med mindre end maksimalt antal udgifter</translation>
     </message>
     <message>
         <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
@@ -1875,6 +1897,10 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Hvis der ikke fastsættes et betalingsTxgebyr, skal der inkluderes tilstrækkelige midler til gebyret så transaktionens bekræftelsesproces vil begynde indenfor n blokke (default: %u)</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>I sjældne tilfælde overstiger en udgift med 7 mønter vores maksimale tilladte transaktionsstørrelse. Prøv igen med 6 eller færre mønter</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -1921,6 +1947,10 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Output debug information (default: %u, supplying &lt;category&gt; er valgfri)</translation>
     </message>
     <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
+    </message>
+    <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
         <translation>Forespørg peer adresser via DNS opslag, hvis antallet af adresser er laft (default: 1 med mindre -connect)</translation>
     </message>
@@ -1953,8 +1983,24 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Vis N bekræftelser for en gennemført låst transaktion (0-9999, default: %u)</translation>
     </message>
     <message>
+        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zNXB-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Angiv en brugerdefineret backup-sti for at tilføje en kopi af en wallet-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup.</translation>
+    </message>
+    <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Understøt filtrering af blokke og transaktioner med bloom filters (default: %u)</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX kræver mindst 6 bekræftelser. Vent nogle minutter og prøv igen.</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>Denne release er en testrelease. Anvendelse på eget ansvar - bør ikke anvendes til staking eller handelsapplikationer!</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -2021,10 +2067,6 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Der skal angives en masternodeprivkey i konfigurationen. For mere information, se i dokumentationen.</translation>
     </message>
     <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 kunne kun bruges på hovednettet)</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(default: %s)</translation>
     </message>
@@ -2035,6 +2077,10 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>(must be 49108 for mainnet)</source>
         <translation>(skal være 49108 for hovednettet)</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; can be:</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -2063,6 +2109,10 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Forespørg altid peer adresser via DNS opslag (default: %u)</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Forsøg at gennemtvinge reparation af korrumperet blokkæde</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -2113,6 +2163,10 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Kan ikke skrive standardadressen</translation>
     </message>
     <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: Akkumulator vidne bekræfter ikke</translation>
+    </message>
+    <message>
         <source>Collateral not valid.</source>
         <translation>Sikkerhed ikke gyldig</translation>
     </message>
@@ -2135,14 +2189,6 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
         <translation>Copyright (C) 2009-%i The Bitcoin Core Developers </translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core Developers </translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Copyright (C) 2015-%i The NXBoost Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -2173,6 +2219,14 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Find egen IP adresse (default: 1 når der lyttes, og inge -externalip)</translation>
     </message>
     <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Vis beregning af stavmodifikator i debug.log-filen.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Vis verbose møntspilsmeddelelser i debug.log-filen.</translation>
+    </message>
+    <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
         <translation>Indlæs ikke tegnebogen og slå tegnebogens RPC kald fra</translation>
     </message>
@@ -2189,12 +2243,32 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Aktivér automatisk Zerocoin-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Aktivér publish hash-blok i &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Aktivér publicering af hash-transaktion (låst via SwiftX) i &lt;address&gt;</translation>
     </message>
     <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Aktivér publicering af hash-transaction I &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Aktivér offentliggør rå blok I &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Aktivér publicere rå transaktion (låst via SwiftX) i &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Aktivér publicere rå transaktion i &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>Aktivér stakfunktionalitet (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -2253,12 +2327,20 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
+    </message>
+    <message>
         <source>Error: Can't select current denominated inputs</source>
         <translation>Fejl! Kan ikke vælge de aktuelt designerede inputs</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
         <translation>Fejl! Der er ikke nok plads på disken.</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Fejl: Ingen gyldig udxo!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
@@ -2277,12 +2359,32 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Kunne ikke beregne akkumulatorkontrolpunktet</translation>
     </message>
     <message>
+        <source>Failed to create mint</source>
+        <translation>Kunne ikke oprette mynte</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Kunne ikke finde Zerocoins i wallet.dat</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Lytning på uspecificerede porte mislykkedes. Brug -listen=0 hvis De ønsker denne funktion.</translation>
     </message>
     <message>
         <source>Failed to read block</source>
         <translation>Læsning af blokken mislykkedes</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Kunne ikke vælge en zerocoin</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Kunne ikke tørre zerocoinDB</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Kunne ikke skrive møntserienummer i tegnebog</translation>
     </message>
     <message>
         <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
@@ -2411,170 +2513,6 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>Invalid script detected.</source>
         <translation>Ugyldigt script fundet.</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the NXB and zNXB money supply statistics</source>
-        <translation>Reindex NXB og zNXB pengemængde statistikker</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Reindexing zerocoin database ...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Reindexerende zerocoin mislykkedes</translation>
-    </message>
-    <message>
-        <source>Selected coins value is less than payment target</source>
-        <translation>Valgt mønter værdi er mindre end betalingsmål</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftTX optioner:</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>Denne release er en testrelease. Anvendelse på eget ansvar - bør ikke anvendes til staking eller handelsapplikationer!</translation>
-    </message>
-    <message>
-        <source> mints deleted
-</source>
-        <translation>minter slettet
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>mints opdateret,</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>ubekræftede transaktioner fjernet
-</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Slå alle NXBoost funktioner fra (Masternoder, Tilsløring, SwiftTX, Budgetting)(0-1,default:%u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Aktiver swifttx, vis bekræftelser for låste transaktioner (bool, default: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Transaktionen blev afvist! Dette kan ske, hvis nogle af mønterne i tegnebogen allerede er brugt. For eksempel hvis De har brugt en kopi af Wallet.dat filen, og mønterne har været brugt, men ikke markerede som brugte i den. </translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fejl: Denne transaktion kræver et transaktionsgebyr på mindst %s på grund af dets mængde, kompleksitet eller brug af nyligt modtagne penge!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Fejl: Ikke understøttet argument -checklevel fundet. Checklevel skal være niveau 4.</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Udfør kommando, når den bedste blok ændres, og dens størrelse er overstået (%s i cmd erstattes af blok hash, %d med blokstørrelsen)</translation>
-    </message>
-    <message>
-        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Kunne ikke finde møntsæt blandt holdte mønter med mindre end maksimalt antal udgifter</translation>
-    </message>
-    <message>
-        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>I sjældne tilfælde overstiger en udgift med 7 mønter vores maksimale tilladte transaktionsstørrelse. Prøv igen med 6 eller færre mønter</translation>
-    </message>
-    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zNXB-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Angiv en brugerdefineret backup-sti for at tilføje en kopi af en wallet-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup.</translation>
-    </message>
-    <message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX kræver mindst 6 bekræftelser. Vent nogle minutter og prøv igen.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; can be:</translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Forsøg at gennemtvinge reparation af korrumperet blokkæde</translation>
-    </message>
-    <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: Akkumulator vidne bekræfter ikke</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Vis beregning af stavmodifikator i debug.log-filen.</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Vis verbose møntspilsmeddelelser i debug.log-filen.</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Aktivér publish hash-blok i &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Aktivér publicering af hash-transaction I &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Aktivér offentliggør rå blok I &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Aktivér publicere rå transaktion i &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Aktivér stakfunktionalitet (0-1, standard: %u)</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Fejl! En fatal intern fejl opstod. Se debug.log for nærmere detaljer</translation>
-    </message>
-    <message>
-        <source>Error: No valid utxo!</source>
-        <translation>Fejl: Ingen gyldig udxo!</translation>
-    </message>
-    <message>
-        <source>Failed to create mint</source>
-        <translation>Kunne ikke oprette mynte</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>Kunne ikke deserialisere</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Kunne ikke finde Zerocoins i wallet.dat</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Kunne ikke vælge en zerocoin</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Kunne ikke tørre zerocoinDB</translation>
-    </message>
-    <message>
-        <source>Failed to write coin serial number into wallet</source>
-        <translation>Kunne ikke skrive møntserienummer i tegnebog</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -2769,8 +2707,8 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Kodeord for JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid (): Ugyldig-proxy adresse eller værtsnavn: '%s'</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
@@ -2805,8 +2743,20 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Modtag og vis P2P netværksalarmer (default: %u)</translation>
     </message>
     <message>
+        <source>Reindex the NXB and zNXB money supply statistics</source>
+        <translation>Reindex NXB og zNXB pengemængde statistikker</translation>
+    </message>
+    <message>
         <source>Reindex the accumulator database</source>
         <translation>Reindex akkumulatiedatabasen</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Reindexing zerocoin database ...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>Reindexerende zerocoin mislykkedes</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -2839,6 +2789,10 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Kør en tråd i baggrunden som en særlig service og tag imod kommandoer </translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>Valgt mønter værdi er mindre end betalingsmål</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
@@ -2965,6 +2919,10 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Afsendt til masternode, venter i kø %s</translation>
     </message>
     <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftTX optioner:</translation>
+    </message>
+    <message>
         <source>Synchronization failed</source>
         <translation>Synkronisering mislykkedes.</translation>
     </message>
@@ -2999,14 +2957,6 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>The coin spend has been used</source>
         <translation>Møntudgifterne er blevet brugt</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Den nye udgiftsmønttransaktion bekræftede ikke</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Den valgte mintmønter er en ugyldig mønt</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
@@ -3085,10 +3035,6 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Afsender sluttransaktionen.</translation>
     </message>
     <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Prøv at bruge med et højere sikkerhedsniveau til at inkludere flere mønter</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Forsøger at bruge en allerede brugt serie #, prøv igen.</translation>
     </message>
@@ -3157,10 +3103,6 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>Verificerer  tegnebog</translation>
     </message>
     <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zNXB kræver et sikkerhedsniveau på 100 til succes.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Tegnbogen %s befinder sig udenfor datamappen %s</translation>
     </message>
@@ -3227,6 +3169,10 @@ Vær tålmodig efter at du har klikket på import.</translation>
     <message>
         <source>Zerocoin options:</source>
         <translation>Zerocoin muligheder:</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid (): Ugyldig-proxy adresse eller værtsnavn: '%s'</translation>
     </message>
     <message>
         <source>on startup</source>
@@ -3414,16 +3360,6 @@ Vær tålmodig efter at du har klikket på import.</translation>
         <translation>&amp;netværk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang NXBoost klienten startes</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
         <source>Map port using &amp;UPnP</source>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
@@ -3502,6 +3438,16 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Brugerinterface &amp;sprog:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Vælg sprog her. Ændringerne træder i kraft næste gang NXBoost klienten startes</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>Det valgte sprog mangler, eller oversættelsen er mangelfuld. Hjælp ved at bidrage med oversættelser her:
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3636,7 +3582,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Your current NXBoost balance, unconfirmed and immature transactions included</source>
-        <translation>Din nuværende nxboost-saldo, ubekræftede og umodne transaktioner inkluderet</translation>
+        <translation>Din nuværende NXBoost-saldo, ubekræftede og umodne transaktioner inkluderet</translation>
     </message>
     <message>
         <source>zNXB Balance</source>
@@ -3965,24 +3911,12 @@ zNXB er modne, når de har mere end 20 bekræftelser OG mere end 2 minutter med 
         <translation>0 zNXB</translation>
     </message>
     <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Sikkerhedsniveau for Zerocoin Transaktioner. Mere er bedre, men har brug for mere tid og ressourcer.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Sikkerhedsniveau:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Sikkerhedsniveau 1 - 100 (standard: 42)</translation>
-    </message>
-    <message>
         <source>Pay &amp;To:</source>
         <translation>Betal &amp;Til</translation>
     </message>
     <message>
         <source>The NXBoost address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>nxboost-adressen for at sende betalingen til. Opretter lokal betaling til dig selv, når du er tom.</translation>
+        <translation>NXBoost-adressen for at sende betalingen til. Opretter lokal betaling til dig selv, når du er tom.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4254,14 +4188,6 @@ Please be patient...</source>
 Vær tålmodig...</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Tilbringe Zerocoin
-Computationally dyrt, kan have brug for flere minutter afhængigt af det valgte sikkerhedsniveau og din hardware.
-Vær tålmodig..</translation>
-    </message>
-    <message>
         <source>) needed.
 Maximum allowed: </source>
         <translation>) havde brug for.
@@ -4432,20 +4358,8 @@ Maksimum tilladt:</translation>
         <translation>til en nyligt genereret (ubrugt og derfor anonym) lokal adresse &lt;br /&gt;</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>med sikkerhedsniveau</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>Bekræft at De vil sende mønter</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zNXB kræver et sikkerhedsniveau på 100 til succes.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zNXB</source>
-        <translation>Kunne ikke bruge zNXB</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -4464,11 +4378,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>Brug Zerocoin mislykkedes med status =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of NXB to convert to zNXB</comment>
-        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -4553,7 +4462,11 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost kerne</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -4916,10 +4829,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Bekræft resync Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Brug piltasterne for at navigere rundt i historiedata, og &lt;b&gt;Ctrl-L&lt;/b&gt; for at tømme skærmen.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Tast &lt;b&gt;help&gt; for at få en oversigt over tilgængelige kommandoer</translation>
     </message>
@@ -4991,6 +4900,14 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Valgfri opmærkning som tilknyttes den nye modtageradresse.</translation>
     </message>
     <message>
+        <source>&amp;Address:</source>
+        <translation>&amp;adresse</translation>
+    </message>
+    <message>
+        <source>A&amp;mount:</source>
+        <translation>A&amp;mount</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
         <translation>Valgfri besked som vedhæftes betalingsanmodnigen, og som bliver vist når anmodningen åbnes. Note: Beskeden fremsendes ikke sammen med betalingen, når denne sendes ud på NXBoost netværket.</translation>
     </message>
@@ -5013,10 +4930,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Beløbsfeltet er valgfrit. Efterlad det tomt, eller med værdien 0 for at anmode om et beløb, som afsenderen bestemmer.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Beløb</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -5061,6 +4974,10 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Copy amount</source>
         <translation>Kopiér beløb</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopiér adresse</translation>
     </message>
 </context>
 <context>
@@ -5131,6 +5048,10 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>Message</source>
         <translation>Besked</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -5266,6 +5187,10 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Smartgebyr endnu ikke initialiseret. Det tager som regel nogle få blokke...)</translation>
+    </message>
+    <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -5716,10 +5641,6 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Bitcoin "core" udviklerne</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation>DASH "core" udviklerne</translation>
-    </message>
-    <message>
         <source>The NXBoost Core developers</source>
         <translation>NXBoost "core" udviklerne</translation>
     </message>
@@ -5739,7 +5660,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Åbn for %n flere blokke</numerusform><numerusform>Åbn for %n flere blokke</numerusform></translation>
+        <translation><numerusform>Åbn for %n blokke</numerusform><numerusform>Åbn for %n blokke</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -5949,7 +5870,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Åbn for %n flere blokke</numerusform><numerusform>Åbn for %n flere blokke</numerusform></translation>
+        <translation><numerusform>Åbn for %n blokke</numerusform><numerusform>Åbn for %n blokke</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -6333,29 +6254,5 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>Select zNXB to Spend</source>
-        <translation>Vælg zNXB for at bruge</translation>
-    </message>
-    <message>
-        <source>Quantity</source>
-        <translation>Antal</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Select/Deselect All</source>
-        <translation>Vælg / Fravælg alle</translation>
-    </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Kan tilbringes</translation>
-    </message>
-</context>
+    </context>
 </TS>

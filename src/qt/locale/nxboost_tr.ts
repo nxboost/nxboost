@@ -457,6 +457,10 @@
         <translation>Seçenekler...</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>NXBoost için yapılandırma seçeneklerini değiştirin</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>Göster/Gizle</translation>
     </message>
@@ -605,6 +609,10 @@
         <translation>Aç &amp; URI ...</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Bir nxboost: URI veya ödeme isteği açın</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp; Komut satırı seçenekleri</translation>
     </message>
@@ -615,6 +623,14 @@
     <message>
         <source>%1 behind. Scanning block %2</source>
         <translation>%1 geride. blok tarıyor %2</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
+        <translation>Cüzdan şifrelenmiştirve şu anda sadece anonimleştirme ve staking yapılabilmesi amacıyla kilitsiz&lt;/b&gt; hale getirilmiştir.</translation>
+    </message>
+    <message>
+        <source>Tor is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Tor &lt;b&gt;etkin&lt;/b&gt; hale getirilmiştir: %1</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -646,7 +662,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
-        <translation>Ödeme talep etme (QR kodları ve NXBoost üretir: URI'ler)</translation>
+        <translation>Ödeme talep etme (QR kodları ve nxboost üretir: URI'ler)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -667,10 +683,6 @@
     <message>
         <source>Show information about NXBoost Core</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>NXBoost için yapılandırma seçeneklerini değiştirin</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -707,10 +719,6 @@
     <message>
         <source>Open Masternode configuration file</source>
         <translation>Açık Masternode yapılandırma dosyası</translation>
-    </message>
-    <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Bir nxboost: URI veya ödeme isteği açın</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -786,7 +794,7 @@
     </message>
     <message>
         <source>Sent MultiSend transaction</source>
-        <translation>MultiSend işlemi gönderildi</translation>
+        <translation>ÇokluGönderi işlemi gönderildi</translation>
     </message>
     <message>
         <source>Date: %1
@@ -804,7 +812,7 @@ Adres: %4
         <source>Staking is active
  MultiSend: %1</source>
         <translation>Staking aktif
- Multisend: %1</translation>
+ ÇokluGönderi: %1</translation>
     </message>
     <message>
         <source>Active</source>
@@ -817,8 +825,8 @@ Adres: %4
     <message>
         <source>Staking is not active
  MultiSend: %1</source>
-        <translation>staking inaktif
- Multisend: %1</translation>
+        <translation>Staking etkin değildir
+ÇokluGönderi: %1</translation>
     </message>
     <message>
         <source>AutoMint is currently enabled and set to </source>
@@ -836,7 +844,7 @@ Adres: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Cüzdan&lt;b&gt;şifreli&lt;/b&gt;ve şu anda&lt;b&gt;kilitli&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1402,7 +1410,7 @@ Adres: %4
     <name>MultiSendDialog</name>
     <message>
         <source>MultiSend</source>
-        <translation>MultiSend</translation>
+        <translation>ÇokluGönderi</translation>
     </message>
     <message>
         <source>Enter whole numbers 1 - 100</source>
@@ -1428,7 +1436,7 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>Add to MultiSend Vector</source>
-        <translation>Ekle MultiSend Vector</translation>
+        <translation>ÇokluGönderi Vektörüne Ekle</translation>
     </message>
     <message>
         <source>Add</source>
@@ -1436,7 +1444,7 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>Deactivate MultiSend</source>
-        <translation>Deaktif et MultiSend</translation>
+        <translation>ÇokluGönderi'yi Etkisiz hale getir</translation>
     </message>
     <message>
         <source>Deactivate</source>
@@ -1476,7 +1484,7 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>Delete Address From MultiSend Vector</source>
-        <translation>MultiSend Vector den adresi sil</translation>
+        <translation>ÇokluGönderi Vektöründen Adresi Sil</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -1484,7 +1492,7 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>Activate MultiSend</source>
-        <translation>aktifle MultiSend</translation>
+        <translation>ÇokluGönderi'yi Etkinleştir</translation>
     </message>
     <message>
         <source>Activate</source>
@@ -1492,11 +1500,11 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
     </message>
     <message>
         <source>View MultiSend Vector</source>
-        <translation>GösterMultiSend Vector</translation>
+        <translation>ÇokluGönderi Vektörünü Görüntüle</translation>
     </message>
     <message>
         <source>View MultiSend</source>
-        <translation>Göster multisend</translation>
+        <translation>ÇokluGönderi'yi Görüntüle</translation>
     </message>
     <message>
         <source>Send For Stakes</source>
@@ -1511,42 +1519,42 @@ MultiSend, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</
         <translation>(etiket yok)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Girilen adres:
-</translation>
+        <source>MultiSend Active for Stakes and Masternode Rewards</source>
+        <translation>Masternode Ödülleri için ÇokluGönderi Etkinleştirilmiştir</translation>
     </message>
     <message>
-        <source> is invalid.
+        <source>MultiSend Active for Masternode Rewards</source>
+        <translation>Masternode Ödülleri için ÇokluGönderi Etkinleştirilmiştir</translation>
+    </message>
+    <message>
+        <source>MultiSend Not Active</source>
+        <translation>ÇokluGönderi Etkin değildir</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
 Please check the address and try again.</source>
-        <translation>geçersiz.
-Lütfen adresi kontrol edin ve tekrar deneyin.</translation>
+        <translation>Girili adres: %1 geçersiz.
+Lütfen adresi kontrol ediniz ve tekrar deneyiniz.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation> MultiSend vectorünüzün toplam miktarı stake ödülünün  100% ünden fazla
-</translation>
+        <source>Removed %1</source>
+        <translation>Kaldırıldı %1</translation>
+    </message>
+    <message>
+        <source>Could not locate address</source>
+        <translation>Adres bulunamadı.</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>ÇokluGönderi geçerli hale getirildi</translation>
+    </message>
+    <message>
+        <source>First Address Not Valid</source>
+        <translation>İlk Adres Geçersiz</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Lütfen 1 - 100 arası yüzdelik miktarı girin</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vector
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Silindi</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Adres bulunamıyor
-</translation>
     </message>
 </context>
 <context>
@@ -1723,6 +1731,16 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
 <context>
     <name>NXBoost-core</name>
     <message>
+        <source> mints updated, </source>
+        <translation> mints güncellendi</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>Doğrulanmamış işlemler kaldırıldı
+</translation>
+    </message>
+    <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx meta verileri, örneğin hesap sahibi ve ödeme talebi bilgileri, 2 = tx meta verileri bırak)</translation>
     </message>
@@ -1839,6 +1857,10 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>(default: 1)</translation>
     </message>
     <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; olabilir:</translation>
+    </message>
+    <message>
         <source>Block creation options:</source>
         <translation>Blok oluşturma seçenekleri:</translation>
     </message>
@@ -1899,24 +1921,6 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Geçersiz private key.</translation>
     </message>
     <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftX seçenekleri:</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation> mints güncellendi</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>Doğrulanmamış işlemler kaldırıldı
-</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; olabilir:</translation>
-    </message>
-    <message>
         <source>Line: %d</source>
         <translation>Sıra: %d</translation>
     </message>
@@ -1947,6 +1951,10 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
     <message>
         <source>Staking options:</source>
         <translation>Staking seçenekleri:</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX seçenekleri:</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -2143,11 +2151,11 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
     </message>
     <message>
         <source>Automatically start NXBoost after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra otomatik olarak nxboost'i başlatın.</translation>
+        <translation>Sisteme giriş yaptıktan sonra otomatik olarak NXBoost'i başlatın.</translation>
     </message>
     <message>
         <source>&amp;Start NXBoost on system login</source>
-        <translation>&amp; Sistem oturum açma işleminde nxboost'i başlat</translation>
+        <translation>&amp; Sistem oturum açma işleminde NXBoost'i başlat</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2174,18 +2182,12 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>&amp;ağ</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, NXBoost yeniden başlatıldıktan sonra geçerli olur.</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>Dil eksik veya çeviri tamamlanmamış mı? Katkıda bulunan çevirilere yardımcı olun:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map port using &amp;UPnP</translation>
+    </message>
+    <message>
+        <source>Enable automatic minting of NXB units to zNXB</source>
+        <translation>NXB birimlerinin zNXB'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
         <source>Enable zNXB Automint</source>
@@ -2254,6 +2256,16 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Kullanıcı Arayüzü ve dil:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, NXBoost yeniden başlatıldıktan sonra geçerli olur.</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>Dil eksik veya çeviri tamamlanmamış mı? Katkıda bulunan çevirilere yardımcı olun:
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -2335,7 +2347,15 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <source>The supplied proxy address is invalid.</source>
         <translation>Verilen proxy adresi geçersiz.</translation>
     </message>
-    </context>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>Verilen proxy port adresi geçersiz.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>Verilen proxy seçenekleri geçersiz.</translation>
+    </message>
+</context>
 <context>
     <name>OverviewPage</name>
     <message>
@@ -2375,12 +2395,28 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Staklanmış veya masternod ödülleri henüz olgunlaşmamış</translation>
     </message>
     <message>
+        <source>Current locked balance in watch-only addresses</source>
+        <translation>Mevcut kilitli bakiye sadece görüntülenebilir adreslerde.</translation>
+    </message>
+    <message>
         <source>Your current NXBoost balance, unconfirmed and immature transactions included</source>
         <translation>Güncel NXBoost bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
     </message>
     <message>
         <source>zNXB Balance</source>
         <translation>zNXB Bakiyesi</translation>
+    </message>
+    <message>
+        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
+These zNXB are spendable.</source>
+        <translation>Olgun: basılmış olduktan sonra 20'den fazla onay alınmış ve aynı ölçü biriminden 1 kereden fazla basılmış.
+Bu zNXB ler harcanabilir.</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>Doğrulanmamış: 20'den az doğrulama
+Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden 1 taneden daha az basım bulunmakta.</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NXBoost network after a connection is established, but this process has not completed yet.</source>
@@ -2650,6 +2686,18 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
         <translation>GİZLİLİK</translation>
     </message>
     <message>
+        <source>Enter an amount of NXB to convert to zNXB</source>
+        <translation>ZNXB'e dönüştürmek için bir miktar NXB girin</translation>
+    </message>
+    <message>
+        <source>zNXB Control</source>
+        <translation>zNXB Kontrolü</translation>
+    </message>
+    <message>
+        <source>zNXB Selected:</source>
+        <translation>zNXB Seçildi:</translation>
+    </message>
+    <message>
         <source>Quantity Selected:</source>
         <translation>Seçilen miktar:</translation>
     </message>
@@ -2680,18 +2728,6 @@ zNXB, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
     <message>
         <source>0 zNXB</source>
         <translation>0 zNXB</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Zerocoin İşlemleri için Güvenlik Seviyesi. Daha fazlası iyidir, ancak daha fazla zaman ve kaynak gerekmektedir.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Güvenlik seviyesi:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Güvenlik seviyesi 1 - 100 (varsayılan: 42)</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2764,6 +2800,12 @@ zNXB, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhep
     <message>
         <source>Denom. with value 1:</source>
         <translation>Denom. değer 1 ile:</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>Doğrulanmamış: 20'den az doğrulama
+Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden 1 basım daha az miktarda.</translation>
     </message>
     <message>
         <source>AutoMint Status</source>
@@ -2912,14 +2954,6 @@ Please be patient...</source>
 Lütfen sabırlı olun...</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Harcanıyor Zerocoin.
-Hesaplaması pahalı, biraz fazla  hardware. ve seçili güvenlik seviyesine bağlı olarak.
-Lütfen sabırlı olun...</translation>
-    </message>
-    <message>
         <source>) needed.
 Maximum allowed: </source>
         <translation>) gerekli.
@@ -3004,10 +3038,6 @@ Maksimum bırakılan: </translation>
     <message>
         <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
         <translation>yeni üretilen (kullanılmayan ve bu nedenle isimsiz) yerel adrese &lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>Güvenlik seviyesi ile</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -3110,7 +3140,11 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost CORE</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -3413,10 +3447,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Blockchaini resenkronize etmeyi onaylayın</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Geçmişi görmek için ukarı ve aşağı okları kullanın, ve &lt;b&gt;Ctrl-L&lt;/b&gt; ekranı silmek için.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Yazın&lt;b&gt;help&lt;/b&gt; mevcut komutaları görmek için</translation>
     </message>
@@ -3476,6 +3506,10 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
         <translation>Yeni alma adresi ile ilişkilendirilebilecek isteğe bağlı bir etiket.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Miktar:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
         <translation>Talep açıldığında görüntülenecek ödeme isteğine eklemek için isteğe bağlı bir mesaj. Not: Mesaj, ödemenin NXBoost şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
@@ -3494,10 +3528,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>İsteğe bağlı olarak isteğe bağlı bir miktar. Belirli bir miktar talep etmemek için bu boş bırakın veya sıfırlayın.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>miktar:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -3542,6 +3572,10 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>Copy amount</source>
         <translation>Miktarı kopyala</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Adresi Kopyala</translation>
     </message>
 </context>
 <context>
@@ -3612,6 +3646,10 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>Message</source>
         <translation>Mesaj</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>adres</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3743,6 +3781,10 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Akıllı ücret henüz başlatılmadı.Bu genellikle birkaç blok alıyor ...)</translation>
+    </message>
+    <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -4183,10 +4225,6 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
     <message>
         <source>The Bitcoin Core developers</source>
         <translation>The Bitcoin Core developers</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>The Dash Core developers</translation>
     </message>
     <message>
         <source>The NXBoost Core developers</source>
@@ -4738,25 +4776,5 @@ Ya daha yüksek mezhepleri daraltın (daha az girdi gereklidir) veya harcama mik
 </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>Quantity</source>
-        <translation>Adet</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Select/Deselect All</source>
-        <translation>Seç/Çıkar Hepsini</translation>
-    </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Harcanabilir</translation>
-    </message>
-</context>
+    </context>
 </TS>

@@ -147,12 +147,12 @@
        </attribute>
        <column>
         <property name="text">
-         <string notr="true">Select</string>
+         <string>Select</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string notr="true">Denomination</string>
+         <string>Denomination</string>
         </property>
        </column>
        <column>
@@ -162,17 +162,17 @@
        </column>
        <column>
         <property name="text">
-         <string notr="true">Version</string>
+         <string>Version</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string notr="true">Precomputed</string>
+         <string>Precomputed</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string notr="true">Confirmations</string>
+         <string>Confirmations</string>
         </property>
        </column>
        <column>

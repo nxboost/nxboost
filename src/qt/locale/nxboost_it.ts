@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo nxboost</translation>
+        <translation>Crittografa la chiave privata per questo indirizzo NXBoost</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -457,6 +457,10 @@
         <translation>&amp;Opzioni...</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modifica le opzioni di configurazione per nxboost</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Mostra / Nascondi</translation>
     </message>
@@ -605,6 +609,10 @@
         <translation>Apri URL</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Apri un nxboost: URI o richiesta di pagamento</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>Opzioni riga di &amp;Comando</translation>
     </message>
@@ -650,7 +658,7 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Invia valuta all'indirizzo nxboost</translation>
+        <translation>Invia valuta all'indirizzo NXBoost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
@@ -675,10 +683,6 @@
     <message>
         <source>Show information about NXBoost Core</source>
         <translation>Visualizza informazioni su NXBoost Core</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Modifica le opzioni di configurazione per nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,10 +721,6 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Apri un nxboost: URI o richiesta di pagamento</translation>
-    </message>
-    <message>
         <source>&amp;Blockchain explorer</source>
         <translation>Esplora &amp;Blockchain</translation>
     </message>
@@ -730,7 +730,7 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Mostra il messaggio di aiuto NXBoost Core per ottenere un elenco con le possibili opzioni di riga di comando nxboost</translation>
+        <translation>Mostra il messaggio di aiuto NXBoost Core per ottenere un elenco con le possibili opzioni di riga di comando NXBoost</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
@@ -860,7 +860,7 @@ MultiSend: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Il portafoglio è &lt;b&gt;crittografato&lt;/b&gt; e attualmente &lt;b&gt;bloccato&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1283,7 +1283,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>NXBoost Core will download and store a copy of the NXBoost block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>NXBoost Core scaricherà e salverà una copia della blockchain nxboost. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <translation>NXBoost Core scaricherà e salverà una copia della blockchain NXBoost. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1530,47 +1530,8 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>(nessuna etichetta)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>L'indirizzo immesso:</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>è invalido.
-Per favore controlla l'indirizzo e riprova nuovamente.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>L'ammontare totale del tuo vettore MultiSend è superiore al 100% della tua ricompensa per lo stake
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Per favore inserisci 1 - 100 come percentuale.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>MultiSend è stato salvato con successo in memoria, ma il salvataggio delle proprietà nel database non è andato a buon fine.
-</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vettore InvioMultiplo
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Eliminato</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Impossibile trovare l'indirizzo
-</translation>
     </message>
 </context>
 <context>
@@ -1894,7 +1855,7 @@ Se il conio automatico è attivato questa percentuale si stabilizzerà all'incir
     </message>
     <message>
         <source>AutoMint is currently enabled and set to </source>
-        <translation>AutoMint è attivo e impostato su</translation>
+        <translation>Conio automatico è attivo e impostato su</translation>
     </message>
     <message>
         <source>To disable AutoMint add 'enablezeromint=0' in nxboost.conf.</source>
@@ -2193,7 +2154,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Fee:</source>
-        <translation>Tassa:</translation>
+        <translation>Commissione:</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -2210,6 +2171,10 @@ Per cambiare la percentuale (riavvio non necessario):
     <message>
         <source>Insufficient funds!</source>
         <translation>Fondi insufficienti!</translation>
+    </message>
+    <message>
+        <source>medium</source>
+        <translation>media</translation>
     </message>
     <message>
         <source>Amount After Fee:</source>
@@ -2245,7 +2210,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Converma invio monete</translation>
+        <translation>Conferma invio monete</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -2261,6 +2226,10 @@ Per cambiare la percentuale (riavvio non necessario):
     <message>
         <source>Amount</source>
         <translation>Ammontare</translation>
+    </message>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
     </message>
     </context>
 <context>
@@ -2288,6 +2257,10 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Q&amp;uantità:</translation>
+    </message>
+    <message>
         <source>&amp;Label:</source>
         <translation>&amp;Etichetta:</translation>
     </message>
@@ -2298,6 +2271,10 @@ Per cambiare la percentuale (riavvio non necessario):
     <message>
         <source>Copy amount</source>
         <translation>Copia ammontare</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copia indirizzo</translation>
     </message>
 </context>
 <context>
@@ -2324,6 +2301,10 @@ Per cambiare la percentuale (riavvio non necessario):
     <message>
         <source>Label</source>
         <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Indirizzo</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2365,8 +2346,12 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Priorità:</translation>
     </message>
     <message>
+        <source>medium</source>
+        <translation>media</translation>
+    </message>
+    <message>
         <source>Fee:</source>
-        <translation>Tassa:</translation>
+        <translation>Commissione:</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -2378,7 +2363,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Al netto della commissione:</translation>
+        <translation>Importo al netto della commissione:</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -2426,15 +2411,19 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Copy fee</source>
-        <translation>Copia commissioni</translation>
+        <translation>Copia commissione</translation>
     </message>
     <message>
         <source>Copy after fee</source>
-        <translation>Copia al netto della commissione</translation>
+        <translation>Copia importo al netto della commissione</translation>
     </message>
     <message>
         <source>Copy bytes</source>
         <translation>Copia byte</translation>
+    </message>
+    <message>
+        <source>Copy priority</source>
+        <translation>Copia priorità</translation>
     </message>
     <message>
         <source>Copy dust</source>
@@ -2527,7 +2516,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo nxboost</translation>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo NXBoost</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>
@@ -2686,13 +2675,5 @@ Per cambiare la percentuale (riavvio non necessario):
     </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
     </context>
 </TS>

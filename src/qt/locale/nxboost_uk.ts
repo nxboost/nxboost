@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your NXBoost addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Це ваші nxboost-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
+        <translation>Це ваші NXBoost-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
     </message>
     <message>
         <source>These are your NXBoost addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -295,6 +295,10 @@
     <message>
         <source>Label</source>
         <translation>Мітка</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адреса</translation>
     </message>
     <message>
         <source>(no label)</source>

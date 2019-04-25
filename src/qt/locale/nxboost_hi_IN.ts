@@ -13,6 +13,10 @@
         <source>Choose the address to receive coins with</source>
         <translation>सिक्कों को प्राप्त करने के लिए पता चुनें</translation>
     </message>
+    <message>
+        <source>These are your NXBoost addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>पहले इस्तेमाल किए गए पते को चुनें</translation>
+    </message>
     </context>
 <context>
     <name>AddressTableModel</name>
@@ -219,6 +223,10 @@
     <message>
         <source>Message</source>
         <translation>संदेश</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>पता</translation>
     </message>
     </context>
 <context>

@@ -39,7 +39,7 @@
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>&amp;Închide </translation>
+        <translation>&amp;Închide</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>

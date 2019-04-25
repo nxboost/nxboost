@@ -267,7 +267,7 @@
     </message>
     <message>
         <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -275,7 +275,7 @@
     </message>
     <message>
         <source>Alt+P</source>
-        <translation>Alt + P</translation>
+        <translation>Alt+P</translation>
     </message>
     <message>
         <source>Passphrase: </source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Cifrar la llave privada para esta dirección nxboost</translation>
+        <translation>Cifrar la llave privada para esta dirección NXBoost</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -457,6 +457,10 @@
         <translation>&amp;Opciones...</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modificar las opciones de configuración de nxboost</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Mostrar / Esconder</translation>
     </message>
@@ -605,6 +609,10 @@
         <translation>Abrir &amp;URI...</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Abrir un nxboost: URI o solicitud de pago</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opciones de linea de comandos</translation>
     </message>
@@ -650,7 +658,7 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Enviar monedas a una dirección nxboost</translation>
+        <translation>Enviar monedas a una dirección NXBoost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
@@ -675,10 +683,6 @@
     <message>
         <source>Show information about NXBoost Core</source>
         <translation>Mostrar información sobre NXBoost Core</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Modificar las opciones de configuración de nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -715,10 +719,6 @@
     <message>
         <source>Open Masternode configuration file</source>
         <translation>Abrir fichero de Configuración de masternodes</translation>
-    </message>
-    <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Abrir un nxboost: URI o solicitud de pago</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -762,7 +762,7 @@
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n horas</numerusform><numerusform>%n horas</numerusform></translation>
+        <translation><numerusform>%n hora</numerusform><numerusform>%n horas</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
@@ -770,7 +770,7 @@
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n semanas</numerusform><numerusform>%n semanas</numerusform></translation>
+        <translation><numerusform>%n semana</numerusform><numerusform>%n semanas</numerusform></translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -778,7 +778,7 @@
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n años</numerusform><numerusform>%n años</numerusform></translation>
+        <translation><numerusform>%n año</numerusform><numerusform>%n años</numerusform></translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -864,7 +864,7 @@ MultiEnvío: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>El monedero está &lt;b&gt;encriptado&lt;/b&gt; y actualmente &lt;b&gt;bloqueado&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -915,11 +915,11 @@ MultiEnvío: %1</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octetos:</translation>
+        <translation>Bytes:</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Cantidad:</translation>
+        <translation>Suma:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -1295,7 +1295,7 @@ MultiEnvío: %1</translation>
     </message>
     <message>
         <source>NXBoost Core will download and store a copy of the NXBoost block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>NXBoost Core descargará y guardará una copia de la cadena de bloques nxboost. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
+        <translation>NXBoost Core descargará y guardará una copia de la cadena de bloques NXBoost. Por lo menos %1GB de datos serán guardados en esta carpeta, y crecerá con el tiempo. El monedero también se guardará en esta carpeta.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1542,48 +1542,54 @@ MultiEnvío no se activará a menos que haga usted click en Activar</translation
         <translation>(sin etiqueta)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>La dirección introducida:
-</translation>
+        <source>MultiSend Active for Stakes and Masternode Rewards</source>
+        <translation>MultiSend Activado para las recompensas de Stakes y Masternode</translation>
     </message>
     <message>
-        <source> is invalid.
+        <source>MultiSend Active for Stakes</source>
+        <translation>MultiSend Activado para Stakes</translation>
+    </message>
+    <message>
+        <source>MultiSend Active for Masternode Rewards</source>
+        <translation>MultiSend Activado para las recompensas de Masternode</translation>
+    </message>
+    <message>
+        <source>MultiSend Not Active</source>
+        <translation>MultiSend Desactivado </translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
 Please check the address and try again.</source>
-        <translation>es inválida.
-Por favor compruebe la dirección e inténtelo de nuevo.</translation>
+        <translation>La dirección introducida: %1 es inválida.
+Por favor comprueba la dirección e inténtalo nuevamente.</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>La cantidad total de su vector MultiEnvío es superior al 100% de su recompensa de stake
-</translation>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>La cantidad total de tu vector de MultiEnvío es superior al 100% de tu recompensa de Stake</translation>
+    </message>
+    <message>
+        <source>Saved the MultiSend to memory, but failed saving properties to the database.</source>
+        <translation>El MultiSend se guardó en la memoria, pero se produjo un error al guardar las propiedades en la base de datos.</translation>
+    </message>
+    <message>
+        <source>MultiSend Vector</source>
+        <translation>Vector de MultiSend</translation>
+    </message>
+    <message>
+        <source>Removed %1</source>
+        <translation>Removido %1</translation>
+    </message>
+    <message>
+        <source>Could not locate address</source>
+        <translation>No se pudo localizar la dirección</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, check MultiSend vector</source>
+        <translation>No fue posible activar el MultiSend, verifica el vector de MultiSend</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Por favor Introduzca 1 - 100 por ciento.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>Se guardó MultiEnvío en la memoria, pero se produjo un error al guardar las propiedades en la base de datos.
-</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vector MultiEnvío
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Borrado</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>No se pudo localizar la dirección
-</translation>
     </message>
 </context>
 <context>
@@ -1666,7 +1672,7 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Cantidad:</translation>
+        <translation>Suma:</translation>
     </message>
     <message>
         <source>Add an input to fund the outputs</source>
@@ -1760,6 +1766,22 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
 <context>
     <name>NXBoost-core</name>
     <message>
+        <source> mints deleted
+</source>
+        <translation>creaciones de moneda borradas
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation>creaciones de moneda actualizadas,</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>transacciones sin confirmar eliminadas
+</translation>
+    </message>
+    <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1= mantener los metadatos tx p.e. dueño de la cuenta e información de la solicitud de pago, 2 = ignorar metadatos tx)</translation>
     </message>
@@ -1808,8 +1830,16 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Elimina todos registros de las transferencias y el acuñado de Zerocoin que se hayan registrado en la base de datos de Blockchain y vuelva a indexarlos (0-1, default: %u)</translation>
     </message>
     <message>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar toda la funcionalidad especifica NXBoost (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
+    </message>
+    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Distribuido bajo licencia MIT software license, ver el archivo adjunto COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Activar swifttx, mostrar confirmaciones para transacciones bloqueadas (bool, predeterminado: %s)</translation>
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
@@ -1840,6 +1870,18 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Error: ¡La transacción es más grande que el tamaño máximo de transacción permitido!</translation>
     </message>
     <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>¡La transacción fue rechazada! Esto puede ocurrir si alguna de sus monedas ya se gastó con anterioridad, por ejemplo, si estuvo usted usando una copia de su monedero wallet.dat y gastó allí monedas pero no las marcó como gastadas aquí.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Error: ¡Esta transacción requiere una tasa de al menos %s debido a la cantidad enviada, su complejidad, o el uso de fondos recibidos recientemente!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>Error: Se ha especificado un argumento no soportado -checklevel. El Checklevel debe ser siempre 4. </translation>
+    </message>
+    <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Error: Argumento -socks no soportado. No se permite utilizar la versión SOCKS, solo proxies de SOCKS5 están soportados.</translation>
     </message>
@@ -1854,6 +1896,14 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Ejecutar comando cuando el mejor bloque cambie (%s en cmd es reemplazado por el block hash)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Ejecute el comando cuando el mejor bloque cambie y su tamaño haya terminado (%s en cmd se reemplaza por el hash del bloque, %d con el tamaño de bloque)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>No se puede encontrar el conjunto de monedas necesarias entre las monedas disponibles con menos de maxNumber para poder gastarlas</translation>
     </message>
     <message>
         <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
@@ -1874,6 +1924,10 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Si paytxfee no esta definido, incluir suficiente comisión de manera que la transacción se vuelva confirmada en promedio dentro de n bloques (predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>En casos excepcionales, un envío con más de 7 monedas excede el tamaño máximo de transacción permitidas, intente gastar 6 monedas o menos.</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -1920,6 +1974,10 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Saluda de información de depuración (predeterminado: %u, proveyendo &lt;category&gt; es opcional)</translation>
     </message>
     <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Denominación preferida para acuñado automatico de Zerocoin (1/5/10/50/100/500/1000/5000), 0 para ninguna preferencia. predeterminado: %u)</translation>
+    </message>
+    <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
         <translation>Consultar por direcciones de pares vía búsqueda en DNS, si cantidad de direcciones esta bajo (predeterminado: 1 a menos que se utilice -connect)</translation>
     </message>
@@ -1952,8 +2010,24 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Mostrar N confirmaciones para una transacción cerrada exitosamente (0-9999, predefinido: %u)</translation>
     </message>
     <message>
+        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Especifique la ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad zNXB automática. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad. Si también se establece backuppath, se realizarán 4 copias de seguridad</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Especifique una ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad de monedero. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad generada.</translation>
+    </message>
+    <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Soportar filtrado de bloques y transacciones con filtros bloom (por defecto: %u)</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftX requiere entradas con al menos 6 confirmaciones, es posible que deba esperar unos minutos e intente de nuevo.</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>Esto es una versión pre-release de prueba - use bajo su propia responsabilidad - ¡No lo utilice para recompensa de participación ni aplicaciones de comercio!</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -2020,10 +2094,6 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Debes especificar un masternodeprivkey en la configuración. Por favor mira la documentación por ayuda.</translation>
     </message>
     <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 puede ser utilizado solo en mainnet)</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(predeterminado: %s)</translation>
     </message>
@@ -2034,6 +2104,10 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>(must be 49108 for mainnet)</source>
         <translation>(debe ser 49108 para un mainnet)</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt;puede ser: </translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -2062,6 +2136,10 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Siempre consultar por direcciones de pares vía búsqueda DNS (predeterminado: %u)</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Intentar forzar la recuperación de la cadena de bloques corrupta</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -2112,6 +2190,10 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>No se puede escribir la dirección predeterminada</translation>
     </message>
     <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: El testigo del acumulador no verifica</translation>
+    </message>
+    <message>
         <source>Collateral not valid.</source>
         <translation>Colateral no válido.</translation>
     </message>
@@ -2134,14 +2216,6 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
         <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Copyright (C) 2015-%i The NXBoost Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -2172,6 +2246,14 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Descubrir direcciones IP propia (predeterminado: 1 cuando se esta a la escucha y sin opción -externalip)</translation>
     </message>
     <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Incluir los cálculos de recompensa por participación en el fichero debug.log.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Incluir mensajes explícitos de recompensa por participación en el fichero debug.log.</translation>
+    </message>
+    <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
         <translation>No cargar la monedero y desactivar las llamadas RPC del monedero</translation>
     </message>
@@ -2188,12 +2270,32 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Habilitar creación automática de Zerocoin (0-1, por defecto: %u)</translation>
     </message>
     <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Activar inclusión del hash del bloque en &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Activar inclusión del hash de la transacción (fijada mediante SwiftTX) en &lt;address&gt;</translation>
     </message>
     <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Activar inclusión del hash de la transacción en &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Activar inclusión del bloque en bruto en &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Activar inclusión de la transacción en bruto (fijada mediante SwiftTX) en &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Activar inclusión de la transacción en bruto en &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>Activar funcionalidad de recompensa por participación (0-1, por defecto: %u)</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -2252,12 +2354,20 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Error: Un error interno fatal a ocurrido, ver debug.log para mas detalles</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Error: Un error interno fatal a ocurrido, ver debug.log para mas detalles</translation>
+    </message>
+    <message>
         <source>Error: Can't select current denominated inputs</source>
         <translation>Error: No se pudo seleccionar las entradas denominadas actuales</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
         <translation>Error: El espacio en disco esta bajo!</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Error: ¡utxo no válido!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
@@ -2276,12 +2386,32 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Error al calcular el punto de control del acumulador</translation>
     </message>
     <message>
+        <source>Failed to create mint</source>
+        <translation>Error al acuñar</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Error al encontrar Zerocoins en wallet.dat</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Falló la escucha en cualquiera de los puertos. Usar -listen=0 si quieres esto.</translation>
     </message>
     <message>
         <source>Failed to read block</source>
         <translation>Falló al leer el bloque</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Error al seleccionar una zerocoin</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Error al borrar zerocoinDB</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Error al escribir el número de serie de la moneda en el monedero</translation>
     </message>
     <message>
         <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
@@ -2410,170 +2540,6 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>Invalid script detected.</source>
         <translation>Script inválido detectado.</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>Porcentaje de Zerocoin creadas automáticamente (10-100, por defecto: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the NXB and zNXB money supply statistics</source>
-        <translation>Reindexar as estatísticas de fornecimento de dinheiro NXB e zNXB</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Reindexando la base de datos zerocoin...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>La reindexación zerocoin ha fallado</translation>
-    </message>
-    <message>
-        <source>Selected coins value is less than payment target</source>
-        <translation>El valor de las monedas seleccionadas es menor que el monto a pagar</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>Opciones SwiftX:</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>Esto es una versión pre-release de prueba - use bajo su propia responsabilidad - ¡No lo utilice para recompensa de participación ni aplicaciones de comercio!</translation>
-    </message>
-    <message>
-        <source> mints deleted
-</source>
-        <translation>creaciones de moneda borradas
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>creaciones de moneda actualizadas,</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>transacciones sin confirmar eliminadas
-</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar toda la funcionalidad especifica NXBoost (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Activar swifttx, mostrar confirmaciones para transacciones bloqueadas (bool, predeterminado: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>¡La transacción fue rechazada! Esto puede ocurrir si alguna de sus monedas ya se gastó con anterioridad, por ejemplo, si estuvo usted usando una copia de su monedero wallet.dat y gastó allí monedas pero no las marcó como gastadas aquí.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Error: ¡Esta transacción requiere una tasa de al menos %s debido a la cantidad enviada, su complejidad, o el uso de fondos recibidos recientemente!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Error: Se ha especificado un argumento no soportado -checklevel. El Checklevel debe ser siempre 4. </translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Ejecute el comando cuando el mejor bloque cambie y su tamaño haya terminado (%s en cmd se reemplaza por el hash del bloque, %d con el tamaño de bloque)</translation>
-    </message>
-    <message>
-        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>No se puede encontrar el conjunto de monedas necesarias entre las monedas disponibles con menos de maxNumber para poder gastarlas</translation>
-    </message>
-    <message>
-        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>En casos excepcionales, un envío con más de 7 monedas excede el tamaño máximo de transacción permitidas, intente gastar 6 monedas o menos.</translation>
-    </message>
-    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Denominación preferida para acuñado automatico de Zerocoin (1/5/10/50/100/500/1000/5000), 0 para ninguna preferencia. predeterminado: %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Especifique la ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad zNXB automática. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad. Si también se establece backuppath, se realizarán 4 copias de seguridad</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Especifique una ruta de copia de seguridad personalizada para agregar una copia de cualquier copia de seguridad de monedero. Si se establece como directorio, cada copia de seguridad genera un archivo con marcas de tiempo. Si se establece como archivo, se reescribirá en ese archivo cada copia de seguridad generada.</translation>
-    </message>
-    <message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftX requiere entradas con al menos 6 confirmaciones, es posible que deba esperar unos minutos e intente de nuevo.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt;puede ser: </translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Intentar forzar la recuperación de la cadena de bloques corrupta</translation>
-    </message>
-    <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: El testigo del acumulador no verifica</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Incluir los cálculos de recompensa por participación en el fichero debug.log.</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Incluir mensajes explícitos de recompensa por participación en el fichero debug.log.</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Activar inclusión del hash del bloque en &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Activar inclusión del hash de la transacción en &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Activar inclusión del bloque en bruto en &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Activar inclusión de la transacción en bruto en &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Activar funcionalidad de recompensa por participación (0-1, por defecto: %u)</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Error: Un error interno fatal a ocurrido, ver debug.log para mas detalles</translation>
-    </message>
-    <message>
-        <source>Error: No valid utxo!</source>
-        <translation>Error: ¡utxo no válido!</translation>
-    </message>
-    <message>
-        <source>Failed to create mint</source>
-        <translation>Error al acuñar</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>Error al deserializar</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Error al encontrar Zerocoins en wallet.dat</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Error al seleccionar una zerocoin</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Error al borrar zerocoinDB</translation>
-    </message>
-    <message>
-        <source>Failed to write coin serial number into wallet</source>
-        <translation>Error al escribir el número de serie de la moneda en el monedero</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -2768,8 +2734,8 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Contraseña para conexiones JSON-RPC</translation>
     </message>
     <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid(): Inválido -dirección proxy o nombre de host '%s'</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Porcentaje de Zerocoin creadas automáticamente (10-100, por defecto: %u)</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
@@ -2804,8 +2770,20 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Recibir y mostrar alertas de red P2P (predeterminado: %u)</translation>
     </message>
     <message>
+        <source>Reindex the NXB and zNXB money supply statistics</source>
+        <translation>Reindexar as estatísticas de fornecimento de dinheiro NXB e zNXB</translation>
+    </message>
+    <message>
         <source>Reindex the accumulator database</source>
         <translation>Reindexar la base de datos del acumulador</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Reindexando la base de datos zerocoin...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>La reindexación zerocoin ha fallado</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -2838,6 +2816,10 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Ejecutar en segundo plano como demonio y aceptar comandos</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>El valor de las monedas seleccionadas es menor que el monto a pagar</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
@@ -2964,6 +2946,10 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Enviado a masternode, quedando en espera %s</translation>
     </message>
     <message>
+        <source>SwiftX options:</source>
+        <translation>Opciones SwiftX:</translation>
+    </message>
+    <message>
         <source>Synchronization failed</source>
         <translation>Falló la sincronización</translation>
     </message>
@@ -2998,14 +2984,6 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>The coin spend has been used</source>
         <translation>El gasto de moneda se ha usado</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>La nueva transacción de gasto de moneda no se verificó</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>La moneda acuñada seleccionada es una moneda no válida</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
@@ -3084,10 +3062,6 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Transmitiendo la transacción final.</translation>
     </message>
     <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Intenta gastar con un nivel de seguridad más alto para incluir más monedas</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Tentando gastar um número de série já gasto, tente novamente.</translation>
     </message>
@@ -3156,10 +3130,6 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>Verificando el monedero...</translation>
     </message>
     <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>La versión 1 zNXB requiere un nivel de seguridad de 100 para gastar exitosamente.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>El monedero %s esta ubicada fuera del directorio de datos %s</translation>
     </message>
@@ -3226,6 +3196,10 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
     <message>
         <source>Zerocoin options:</source>
         <translation>Opciones Zerocoin:</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Inválido -dirección proxy o nombre de host '%s'</translation>
     </message>
     <message>
         <source>on startup</source>
@@ -3413,16 +3387,6 @@ Por favor, tenga paciencia después de hacer clic en importar.</translation>
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>El idioma de interface de usuario puede seleccionarse aquí. Este ajuste tomará efecto después de reiniciar nxboost.</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapear un puerto utilizando &amp;UPnP</translation>
     </message>
@@ -3501,6 +3465,16 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>&amp;Idioma de la interface de usuario:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>El idioma de interface de usuario puede seleccionarse aquí. Este ajuste tomará efecto después de reiniciar nxboost.</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3965,18 +3939,6 @@ zNXB son maduros cuando tienen más de 20 confirmaciones Y más de 2 mints de la
         <translation>0 zNXB</translation>
     </message>
     <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Nivel de Seguridad para Transacciones Zerocoin. Cuanto más mejor, pero necesitará más tiempo y recursos.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Nivel de Seguridad:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Nivel de Seguridad 1 - 100 (por defecto: 42)</translation>
-    </message>
-    <message>
         <source>Pay &amp;To:</source>
         <translation>Pagar &amp;A:</translation>
     </message>
@@ -4010,7 +3972,7 @@ zNXB son maduros cuando tienen más de 20 confirmaciones Y más de 2 mints de la
     </message>
     <message>
         <source>A&amp;mount:</source>
-        <translation>C&amp;antidad:</translation>
+        <translation>Cantidad:</translation>
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
@@ -4197,7 +4159,7 @@ Para cambiar el porcentaje (no se requiere reiniciar):
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Octetos:</translation>
+        <translation>Bytes:</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
@@ -4252,14 +4214,6 @@ Para cambiar el porcentaje (no se requiere reiniciar):
 Please be patient...</source>
         <translation>Ejecutando ResetMintZerocoin: reescaneando el blockchain entero, esto necesitará hasta 30 minutos dependiendo de su hardware.
 Por favor espere...</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Gastando Zerocoin.
-Esto es computacionalmente intensivo, puede necesitar varios minutos dependiendo del Nivel de Seguridad elegido y el hardware de su máquina.
-Por favor tenga paciencia...</translation>
     </message>
     <message>
         <source>) needed.
@@ -4432,20 +4386,8 @@ Máximo permitido:</translation>
         <translation>a una dirección local recién generada (no utilizada y, por lo tanto, anónima)&lt;br /&gt;</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>con Nivel de Seguridad</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>Confirmar enviar monedas</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>La versión 1 zNXB requiere un nivel de seguridad de 100 para gastar exitosamente.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zNXB</source>
-        <translation>Error al enviar zNXB</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -4464,11 +4406,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>Gastar Zerocoin falló con estado =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of NXB to convert to zNXB</comment>
-        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -4553,7 +4490,11 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -4865,7 +4806,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Welcome to the NXBoost RPC console.</source>
-        <translation>Bienvenido a la consola RPC de nxboost.</translation>
+        <translation>Bienvenido a la consola RPC de NXBoost.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -4914,10 +4855,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Confirm resync Blockchain</source>
         <translation>Confirmar resincronización del Blockchain</translation>
-    </message>
-    <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Use las teclas arriba y abajo para navegar por la historia, y &lt;b&gt;Ctrl-L&lt;/b&gt; para limpiar la pantalla.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -4991,8 +4928,12 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Una etiqueta opcional a asociar con la nueva dirección de recepción.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Cantidad:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red nxboost.</translation>
+        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. Nota: El mensaje no se envía junto al pago por la red NXBoost.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
@@ -5000,7 +4941,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the NXBoost network.</source>
-        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red nxboost.</translation>
+        <translation>Un mensaje opcional a adjuntar a la solicitud de pago, que será mostrado cuando se abra la solicitud. &lt;br&gt;Nota: El mensaje no se envía junto al pago por la red NXBoost.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -5013,10 +4954,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Una cantidad opcional a solicitar. Deje esto vacío o en cero para no pedir una cantidad específica.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Cantidad:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -5061,6 +4998,10 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>Copy amount</source>
         <translation>Copiar cantidad</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copiar dirección</translation>
     </message>
 </context>
 <context>
@@ -5133,6 +5074,10 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
         <translation>Mensaje</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Dirección</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Cantidad</translation>
     </message>
@@ -5177,7 +5122,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Cantidad:</translation>
+        <translation>Suma:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -5266,6 +5211,10 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(La comisión automática no se ha inicializado todavía. Esto normalmente necesita unos cuantos bloques...)</translation>
+    </message>
+    <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -5496,7 +5445,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -5504,7 +5453,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Alt+P</source>
-        <translation>Alt + P</translation>
+        <translation>Alt+P</translation>
     </message>
     <message>
         <source>Remove this entry</source>
@@ -5586,7 +5535,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Alt+A</source>
-        <translation>Alt + A</translation>
+        <translation>Alt+A</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -5594,7 +5543,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Alt+P</source>
-        <translation>Alt + P</translation>
+        <translation>Alt+P</translation>
     </message>
     <message>
         <source>Enter the message you want to sign here</source>
@@ -5610,7 +5559,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección nxboost</translation>
+        <translation>Firme el mensaje para demostrar que eres el propietario de esta dirección NXBoost</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>
@@ -5714,10 +5663,6 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     <message>
         <source>The Bitcoin Core developers</source>
         <translation>Los desarrolladores de Bitcoin Core</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>Los desarrolladores de Dash Core</translation>
     </message>
     <message>
         <source>The NXBoost Core developers</source>
@@ -6033,7 +5978,7 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
     </message>
     <message>
         <source>Received NXB from zNXB</source>
-        <translation>NXB recibidos desde zNXB </translation>
+        <translation>NXB recibidos desde zNXB</translation>
     </message>
     <message>
         <source>Minted Change as zNXB from zNXB Spend</source>
@@ -6333,29 +6278,5 @@ O mint las denominaciones más altas (por lo tanto, se necesitan menos datos) o 
 </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>Select zNXB to Spend</source>
-        <translation>Selecciona zNXB para Gastar</translation>
-    </message>
-    <message>
-        <source>Quantity</source>
-        <translation>Cantidad</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Select/Deselect All</source>
-        <translation>Seleccionar/Deseleccionar Todos</translation>
-    </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Es Gastable</translation>
-    </message>
-</context>
+    </context>
 </TS>

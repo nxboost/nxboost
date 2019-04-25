@@ -421,6 +421,10 @@
         <translation>&amp;Možnosti...</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Upravit možnosti konfigurace pro nxboost</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Zobrazit / Schovat</translation>
     </message>
@@ -569,6 +573,10 @@
         <translation>Otevřít &amp;URI...</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Otevřít nxboost: URI nebo platební žádost</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>Možnosti příkazové řádky</translation>
     </message>
@@ -633,10 +641,6 @@
         <translation>Zobraz informace o NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Upravit možnosti konfigurace pro nxboost</translation>
-    </message>
-    <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
         <translation>Podepsat zprávy Vaší NXBoost adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
@@ -671,10 +675,6 @@
     <message>
         <source>Open Masternode configuration file</source>
         <translation>Otevřít Masternodový konfigurační soubor</translation>
-    </message>
-    <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Otevřít nxboost: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -792,7 +792,7 @@ MultiSend: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Peněženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálně je &lt;b&gt;zamčená&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1392,42 +1392,8 @@ MultiSend: %1</translation>
         <translation>(bez popisku)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Zadaná adresa:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>není validní.
-Prosím zkontrolujte adresu a zkuste to znovu.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>Celkovvá hodnota Vašeho MultiSend Vekktoru je přes 100% vaší odměny ze vsázení
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Prosím, zadejte 1-100 procent.</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vektor
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Odstraněno</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Nemůžu najít adresu
-</translation>
     </message>
 </context>
 <context>
@@ -1899,6 +1865,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -2073,12 +2043,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Popis</translation>
+        <source>A&amp;mount:</source>
+        <translation>H&amp;odnota:</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Hodnota</translation>
+        <source>&amp;Label:</source>
+        <translation>&amp;Popis</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -2107,6 +2077,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Copy amount</source>
         <translation>Kopírovat hodnotu</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopírovat adresu</translation>
     </message>
 </context>
 <context>
@@ -2161,6 +2135,10 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     <message>
         <source>Message</source>
         <translation>Zpráva</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -2523,9 +2501,5 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
     </context>
 </TS>

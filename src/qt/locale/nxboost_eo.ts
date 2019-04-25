@@ -39,7 +39,7 @@
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>Fermi</translation>
+        <translation>F&amp;ermi</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
@@ -457,6 +457,10 @@
         <translation>&amp;Ebloj</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modifi agordajn opciojn por nxboost</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Montri/Kaŝi</translation>
     </message>
@@ -605,6 +609,10 @@
         <translation>Malfermi &amp;URI</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Malfermi unu nxboost: URI aŭ pago peto</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komando-linio opcioj</translation>
     </message>
@@ -677,10 +685,6 @@
         <translation>Montri informon pri NXBoost Kerno</translation>
     </message>
     <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Modifi agordajn opciojn por nxboost</translation>
-    </message>
-    <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
         <translation>Subskribu mesaĝo per via NXBoost adreso por pruvi vi posedas ĝin</translation>
     </message>
@@ -715,10 +719,6 @@
     <message>
         <source>Open Masternode configuration file</source>
         <translation>Malfermi mastro-nodo agord-dosieron</translation>
-    </message>
-    <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Malfermi unu nxboost: URI aŭ pago peto</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -864,7 +864,7 @@ Muktisendi: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Monujo estas &lt;b&gt;ĉifrita&lt;/b&gt; kaj nuntempe &lt;b&gt;ŝlosita&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1460,42 +1460,8 @@ Muktisendi: %1</translation>
         <translation>(neniu etikedo)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>La enirita adreson:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>estas nevalida
-Bonvolu kontroku la adreson kaj riprovu</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>Totala sumo de via multisendo vektoro estas super 100% de via stako rekompenco
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Bonvolu eniru 1 - 100 por porcento.</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Multisendo vektoro
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Forigita</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Ne eblis loki adreson
-</translation>
     </message>
 </context>
 <context>
@@ -1550,7 +1516,7 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Kvanto</translation>
+        <translation>Kvanto:</translation>
     </message>
     <message>
         <source>Add an input to fund the outputs</source>
@@ -1789,16 +1755,6 @@ Bonvolu kontroku la adreson kaj riprovu</translation>
         <translation>&amp;Reto</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci nxboost.</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>Ĉu mankas lingvon aŭ nekompleta tradukado? Helpu la  tradukcio ĉi tie:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
         <source>Connect to the NXBoost network through a SOCKS5 proxy.</source>
         <translation>Konekti al la NXBoost reto per SOCKS5 prokurilo.</translation>
     </message>
@@ -1817,6 +1773,16 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Uzanta interfaca &amp;lingvo:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>La uzanta interfaco lingvo povas esti agordi ĉi tie. Tio agordo efektivigos post rekomenci nxboost.</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>Ĉu mankas lingvon aŭ nekompleta tradukado? Helpu la  tradukcio ĉi tie:
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1970,7 +1936,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Kvanto</translation>
+        <translation>Kvanto:</translation>
     </message>
     <message>
         <source>zNXB Control</source>
@@ -2006,7 +1972,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Elektu antaŭan uzatan adreson</translation>
+        <translation>Elektu antaŭe uzatan adreson</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2032,7 +1998,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prioritato</translation>
+        <translation>Prioritato:</translation>
     </message>
     <message>
         <source>TextLabel</source>
@@ -2044,7 +2010,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>no</source>
-        <translation>no</translation>
+        <translation>ne</translation>
     </message>
     <message>
         <source>Bytes:</source>
@@ -2060,7 +2026,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Change:</source>
-        <translation>Ŝanĝo:</translation>
+        <translation>Ŝanĝu:</translation>
     </message>
     <message>
         <source>Copy quantity</source>
@@ -2120,6 +2086,10 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <message>
         <source>UNKNOWN</source>
         <translation>NEKONATA</translation>
+    </message>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost kerno</translation>
     </message>
     </context>
 <context>
@@ -2200,10 +2170,6 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>1&amp;semajno</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Uzi la sagojn supran kaj malsupran por esplori la historion, kaj &lt;b&gt;Ctr-L&lt;/b&gt; por malplenigi la ekraron.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Tajpu &lt;b&gt;helpo&lt;/b&gt; por superrigardi la disponeblajn komandojn.</translation>
     </message>
@@ -2266,6 +2232,10 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <source>Copy amount</source>
         <translation>Kopii kvanto</translation>
     </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopi adreson</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
@@ -2317,6 +2287,10 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
         <translation>Mesaĝo</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Adreso</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Sumo:</translation>
     </message>
@@ -2349,11 +2323,11 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Kvanto</translation>
+        <translation>Kvanto:</translation>
     </message>
     <message>
         <source>Priority:</source>
-        <translation>Prioritato</translation>
+        <translation>Prioritato:</translation>
     </message>
     <message>
         <source>medium</source>
@@ -2365,7 +2339,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>no</source>
-        <translation>no</translation>
+        <translation>ne</translation>
     </message>
     <message>
         <source>After Fee:</source>
@@ -2373,7 +2347,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Change:</source>
-        <translation>Ŝanĝo:</translation>
+        <translation>Ŝanĝu:</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
@@ -2437,7 +2411,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Konfirmu sendi monon</translation>
+        <translation>Konfirmu sendi monojn</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2460,7 +2434,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>Elektu antaŭan uzatan adreson</translation>
+        <translation>Elektu antaŭe uzatan adreson</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2498,7 +2472,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>Choose previously used address</source>
-        <translation>Elektu antaŭan uzatan adreson</translation>
+        <translation>Elektu antaŭe uzatan adreson</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2530,7 +2504,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>La enirita adreso ne rilatas al ŝlosilo</translation>
+        <translation>La enirita adreso ne rilatas al ŝlosilo.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -2550,10 +2524,6 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     <message>
         <source>The Bitcoin Core developers</source>
         <translation>La Bitcoin kerno programistoj</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>La Dash kerno programistoj</translation>
     </message>
     <message>
         <source>The NXBoost Core developers</source>
@@ -2733,17 +2703,5 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Estas elspezebla</translation>
-    </message>
-</context>
+    </context>
 </TS>

@@ -15,7 +15,7 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>현재 선택된 주소를 복사합니다.</translation>
+        <translation>현재 선택된 주소를 복사합니다</translation>
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>NXBoost will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NXBs from being stolen by malware infecting your computer.</source>
-        <translation>nxboost는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 NXBs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <translation>NXBoost는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 NXBs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -457,6 +457,10 @@
         <translation>&amp;옵션...</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>nxboost에 대한 구성 옵션 수정</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;보이기 / 숨기기</translation>
     </message>
@@ -605,6 +609,10 @@
         <translation>&amp;URI 열기...</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>nxboost: URI 또는 ​​결제 요청 열기</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;명령행 옵션</translation>
     </message>
@@ -677,10 +685,6 @@
         <translation>NXBoost Core에 대한 정보 표시</translation>
     </message>
     <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>nxboost에 대한 구성 옵션 수정</translation>
-    </message>
-    <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
         <translation>NXBoost 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
     </message>
@@ -715,10 +719,6 @@
     <message>
         <source>Open Masternode configuration file</source>
         <translation>마스터노드 구성 파일 열기</translation>
-    </message>
-    <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>nxboost: URI 또는 ​​결제 요청 열기</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -864,7 +864,7 @@ Address: %4
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>지갑은 &lt;b&gt;암호화&lt;/ b&gt;되어 있으며 현재 &lt;b&gt;잠겨 있습니다&lt;/ b&gt;.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1542,48 +1542,8 @@ MultiSend will not be activated unless you have clicked Activate</source>
         <translation>(라벨 없음)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>입력된 주소:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>올바르지 않습니다.
-주소를 확인하고 다시 시도해주세요.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>다중전송 벡터의 총 금액이 스테이크 보상 금액의 100 % 이상입니다
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>퍼센트로 1 - 100을 입력하십시오.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>MultiSend를 메모리에 저장했지만 데이터베이스에 대한 속성 저장에 실패했습니다.
-</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>다중전송 벡터
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>제거됨</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>주소를 찾을 수 없습니다
-</translation>
     </message>
 </context>
 <context>
@@ -1760,6 +1720,22 @@ Please be patient after clicking import.</source>
 <context>
     <name>NXBoost-core</name>
     <message>
+        <source> mints deleted
+</source>
+        <translation>생성 삭제
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation>생성 업데이드</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>미확인된 거래 삭제됨
+</translation>
+    </message>
+    <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = tx 메타 데이터 유지 예 : 계정 소유자 및 지불 요청 정보, 2 = tx 메타 데이터 삭제)</translation>
     </message>
@@ -1808,8 +1784,16 @@ Please be patient after clicking import.</source>
         <translation>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</translation>
     </message>
     <message>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>nxboost의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+    </message>
+    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
@@ -1840,6 +1824,18 @@ Please be patient after clicking import.</source>
         <translation>Error: 트랜젝션의 크기가 혀용된 크기를 넘었습니다.</translation>
     </message>
     <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>에러 : 거래가 거부되었습니다. 예를 들어 다른 사본 wallet.dat에서 코인을 사용했다면 2중 사용으로 인식될수 있습니다. 혹은, 일부가 이미 소비 된 경우에 이런 일이 발생할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>에러 :이 거래에는 전송량, 복잡성 또는 최근에 받은 자금의 사용등으로 인해 적어도 %s의 거래 수수료가 필요합니다!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>에러 : 지원하지않는 argument -checklevel 발견된.  Checklevel는 레벨 4이어야 합니다.</translation>
+    </message>
+    <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>오류 : 지원하지 않는 인수 -socks가 발견되었습니다. SOCKS 버전 설정은 더 이상 가능하지 않으며 SOCKS5 프록시만 지원합니다.</translation>
     </message>
@@ -1854,6 +1850,14 @@ Please be patient after clicking import.</source>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Failed to find coin set amongst held coins with less than maxNumber of Spends</translation>
     </message>
     <message>
         <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
@@ -1874,6 +1878,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>paytxfee가 설정되어 있지 않는 경우 충분한 수수료를 넣어야만 평균이내 n블록들을 확인하고 트랜잭션를 시작합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -1920,6 +1928,10 @@ Please be patient after clicking import.</source>
         <translation>디버깅 정보 출력 (기본값: %u, &lt;category&gt; 공급은 선택입니다)</translation>
     </message>
     <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
+    </message>
+    <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
         <translation>DNS 검색을 통한 피어 주소 쿼리, 주소가 부족할 경우 (-connect 아닌 이상 기본값:1)</translation>
     </message>
@@ -1952,8 +1964,24 @@ Please be patient after clicking import.</source>
         <translation>성공적으로 잠긴 트랜잭션에 대한 확인을 N으로 나타냅니다 (0-9999, 기본값: %u)</translation>
     </message>
     <message>
+        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</translation>
+    </message>
+    <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>bloom필터를 사용한 블록 및 트랜잭션 필터링 지원 (기본값 : %u)</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -2020,10 +2048,6 @@ Please be patient after clicking import.</source>
         <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
     </message>
     <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 은 메인넷에서만 사용될 수 있습니다)</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(기본값: %s)</translation>
     </message>
@@ -2034,6 +2058,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>(must be 49108 for mainnet)</source>
         <translation>(메인넷 일경우 49108)</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; 가능함 :</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -2062,6 +2090,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>피어 주소에게 DNS 조회를 통한 지속적인 정보 수신 요청을 합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>블록체인 손상 복구 시도</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -2112,6 +2144,10 @@ Please be patient after clicking import.</source>
         <translation>기본 주소를 사용할 수 없습니다.</translation>
     </message>
     <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: 누산기가 제대로 작동하지 않았습니다.</translation>
+    </message>
+    <message>
         <source>Collateral not valid.</source>
         <translation>Collateral이 유효하지 않습니다.</translation>
     </message>
@@ -2134,14 +2170,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
         <translation>Copyright (C) 2009-%i 비트코인 Core 개발자들</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Copyright (C) 2015-%i The NXBoost Core 개발자</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -2172,6 +2200,14 @@ Please be patient after clicking import.</source>
         <translation>자신의 IP 주소를 찾습니다 (기본값: 1 수신중이거나 -외부아이피가 없을 경우)</translation>
     </message>
     <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>debug.log에 stake 수정 계산 기록</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>debug.log 에 코인 stake 메시지를 자세히 기록</translation>
+    </message>
+    <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
         <translation>지갑 RPC 호출을 비활성화하고 지갑을 불러오지 마시오</translation>
     </message>
@@ -2188,12 +2224,32 @@ Please be patient after clicking import.</source>
         <translation>자동 제로코인 생성 (0-1, 기본값: %u)</translation>
     </message>
     <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 해시 블록 게시 가능</translation>
+    </message>
+    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (SwiftTX로 설정된)</translation>
     </message>
     <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 해시 불록 게시 가능</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에서 Raw 블록 게시 가능</translation>
+    </message>
+    <message>
         <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (SwiftTX를 통해 잠겨진)</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 Raw 트랜잭션 게시 지원</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>스테이킹 기능 사용 (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -2252,12 +2308,20 @@ Please be patient after clicking import.</source>
         <translation>오류 : 내부에서 치명적인 오류가 발생했습니다. 자세한 내용은 debug.log를 참조하십시오</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Error: 치명적 에러 발생 log 파일을 확인해주세요.</translation>
+    </message>
+    <message>
         <source>Error: Can't select current denominated inputs</source>
         <translation>오류 : 현재 표시된 입력을 선택할 수 없습니다</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
         <translation>오류 : 디스크 공간이 부족합니다!</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Error: 유효하지 않는 utxo!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
@@ -2276,12 +2340,32 @@ Please be patient after clicking import.</source>
         <translation>축 압기 체크 포인트를 계산하지 못했습니다.</translation>
     </message>
     <message>
+        <source>Failed to create mint</source>
+        <translation>생성 실패</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>wallet.dat 에서 제로코인을 인식 실패</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>어떠한 포트에서도 수신하는 것에 실패했습니다. 원하신다면 -listen=0 을 사용하십시오.</translation>
     </message>
     <message>
         <source>Failed to read block</source>
         <translation>블록을 받아오는데 실패했습니다.</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>제로코인 선택 실패</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>제로코인 DB 삭제 실패</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>지갑에 코인 시리얼 번호 작성 실패</translation>
     </message>
     <message>
         <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
@@ -2410,170 +2494,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Invalid script detected.</source>
         <translation>유효하지 않은 스크립트가 발견되었습니다.</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>자동생성 zNXB 비율  (1-100, default: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the NXB and zNXB money supply statistics</source>
-        <translation>NXB 및 zNXB 공급량 다시 색인</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>제로코인 데이타베이스 재색인</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>제로코인 재 인덱싱 실패</translation>
-    </message>
-    <message>
-        <source>Selected coins value is less than payment target</source>
-        <translation>지불대상보다 적은 코인 선택됨</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftX 옵션:</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
-    </message>
-    <message>
-        <source> mints deleted
-</source>
-        <translation>생성 삭제
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>생성 업데이드</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>미확인된 거래 삭제됨
-</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>nxboost의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>에러 : 거래가 거부되었습니다. 예를 들어 다른 사본 wallet.dat에서 코인을 사용했다면 2중 사용으로 인식될수 있습니다. 혹은, 일부가 이미 소비 된 경우에 이런 일이 발생할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>에러 :이 거래에는 전송량, 복잡성 또는 최근에 받은 자금의 사용등으로 인해 적어도 %s의 거래 수수료가 필요합니다!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>에러 : 지원하지않는 argument -checklevel 발견된.  Checklevel는 레벨 4이어야 합니다.</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</translation>
-    </message>
-    <message>
-        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Failed to find coin set amongst held coins with less than maxNumber of Spends</translation>
-    </message>
-    <message>
-        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</translation>
-    </message>
-    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</translation>
-    </message>
-    <message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; 가능함 :</translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>블록체인 손상 복구 시도</translation>
-    </message>
-    <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: 누산기가 제대로 작동하지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>debug.log에 stake 수정 계산 기록</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>debug.log 에 코인 stake 메시지를 자세히 기록</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 해시 블록 게시 가능</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 해시 불록 게시 가능</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에서 Raw 블록 게시 가능</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 Raw 트랜잭션 게시 지원</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>스테이킹 기능 사용 (0-1, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Error: 치명적 에러 발생 log 파일을 확인해주세요.</translation>
-    </message>
-    <message>
-        <source>Error: No valid utxo!</source>
-        <translation>Error: 유효하지 않는 utxo!</translation>
-    </message>
-    <message>
-        <source>Failed to create mint</source>
-        <translation>생성 실패</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>디시리얼 실패</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>wallet.dat 에서 제로코인을 인식 실패</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>제로코인 선택 실패</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>제로코인 DB 삭제 실패</translation>
-    </message>
-    <message>
-        <source>Failed to write coin serial number into wallet</source>
-        <translation>지갑에 코인 시리얼 번호 작성 실패</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -2768,8 +2688,8 @@ Please be patient after clicking import.</source>
         <translation>JSON-RPC 연결 비밀번호</translation>
     </message>
     <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>자동생성 zNXB 비율  (1-100, default: %u)</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
@@ -2804,8 +2724,20 @@ Please be patient after clicking import.</source>
         <translation>P2P 네크워크로 부터 경고를 받고 보여줍니다 (기본값: %u)</translation>
     </message>
     <message>
+        <source>Reindex the NXB and zNXB money supply statistics</source>
+        <translation>NXB 및 zNXB 공급량 다시 색인</translation>
+    </message>
+    <message>
         <source>Reindex the accumulator database</source>
         <translation>누적 기 데이터베이스 다시 색인화</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>제로코인 데이타베이스 재색인</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>제로코인 재 인덱싱 실패</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -2838,6 +2770,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>백그라운드에서 상주하며 실행하고 명령을 받습니다</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>지불대상보다 적은 코인 선택됨</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
@@ -2964,6 +2900,10 @@ Please be patient after clicking import.</source>
         <translation>마스터노드에 제출했습니다, 대기열을 기다리는 중 %s</translation>
     </message>
     <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX 옵션:</translation>
+    </message>
+    <message>
         <source>Synchronization failed</source>
         <translation>동기화 실패</translation>
     </message>
@@ -2998,14 +2938,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>The coin spend has been used</source>
         <translation>전송이 이미 되었습니다.</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>신규로 전송된 거래가 확인되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>선택한 생성 코인은 유효하지 않은 동전입니다.</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
@@ -3084,10 +3016,6 @@ Please be patient after clicking import.</source>
         <translation>최종 트랜잭션를 전송 중입니다.</translation>
     </message>
     <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>높은 보안 수준으로 더 많은 코인을 전송해주세요.</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>이미 전송된 리얼 번호를 보내려고 했습니다. 다시 시도하십시오.</translation>
     </message>
@@ -3156,10 +3084,6 @@ Please be patient after clicking import.</source>
         <translation>지갑 인증 중...</translation>
     </message>
     <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>zNXB 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>지갑 %s 가 데이터 디렉토리 외부에 존재합니다 %s</translation>
     </message>
@@ -3226,6 +3150,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>Zerocoin options:</source>
         <translation>제로코인 옵션:</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
     </message>
     <message>
         <source>on startup</source>
@@ -3382,7 +3310,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <source>Automatically start NXBoost after logging in to the system.</source>
-        <translation>시스템 로그인 후 nxboost을 자동으로 시작합니다.</translation>
+        <translation>시스템 로그인 후 NXBoost을 자동으로 시작합니다.</translation>
     </message>
     <message>
         <source>&amp;Start NXBoost on system login</source>
@@ -3411,16 +3339,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;네트워크</translation>
-    </message>
-    <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 nxboost을 다시 시작한 후에 적용됩니다.</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>지원 언어가 없거나 번역이 불완전한가요? 번역을 도와주세요 :
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -3501,6 +3419,16 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>사용자 인터페이스 &amp;언어:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 nxboost을 다시 시작한 후에 적용됩니다.</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>지원 언어가 없거나 번역이 불완전한가요? 번역을 도와주세요 :
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3740,7 +3668,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <source>AutoMint is currently disabled.
 To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.conf</source>
         <translation>자동 저장 기능이 현재 사용 중지되었습니다 .
-자동 변환을 사용하려면 nxboost.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
+자동 변환을 사용하려면 NXBotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
     </message>
 </context>
 <context>
@@ -3767,7 +3695,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     </message>
     <message>
         <source>Cannot start nxboost: click-to-pay handler</source>
-        <translation>nxboost을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <translation>NXBoost을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid NXBoost address or malformed URI parameters.</source>
@@ -3962,18 +3890,6 @@ zNXB는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 �
     <message>
         <source>0 zNXB</source>
         <translation>0 zNXB</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>제로코인 전송 시큐리티 레벨.  높을수록 좋지만, 시간과 많은 자원이 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>시큐리티 레벨:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>시큐리티 레벨 1 - 100 (기본값: 42)</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -4197,7 +4113,7 @@ To change the percentage (no restart required):
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>바이트:</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
@@ -4205,11 +4121,11 @@ To change the percentage (no restart required):
     </message>
     <message>
         <source>Coins automatically selected</source>
-        <translation>코인 자동으로 선택됨</translation>
+        <translation>자동으로 선택됩니다.</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>중간</translation>
+        <translation>5 중간</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -4252,14 +4168,6 @@ To change the percentage (no restart required):
 Please be patient...</source>
         <translation>제로코인 생성 초기화 진행중... : 전체 블록체인을 다시 검색합니다. 하드웨어에 따라 최대 30분이 걸릴수 있습니다.
 기다려주세요...</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>제로코인 전송중입니다.
-시큐리티 레벨과 여러분의 하드웨어에 따라 수 분이 걸립니다.
-조금만 기다려주세요...</translation>
     </message>
     <message>
         <source>) needed.
@@ -4432,20 +4340,8 @@ Maximum allowed: </source>
         <translation>새로 생성된 개인 지갑 주소(미사용된 익명의) &lt;br /&gt; 로</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>시큐리티 레벨</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>코인 전송 확인</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>zNXB 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zNXB</source>
-        <translation>zNXB 전송 실패</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -4463,11 +4359,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>제로코인 송금 실패 상태 =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of NXB to convert to zNXB</comment>
-        <translation><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -4552,7 +4443,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -4916,10 +4811,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>블록체인 동기화를 다시 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>위 아래 화살표를 사용하여 기록을 탐색하고 &lt;b&gt;Ctrl-L&lt;/b&gt; 화면을 지웁니다.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>사용가능한 명령을 보려면 &lt;b&gt;help&lt;/b&gt;를 입력하십시오.</translation>
     </message>
@@ -4991,6 +4882,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>새로운 수신 주소와 연결할 선택적 라벨.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>금&amp;액:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
         <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다. 참고: NXBoost 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
     </message>
@@ -5013,10 +4908,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>요청할 선택적 금액. 이 금액을 비워두거나 특정 금액을 요청하지 않으려면 0으로 두세요.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;금액:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -5062,6 +4953,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>Copy amount</source>
         <translation>금액 복사</translation>
     </message>
+    <message>
+        <source>Copy address</source>
+        <translation>주소 복사</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
@@ -5095,7 +4990,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Address</source>
-        <translation>마스터노드 주소</translation>
+        <translation>주소</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -5131,6 +5026,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Message</source>
         <translation>메세지</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -5185,7 +5084,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>medium</source>
-        <translation>중간</translation>
+        <translation>5 중간</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -5266,6 +5165,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(스마트 수수료가 아직 초기화 되지 않았습니다. 일반적으로 몇 블록이 지나야됩니다...)</translation>
+    </message>
+    <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -5716,10 +5619,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>비트코인 Core 개발자</translation>
     </message>
     <message>
-        <source>The Dash Core developers</source>
-        <translation>Dash Core 개발자</translation>
-    </message>
-    <message>
         <source>The NXBoost Core developers</source>
         <translation>NXBoost Core 개발자</translation>
     </message>
@@ -6141,7 +6040,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Received with</source>
-        <translation>수신 됨</translation>
+        <translation>수신됨</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -6221,7 +6120,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>확정</translation>
+        <translation>확정됨</translation>
     </message>
     <message>
         <source>Watch-only</source>
@@ -6334,29 +6233,5 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>Select zNXB to Spend</source>
-        <translation>사용할 zNXB 선택</translation>
-    </message>
-    <message>
-        <source>Quantity</source>
-        <translation>수량</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Select/Deselect All</source>
-        <translation>전체 선택 / 해제</translation>
-    </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>전송가능한 코인수</translation>
-    </message>
-</context>
+    </context>
 </TS>

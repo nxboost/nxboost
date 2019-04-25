@@ -11,7 +11,7 @@
     </message>
     <message>
         <source>&amp;New</source>
-        <translation>Novo</translation>
+        <translation>&amp;Novo</translation>
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
@@ -251,7 +251,7 @@
     </message>
     <message>
         <source>Address:</source>
-        <translation>Adresa:</translation>
+        <translation>Adresa: </translation>
     </message>
     <message>
         <source>Enter a NXBoost Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
@@ -457,6 +457,10 @@
         <translation>Mogućnosti</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Izmijenite konfiguracijske opcije za nxboost</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>Prikaži / Sakrij</translation>
     </message>
@@ -605,6 +609,10 @@
         <translation>Otvori URI</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Otvori nxboost: URI zahtjev za plačanje</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>Opcije naredbene linije</translation>
     </message>
@@ -677,10 +685,6 @@
         <translation>Prikaz informacija o NXBoost Core-u</translation>
     </message>
     <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Izmijenite konfiguracijske opcije za nxboost</translation>
-    </message>
-    <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
         <translation>Potpišite poruke s vašim NXBoost adresama kako biste dokazali da ih posjedujete</translation>
     </message>
@@ -715,10 +719,6 @@
     <message>
         <source>Open Masternode configuration file</source>
         <translation>Otvori Masternode konfiguracijsku datoteku</translation>
-    </message>
-    <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Otvori nxboost: URI zahtjev za plačanje</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -836,7 +836,7 @@ Višestruko slanje: %1</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Aktivno</translation>
+        <translation>Aktivno </translation>
     </message>
     <message>
         <source>Not Active</source>
@@ -864,7 +864,7 @@ Višestruko slanje: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Novčanik je 1. šifriran 1. i trenutno 2. zaključan 2.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1542,45 +1542,8 @@ MultiSend neće biti aktiviran dok ne kliknete Aktiviraj</translation>
         <translation>(bez oznake)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Unesena adresa:</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>je netočna.
-Provjerite adresu i pokušajte ponovo.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>Ukupna količina vašeg MultiSend vektora iznosi preko 100% vaše nagrade uloga
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Unesite 1 - 100 za postotak.</translation>
-    </message>
-    <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>Spremio je MultiSend u memoriju, ali nije spasio svojstva u bazi podataka.</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vektor
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Uklonjeno</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Nije moguće pronaći adresu</translation>
     </message>
 </context>
 <context>
@@ -1759,6 +1722,21 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
 <context>
     <name>NXBoost-core</name>
     <message>
+        <source> mints deleted
+</source>
+        <translation>mints izbrisana
+</translation>
+    </message>
+    <message>
+        <source> mints updated, </source>
+        <translation>mintova ažurirano</translation>
+    </message>
+    <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>uklonjene nepotvrđene transakcije</translation>
+    </message>
+    <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zadržite metapodatke tx, npr. Vlasnika računa i podatke o zahtjevu za plaćanje, 2 = odbaci meta podataka tx)</translation>
     </message>
@@ -1807,8 +1785,16 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Izbriši sve zerocoin utroške i minteve koji su zabilježeni na blockchain database i reindexiraj ih (0-1, default: %u)</translation>
     </message>
     <message>
+        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Onemogući sve specifične funkcije NXBoost (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
+    </message>
+    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Omogućite SwiftX, prikažite potvrde za zaključane transakcije (bool, zadano: %s)</translation>
     </message>
     <message>
         <source>Enable automatic wallet backups triggered after each zNXB minting (0-1, default: %u)</source>
@@ -1839,6 +1825,18 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Pogreška: transakcija je veća od maksimalne dozvoljene veličine transakcije!</translation>
     </message>
     <message>
+        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
+        <translation>Pogreška: transakcija je odbijena! To se može dogoditi ako su neki od novčića u vašem novčaniku već bili potrošeni, primjerice, ako ste upotrijebili kopiju wallet.data, a novčići su potrošeni u kopiji, ali nisu označeni kao ovdje potrošeni.</translation>
+    </message>
+    <message>
+        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
+        <translation>Pogreška: ova transakcija zahtijeva naknadu za transakciju od najmanje %s zbog svoje količine, složenosti ili korištenja nedavno primljenih sredstava!</translation>
+    </message>
+    <message>
+        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
+        <translation>Pogreška: pronađen je nepotpuni argument. Checklevel mora biti razina 4.</translation>
+    </message>
+    <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Pogreška: nepodržani argument - pronađeni su kanali. Postavljanje SOCKS verzije više nije moguće, samo SOCKS5 proksiji su podržani.</translation>
     </message>
@@ -1853,6 +1851,14 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Izvrši naredbu kada se promijeni najbolji blok (%s u cmd zamjenjuje se blokovskim raspršivanjem)</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Izvrši naredbu kada se promijeni najbolji blok i njezina veličina je gotova (%s u cmd zamjenjuje blok hash, %d s veličinom bloka)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Nije pronađen set novčića koji se drže s manje od maksimuma potrošnje</translation>
     </message>
     <message>
         <source>Fees (in NXB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
@@ -1873,6 +1879,10 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Ako paytxfee nije postavljen, uključite dovoljnu naknadu kako bi transakcije započele potvrdu u prosjeku unutar n blokova (zadana vrijednost: %u)</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>U rijetkim slučajevima, potrošnja s 7 kovanica premašuje našu maksimalnu dopuštenu veličinu transakcije, pokušajte ponovo pokušati potrošiti 6 ili manje kovanica</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -1919,6 +1929,10 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Izlazne informacije o pogrešci (zadano: %u, &lt;category&gt; unos je neobavezan)</translation>
     </message>
     <message>
+        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
+    </message>
+    <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
         <translation>Upit za peer adrese putem DNS traženja, ako je niska adresa (zadana: 1 ako nije povezana)</translation>
     </message>
@@ -1951,8 +1965,24 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Prikaži potvrde N za uspješno zaključanu transakciju (0-9999, zadano: %u)</translation>
     </message>
     <message>
+        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zNXB sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju sigurnosne kopije lisnice. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju.</translation>
+    </message>
+    <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Podržite filtriranje blokova i transakciju s filtrima za cvjetanje (zadano: %u)</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftX zahtijeva ulaze s najmanje 6 potvrda, možda ćete morati pričekati nekoliko minuta i pokušati ponovo.</translation>
+    </message>
+    <message>
+        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
+        <translation>Ovo je priprema za testiranje prije puštanja - upotrebljavajte na vlastiti rizik - nemojte ga koristiti za staking ili trgovinske aplikacije!</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
@@ -2019,10 +2049,6 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Morate odrediti masternodeprivkey u konfiguraciji. Za pomoć pogledajte dokumentaciju.</translation>
     </message>
     <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 se može koristiti samo na mainnetu)</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(default: %s)</translation>
     </message>
@@ -2033,6 +2059,10 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>(must be 49108 for mainnet)</source>
         <translation>(mora biti 49108 za glavnu mrežu)</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; može biti:</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -2061,6 +2091,10 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Uvijek se upita za peer adrese putem DNS pretraživanja (zadano: %u)</translation>
+    </message>
+    <message>
+        <source>Attempt to force blockchain corruption recovery</source>
+        <translation>Pokušaj prisiljavanja blokiranja korupcije na oporavak</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -2111,6 +2145,10 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Ne možete zapisati zadanu adresu</translation>
     </message>
     <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: Svjedok akumulatora ne potvrđuje</translation>
+    </message>
+    <message>
         <source>Collateral not valid.</source>
         <translation>Zalog nije valjan.</translation>
     </message>
@@ -2133,14 +2171,6 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
         <translation>Autorska prava (C) 2009-%i Bitcoin Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Autorska prava (C) 2014-%i The Dash Core Developers</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Autorska prava (C) 2015-%i The NXBoost Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -2172,6 +2202,14 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Otkrijte vlastitu IP adresu (zadano: 1 prilikom slušanja i nije za vanjski ip)</translation>
     </message>
     <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Prikažite izračune modifikatora uloga u debug.log datoteci.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Prikažite opsežne poruke za ulaganje novčića u datoteku debug.log.</translation>
+    </message>
+    <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
         <translation>Ne učitavaj novčanik i onesspobiti RPC pozive</translation>
     </message>
@@ -2188,12 +2226,32 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Omogući automatsko Zerocoin stvaranje (0-1, zadano: %u)</translation>
     </message>
     <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Omogući blokiranje zbirke oglasa u sustavu&lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Omogući objavu hash transakcije (zaključano putem usluge SwiftX) u </translation>
     </message>
     <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Omogući transakciju hash transakcije u sustavu &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Omogući objavljivanje neobrađenog bloka u &lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Omogući objavljivanje neobrađene transakcije (zaključano putem usluge SwiftX) u</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Omogući objavljivanje neobrađene transakcije u&lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable staking functionality (0-1, default: %u)</source>
+        <translation>Omogući funkcionalnost odstupanja (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -2252,12 +2310,20 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Pogreška: Došlo je do kobne interne pogreške, pogledajte detalje o debug.logu</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Pogreška: Došlo je do kobne interne pogreške, pogledajte detalje o debug.logu</translation>
+    </message>
+    <message>
         <source>Error: Can't select current denominated inputs</source>
         <translation>Pogreška: Nije moguće odabrati trenutne unose</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
         <translation>Pogreška: prostor na disku je nizak!</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Pogreška: Nema valjanog utxo!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
@@ -2276,12 +2342,32 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Nije uspjelo izračunavanje kontrolne točke akumulatora</translation>
     </message>
     <message>
+        <source>Failed to create mint</source>
+        <translation>Nije uspjelo kovanje</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Neuspjelo pronalaženje Zerocoina u wallet.dat</translation>
+    </message>
+    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Slušanje nije bilo na bilo kojem priključku. Koristite -listen = 0 ako to želite.</translation>
     </message>
     <message>
         <source>Failed to read block</source>
         <translation>Greška čitanja bloka</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Odabir Zerocoina nije uspjelo</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Neuspjelo brisanje zerocoinDB</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Nije uspio zapisi serijskog broja novčića u novčanik</translation>
     </message>
     <message>
         <source>Fee (in NXB/kB) to add to transactions you send (default: %s)</source>
@@ -2410,169 +2496,6 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>Invalid script detected.</source>
         <translation>Otkriven nevažeća skripta.</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the NXB and zNXB money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku NXB i zNXB ponude novca</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Reindeksiranje zerocoin databaze...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Reindeksiranje zerocoin neuspjelo</translation>
-    </message>
-    <message>
-        <source>Selected coins value is less than payment target</source>
-        <translation>Odabrana vrijednost novčića je manja od količine za plačanje</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftX opcije:</translation>
-    </message>
-    <message>
-        <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
-        <translation>Ovo je priprema za testiranje prije puštanja - upotrebljavajte na vlastiti rizik - nemojte ga koristiti za staking ili trgovinske aplikacije!</translation>
-    </message>
-    <message>
-        <source> mints deleted
-</source>
-        <translation>mints izbrisana
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>mintova ažurirano</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>uklonjene nepotvrđene transakcije</translation>
-    </message>
-    <message>
-        <source>Disable all NXBoost specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Onemogući sve specifične funkcije NXBoost (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, zadano: %u)</translation>
-    </message>
-    <message>
-        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>Omogućite SwiftX, prikažite potvrde za zaključane transakcije (bool, zadano: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Pogreška: transakcija je odbijena! To se može dogoditi ako su neki od novčića u vašem novčaniku već bili potrošeni, primjerice, ako ste upotrijebili kopiju wallet.data, a novčići su potrošeni u kopiji, ali nisu označeni kao ovdje potrošeni.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Pogreška: ova transakcija zahtijeva naknadu za transakciju od najmanje %s zbog svoje količine, složenosti ili korištenja nedavno primljenih sredstava!</translation>
-    </message>
-    <message>
-        <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
-        <translation>Pogreška: pronađen je nepotpuni argument. Checklevel mora biti razina 4.</translation>
-    </message>
-    <message>
-        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
-        <translation>Izvrši naredbu kada se promijeni najbolji blok i njezina veličina je gotova (%s u cmd zamjenjuje blok hash, %d s veličinom bloka)</translation>
-    </message>
-    <message>
-        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
-        <translation>Nije pronađen set novčića koji se drže s manje od maksimuma potrošnje</translation>
-    </message>
-    <message>
-        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
-        <translation>U rijetkim slučajevima, potrošnja s 7 kovanica premašuje našu maksimalnu dopuštenu veličinu transakcije, pokušajte ponovo pokušati potrošiti 6 ili manje kovanica</translation>
-    </message>
-    <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zNXB backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zNXB sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju sigurnosne kopije lisnice. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju.</translation>
-    </message>
-    <message>
-        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftX zahtijeva ulaze s najmanje 6 potvrda, možda ćete morati pričekati nekoliko minuta i pokušati ponovo.</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; može biti:</translation>
-    </message>
-    <message>
-        <source>Attempt to force blockchain corruption recovery</source>
-        <translation>Pokušaj prisiljavanja blokiranja korupcije na oporavak</translation>
-    </message>
-    <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: Svjedok akumulatora ne potvrđuje</translation>
-    </message>
-    <message>
-        <source>Display the stake modifier calculations in the debug.log file.</source>
-        <translation>Prikažite izračune modifikatora uloga u debug.log datoteci.</translation>
-    </message>
-    <message>
-        <source>Display verbose coin stake messages in the debug.log file.</source>
-        <translation>Prikažite opsežne poruke za ulaganje novčića u datoteku debug.log.</translation>
-    </message>
-    <message>
-        <source>Enable publish hash block in &lt;address&gt;</source>
-        <translation>Omogući blokiranje zbirke oglasa u sustavu&lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish hash transaction in &lt;address&gt;</source>
-        <translation>Omogući transakciju hash transakcije u sustavu &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw block in &lt;address&gt;</source>
-        <translation>Omogući objavljivanje neobrađenog bloka u &lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction in &lt;address&gt;</source>
-        <translation>Omogući objavljivanje neobrađene transakcije u&lt;address&gt;</translation>
-    </message>
-    <message>
-        <source>Enable staking functionality (0-1, default: %u)</source>
-        <translation>Omogući funkcionalnost odstupanja (0-1, zadano: %u)</translation>
-    </message>
-    <message>
-        <source>Error: A fatal internal error occurred, see debug.log for details</source>
-        <translation>Pogreška: Došlo je do kobne interne pogreške, pogledajte detalje o debug.logu</translation>
-    </message>
-    <message>
-        <source>Error: No valid utxo!</source>
-        <translation>Pogreška: Nema valjanog utxo!</translation>
-    </message>
-    <message>
-        <source>Failed to create mint</source>
-        <translation>Nije uspjelo kovanje</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>Deserializiranje nije uspjelo</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Neuspjelo pronalaženje Zerocoina u wallet.dat</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Odabir Zerocoina nije uspjelo</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Neuspjelo brisanje zerocoinDB</translation>
-    </message>
-    <message>
-        <source>Failed to write coin serial number into wallet</source>
-        <translation>Nije uspio zapisi serijskog broja novčića u novčanik</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -2767,8 +2690,8 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Lozinka za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid (): Nevažeća proxy adresa ili naziv hosta: '%s'</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
         <source>Preparing for resync...</source>
@@ -2803,8 +2726,20 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Primanje i prikaz upozorenja P2P mreže (zadano: %u)</translation>
     </message>
     <message>
+        <source>Reindex the NXB and zNXB money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku NXB i zNXB ponude novca</translation>
+    </message>
+    <message>
         <source>Reindex the accumulator database</source>
         <translation>Ponovno indeksirati bazu podataka akumulatora</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Reindeksiranje zerocoin databaze...</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>Reindeksiranje zerocoin neuspjelo</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -2837,6 +2772,10 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Radi u pozadini kao daemon i prihvatite naredbe</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>Odabrana vrijednost novčića je manja od količine za plačanje</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
@@ -2963,6 +2902,10 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>poslano na masternode, čeka se %s</translation>
     </message>
     <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX opcije:</translation>
+    </message>
+    <message>
         <source>Synchronization failed</source>
         <translation>Sinkronizacija neuspjela</translation>
     </message>
@@ -2997,14 +2940,6 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>The coin spend has been used</source>
         <translation>Korištena je potrošnja novčića</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Nova transakcija potrošnje novca nije potvrđena</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Odabrano je kovanje novčića za nevažeći novčić</translation>
     </message>
     <message>
         <source>The transaction did not verify</source>
@@ -3083,10 +3018,6 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Šaljem finalnu transakciju. </translation>
     </message>
     <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Pokušajte potrošiti s višom razinom sigurnosti kako biste uključili više novca</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Pokušavate potrošiti već utrošeni serijski broj #, pokušajte ponovo.</translation>
     </message>
@@ -3155,10 +3086,6 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Provjera novčanika...</translation>
     </message>
     <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zNXB zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Novčanik %s nalazi se izvan direktorija podataka %s</translation>
     </message>
@@ -3225,6 +3152,10 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
     <message>
         <source>Zerocoin options:</source>
         <translation>Zerocoin mogućnosti:</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid (): Nevažeća proxy adresa ili naziv hosta: '%s'</translation>
     </message>
     <message>
         <source>on startup</source>
@@ -3412,16 +3343,6 @@ Budite strpljivi nakon što kliknete uvoz.</translation>
         <translation>Mreža</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja nxboost-a.</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Karte porta pomoću UPnP
 </translation>
@@ -3501,6 +3422,16 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Jezik sučelja korisnika:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Ovdje se može postaviti jezik korisničkog sučelja. Ova postavka će stupiti na snagu nakon ponovnog pokretanja nxboost-a.</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>Jezik nedostaje ili prijevod nije potpun? Pomozite s prijevodima ovdje:
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3635,7 +3566,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Your current NXBoost balance, unconfirmed and immature transactions included</source>
-        <translation>Uključena je vaša trenutna bilanca nxboost, nepotvrđene i nezrele transakcije</translation>
+        <translation>Uključena je vaša trenutna bilanca NXBoost, nepotvrđene i nezrele transakcije</translation>
     </message>
     <message>
         <source>zNXB Balance</source>
@@ -3965,18 +3896,6 @@ zNXB su zreli kada imaju više od 20 potvrda I više od 2 mint od iste denominac
         <translation>0 zNXB</translation>
     </message>
     <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Razina sigurnosti za Zerocoin transakcije. Više je bolje, ali treba više vremena i resursa.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Razina sigurnosti:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Razina sigurnosti 1 - 100 (zadano: 42)</translation>
-    </message>
-    <message>
         <source>Pay &amp;To:</source>
         <translation>Platiti:</translation>
     </message>
@@ -4252,14 +4171,6 @@ Please be patient...</source>
         <translation>Pokretanje ResetMintZerocoin: ponovno skeniranje potpunog blockchain, to će trajati i do 30 minuta, ovisno o vašem hardveru.</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Potrošnja Zerocoina.
-Zahtjevan izračun, možda će trebati nekoliko minuta ovisno o odabranoj razini sigurnosti i vašem hardveru.
-Budite strpljivi ...</translation>
-    </message>
-    <message>
         <source>) needed.
 Maximum allowed: </source>
         <translation>) potrebno.
@@ -4429,20 +4340,8 @@ Maksimalno dopušteno:</translation>
         <translation>na novo generiranu (neiskorištenu i stoga anonimnu) lokalnu adresu</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>s razinom sigurnosti</translation>
-    </message>
-    <message>
         <source>Confirm send coins</source>
         <translation>Potvrdite slanje novca</translation>
-    </message>
-    <message>
-        <source>Version 1 zNXB require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zNXB zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zNXB</source>
-        <translation>Neuspjelo trošenje zNXB</translation>
     </message>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
@@ -4460,11 +4359,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>Utrošak Zerocoina nije uspjela s statusom =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of NXB to convert to zNXB</comment>
-        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -4549,7 +4443,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -4913,10 +4811,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Potvrdite resync Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Upotrijebite strelice gore i dolje za kretanje po povijesti, a Ctrl-L za brisanje zaslona.</translation>
-    </message>
-    <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Upišite pomoć za pregled dostupnih naredbi.</translation>
     </message>
@@ -4988,6 +4882,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Dodatna oznaka za povezivanje s novom adresom primatelja.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>Količina:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the NXBoost network.</source>
         <translation>Dodatna poruka priložena zahtjevu za plaćanje, koji će se prikazati kada se zahtjev otvori. Napomena: poruka neće biti poslana s plaćanjem putem NXBoost mreže.</translation>
     </message>
@@ -5010,10 +4908,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>Neobavezna količina za zahtjev. Ostavite ovo prazno ili nulu da ne zatražite određeni iznos.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>Iznos:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -5058,6 +4952,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Copy amount</source>
         <translation>Kopiraj iznos</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopiraj adresu</translation>
     </message>
 </context>
 <context>
@@ -5129,6 +5027,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Message</source>
         <translation>Poruka</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -5266,6 +5168,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Smart naknada još nije inicirana. To obično traje nekoliko blokova ...)</translation>
+    </message>
+    <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -5714,10 +5620,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>The Bitcoin Core developers</source>
         <translation>Bitcoin Core programeri</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>Dash Core programeri</translation>
     </message>
     <message>
         <source>The NXBoost Core developers</source>
@@ -6334,29 +6236,5 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>Select zNXB to Spend</source>
-        <translation>Odabrani zNXB za utrošiti</translation>
-    </message>
-    <message>
-        <source>Quantity</source>
-        <translation>Količina</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Select/Deselect All</source>
-        <translation>Odaberite/poništi odabir za Sve</translation>
-    </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>Je moguće utrošiti</translation>
-    </message>
-</context>
+    </context>
 </TS>

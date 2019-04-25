@@ -212,6 +212,10 @@
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Address</source>
+        <translation>アドレス</translation>
+    </message>
     </context>
 <context>
     <name>SendCoinsDialog</name>

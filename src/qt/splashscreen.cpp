@@ -36,7 +36,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
     // define text to place
     QString titleText = tr("NXBoost Core");
     QString versionText = QString(tr("Version %1")).arg(QString::fromStdString(FormatFullVersion()));
-    QString copyrightTextBtc = QChar(0xA9) + QString(" 2014-2015 ") + QString(tr("The Dash Core developers"));
+    QString copyrightTextBtc = QChar(0xA9) + QString(" 2009-2015 ") + QString(tr("The Bitcoin Core developers"));
     QString copyrightTextDash = QChar(0xA9) + QString(" 2015-2018 ") + QString(tr("The Pivx Core developers"));
     QString copyrightTextNXBoost = QChar(0xA9) + QString(" 2018-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The NXBoost Core developers"));
     QString titleAddText = networkStyle->getTitleAddText();

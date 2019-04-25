@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Encrypt the private key for this NXBoost address</source>
-        <translation>Cifrar la llave privada para esta dirección nxboost</translation>
+        <translation>Cifrar la llave privada para esta dirección NXBoost</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -513,6 +513,10 @@
         <translation>Etiqueta</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Dirección</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(sin etiqueta)</translation>
     </message>
@@ -578,7 +582,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección nxboost</translation>
+        <translation>Firme el mensaje para probar que Ud. es el propietario de esta dirección NXBoost</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -660,7 +664,7 @@
     <name>WalletView</name>
     <message>
         <source>&amp;Export</source>
-        <translation>&amp;Exportar</translation>
+        <translation>Exportar</translation>
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>

@@ -417,6 +417,10 @@
         <translation>Možnosti...</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Zmeňte možnosti konfigurácie pre nxboost</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>Zobraziť / Skryť</translation>
     </message>
@@ -541,6 +545,10 @@
         <translation>Otvoriť URI...</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Otvorte nxboost: URI alebo žiadosť o platbu</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>Možnosti príkazového riadku</translation>
     </message>
@@ -574,7 +582,7 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Odoslať mince na adresu nxboost</translation>
+        <translation>Odoslať mince na adresu NXBoost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
@@ -597,12 +605,8 @@
         <translation>Zobraziť informácie o NXBoost Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Zmeňte možnosti konfigurácie pre nxboost</translation>
-    </message>
-    <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy nxboost, aby ste preukázali, že ich vlastníte</translation>
+        <translation>Podpíšte správy pomocou adresy NXBoost, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified NXBoost addresses</source>
@@ -637,10 +641,6 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Otvorte nxboost: URI alebo žiadosť o platbu</translation>
-    </message>
-    <message>
         <source>&amp;Blockchain explorer</source>
         <translation>Blockchain prehliadač</translation>
     </message>
@@ -650,7 +650,7 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Zobraziť pomocnú správu programu NXBoost Core a získajte zoznam možností príkazového riadka nxboost</translation>
+        <translation>Zobraziť pomocnú správu programu NXBoost Core a získajte zoznam možností príkazového riadka NXBoost</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
@@ -756,7 +756,7 @@ MultiSend: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne je &lt;b&gt;zamknutá&lt;/ b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1005,6 +1005,10 @@ MultiSend: %1</translation>
         <source>Amount</source>
         <translation>Suma</translation>
     </message>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -1025,6 +1029,10 @@ MultiSend: %1</translation>
     <message>
         <source>Copy amount</source>
         <translation>Skopírovať sumu</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Skopírovať adresu</translation>
     </message>
 </context>
 <context>
@@ -1051,6 +1059,10 @@ MultiSend: %1</translation>
     <message>
         <source>Label</source>
         <translation>Štítok</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -1130,7 +1142,7 @@ MultiSend: %1</translation>
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The NXBoost address to sign the message with</source>
-        <translation>Adresa nxboost, ktorou chcete správu podpísať</translation>
+        <translation>Adresa NXBoost, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>

@@ -173,7 +173,7 @@
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Patvirtinkite piniginės užšifravimą.</translation>
+        <translation>Patvirtinkite piniginės užšifravimą</translation>
     </message>
     <message>
         <source>NXBoost will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your NXBs from being stolen by malware infecting your computer.</source>
@@ -457,6 +457,10 @@
         <translation>&amp;Nustatymai</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Keisti NXBoost konfigūravimo parinktis</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Rodyti / Paslėpti</translation>
     </message>
@@ -605,12 +609,20 @@
         <translation>Atidaryti &amp;URI</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Atidaryti nxboost: URI arba mokėjimo prašymą</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komandinės eilutės parinktys</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Apdorota %n operacijų istorijos blokų.</numerusform><numerusform>Apdorota %n operacijų istorijos blokų.</numerusform><numerusform>Apdorota %n operacijų istorijos blokų.</numerusform><numerusform>Apdorota %n operacijų istorijos blokų.</numerusform></translation>
+        <translation>
+            <numerusform>Apdorota %n operacijų istorijos blokų.</numerusform>
+            <numerusform>Apdorota %n operacijų istorijos blokų.</numerusform>
+            <numerusform>Apdorota %n operacijų istorijos blokų.</numerusform>
+        </translation>
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
@@ -654,7 +666,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
-        <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir NXBoost URI)</translation>
+        <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir nxboost URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -675,10 +687,6 @@
     <message>
         <source>Show information about NXBoost Core</source>
         <translation>Rodyti informaciją apie NXBoost Core</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Keisti NXBoost konfigūravimo parinktis</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -717,10 +725,6 @@
         <translation>Atidaryti Masternod'o konfigūracijos failą</translation>
     </message>
     <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Atidaryti nxboost: URI arba mokėjimo prašymą</translation>
-    </message>
-    <message>
         <source>&amp;Blockchain explorer</source>
         <translation>&amp;Blockchain naršyklė</translation>
     </message>
@@ -738,7 +742,11 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to NXBoost network</source>
-        <translation><numerusform>%n aktyvių prisijungimų NXBoost tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų NXBoost tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų NXBoost tinkle ()</numerusform><numerusform>%n aktyvių prisijungimų NXBoost tinkle ()</numerusform></translation>
+        <translation>
+            <numerusform>%n aktyvių prisijungimų NXBoost tinkle ()</numerusform>
+            <numerusform>%n aktyvių prisijungimų NXBoost tinkle ()</numerusform>
+            <numerusform>%n aktyvių prisijungimų NXBoost tinkle ()</numerusform>
+        </translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -762,15 +770,27 @@
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
-        <translation><numerusform>%n valanda</numerusform><numerusform>%n valandų</numerusform><numerusform>%n valandų</numerusform><numerusform>%n valandų</numerusform></translation>
+        <translation>
+            <numerusform>%n valanda</numerusform>
+            <numerusform>%n valandų</numerusform>
+            <numerusform>%n valandų</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n day(s)</source>
-        <translation><numerusform>%n diena</numerusform><numerusform>%n dienų</numerusform><numerusform>%n dienų</numerusform><numerusform>%n dienų</numerusform></translation>
+        <translation>
+            <numerusform>%n diena</numerusform>
+            <numerusform>%n dienų</numerusform>
+            <numerusform>%n dienų</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <source>%n week(s)</source>
-        <translation><numerusform>%n savaitė</numerusform><numerusform>%n savaičių</numerusform><numerusform>%n savaičių</numerusform><numerusform>%n savaičių</numerusform></translation>
+        <translation>
+            <numerusform>%n savaitė</numerusform>
+            <numerusform>%n savaičių</numerusform>
+            <numerusform>%n savaičių</numerusform>
+        </translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -778,7 +798,11 @@
     </message>
     <message numerus="yes">
         <source>%n year(s)</source>
-        <translation><numerusform>%n metai</numerusform><numerusform>%n metų</numerusform><numerusform>%n metų</numerusform><numerusform>%n metų</numerusform></translation>
+        <translation>
+            <numerusform>%n metai</numerusform>
+            <numerusform>%n metų</numerusform>
+            <numerusform>%n metų</numerusform>
+        </translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -1534,42 +1558,8 @@ MultiSend nebus aktyvuotas, nebent paspausite "Įjungti"</translation>
         <translation>(nėra etiketės)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>Įvestas adresas:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>yra netinkamas.
-Patikrinkite adresą ir bandykite dar kartą.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>Bendra MultiSend sąrašo suma yra didesnė nei 100% jūsų stake'inimo atlygio
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Įveskite 1-100 procentų</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Sąrašas
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Pašalintas</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Nepavyko rasti adreso
-</translation>
     </message>
 </context>
 <context>
@@ -1790,6 +1780,10 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Klaida nuskaitant bloką</translation>
     </message>
     <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Nepavyko pasirinkti zerocoin</translation>
+    </message>
+    <message>
         <source>Finalizing transaction.</source>
         <translation>Sandoris užbaiginėjamas.</translation>
     </message>
@@ -1832,18 +1826,6 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
     <message>
         <source>Invalid script detected.</source>
         <translation>Aptiktas netinkamas programos kodas.</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>SwiftX nustatymai:</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>Nepavyko deserializuoti</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Nepavyko pasirinkti zerocoin</translation>
     </message>
     <message>
         <source>Loading addresses...</source>
@@ -1894,10 +1876,6 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>Nustatymai:</translation>
     </message>
     <message>
-        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
-        <translation>isValid(): Neteisingas -proxy adresas arba mazgo pavadinimas: '%s'</translation>
-    </message>
-    <message>
         <source>Session timed out.</source>
         <translation>Sesijos laikas baigėsi.</translation>
     </message>
@@ -1908,6 +1886,10 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
     <message>
         <source>Signing timed out.</source>
         <translation>Prisijungimo laikas baigėsi.</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX nustatymai:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -2044,6 +2026,10 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
     <message>
         <source>Zerocoin options:</source>
         <translation>Zerocoin nustatymai:</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Neteisingas -proxy adresas arba mazgo pavadinimas: '%s'</translation>
     </message>
     <message>
         <source>on startup</source>
@@ -2203,16 +2189,6 @@ Patikrinkite adresą ir bandykite dar kartą.</translation>
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "nxboost".</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>Trūksta kalbos arba vertimas nebaigtas? Padėkite prisidėdami prie vertimų čia:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
@@ -2267,6 +2243,16 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>&amp;Display</source>
         <translation>&amp;Rodyti</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>Čia galite nustatyti vartotojo sąsajos kalbą. Šis nustatymas įsigalios iš naujo paleidus "nxboost".</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>Trūksta kalbos arba vertimas nebaigtas? Padėkite prisidėdami prie vertimų čia: 
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -2471,7 +2457,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <source>To disable AutoMint add 'enablezeromint=0' in nxboost.conf.</source>
         <translation>Norėdami išjungti Automatinį Kalimą pridėkite 'enablezeromint=0' nxboost.conf faile.</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>PaymentServer</name>
     <message>
@@ -2621,14 +2607,6 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>0 zNXB</translation>
     </message>
     <message>
-        <source>Security Level:</source>
-        <translation>Saugumo Lygmuo:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Saugumo Lygmuo 1 - 100 (numatytas: 42)</translation>
-    </message>
-    <message>
         <source>Pay &amp;To:</source>
         <translation>&amp;Mokėti:</translation>
     </message>
@@ -2684,7 +2662,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <source>Unconfirmed: less than 20 confirmations
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
         <translation>Nepatvirtinta: mažiau nei 20 patvirtinimų
-Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominalo po to, kai buvo konvertuota.</translation>
+Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo po to, kai buvo konvertuotas.</translation>
     </message>
     <message>
         <source>Denom. 1:</source>
@@ -2828,7 +2806,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     </message>
     <message>
         <source>out of sync</source>
-        <translation>ne sinchronizuotas</translation>
+        <translation>nesinchronizuotas</translation>
     </message>
     <message>
         <source>Mint Status: Okay</source>
@@ -2951,14 +2929,6 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <translation>į adresą</translation>
     </message>
     <message>
-        <source>with Security Level </source>
-        <translation>su Saugumo Lygmeniu</translation>
-    </message>
-    <message>
-        <source>Failed to spend zNXB</source>
-        <translation>Nepavyko išleisti zNXB</translation>
-    </message>
-    <message>
         <source>serial: </source>
         <translation>serija:</translation>
     </message>
@@ -3013,7 +2983,11 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
-    </context>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
+    </message>
+</context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -3163,16 +3137,16 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>never</source>
         <translation>niekada</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Etiketė:</translation>
+        <source>A&amp;mount:</source>
+        <translation>S&amp;uma:</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Suma:</translation>
+        <source>&amp;Label:</source>
+        <translation>&amp;Etiketė:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -3210,6 +3184,10 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>Copy amount</source>
         <translation>Kopijuoti sumą</translation>
     </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopijuoti adresą</translation>
+    </message>
 </context>
 <context>
     <name>ReceiveRequestDialog</name>
@@ -3241,7 +3219,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>Message</source>
         <translation>Žinutė</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -3255,6 +3233,10 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     <message>
         <source>Message</source>
         <translation>Žinutė</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresas</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3346,6 +3328,10 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     <message>
         <source>per kilobyte</source>
         <translation>kas kilobaitą</translation>
+    </message>
+    <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3476,9 +3462,6 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
     </message>
 </context>
 <context>
-    <name>ShutdownWindow</name>
-    </context>
-<context>
     <name>SignVerifyMessageDialog</name>
     <message>
         <source>The NXBoost address to sign the message with</source>
@@ -3548,17 +3531,14 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>Private key for the entered address is not available.</source>
         <translation>Privatus raktas nurodytam adresui nėra prieinamas.</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>SplashScreen</name>
     <message>
         <source>NXBoost Core</source>
         <translation>NXBoost Core</translation>
     </message>
-    </context>
-<context>
-    <name>TrafficGraphWidget</name>
-    </context>
+</context>
 <context>
     <name>TransactionDesc</name>
     <message>
@@ -3600,7 +3580,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>Transaction details</source>
         <translation>Pavedimo detalės</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>TransactionTableModel</name>
     <message>
@@ -3643,7 +3623,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>Type of transaction.</source>
         <translation>Operacijos tipas.</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>TransactionView</name>
     <message>
@@ -3742,20 +3722,14 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>Exporting Failed</source>
         <translation>Eksportavimas Nepavyko</translation>
     </message>
-    </context>
-<context>
-    <name>UnitDisplayStatusBarControl</name>
-    </context>
-<context>
-    <name>WalletFrame</name>
-    </context>
+</context>
 <context>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
         <translation>Siųsti Monetas</translation>
     </message>
-    </context>
+</context>
 <context>
     <name>WalletView</name>
     <message>
@@ -3770,16 +3744,5 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos tos pačio nominal
         <source>Export the data in the current tab to a file</source>
         <translation>Eksportuoti duomenis dabartiniame skirtuke į failą</translation>
     </message>
-    </context>
-<context>
-    <name>ZNxbControlDialog</name>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    </context>
+</context>
 </TS>

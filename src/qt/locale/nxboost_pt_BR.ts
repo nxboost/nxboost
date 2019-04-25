@@ -23,7 +23,7 @@
     </message>
     <message>
         <source>Delete the currently selected address from the list</source>
-        <translation>Deletar da lista o endereço selecionado </translation>
+        <translation>Deletar da lista o endereço selecionado</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -433,6 +433,10 @@
         <translation>&amp;Opções...</translation>
     </message>
     <message>
+        <source>Modify configuration options for nxboost</source>
+        <translation>Modificar opções de configuração para nxboost</translation>
+    </message>
+    <message>
         <source>&amp;Show / Hide</source>
         <translation>&amp;Mostrar / Esconder</translation>
     </message>
@@ -581,6 +585,10 @@
         <translation>Abrir &amp;URI...</translation>
     </message>
     <message>
+        <source>Open a nxboost: URI or payment request</source>
+        <translation>Abrir um nxboost: URI ou requisição de pagamento</translation>
+    </message>
+    <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opções de linha de comando</translation>
     </message>
@@ -618,7 +626,7 @@
     </message>
     <message>
         <source>Send coins to a NXBoost address</source>
-        <translation>Enviar moedas para um endereço nxboost</translation>
+        <translation>Enviar moedas para um endereço NXBoost</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and nxboost: URIs)</source>
@@ -643,10 +651,6 @@
     <message>
         <source>Show information about NXBoost Core</source>
         <translation>Mostra informação sobre o NXBoost Core</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for nxboost</source>
-        <translation>Modificar opções de configuração para nxboost</translation>
     </message>
     <message>
         <source>Sign messages with your NXBoost addresses to prove you own them</source>
@@ -685,10 +689,6 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a nxboost: URI or payment request</source>
-        <translation>Abrir um nxboost: URI ou requisição de pagamento</translation>
-    </message>
-    <message>
         <source>&amp;Blockchain explorer</source>
         <translation>Explorador da &amp;Blockchain</translation>
     </message>
@@ -698,11 +698,11 @@
     </message>
     <message>
         <source>Show the NXBoost Core help message to get a list with possible NXBoost command-line options</source>
-        <translation>Mostra a ajuda da NXBoost Core para receber uma lista com possíveis opções de linha de comando nxboost</translation>
+        <translation>Mostra a ajuda da NXBoost Core para receber uma lista com possíveis opções de linha de comando NXBoost</translation>
     </message>
     <message>
         <source>NXBoost Core client</source>
-        <translation>Cliente Core nxboost</translation>
+        <translation>Cliente Core NXBoost</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -809,7 +809,7 @@ MultiSend: %1</translation>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>A carteira está &lt;b&gt;criptografada&lt;/b&gt; e atualmente &lt;b&gt;travada&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -1119,7 +1119,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid NXBoost address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de nxboost</translation>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de NXBoost</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1224,7 +1224,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>NXBoost Core will download and store a copy of the NXBoost block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>NXBoost Core vai baixar e armazenar uma cópia da blockchain nxboost. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <translation>NXBoost Core vai baixar e armazenar uma cópia da blockchain NXBoost. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1437,43 +1437,8 @@ MultiSend: %1</translation>
         <translation>(sem rótulo)</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>O endereço informado:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>é inválido.
-
-Favor verificar o endereço e tente novamente.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>A quantia total de seu vetor MultiSend é superior a 100% da recompensa de seu stake
-</translation>
-    </message>
-    <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Favor inserir 1 - 100 para porcentagem.</translation>
-    </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vetor MultiSend
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Removido</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>Não foi possível localizar o endereço
-</translation>
     </message>
 </context>
 <context>
@@ -1554,6 +1519,12 @@ Favor verificar o endereço e tente novamente.</translation>
 <context>
     <name>NXBoost-core</name>
     <message>
+        <source> unconfirmed transactions removed
+</source>
+        <translation>transações não confirmadas removidas
+</translation>
+    </message>
+    <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
     </message>
@@ -1626,10 +1597,6 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(49108 could be used only on mainnet)</source>
-        <translation>(49108 could be used only on mainnet)</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(padrão: %s)</translation>
     </message>
@@ -1640,6 +1607,10 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>(must be 49108 for mainnet)</source>
         <translation>(deve ser 49108 para mainnet)</translation>
+    </message>
+    <message>
+        <source>&lt;category&gt; can be:</source>
+        <translation>&lt;category&gt; pode ser:</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
@@ -1684,14 +1655,6 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
         <translation>Todos os direitos reservados (C) 2009-%i aos Desenvolvedores do Bitcoin Core</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2014-%i The Dash Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
-    </message>
-    <message>
-        <source>Copyright (C) 2015-%i The NXBoost Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do NXBoost Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -1900,20 +1863,6 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Invalid script detected.</source>
         <translation>Script inválido detectado.</translation>
-    </message>
-    <message>
-        <source>SwiftX options:</source>
-        <translation>opções SwiftX:</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>transações não confirmadas removidas
-</translation>
-    </message>
-    <message>
-        <source>&lt;category&gt; can be:</source>
-        <translation>&lt;category&gt; pode ser:</translation>
     </message>
     <message>
         <source>Last Obfuscation was too recent.</source>
@@ -2142,6 +2091,10 @@ Favor verificar o endereço e tente novamente.</translation>
     <message>
         <source>Submitted to masternode, waiting in queue %s</source>
         <translation>Enviado ao masternode, aguardando na fila %s</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>opções SwiftX:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -2457,16 +2410,6 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do nxboost.</translation>
-    </message>
-    <message>
-        <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nxboost/nxboost-wallet</source>
-        <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/nxboost/nxboost-wallet</translation>
-    </message>
-    <message>
         <source>Connect to the NXBoost network through a SOCKS5 proxy.</source>
         <translation>Conectar à rede NXBoost através de um proxy SOCKS5</translation>
     </message>
@@ -2509,6 +2452,16 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>User Interface &amp;language:</source>
         <translation>Interface do usuário &amp;Linguagem:</translation>
+    </message>
+    <message>
+        <source>The user interface language can be set here. This setting will take effect after restarting nxboost.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do nxboost.</translation>
+    </message>
+    <message>
+        <source>Language missing or translation incomplete? Help contributing translations here:
+https://www.transifex.com/nxboost/nxboost-wallet</source>
+        <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
+https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -2735,14 +2688,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Saldo disponível:</translation>
     </message>
     <message>
-        <source>Security Level:</source>
-        <translation>Nível de Segurança:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Nível de segurança 1 - 100 (padrão: 42)</translation>
-    </message>
-    <message>
         <source>Pay &amp;To:</source>
         <translation>Pagar &amp;Para:</translation>
     </message>
@@ -2961,7 +2906,11 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>NXBoost Core</source>
+        <translation>NXBoost Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -3188,10 +3137,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Você deseja continuar?.&lt;br /&gt;</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Utilize as teclas para cima ou baixo para navegar no histórico e &lt;b&gt;Ctrl-L&lt;/b&gt; para limpar a tela.</translation>
-    </message>
-    <message>
         <source>%1 B</source>
         <translation>%1 B</translation>
     </message>
@@ -3235,12 +3180,12 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Um rótulo opcional para associar a novos endereços de recebimento.</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Rótulo:</translation>
+        <source>A&amp;mount:</source>
+        <translation>Quantia:</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Quantidade:</translation>
+        <source>&amp;Label:</source>
+        <translation>&amp;Rótulo:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -3285,6 +3230,10 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>Copy amount</source>
         <translation>Copiar quantia</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copiar endereço</translation>
     </message>
 </context>
 <context>
@@ -3355,6 +3304,10 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>Message</source>
         <translation>Mensagem</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Endereço</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3470,6 +3423,10 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Smart fee não inicializada ainda. Isso geralmente leva alguns blocos...)</translation>
+    </message>
+    <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -3766,7 +3723,7 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this NXBoost address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço nxboost</translation>
+        <translation>Assine a mensagem para provar que você possui este endereço NXBoost</translation>
     </message>
     <message>
         <source>The NXBoost address the message was signed with</source>
@@ -3866,10 +3823,6 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
     <message>
         <source>The Bitcoin Core developers</source>
         <translation>Os desenvolvedores do Bitcoin Core</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
         <source>The NXBoost Core developers</source>
@@ -4381,21 +4334,5 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
 </context>
 <context>
     <name>ZNxbControlDialog</name>
-    <message>
-        <source>Quantity</source>
-        <translation>Quantia</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zNXB</source>
-        <translation>zNXB</translation>
-    </message>
-    <message>
-        <source>Select/Deselect All</source>
-        <translation>Selecionar/Deselecionar todos</translation>
-    </message>
     </context>
 </TS>
