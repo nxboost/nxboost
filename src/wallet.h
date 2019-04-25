@@ -94,23 +94,23 @@ enum AvailableCoinsType {
 
 // Possible states for zNXB send
 enum ZerocoinSpendStatus {
-    zNXB_SPEND_OKAY = 0,                            // No error
-    zNXB_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    zNXB_WALLET_LOCKED = 2,                         // Wallet was locked
-    zNXB_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    zNXB_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    zNXB_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    zNXB_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    zNXB_TRX_CREATE = 7,                            // Everything related to create the transaction
-    zNXB_TRX_CHANGE = 8,                            // Everything related to transaction change
-    zNXB_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    zNXB_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    zNXB_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    zNXB_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    zNXB_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    zNXB_SPENT_USED_zNXB = 14,                      // Coin has already been spend
-    zNXB_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
-    zNXB_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    ZNXB_SPEND_OKAY = 0,                            // No error
+    ZNXB_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZNXB_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZNXB_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZNXB_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZNXB_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZNXB_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZNXB_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZNXB_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZNXB_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZNXB_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZNXB_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZNXB_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZNXB_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZNXB_SPENT_USED_zNXB = 14,                      // Coin has already been spend
+    ZNXB_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
+    ZNXB_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
 
 struct CompactTallyItem {

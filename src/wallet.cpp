@@ -4755,12 +4755,13 @@ bool CWallet::MintsToInputVector(std::map<CBigNum, CZerocoinMint>& mapMintsSelec
                          CZerocoinSpendReceipt& receipt, libzerocoin::SpendType spendType, CBlockIndex* pindexCheckpoint)
 {
     // Default error status if not changed below
-    receipt.SetStatus(_("Transaction Mint Started"), zNXB_TXMINT_GENERAL);
+    receipt.SetStatus(_("Transaction Mint Started"), ZNXB_TXMINT_GENERAL);
     libzerocoin::ZerocoinParams* paramsAccumulator = Params().Zerocoin_Params(false);
     AccumulatorMap mapAccumulators(paramsAccumulator);
 
     LOCK(cs_spendcache);
 
+    int64_t nTimeStart = GetTimeMicros();
     for (auto& it : mapMintsSelected) {
         CZerocoinMint mint = it.second;
         CMintMeta meta = zNXBTracker->Get(GetSerialHash(mint.GetSerialNumber()));
@@ -4779,11 +4780,14 @@ bool CWallet::MintsToInputVector(std::map<CBigNum, CZerocoinMint>& mapMintsSelec
         }
 
         // Construct the CoinSpend object. This acts like a signature on the transaction.
+        int64_t nTime1 = GetTimeMicros();
         libzerocoin::ZerocoinParams* paramsCoin = Params().Zerocoin_Params(coinWitness->isV1);
         libzerocoin::PrivateCoin privateCoin(paramsCoin, coinWitness->denom);
         privateCoin.setPublicCoin(*coinWitness->coin);
         privateCoin.setRandomness(mint.GetRandomness());
         privateCoin.setSerialNumber(mint.GetSerialNumber());
+        int64_t nTime2 = GetTimeMicros();
+        LogPrint("bench", "        - CoinSpend constructed in %.2fms\n", 0.001 * (nTime2 - nTime1));
 
         //Version 2 zerocoins have a privkey associated with them
         uint8_t nVersion = mint.GetVersion();
@@ -4794,12 +4798,17 @@ bool CWallet::MintsToInputVector(std::map<CBigNum, CZerocoinMint>& mapMintsSelec
                 return error("%s: failed to set zNXB privkey mint version=%d", __func__, nVersion);
             privateCoin.setPrivKey(key.GetPrivKey());
         }
+        int64_t nTime3 = GetTimeMicros();
+        LogPrint("bench", "        - Signing key set in %.2fms\n", 0.001 * (nTime3 - nTime2));
 
         libzerocoin::Accumulator accumulator = mapAccumulators.GetAccumulator(coinWitness->denom);
         uint32_t nChecksum = GetChecksum(accumulator.getValue());
         CBigNum bnValue;
         if(!GetAccumulatorValueFromChecksum(nChecksum, false, bnValue) || bnValue == 0)
             return error("%s: could not find checksum used for spend\n", __func__);
+
+        int64_t nTime4 = GetTimeMicros();
+        LogPrint("bench", "        - Accumulator value fetched in %.2fms\n", 0.001 * (nTime4 - nTime3));
 
         try {
             libzerocoin::CoinSpend spend(paramsCoin, paramsAccumulator, privateCoin, accumulator, nChecksum,
@@ -4812,13 +4821,19 @@ bool CWallet::MintsToInputVector(std::map<CBigNum, CZerocoinMint>& mapMintsSelec
             CZerocoinSpend zcSpend(spend.getCoinSerialNumber(), 0, mint.GetValue(), mint.GetDenomination(), GetChecksum(accumulator.getValue()));
             zcSpend.SetMintCount(coinWitness->nMintsAdded);
             receipt.AddSpend(zcSpend);
+
+            int64_t nTime5 = GetTimeMicros();
+            LogPrint("bench", "        - CoinSpend verified in %.2fms\n", 0.001 * (nTime5 - nTime4));
         } catch(const std::exception&) {
             receipt.SetStatus(_("CoinSpend: Accumulator witness does not verify"), ZNXB_INVALID_WITNESS);
             return error("%s : %s", __func__, receipt.GetStatusMessage());
         }
     }
 
-    receipt.SetStatus(_("Spend Valid"), zNXB_SPEND_OKAY); // Everything okay
+    int64_t nTimeFinished = GetTimeMicros();
+    LogPrint("bench", "    - %s took %.2fms [%.3fms/spend]\n", __func__, 0.001 * (nTimeFinished - nTimeStart), 0.001 * (nTimeFinished - nTimeStart) / mapMintsSelected.size());
+
+    receipt.SetStatus(_("Spend Valid"), ZNXB_SPEND_OKAY); // Everything okay
 
     return true;
 }
@@ -4826,7 +4841,7 @@ bool CWallet::MintsToInputVector(std::map<CBigNum, CZerocoinMint>& mapMintsSelec
 bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, CWalletTx& wtxNew, CReserveKey& reserveKey, CZerocoinSpendReceipt& receipt, vector<CZerocoinMint>& vSelectedMints, vector<CDeterministicMint>& vNewMints, bool fMintChange,  bool fMinimizeChange, CBitcoinAddress* address)
 {
     // Check available funds
-    int nStatus = zNXB_TRX_FUNDS_PROBLEMS;
+    int nStatus = ZNXB_TRX_FUNDS_PROBLEMS;
     if (nValue > GetZerocoinBalance(true)) {
         receipt.SetStatus(_("You don't have enough Zerocoins in your wallet"), nStatus);
         return false;
@@ -4838,7 +4853,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, CWalletTx& wtxNew, 
     }
 
     // Create transaction
-    nStatus = zNXB_TRX_CREATE;
+    nStatus = ZNXB_TRX_CREATE;
 
     // If not already given pre-selected mints, then select mints from the wallet
     CWalletDB walletdb(pwalletMain->strWalletFile);
@@ -4944,7 +4959,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, CWalletTx& wtxNew, 
     }
 
     // Create change if needed
-    nStatus = zNXB_TRX_CHANGE;
+    nStatus = ZNXB_TRX_CHANGE;
 
     CMutableTransaction txNew;
     wtxNew.BindWallet(this);
@@ -5028,7 +5043,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, CWalletTx& wtxNew, 
             // Limit size
             unsigned int nBytes = ::GetSerializeSize(txNew, SER_NETWORK, PROTOCOL_VERSION);
             if (nBytes >= MAX_ZEROCOIN_TX_SIZE) {
-                receipt.SetStatus(_("In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins"), zNXB_TX_TOO_LARGE);
+                receipt.SetStatus(_("In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins"), ZNXB_TX_TOO_LARGE);
                 return false;
             }
 
@@ -5050,7 +5065,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, CWalletTx& wtxNew, 
         }
     }
 
-    receipt.SetStatus(_("Transaction Created"), zNXB_SPEND_OKAY); // Everything okay
+    receipt.SetStatus(_("Transaction Created"), ZNXB_SPEND_OKAY); // Everything okay
 
     return true;
 }
@@ -5331,10 +5346,10 @@ string CWallet::MintZerocoin(CAmount nValue, CWalletTx& wtxNew, vector<CDetermin
 bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendReceipt& receipt, vector<CZerocoinMint>& vMintsSelected, bool fMintChange, bool fMinimizeChange, CBitcoinAddress* addressTo)
 {
     // Default: assume something goes wrong. Depending on the problem this gets more specific below
-    int nStatus = zNXB_SPEND_ERROR;
+    int nStatus = ZNXB_SPEND_ERROR;
 
     if (IsLocked()) {
-        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", zNXB_WALLET_LOCKED);
+        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZNXB_WALLET_LOCKED);
         return false;
     }
 
@@ -5350,7 +5365,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendRe
     CWalletDB walletdb(pwalletMain->strWalletFile);
     if (!CommitTransaction(wtxNew, reserveKey)) {
         LogPrintf("%s: failed to commit\n", __func__);
-        nStatus = zNXB_COMMIT_FAILED;
+        nStatus = ZNXB_COMMIT_FAILED;
 
         //reset all mints
         for (CZerocoinMint mint : vMintsSelected) {
@@ -5362,7 +5377,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendRe
         //erase spends
         for (CZerocoinSpend spend : receipt.GetSpends()) {
             if (!walletdb.EraseZerocoinSpendSerialEntry(spend.GetSerial())) {
-                receipt.SetStatus("Error: It cannot delete coin serial number in wallet", zNXB_ERASE_SPENDS_FAILED);
+                receipt.SetStatus("Error: It cannot delete coin serial number in wallet", ZNXB_ERASE_SPENDS_FAILED);
             }
 
             //Remove from public zerocoinDB
@@ -5372,7 +5387,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendRe
         // erase new mints
         for (auto& dMint : vNewMints) {
             if (!walletdb.EraseDeterministicMint(dMint.GetPubcoinHash())) {
-                receipt.SetStatus("Error: Unable to cannot delete zerocoin mint in wallet", zNXB_ERASE_NEW_MINTS_FAILED);
+                receipt.SetStatus("Error: Unable to cannot delete zerocoin mint in wallet", ZNXB_ERASE_NEW_MINTS_FAILED);
             }
         }
 
@@ -5399,7 +5414,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, CWalletTx& wtxNew, CZerocoinSpendRe
         zNXBTracker->Add(dMint, true);
     }
 
-    receipt.SetStatus("Spend Successful", zNXB_SPEND_OKAY);  // When we reach this point spending zNXB was successful
+    receipt.SetStatus("Spend Successful", ZNXB_SPEND_OKAY);  // When we reach this point spending zNXB was successful
 
     return true;
 }
