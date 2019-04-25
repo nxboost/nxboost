@@ -191,7 +191,7 @@ protected:
     int nBlockEnforceInvalidUTXO;
     int nBlockZerocoinV2;
 
-	std::string strDeveloperFeePayee;
+
 };
 
 /**
