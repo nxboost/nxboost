@@ -1444,13 +1444,11 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
                 // Drop all information from the zerocoinDB and repopulate
                 if (GetBoolArg("-reindexzerocoin", false)) {
-                    if (chainActive.Height() > Params().Zerocoin_StartHeight()) {
-                        uiInterface.InitMessage(_("Reindexing zerocoin database..."));
-                        std::string strError = ReindexZerocoinDB();
-                        if (strError != "") {
-                            strLoadError = strError;
-                            break;
-                        }
+                    uiInterface.InitMessage(_("Reindexing zerocoin database..."));
+                    std::string strError = ReindexZerocoinDB();
+                    if (strError != "") {
+                        strLoadError = strError;
+                        break;
                     }
                 }
 
