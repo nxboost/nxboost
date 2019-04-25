@@ -291,6 +291,8 @@ void CzNXBTracker::Add(const CDeterministicMint& dMint, bool isNew, bool isArchi
     meta.denom = dMint.GetDenomination();
     meta.isArchived = isArchived;
     meta.isDeterministic = true;
+    CzNXBWallet zNXBWallet(strWalletFile);
+    meta.isSeedCorrect = zNXBWallet.CheckSeed(dMint);
     mapSerialHashes[meta.hashSerial] = meta;
 
     if (isNew)
@@ -311,6 +313,7 @@ void CzNXBTracker::Add(const CZerocoinMint& mint, bool isNew, bool isArchived)
     meta.denom = mint.GetDenomination();
     meta.isArchived = isArchived;
     meta.isDeterministic = false;
+    meta.isSeedCorrect = true;
     mapSerialHashes[meta.hashSerial] = meta;
 
     if (isNew)
@@ -433,7 +436,6 @@ bool CzNXBTracker::UpdateStatusInternal(const std::set<uint256>& setMempool, CMi
 std::set<CMintMeta> CzNXBTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, bool fUpdateStatus, bool fWrongSeed)
 {
     CWalletDB walletdb(strWalletFile);
-    CzNXBWallet zNXBWallet(strWalletFile);
     if (fUpdateStatus) {
         std::list<CZerocoinMint> listMintsDB = walletdb.ListMintedCoins();
         for (auto& mint : listMintsDB)
@@ -442,8 +444,6 @@ std::set<CMintMeta> CzNXBTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, 
 
         std::list<CDeterministicMint> listDeterministicDB = walletdb.ListDeterministicMints();
         for (auto& dMint : listDeterministicDB) {
-            if (!fWrongSeed && !zNXBWallet.CheckSeed(dMint))
-                continue;
             Add(dMint);
         }
         LogPrint("zero", "%s: added %d dzNXB from DB\n", __func__, listDeterministicDB.size());
@@ -484,6 +484,9 @@ std::set<CMintMeta> CzNXBTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, 
             if (mint.nHeight >= mapMaturity.at(mint.denom))
                 continue;
         }
+
+        if (!fWrongSeed && !mint.isSeedCorrect)
+            continue;
 
         setMints.insert(mint);
     }
