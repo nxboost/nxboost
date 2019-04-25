@@ -186,7 +186,7 @@ BITCOIN_CORE_H = \
   zNXBwallet.h \
   genwit.h \
   concurrentqueue.h \
-  lightzNXBthread.h \
+  lightznxbthread.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -278,6 +278,7 @@ libbitcoin_wallet_a_SOURCES = \
   zNXBtracker.cpp \
   stakeinput.cpp \
   genwit.cpp \
+  lightznxbthread.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
