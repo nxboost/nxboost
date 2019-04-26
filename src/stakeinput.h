@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef nxboost_STAKEINPUT_H
-#define nxboost_STAKEINPUT_H
+#ifndef NXBOOST_STAKEINPUT_H
+#define NXBOOST_STAKEINPUT_H
 
 #include "chain.h"
 #include "streams.h"
@@ -95,4 +95,4 @@ public:
 };
 
 
-#endif //nxboost_STAKEINPUT_H
+#endif //NXBOOST_STAKEINPUT_H

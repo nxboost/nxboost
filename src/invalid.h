@@ -3,10 +3,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef nxboost_INVALID_H
-#define nxboost_INVALID_H
+#ifndef NXBOOST_INVALID_H
+#define NXBOOST_INVALID_H
 
-#endif //nxboost_INVALID_H
+#endif //NXBOOST_INVALID_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>

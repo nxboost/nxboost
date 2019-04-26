@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef nxboost_MINTPOOL_H
-#define nxboost_MINTPOOL_H
+#ifndef NXBOOST_MINTPOOL_H
+#define NXBOOST_MINTPOOL_H
 
 #include <map>
 #include <list>
@@ -51,4 +51,4 @@ public:
 };
 
 
-#endif //nxboost_MINTPOOL_H
+#endif //NXBOOST_MINTPOOL_H

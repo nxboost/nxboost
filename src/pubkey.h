@@ -5,8 +5,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef nxboost_PUBKEY_H
-#define nxboost_PUBKEY_H
+#ifndef NXBOOST_PUBKEY_H
+#define NXBOOST_PUBKEY_H
 
 #include "hash.h"
 #include "serialize.h"
@@ -264,4 +264,4 @@ public:
     ~ECCVerifyHandle();
 };
 
-#endif // nxboost_PUBKEY_H
+#endif //NXBOOST_PUBKEY_H

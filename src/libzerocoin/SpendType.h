@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef nxboost_SPENDTYPE_H
-#define nxboost_SPENDTYPE_H
+#ifndef NXBOOST_SPENDTYPE_H
+#define NXBOOST_SPENDTYPE_H
 
 #include <cstdint>
 
@@ -17,4 +17,4 @@ namespace libzerocoin {
     };
 }
 
-#endif //nxboost_SPENDTYPE_H
+#endif //NXBOOST_SPENDTYPE_H

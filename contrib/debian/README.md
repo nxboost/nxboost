@@ -14,8 +14,7 @@ To install:
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your nxboostqt binary to `/usr/bin`
+the .desktop file or copy or symlink your nxboost-qt binary to `/usr/bin`
 and the `../../share/pixmaps/nxboost128.png` to `/usr/share/pixmaps`
 
 nxboost-qt.protocol (KDE)
-

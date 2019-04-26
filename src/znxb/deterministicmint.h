@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef nxboost_DETERMINISTICMINT_H
-#define nxboost_DETERMINISTICMINT_H
+#ifndef NXBOOST_DETERMINISTICMINT_H
+#define NXBOOST_DETERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
@@ -65,4 +65,4 @@ public:
     };
 };
 
-#endif //nxboost_DETERMINISTICMINT_H
+#endif //NXBOOST_DETERMINISTICMINT_H

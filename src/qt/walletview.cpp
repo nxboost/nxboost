@@ -40,7 +40,7 @@
 WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
                                           clientModel(0),
                                           walletModel(0)
-{   
+{
     // Create tabs
     overviewPage = new OverviewPage();
     explorerWindow = new BlockExplorer(this);
@@ -75,7 +75,7 @@ WalletView::WalletView(QWidget* parent) : QStackedWidget(parent),
     QLabel* labelOverviewHeaderRight = new QLabel(frame_Header);
     labelOverviewHeaderRight->setObjectName(QStringLiteral("labelOverviewHeaderRight"));
     labelOverviewHeaderRight->setMinimumSize(QSize(464, 60));
-    labelOverviewHeaderRight->setMaximumSize(QSize(16777215, 60));
+    labelOverviewHeaderRight->setMaximumSize(QSize(464, 60));
     labelOverviewHeaderRight->setText(QString());
     QFont fontHeaderRight;
     fontHeaderRight.setPointSize(14);
@@ -350,7 +350,7 @@ void WalletView::encryptWallet(bool status)
 {
     if (!walletModel)
         return;
-    AskPassphraseDialog dlg(status ? AskPassphraseDialog::Mode::Encrypt : AskPassphraseDialog::Mode::Decrypt, this, 
+    AskPassphraseDialog dlg(status ? AskPassphraseDialog::Mode::Encrypt : AskPassphraseDialog::Mode::Decrypt, this,
                             walletModel, AskPassphraseDialog::Context::Encrypt);
     dlg.exec();
 

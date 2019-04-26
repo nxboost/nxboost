@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef nxboost_ACCUMULATORS_H
-#define nxboost_ACCUMULATORS_H
+#ifndef NXBOOST_ACCUMULATORS_H
+#define NXBOOST_ACCUMULATORS_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -91,4 +91,4 @@ public:
     searchMintHeightException(const string &message) : message(message) {}
 };
 
-#endif //nxboost_ACCUMULATORS_H
+#endif //NXBOOST_ACCUMULATORS_H

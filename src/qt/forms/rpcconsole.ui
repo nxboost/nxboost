@@ -353,6 +353,18 @@
        </item>
        <item row="16" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>23</height>
+          </size>
+         </property>
          <property name="toolTip">
           <string>Open the NXBoost debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>

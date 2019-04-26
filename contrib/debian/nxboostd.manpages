@@ -1,2 +1,2 @@
-debian/manpages/nxboostd.1
-debian/manpages/nxboost.conf.5
+doc/man/nxboostd.1
+doc/man/nxboost-cli.1

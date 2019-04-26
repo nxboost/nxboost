@@ -1,1 +1,2 @@
 contrib/nxboostd.bash-completion	nxboostd
+contrib/nxboost-cli.bash-completion nxboost-cli
