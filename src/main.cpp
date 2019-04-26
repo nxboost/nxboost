@@ -2174,7 +2174,7 @@ bool ValidOutPoint(const COutPoint out, int nHeight)
     return !isInvalid;
 }
 
-CAmount GetInvalidUTXOValue()
+/*CAmount GetInvalidUTXOValue()
 {
     CAmount nValue = 0;
     for (auto out : invalid_out::setInvalidOutPoints) {
@@ -2189,7 +2189,7 @@ CAmount GetInvalidUTXOValue()
     }
 
     return nValue;
-}
+}*/
 
 bool CheckInputs(const CTransaction& tx, CValidationState& state, const CCoinsViewCache& inputs, bool fScriptChecks, unsigned int flags, bool cacheStore, std::vector<CScriptCheck>* pvChecks)
 {
@@ -2467,10 +2467,14 @@ void ThreadScriptCheck()
 void RecalculatezNXBMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
+    uiInterface.ShowProgress(_("Recalculating minted ZNXB..."), 0);
     int nHeightEnd = chainActive.Height();
     while (true) {
-        if (pindex->nHeight % 1000 == 0)
+        if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
+            int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainActive.Height() - Params().Zerocoin_StartHeight()))));
+            uiInterface.ShowProgress(_("Recalculating minted ZNXB..."), percent);
+        }
 
         //overwrite possibly wrong vMintsInBlock data
         CBlock block;
@@ -2489,14 +2493,19 @@ void RecalculatezNXBMinted()
         else
             break;
     }
+    uiInterface.ShowProgress("", 100);
 }
 
 void RecalculatezNXBSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
+    uiInterface.ShowProgress(_("Recalculating spent ZNXB..."), 0);
     while (true) {
-        if (pindex->nHeight % 1000 == 0)
+        if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
+            int percent = std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) * 100 / (chainActive.Height() - Params().Zerocoin_StartHeight()))));
+            uiInterface.ShowProgress(_("Recalculating spent ZNXB..."), percent);
+        }
 
         //Rewrite zNXB supply
         CBlock block;
@@ -2525,6 +2534,7 @@ void RecalculatezNXBSpent()
         else
             break;
     }
+    uiInterface.ShowProgress("", 100);
 }
 
 bool RecalculateNXBSupply(int nHeightStart)
@@ -2537,9 +2547,13 @@ bool RecalculateNXBSupply(int nHeightStart)
     //if (nHeightStart == Params().Zerocoin_StartHeight())
     //    nSupplyPrev = CAmount(5449796547496199);
 
+    uiInterface.ShowProgress(_("Recalculating NXB supply..."), 0);
     while (true) {
-        if (pindex->nHeight % 1000 == 0)
+        if (pindex->nHeight % 1000 == 0) {
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
+            int percent = std::max(1, std::min(99, (int)((double)((pindex->nHeight - nHeightStart) * 100) / (chainActive.Height() - nHeightStart))));
+            uiInterface.ShowProgress(_("Recalculating NXB supply..."), percent);
+        }
 
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
@@ -2576,7 +2590,7 @@ bool RecalculateNXBSupply(int nHeightStart)
         nSupplyPrev = pindex->nMoneySupply;
 
         // Add fraudulent funds to the supply and remove any recovered funds.
-        if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators()) {
+/*        if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators()) {
             LogPrintf("%s : Original money supply=%s\n", __func__, FormatMoney(pindex->nMoneySupply));
 
             pindex->nMoneySupply += Params().InvalidAmountFiltered();
@@ -2585,7 +2599,7 @@ bool RecalculateNXBSupply(int nHeightStart)
             CAmount nLocked = GetInvalidUTXOValue();
             pindex->nMoneySupply -= nLocked;
             LogPrintf("%s : Removing locked from supply - %s : supply=%s\n", __func__, FormatMoney(nLocked), FormatMoney(pindex->nMoneySupply));
-        }
+        }*/
 
         assert(pblocktree->WriteBlockIndex(CDiskBlockIndex(pindex)));
 
@@ -2594,6 +2608,7 @@ bool RecalculateNXBSupply(int nHeightStart)
         else
             break;
     }
+    uiInterface.ShowProgress("", 100);
     return true;
 }
 
