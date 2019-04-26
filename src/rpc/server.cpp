@@ -366,7 +366,6 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  true,  false  },
 
         /* NXBoost features */
-        {"nxboost", "masternode", &masternode, true, true, false},
         {"nxboost", "listmasternodes", &listmasternodes, true, true, false},
         {"nxboost", "getmasternodecount", &getmasternodecount, true, true, false},
         {"nxboost", "masternodeconnect", &masternodeconnect, true, true, false},
@@ -382,7 +381,6 @@ static const CRPCCommand vRPCCommands[] =
         {"nxboost", "getmasternodestatus", &getmasternodestatus, true, true, false},
         {"nxboost", "getmasternodewinners", &getmasternodewinners, true, true, false},
         {"nxboost", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"nxboost", "mnbudget", &mnbudget, true, true, false},
         {"nxboost", "preparebudget", &preparebudget, true, true, false},
         {"nxboost", "submitbudget", &submitbudget, true, true, false},
         {"nxboost", "mnbudgetvote", &mnbudgetvote, true, true, false},
