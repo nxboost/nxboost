@@ -185,6 +185,7 @@ BITCOIN_CORE_H = \
   znxb/zerocoin.h \
   znxb/znxbtracker.h \
   znxb/znxbwallet.h \
+  znxb/znxbmodule.h \
   genwit.h \
   concurrentqueue.h \
   lightznxbthread.h \
@@ -281,6 +282,7 @@ libbitcoin_wallet_a_SOURCES = \
   znxb/znxbtracker.cpp \
   stakeinput.cpp \
   genwit.cpp \
+  znxb/znxbmodule.cpp \
   lightznxbthread.cpp \
   $(BITCOIN_CORE_H)
 
