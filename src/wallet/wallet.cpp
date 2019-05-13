@@ -1448,20 +1448,25 @@ CAmount CWallet::GetBalance() const
     return nTotal;
 }
 
-std::map<libzerocoin::CoinDenomination, int> mapMintMaturity;
-int nLastMaturityCheck = 0;
+//std::map<libzerocoin::CoinDenomination, int> mapMintMaturity;
+//int nLastMaturityCheck = 0;
+
 CAmount CWallet::GetZerocoinBalance(bool fMatureOnly) const
 {
     if (fMatureOnly) {
-        if (chainActive.Height() > nLastMaturityCheck)
-            mapMintMaturity = GetMintMaturityHeight();
-        nLastMaturityCheck = chainActive.Height();
+        // This code is not removed just for when we back to use zNXB in the future, for now it's useless,
+        // every public coin spend is now spendable without need to have new mints on top.
+
+        //if (chainActive.Height() > nLastMaturityCheck)
+        //    mapMintMaturity = GetMintMaturityHeight();
+        //nLastMaturityCheck = chainActive.Height();
 
         CAmount nBalance = 0;
         vector<CMintMeta> vMints = znxbTracker->GetMints(true);
         for (auto meta : vMints) {
-            if (meta.nHeight >= mapMintMaturity.at(meta.denom) || meta.nHeight >= chainActive.Height() || meta.nHeight == 0)
-                continue;
+            // Every public coin spend is now spendable, no need to mint new coins on top.
+            //if (meta.nHeight >= mapMintMaturity.at(meta.denom) || meta.nHeight >= chainActive.Height() || meta.nHeight == 0)
+            //    continue;
             nBalance += libzerocoin::ZerocoinDenominationToAmount(meta.denom);
         }
         return nBalance;
@@ -4119,7 +4124,8 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, CWalletTx& wtxNew, 
     const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zNXB transaction
     vector<CMintMeta> vMintsToFetch;
     if (vSelectedMints.empty()) {
-        setMints = znxbTracker->ListMints(true, true, true); // need to find mints to spend
+        //  All of the zNXB used in the public coin spend are mature by default (everything is public now.. no need to wait for any accumulation)
+        setMints = znxbTracker->ListMints(true, false, true); // need to find mints to spend
         if(setMints.empty()) {
             receipt.SetStatus(_("Failed to find Zerocoins in wallet.dat"), nStatus);
             return false;
