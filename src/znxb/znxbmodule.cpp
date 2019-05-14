@@ -76,7 +76,7 @@ namespace ZNXBModule {
     }
 
     bool parseCoinSpend(const CTxIn &in, const CTransaction &tx, const CTxOut &prevOut, PublicCoinSpend &publicCoinSpend) {
-        if (!in.scriptSig.IsZerocoinPublicSpend() || !prevOut.scriptPubKey.IsZerocoinMint())
+        if (!in.IsZerocoinPublicSpend() || !prevOut.IsZerocoinMint())
             return error("%s: invalid argument/s\n", __func__);
 
         std::vector<char, zero_after_free_allocator<char> > data;
