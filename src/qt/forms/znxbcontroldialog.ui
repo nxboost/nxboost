@@ -19,7 +19,7 @@
   <property name="windowTitle">
    <string>Select zNXB to Spend</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0">
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
      <property name="spacing">
@@ -117,8 +117,8 @@
      </item>
     </layout>
    </item>
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout">
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QTreeWidget" name="treeWidget">
        <property name="sizePolicy">
