@@ -182,6 +182,16 @@ bool CTransaction::HasZerocoinMintOutputs() const
     return false;
 }
 
+bool CTransaction::IsZerocoinPublicSpend() const
+{
+    // The wallet only allows publicSpend inputs in the same tx and not a combination between nxb and znxb
+    for(const CTxIn& txin : vin) {
+        if (txin.scriptSig.IsZerocoinPublicSpend())
+            return true;
+    }
+    return false;
+}
+
 bool CTransaction::IsCoinStake() const
 {
     if (vin.empty())
@@ -243,9 +253,6 @@ std::list<COutPoint> CTransaction::GetOutPoints() const
 
 CAmount CTransaction::GetZerocoinSpent() const
 {
-    if(!IsZerocoinSpend() && !IsZerocoinPublicSpend())
-        return 0;
-
     CAmount nValueOut = 0;
     for (const CTxIn& txin : vin) {
         if(!txin.IsZerocoinSpend() && !txin.scriptSig.IsZerocoinPublicSpend())

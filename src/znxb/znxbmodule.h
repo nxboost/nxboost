@@ -30,6 +30,7 @@ public:
         this->coinSerialNumber = serial;
         this->randomness = randomness;
         this->pubkey = pubkey;
+        this->spendType = libzerocoin::SpendType::SPEND;
     };
 
     template <typename Stream>
@@ -37,13 +38,13 @@ public:
             libzerocoin::ZerocoinParams* params,
             Stream& strm):pubCoin(params){
         strm >> *this;
+        this->spendType = libzerocoin::SpendType::SPEND;
     }
 
     uint8_t getVersion() const { return libzerocoin::PrivateCoin::PUBKEY_VERSION; }
 
     const uint256 signatureHash() const override;
     void setVchSig(std::vector<unsigned char> vchSig) { this->vchSig = vchSig; };
-    libzerocoin::SpendType getSpendType() const { return libzerocoin::SpendType::SPEND; }
     bool Verify(const libzerocoin::Accumulator& a, bool verifyParams = true) const override;
     bool validate() const;
 
