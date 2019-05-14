@@ -4101,12 +4101,6 @@ bool CWallet::MintsToInputVectorPublicSpend(std::map<CBigNum, CZerocoinMint>& ma
 bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, CWalletTx& wtxNew, CReserveKey& reserveKey, CZerocoinSpendReceipt& receipt, vector<CZerocoinMint>& vSelectedMints, vector<CDeterministicMint>& vNewMints, bool fMintChange,  bool fMinimizeChange, CBitcoinAddress* address)
 {
 
-    // Check enforcement
-    if (chainActive.Tip()->nHeight < Params().Zerocoin_Block_Public_Spend_Enabled()){
-        receipt.SetStatus(_("New protocol enforcement not activated"), ZNXB_SPEND_ERROR);
-        return false;
-    }
-
     // Check available funds
     int nStatus = ZNXB_TRX_FUNDS_PROBLEMS;
     if (nValue > GetZerocoinBalance(true)) {
