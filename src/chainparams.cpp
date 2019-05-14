@@ -148,6 +148,10 @@ public:
         nRejectOldSporkKey = 1527811200; //!> Fully reject old spork key after (GMT): Friday, June 1, 2018 12:00:00 AM
 
         const char* pszTimestamp = "NXBoost Reload august 2018";
+
+        // Public coin spend enforcement
+        nPublicZCSpends = 2000000;
+
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -262,6 +266,9 @@ public:
         nEnforceNewSporkKey = 1521604800; //!> Sporks signed after Wednesday, March 21, 2018 4:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1522454400; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
+        // Public coin spend enforcement
+        nPublicZCSpends = 2000000;
+
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1509321602;
         genesis.nNonce = 1486441;
@@ -344,6 +351,9 @@ public:
         nBlockRecalculateAccumulators = 999999999; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 999999999; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 999999999; //Last valid accumulator checkpoint
+
+        // Public coin spend enforcement
+        nPublicZCSpends = 350;
 
         //! Modify the regtest genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1509321603;
