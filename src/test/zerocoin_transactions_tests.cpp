@@ -13,13 +13,14 @@
 #include "wallet/walletdb.h"
 #include "txdb.h"
 #include "znxb/znxbmodule.h"
+#include "test/test_nxboost.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
 
 using namespace libzerocoin;
 
 
-BOOST_AUTO_TEST_SUITE(zerocoin_transactions_tests)
+BOOST_FIXTURE_TEST_SUITE(zerocoin_transactions_tests, TestingSetup)
 
 static CWallet cWallet("unlocked.dat");
 
@@ -113,7 +114,7 @@ BOOST_AUTO_TEST_CASE(zerocoin_public_spend_test)
     // Verify that fails with a different denomination
     in.nSequence = 500;
     PublicCoinSpend publicSpend2(ZCParams);
-    BOOST_CHECK_MESSAGE(!ZPIVModule::validateInput(in, out, tx, publicSpend2), "Different denomination");
+    BOOST_CHECK_MESSAGE(!ZNXBModule::validateInput(in, out, tx, publicSpend2), "Different denomination");
 
 }
 
