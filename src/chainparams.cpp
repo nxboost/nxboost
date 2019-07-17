@@ -127,7 +127,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // NXBoost: 1 day
         nTargetSpacing = 1 * 60;  // NXBoost: 1 minute
-        nMaturity = 29;
+        nMaturity = 100;
         nMasternodeCountDrift = 4;
         nMaxMoneyOut = 150000000 * COIN;
 
@@ -268,7 +268,7 @@ public:
         nRejectOldSporkKey = 1527811200; //!> Reject old spork key after Saturday, March 31, 2018 12:00:00 AM GMT
 
         // Public coin spend enforcement
-        nPublicZCSpends = 2000000;
+        nPublicZCSpends = 1000;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1509321602;
@@ -302,7 +302,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        nBudgetCycleBlocks = 144; //!< Ten cycles per day on testnet
+        nBudgetCycleBlocks = 100000; //!< Ten cycles per day on testnet
         strSporkKey = "049e53e687fdafd78fd42d730fad0e7ea1819396176a2cb85d7a76fa4559cdbd2c2f05330a6f5cbadb44a6c1d324f167e679e9f3e95d9d5649761a3e7f59bf4500";
         strSporkKeyOld = "049e53e687fdafd78fd42d730fad0e7ea1819396176a2cb85d7a76fa4559cdbd2c2f05330a6f5cbadb44a6c1d324f167e679e9f3e95d9d5649761a3e7f59bf4500";
         strObfuscationPoolDummyAddress = "";

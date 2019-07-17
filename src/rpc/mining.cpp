@@ -138,43 +138,34 @@ UniValue generate(const UniValue& params, bool fHelp)
     if (!Params().MineBlocksOnDemand())
         throw JSONRPCError(RPC_METHOD_NOT_FOUND, "This method can only be used on regtest");
 
-    int nHeightStart = 0;
-    int nHeightEnd = 0;
-    int nHeight = 0;
     int nGenerate = params[0].get_int();
-    CReserveKey reservekey(pwalletMain);
-
-    {   // Don't keep cs_main locked
-        LOCK(cs_main);
-        nHeightStart = chainActive.Height();
-        nHeight = nHeightStart;
-        nHeightEnd = nHeightStart+nGenerate;
-    }
-    unsigned int nExtraNonce = 0;
+    int nHeightStart = chainActive.Height();
+    int nHeight = nHeightStart;
+    int nHeightEnd = nHeightStart+nGenerate;
     UniValue blockHashes(UniValue::VARR);
     bool fPoS = nHeight >= Params().LAST_POW_BLOCK();
     while (nHeight < nHeightEnd)
     {
 
-        unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey, pwalletMain, fPoS));
+        unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(pwalletMain, fPoS));
         if (!pblocktemplate.get())
             throw JSONRPCError(RPC_INTERNAL_ERROR, "Couldn't create new block");
         CBlock *pblock = &pblocktemplate->block;
-
-        if(!fPoS){
-            {
-                LOCK(cs_main);
-                IncrementExtraNonce(pblock, chainActive.Tip(), nExtraNonce);
-            }
-        }
+        if (!fPoS)
         while (!CheckProofOfWork(pblock->GetHash(), pblock->nBits)) {
             // Yes, there is a chance every nonce could fail to satisfy the -regtest
             // target -- 1 in 2^(2^32). That ain't gonna happen.
             ++pblock->nNonce;
         }
         CValidationState state;
-        if (!ProcessNewBlock(state, NULL, pblock))
+        if (!ProcessNewBlock(state, NULL, pblock)) {
+            if (pblock->IsZerocoinStake()) {
+                pwalletMain->znxbTracker->RemovePending(pblock->vtx[1].GetHash());
+                pwalletMain->znxbTracker->ListMints(true, true, true); //update the state
+            }
+
             throw JSONRPCError(RPC_INTERNAL_ERROR, "ProcessNewBlock, block not accepted");
+        }
         ++nHeight;
         fPoS = nHeight >= Params().LAST_POW_BLOCK();
         blockHashes.push_back(pblock->GetHash().GetHex());

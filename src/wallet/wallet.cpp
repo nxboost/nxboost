@@ -1865,7 +1865,7 @@ bool CWallet::MintableCoins()
 {
     LOCK(cs_main);
     CAmount nBalance = GetBalance();
-    CAmount nzNXBBalance = GetZerocoinBalance(false);
+//    CAmount nzNXBBalance = GetZerocoinBalance(false);
 
     // Regular NXB
     if (nBalance > 0) {
@@ -1891,7 +1891,7 @@ bool CWallet::MintableCoins()
     }
 
     // zNXB
-    if (nzNXBBalance > 0) {
+/*    if (nzNXBBalance > 0) {
         set<CMintMeta> setMints = znxbTracker->ListMints(true, true, true);
         for (auto mint : setMints) {
             if (mint.nVersion < CZerocoinMint::STAKABLE_VERSION)
@@ -1900,7 +1900,7 @@ bool CWallet::MintableCoins()
                 continue;
            return true;
         }
-    }
+    }*/
 
     return false;
 }
@@ -2381,6 +2381,7 @@ bool CWallet::CreateCoinStake(
     CScript scriptPubKeyKernel;
     bool fKernelFound = false;
     int nAttempts = 0;
+    int nHeightStart = chainActive.Height();
     for (std::unique_ptr<CStakeInput>& stakeInput : listInputs) {
         nCredit = 0;
         // Make sure the wallet is unlocked and shutdown hasn't been requested
@@ -2468,6 +2469,9 @@ bool CWallet::CreateCoinStake(
             fKernelFound = true;
             break;
         }
+        //new block came in, move on
+        if (chainActive.Height() != nHeightStart)
+            break;
         if (fKernelFound)
             break; // if kernel is found stop searching
     }
