@@ -1,11 +1,14 @@
-NXBoost Core version *4.3.0* is now available from:  <https://github.com/nxboost/nxboost/releases>
+NXBoost Core version *4.4.0* is now available from:  <https://github.com/nxboost/nxboost/releases>
+
+This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at github: <https://github.com/nxboost/nxboost/issues>
 
-Non-Mandatory Update
+
+Mandatory Update
 ==============
 
-NXBoost Core v4.3.0 is a **mandatory update** for all block creators, masternodes, and integrated services (exchanges). Old version 6 blocks will be rejected once 95% of a rolling 7 days worth of blocks have signaled the new version 7.
+NXBoost Core v4.4.0 is a mandatory update for all users. This release contains new consensus rules and improvements that are not backwards compatible with older versions. Users will have a grace period of approximately one week to update their clients before enforcement of this update goes into effect.
 
 Masternodes will need to be restarted once both the masternode daemon and the controller wallet have been upgraded.
 
@@ -20,10 +23,7 @@ Compatibility
 
 NXBoost Core is extensively tested on multiple operating systems using the Linux kernel, macOS 10.10+, and Windows 7 and later.
 
-Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
-No attempt is made to prevent installing or running the software on Windows XP, you
-can still do so at your own risk but be aware that there are known instabilities and issues.
-Please do not report issues about Windows XP to the issue tracker.
+Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support), No attempt is made to prevent installing or running the software on Windows XP, you can still do so at your own risk but be aware that there are known instabilities and issues. Please do not report issues about Windows XP to the issue tracker.
 
 Apple released it's last Mountain Lion update August 13, 2015, and officially ended support on [December 14, 2015](http://news.fnal.gov/2015/10/mac-os-x-mountain-lion-10-8-end-of-life-december-14/). NXBoost Core software starting with v4.3.0 will no longer run on MacOS versions prior to Yosemite (10.10). Please do not report issues about MacOS versions prior to Yosemite to the issue tracker.
 
@@ -33,196 +33,99 @@ NXBoost Core should also work on most other Unix-like systems but is not frequen
 Notable Changes
 ==============
 
-Minimum Supported MacOS Version
-------
+## zNXB Public Spends
 
-The minimum supported version of MacOS (OSX) has been moved from 10.8 Mountain Lion to 10.10 Yosemite. Users still running a MacOS version prior to Yosemite will need to upgrade their OS if they wish to continue using the latest version(s) of the NXBoost Core wallet.
+Recent exploits of the Zerocoin protocol (Wrapped serials and broken P1 proof) required us to enable the zerocoin spork and deactivate zNXB functionality in order to secure the supply until the pertinent review process was completed.
 
-Bug Fixes
-------
+Moving forward from this undesired situation, we are enabling a secure and chain storage friendly solution for the zerocoin public spend (aka zNXB to NXB conversion).
 
-### Improper rejection of valid blocks
+The explanation of how this works can be found in #891
 
-A bug was discovered in the block acceptance portion of the code that resulted in rejection of otherwise valid blocks. This caused a race condition where some clients ended up on a low-difficulty chain.
+After block `450,000` has past, `SPORK_16` will be deactivated to allow zNXB spends to occur using this new public spend method for version 2 zNXB (version 1 zNXB won't be spendable, see note below). zNXB public spends, as the name suggests, are **NOT** private, they reveal the input mint that is being spent. The minting of **NEW** zNXB, as well as zNXB staking will remain disabled for the time being.
 
-This issue has been fixed, and no user funds were at risk.
+It is advised that users spend/convert their existing zNXB to NXB, which can be done via the GUI or RPC as it was prior to the disabling of zNXB. Note that with the public spend method, the restriction on the number of denominations per transaction (previously 7) has been lifted, and now allows for several hundred denominations per transaction.
 
-### GUI crash when recalculating zNXB data
+## GUI Changes
 
-A GUI only crash when recalculating zNXB data (mints/spends/supply) has been fixed. Clients syncing via the network from a point prior to any recalculations can now do so without error again.
+### Options Dialog Cleanup
 
-### macOS installer mounting
+The options/settings UI dialog has been cleaned up to no longer show settings that are wallet related when running in "disable wallet" (`-disablewallet`) mode.
 
-The macOS installer image (`.dmg` file) had an issue with it's stylesheet that caused an error after mounting the image. Affected macOS users will now see the expected behavior of a finder window appearing after mounting, allowing drag-n-drop installation of the NXBoost-Qt.app
+### Privacy Tab
 
-### macOS "Pink Pinstripes"
+Notice text has been added to the privacy tab indicating that zNXB minting is disabled, as well as the removal of UI elements that supported such functionality. Notice text has also been added indicating that zNXB spends are currently **NOT** private.
 
-A GUI wallet stylesheet issue was causing "pink pinstripes" to display in many of the wallet's views, this has now been resolved.
+## RPC Changes
 
-### Incorrect seed warning in zNXB control dialog
+### Removal of Deprecated Commands
 
-Because of the way the zNXB master seed is handled, locked wallets were showing a status message in the zNXB control dialog window which mentioned that the master seed was not the same used to mint the denom. This message was not entirely correct, and a more appropriate message is now displayed for locked wallets.
+The `masternode` and `mnbudget` RPC commands, which were marked as deprecated in PIVX Core v2.3.1 (September 19, 2017), have now been completely removed from NXBoos Core.
 
-### Invalid chain state on shutdown
+Several new commands were added in v2.3.1 to replace the two aforementioned commands, reference the [v2.3.1 Release Notes](https://github.com/PIVX-Project/PIVX/blob/master/doc/release-notes/release-notes-2.3.1.md#rpc-changes) for further details.
 
-An issue in how the wallet shutdown procedure is carried out was sometimes leading to marking an incoming block as invalid when it in fact was valid. This would cause the client to seem "stuck" when starting it again. This issue is now resolved.
+### New `getblockindexstats` Command
 
-Attacks, Exploits, and Mitigations
-------
+A new RPC command (`getblockindexstats`) has been introduced which serves the purpose of obtaining statistical information on a range of blocks. The information returned is as follows:
+  * transaction count (not including coinbase/coinstake txes)
+  * transaction count (including coinbase/coinstake txes)
+  * zNXB per-denom mint count
+  * zNXB per-denom spend count
+  * total transaction bytes
+  * total fees in block range
+  * average fee per kB
 
-### Fake Stake
+Command Reference:
+```$xslt
+getblockindexstats height range ( fFeeOnly )
+nReturns aggregated BlockIndex data for blocks
+height, height+1, height+2, ..., height+range-1]
 
-On Janurary 22 2019, Decentralized Systems Lab out of the University of Illinois published a study entitled “[‘Fake Stake’ attacks on chain-based Proof-of-Stake cryptocurrencies](https://medium.com/@dsl_uiuc/fake-stake-attacks-on-chain-based-proof-of-stake-cryptocurrencies-b8b05723f806)”, which outlined a type of Denial of Service attack that could take place on a number of Proof of Stake based networks by exhausting a client's RAM or Disk resources.
+nArguments:
+1. height             (numeric, required) block height where the search starts.
+2. range              (numeric, required) number of blocks to include.
+3. fFeeOnly           (boolean, optional, default=False) return only fee info.
+```
+Result:
+```
+{
+  first_block: x,              (integer) First counted block
+  last_block: x,               (integer) Last counted block
+  txcount: xxxxx,              (numeric) tx count (excluding coinbase/coinstake)
+  txcount_all: xxxxx,          (numeric) tx count (including coinbase/coinstake)
+  mintcount: {              [if fFeeOnly=False]
+        denom_1: xxxx,         (numeric) number of mints of denom_1 occurred over the block range
+        denom_5: xxxx,         (numeric) number of mints of denom_5 occurred over the block range
+         ...                    ... number of mints of other denominations: ..., 10, 50, 100, 500, 1000, 5000
+  },
+  spendcount: {             [if fFeeOnly=False]
+        denom_1: xxxx,         (numeric) number of spends of denom_1 occurred over the block range
+        denom_5: xxxx,         (numeric) number of spends of denom_5 occurred over the block range
+         ...                    ... number of spends of other denominations: ..., 10, 50, 100, 500, 1000, 5000
+  },
+  pubspendcount: {          [if fFeeOnly=False]
+        denom_1: xxxx,         (numeric) number of PUBLIC spends of denom_1 occurred over the block range
+        denom_5: xxxx,         (numeric) number of PUBLIC spends of denom_5 occurred over the block range
+         ...                   ... number of PUBLIC spends of other denominations: ..., 10, 50, 100, 500, 1000, 5000
+  },
+  txbytes: xxxxx,              (numeric) Sum of the size of all txes (zNXB excluded) over block range
+  ttlfee: xxxxx,               (numeric) Sum of the fee amount of all txes (zNXB mints excluded) over block range
+  ttlfee_all: xxxxx,           (numeric) Sum of the fee amount of all txes (zNXB mints included) over block range
+  feeperkb: xxxxx,             (numeric) Average fee per kb (excluding zc txes)
+}
+```
 
-This type of attack has no risk to users' privacy and does not affect their holdings.
+## Build System Changes
 
-### Wrapped Serials
+### New Architectures for Depends
 
-On March 6th 2019, an attack was detected on the PIVX network zerocoin protocol, or zPIV. The vulnerability allows an attacker to fake serials accepted by the network and thus to spend zerocoins that have never been minted. As severe as it is, it does not harm users’ privacy and does not affect their holdings directly.
+The depends system has new added support for the `s390x` and `ppc64el` architectures. This is done in order to support the future integration with [Snapcraft](https://www.snapcraft.io), as well as to support any developers who may use systems based on such architectures.
 
-As a result of this, all zNXB functionality was disabled via one of our sporks shortly after verification of this exploit.
+### Basic CMake Support
 
-zNXB functions will be restored after v4.3.0 is pushed out and the majority of the network has upgraded.
+While the existing Autotools based build system is our standard build system, and will continue to be so, we have added basic support for compiling with CMake on macOS and linux systems.
 
-Major New Features
-------
+This is intended to be used in conjunction with IDEs like CLion (which relies heavily on CMake) in order to streamline the development process. Developers can now use, for example, CLion's internal debugger and profiling tools.
 
-### BIP65 (CHECKLOCKTIMEVERIFY) Soft-Fork
-
-NXBoost Core v4.3.0 introduces new consensus rules for scripting pathways to support the [BIP65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki) standard. This is being carried out as a soft-fork in order to provide ample time for stakers to update their wallet version.
-
-### Automint Addresses
-
-A new "Automint Addresses" feature has been added to the wallet that allows for the creation of new addresses who's purpose is to automatically convert any NXB funds received by such addresses to zNXB. The feature as a whole can be enabled/disabled either at runtime using the `-enableautoconvertaddress` option, via RPC/Console with the `enableautomintaddress` command, or via the GUI's options dialog, with the default being enabled.
-
-Creation of these automint addresses is currently only available via the RPC/Console `createautomintaddress` command, which takes no additional arguments. The command returns a new NXBoost address each time, but addresses created by this command can be re-used if desired.
-
-### In-wallet Proposal Voting
-
-A new UI wallet tab has been introduced that allows users to view the current budget proposals, their vote counts, and vote on proposals if the wallet is acting as a masternode controller. The visual design is to be considered temporary, and will be undergoing further design and display improvements in the future.
-
-### Zerocoin Lite Node Protocol
-
-Support for the ZLN Protocol has been added, which allows for a node to opt-in to providing extended network services for the protocol. By default, this functionality is disabled, but can be enabled by using the `-peerbloomfilterszc` runtime option.
-
-A full technical writeup of the protocol can be found [Here](https://pivx.org/wp-content/uploads/2018/11/Zerocoin_Light_Node_Protocol.pdf).
-
-### Precomputed Zerocoin Proofs
-
-This introduces the ability to do most of the heavy computation required for zNXB spends **before** actually initiating the spend. A new thread, `ThreadPrecomputeSpends`, is added which constantly runs in the background.
-
-`ThreadPrecomputeSpends`' purpose is to monitor the wallet's zNXB mints and perform partial witness accumulations up to `nHeight - 20` blocks from the chain's tip (to ensure that it only ever computes data that is at least 2 accumulator checkpoints deep), retaining the results in memory.
-
-Additionally, a file based cache is introduced, `precomputes.dat`, which serves as a place to store any precomputed data between sessions, or when the in-memory cache size is exhausted. Swapping data between memory and disk file is done as needed, and periodic cache flushes to the disk are routine.
-
-This also introduces 2 new runtime configuration options:
-
-* `-precompute` is a binary boolean option (`1` or `0`) that determines wither or not pre-computation should be activated at runtime (default value is to activate, `1`).
-* `-precomputecachelength` is a numeric value between `500` and `2000` that tells the precompute thread how many blocks to include during each pass (default is `1000`).
-
-A new RPC command, `clearspendcache`, has been added that allows for the clearing/resetting of the precompute cache (both memory and disk). This command takes no additional arguments.
-
-Finally, the "security level" option for spending zNXB has been completely removed, and all zNXB spends now spend at what was formerly "security level" `100`. This change has been reflected in any RPC command that previously took a security level argument, as well as in the GUI's Privacy section for spending zNXB.
-
-### Regression Test Suite
-
-The RegTest network mode has been re-worked to once again allow for the generation of on-demand PoW and PoS blocks. Additionally, many of the existing functional test scripts have been adapted for use with NXBoost, and we now have a solid testing base for highly customizable tests to be written.
-
-With this, the old `setgenerate` RPC command no longer functions in regtest mode, instead a new `generate` command has been introduced that is more suited for use in regtest mode.
-
-GUI Changes
-------
-
-### Console Security Warning
-
-Due to an increase in social engineering attacks/scams that rely on users relaying information from console commands, a new warning message has been added to the Console window's initial welcome message.
-
-### Optional Hiding of Orphan Stakes
-
-The options dialog now contains a checkbox option to hide the display of orphan stakes from both the overview and transaction history sections. Further, a right-click context menu option has been introduced in the transaction history tab to achieve the same effect.
-
-**Note:** This option only affects the visual display of orphan stakes, and will not prevent them nor remove them from the underlying wallet database.
-
-### Transaction Type Recoloring
-
-The color of various transaction types has been reworked to provide better visual feedback. Staking and masternode rewards are now purple, orphan stakes are now light gray, other rejected transactions are in red, and normal receive/send transactions are black.
-
-### Receive Tab Changes
-
-The address to be used when creating a new payment request is now automatically displayed in the form. This field is not user-editable, and will be updated as needed by the wallet.
-
-A new button has been added below the payment request form, "Receiving Addresses", which allows for quicker access to all the known receiving addresses. This one-click button is the same as using the `File->Receiving Addresses...` menu command, and will open up the Receiving Addresses UI dialog.
-
-Historical payment requests now also display the address used for the request in the history table. While this information was already available when clicking the "Show" button, it was an extra step that shouldn't have been necessary.
-
-### Privacy Tab Changes
-
-The entire right half of the privacy tab can now be toggled (shown/hidden) via a new UI button. This was done to reduce "clutter" for users that may not wish to see the detailed information regarding individual denomination counts.
-
-RPC Changes
-------
-
-### Backupwallet Sanity
-
-The `backupwallet` RPC command no longer allows for overwriting the currently in use wallet.dat file. This was done to avoid potential file corruption caused by multiple conflicting file access operations.
-
-### Spendzerocoin Security Level Removed
-
-The `securitylevel` argument has been removed from the `spendzerocoin` RPC command.
-
-### Spendzerocoinmints Added
-
-Introduce the `spendzerocoinmints` RPC call to enable spending specific zerocoins, provided as an array of hex strings (serial hashes).
-
-### Getreceivedbyaddress Update
-
-When calling `getreceivedbyaddress` with a non-wallet address, return a proper error code/message instead of just `0`
-
-### Validateaddress More Verbosity
-
-`validateaddress` now has the ability to return more (non-critical or identifying) details about P2SH (multisig) addresses by removing the needless check against ISMINE_NO.
-
-### Listmintedzerocoins Additional Options
-
-Add a `fVerbose` boolean optional argument (default=false) to `listmintedzerocoins` call to have a more detailed output.
-
-If `fVerbose` is specified as first argument, then a second optional boolean argument `fMatureOnly` (default=false) can be used to filter-out immature mints.
-
-### Getblock & Getblockheader
-
-A minor change to these two RPC commands to now display the `mediantime`, used primarialy during functional tests.
-
-### Getwalletinfo
-
-The `getwalletinfo` RPC command now outputs the configured transaction fee (`paytxfee` field).
-
-Build System Changes
-------
-
-### Completely Disallow Qt4
-
-Compiling the NXBoost Core wallet against Qt4 hasn't been supported for quite some time now, but the build system still recognized Qt4 as a valid option if Qt5 couldn't be found. This has now been remedied and Qt4 will no longer be considered valid during the `configure` pre-compilation phase.
-
-### Further OpenSSL Deprecation
-
-Up until now, the zerocoin library relied exclusively on OpenSSL for it's bignum implementation. This has now been changed with the introduction of GMP as an arithmetic operator and the bignum implementation has now been redesigned around GMP. Users can still opt to use OpenSSL for bignum by passing `--with-zerocoin-bignum=openssl` to the `configure` script, however such configuration is now deprecated.
-
-**Note:** This change introduces a new dependency on GMP (libgmp) by default.
-
-### RISC-V Support
-
-Support for the new RISC-V 64bit processors has been added, though still experimental. Pre-compiled binaries for this CPU architecture are available for linux, and users can self-compile using gitian, depends, or an appropriate host system natively.
-
-### New Gitian Build Script
-
-The previous `gitian-build.sh` shell script has been replaced with a more feature rich python version; `gitian-build.py`. This script now supports the use of a docker container in addition to LXC or KVM virtualization, as well as the ability to build against a pull request by number.
-
-Performance Improvements
-------
-
-### New checkpoints
-
-More recent checkpoints have been added for both mainnet. These help alleviate some of the load when (re-)syncing from the network.
-
+Note that it is still required to have relevant dependencies installed on the system for this to function properly.
 
 As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/nxboost/nxboost-wallet/).
