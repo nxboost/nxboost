@@ -129,7 +129,7 @@ public:
     int Zerocoin_StartTime() const { return nZerocoinStartTime; }
     int Block_Enforce_Invalid() const { return nBlockEnforceInvalidUTXO; }
     int Zerocoin_Block_V2_Start() const { return nBlockZerocoinV2; }
-    CAmount InvalidAmountFiltered() const { return nInvalidAmountFiltered; };
+    CAmount InvalidAmountFiltered() const { return nInvalidAmountFiltered; }
 
     int Zerocoin_Block_Public_Spend_Enabled() const { return nPublicZCSpends; }
 

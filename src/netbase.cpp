@@ -451,7 +451,7 @@ bool static ConnectSocketDirectly(const CService& addrConnect, SOCKET& hSocketRe
     struct sockaddr_storage sockaddr;
     socklen_t len = sizeof(sockaddr);
     if (!addrConnect.GetSockAddr((struct sockaddr*)&sockaddr, &len)) {
-        LogPrintf("Cannot connect to %s: unsupported network\n", addrConnect.ToString());
+        LogPrint("net","Cannot connect to %s: unsupported network\n", addrConnect.ToString());
         return false;
     }
 
@@ -500,7 +500,7 @@ bool static ConnectSocketDirectly(const CService& addrConnect, SOCKET& hSocketRe
                 return false;
             }
             if (nRet != 0) {
-                LogPrintf("connect() to %s failed after select(): %s\n", addrConnect.ToString(), NetworkErrorString(nRet));
+                LogPrint("net","connect() to %s failed after select(): %s\n", addrConnect.ToString(), NetworkErrorString(nRet));
                 CloseSocket(hSocket);
                 return false;
             }

@@ -474,7 +474,7 @@ bool CMasternodePayments::GetBlockPayee(int nBlockHeight, CScript& payee)
 
 // Is this masternode scheduled to get paid soon?
 // -- Only look ahead up to 8 blocks to allow for propagation of the latest 2 winners
-bool CMasternodePayments::IsScheduled(CMasternode& mn, int nNotBlockHeight)
+bool CMasternodePayments::IsScheduled(CMasternode& mn, int nMnCount, int nNotBlockHeight)
 {
     LOCK(cs_mapMasternodeBlocks);
 
@@ -487,9 +487,10 @@ bool CMasternodePayments::IsScheduled(CMasternode& mn, int nNotBlockHeight)
 
     CScript mnpayee;
     mnpayee = GetScriptForDestination(mn.pubKeyCollateralAddress.GetID());
-
+    int n = IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) ? 10 : 9;
     CScript payee;
-    for (int64_t h = nHeight; h <= nHeight + 8; h++) {
+    for(int64_t h_upper_bound = nHeight + n, h = h_upper_bound - std::min(n, nMnCount - 1); h < h_upper_bound; ++h) {
+//    for (int64_t h = nHeight; h <= nHeight + 8; h++) {
         if (h == nNotBlockHeight) continue;
         if (mapMasternodeBlocks.count(h)) {
             if (mapMasternodeBlocks[h].GetPayee(payee)) {

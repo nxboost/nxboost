@@ -494,7 +494,7 @@ CMasternode* CMasternodeMan::GetNextMasternodeInQueueForPayment(int nBlockHeight
         if (mn.protocolVersion < masternodePayments.GetMinMasternodePaymentsProto()) continue;
 
         //it's in the list (up to 8 entries ahead of current block to allow propagation) -- so let's skip it
-        if (masternodePayments.IsScheduled(mn, nBlockHeight)) continue;
+        if (masternodePayments.IsScheduled(mn, nMnCount, nBlockHeight)) continue;
 
         //it's too new, wait for a cycle
         if (fFilterSigTime && mn.sigTime + (nMnCount * 2.6 * 60) > GetAdjustedTime()) continue;
@@ -517,8 +517,8 @@ CMasternode* CMasternodeMan::GetNextMasternodeInQueueForPayment(int nBlockHeight
     //  -- This doesn't look at who is being paid in the +8-10 blocks, allowing for double payments very rarely
     //  -- 1/100 payments should be a double payment on mainnet - (1/(3000/10))*2
     //  -- (chance per block * chances before IsScheduled will fire)
-    int nTenthNetwork = CountEnabled() / 10;
-    int nCountTenth = 0;
+//    int nTenthNetwork = CountEnabled() / 10;
+    int nCountTenth = CountEnabled() / 10;
     uint256 nHigh = 0;
     for (PAIRTYPE(int64_t, CTxIn) & s : vecMasternodeLastPaid) {
         CMasternode* pmn = Find(s.second);
@@ -529,8 +529,9 @@ CMasternode* CMasternodeMan::GetNextMasternodeInQueueForPayment(int nBlockHeight
             nHigh = n;
             pBestMasternode = pmn;
         }
-        nCountTenth++;
-        if (nCountTenth >= nTenthNetwork) break;
+        if(--nCountTenth <= 0) break;
+//        nCountTenth++;
+//        if (nCountTenth >= nTenthNetwork) break;
     }
     return pBestMasternode;
 }
