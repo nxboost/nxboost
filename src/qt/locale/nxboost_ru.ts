@@ -1978,10 +1978,6 @@ Please be patient after clicking import.</source>
         <translation>Сбросить активность базы данных из пула памяти в журнал диска каждый &lt;n&gt; мегабайт (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Найденные неподтвержденные деноминированные выходы будут ждать, пока они подтвердят, что они будут продолжены.</translation>
-    </message>
-    <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
         <translation>Если paytxfee не установлен, включите достаточно плату, так что транзакции начнут подтверждать в среднем в пределах n блоков (по умолчанию: %u)</translation>
     </message>
@@ -2215,8 +2211,16 @@ Please be patient after clicking import.</source>
         <translation>Разрешить поиск в DNS для -addnode, -seednode и -connect</translation>
     </message>
     <message>
-        <source>Already have that input.</source>
-        <translation>Уже есть этот вход.</translation>
+        <source>Cannot create public spend input</source>
+        <translation>Невозможно создать вход для общедоступной траты</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint %s</source>
+        <translation>Невозможно найти транзакцию, содержащую чеканку %s</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint, txHash: %s</source>
+        <translation>Невозможно найти транзакцию, содержащую чеканку, txHash: %s</translation>
     </message>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
@@ -2247,18 +2251,6 @@ Please be patient after clicking import.</source>
         <translation>Вычисление недостающих аккумуляторов ...</translation>
     </message>
     <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Невозможно обозначить: никаких совместимых входов не осталось.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Невозможно найти случайного Мастернода.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Невозможно перемешать во время синхронизации.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Нельзя понизить кошелек</translation>
     </message>
@@ -2285,10 +2277,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>CoinSpend: failed check</source>
         <translation>CoinSpend: неудачная проверка</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Залог недействителен.</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -2411,14 +2399,6 @@ Please be patient after clicking import.</source>
         <translation>Разрешить клиенту действовать как мастернод (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Entries are full.</source>
-        <translation>Записи заполнены.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Ошибка подключения к Masternode.</translation>
-    </message>
-    <message>
         <source>Error initializing block database</source>
         <translation>Ошибка инициализации базы данных блоков</translation>
     </message>
@@ -2471,10 +2451,6 @@ Please be patient after clicking import.</source>
         <translation>Ошибка: произошла фатальная внутренняя ошибка, подробнее см. Debug.log</translation>
     </message>
     <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Ошибка: невозможно выбрать текущие входы</translation>
-    </message>
-    <message>
         <source>Error: Disk space is low!</source>
         <translation>Ошибка. Недостаточно места на диске!</translation>
     </message>
@@ -2489,10 +2465,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Error: Wallet locked, unable to create transaction!</source>
         <translation>Ошибка: кошелек заблокирован, невозможно создать транзакцию!</translation>
-    </message>
-    <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Ошибка. У вас уже есть ожидающие записи в пуле Obfuscation</translation>
     </message>
     <message>
         <source>Failed to calculate accumulator checkpoint</source>
@@ -2515,6 +2487,10 @@ Please be patient after clicking import.</source>
         <translation>Не удалось проанализировать строку хост:порт</translation>
     </message>
     <message>
+        <source>Failed to parse public spend</source>
+        <translation>Не удалось разобрать публичные расходы</translation>
+    </message>
+    <message>
         <source>Failed to read block</source>
         <translation>Не удалось прочитать блок</translation>
     </message>
@@ -2535,20 +2511,8 @@ Please be patient after clicking import.</source>
         <translation>Плата (в NXB / kB) для добавления к транзакциям, которые вы отправляете (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Finalizing transaction.</source>
-        <translation>Завершение транзакции.</translation>
-    </message>
-    <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Режим принудительной защиты (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Найдено достаточно пользователей, подписывание (ожидание %s)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Нашел достаточно пользователей, подписал ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -2575,14 +2539,6 @@ Please be patient after clicking import.</source>
         <translation>Включить IP-адреса в отладочном выходе (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Несовместимый режим.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Несовместимая версия.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Неправильный или не обнаруженный блок генезиса. Неверный каталог данных для сети?</translation>
     </message>
@@ -2593,10 +2549,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Initialization sanity check failed. NXBoost Core is shutting down.</source>
         <translation>Инициализация проверки работоспособности не удалась. NXBoost Core отключается.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Недопустимый ввод.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -2655,20 +2607,8 @@ Please be patient after clicking import.</source>
         <translation>Недопустимый закрытый ключ.</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>Обнаружен неверный сценарий.</translation>
-    </message>
-    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Непрерывные  &lt;n&gt; транзакции в памяти (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Последняя обфускация была слишком поздней.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Последняя успешная операция обфускации была совсем недавно.</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -2723,10 +2663,6 @@ Please be patient after clicking import.</source>
         <translation>Расположение файла cookie auth (по умолчанию: data dir)</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>Блокировка уже установлена.</translation>
-    </message>
-    <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>Блокировка masternodes из файла конфигурации masternode (по умолчанию: %u)</translation>
     </message>
@@ -2743,14 +2679,6 @@ Please be patient after clicking import.</source>
         <translation>Параметры Masternode:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>Очередь мастернод заполнена.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Мастернода:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>Максимальный буфер приема для каждого соединения&lt;n&gt;* 1000 байтов (по умолчанию: %u)</translation>
     </message>
@@ -2763,14 +2691,6 @@ Please be patient after clicking import.</source>
         <translation>чеканка не превратила его в блокчейн</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Отсутствует входная информация о транзакции.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Выполняется микширование ...</translation>
-    </message>
-    <message>
         <source>Need address because change is not exact</source>
         <translation>Нужен адрес, потому что изменение не является точным</translation>
     </message>
@@ -2779,40 +2699,12 @@ Please be patient after clicking import.</source>
         <translation>Необходимо указать порт с -whitebind: '%s'</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>Мастерноды не найдены.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Совпадающий Матернод не найден.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Не обнаружено средств, требующих деноминации.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Соответствующие наименования для смешивания не найдены.</translation>
-    </message>
-    <message>
         <source>Node relay options:</source>
         <translation>Варианты реле узла:</translation>
     </message>
     <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Обнаружен нестандартный открытый ключ.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Не совместим с существующими транзакциями.</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Недостаточно доступных дескрипторов файлов.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Не в списке Мастернод.</translation>
     </message>
     <message>
         <source>Number of automatic wallet backups (default: 10)</source>
@@ -2821,18 +2713,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
         <translation>Количество резервных копий пользовательского местоположения для сохранения (по умолчанию: %d)</translation>
-    </message>
-    <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Обфускация простаивает.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Запрос об обфускации завершен:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Запрос об обфускации неполный:</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -2865,6 +2745,10 @@ Please be patient after clicking import.</source>
     <message>
         <source>Print version and exit</source>
         <translation>Версия для печати и выхода</translation>
+    </message>
+    <message>
+        <source>Pubcoin not found in mint tx</source>
+        <translation>Pubcoin не найден в транзакции чеканки</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -2953,10 +2837,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Отправлять транзакции как транзакции с нулевой оплатой, если это возможно (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Сессия не завершена!</translation>
     </message>
     <message>
         <source>Session timed out.</source>
@@ -3063,18 +2943,6 @@ Please be patient after clicking import.</source>
         <translation>Прекратить работу после импорта блоков с диска (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Представлены следующие записи в masternode: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Отправлено в masternode, ожидая большего количества записей (%u / %d) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Отправлено в masternode, ожидая в очереди %s</translation>
-    </message>
-    <message>
         <source>Support the zerocoin light node protocol (default: %u)</source>
         <translation>Поддержка протокола zerocoin light node (по умолчанию: %u)</translation>
     </message>
@@ -3135,10 +3003,6 @@ Please be patient after clicking import.</source>
         <translation>Это предназначено для инструментов тестирования регрессии и разработки приложений.</translation>
     </message>
     <message>
-        <source>This is not a Masternode.</source>
-        <translation>Это не Мастернод.</translation>
-    </message>
-    <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation>Порог для отключения ошибочных сверстников (по умолчанию: %u)</translation>
     </message>
@@ -3171,18 +3035,6 @@ Please be patient after clicking import.</source>
         <translation>Суммы транзакций должны быть положительными</translation>
     </message>
     <message>
-        <source>Transaction created successfully.</source>
-        <translation>Транзакция создана успешно.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Сборы за транзакцию слишком высоки.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Транзакция недействительна.</translation>
-    </message>
-    <message>
         <source>Transaction too large for fee policy</source>
         <translation>Слишком большая транзакция для данного тарифа</translation>
     </message>
@@ -3191,20 +3043,12 @@ Please be patient after clicking import.</source>
         <translation>Слишком большая транзакция</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Передача окончательной транзакции.</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Пытаясь потратить уже потраченный серийный номер #, попробуйте еще раз.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Невозможно связать %s на этом компьютере (связать возвращенную ошибку %s)</translation>
-    </message>
-    <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>Не удалось найти транзакцию, содержащую монетный двор</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
@@ -3217,10 +3061,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Неизвестная сеть, указанная в -onlynet: '%s'</translation>
-    </message>
-    <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Неизвестное состояние: id = %u</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -3259,10 +3099,6 @@ Please be patient after clicking import.</source>
         <translation>Значение ниже наименьшего доступного номинала (= 1) zNXB</translation>
     </message>
     <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Максимальное значение больше, чем позволяет пул перекрытий Obfuscation.</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Проверка блоков ...</translation>
     </message>
@@ -3273,10 +3109,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Кошелек %s находится за пределами каталога данных %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Кошелек заблокирован.</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart NXBoost Core to complete</source>
@@ -3307,24 +3139,12 @@ Please be patient after clicking import.</source>
         <translation>Предупреждение. Неподдерживаемый аргумент -debugnet игнорируется, используйте -debug = net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Будет повторять ...</translation>
-    </message>
-    <message>
         <source>You don't have enough Zerocoins in your wallet</source>
         <translation>У вас недостаточно Zerocoins в вашем кошельке</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Вам нужно перестроить базу данных с помощью -reindex для изменения -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Ваши записи добавлены успешно.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Ваша транзакция была принята в пул!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -3353,73 +3173,6 @@ Please be patient after clicking import.</source>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat коррумпирован, сбор не выполнен</translation>
-    </message>
-</context>
-<context>
-    <name>ObfuscationConfig</name>
-    <message>
-        <source>Configure Obfuscation</source>
-        <translation>Параметры Перемешивания</translation>
-    </message>
-    <message>
-        <source>Basic Privacy</source>
-        <translation>Базовая приватность</translation>
-    </message>
-    <message>
-        <source>High Privacy</source>
-        <translation>Повышенная приватность</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Максимальная приватность</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Выберите уровень приватности.</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 NXB</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 NXB</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 NXB</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 NXB</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Используйте 16 разных мастернод</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 NXB to anonymize 10000 NXB</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 NXB для анонимизации 10000 NXB</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 NXB to anonymize 10000 NXB</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 NXB для анонимизации 10000 NXB</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
-    </message>
-    <message>
-        <source>0.1 NXB per 10000 NXB you anonymize.</source>
-        <translation>0.1 NXB за 10000 NXB которые вы собираетесь анонимизировать.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Настройка Перемешивания</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки nxboost.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки nxboost.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening nxboost's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки nxboost.</translation>
     </message>
 </context>
 <context>
@@ -3634,8 +3387,8 @@ https://www.transifex.com/nxboost/nxboost-wallet</translation>
         <translation>Тема Интерфейса:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Единица для отображения сумм в:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Единица для отображения сумм в:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -4007,36 +3760,12 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
         <translation>zNXB</translation>
     </message>
     <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Доступными для чеканки являются монеты, которые подтверждены, а не заблокированы или заложены в коллекцию Masternode.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Доступный для чеканки:</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 NXB</source>
-        <translation>0.000 000 00 NXB</translation>
-    </message>
-    <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
         <translation>Сброс базы данных кошелька Zerocoin. Удаляете транзакции, которые не попадают в цепочку.</translation>
     </message>
     <message>
         <source>Reset</source>
         <translation>Сброс</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Контроль Монеты...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Количество:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Сумма:</translation>
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
@@ -4053,10 +3782,6 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in nxboost.co
     <message>
         <source>PRIVACY</source>
         <translation>ПРИВАТНОСТЬ</translation>
-    </message>
-    <message>
-        <source>Enter an amount of NXB to convert to zNXB</source>
-        <translation>Введите сумму в NXB для  конвертации в zNXB</translation>
     </message>
     <message>
         <source>zNXB Control</source>
@@ -4251,6 +3976,14 @@ To change the percentage (no restart required):
         <translation>Показать номиналы</translation>
     </message>
     <message>
+        <source>zNXB minting is DISABLED</source>
+        <translation>zNXB чеканка ОТКЛЮЧЕНА</translation>
+    </message>
+    <message>
+        <source>zNXB spending is NOT private (links back to the mint transaction)</source>
+        <translation>Расходы zNXB НЕ являются частными (ссылка на транзакцию чеканки)</translation>
+    </message>
+    <message>
         <source>Denominations with value 5:</source>
         <translation>Номинал со значением 5:</translation>
     </message>
@@ -4375,24 +4108,10 @@ To change the percentage (no restart required):
         <translation>Статус чеканки  ОК</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Копировать количество</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Копировать сумму</translation>
-    </message>
-    <message>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
 Please be patient...</source>
         <translation>Запуск ResetMintZerocoin: повторное сканирование полной блок-цепи, это потребует до 30 минут в зависимости от вашего оборудования.
 Будьте терпеливы ...</translation>
-    </message>
-    <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) необходимо.
-Максимально допустимое: </translation>
     </message>
     <message>
         <source>zNXB Spend #: </source>
@@ -4491,32 +4210,6 @@ Maximum allowed: </source>
         <translation>Номинал&lt;b&gt;5000&lt;/b&gt;:</translation>
     </message>
     <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Ошибка. Ваш кошелек заблокирован. Сначала введите кодовую фразу кошелька.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Сообщение: Введите сумму&gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Создание </translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Создан успешно </translation>
-    </message>
-    <message>
-        <source> zNXB in </source>
-        <translation> zNXB в </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation> сек. Испльзованы номинации:
-</translation>
-    </message>
-    <message>
         <source>Duration: </source>
         <translation>Продолжительность: </translation>
     </message>
@@ -4565,16 +4258,6 @@ Maximum allowed: </source>
     <message>
         <source>Failed to fetch mint associated with serial hash</source>
         <translation>Не удалось получить чеканку, связанную с серийным хэшем</translation>
-    </message>
-    <message>
-        <source>Too much inputs (</source>
-        <translation>Слишком много входов (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Либо чеканятся монеты с  высоким номиналом (поэтому требуется меньше ресурсов), либо уменьшите сумму, которую нужно потратить.</translation>
     </message>
     <message>
         <source>Spend Zerocoin failed with status = </source>
