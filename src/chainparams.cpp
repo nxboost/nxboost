@@ -150,7 +150,7 @@ public:
         const char* pszTimestamp = "NXBoost Reload august 2018";
 
         // Public coin spend enforcement
-        nPublicZCSpends = 2000000;
+        nPublicZCSpends = 450000;
 
         CMutableTransaction txNew;
         txNew.vin.resize(1);
