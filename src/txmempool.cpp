@@ -6,7 +6,6 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "txmempool.h"
-#include "spork.h"
 #include "clientversion.h"
 #include "main.h"
 #include "streams.h"
@@ -480,7 +479,7 @@ void CTxMemPool::removeCoinbaseSpends(const CCoinsViewCache* pcoins, unsigned in
                 continue;
             const CCoins* coins = pcoins->AccessCoins(txin.prevout.hash);
             if (fSanityCheck) assert(coins);
-            if (!coins || ((coins->IsCoinBase() || coins->IsCoinStake()) && nMemPoolHeight - coins->nHeight < (unsigned)(IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) ? Params().COINBASE_MATURITY() : 29))) {
+            if (!coins || ((coins->IsCoinBase() || coins->IsCoinStake()) && nMemPoolHeight - coins->nHeight < (unsigned)(Params().COINBASE_MATURITY()))) {
                 transactionsToRemove.push_back(tx);
                 break;
             }
