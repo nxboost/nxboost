@@ -153,9 +153,9 @@ void WalletModel::pollBalanceChanged()
         cachedZeromintPercentage = nZeromintPercentage;
 
         checkBalanceChanged();
-        if (transactionTableModel) {
-            transactionTableModel->updateConfirmations();
-        }
+//        if (transactionTableModel) {
+//            transactionTableModel->updateConfirmations();
+//        }
 
         // Address in receive tab may have been used
         emit notifyReceiveAddressChanged();
