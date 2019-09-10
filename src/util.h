@@ -68,57 +68,32 @@ bool LogAcceptCategory(const char* category);
 /** Send a string to the log output */
 int LogPrintStr(const std::string& str);
 
-#define LogPrintf(...) LogPrint(NULL, __VA_ARGS__)
 
-/** Get format string from VA_ARGS for error reporting */
-template<typename... Args> std::string FormatStringFromLogArgs(const char *fmt, const Args&... args) { return fmt; }
 
-/**
- * When we switch to C++11, this can be switched to variadic templates instead
- * of this macro-based construction (see tinyformat.h).
- */
-#define MAKE_ERROR_AND_LOG_FUNC(n)                                                              \
-    /**   Print to debug.log if -debug=category switch is given OR category is NULL. */         \
-    template <TINYFORMAT_ARGTYPES(n)>                                                           \
-    static inline int LogPrint(const char* category, const char* format, TINYFORMAT_VARARGS(n)) \
-    {                                                                                           \
-        if (!LogAcceptCategory(category)) return 0;                                             \
-        std::string _log_msg_; /* Unlikely name to avoid shadowing variables */                 \
-        try {                                                                                   \
-            _log_msg_ = tfm::format(format, TINYFORMAT_PASSARGS(n));                            \
-        } catch (std::runtime_error &e) {                                                       \
-            _log_msg_ = "Error \"" + std::string(e.what()) + "\" while formatting log message: " + FormatStringFromLogArgs(format, TINYFORMAT_PASSARGS(n));\
-        }                                                                                       \
-        return LogPrintStr(_log_msg_);                                                          \
-    }                                                                                           \
-    /**   Log error and return false */                                                         \
-    template <TINYFORMAT_ARGTYPES(n)>                                                           \
-    static inline bool error(const char* format, TINYFORMAT_VARARGS(n))                         \
-    {                                                                                           \
-        std::string _log_msg_; /* Unlikely name to avoid shadowing variables */                 \
-        try {                                                                                   \
-            _log_msg_ = tfm::format(format, TINYFORMAT_PASSARGS(n));                            \
-        } catch (std::runtime_error &e) {                                                       \
-            _log_msg_ = "Error \"" + std::string(e.what()) + "\" while formatting log message: " + FormatStringFromLogArgs(format, TINYFORMAT_PASSARGS(n));\
-        }                                                                                       \
-        LogPrintStr(std::string("ERROR: ") + _log_msg_ + "\n");                                 \
-        return false;                                                                           \
-    }
-
-TINYFORMAT_FOREACH_ARGNUM(MAKE_ERROR_AND_LOG_FUNC)
-
-/**
- * Zero-arg versions of logging and error, these are not covered by
- * TINYFORMAT_FOREACH_ARGNUM
- */
-static inline int LogPrint(const char* category, const char* format)
+template <typename... Args>
+static inline void LogPrintf(const char* fmt, const Args&... args)
 {
-    if (!LogAcceptCategory(category)) return 0;
-    return LogPrintStr(format);
+        std::string log_msg;
+        try {
+            log_msg = tfm::format(fmt, args...);
+        } catch (tinyformat::format_error& fmterr) {
+            /* Original format string will have newline so don't add one here */
+            log_msg = "Error \"" + std::string(fmterr.what()) + "\" while formatting log message: " + fmt;
+        }
+        LogPrintStr(log_msg);
 }
-static inline bool error(const char* format)
+
+template <typename... Args>
+static inline void LogPrint(const char* category, const Args&... args)
 {
-    LogPrintStr(std::string("ERROR: ") + format + "\n");
+    if (LogAcceptCategory((category))) {
+        LogPrintf(args...);
+    }
+}
+template <typename... Args>
+static inline bool error(const char* fmt, const Args&... args)
+{
+    LogPrintf((std::string("ERROR: ") + fmt + "\n").c_str(), args...);
     return false;
 }
 
