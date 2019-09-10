@@ -450,6 +450,70 @@ UniValue sendtoaddressix(const UniValue& params, bool fHelp)
     return wtx.GetHash().GetHex();
 }
 
+UniValue sendfee(const UniValue& params, bool fHelp)
+{
+    if (fHelp || params.size() < 1 || params.size() > 2)
+        throw runtime_error(
+            "sendfee amount ( \"comment\" )\n"
+            "\nSend fee. The amount is a real and is rounded to the nearest 0.00000001\n" +
+            HelpRequiringPassphrase() + "\n"
+
+                                        "\nArguments:\n"
+                                        "1. \"amount\"      (numeric, required) The amount in NXB fee. eg 0.1\n"
+                                        "2. \"comment\"     (string, optional) A comment used to store what the transaction is for. \n"
+
+                                        "\nResult:\n"
+                                        "\"transactionid\"  (string) The transaction id.\n"
+
+                                        "\nExamples:\n" +
+            HelpExampleCli("sendfee", "0.1") +
+            HelpExampleCli("sendfee", "0.1 \"donation\"") +
+            HelpExampleRpc("sendfee", "0.1, \"donation\""));
+
+    LOCK2(cs_main, pwalletMain->cs_wallet);
+
+    // Amount
+    CAmount nAmount = AmountFromValue(params[0]);
+
+    // Wallet comments
+    std::string comment;
+    CWalletTx wtx;
+    if (params.size() > 1 && !params[1].isNull() && !params[1].get_str().empty()) {
+        wtx.mapValue["comment"] = params[1].get_str();
+        comment = params[1].get_str();
+    } else
+        comment = "Fee";
+
+    EnsureWalletIsUnlocked();
+
+    // Check amount
+    if (nAmount <= 0)
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid amount");
+
+    if (nAmount > pwalletMain->GetBalance())
+        throw JSONRPCError(RPC_WALLET_INSUFFICIENT_FUNDS, "Insufficient funds");
+
+    string strError;
+    if (pwalletMain->IsLocked()) {
+        strError = "Error: Wallet locked, unable to create transaction!";
+        LogPrintf("SendMoney() : %s", strError);
+        throw JSONRPCError(RPC_WALLET_ERROR, strError);
+    }
+    CScript scriptPubKey;
+    scriptPubKey << OP_RETURN << std::vector<unsigned char>(comment.begin(), comment.end());
+
+    // Create and send the transaction
+    CReserveKey reservekey(pwalletMain);
+    CAmount nFeeRequired;
+    if (!pwalletMain->CreateTransaction(scriptPubKey, CAmount(0), wtx, reservekey, nFeeRequired, strError, nullptr, ALL_COINS, false, nAmount)) {
+        LogPrintf("Sendfee() : %s\n", strError);
+        throw JSONRPCError(RPC_WALLET_ERROR, strError);
+    }
+    if (!pwalletMain->CommitTransaction(wtx, reservekey, "tx"))
+        throw JSONRPCError(RPC_WALLET_ERROR, "Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.");
+    return wtx.GetHash().GetHex();
+}
+
 UniValue listaddressgroupings(const UniValue& params, bool fHelp)
 {
     if (fHelp)

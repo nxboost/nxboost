@@ -1344,7 +1344,7 @@ void CWallet::ReacceptWalletTransactions()
         if (!wtx.IsCoinBase() && !wtx.IsCoinStake() && nDepth < 0) {
             // Try to add to memory pool
             LOCK(mempool.cs);
-            wtx.AcceptToMemoryPool(false);
+            wtx.AcceptToMemoryPool(false, false);
         }
     }
 }
@@ -2558,7 +2558,7 @@ bool CWallet::CommitTransaction(CWalletTx& wtxNew, CReserveKey& reservekey, std:
         mapRequestCount[wtxNew.GetHash()] = 0;
 
         // Broadcast
-        if (!wtxNew.AcceptToMemoryPool(false)) {
+        if (!wtxNew.AcceptToMemoryPool(false, false)) {
             // This must not fail. The transaction has already been signed and recorded.
             LogPrintf("CommitTransaction() : Error: Transaction not valid\n");
             return false;
